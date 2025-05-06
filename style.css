@@ -1,0 +1,360 @@
+/* Reset base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #222;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Layout moderno menu laterale */
+.menu {
+    width: 200px;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 15px 10px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.1);
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.menu li:hover,
+.menu li.active {
+    background-color: #0da314;
+    color: white;
+}
+
+.content {
+    margin-left: 220px;
+    padding: 30px 40px;
+}
+
+header {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0 20px 220px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+h2 {
+    font-size: 17px;
+    color: #0da314;
+    margin: 15px 0 8px;
+}
+
+p {
+    margin: 8px 0;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+/* Menu orizzontale smart */
+.horizontal-menu {
+    margin-left: 220px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    padding: 8px 20px;
+}
+
+.horizontal-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.horizontal-menu li a {
+    text-decoration: none;
+    font-size: 13px;
+    padding: 4px 8px;
+    color: #0da314;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.horizontal-menu li a:hover {
+    background-color: #0da314;
+    color: white;
+}
+
+/* Torna su button */
+#scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    background-color: #0da314;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    z-index: 999;
+}
+
+
+/* Stile per voce speciale nel menu */
+.menu li.special {
+    margin-top: 20px;
+    background-color: #0da314;
+    color: white;
+    font-weight: bold;
+    border-left: 4px solid white;
+}
+
+.menu li.special:hover {
+    background-color: #0c8e11;
+}
+
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        width: 220px;
+        height: 100%;
+        left: -250px;
+        top: 0;
+        transition: left 0.3s ease;
+        z-index: 1000;
+    }
+
+    .menu.open {
+        left: 0;
+    }
+
+   
+
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px 10px 20px 10px;
+    }
+
+    .horizontal-menu {
+        margin-left: 0;
+        padding: 10px;
+    }
+}
+
+/* Mostra il menu-toggle SOLO su mobile */
+.menu-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #0da314;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        font-size: 18px;
+        z-index: 1001;
+        border-radius: 5px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+}
+
+
+/* Box informativi */
+.box-info {
+    background: #fff;
+    border-left: 5px solid #0da314;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Box immagine + testo */
+.img-box {
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.img-box img {
+    width: 100%;
+    max-width: 280px;
+    object-fit: contain;
+}
+
+.img-box .img-text {
+    flex: 1;
+    padding: 15px 20px;
+    min-width: 200px;
+}
+
+/* Immagini a tutta larghezza */
+
+
+/* Alert */
+.alert {
+    padding: 12px 16px;
+    margin: 16px 0;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.alert.info {
+    background-color: #e7f4e4;
+    color: #215e1a;
+    border-left: 5px solid #0da314;
+}
+
+.alert.warn {
+    background-color: #fff3cd;
+    color: #856404;
+    border-left: 5px solid #ffc107;
+}
+
+.alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border-left: 5px solid #dc3545;
+}
+
+
+
+
+.img-full {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: 20px auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Bordi separatori tra sezioni */
+.sezione-evidente {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stile per i sottomenù */
+ul.submenu {
+    list-style: none;
+    margin-left: 15px;
+    display: none;
+    padding: 0;
+}
+
+ul.submenu li {
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 0.95em;
+    color: #196db6;
+}
+
+
+
+
+/* Migliora la separazione visiva tra paragrafi e contenuti */
+section.sezione-evidente p,
+section.sezione-evidente ul,
+section.sezione-evidente ol {
+    margin-bottom: 1.2em;
+    line-height: 1.6;
+}
+
+/* Opzionale: bordo sottile sopra gli h2 */
+section.sezione-evidente h2 {
+    border-top: 1px solid #ccc;
+    padding-top: 1em;
+    margin-top: 2em;
+}
+
+
+
+/* --- SOTTOMENU DEFINITIVO, SOBRIO, MULTIRIGA, LEGGIBILE --- */
+ul.submenu {
+    list-style: none;
+    margin: 6px 0 6px 6px;
+    padding: 6px 10px;
+    border-left: 3px solid #196db6;
+    border-radius: 4px;
+    display: none;
+    transition: all 0.3s ease;
+    max-width: 250px;
+}
+
+ul.submenu li {
+    padding: 5px 2px;
+    font-size: 0.95em;
+    color: #333;
+    cursor: pointer;
+}
+
+ul.submenu li:hover {
+    background-color: #f0f4f8;
+    border-radius: 4px;
+}
+
+ul.submenu li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    white-space: normal;
+    word-break: normal;
+    overflow: visible;
+}
+
+ul.submenu li a:hover {
+    color: #196db6;
+}
+
+@media print {
+    .menu {
+      display: none !important;
+    }
+  }
