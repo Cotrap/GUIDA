@@ -1,198 +1,195 @@
 <!DOCTYPE html>
-
 <html lang="it">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="style.css" rel="stylesheet"/>
-<title>Guida ITINERIS</title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="style.css" rel="stylesheet" />
+    <title>Guida ITINERIS</title>
 </head>
 <body>
-<button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
+
+<button class="menu-toggle" aria-label="Apri/Chiudi menu">☰ Menu</button>
+
 <header>
-
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <h1 style="margin: 0; display: flex; align-items: center;">
-    <img src="img/COTRAP.svg" alt="Logo Cotrap" style="height:40px; vertical-align:middle; margin-right:10px;">
-    GUIDA SISTEMA ITINERIS
-  </h1>
-  <button onclick="window.print()" style="padding: 8px 12px; font-size: 14px; cursor: pointer;">Stampa sezione</button>
-</div>
-
+    <div class="header-content">
+        <h1 class="main-title">
+            <img src="img/COTRAP.svg" alt="Logo Cotrap" class="logo" loading="lazy">
+            GUIDA SISTEMA ITINERIS
+        </h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Cerca nella guida...">
+        </div>
+        <button onclick="window.print()" class="print-button">Stampa sezione</button>
+    </div>
 </header>
+
 <div class="menu">
-        <ul>
-          <li class="grosso" data-submenu="false" onclick="changeContent('home')">
-            Home
-          </li>
-      
-          <li class="grosso" data-submenu="false" onclick="changeContent('introduzione')">
+    <ul>
+        <li class="grosso" data-page="home" tabindex="0">Home</li>
+        <li class="grosso special-green" data-page="guida_veloce" tabindex="0">🚀 Guida Veloce</li>
+        <li class="grosso" data-page="introduzione" tabindex="0">
             Introduzione
             <ul class="submenu">
-              <li><a href="#introduzione_h2_0">OBIETTIVO DEL DOCUMENTO</a></li>
-              <li><a href="#introduzione_h2_1">SINTESI DEL DOCUMENTO</a></li>
-              <li><a href="#introduzione_h2_2">DESTINATARI</a></li>
-              <li><a href="#introduzione_h2_3">CONTENUTI</a></li>
-              <li><a href="#introduzione_h2_4">REQUISITI MINIMI</a></li>
+                <li><a href="#introduzione_h2_0">OBIETTIVO DEL DOCUMENTO</a></li>
+                <li><a href="#introduzione_h2_1">SINTESI DEL DOCUMENTO</a></li>
+                <li><a href="#introduzione_h2_2">DESTINATARI</a></li>
+                <li><a href="#introduzione_h2_3">CONTENUTI</a></li>
+                <li><a href="#introduzione_h2_4">REQUISITI MINIMI</a></li>
             </ul>
-          </li>
-      
-          <li class="grosso" data-submenu="false" onclick="changeContent('profilo_commerciale')">
+        </li>
+        <li class="grosso" data-page="profilo_commerciale" tabindex="0">
             Profilo Commerciale
             <ul class="submenu">
-              <li><a href="#profilo_commerciale_h2_0">PRE-REQUISITI</a></li>
-              <li><a href="#profilo_commerciale_h2_1">CREAZIONE LINEA</a></li>
-              <li><a href="#profilo_commerciale_h2_2">CONFIGURAZIONE</a></li>
-              <li><a href="#profilo_commerciale_h2_3">TARIFFARI</a></li>
-              <li><a href="#profilo_commerciale_h2_4">CALENDARI</a></li>
-              <li><a href="#profilo_commerciale_h2_5">FREQUENZA CORSA</a></li>
-              <li><a href="#profilo_commerciale_h2_6">UTENTI APP CONTROLLI</a></li>
+                <li><a href="#profilo_commerciale_h2_0">PRE-REQUISITI</a></li>
+                <li><a href="#profilo_commerciale_h2_1">CREAZIONE LINEA</a></li>
+                <li><a href="#profilo_commerciale_h2_2">CONFIGURAZIONE</a></li>
+                <li><a href="#profilo_commerciale_h2_3">TARIFFARI</a></li>
+                <li><a href="#profilo_commerciale_h2_4">CALENDARI</a></li>
+                <li><a href="#profilo_commerciale_h2_5">FREQUENZA CORSA</a></li>
+                <li><a href="#profilo_commerciale_h2_6">UTENTI APP CONTROLLI</a></li>
             </ul>
-          </li>
-      
-          <li class="grosso" onclick="changeContent('gestione_movimento')">
+        </li>
+        <li class="grosso" data-page="gestione_movimento" tabindex="0">
             Gestione Movimento
             <ul class="submenu">
-              <li><a href="#gestione_movimento_h2_0">COMPRENDERE IL SISTEMA</a></li>
-              <li><a href="#gestione_movimento_h2_1">MEZZI</a></li>
-              <li><a href="#gestione_movimento_h2_2">CODICI CONTABILI POLI</a></li>
-              <li><a href="#gestione_movimento_h2_3">CODICI CONTABILI ALTERNATIVI</a></li>
-              <li><a href="#gestione_movimento_h2_4">POLI</a></li>
-              <li><a href="#gestione_movimento_h2_5">LINEE</a></li>
-              <li><a href="#gestione_movimento_h2_6">CREAZIONE DEL TEMPLATE</a></li>
-              <li><a href="#gestione_movimento_h2_7">CORSE</a></li>
-              <li><a href="#gestione_movimento_h2_8">NOTE</a></li>
-              <li><a href="#gestione_movimento_h2_9">TITOLI DI VIAGGIO</a></li>
+                <li><a href="#gestione_movimento_h2_0">COMPRENDERE IL SISTEMA</a></li>
+                <li><a href="#gestione_movimento_h2_1">MEZZI</a></li>
+                <li><a href="#gestione_movimento_h2_2">CODICI CONTABILI POLI</a></li>
+                <li><a href="#gestione_movimento_h2_3">CODICI CONTABILI ALTERNATIVI</a></li>
+                <li><a href="#gestione_movimento_h2_4">POLI</a></li>
+                <li><a href="#gestione_movimento_h2_5">LINEE</a></li>
+                <li><a href="#gestione_movimento_h2_6">CREAZIONE DEL TEMPLATE</a></li>
+                <li><a href="#gestione_movimento_h2_7">CORSE</a></li>
+                <li><a href="#gestione_movimento_h2_8">NOTE</a></li>
+                <li><a href="#gestione_movimento_h2_9">TITOLI DI VIAGGIO</a></li>
             </ul>
-          </li>
-      
-          <li class="grosso" onclick="changeContent('eccezioni')">
+        </li>
+        <li class="grosso" data-page="eccezioni" tabindex="0">
             Eccezioni
             <ul class="submenu">
-              <li><a href="#eccezioni_h2_1">ECCEZIONI TARIFFARIE BIGLIETTI</a></li>
-              <li><a href="#eccezioni_h2_3">ECCEZIONI TARIFFARIE ABBONAMENTI</a></li>
-              <li><a href="#eccezioni_h2_4">CONTROLLO TARIFFARIO</a></li>
-              <li><a href="#eccezioni_h2_5">CONTROLLO TARIFFARIO ITINERARIO</a></li>
-              <li><a href="#eccezioni_h2_6">CONTROLLO TARIFFARIO ABBONAMENTO</a></li>
+                <li><a href="#eccezioni_h2_0">ECCEZIONI</a></li>
+                <li><a href="#eccezioni_h2_1">ECCEZIONI TARIFFARIE BIGLIETTI</a></li>
+                <li><a href="#eccezioni_h2_3">ECCEZIONI TARIFFARIE ABBONAMENTI</a></li>
+                <li><a href="#eccezioni_h2_4">CONTROLLO TARIFFARIO</a></li>
+                <li><a href="#eccezioni_h2_5">CONTROLLO TARIFFARIO ITINERARIO</a></li>
+                <li><a href="#eccezioni_h2_6">CONTROLLO TARIFFARIO ABBONAMENTO</a></li>
             </ul>
-          </li>
-      
-          <li class="grosso" data-submenu="false" onclick="changeContent('ordini')">
+        </li>
+        <li class="grosso" data-page="ordini" tabindex="0">
             Ordini
             <ul class="submenu">
-              <li><a href="#ordini_h2_0">BIGLIETTI</a></li>
-              <li><a href="#ordini_h2_1">STATI OCCUPAZIONALI CORSE</a></li>
-              <li><a href="#ordini_h2_2">STATO CONTROLLI</a></li>
-              <li><a href="#ordini_h2_3">STATISTICHE BIGLIETTI</a></li>
+                <li><a href="#ordini_h2_0">BIGLIETTI</a></li>
+                <li><a href="#ordini_h2_1">STATI OCCUPAZIONALI CORSE</a></li>
+                <li><a href="#ordini_h2_2">STATO CONTROLLI</a></li>
+                <li><a href="#ordini_h2_3">STATISTICHE BIGLIETTI</a></li>
             </ul>
-          </li>
-      
-          <li class="grosso" data-submenu="false" onclick="changeContent('esportazioni')">
-            Esportazioni
-          </li>
-      
-          <li class="grosso" data-submenu="false" onclick="changeContent('sezionecontabile')">
+        </li>
+        <li class="grosso" data-page="esportazioni" tabindex="0">Esportazioni</li>
+        <li class="grosso" data-page="sezionecontabile" tabindex="0">
             Sezione Contabile
             <ul class="submenu">
-              <li><a href="#sezionecontabile_h2_0">Ordini</a></li>
-              <li><a href="#sezionecontabile_h2_1">Dati Contabili</a></li>
-              <li><a href="#sezionecontabile_h2_2">Biglietti</a></li>
-              <li><a href="#sezionecontabile_h2_3">Statistiche venduto</a></li>
+                <li><a href="#sezionecontabile_h2_0">Ordini</a></li>
+                <li><a href="#sezionecontabile_h2_1">Dati Contabili</a></li>
+                <li><a href="#sezionecontabile_h2_2">Biglietti</a></li>
+                <li><a href="#sezionecontabile_h2_3">Statistiche venduto</a></li>
             </ul>
-          </li>
-      
-          <li class="special" onclick="changeContent('guida_veloce')">
-            🚀 Guida Veloce
-          </li>
-      
-          <li class="special" onclick="changeContent('app_controllo')">
-            📱 APP Controllo
-          </li>
-        </ul>
-      </div> 
-       <!-- FINE MENU -->
-<!-- Menu orizzontale con titoli H2 -->
-<div class="content" id="content"> <!-- SEZIONI -->
-<!-- HOME -->
-<section class="sezione-evidente" id="home">
-<h1>Home</h1>
-<p ><h2>Benvenuti sulla Guida per i Sistemi Itineris!</h2><br/>
-                Siamo lieti di darvi il benvenuto sulla nostra guida completa per i sistemi Itineris. <br/>
-                Questo sito è stato appositamente creato per fornire un'ampia panoramica sulle funzionalità dei nostri sistemi, offrendo informazioni dettagliate e istruzioni chiare per una migliore comprensione e utilizzo.<br/>
-                Per navigare efficacemente su questo sito, vi invitiamo cordialmente ad utilizzare il menu sulla sinistra, qui troverete una serie di voci di menu che vi condurranno direttamente alle sezioni di vostro interesse. <br/>
-                Cliccando su una voce di menu, potrete accedere rapidamente alle informazioni desiderate.<br/>
-                È importante sottolineare che i sistemi Itineris sono stati sviluppati in collaborazione con il Consorzio Trasporti Puglia (COTRAP), volti al miglioramento dei servizi di trasporto pubblico nella regione.<br/>
-                Attraverso questa partnership, ci impegniamo a offrire soluzioni innovative e efficaci per migliorare la mobilità e la qualità della vita dei cittadini.<br/>
-                Vi ringraziamo per la vostra visita e vi auguriamo un'esperienza informativa e utile durante la vostra navigazione su questo sito.</p>
-</section>
-<section class="sezione-evidente" id="guida_veloce">
-<h1 class="h1titolo">GUIDA VELOCE</h1>
-<p>Questa sezione fornisce un riepilogo pratico delle operazioni fondamentali per configurare correttamente il servizio per la vendita di biglietti e abbonamenti sul sistema  Itineris.</p>
-<h2 id="guida_veloce_h2_0">PRE-REQUISITI</h2>
-<ul>
-<li>Prepara uno schema mentale delle linee gestite</li>
-<li>Individua eventuali casi particolari o sovrapposizioni tra linee</li>
-</ul>
-<h2 id="guida_veloce_h2_1">COME SI ATTIVA UN CORSA SEMPLICE?</h2>
-<p><strong>Menu: Gestione Movimento → POLI</strong></p>
-<p><strong>Azioni:</strong> Crea tutti i poli (fermatate) per il tuo servizio</p>
-<ul>
-<li>Ogni città ha un suo polo identificativo (es. Bari = polo 3).</li>
-<li>Tutte le fermate di quella città usano lo stesso codice.</li>
-<li>➡️ Eccezione: se vuoi distinguere una fermata particolare (es. Bari Zona Industriale), puoi assegnarle un altro codice polo (es. polo 5).</li>
-<li>🚫 Importante: i codici polo (3, 5, ecc.) non possono mai essere usati per città diverse da quella a cui appartengono. Quindi solo Bari può usare i codici 3 e 5.</li>
-</ul>
-<p><strong>Menu: Gestione Movimento → LINEA</strong></p>
-<p><strong>Azioni:</strong> Crea i percorsi completi di ogni linea. Per ciascuno, organizza un template dove siano indicate le fermate, i tempi di percorrenza tra di esse e la fascia chilometrica che determina il prezzo.</p>
-<ul>
-<li>Per ogni variazione di percorso bisogna creare un nuovo template</li>
-<li>Anche per i ritorni bisogna creare un nuovo template</li>
-</ul>
-<p><strong>Menu: Gestione Movimento → CORSE</strong></p>
-<p><strong>Azioni:</strong>Imposta per ogni linea creata, l’orario di partenza e la relativa frequenza della corsa.</p>
-<h2 id="guida_veloce_h2_2">COME SI ATTIVA UN ABBONAMENTO?</h2>
-<p><strong>Menu: Gestione Movimento → Titoli di viaggio</strong></p>
-<p><strong>Azioni:</strong> Abilita i tipi di abbonamento che desideri rendere disponibili.</p>
-<ol>
-<li>Gli abbonamenti possono essere gestiti per linea o per codice contabile.</li>
-<li>Se abiliti un titolo senza ulteriori configurazioni, sarà attivo su tutte le corse.</li>
-<li>Se gli stessi poli sono presenti in più linee, il sistema mostrerà solo l’abbonamento più costoso.</li>
-<li>È possibile escludere singoli poli da una linea.</li>
-<li>Per abbonamenti con un prezzo “atipico”, puoi forzare l’importo da:
-    <br/>Menu → <strong>Eccezioni</strong> → Eccezioni tariffarie abbonamenti.</li>
-</ol>
-<h2 id="guida_veloce_h2_3">ESEMPIO DI CONFIGURAZIONE</h2>
-<p><strong>Scenario:</strong> Hai due linee attive:</p>
-<ul>
-<li><strong>Linea 99</strong> → Bari (partenza da via Capruzzi) → Lecce (con fermate in vari comuni)</li>
-<li><strong>Linea 109</strong> → Bari (partenza da Zona Industriale) → Lecce (con meno fermate)</li>
-</ul>
-<p>Se il codice contabile del polo “Bari” è lo stesso per entrambe, il sistema proporrà solo l’abbonamento più costoso.</p>
-<img alt="Schema Abbonamenti" src="img/ABBONAMENTOVELOCE.png" style="width: 60%; height: auto; margin: 20px 0; cursor: zoom-in;"/>
-<h3>Soluzione</h3>
-<ol>
-<li>Vai su <strong>Gestione Movimento</strong> → <strong>Poli</strong></li>
-<li>Modifica il codice contabile del polo <strong>“Bari - Zona Industriale”</strong> </li>
-<li>Aggiungi una descrizione al polo, ad esempio:<strong>“Zona Industriale”</strong> <br/>
- In questo modo sul sito shop <a href="https://biglietteria.cotrap.it/#/ricerca" target="_blank">https://biglietteria.cotrap.it/#/ricerca</a> apparirà come: <strong>“Bari - Zona Industriale”</strong></li>
-<li>Ricordati di cliccare su <strong>“Pubblica” </strong>dopo aver salvato le modifiche</li>
-</ol>
-<p><strong>Risultato:</strong> In fase di acquisto l’utente vedrà:</p>
-<ul>
-<li><strong>Bari – Lecce</strong> → 50€</li>
-<li><strong>Bari (Zona Industriale) – Lecce</strong> → 20€</li>
-</ul>
-<h2 id="guida_veloce_h2_4">ESEMPIO DI CONFIGURAZIONE 2</h2>
-<p><strong>Scenario:</strong> Sulla linea 99 è presente un passaggio tra Polignano e Brindisi che non si vuole includere nell'abbonamento 52 corse</p>
-<h3>Soluzione</h3>
-<ol>
-<li>Vai su <strong>Menu: Gestione Movimento → Titoli di viaggio</strong>
-<li>Clicca sul pulsante <strong>MODIFICA</strong> relativo all' <strong>Abb. Mensile/52</strong> </li>
-<li>Scorrere fino a <strong>Codici Contabili da escludere</strong> e inserire <strong>Il NOME</strong> del polo nel primo campo + eventuale <strong>Frazione</strong> e selezionare il <strong>Codice Contabile</strong> esatto dal menu' a tendina </li>
-<li>Ricordati di cliccare su <strong>“Pubblica” </strong>dopo aver salvato le modifiche con il tasto <strong>CONFERMA</strong> </li>
-</li></ol>
-</section>
-<!-- INTRODUZIONE -->
+        </li>
+        <li class="special" data-page="app_controllo" tabindex="0">📱 APP Controllo</li>
+    </ul>
+</div>
+
+<div class="horizontal-menu">
+    <ul></ul>
+</div>
+
+<div class="breadcrumb-container">
+    </div>
+
+<div class="content" id="content">
+
+    <section class="sezione-evidente" id="home">
+        <h1 class="h1titolo collapsible">Home</h1>
+        <div class="collapsible-content">
+            <h2>Benvenuti sulla Guida per i Sistemi Itineris!</h2>
+            <p>
+                Siamo lieti di darvi il benvenuto sulla nostra guida completa per i sistemi Itineris. Questo sito è stato appositamente creato per fornire un'ampia panoramica sulle funzionalità dei nostri sistemi, offrendo informazioni dettagliate e istruzioni chiare per una migliore comprensione e utilizzo.<br>
+                Per navigare efficacemente su questo sito, vi invitiamo cordialmente ad utilizzare il menu sulla sinistra, qui troverete una serie di voci di menu che vi condurranno direttamente alle sezioni di vostro interesse. Cliccando su una voce di menu, potrete accedere rapidamente alle informazioni desiderate.<br>
+                È importante sottolineare che i sistemi Itineris sono stati sviluppati in collaborazione con il Consorzio Trasporti Puglia (COTRAP), volti al miglioramento dei servizi di trasporto pubblico nella regione.<br>
+                Attraverso questa partnership, ci impegniamo a offrire soluzioni innovative e efficaci per migliorare la mobilità e la qualità della vita dei cittadini.<br>
+                Vi ringraziamo per la vostra visita e vi auguriamo un'esperienza informativa e utile durante la vostra navigazione su questo sito.
+            </p>
+        </div>
+    </section>
+
+    <section class="sezione-evidente" id="guida_veloce">
+        <h1 class="h1titolo collapsible">GUIDA VELOCE</h1>
+        <div class="collapsible-content">
+            <p>Questa sezione fornisce un riepilogo pratico delle operazioni fondamentali per configurare correttamente il servizio per la vendita di biglietti e abbonamenti sul sistema Itineris.</p>
+            <h2 id="guida_veloce_h2_0">PRE-REQUISITI</h2>
+            <ul class="checklist">
+                <li><input type="checkbox" id="chk1"><label for="chk1">Prepara uno schema mentale delle linee gestite</label></li>
+                <li><input type="checkbox" id="chk2"><label for="chk2">Individua eventuali casi particolari o sovrapposizioni tra linee</label></li>
+            </ul>
+            <h2 id="guida_veloce_h2_1">COME SI ATTIVA UN CORSA SEMPLICE?</h2>
+            <p><strong>Menu: Gestione Movimento → <span class="tooltip" data-tooltip="Le fermate fisiche del servizio. Ogni città ha un suo codice polo.">POLI</span></strong></p>
+            <p><strong>Azioni:</strong> Crea tutti i poli (fermate) per il tuo servizio</p>
+            <ul>
+                <li>Ogni città ha un suo polo identificativo (es. Bari = polo 3).</li>
+                <li>Tutte le fermate di quella città usano lo stesso codice.</li>
+                <li>➡️ Eccezione: se vuoi distinguere una fermata particolare (es. Bari Zona Industriale), puoi assegnarle un altro codice polo (es. polo 5).</li>
+                <li>🚫 Importante: i codici polo (3, 5, ecc.) non possono mai essere usati per città diverse da quella a cui appartengono. Quindi solo Bari può usare i codici 3 e 5.</li>
+            </ul>
+            <p><strong>Menu: Gestione Movimento → LINEA</strong></p>
+            <p><strong>Azioni:</strong> Crea i percorsi completi di ogni linea. Per ciascuno, organizza un <span class="tooltip" data-tooltip="Modello predefinito di un percorso, con fermate, tempi e fasce chilometriche.">template</span> dove siano indicate le fermate, i tempi di percorrenza tra di esse e la fascia chilometrica che determina il prezzo.</p>
+            <ul>
+                <li>Per ogni variazione di percorso bisogna creare un nuovo template.</li>
+                <li>Anche per i ritorni bisogna creare un nuovo template.</li>
+            </ul>
+            <p><strong>Menu: Gestione Movimento → CORSE</strong></p>
+            <p><strong>Azioni:</strong> Imposta per ogni linea creata, l’orario di partenza e la relativa frequenza della corsa.</p>
+            <h2 id="guida_veloce_h2_2">COME SI ATTIVA UN ABBONAMENTO?</h2>
+            <p><strong>Menu: Gestione Movimento → Titoli di viaggio</strong></p>
+            <p><strong>Azioni:</strong> Abilita i tipi di abbonamento che desideri rendere disponibili.</p>
+            <ol class="checklist">
+                <li><input type="checkbox" id="chk3"><label for="chk3">Gli abbonamenti possono essere gestiti per linea o per codice contabile.</label></li>
+                <li><input type="checkbox" id="chk4"><label for="chk4">Se abiliti un titolo senza ulteriori configurazioni, sarà attivo su tutte le corse.</label></li>
+                <li><input type="checkbox" id="chk5"><label for="chk5">Se gli stessi poli sono presenti in più linee, il sistema mostrerà solo l’abbonamento più costoso.</label></li>
+                <li><input type="checkbox" id="chk6"><label for="chk6">È possibile escludere singoli poli da una linea.</label></li>
+                <li><input type="checkbox" id="chk7"><label for="chk7">Per abbonamenti con un prezzo “atipico”, puoi forzare l’importo da: Menu → <strong>Eccezioni</strong> → Eccezioni tariffarie abbonamenti.</label></li>
+            </ol>
+            <h2 id="guida_veloce_h2_3">ESEMPIO DI CONFIGURAZIONE</h2>
+            <p><strong>Scenario:</strong> Hai due linee attive:</p>
+            <ul>
+                <li><strong>Linea 99</strong> → Bari (partenza da via Capruzzi) → Lecce (con fermate in vari comuni)</li>
+                <li><strong>Linea 109</strong> → Bari (partenza da Zona Industriale) → Lecce (con meno fermate)</li>
+            </ul>
+            <p>Se il codice contabile del polo “Bari” è lo stesso per entrambe, il sistema proporrà solo l’abbonamento più costoso.</p>
+            <img alt="Schema Abbonamenti" src="img/ABBONAMENTOVELOCE.png" loading="lazy" style="width: 60%; height: auto; margin: 20px 0;"/>
+            <h3>Soluzione</h3>
+            <ol>
+                <li>Vai su <strong>Gestione Movimento → Poli</strong></li>
+                <li>Modifica il codice contabile del polo <strong>“Bari - Zona Industriale”</strong></li>
+                <li>Aggiungi una descrizione al polo, ad esempio: <strong>“Zona Industriale”</strong><br>In questo modo sul sito shop <a href="https://biglietteria.cotrap.it/#/ricerca" target="_blank">https://biglietteria.cotrap.it/#/ricerca</a> apparirà come: <strong>“Bari - Zona Industriale”</strong></li>
+                <li>Ricordati di cliccare su <strong>“Pubblica”</strong> dopo aver salvato le modifiche.</li>
+            </ol>
+            <p><strong>Risultato:</strong> In fase di acquisto l’utente vedrà:</p>
+            <ul>
+                <li><strong>Bari – Lecce</strong> → 50€</li>
+                <li><strong>Bari (Zona Industriale) – Lecce</strong> → 20€</li>
+            </ul>
+            <h2 id="guida_veloce_h2_4">ESEMPIO DI CONFIGURAZIONE 2</h2>
+            <p><strong>Scenario:</strong> Sulla linea 99 è presente un passaggio tra Polignano e Brindisi che non si vuole includere nell'abbonamento 52 corse.</p>
+            <h3>Soluzione</h3>
+            <ol>
+                <li>Vai su <strong>Menu: Gestione Movimento → Titoli di viaggio</strong></li>
+                <li>Clicca sul pulsante <strong>MODIFICA</strong> relativo all'<strong>Abb. Mensile/52</strong></li>
+                <li>Scorri fino a <strong>Codici Contabili da escludere</strong> e inserisci <strong>Il NOME</strong> del polo nel primo campo + eventuale <strong>Frazione</strong> e seleziona il <strong>Codice Contabile</strong> esatto dal menu a tendina.</li>
+                <li>Ricordati di cliccare su <strong>“Pubblica”</strong> dopo aver salvato le modifiche con il tasto <strong>CONFERMA</strong>.</li>
+            </ol>
+        </div>
+    </section>
+
+   <!-- INTRODUZIONE -->
 <section class="sezione-evidente" id="introduzione">
 <h1 class="h1titolo">INTRODUZIONE</h1>
 <h2 id="introduzione_h2_0">OBIETTIVO DEL DOCUMENTO</h2>
@@ -222,7 +219,8 @@
 <li>Browser privilegiato Google Chrome.</b></li>
 </ul>
 </section>
-<!-- PROFILO COMMERCIALE -->
+
+    <!-- PROFILO COMMERCIALE -->
 <section class="sezione-evidente" id="profilo_commerciale">
 <h1 class="h1titolo">PROFILO COMMERCIALE</h1>
 <p>In questa sezione saranno dettagliate tutte le procedure relative all'inserimento e alla gestione delle linee, corse lato commerciale e movimento. </p>
@@ -759,44 +757,14 @@
 <img alt="Scansione biglietto" src="img/wal.s.set.12.png" class="ridotta"/>
 <img alt="Scansione biglietto" src="img/wal.u.men.png" class="ridotta"/>
 </section>
+    
+</div> <button id="scrollToTop" title="Torna su">⬆</button>
+
+<div id="lightbox-overlay">
+    <img alt="Zoom immagine" id="lightbox-image" src=""/>
 </div>
+
 <script src="script.js"></script>
-<button id="scrollToTop" title="Torna su">⬆</button>
-<script src="script.js"></script>
-<style>
-    #lightbox-overlay {
-      display: none;
-      position: fixed;
-      z-index: 9999;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      justify-content: center;
-      align-items: center;
-    }
-    #lightbox-overlay img {
-      max-width: 90%;
-      max-height: 90%;
-      border: 4px solid white;
-      border-radius: 10px;
-    }
-    </style>
-<div id="lightbox-overlay" onclick="this.style.display='none'">
-<img alt="Zoom immagine" id="lightbox-image" src=""/>
-</div>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-      const overlay = document.getElementById("lightbox-overlay");
-      const lightboxImg = document.getElementById("lightbox-image");
-      document.querySelectorAll("img").forEach(img => {
-        if (!img.closest("#lightbox-overlay")) {
-          img.style.cursor = "zoom-in";
-          img.onclick = () => {
-            lightboxImg.src = img.src;
-            overlay.style.display = "flex";
-          };
-        }
-      });
-    });
-    </script>
-<button id="scrollToTop" title="Torna su">↑</button></body>
+
+</body>
 </html>
