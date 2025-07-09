@@ -236,5 +236,27 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // --- INIZIALIZZAZIONE ---
-    document.querySelector('.menu li[data-page="home"]').click();
+    
+    function handlePageLoadFromURL() {
+        const hash = window.location.hash; // Prende la parte dell'URL dopo il #
+
+        if (hash) {
+            // Se c'è un hash (es. #introduzione), toglie il #
+            const pageId = hash.substring(1); 
+            
+            // Cerca la voce di menu corrispondente
+            const targetMenuItem = document.querySelector(`.menu li[data-page="${pageId}"]`);
+
+            if (targetMenuItem) {
+                // Se la trova, simula un click per aprire la sezione giusta
+                targetMenuItem.click();
+                return; // Esce dalla funzione
+            }
+        }
+
+        // Se non c'è un hash o se l'hash non è valido, carica la Home di default
+        document.querySelector('.menu li[data-page="home"]').click();
+    }
+
+    handlePageLoadFromURL(); // Esegui la nuova funzione al caricamento della pagina
 });
