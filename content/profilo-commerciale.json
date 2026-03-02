@@ -1,0 +1,266 @@
+{
+  "id": "profilo-commerciale",
+  "titolo": "PROFILO COMMERCIALE",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "In questa sezione saranno dettagliate tutte le procedure relative all'inserimento e alla gestione delle linee, corse lato commerciale e movimento."
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "pre-requisiti",
+      "titolo": "PRE-REQUISITI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "È necessario procedere con alcune azioni da fare preventivamente rispetto alla creazione di una linea su Itineris. Queste operazioni sono necessarie per garantire uniformità di dati tra Itineris e Tecbus."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Dal sito Tecbus si verificano polimetriche attive, e tariffe per uniformare vendita online con macchinetta di bordo.",
+            "Dal sito Tecbus recuperare codici contabili dei poli, codice linea, descrizione linea, competenza (regionale, provinciale ecc…)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "creazione-linea",
+      "titolo": "CREAZIONE LINEA",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Nel dettaglio, per l'inserimento di una linea, l'utente deve seguire la serie di passi successivi di seguito riportati e descritti poi nel corpo del manuale:"
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "<b>Configurazione:</b> step volto alla consultazione di informazioni preliminari di gestione dell'amministratore cotrap che poi ritorneranno utili per lo svolgimento dell'esercizio;",
+            "<b>Gestione Movimento:</b> step volto all'effettiva creazione dei dati necessari per la linea che poi sarà vendibile sul sito e-commerce <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e app clienti;",
+            "<b>Eccezioni:</b> step per l'inserimento di eventuali variazioni straordinarie dell'esercizio;",
+            "<b>Ordini:</b> funzionalità volta a fornire dettagli sui biglietti venduti e possibilità di ricerca;",
+            "<b>Esportazioni:</b> funzionalità relativa alla possibilità di scaricare in formato excel o txt i dati ricercati."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "configurazione",
+      "titolo": "CONFIGURAZIONE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Nella Home cliccare su configurazione. In questa sezione saranno configurati da Cotrap tutti i parametri regionali (calendario scolastico, tariffari). Il consorziato potrà consultare questa sezione per regolarsi su come impostare le linee."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Di seguito spieghiamo i passaggi per poter inserire tutti i dati necessari per creare una corsa."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine04.3.png",
+          "alt": "Menu Configurazione",
+          "didascalia": "Accesso alla sezione Configurazione"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Di <b>\"Configurazione\"</b> fanno parte i seguenti punti:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Tariffari</b>",
+            "Calendari",
+            "Frequenza Corsa",
+            "Utenti App Controlli"
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine04.3b.png",
+          "alt": "Sottomenu Configurazione",
+          "didascalia": "Voci del menu Configurazione"
+        }
+      ]
+    },
+    {
+      "id": "tariffari",
+      "titolo": "TARIFFARI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione vengono aggiornati dal consorzio i tariffari regionali. Clicca su tariffari nel caso in cui si vogliano vedere i tariffari."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1.png",
+          "alt": "Lista Tariffari",
+          "didascalia": "Elenco dei tariffari disponibili"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1b.png",
+          "alt": "Tariffari dettaglio",
+          "didascalia": ""
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona01.png",
+          "testo": "Cliccando sull'icona è possibile visualizzare i tariffari km regionali, i dati non sono modificabili."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1c.png",
+          "alt": "Dettaglio Tariffari",
+          "didascalia": "Visualizzazione dettaglio tariffario chilometrico"
+        }
+      ]
+    },
+    {
+      "id": "calendari",
+      "titolo": "CALENDARI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione vengono aggiornati dal consorzio i calendari scolastici regionali, necessari per identificare le frequenze, itineris definisce automaticamente la vendita in base alla frequenza. Es. non sarà possibile acquistare una corsa con frequenza scolastica se da calendario la data ricercata dall'utente rientra nel range temporale delle vacanze di natale."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2.png",
+          "alt": "Lista Calendari",
+          "didascalia": "Elenco dei calendari scolastici"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2b.png",
+          "alt": "Calendari dettaglio",
+          "didascalia": ""
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona01.png",
+          "testo": "Cliccando sull'icona sarà possibile visionare il calendario."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2c.png",
+          "alt": "Dettaglio Calendario",
+          "didascalia": "Visualizzazione calendario scolastico"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2d.png",
+          "alt": "Calendario dettaglio 2",
+          "didascalia": ""
+        }
+      ]
+    },
+    {
+      "id": "frequenza-corsa",
+      "titolo": "FREQUENZA CORSA",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione saranno inserite da ciascun consorziato le frequenze relative alle proprie linee."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3.png",
+          "alt": "Lista Frequenze",
+          "didascalia": "Elenco delle frequenze corsa"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su \"aggiungi\" in alto a destra."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3b.png",
+          "alt": "Form Frequenza 1",
+          "didascalia": ""
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3c.png",
+          "alt": "Form Frequenza",
+          "didascalia": "Maschera inserimento nuova frequenza"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione frequenza:</b> es. giornaliera, giornaliera estiva, giornaliera invernale, feriale sabato, feriale lunedì - venerdì, scolastiche e non scolastiche in base alle proprie necessità",
+            "<b>Data inizio validità - data fine validità</b> (Attenzione: da compilare solo in caso di frequenze con range di validità personalizzato o che non segue il calendario scolastico, ad esempio se si vuole creare una frequenza scolastica si sceglie la frequenza relativa nella tipologia, il range di validità fa automaticamente riferimento al calendario scolastico.) In caso di dubbi rivolgersi all'amministratore.",
+            "<b>Definire la tipologia</b> dal menù a tendina tra: Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva.",
+            "<b>Personalizzare come da necessità.</b>",
+            "<b>Infine cliccare su conferma in basso a destra per memorizzare i dati inseriti.</b>"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "utenti-app-controlli",
+      "titolo": "UTENTI APP CONTROLLI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa funzione è possibile inserire gli autisti o i controllori atti al controllo dei biglietti dall'app itineris dedicata che potrà essere scaricata sul telefono degli autisti."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Clicca su <b>\"AGGIUNGI\"</b> per inserire un nuovo utente dell'app (autista o controllore)"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.4.png",
+          "alt": "Lista Utenti App",
+          "didascalia": "Elenco utenti app controllo"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccando su <b>\"AGGIUNGI\"</b> sarà possibile inserire i dati di chi effettuerà il controllo."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.4b.png",
+          "alt": "Form Utente App",
+          "didascalia": "Maschera inserimento nuovo utente"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire tutti i dati richiesti. E cliccare su conferma."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Attendere che la colonna \"stato\" sia aggiornata su \"confermato\", in caso contrario sarà mostrato lo stato \"in attesa di conferma\"."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione:</b> Dopo aver inserito l'utente (autista/controllore/controllore esterno) è necessario attivare l'utente al controllo con un secondo passaggio. L'utente infatti dovrà scaricare sul proprio cellulare Android l'app di controllo attraverso il link fornito dal Consorzio. Separatamente sarà fornito il manuale di funzionamento dell'app di controllo."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "id": "gestione-movimento",
+  "titolo": "GESTIONE MOVIMENTO",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [],
+  "sottosezioni": [
+    {
+      "id": "comprendere-il-sistema",
+      "titolo": "COMPRENDERE IL SISTEMA",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Questa sezione è la parte operativa più importante in quanto si riporta su itineris tutto l'esercizio." },
+        { "tipo": "paragrafo", "testo": "Dopo aver fatto i passaggi precedenti è necessario inserire i codici contabili, i poli, le linee e le corse. Tutte queste operazioni si devono eseguire nella sezione Gestione movimento." },
+        { "tipo": "immagine", "src": "Immagine5.0.png", "alt": "Menu Gestione Movimento", "didascalia": "Accesso alla sezione Gestione Movimento" },
+        { "tipo": "paragrafo", "testo": "In questa sezione è possibile visualizzare le seguenti voci di menu:" },
+        { "tipo": "lista", "items": ["<b>Mezzi</b>","<b>Codici contabili poli</b>","<b>Poli</b>","<b>Linee</b>","<b>Corse</b>","<b>Note</b>"] },
+        { "tipo": "immagine", "src": "Immagine5.0b.png", "alt": "Sottomenu Gestione Movimento", "didascalia": "Voci disponibili in Gestione Movimento" }
+      ]
+    },
+    {
+      "id": "mezzi",
+      "titolo": "MEZZI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Questa sezione è dedicata all'inserimento dei mezzi del parco veicoli. In questo momento non è necessario inserire alcun mezzo. La gestione del numero dei posti disponibili sarà gestita in un'altra sezione." }
+      ]
+    },
+    {
+      "id": "codici-contabili",
+      "titolo": "CODICI CONTABILI POLI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Come anticipato è necessario recuperare i codici contabili dei poli in uso da Tecbus. Un solo codice contabile deve essere associato ad un Comune." },
+        { "tipo": "avviso", "stile": "warning", "testo": "<b>Attenzione:</b> alle frazioni dei Comuni è necessario associare un altro codice contabile. (Esempio: Bari avrà un codice contabile, Palese-Bari ne avrà un altro.)" },
+        { "tipo": "immagine", "src": "Immagine5.2.png", "alt": "Lista Codici Contabili", "didascalia": "Elenco codici contabili poli" },
+        { "tipo": "paragrafo", "testo": "Cliccare su \"Aggiungi\" in alto a destra" },
+        { "tipo": "immagine", "src": "Immagine5.2b.png", "alt": "Form Codice Contabile", "didascalia": "Maschera inserimento codice contabile" },
+        { "tipo": "lista", "items": ["<b>Codice:</b> inserire codice contabile","<b>Descrizione:</b> lasciare il campo vuoto","<b>Comune:</b> inserire il comune","<b>Frazione:</b> scegliere tra le opzioni in caso sia necessario"] },
+        { "tipo": "avviso", "stile": "info", "testo": "Alla fine di ogni inserimento di poli cliccare sul tasto Conferma in basso a destra." }
+      ]
+    },
+    {
+      "id": "codici-contabili-alternativi",
+      "titolo": "CODICI CONTABILI ALTERNATIVI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Eccezionalmente è possibile identificare uno stesso Comune con due codici contabili differenti. Se per esempio ci sono corse con un tragitto particolare per cui cambia anche la tariffa (Esempio: Corse rapide che potrebbero costare di più) si può identificare (se esiste già su tecbus) il polo con due codici." }
+      ]
+    },
+    {
+      "id": "poli",
+      "titolo": "POLI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine5.3.png", "alt": "Menu Poli", "didascalia": "Accesso alla gestione Poli" },
+        { "tipo": "paragrafo", "testo": "In questa sezione è possibile inserire le fermate associate al polo codificato nel passaggio precedente." },
+        { "tipo": "immagine", "src": "Immagine5.3b.png", "alt": "Lista Poli", "didascalia": "Elenco poli inseriti" },
+        { "tipo": "paragrafo", "testo": "Cliccare su \"aggiungi\"" },
+        { "tipo": "lista", "items": ["<b>Denominazione:</b> fermata precisa","<b>Regione:</b> scegliere la Regione","<b>Provincia:</b> inserire la provincia","<b>Comune:</b> inserire il Comune","<b>Frazione:</b> inserire eventualmente la frazione","<b>Codice Contabile:</b> indicare il codice contabile del polo di riferimento","<b>Latitudine:</b> recuperare le coordinate da google maps e copiarle in questo campo","<b>Longitudine:</b> recuperare le coordinate da google maps e copiarle in questo campo","<b>Cliccare su:</b> Geolocalizza (eventualmente spostare il simbolo sul punto preciso di transito se quello riportato da google non risulta preciso)","<b>Fermata principale:</b> selezionare solo nel caso si voglia mettere in evidenza questa fermata","<b>Primaria:</b> selezionare in caso si vogliano inserire più fermate principali e tra queste selezionare quella più importante","<b>Descrizione:</b> aggiungere eventuali note (es. fermata zona industriale….)"] },
+        { "tipo": "avviso", "stile": "info", "testo": "<b>Importante:</b> cliccare a fine operazione su \"Conferma\". Ripetere tutti i passaggi per ciascuna fermata." },
+        { "tipo": "immagine", "src": "Immagine5.3c.png", "alt": "Esempio Polo", "didascalia": "Esempio di una fermata caricata su Itineris" },
+        { "tipo": "paragrafo", "testo": "Una volta inserita la fermata la schermata visualizzerà la riga di riferimenti:" },
+        { "tipo": "immagine", "src": "Immagine5.3d.png", "alt": "Riga Polo", "didascalia": "Visualizzazione polo inserito con operazioni disponibili" },
+        { "tipo": "paragrafo", "testo": "A destra c'è la colonna \"operazione\". Le icone rappresentano nell'ordine da sinistra a desta: geolocalizzazione, visualizza/modifica, pubblica, cancella." }
+      ]
+    },
+    {
+      "id": "linee",
+      "titolo": "LINEE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine5.4.png", "alt": "Menu Linee", "didascalia": "Accesso alla gestione Linee" },
+        { "tipo": "paragrafo", "testo": "In questa sezione si deve creare il template, ovvero lo \"stampino\" della linea che si ripeterà nei vari orari corsa per corsa." },
+        { "tipo": "paragrafo", "testo": "Cliccare su aggiungi per inserire una nuova linea." },
+        { "tipo": "immagine", "src": "Immagine5.4b.png", "alt": "Form Linea", "didascalia": "Maschera inserimento nuova linea" },
+        { "tipo": "immagine", "src": "Immagine5.4c.png", "alt": "Schermata Linea", "didascalia": "" },
+        { "tipo": "lista", "items": ["<b>Denominazione:</b> riportare denominazione della linea presente su Tecbus (es. Corato - Trani)","<b>Codice Contabile:</b> inserire il codice contabile della linea presente in Tecbus","<b>Tipologia:</b> selezionare la competenza della linea tra Regionale, Provinciale, Comunale (linee urbane. In questo modo la tariffa non sarà su base chilometrica ma sarà già importata la tariffa indicata dalla Regione per le linee urbane)","<b>Descrizione:</b> inserire eventuali aspetti identificativi della linea"] },
+        { "tipo": "paragrafo", "testo": "Creare il template della linea, inserendo la denominazione ed eventuali descrizioni. Cliccare quindi sul tasto + a destra. In una stessa linea creare il template di andata e quello di ritorno." },
+        { "tipo": "immagine", "src": "Immagine5.4d.png", "alt": "Template Linea", "didascalia": "Creazione template andata e ritorno" },
+        { "tipo": "avviso", "stile": "warning", "testo": "<b>Attenzione:</b> in questo passaggio è possibile creare direttamente il template e confermare tutto alla fine, oppure è possibile confermare in questo passaggio e poi creare il template." },
+        { "tipo": "paragrafo", "testo": "Spiegazione Tools (ovvero gli strumenti e le operazioni che trovate sulla destra)" },
+        { "tipo": "immagine", "src": "Immagine5.4e.png", "alt": "Tools Linea", "didascalia": "Icone strumenti disponibili" },
+        { "tipo": "tools-grid", "items": [
+          {"icona": "icona02.png", "nome": "Mostra fermate sulla mappa", "descrizione": "Una volta inserite tutte le fermate sarà possibile visualizzarle tutte sulla mappa"},
+          {"icona": "icona03.png", "nome": "Esporta in GeoJSON", "descrizione": "Gestione Amministratore Cotrap"},
+          {"icona": "icona04.png", "nome": "Template", "descrizione": "Modello predefinito che sarà da base per la creazione di tutte le corse relative a quella linea"},
+          {"icona": "icona05.png", "nome": "Duplica", "descrizione": "Nel caso si volesse creare un nuovo template con lo stesso template di quella precedente"},
+          {"icona": "icona06.png", "nome": "Duplica e Inverti", "descrizione": "Per creare il ritorno del template, riportando già le fermate al contrario rispetto alla linea in questione"},
+          {"icona": "icona07.png", "nome": "Modifica", "descrizione": "Nel caso in cui si voglia procedere con delle modifiche (ad esempio nella corsa di ritorno cambiare il civico della fermata"},
+          {"icona": "icona08.png", "nome": "Elimina", "descrizione": "Eliminare il template"}
+        ]}
+      ]
+    },
+    {
+      "id": "creazione-template",
+      "titolo": "CREAZIONE DEL TEMPLATE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Questa fase risulta tra le più delicate in quanto determina la correttezza del percorso che poi sarà replicato su tutte le corse che fanno parte di una determinata linea. Quindi determinano anche ciò che verrà mostrato vendibile sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>." },
+        { "tipo": "paragrafo", "testo": "Cliccando sull'icona \"visualizza template\" si apre la seguente schermata" },
+        { "tipo": "immagine", "src": "Immagine5.4.1.png", "alt": "Template Vuoto", "didascalia": "Schermata template vuoto" },
+        { "tipo": "avviso", "stile": "warning", "testo": "<b>Attenzione:</b> cliccare su conferma in questa sezione non significa aver confermato tutto l'inserimento." },
+        { "tipo": "paragrafo", "testo": "<b>1</b> Cliccare su Aggiungi" },
+        { "tipo": "immagine", "src": "Immagine5.4.1b.png", "alt": "Aggiungi Fermata Template", "didascalia": "Aggiunta fermata al template" },
+        { "tipo": "paragrafo", "testo": "<b>2</b> Cliccando nel riquadro, si potranno visualizzare tutti i poli e le relative fermate inserite nella funzione \"POLI\"." },
+        { "tipo": "immagine", "src": "Immagine5.4.1c.png", "alt": "Selezione Polo", "didascalia": "Selezione del polo dalla lista" },
+        { "tipo": "immagine", "src": "Immagine5.4.1d.png", "alt": "Polo selezionato", "didascalia": "Coordinate visualizzate dopo la selezione" },
+        { "tipo": "paragrafo", "testo": "Selezionando una delle fermate indicate (che sarà la prima della vostra linea) saranno visualizzate direttamente le coordinate." },
+        { "tipo": "immagine", "src": "Immagine5.4.1e.png", "alt": "Fermata con coordinate", "didascalia": "" },
+        { "tipo": "immagine", "src": "Immagine5.4.1f.png", "alt": "Seconda fermata", "didascalia": "" },
+        { "tipo": "immagine", "src": "Immagine5.4.1g.png", "alt": "Selezione seconda fermata", "didascalia": "" },
+        { "tipo": "avviso", "stile": "warning", "testo": "<b>Attenzione:</b> se si sceglie una fermata che appartiene allo stesso polo (quindi stesso comune) si deve inserire alla voce KM 0. In questo modo non sarà generata tariffa essendo fermate dallo stesso comune e non sarà possibile la bigliettazione e quindi l'acquisto dal sito cotrap di biglietti con andata e partenza su stesso polo." },
+        { "tipo": "paragrafo", "testo": "Inserire invece i minuti di transito (minuti che ci impiega il mezzo ad arrivare alla fermata in questione partendo dalla prima fermata, quindi il capolinea, e non dalla fermata immediatamente precedente) per definire orario preciso di passaggio dalla fermata indicata." },
+        { "tipo": "immagine", "src": "Immagine5.4.1h.png", "alt": "Inserimento minuti", "didascalia": "Inserimento minuti di transito" },
+        { "tipo": "avviso", "stile": "info", "testo": "Si suggerisce di aggiungere tutte le fermate e poi cliccare su conferma." },
+        { "tipo": "avviso", "stile": "info", "testo": "È possibile che si debbano creare più template per una stessa linea in base alle singole specifiche (ad esempio se ad un certo orario oppure in una giornata particolare la linea prevede una variazione di percorso, si utilizzerà uno dei template creati)." },
+        { "tipo": "immagine", "src": "Immagine5.4.1i.png", "alt": "Esempio Template", "didascalia": "Esempio di template con più varianti" },
+        { "tipo": "paragrafo", "testo": "In questo esempio la linea Bitonto - Santo Spirito ha diversi template, specificati nella denominazione con le caratteristiche peculiari del template. Es \"no merc oppure Merc. Ecc…\"" },
+        { "tipo": "box-nota", "titolo": "Nota: Modifica template con corse associate", "contenuto": ["Disattivare le corse che hanno il template in questione","Modificare il template","Cliccare su conferma","Cliccare sul tasto Aggiorna Corse inattive del Template","Rispondere ok nel caso di correttezza della modifica","Cliccare su conferma in basso a destra","Riattivare le corse con il template modificato"] }
+      ]
+    },
+    {
+      "id": "corse",
+      "titolo": "CORSE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "In questa sezione sarà possibile creare le corse associate alle rispettive linee create nel passaggio precedente." },
+        { "tipo": "immagine", "src": "Immagine5.5.png", "alt": "Menu Corse", "didascalia": "Accesso alla gestione Corse" },
+        { "tipo": "paragrafo", "testo": "Cliccare su aggiungi in alto a destra" },
+        { "tipo": "immagine", "src": "Immagine5.5b.png", "alt": "Form Corsa", "didascalia": "Maschera inserimento nuova corsa" },
+        { "tipo": "lista", "items": ["<b>Denominazione:</b> si consiglia di inserire capolinea-capolinea e orario della corsa","<b>Codice Corsa:</b> Questo codice si può scegliere autonomamente. Si tratterà di un codice interno che aiuta ad identificare la corsa specifica. Si consiglia di procedere in modo progressivo inserendo il codice della linea seguito da un punto e poi il numero della corsa. Es: 100.01 (linea 100, codice corsa 01)","<b>Data inizio corsa e data fine corsa:</b> sono valori da inserire solo nel caso quella corsa abbia una validità stagionale o comunque limitata nel tempo. Ad esempio un servizio estivo. In caso contrario si tratti di corse effettuate tutto l'anno lasciare vuoti questi campi","<b>Fornitore:</b> Nel caso sia una linea data in subappalto. In questo modo l'utente che acquisterà il biglietto saprà che la corsa è intestata ad un determinato consorziato, ma che il servizio è effettuato da un altro","<b>Linea:</b> selezionare nel menu a tendina tra quelle precedentemente caricate quella a cui fa capo la corsa che si sta creando","<b>Template:</b> Scegliere dal menu a tendina lo \"stampino\" del percorso che sarà effettuato dalla corsa","<b>Mezzo:</b> lasciare il campo vuoto perché al momento non è necessario inserire dei mezzi particolari","<b>Occupazione Massima:</b> inserire il numero dei biglietti che si vogliono vendere sulla corsa","<b>Frequenza:</b> scegliere dal menu a tendina tra le tipologie di frequenza inserite nella prima fase di progettazione","<b>Stato corsa:</b> lasciare attiva"] },
+        { "tipo": "avviso", "stile": "info", "testo": "Cliccare su \"ATTIVAZIONE/DISATTIVAZIONE AUTOMATICA\" in questo modo se ad esempio di tratta di corsa scolastica si attiverà automaticamente in base al calendario scolastico regionale." },
+        { "tipo": "paragrafo", "testo": "Una volta inseriti i dati iniziali automaticamente il sistema visualizzerà i poli e tutti i dati già impostati nel template" },
+        { "tipo": "immagine", "src": "Immagine5.5c.png", "alt": "Corsa con template", "didascalia": "Visualizzazione corsa con dati del template" },
+        { "tipo": "icona-azione", "icona": "icona07.png", "testo": "Cliccare sul tastino per inserire il primo orario. <b>Attenzione:</b> Sarà necessario inserire solo l'orario di partenza dal capolinea e il sistema in base ai minuti e km inseriti nel template aggiornerà a cascata tutti gli altri orari." },
+        { "tipo": "immagine", "src": "Immagine5.5d.png", "alt": "Inserimento Orario", "didascalia": "Inserimento orario di partenza" },
+        { "tipo": "icona-azione", "icona": "icona09.png", "testo": "Inserire l'orario (ore e minuti) e cliccare sull'icona di conferma" },
+        { "tipo": "immagine", "src": "Immagine5.5e.png", "alt": "Orario inserito", "didascalia": "" },
+        { "tipo": "paragrafo", "testo": "Di seguito si potrà vedere come in automatico il sistema avrà aggiornato gli orari" },
+        { "tipo": "immagine", "src": "Immagine5.5f.png", "alt": "Orari Calcolati", "didascalia": "Orari calcolati automaticamente dal sistema" },
+        { "tipo": "paragrafo", "testo": "Cliccare su conferma in basso a destra. A questo punto la corsa sarà stata creata, ma non ancora vendibile sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>." },
+        { "tipo": "immagine", "src": "Immagine5.5g.png", "alt": "Corsa creata", "didascalia": "" },
+        { "tipo": "icona-azione", "icona": "icona10.png", "testo": "Per attivare la corsa e renderla vendibile si deve cliccare sull'operazione (pubblica/nascondi)." },
+        { "tipo": "paragrafo", "testo": "Cliccando, il sistema richiede conferma perché da quel momento in poi la corsa sarà visibile dagli utenti e quindi è necessario essere sicuri della correttezza dell'operazione." },
+        { "tipo": "immagine", "src": "Immagine5.5h.png", "alt": "Conferma pubblicazione", "didascalia": "Richiesta conferma pubblicazione corsa" },
+        { "tipo": "avviso", "stile": "success", "testo": "Si consiglia inserire prima tutte le corse e poi procedere con la pubblicazione delle stesse. Lo stato attivazione quindi diventerà: \"Attiva\"." },
+        { "tipo": "immagine", "src": "Immagine5.5i.png", "alt": "Corsa attiva", "didascalia": "Corsa con stato Attiva" }
+      ]
+    },
+    {
+      "id": "note",
+      "titolo": "NOTE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine5.6.png", "alt": "Menu Note", "didascalia": "Accesso alla gestione Note" },
+        { "tipo": "paragrafo", "testo": "Questa funzionalità permette di inserire delle indicazioni particolari che verranno visualizzate direttamente dai clienti sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>." },
+        { "tipo": "paragrafo", "testo": "Cliccare su Aggiungi in alto a destra per inserire la nota." },
+        { "tipo": "immagine", "src": "Immagine5.6b.png", "alt": "Aggiungi nota", "didascalia": "" },
+        { "tipo": "immagine", "src": "Immagine5.6c.png", "alt": "Form Nota", "didascalia": "Maschera inserimento nota" },
+        { "tipo": "paragrafo", "testo": "In denominazione inserire il titolo della nota che possa identificare chiaramente la comunicazione." },
+        { "tipo": "box-esempio", "titolo": "Esempio: Comunicazione processione", "contenuto": ["<b>Denominazione:</b> Processione","<b>Data inizio Validità - Data Fine validità:</b> il periodo in cui tale comunicazione sarà visibile su sito","<b>Tipologia:</b> scegliere tra polo, linea o corsa","<b>Testo:</b> la corsa potrebbe subire ritardi per la processione"] },
+        { "tipo": "immagine", "src": "Immagine5.6d.png", "alt": "Nota tipologia corsa", "didascalia": "" },
+        { "tipo": "immagine", "src": "Immagine5.6e.png", "alt": "Conferma nota", "didascalia": "" },
+        { "tipo": "immagine", "src": "Immagine5.6f.png", "alt": "Lista note", "didascalia": "" },
+        { "tipo": "immagine", "src": "Immagine5.6g.png", "alt": "Nota su Sito", "didascalia": "Visualizzazione della nota sul sito COTRAP" }
+      ]
+    }
+  ]
+}

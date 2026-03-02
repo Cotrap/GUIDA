@@ -1,0 +1,64 @@
+{
+  "id": "changelog",
+  "titolo": "Novità e Aggiornamenti",
+  "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
+  "modifiche": [
+    {
+      "versione": "2.1",
+      "data": "2026-02-23",
+      "tipo": "minor",
+      "titolo": "Miglioramenti contenuti e correzioni tecniche",
+      "descrizione": "Revisione completa dei contenuti della guida, correzione di bug JavaScript/CSS e miglioramenti all'esperienza utente.",
+      "dettagli": [
+        "Nuova Home page con card di navigazione rapida verso tutte le sezioni",
+        "Guida Veloce espansa da 5 a 8 passaggi dettagliati",
+        "Corretti path immagini errati in APP Controllo e Sezione Contabile",
+        "Rimosso conflitto immagini tra Gestione Movimento e Sezione Contabile",
+        "Aggiornate tutte le date di ultimo aggiornamento",
+        "Corretti 13 bug in JavaScript: fetch sicuro, race condition, XSS, ricerca ricorsiva, loop navigazione",
+        "Aggiunta pagina di errore con pulsante ricarica se il caricamento fallisce",
+        "Migliorata accessibilità: navigazione da tastiera sulle card, aria-label",
+        "Ottimizzato scroll listener con requestAnimationFrame",
+        "Caricamento iniziale parallelizzato per tempi di avvio più rapidi",
+        "Aggiunta meta description e favicon"
+      ],
+      "sezioni_modificate": ["home", "guida-veloce", "sezione-contabile", "app-controllo"]
+    },
+    {
+      "versione": "2.0",
+      "data": "2026-02-03",
+      "tipo": "major",
+      "titolo": "Nuova Guida Interattiva",
+      "descrizione": "Rilascio della nuova versione della guida con ricerca, navigazione migliorata e sistema di versioning.",
+      "dettagli": [
+        "Aggiunta ricerca full-text",
+        "Nuovo sistema di navigazione",
+        "Badge per sezioni nuove/aggiornate",
+        "Migliorata usabilità mobile"
+      ],
+      "sezioni_modificate": ["home", "introduzione"]
+    }
+  ],
+  "istruzioni_aggiornamento": {
+    "titolo": "Come aggiornare questa guida",
+    "passi": [
+      {
+        "titolo": "Per aggiungere una nuova modifica",
+        "descrizione": "Aggiungi un nuovo oggetto all'array 'modifiche' all'inizio del file (le più recenti prima)"
+      },
+      {
+        "titolo": "Per segnare una sezione come nuova",
+        "descrizione": "Nel file JSON della sezione, imposta 'nuovo': true e aggiorna la data in 'aggiornato'"
+      },
+      {
+        "titolo": "Per aggiornare contenuti",
+        "descrizione": "Modifica il file JSON della sezione interessata e aggiorna la data"
+      }
+    ],
+    "tipi_modifica": [
+      {"tipo": "major", "descrizione": "Grandi cambiamenti, nuove funzionalità importanti", "colore": "#e74c3c"},
+      {"tipo": "minor", "descrizione": "Piccoli miglioramenti, nuove sezioni", "colore": "#f39c12"},
+      {"tipo": "fix", "descrizione": "Correzioni, aggiornamenti contenuti", "colore": "#3498db"}
+    ]
+  }
+}

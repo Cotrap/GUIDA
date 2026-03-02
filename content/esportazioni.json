@@ -1,0 +1,14 @@
+{
+  "id": "esportazioni",
+  "titolo": "ESPORTAZIONI",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [
+    { "tipo": "immagine", "src": "Immagine20.png", "alt": "Menu Esportazioni", "didascalia": "Accesso alla sezione Esportazioni" },
+    { "tipo": "paragrafo", "testo": "Permette di effettuare il download di tutte le esportazioni effettuate. Sia in formato xls, sia in txt." },
+    { "tipo": "paragrafo", "testo": "Esempio:" },
+    { "tipo": "immagine", "src": "Immagine21.png", "alt": "Lista File Esportazioni", "didascalia": "Elenco file disponibili per il download" },
+    { "tipo": "icona-azione", "icona": "icona12.png", "testo": "Cliccando sul tasto a destra saranno scaricati i file corrispondenti." }
+  ],
+  "sottosezioni": []
+}

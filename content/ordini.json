@@ -1,0 +1,65 @@
+{
+  "id": "ordini",
+  "titolo": "ORDINI",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [
+    { "tipo": "immagine", "src": "Immagine10.png", "alt": "Menu Ordini", "didascalia": "Accesso alla sezione Ordini" },
+    { "tipo": "paragrafo", "testo": "La sezione ORDINI è di consultazione. È possibile effettuare ricerche e controlli su quanto venduto dal sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e anche dall'app COTRAP." },
+    { "tipo": "paragrafo", "testo": "Come si può vedere dalla schermata riportata di seguito ci sono diverse possibilità di ricerca:" },
+    { "tipo": "immagine", "src": "Immagine11.png", "alt": "Sottomenu Ordini", "didascalia": "Opzioni di ricerca disponibili" }
+  ],
+  "sottosezioni": [
+    {
+      "id": "biglietti",
+      "titolo": "BIGLIETTI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine12.png", "alt": "Menu Biglietti", "didascalia": "Accesso alla ricerca biglietti" },
+        { "tipo": "paragrafo", "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli titoli di viaggio." },
+        { "tipo": "immagine", "src": "Immagine13.png", "alt": "Form Ricerca Biglietti", "didascalia": "Maschera ricerca biglietti" },
+        { "tipo": "paragrafo", "testo": "È necessario inserire i parametri di ricerca e cliccare su applica." },
+        { "tipo": "lista", "items": ["È possibile effettuare una ricerca in base alla <b>data di acquisto</b> inserendo il range: Data Inizio Ordine - Data Fine Ordine","Invece se si vuole fare una ricerca in base alla <b>data di partenza</b> si può inserire il range di date nei parametri di ricerca dedicati","L'<b>azienda</b> non è modificabile perché il sistema identificherà automaticamente il consorziato","Altri parametri di ricerca sono intuitivi: <b>Linea, Corsa, Comune di partenza, frazione…</b>","<b>Tipologia di pagamento:</b> online (tutti i biglietti acquistati dal sito e dall'app); Credito (tutti i biglietti acquistati con l'app con la modalità di utilizzo credito delle ricariche effettuare precedentemente - ricordiamo che tale funzione è possibile solo su app)","<b>Acquirente:</b> è possibile effettuare la ricerca con nome e cognome dell'utente o indirizzo email","<b>N° Ordine:</b> inserire il numero d'ordine, all'interno nel quale possono essere compresi più biglietti, che saranno differenziati da una lettera finale","<b>Codice Biglietto:</b> inserire il codice compresa la lettera finale. Permette una ricerca mirata del singolo biglietto","<b>Progressivo biglietto:</b> è preferibile non usare questo parametro di ricerca perché il codice numerico è un progressivo interno"] },
+        { "tipo": "avviso", "stile": "info", "testo": "È possibile esportare tutti i risultati di ricerca se necessario con il tasto esporta che restituisce un file .xls con tutti i dettagli dei biglietti ricercati." }
+      ]
+    },
+    {
+      "id": "stati-occupazionali-corse",
+      "titolo": "STATI OCCUPAZIONALI CORSE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine14.png", "alt": "Menu Stati Occupazionali", "didascalia": "Accesso agli stati occupazionali" },
+        { "tipo": "paragrafo", "testo": "È possibile monitorare lo stato di occupazione dei mezzi in base alle corse ricercate." },
+        { "tipo": "immagine", "src": "Immagine15.png", "alt": "Form Stati Occupazionali", "didascalia": "Maschera ricerca stati occupazionali" },
+        { "tipo": "paragrafo", "testo": "Inserire i parametri di ricerca e cliccare su applica." },
+        { "tipo": "avviso", "stile": "warning", "testo": "<b>Attenzione:</b> la percentuale di occupazione è riferita unicamente ai biglietti acquistati online e non tiene conto del venduto cartaceo." },
+        { "tipo": "paragrafo", "testo": "Anche in questo caso è possibile procedere con l'esportazione." }
+      ]
+    },
+    {
+      "id": "stato-controlli",
+      "titolo": "STATO CONTROLLI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine16.png", "alt": "Menu Stato Controlli", "didascalia": "Accesso allo stato controlli" },
+        { "tipo": "paragrafo", "testo": "Con questa funzione è possibile verificare i controlli fatti a bordo sui biglietti online." },
+        { "tipo": "immagine", "src": "Immagine17.png", "alt": "Form Stato Controlli", "didascalia": "Maschera ricerca stato controlli" },
+        { "tipo": "paragrafo", "testo": "Si può inserire la data di controllo e cliccare su applica, ma anche il controllore specifico (nella voce utente)." }
+      ]
+    },
+    {
+      "id": "statistiche-biglietti",
+      "titolo": "STATISTICHE BIGLIETTI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine18.png", "alt": "Menu Statistiche", "didascalia": "Accesso alle statistiche biglietti" },
+        { "tipo": "paragrafo", "testo": "Permette di controllare su determinate corse i biglietti venduti online, quelli controllati e quelli eventualmente non validi. Anche in questo caso è possibile esportare i dati." },
+        { "tipo": "immagine", "src": "Immagine19.png", "alt": "Form Statistiche", "didascalia": "Maschera statistiche biglietti" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "sezione-contabile",
+  "titolo": "SEZIONE CONTABILE",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [
+    { "tipo": "paragrafo", "testo": "Per accedere ad account contabile, è necessario inserire nella prima pagina id utente e password dedicati." },
+    { "tipo": "avviso", "stile": "info", "testo": "Accertarsi di essere nell'account giusto verificando la scritta in basso a sinistra. Nome e Cognome dell'utente e tra parentesi il nome dell'azienda consorziata." },
+    { "tipo": "immagine", "src": "Immagine1.png", "alt": "Dashboard Contabile", "didascalia": "Dashboard sezione contabile" },
+    { "tipo": "paragrafo", "testo": "Questo ambiente serve per ricercare biglietti, ordini (che possono includere anche più biglietti), estrapolare dati contabili." },
+    { "tipo": "paragrafo", "testo": "Le funzioni di questo ambiente sono: <b>ORDINI</b> ed <b>ESPORTAZIONI</b>." },
+    { "tipo": "lista", "items": ["In <b>ORDINI</b> è possibile effettuare le ricerche relative agli ordini, dati contabili, biglietti e statistiche venduto","In <b>Esportazioni</b>, potranno essere visionate e scaricate i dati ricercati nelle precedenti funzioni"] },
+    { "tipo": "immagine", "src": "Immagine2.png", "alt": "Menu Ordini Contabile", "didascalia": "Menu Ordini nella sezione contabile" },
+    { "tipo": "immagine", "src": "Immagine3.png", "alt": "Menu Esportazioni Contabile", "didascalia": "Menu Esportazioni nella sezione contabile" }
+  ],
+  "sottosezioni": [
+    {
+      "id": "ordini-contabile",
+      "titolo": "ORDINI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Ordini ci mostra tutti gli ordini (alcuni dei quali contenenti più biglietti), acquistati dal portale web, dall'app con carta di credito e con il credito e le prenotazioni con abbonamenti." },
+        { "tipo": "avviso", "stile": "info", "testo": "Ricordiamo che sull'app l'utente può registrare la propria carta di credito, effettuare una ricarica sul proprio account ed utilizzare il credito per l'acquisto dei titoli di viaggio." },
+        { "tipo": "paragrafo", "testo": "È possibile attraverso i filtri effettuare delle ricerche dedicate." },
+        { "tipo": "immagine", "src": "Immagine4.png", "alt": "Lista Ordini", "didascalia": "Elenco ordini" },
+        { "tipo": "paragrafo", "testo": "Fare click sul pulsante \"Filtri\"" },
+        { "tipo": "immagine", "src": "Immagine5.png", "alt": "Filtri Ordini", "didascalia": "Pannello filtri ricerca ordini" },
+        { "tipo": "paragrafo", "testo": "Per effettuare la ricerca bisogna inserire i seguenti parametri, in base a ciò che si vuole ricercare:" },
+        { "tipo": "lista", "items": ["<b>Prog:</b> numero dell'ordine o biglietto","<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito","<b>Stato Pagamento:</b> Tutte/Attesa Pagamento/Pagato/Non Emesso/Non Pagato/Annullato/Bloccato/Attesa Rimborso/Rimborsato/Rimborsato Credito","<b>Canale:</b> Tutti/Non Definito (utilizzato solo per il periodo di transizione dalla versione iniziale a quella aggiornata)/App/Portale Web","<b>Acquirente:</b> si può inserire il nominativo dell'utente o l'indirizzo email","<b>Codice Biglietto</b>","<b>N. Tessera</b> (nel caso degli abbonati)"] },
+        { "tipo": "icona-azione", "icona": "icona13.png", "testo": "Dopo aver inserito i parametri si deve cliccare sul tasto di ricerca" },
+        { "tipo": "icona-azione", "icona": "icona12.png", "testo": "Nel caso in cui si voglia esportare la ricerca è necessario cliccare sul tasto di download. Il file scaricato potrà poi essere recuperato nella funzione \"Esportazioni\"." }
+      ]
+    },
+    {
+      "id": "dati-contabili",
+      "titolo": "DATI CONTABILI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Con questa sotto-funzione è possibile recuperare i dati relativi al venduto. Questi dati potranno poi essere acquisiti e trasferiti sui software di gestione aziendale. Anche in questo caso è possibile applicare i filtri per effettuare la ricerca di interesse." },
+        { "tipo": "paragrafo", "testo": "Per effettuare la ricerca bisogna inserire i seguenti parametri:" },
+        { "tipo": "lista", "items": ["<b>Data Inizio</b>","<b>Data Fine</b>","<b>Azienda</b> (automaticamente viene riportata l'azienda consorziata)","<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito","<b>Stato Pagamento:</b> Tutte/Attesa Pagamento/Pagato/Non Emesso/Non Pagato/Annullato/Bloccato/Attesa Rimborso/Rimborsato/Rimborsato Credito","<b>Canale:</b> Tutti/Non Definito/App/Portale Web","<b>Acquirente</b>","<b>Codice Biglietto</b>","<b>N. Tessera</b>"] },
+        { "tipo": "icona-azione", "icona": "icona13.png", "testo": "Al termine si deve sempre cliccare sul tasto di ricerca" },
+        { "tipo": "avviso", "stile": "warning", "testo": "<b>Attenzione:</b> È necessario effettuare n. 2 esportazioni separate. Una online - pagato - tutti e poi credito - pagato. In questo modo si otterranno tutti i biglietti acquistati sia con carta di credito sia con il credito presente sulle ricariche." },
+        { "tipo": "paragrafo", "testo": "In questo caso per effettuare il download ci sono due tasti: <b>esporta</b> (restituisce un file .txt) e <b>esporta SEP</b> (restituisce file .xls). I file possono poi essere recuperati tra le ESPORTAZIONI." }
+      ]
+    },
+    {
+      "id": "biglietti-contabile",
+      "titolo": "BIGLIETTI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli titoli di viaggio." },
+        { "tipo": "paragrafo", "testo": "In aggiunta rispetto ai precedenti parametri di ricerca ci sono Linea, Corsa, Comune di partenza, frazione. Il tasto esporta restituisce un file .xls con tutti i dettagli dei biglietti ricercati." }
+      ]
+    },
+    {
+      "id": "statistiche-venduto",
+      "titolo": "STATISTICHE VENDUTO",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Questa sotto-funzione è utilizzata per verificare il venduto totale per l'azienda consorziata. I file scaricati sono trasferiti al sistema di gestione amministrativo aziendale." },
+        { "tipo": "paragrafo", "testo": "Il tasto esporta restituisce un file .txt, il tasto esporta XLS restituisce file .xls" }
+      ]
+    },
+    {
+      "id": "esportazioni-contabile",
+      "titolo": "ESPORTAZIONI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Tutti i file scaricati nelle precedenti funzioni sono recuperabili nella funzione ESPORTAZIONI." },
+        { "tipo": "icona-azione", "icona": "icona12.png", "testo": "Tutti i file possono essere scaricati cliccando sul simbolo, i file scaricati saranno pertanto disponibili nella cartella Download del proprio PC." }
+      ]
+    }
+  ]
+}

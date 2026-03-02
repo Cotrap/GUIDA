@@ -1,0 +1,195 @@
+{
+  "id": "app-controllo",
+  "titolo": "APP Controllo",
+  "aggiornato": "2026-02-24",
+  "nuovo": false,
+  "contenuto": [],
+  "sottosezioni": [
+    {
+      "id": "installazione",
+      "titolo": "1. Installazione dell'App Itineris (solo dispositivi Android)",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "L'app è disponibile per il download al seguente link, sempre aggiornato all'ultima versione disponibile:"
+        },
+        {
+          "tipo": "links",
+          "items": [
+            {
+              "icona": "📲",
+              "titolo": "Scarica APP Controllo Biglietti",
+              "url": "https://www.cotrap.it/app-controlli/"
+            }
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Nota:</b> Il link riportato sarà sempre aggiornato con l'ultima versione dell'app. Non è necessario cercare altrove."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Apri il link dal dispositivo Android su cui vuoi installare l'app.",
+            "Tocca \"Scarica\" per salvare l'app sul dispositivo.",
+            "Apri il file scaricato dal gestore file > cartella \"Download\".",
+            "Consenti l'installazione da fonti sconosciute se richiesto.",
+            "Una volta installata, troverai l'icona dell'app \"Itineris\" nella schermata principale."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "app_installazione.png",
+          "alt": "Installazione App",
+          "didascalia": "Processo di installazione app Itineris"
+        }
+      ]
+    },
+    {
+      "id": "primo-avvio",
+      "titolo": "2. Primo Avvio dell'App",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "lista",
+          "items": [
+            "Consenti l'accesso alla fotocamera, selezionando \"Ogni volta che si usa l'app\"."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Nota:</b> La fotocamera serve per scansionare i QR code dei biglietti."
+        },
+        {
+          "tipo": "immagine",
+          "src": "accesso_fotocamera.png",
+          "alt": "Permesso fotocamera",
+          "didascalia": "Richiesta permesso fotocamera"
+        }
+      ]
+    },
+    {
+      "id": "login",
+      "titolo": "3. Login e Inizio Controllo",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Apri l'app e inserisci:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Email nel campo \"Nome account\"",
+            "Password (rispettando maiuscole/minuscole)",
+            "Comune di salita (solo per verificatori)"
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "login_app.png",
+          "alt": "Schermata login app",
+          "didascalia": "Schermata di login dell'app Itineris"
+        }
+      ]
+    },
+    {
+      "id": "scansione",
+      "titolo": "4. Scansione del Biglietto",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Inquadra il QR code del biglietto con la fotocamera. L'app fornirà uno dei seguenti esiti:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Biglietto valido:</b> Verifica che tratta e orario siano corretti, poi seleziona \"SÌ\".",
+            "<b>Biglietto non valido:</b> Premi \"Azioni\" e scegli la motivazione."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Eccezione:</b> Se il biglietto è non valido per causa riconducibile all'azienda (es. corsa saltata), puoi selezionare \"Accettato a bordo\" su autorizzazione."
+        },
+        {
+          "tipo": "immagine",
+          "src": "salitacontrollo.png",
+          "alt": "Schermata controllo biglietto",
+          "didascalia": "Schermata di controllo e scansione biglietto"
+        }
+      ]
+    },
+    {
+      "id": "fine-controllo",
+      "titolo": "5. Fine Controllo",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Quando tutti i biglietti sono stati controllati, tocca \"TERMINA\" e inserisci il Comune di discesa (solo per verificatori)."
+        }
+      ]
+    },
+    {
+      "id": "rapportino",
+      "titolo": "6. Invio Rapportino di Fine Verifica",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "lista",
+          "items": [
+            "Vai alla Home dell'app e seleziona l'icona del rapportino.",
+            "Clicca sul rapporto per aprirlo, poi seleziona l'icona con la busta per inviarlo.",
+            "Conferma selezionando \"SÌ\". Il rapporto sarà inviato via email all'ufficio competente."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "invio_rapportino.png",
+          "alt": "Invio rapportino",
+          "didascalia": "Schermata di invio rapportino di fine verifica"
+        }
+      ]
+    },
+    {
+      "id": "link-utili",
+      "titolo": "Link Utili",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "links",
+          "items": [
+            {
+              "icona": "🎥",
+              "titolo": "Installazione App Itineris",
+              "url": "https://youtu.be/Kyo_XAA1I1Y"
+            },
+            {
+              "icona": "🔐",
+              "titolo": "Impostazione Password",
+              "url": "https://youtu.be/y17vm4Jlz00"
+            },
+            {
+              "icona": "👤",
+              "titolo": "Inserimento Controllori/Autisti",
+              "url": "https://youtu.be/Bq565A9pGok"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

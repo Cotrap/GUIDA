@@ -1,0 +1,73 @@
+{
+  "titolo": "GUIDA ITINERIS",
+  "versione": "2.1",
+  "ultimo_aggiornamento": "2026-02-23",
+  "voci": [
+    {
+      "id": "home",
+      "label": "Home",
+      "icona": "🏠",
+      "tipo": "normale"
+    },
+    {
+      "id": "introduzione",
+      "label": "Introduzione",
+      "icona": "📖",
+      "tipo": "normale"
+    },
+    {
+      "id": "profilo-commerciale",
+      "label": "Profilo Commerciale",
+      "icona": "💼",
+      "tipo": "normale"
+    },
+    {
+      "id": "gestione-movimento",
+      "label": "Gestione Movimento",
+      "icona": "🚌",
+      "tipo": "normale"
+    },
+    {
+      "id": "eccezioni",
+      "label": "Eccezioni",
+      "icona": "⚠️",
+      "tipo": "normale"
+    },
+    {
+      "id": "ordini",
+      "label": "Ordini",
+      "icona": "🧾",
+      "tipo": "normale"
+    },
+    {
+      "id": "esportazioni",
+      "label": "Esportazioni",
+      "icona": "📤",
+      "tipo": "normale"
+    },
+    {
+      "id": "sezione-contabile",
+      "label": "Sezione Contabile",
+      "icona": "📊",
+      "tipo": "normale"
+    },
+    {
+      "id": "guida-veloce",
+      "label": "Guida Veloce",
+      "icona": "🚀",
+      "tipo": "speciale"
+    },
+    {
+      "id": "app-controllo",
+      "label": "APP Controllo",
+      "icona": "📱",
+      "tipo": "speciale"
+    },
+    {
+      "id": "changelog",
+      "label": "Novità",
+      "icona": "🆕",
+      "tipo": "speciale"
+    }
+  ]
+}

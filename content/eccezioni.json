@@ -1,0 +1,75 @@
+{
+  "id": "eccezioni",
+  "titolo": "ECCEZIONI",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [
+    { "tipo": "immagine", "src": "Immagine6.0.png", "alt": "Menu Eccezioni", "didascalia": "Accesso alla sezione Eccezioni" },
+    { "tipo": "paragrafo", "testo": "Questa funzione permette di creare delle particolari condizioni ad esempio in cui la corsa non risulta visibile (es. sospensione del servizio per festività natalizie) oppure delle eccezioni tariffarie in caso in cui la tariffa non sia in linea con il tariffario polimetrico." },
+    { "tipo": "immagine", "src": "Immagine6.0b.png", "alt": "Sottomenu Eccezioni", "didascalia": "Opzioni disponibili nella sezione Eccezioni" }
+  ],
+  "sottosezioni": [
+    {
+      "id": "eccezioni-movimento",
+      "titolo": "ECCEZIONI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "In questa sezione è possibile gestire una situazione straordinaria legata all'esercizio. Ad esempio una fermata che non viene effettuata in alcuni periodi per lavori stradali (in questo caso sarà gestito il polo) oppure una corsa che non viene effettuata per festività natalizie o pasquali o sciopero (in questo caso sarà possibile gestire la singola corsa oppure tutte le linee). In questo modo la corsa non sarà visibile sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>." },
+        { "tipo": "paragrafo", "testo": "Riportiamo l'esempio di alcune eccezioni caricate da Cotrap." },
+        { "tipo": "immagine", "src": "Immagine6.1.png", "alt": "Lista Eccezioni", "didascalia": "Elenco eccezioni inserite" },
+        { "tipo": "paragrafo", "testo": "Come sempre per inserire una nuova eccezione cliccare in alto a destra." },
+        { "tipo": "immagine", "src": "Immagine6.1b.png", "alt": "Form Eccezione", "didascalia": "Maschera inserimento eccezione" },
+        { "tipo": "lista", "items": ["<b>Denominazione:</b> titolo dell'eccezione (es. sospensione natalizia)","<b>Data inizio validità - data fine validità:</b> inserire il periodo di riferimento","<b>Tipologia:</b> indicare quale elemento sarà interessato dall'eccezione (polo, corsa, linea, servizio (intero servizio), calendario se legato alla possibilità di cambiare la tipologia di alcune corse*)"] },
+        { "tipo": "paragrafo", "testo": "È possibile nel caso del polo inserire una fermata sostituiva (nel caso sia indicata dall'ordinanza comunale o scelta aziendale)." },
+        { "tipo": "avviso", "stile": "info", "testo": "*= può capitare che alcune aziende abbiano la necessità di effettuare delle corse \"scolastiche\" anche prima dell'inizio del calendario regionale (per esigenze o specifiche richieste da parte delle scuole). In questo caso si può cambiare una corsa ad esempio feriale e farla diventare \"eccezionalmente\" scolastica." },
+        { "tipo": "lista", "items": ["<b>Descrizione:</b> inserire il testo che esplicita la spiegazione (es. avviso, ordinanza…ecc…)"] },
+        { "tipo": "avviso", "stile": "info", "testo": "Come sempre al termine della compilazione cliccare in basso a destra su conferma." }
+      ]
+    },
+    {
+      "id": "eccezioni-tariffarie",
+      "titolo": "ECCEZIONI TARIFFARIE",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "paragrafo", "testo": "Con questa funzione è possibile modificare eccezionalmente il tariffario di alcune corse che non seguono il tariffario chilometrico. Ad esempio corse che hanno un tariffario fisso." },
+        { "tipo": "immagine", "src": "Immagine6.2.png", "alt": "Menu Eccezioni Tariffarie", "didascalia": "Accesso alle eccezioni tariffarie" },
+        { "tipo": "paragrafo", "testo": "Come sempre cliccare su aggiungi in alto a destra per inserire una eccezione tariffaria." },
+        { "tipo": "immagine", "src": "Immagine6.2b.png", "alt": "Form Eccezione Tariffaria", "didascalia": "Maschera inserimento eccezione tariffaria" },
+        { "tipo": "lista", "items": ["<b>Denominazione:</b> consigliamo di inserire i riferimenti della corsa se si tratta di singola variazione inserendo capolinea e orario di partenza","<b>Data inizio:</b> inserire la data in cui entrerà in vigore l'eccezione","<b>Linea:</b> selezionare la linea (c'è anche la possibilità di selezionare l'opzione tutte le linee, nel caso in cui tutto il servizio debba avere una tariffa fissa)","<b>Corsa:</b> nel caso si selezioni una linea in particolare, c'è la possibilità di selezionare la corsa che subirà la variazione tariffaria"] },
+        { "tipo": "icona-azione", "icona": "icona11.png", "testo": "Cliccare sul tastino per aggiungere la selezione effettuata." },
+        { "tipo": "paragrafo", "testo": "Dopo aver selezionato linea e corsa, è necessario inserire i codici dei polo nella sezione sottostante." },
+        { "tipo": "immagine", "src": "Immagine6.2c.png", "alt": "Selezione Poli", "didascalia": "Inserimento poli per eccezione tariffaria" },
+        { "tipo": "paragrafo", "testo": "Inserire il comune di partenza, eventualmente la frazione e selezionare il codice contabile del polo, effettuare la stessa cosa con il polo di arrivo. Quindi procedere con l'indicazione dell'importo che sarà visionato sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>. A questo punto cliccare su conferma in basso a destra." }
+      ]
+    },
+    {
+      "id": "controllo-tariffario",
+      "titolo": "CONTROLLO TARIFFARIO",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine6.3.png", "alt": "Menu Controllo Tariffario", "didascalia": "Accesso al controllo tariffario" },
+        { "tipo": "paragrafo", "testo": "Si tratta di una opzione di consultazione. È possibile consultare il tariffario in base al chilometrico." },
+        { "tipo": "immagine", "src": "Immagine6.3b.png", "alt": "Form Controllo Tariffario", "didascalia": "Maschera controllo tariffario" },
+        { "tipo": "paragrafo", "testo": "Si inserisce la data di riferimento, la linea e la corsa per cui si vuole effettuare il controllo. Cliccare poi sul tasto applica." },
+        { "tipo": "paragrafo", "testo": "Verranno quindi visualizzati i tariffari polo per polo." },
+        { "tipo": "paragrafo", "testo": "È possibile estrapolare questo prospetto cliccando sul tasto esporta. Questa esportazione verrà memorizzata nella sezione che vedremo successivamente \"Esportazioni\"." },
+        { "tipo": "immagine", "src": "Immagine6.3c.png", "alt": "Risultato Controllo", "didascalia": "Risultato controllo tariffario" }
+      ]
+    },
+    {
+      "id": "controllo-tariffario-itinerario",
+      "titolo": "CONTROLLO TARIFFARIO ITINERARIO",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        { "tipo": "immagine", "src": "Immagine29.png", "alt": "Menu Controllo Itinerario", "didascalia": "Accesso al controllo tariffario itinerario" },
+        { "tipo": "paragrafo", "testo": "Con questa funzione di controllo è possibile verificare la correttezza delle tariffe in un determinato itinerario. Ad esempio se c'è stata una eccezione tariffaria tra due poli, con questa funzione è possibile verificare se per tutte le corse con i suddetti poli sia stato applicato la tariffa corretta." },
+        { "tipo": "paragrafo", "testo": "Inserire la data, inserire l'importo precedente alla variazione tariffaria (per essere sicuri che non ci siano itinerari con il precedente importo), il comune di partenza e quello di arrivo (con eventuali frazioni). Cliccare quindi sul tasto applica a destra." },
+        { "tipo": "box-esempio", "titolo": "Esempio verifica", "contenuto": ["Nell'esempio riportato abbiamo voluto verificare se per caso ci fosse una corsa ad euro 3,30 sul tragitto Bari-Santeramo in Colle (vecchio importo che è stato variato dall'aggiornamento tariffario regionale).","Dal risultato si evince che tutti i collegamenti non riportano la vecchia tariffa, ma risultano tutte aggiornate al nuovo tariffario."] }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "introduzione",
+  "titolo": "INTRODUZIONE",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [],
+  "sottosezioni": [
+    {
+      "id": "obiettivo-del-documento",
+      "titolo": "OBIETTIVO DEL DOCUMENTO",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Tale manuale ha lo scopo di guidare i consorziati nella creazione di una linea che sarà poi vendibile sul portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e al conseguente controllo contabile e amministrativo del venduto."
+        }
+      ]
+    },
+    {
+      "id": "sintesi-del-documento",
+      "titolo": "SINTESI DEL DOCUMENTO",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Il documento descrive le funzionalità del software Itineris, finalizzate alla gestione delle linee, corse e bigliettazione e delle interazioni con il portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e app clienti. Pertanto sono state redatte due sezioni distinte: una dedicata al reparto commerciale e una al reparto contabile/amministrativo."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In particolare:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Configurazione ed inserimento Linee</b>",
+            "Procedimento per gestione eccezioni tariffarie e di movimento",
+            "Esportazione dati",
+            "Controlli contabili"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "destinatari-del-manuale",
+      "titolo": "DESTINATARI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Il manuale è volto a supportare i Consorziati nella corretta gestione del caricamento Linee e corse sul software Itineris."
+        }
+      ]
+    },
+    {
+      "id": "contenuti-manuale",
+      "titolo": "CONTENUTI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "L'accesso al portale Itineris avviene cliccando sul seguente link: <a href=\"https://itinerisadminpanel.azurewebsites.net/\" target=\"_blank\">https://itinerisadminpanel.azurewebsites.net/</a> (consigliamo di memorizzarlo sulla barra dei preferiti) e richiede l'inserimento delle credenziali di accesso (ID utente e password) che sono forniti dall'Amministratore Cotrap a seguito della creazione della sezione dedicata al consorziato. È possibile recuperare la password in caso di dimenticanza cliccando sul tasto \"recupero password\" ed inserendo l'email di recupero (indicata preventivamente all'amministratore cotrap)."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine03.png",
+          "alt": "Schermata accesso ITINERIS",
+          "didascalia": "Schermata di login al portale Itineris"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione:</b> saranno forniti al consorziato due account: uno relativo alla sezione contabile ed uno relativo alla sezione commerciale."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale in cui sarà possibile visionare in basso a sinistra il profilo con cui avete effettuato l'accesso (es. commerciale e il nome dell'azienda). In questo manuale sarà visualizzato il profilo cotrap, ma ha validità per tutti i consorziati."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine03.01.png",
+          "alt": "Dashboard ITINERIS",
+          "didascalia": "Dashboard principale dopo il login"
+        }
+      ]
+    },
+    {
+      "id": "requisiti-minimi",
+      "titolo": "REQUISITI MINIMI",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "I requisiti minimi per l'utilizzo del software sono:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Connessione internet</b>",
+            "Browser privilegiato Google Chrome"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "home",
+  "titolo": "Home",
+  "aggiornato": "2026-02-23",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Benvenuti sulla <b>Guida per i Sistemi Itineris</b>!"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Questa guida fornisce istruzioni dettagliate per l'utilizzo della piattaforma Itineris, sviluppata in collaborazione con il Consorzio Trasporti Puglia (COTRAP) per la gestione del trasporto pubblico."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "Utilizza il <b>menu laterale</b> per navigare tra le sezioni oppure la <b>barra di ricerca</b> in alto per trovare rapidamente un argomento."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Sezioni principali della guida:</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
+        {
+          "icona": "📖",
+          "titolo": "Introduzione",
+          "descrizione": "Accesso al portale e panoramica della dashboard.",
+          "link": "introduzione"
+        },
+        {
+          "icona": "💼",
+          "titolo": "Profilo Commerciale",
+          "descrizione": "Configurazione dati aziendali, titoli di viaggio e tariffe.",
+          "link": "profilo-commerciale"
+        },
+        {
+          "icona": "🚌",
+          "titolo": "Gestione Movimento",
+          "descrizione": "Codici contabili, poli, linee e corse: il cuore operativo.",
+          "link": "gestione-movimento"
+        },
+        {
+          "icona": "⚠️",
+          "titolo": "Eccezioni",
+          "descrizione": "Gestione delle eccezioni e sospensioni delle corse.",
+          "link": "eccezioni"
+        },
+        {
+          "icona": "🧾",
+          "titolo": "Ordini",
+          "descrizione": "Monitoraggio ordini, biglietti e prenotazioni.",
+          "link": "ordini"
+        },
+        {
+          "icona": "📤",
+          "titolo": "Esportazioni",
+          "descrizione": "Download dei file generati dalle ricerche.",
+          "link": "esportazioni"
+        },
+        {
+          "icona": "📊",
+          "titolo": "Sezione Contabile",
+          "descrizione": "Accesso contabile, dati venduto e statistiche.",
+          "link": "sezione-contabile"
+        },
+        {
+          "icona": "📱",
+          "titolo": "APP Controllo",
+          "descrizione": "Installazione e utilizzo dell'app per il controllo biglietti.",
+          "link": "app-controllo"
+        }
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Per una panoramica rapida dei passaggi essenziali, consulta la sezione <b>Guida Veloce</b>."
+    }
+  ],
+  "sottosezioni": []
+}
