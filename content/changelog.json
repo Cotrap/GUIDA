@@ -4,6 +4,31 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.2",
+      "data": "2026-03-02",
+      "tipo": "major",
+      "titolo": "Nuove funzionalità: Titoli Gratuiti, Multitratta, Eccezioni KM, Template Massivo",
+      "descrizione": "Aggiornamento della guida con 4 nuove documentazioni funzionali relative a funzionalità introdotte nel sistema Itineris.",
+      "dettagli": [
+        "Nuova funzione Emissione Titoli di Viaggio Gratuiti dal profilo commerciale",
+        "Nuova tipologia Linea Multitratta per abbonamenti con cambio linea",
+        "Nuova sottosezione Eccezioni Chilometriche per modificare distanze km tra codici contabili",
+        "Nuova procedura Modifica Template Massivo per aggiornare corse in blocco",
+        "Aggiunto filtro Gratuito al metodo di pagamento nelle sezioni Ordini e Contabile",
+        "Aggiunto campo Emesso da Admin nel dettaglio titoli e nelle esportazioni",
+        "Le statistiche ignorano i titoli emessi gratuitamente",
+        "Aggiunti filtri per linee e corse multitratta",
+        "Aggiunte 18 nuove immagini/screenshot dalla documentazione funzionale"
+      ],
+      "sezioni_modificate": [
+        "profilo-commerciale",
+        "gestione-movimento",
+        "eccezioni",
+        "ordini",
+        "sezione-contabile"
+      ]
+    },
+    {
       "versione": "2.1",
       "data": "2026-02-23",
       "tipo": "minor",
@@ -22,7 +47,12 @@
         "Caricamento iniziale parallelizzato per tempi di avvio più rapidi",
         "Aggiunta meta description e favicon"
       ],
-      "sezioni_modificate": ["home", "guida-veloce", "sezione-contabile", "app-controllo"]
+      "sezioni_modificate": [
+        "home",
+        "guida-veloce",
+        "sezione-contabile",
+        "app-controllo"
+      ]
     },
     {
       "versione": "2.0",
@@ -36,7 +66,10 @@
         "Badge per sezioni nuove/aggiornate",
         "Migliorata usabilità mobile"
       ],
-      "sezioni_modificate": ["home", "introduzione"]
+      "sezioni_modificate": [
+        "home",
+        "introduzione"
+      ]
     }
   ],
   "istruzioni_aggiornamento": {
@@ -56,9 +89,21 @@
       }
     ],
     "tipi_modifica": [
-      {"tipo": "major", "descrizione": "Grandi cambiamenti, nuove funzionalità importanti", "colore": "#e74c3c"},
-      {"tipo": "minor", "descrizione": "Piccoli miglioramenti, nuove sezioni", "colore": "#f39c12"},
-      {"tipo": "fix", "descrizione": "Correzioni, aggiornamenti contenuti", "colore": "#3498db"}
+      {
+        "tipo": "major",
+        "descrizione": "Grandi cambiamenti, nuove funzionalità importanti",
+        "colore": "#e74c3c"
+      },
+      {
+        "tipo": "minor",
+        "descrizione": "Piccoli miglioramenti, nuove sezioni",
+        "colore": "#f39c12"
+      },
+      {
+        "tipo": "fix",
+        "descrizione": "Correzioni, aggiornamenti contenuti",
+        "colore": "#3498db"
+      }
     ]
   }
 }
