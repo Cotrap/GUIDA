@@ -1,18 +1,18 @@
 {
   "id": "profilo-commerciale",
-  "titolo": "PROFILO COMMERCIALE",
-  "aggiornato": "2026-02-23",
+  "titolo": "Profilo Commerciale",
+  "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "In questa sezione saranno dettagliate tutte le procedure relative all'inserimento e alla gestione delle linee, corse lato commerciale e movimento."
+      "testo": "Questa sezione descrive il percorso completo per inserire e gestire le linee del servizio di trasporto su <b>Admin Panel Itineris</b>. Le sezioni del menu (Configurazione, Gestione Movimento, Eccezioni, Ordini, Esportazioni) sono indipendenti tra loro e ognuna è descritta in dettaglio nel manuale."
     }
   ],
   "sottosezioni": [
     {
       "id": "pre-requisiti",
-      "titolo": "PRE-REQUISITI",
+      "titolo": "Pre-requisiti",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -31,39 +31,35 @@
     },
     {
       "id": "creazione-linea",
-      "titolo": "CREAZIONE LINEA",
+      "titolo": "Creazione Linea",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Nel dettaglio, per l'inserimento di una linea, l'utente deve seguire la serie di passi successivi di seguito riportati e descritti poi nel corpo del manuale:"
+          "testo": "Per inserire una linea vendibile su <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>, seguire in ordine le sezioni del manuale:"
         },
         {
           "tipo": "lista-numerata",
           "items": [
-            "<b>Configurazione:</b> step volto alla consultazione di informazioni preliminari di gestione dell'amministratore cotrap che poi ritorneranno utili per lo svolgimento dell'esercizio;",
-            "<b>Gestione Movimento:</b> step volto all'effettiva creazione dei dati necessari per la linea che poi sarà vendibile sul sito e-commerce <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e app clienti;",
-            "<b>Eccezioni:</b> step per l'inserimento di eventuali variazioni straordinarie dell'esercizio;",
-            "<b>Ordini:</b> funzionalità volta a fornire dettagli sui biglietti venduti e possibilità di ricerca;",
-            "<b>Esportazioni:</b> funzionalità relativa alla possibilità di scaricare in formato excel o txt i dati ricercati."
+            "<b>Configurazione</b> — consultare i parametri regionali configurati da COTRAP (tariffari, calendari scolastici) e inserire le frequenze delle proprie corse e gli utenti dell'app controllo. Questa sezione è accessibile dal menu principale.",
+            "<b>Gestione Movimento</b> — inserire i dati operativi: codici contabili, poli (fermate), linee con template di percorso e corse con orari. Questa è la sezione più importante e quella dove si costruisce tutto l'esercizio.",
+            "<b>Eccezioni</b> — gestire variazioni straordinarie: sospensioni, modifiche tariffarie temporanee, variazioni chilometriche.",
+            "<b>Ordini</b> — consultare i biglietti e abbonamenti venduti, verificare lo stato delle corse e monitorare i controlli.",
+            "<b>Esportazioni</b> — scaricare in formato Excel (.xls) o testo (.txt) i dati ricercati nelle sezioni precedenti."
           ]
         }
       ]
     },
     {
       "id": "configurazione",
-      "titolo": "CONFIGURAZIONE",
+      "titolo": "Configurazione",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Nella Home cliccare su configurazione. In questa sezione saranno configurati da Cotrap tutti i parametri regionali (calendario scolastico, tariffari). Il consorziato potrà consultare questa sezione per regolarsi su come impostare le linee."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Di seguito spieghiamo i passaggi per poter inserire tutti i dati necessari per creare una corsa."
+          "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse e gli utenti dell'app controllo sono invece inseriti dal consorziato stesso."
         },
         {
           "tipo": "immagine",
@@ -94,13 +90,13 @@
     },
     {
       "id": "tariffari",
-      "titolo": "TARIFFARI",
+      "titolo": "Tariffari",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "In questa sezione vengono aggiornati dal consorzio i tariffari regionali. Clicca su tariffari nel caso in cui si vogliano vedere i tariffari."
+          "testo": "In questa sezione COTRAP aggiorna i tariffari chilometrici regionali. Il consorziato può solo consultarli: i dati non sono modificabili. Utile per verificare i prezzi che saranno applicati alle corse e agli abbonamenti."
         },
         {
           "tipo": "immagine",
@@ -129,13 +125,13 @@
     },
     {
       "id": "calendari",
-      "titolo": "CALENDARI",
+      "titolo": "Calendari",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "In questa sezione vengono aggiornati dal consorzio i calendari scolastici regionali, necessari per identificare le frequenze, itineris definisce automaticamente la vendita in base alla frequenza. Es. non sarà possibile acquistare una corsa con frequenza scolastica se da calendario la data ricercata dall'utente rientra nel range temporale delle vacanze di natale."
+          "testo": "In questa sezione COTRAP aggiorna i calendari scolastici regionali. Admin Panel Itineris usa questi calendari per gestire automaticamente la vendita in base alla frequenza delle corse: ad esempio, se una corsa ha frequenza Scolastica, il sistema non permetterà l'acquisto per date che ricadono nelle vacanze natalizie o estive. Il consorziato può solo consultare questi calendari."
         },
         {
           "tipo": "immagine",
@@ -170,7 +166,7 @@
     },
     {
       "id": "frequenza-corsa",
-      "titolo": "FREQUENZA CORSA",
+      "titolo": "Frequenza Corsa",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -186,7 +182,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su \"aggiungi\" in alto a destra."
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra."
         },
         {
           "tipo": "immagine",
@@ -202,33 +198,36 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Inserire:"
+          "testo": "Compilare i campi richiesti:"
         },
         {
           "tipo": "lista",
           "items": [
-            "<b>Denominazione frequenza:</b> es. giornaliera, giornaliera estiva, giornaliera invernale, feriale sabato, feriale lunedì - venerdì, scolastiche e non scolastiche in base alle proprie necessità",
-            "<b>Data inizio validità - data fine validità</b> (Attenzione: da compilare solo in caso di frequenze con range di validità personalizzato o che non segue il calendario scolastico, ad esempio se si vuole creare una frequenza scolastica si sceglie la frequenza relativa nella tipologia, il range di validità fa automaticamente riferimento al calendario scolastico.) In caso di dubbi rivolgersi all'amministratore.",
-            "<b>Definire la tipologia</b> dal menù a tendina tra: Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva.",
-            "<b>Personalizzare come da necessità.</b>",
-            "<b>Infine cliccare su conferma in basso a destra per memorizzare i dati inseriti.</b>"
+            "<b>Denominazione:</b> nome descrittivo della frequenza (es. Giornaliera, Giornaliera estiva, Feriale lun-ven, Feriale sabato, Scolastica, Non scolastica)",
+            "<b>Tipologia:</b> selezionare dal menu a tendina tra Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva. Per le tipologie Feriale e Giornaliera è possibile personalizzare i giorni di validità settimanale",
+            "<b>Data inizio validità / Data fine validità:</b> compilare solo se la frequenza ha un range temporale personalizzato (es. servizio estivo con date precise). Non compilare per frequenze Scolastiche o Non Scolastiche: in quel caso il sistema usa automaticamente il calendario scolastico configurato da COTRAP"
           ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Al termine cliccare su <b>\"Conferma\"</b> in basso a destra. In caso di dubbi sulla corretta impostazione della frequenza, rivolgersi all'Amministratore COTRAP."
         }
       ]
     },
     {
       "id": "utenti-app-controlli",
-      "titolo": "UTENTI APP CONTROLLI",
+      "titolo": "Utenti App Controlli",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Con questa funzione è possibile inserire gli autisti o i controllori atti al controllo dei biglietti dall'app itineris dedicata che potrà essere scaricata sul telefono degli autisti."
+          "testo": "Con questa funzione è possibile inserire gli autisti o i controllori che utilizzeranno l'app Itineris per il controllo dei biglietti a bordo."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Clicca su <b>\"AGGIUNGI\"</b> per inserire un nuovo utente dell'app (autista o controllore)"
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> per inserire un nuovo utente dell'app (autista, controllore o controllore esterno)."
         },
         {
           "tipo": "immagine",
@@ -238,7 +237,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccando su <b>\"AGGIUNGI\"</b> sarà possibile inserire i dati di chi effettuerà il controllo."
+          "testo": "Inserire nome, cognome, email e gli altri dati richiesti. Cliccare su <b>\"Conferma\"</b> per salvare."
         },
         {
           "tipo": "immagine",
@@ -247,24 +246,20 @@
           "didascalia": "Maschera inserimento nuovo utente"
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Inserire tutti i dati richiesti. E cliccare su conferma."
-        },
-        {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "Attendere che la colonna \"stato\" sia aggiornata su \"confermato\", in caso contrario sarà mostrato lo stato \"in attesa di conferma\"."
+          "testo": "Dopo il salvataggio, la colonna <b>\"Stato\"</b> mostrerà <b>\"In attesa di conferma\"</b>. Lo stato passerà a <b>\"Confermato\"</b> solo dopo che l'utente completa l'attivazione sul proprio dispositivo (vedi sotto)."
         },
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> Dopo aver inserito l'utente (autista/controllore/controllore esterno) è necessario attivare l'utente al controllo con un secondo passaggio. L'utente infatti dovrà scaricare sul proprio cellulare Android l'app di controllo attraverso il link fornito dal Consorzio. Separatamente sarà fornito il manuale di funzionamento dell'app di controllo."
+          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve scaricare l'app di controllo Itineris sul proprio smartphone Android tramite il link <b>www.cotrap.it/app-controlli</b> e impostare la propria password. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
         }
       ]
     },
     {
       "id": "emissione-titoli-gratuiti",
-      "titolo": "EMISSIONE TITOLI DI VIAGGIO GRATUITI",
+      "titolo": "Emissione Titoli di Viaggio Gratuiti",
       "aggiornato": "2026-03-02",
       "nuovo": true,
       "contenuto": [
@@ -329,7 +324,7 @@
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "<b>CS con cambio:</b> Se si vuole emettere un corsa semplice con cambio, è possibile emettere il corsa semplice solo per la tratta di propria competenza."
+          "testo": "<b>CS con cambio:</b> Se si vuole emettere una corsa semplice con cambio, è possibile emettere la corsa semplice solo per la tratta di propria competenza."
         },
         {
           "tipo": "box-nota",

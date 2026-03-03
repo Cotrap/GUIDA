@@ -1,17 +1,17 @@
 {
   "id": "sezione-contabile",
-  "titolo": "SEZIONE CONTABILE",
-  "aggiornato": "2026-02-23",
+  "titolo": "Sezione Contabile",
+  "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "Per accedere ad account contabile, è necessario inserire nella prima pagina id utente e password dedicati."
+      "testo": "La Sezione Contabile è accessibile tramite credenziali <b>separate</b> rispetto al profilo commerciale. Inserire nella pagina di login l'ID utente e la password dedicati all'account contabile, forniti dall'Amministratore COTRAP."
     },
     {
       "tipo": "avviso",
-      "stile": "info",
-      "testo": "Accertarsi di essere nell'account giusto verificando la scritta in basso a sinistra. Nome e Cognome dell'utente e tra parentesi il nome dell'azienda consorziata."
+      "stile": "warning",
+      "testo": "<b>Attenzione:</b> verificare sempre di essere nell'account corretto controllando la scritta in <b>basso a sinistra</b>: mostra Nome e Cognome dell'utente e tra parentesi il nome dell'azienda consorziata. Se si è accidentalmente nell'account commerciale, effettuare il logout e accedere con le credenziali contabili."
     },
     {
       "tipo": "immagine",
@@ -50,7 +50,7 @@
   "sottosezioni": [
     {
       "id": "ordini-contabile",
-      "titolo": "ORDINI",
+      "titolo": "Ordini",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -90,6 +90,8 @@
         {
           "tipo": "lista",
           "items": [
+            "<b>Data Inizio</b>",
+            "<b>Data Fine</b>",
             "<b>Prog:</b> numero dell'ordine o biglietto",
             "<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito/<b>Gratuito</b> (per risalire ai titoli emessi da profilo commerciale)",
             "<b>Stato Pagamento:</b> Tutte/Attesa Pagamento/Pagato/Non Emesso/Non Pagato/Annullato/Bloccato/Attesa Rimborso/Rimborsato/Rimborsato Credito",
@@ -113,7 +115,7 @@
     },
     {
       "id": "dati-contabili",
-      "titolo": "DATI CONTABILI",
+      "titolo": "Dati Contabili",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -131,7 +133,7 @@
             "<b>Data Inizio</b>",
             "<b>Data Fine</b>",
             "<b>Azienda</b> (automaticamente viene riportata l'azienda consorziata)",
-            "<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito",
+            "<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito/<b>Gratuito</b> (per risalire ai titoli emessi da profilo commerciale)",
             "<b>Stato Pagamento:</b> Tutte/Attesa Pagamento/Pagato/Non Emesso/Non Pagato/Annullato/Bloccato/Attesa Rimborso/Rimborsato/Rimborsato Credito",
             "<b>Canale:</b> Tutti/Non Definito/App/Portale Web",
             "<b>Acquirente</b>",
@@ -147,17 +149,18 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> È necessario effettuare n. 2 esportazioni separate. Una online - pagato - tutti e poi credito - pagato. In questo modo si otterranno tutti i biglietti acquistati sia con carta di credito sia con il credito presente sulle ricariche."
+          "testo": "<b>Attenzione — esportazioni obbligatoriamente separate:</b> Per ottenere il quadro completo del venduto da importare nel gestionale aziendale, è necessario effettuare <b>due esportazioni distinte</b>:<br>1. <b>Tipo pagamento: Online → Stato: Pagato → Tutti</b> — include tutti i biglietti acquistati con carta di credito<br>2. <b>Tipo pagamento: Credito → Stato: Pagato</b> — include tutti i biglietti acquistati con il saldo ricariche dell'app<br>I due tipi di pagamento sono registrati in partite contabili separate e non possono essere estratti con un'unica query."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "In questo caso per effettuare il download ci sono due tasti: <b>esporta</b> (restituisce un file .txt) e <b>esporta SEP</b> (restituisce file .xls). I file possono poi essere recuperati tra le ESPORTAZIONI."
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Esporta vs Esporta SEP:</b> Il tasto <b>\"Esporta\"</b> genera un file <b>.txt</b> nel formato compatibile con i software gestionali aziendali. Il tasto <b>\"Esporta SEP\"</b> genera un file <b>.xls</b> (Excel) per visualizzazione e analisi manuale. Entrambi i file sono poi recuperabili nella sezione <b>Esportazioni</b>."
         }
       ]
     },
     {
       "id": "biglietti-contabile",
-      "titolo": "BIGLIETTI",
+      "titolo": "Biglietti",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -177,18 +180,69 @@
       ]
     },
     {
-      "id": "statistiche-venduto",
-      "titolo": "STATISTICHE VENDUTO",
+      "id": "abbonamenti-contabile",
+      "titolo": "Abbonamenti",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Questa sotto-funzione è utilizzata per verificare il venduto totale per l'azienda consorziata. I file scaricati sono trasferiti al sistema di gestione amministrativo aziendale."
+          "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli abbonamenti. È disponibile il filtro <b>Gratuito</b> nel metodo di pagamento per risalire ai titoli emessi da profilo commerciale. Il tasto esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Nel dettaglio di ogni abbonamento, è presente il campo <b>\"Emesso da Admin\"</b> che identifica un titolo emesso gratuitamente da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "statistiche-mensili",
+      "titolo": "Statistiche Mensili",
+      "aggiornato": "2026-03-03",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione fornisce un riepilogo del venduto aggregato <b>per mese</b>, utile per avere una visione d'insieme delle entrate mensili dell'azienda consorziata."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Le statistiche mensili <b>ignorano le transazioni relative ai titoli emessi gratuitamente</b> da profilo commerciale, per non alterare i dati reali di fatturato."
+        }
+      ]
+    },
+    {
+      "id": "statistiche-linee",
+      "titolo": "Statistiche Linee",
+      "aggiornato": "2026-03-03",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione fornisce un riepilogo del venduto <b>per singola linea</b>, utile per analizzare le performance di ciascuna tratta."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Anche le statistiche linee <b>ignorano i titoli emessi gratuitamente</b> da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "statistiche-venduto",
+      "titolo": "Statistiche Venduto",
+      "aggiornato": "2026-03-03",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione è utilizzata per verificare il <b>venduto totale</b> per l'azienda consorziata nel periodo selezionato. I file scaricati sono trasferiti al sistema di gestione amministrativo aziendale."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Il tasto esporta restituisce un file .txt, il tasto esporta XLS restituisce file .xls"
+          "testo": "Il tasto <b>Esporta</b> restituisce un file <b>.txt</b>, il tasto <b>Esporta XLS</b> restituisce un file <b>.xls</b>."
         },
         {
           "tipo": "avviso",
@@ -199,7 +253,7 @@
     },
     {
       "id": "esportazioni-contabile",
-      "titolo": "ESPORTAZIONI",
+      "titolo": "Esportazioni",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [

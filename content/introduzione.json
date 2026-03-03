@@ -1,13 +1,13 @@
 {
   "id": "introduzione",
-  "titolo": "INTRODUZIONE",
+  "titolo": "Introduzione",
   "aggiornato": "2026-02-23",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "obiettivo-del-documento",
-      "titolo": "OBIETTIVO DEL DOCUMENTO",
+      "titolo": "Obiettivo del Documento",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -19,7 +19,7 @@
     },
     {
       "id": "sintesi-del-documento",
-      "titolo": "SINTESI DEL DOCUMENTO",
+      "titolo": "Sintesi del Documento",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -44,7 +44,7 @@
     },
     {
       "id": "destinatari-del-manuale",
-      "titolo": "DESTINATARI",
+      "titolo": "Destinatari",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -56,13 +56,13 @@
     },
     {
       "id": "contenuti-manuale",
-      "titolo": "CONTENUTI",
+      "titolo": "Contenuti",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "L'accesso al portale Itineris avviene cliccando sul seguente link: <a href=\"https://itinerisadminpanel.azurewebsites.net/\" target=\"_blank\">https://itinerisadminpanel.azurewebsites.net/</a> (consigliamo di memorizzarlo sulla barra dei preferiti) e richiede l'inserimento delle credenziali di accesso (ID utente e password) che sono forniti dall'Amministratore Cotrap a seguito della creazione della sezione dedicata al consorziato. È possibile recuperare la password in caso di dimenticanza cliccando sul tasto \"recupero password\" ed inserendo l'email di recupero (indicata preventivamente all'amministratore cotrap)."
+          "testo": "L'accesso al portale Itineris avviene tramite il link <a href=\"https://itinerisadminpanel.azurewebsites.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Portale Itineris</a> (consigliamo di salvarlo tra i preferiti del browser). Per accedere sono necessarie le credenziali (ID utente e password) fornite dall'Amministratore COTRAP al momento della creazione dell'account. In caso di password dimenticata, è possibile recuperarla tramite il tasto <b>\"Recupero password\"</b> inserendo l'email di recupero comunicata preventivamente all'amministratore."
         },
         {
           "tipo": "immagine",
@@ -84,25 +84,6 @@
           "src": "Immagine03.01.png",
           "alt": "Dashboard ITINERIS",
           "didascalia": "Dashboard principale dopo il login"
-        }
-      ]
-    },
-    {
-      "id": "requisiti-minimi",
-      "titolo": "REQUISITI MINIMI",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "paragrafo",
-          "testo": "I requisiti minimi per l'utilizzo del software sono:"
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "<b>Connessione internet</b>",
-            "Browser privilegiato Google Chrome"
-          ]
         }
       ]
     }

@@ -1,13 +1,13 @@
 {
   "id": "gestione-movimento",
-  "titolo": "GESTIONE MOVIMENTO",
-  "aggiornato": "2026-02-23",
+  "titolo": "Gestione Movimento",
+  "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "comprendere-il-sistema",
-      "titolo": "COMPRENDERE IL SISTEMA",
+      "titolo": "Comprendere il Sistema",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -17,7 +17,18 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Dopo aver fatto i passaggi precedenti è necessario inserire i codici contabili, i poli, le linee e le corse. Tutte queste operazioni si devono eseguire nella sezione Gestione movimento."
+          "testo": "Dopo aver consultato la sezione Configurazione è necessario inserire i codici contabili, i poli, le linee e le corse. Tutte queste operazioni si eseguono nella sezione Gestione Movimento."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Ordine obbligatorio di inserimento",
+          "contenuto": [
+            "<b>1. Codici Contabili Poli</b> — prerequisito per i Poli (ogni polo deve avere un codice contabile associato)",
+            "<b>2. Poli</b> — prerequisito per i Template (le fermate devono esistere prima di poterle aggiungere a un percorso)",
+            "<b>3. Linee e Template</b> — prerequisito per le Corse (il percorso deve essere definito prima di creare gli orari)",
+            "<b>4. Corse</b> — creare tutte le corse e infine pubblicarle per renderle visibili sul portale COTRAP",
+            "<b>Prima di iniziare:</b> recuperare da Tecbus i codici contabili dei poli, il codice e la denominazione di ogni linea, le polimetriche attive e le tariffe vigenti"
+          ]
         },
         {
           "tipo": "immagine",
@@ -37,7 +48,8 @@
             "<b>Poli</b>",
             "<b>Linee</b>",
             "<b>Corse</b>",
-            "<b>Note</b>"
+            "<b>Note</b>",
+            "<b>Titoli di Viaggio</b>"
           ]
         },
         {
@@ -50,19 +62,19 @@
     },
     {
       "id": "mezzi",
-      "titolo": "MEZZI",
+      "titolo": "Mezzi",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Questa sezione è dedicata all'inserimento dei mezzi del parco veicoli. In questo momento non è necessario inserire alcun mezzo. La gestione del numero dei posti disponibili sarà gestita in un'altra sezione."
+          "testo": "Questa sezione è dedicata all'inserimento dei mezzi del parco veicoli. Non è attualmente necessario inserire mezzi specifici: il numero di posti disponibili per la vendita online si gestisce tramite il campo <b>Occupazione Massima</b> nella creazione di ogni corsa."
         }
       ]
     },
     {
       "id": "codici-contabili",
-      "titolo": "CODICI CONTABILI POLI",
+      "titolo": "Codici Contabili Poli",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -95,7 +107,7 @@
           "tipo": "lista",
           "items": [
             "<b>Codice:</b> inserire codice contabile",
-            "<b>Descrizione:</b> lasciare il campo vuoto",
+            "<b>Descrizione:</b> lasciare il campo vuoto (riservato all'uso interno del Consorzio)",
             "<b>Comune:</b> inserire il comune",
             "<b>Frazione:</b> scegliere tra le opzioni in caso sia necessario"
           ]
@@ -103,13 +115,13 @@
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "Alla fine di ogni inserimento di poli cliccare sul tasto Conferma in basso a destra."
+          "testo": "Al termine di ogni inserimento cliccare su <b>\"Conferma\"</b> in basso a destra per salvare il codice contabile."
         }
       ]
     },
     {
       "id": "codici-contabili-alternativi",
-      "titolo": "CODICI CONTABILI ALTERNATIVI",
+      "titolo": "Codici Contabili Alternativi",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -121,7 +133,7 @@
     },
     {
       "id": "poli",
-      "titolo": "POLI",
+      "titolo": "Poli",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -143,29 +155,28 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su \"aggiungi\""
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra."
         },
         {
           "tipo": "lista",
           "items": [
-            "<b>Denominazione:</b> fermata precisa",
-            "<b>Regione:</b> scegliere la Regione",
+            "<b>Denominazione:</b> nome preciso della fermata (es. Piazza Garibaldi, Via Roma angolo Via Verdi)",
+            "<b>Regione:</b> selezionare la regione dal menu a tendina",
             "<b>Provincia:</b> inserire la provincia",
-            "<b>Comune:</b> inserire il Comune",
-            "<b>Frazione:</b> inserire eventualmente la frazione",
-            "<b>Codice Contabile:</b> indicare il codice contabile del polo di riferimento",
-            "<b>Latitudine:</b> recuperare le coordinate da google maps e copiarle in questo campo",
-            "<b>Longitudine:</b> recuperare le coordinate da google maps e copiarle in questo campo",
-            "<b>Cliccare su:</b> Geolocalizza (eventualmente spostare il simbolo sul punto preciso di transito se quello riportato da google non risulta preciso)",
-            "<b>Fermata principale:</b> selezionare solo nel caso si voglia mettere in evidenza questa fermata",
-            "<b>Primaria:</b> selezionare in caso si vogliano inserire più fermate principali e tra queste selezionare quella più importante",
-            "<b>Descrizione:</b> aggiungere eventuali note (es. fermata zona industriale….)"
+            "<b>Comune:</b> inserire il comune",
+            "<b>Frazione:</b> inserire la frazione se applicabile",
+            "<b>Codice Contabile:</b> selezionare il codice contabile del polo di riferimento (inserito in precedenza)",
+            "<b>Latitudine e Longitudine:</b> copiare le coordinate da Google Maps e incollarle nei rispettivi campi",
+            "<b>Geolocalizza:</b> cliccare per visualizzare il punto sulla mappa. Se la posizione non è precisa, trascinare l'indicatore sul punto esatto di transito",
+            "<b>Fermata principale:</b> selezionare per mettere in evidenza questa fermata tra le altre dello stesso polo",
+            "<b>Primaria:</b> se ci sono più fermate principali, selezionare questa opzione per indicare la più importante tra esse",
+            "<b>Descrizione:</b> aggiungere eventuali note identificative (es. zona industriale, fermata nord)"
           ]
         },
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "<b>Importante:</b> cliccare a fine operazione su \"Conferma\". Ripetere tutti i passaggi per ciascuna fermata."
+          "testo": "Al termine di ogni inserimento cliccare su <b>\"Conferma\"</b>. Ripetere il procedimento per ogni fermata del polo."
         },
         {
           "tipo": "immagine",
@@ -185,13 +196,22 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "A destra c'è la colonna \"operazione\". Le icone rappresentano nell'ordine da sinistra a desta: geolocalizzazione, visualizza/modifica, pubblica, cancella."
+          "testo": "A destra si trova la colonna <b>Operazioni</b>. Le icone disponibili per ogni fermata sono, da sinistra a destra:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Geolocalizzazione:</b> apre la mappa con il punto della fermata per verificare o correggere le coordinate",
+            "<b>Visualizza/Modifica:</b> apre il form per modificare i dati della fermata",
+            "<b>Pubblica:</b> rende la fermata attiva e visibile sul portale COTRAP",
+            "<b>Cancella:</b> elimina la fermata (operazione irreversibile)"
+          ]
         }
       ]
     },
     {
       "id": "linee",
-      "titolo": "LINEE",
+      "titolo": "Linee",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -203,11 +223,11 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "In questa sezione si deve creare il template, ovvero lo \"stampino\" della linea che si ripeterà nei vari orari corsa per corsa."
+          "testo": "In questa sezione si crea il <b>template</b> (il modello predefinito del percorso) che sarà riutilizzato per tutte le corse di una stessa linea."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su aggiungi per inserire una nuova linea."
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra per inserire una nuova linea."
         },
         {
           "tipo": "immagine",
@@ -226,13 +246,13 @@
           "items": [
             "<b>Denominazione:</b> riportare denominazione della linea presente su Tecbus (es. Corato - Trani)",
             "<b>Codice Contabile:</b> inserire il codice contabile della linea presente in Tecbus",
-            "<b>Tipologia:</b> selezionare la competenza della linea tra Regionale, Provinciale, Comunale (linee urbane. In questo modo la tariffa non sarà su base chilometrica ma sarà già importata la tariffa indicata dalla Regione per le linee urbane)",
+            "<b>Tipologia:</b> selezionare la competenza della linea tra Regionale, Provinciale, Comunale. Per le linee urbane (Comunale) la tariffa non è calcolata su base chilometrica ma è importata direttamente dalla tariffa fissa indicata dalla Regione per il servizio urbano",
             "<b>Descrizione:</b> inserire eventuali aspetti identificativi della linea"
           ]
         },
         {
           "tipo": "paragrafo",
-          "testo": "Creare il template della linea, inserendo la denominazione ed eventuali descrizioni. Cliccare quindi sul tasto + a destra. In una stessa linea creare il template di andata e quello di ritorno."
+          "testo": "Creare il template della linea inserendo la denominazione e una descrizione opzionale. Cliccare quindi sul pulsante <b>\"+\"</b> a destra. Per ogni linea è necessario creare sia il template di andata che quello di ritorno."
         },
         {
           "tipo": "immagine",
@@ -247,7 +267,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Spiegazione Tools (ovvero gli strumenti e le operazioni che trovate sulla destra)"
+          "testo": "Per ogni template sono disponibili i seguenti strumenti (colonna destra):"
         },
         {
           "tipo": "immagine",
@@ -286,7 +306,7 @@
             {
               "icona": "icona07.png",
               "nome": "Modifica",
-              "descrizione": "Nel caso in cui si voglia procedere con delle modifiche (ad esempio nella corsa di ritorno cambiare il civico della fermata"
+              "descrizione": "Apre il form del template per modificarne i dati (es. correggere il nome di una fermata nel template di ritorno)"
             },
             {
               "icona": "icona08.png",
@@ -323,7 +343,18 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> Per \"polo di cambio\" non si intende la fermata dove fisicamente l'utenza dovrà scendere per prendere la corsa successiva, ma lo si intenda come il polo che fornisce un controllo sulla compatibilità dei codici contabili."
+          "testo": "<b>Attenzione — significato del \"polo di cambio\":</b> Il polo di cambio NON è la fermata fisica dove i passeggeri cambiano mezzo. È il polo il cui codice contabile è presente in entrambe le linee, e serve al sistema per verificare che le due linee siano compatibili per la generazione dell'abbonamento multitratta."
+        },
+        {
+          "tipo": "box-esempio",
+          "titolo": "Esempio: abbonamento multitratta Bari → Matera",
+          "contenuto": [
+            "<b>Linea A:</b> Bari → Altamura (cod. cont. Bari = 001, cod. cont. Altamura = 050)",
+            "<b>Linea B:</b> Altamura → Matera (cod. cont. Altamura = 050, cod. cont. Matera = 100)",
+            "<b>Abbonamento multitratta:</b> permette di acquistare Bari → Matera con cambio ad Altamura",
+            "<b>Polo di cambio nel template:</b> Altamura (cod. 050), perché il suo codice contabile è presente sia nella Linea A che nella Linea B",
+            "<b>I 3 poli obbligatori del template:</b> Bari (partenza) → Altamura (cambio) → Matera (arrivo)"
+          ]
         },
         {
           "tipo": "immagine",
@@ -385,7 +416,7 @@
     },
     {
       "id": "creazione-template",
-      "titolo": "CREAZIONE DEL TEMPLATE",
+      "titolo": "Creazione del Template",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -462,8 +493,20 @@
           "testo": "<b>Attenzione:</b> se si sceglie una fermata che appartiene allo stesso polo (quindi stesso comune) si deve inserire alla voce KM 0. In questo modo non sarà generata tariffa essendo fermate dallo stesso comune e non sarà possibile la bigliettazione e quindi l'acquisto dal sito cotrap di biglietti con andata e partenza su stesso polo."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Inserire invece i minuti di transito (minuti che ci impiega il mezzo ad arrivare alla fermata in questione partendo dalla prima fermata, quindi il capolinea, e non dalla fermata immediatamente precedente) per definire orario preciso di passaggio dalla fermata indicata."
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>IMPORTANTE — come inserire i minuti:</b> I minuti di transito si calcolano sempre dal <b>capolinea (prima fermata)</b>, NON dalla fermata precedente. Il sistema usa questo valore per calcolare automaticamente l'orario di passaggio di ogni fermata partendo dall'orario di partenza del capolinea."
+        },
+        {
+          "tipo": "box-esempio",
+          "titolo": "Esempio corretto di inserimento minuti",
+          "contenuto": [
+            "<b>Fermata A — Capolinea:</b> 0 minuti (punto di partenza, sempre 0)",
+            "<b>Fermata B:</b> 12 minuti (il mezzo impiega 12 min dal capolinea per arrivare qui)",
+            "<b>Fermata C:</b> 20 minuti (il mezzo impiega 20 min dal capolinea per arrivare qui, non 8 min da B)",
+            "<b>Fermata D:</b> 35 minuti (35 min dal capolinea, non 15 min da C)",
+            "Se la corsa parte alle 08:00 dal capolinea: Fermata B = 08:12, Fermata C = 08:20, Fermata D = 08:35"
+          ]
         },
         {
           "tipo": "immagine",
@@ -591,7 +634,7 @@
     },
     {
       "id": "corse",
-      "titolo": "CORSE",
+      "titolo": "Corse",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -607,7 +650,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su aggiungi in alto a destra"
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra."
         },
         {
           "tipo": "immagine",
@@ -623,17 +666,22 @@
             "<b>Data inizio corsa e data fine corsa:</b> sono valori da inserire solo nel caso quella corsa abbia una validità stagionale o comunque limitata nel tempo. Ad esempio un servizio estivo. In caso contrario si tratti di corse effettuate tutto l'anno lasciare vuoti questi campi",
             "<b>Fornitore:</b> Nel caso sia una linea data in subappalto. In questo modo l'utente che acquisterà il biglietto saprà che la corsa è intestata ad un determinato consorziato, ma che il servizio è effettuato da un altro",
             "<b>Linea:</b> selezionare nel menu a tendina tra quelle precedentemente caricate quella a cui fa capo la corsa che si sta creando",
-            "<b>Template:</b> Scegliere dal menu a tendina lo \"stampino\" del percorso che sarà effettuato dalla corsa",
-            "<b>Mezzo:</b> lasciare il campo vuoto perché al momento non è necessario inserire dei mezzi particolari",
-            "<b>Occupazione Massima:</b> inserire il numero dei biglietti che si vogliono vendere sulla corsa",
+            "<b>Template:</b> selezionare dal menu a tendina il template del percorso che sarà effettuato dalla corsa (creato in precedenza nella sezione Linee)",
+            "<b>Mezzo:</b> lasciare vuoto. La disponibilità dei posti per la vendita online si gestisce tramite il campo Occupazione Massima",
+            "<b>Occupazione Massima:</b> inserire il numero di biglietti che si vogliono rendere disponibili per la vendita online sulla corsa. Se la corsa ha anche vendita a bordo o presso agenzie di terra, si consiglia di inserire un numero inferiore rispetto alla capienza totale del mezzo, riservando così i posti rimanenti agli acquisti fisici",
             "<b>Frequenza:</b> scegliere dal menu a tendina tra le tipologie di frequenza inserite nella prima fase di progettazione",
-            "<b>Stato corsa:</b> lasciare attiva"
+            "<b>Stato corsa:</b> lasciare su <b>Attiva</b>. Questo campo controlla lo stato interno della corsa nel sistema (attiva = operativa, non attiva = sospesa temporaneamente, ad es. per modificare il template). È distinto dallo stato di pubblicazione su COTRAP (vedi sotto)"
           ]
         },
         {
           "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — due stati distinti della corsa:</b> <br>• <b>Stato corsa</b> (campo del form): indica se la corsa è attiva nel sistema interno. Lasciare sempre su \"Attiva\", tranne quando si deve modificare il template (in quel caso va temporaneamente disattivata). <br>• <b>Stato di pubblicazione</b> (icona Pubblica/Nascondi nelle operazioni): indica se la corsa è visibile e vendibile sul portale COTRAP. Dopo aver creato la corsa, questa è inizialmente non pubblicata (non visibile su COTRAP) finché non si clicca esplicitamente su \"Pubblica\"."
+        },
+        {
+          "tipo": "avviso",
           "stile": "info",
-          "testo": "Cliccare su \"ATTIVAZIONE/DISATTIVAZIONE AUTOMATICA\" in questo modo se ad esempio di tratta di corsa scolastica si attiverà automaticamente in base al calendario scolastico regionale."
+          "testo": "<b>Attivazione/Disattivazione Automatica:</b> questa opzione è disponibile solo per corse con frequenza <b>Scolastica</b> o <b>Non Scolastica</b>. Se abilitata, il sistema attiverà e disattiverà automaticamente la corsa in base al calendario scolastico regionale (es. la corsa si attiva a settembre e si disattiva a giugno). Per corse con frequenza Giornaliera o Feriale questa opzione non è necessaria."
         },
         {
           "tipo": "paragrafo",
@@ -648,7 +696,7 @@
         {
           "tipo": "icona-azione",
           "icona": "icona07.png",
-          "testo": "Cliccare sul tastino per inserire il primo orario. <b>Attenzione:</b> Sarà necessario inserire solo l'orario di partenza dal capolinea e il sistema in base ai minuti e km inseriti nel template aggiornerà a cascata tutti gli altri orari."
+          "testo": "Cliccare sul pulsante per inserire il primo orario. <b>Attenzione:</b> inserire solo l'orario di partenza dal capolinea. Il sistema aggiornerà automaticamente a cascata tutti gli orari delle fermate successive in base ai minuti indicati nel template."
         },
         {
           "tipo": "immagine",
@@ -679,7 +727,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su conferma in basso a destra. A questo punto la corsa sarà stata creata, ma non ancora vendibile sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>."
+          "testo": "Cliccare su <b>\"Conferma\"</b> in basso a destra. A questo punto la corsa è stata creata ma non è ancora visibile o vendibile sul portale COTRAP — per pubblicarla è necessario un passaggio ulteriore."
         },
         {
           "tipo": "immagine",
@@ -690,11 +738,11 @@
         {
           "tipo": "icona-azione",
           "icona": "icona10.png",
-          "testo": "Per attivare la corsa e renderla vendibile si deve cliccare sull'operazione (pubblica/nascondi)."
+          "testo": "Per rendere la corsa visibile e vendibile sul portale COTRAP, cliccare sull'icona <b>\"Pubblica/Nascondi\"</b> nella colonna Operazioni."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccando, il sistema richiede conferma perché da quel momento in poi la corsa sarà visibile dagli utenti e quindi è necessario essere sicuri della correttezza dell'operazione."
+          "testo": "Il sistema richiede conferma prima di pubblicare: da quel momento la corsa sarà visibile agli utenti su COTRAP. Verificare la correttezza di tutti i dati prima di confermare."
         },
         {
           "tipo": "immagine",
@@ -705,7 +753,7 @@
         {
           "tipo": "avviso",
           "stile": "success",
-          "testo": "Si consiglia inserire prima tutte le corse e poi procedere con la pubblicazione delle stesse. Lo stato attivazione quindi diventerà: \"Attiva\"."
+          "testo": "Si consiglia di inserire prima <b>tutte le corse</b> e solo in seguito pubblicarle tutte insieme. Dopo la pubblicazione lo stato attivazione diventerà <b>\"Attiva\"</b>."
         },
         {
           "tipo": "immagine",
@@ -717,7 +765,7 @@
     },
     {
       "id": "note",
-      "titolo": "NOTE",
+      "titolo": "Note",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -729,11 +777,11 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Questa funzionalità permette di inserire delle indicazioni particolari che verranno visualizzate direttamente dai clienti sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>."
+          "testo": "Questa funzionalità permette di inserire comunicazioni per i clienti che saranno visualizzate direttamente nel dettaglio della corsa, del polo o della linea sul portale <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>. La nota compare durante il periodo di validità impostato e scompare automaticamente alla scadenza."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su Aggiungi in alto a destra per inserire la nota."
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra per inserire una nuova nota."
         },
         {
           "tipo": "immagine",
@@ -749,7 +797,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "In denominazione inserire il titolo della nota che possa identificare chiaramente la comunicazione."
+          "testo": "Inserire in <b>Denominazione</b> un titolo che identifichi chiaramente la comunicazione (visibile solo internamente, non mostrato ai clienti)."
         },
         {
           "tipo": "box-esempio",
@@ -757,7 +805,7 @@
           "contenuto": [
             "<b>Denominazione:</b> Processione",
             "<b>Data inizio Validità - Data Fine validità:</b> il periodo in cui tale comunicazione sarà visibile su sito",
-            "<b>Tipologia:</b> scegliere tra polo, linea o corsa",
+            "<b>Tipologia:</b> scegliere tra polo, linea o corsa. Nel caso si selezioni \"corsa\", sarà necessario specificare anche la linea e la corsa nello specifico.",
             "<b>Testo:</b> la corsa potrebbe subire ritardi per la processione"
           ]
         },
@@ -784,6 +832,161 @@
           "src": "Immagine5.6g.png",
           "alt": "Nota su Sito",
           "didascalia": "Visualizzazione della nota sul sito COTRAP"
+        }
+      ]
+    },
+    {
+      "id": "concetti-base-abbonamenti",
+      "titolo": "Concetti Base: Tariffario e Raggruppamento Abbonamenti",
+      "aggiornato": "2026-03-03",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Prima di procedere con la configurazione degli abbonamenti è necessario comprendere tre concetti fondamentali gestiti dall'<b>Amministratore di Sistema COTRAP</b>. Il consorziato non può modificare questi valori, ma deve conoscerli per capire come funzionano i prezzi."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>1. Tariffario Abbonamenti</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Nel pannello Amministrativo, nella stessa sezione Tariffari già vista nella Configurazione, viene inserito anche il tariffario specifico per gli abbonamenti. L'importo inserito è l'importo <b>lordo</b> indicato dalla delibera regionale, con una data di inizio validità impostata dall'Admin. Ad ogni aggiornamento del Tariffario Regionale, l'Amministratore aggiornerà questa sezione."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>2. Raggruppamento Tariffario</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "I tariffari sono poi associati ai <b>Raggruppamenti Tariffari</b>, ovvero le tariffe associate alle diverse tipologie di titoli di viaggio. Esistono due tipi principali:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Raggruppamento Tariffario Extraurbano</b>: tariffa su base chilometrica regionale. La denominazione dei raggruppamenti è in linea con la dicitura 'tariffa' già identificata sulle macchinette emettitrici Tecbus.",
+            "<b>Raggruppamento Tariffario Urbano</b>: la tariffa è definita in base all'affidamento del servizio con il Comune. Per attivarlo, è necessario comunicare all'Amministratore il codice contabile polo del servizio urbano."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Servizio urbano ed extraurbano:</b> se un Comune è servito sia da servizio extraurbano che urbano, si consiglia di utilizzare <b>due codici contabili polo distinti</b>."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>3. Categoria Calcolo di Sconto</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Ogni titolo di viaggio ha associata una <b>Categoria Calcolo di Sconto</b>, cioè il tipo di tessera su cui sarà calcolato lo sconto. La categoria più utilizzata è la <b>Categoria 1</b>, che prevede uno sconto del <b>10%</b> in base alla delibera della Regione Puglia. Questo sconto viene applicato automaticamente all'utente finale sul portale, mostrando già il prezzo scontato."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Se occorre una tessera 'speciale' con un fattore di sconto diverso non presente nell'elenco standard, è necessario contattare <b>sia l'Amministratore di Sistema di Itineris che Tecbus</b>, in quanto la tessera deve essere creata su entrambi i sistemi."
+        }
+      ]
+    },
+    {
+      "id": "titoli-di-viaggio",
+      "titolo": "Titoli di Viaggio",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Oltre al biglietto di corsa semplice, il Consorzio fornisce la possibilità di attivare anche gli abbonamenti. Le configurazioni base (tariffari abbonamenti, raggruppamenti tariffari, categorie di sconto) sono gestite dall'Amministratore di Sistema; il consorziato può invece gestire l'attivazione e la configurazione dei propri titoli di viaggio."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — come viene calcolato il costo dell'abbonamento:</b> Il sistema utilizza la <b>corsa attiva</b> con il template che ha la <b>maggiore distanza chilometrica</b> tra i codici contabili di partenza e arrivo ricercati dall'utente. Su quell'importo lordo viene poi applicato lo sconto previsto dalla tessera (es. Categoria 1 = -10%). Questo significa che se il template di andata e quello di ritorno hanno distanze diverse, potrebbero risultare prezzi differenti: in quel caso uniformare i template oppure inserire un'eccezione tariffaria."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Servizio urbano ed extraurbano:</b> se un Comune è servito sia da servizio extraurbano che urbano, utilizzare <b>due codici contabili polo distinti</b>. In questo modo il sistema applica la tariffa corretta per ogni tipo di servizio. Per attivare il servizio urbano comunicare all'Amministratore il codice contabile polo relativo."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Richiesta titoli di viaggio</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Per attivare gli abbonamenti è necessario inviare formale richiesta all'<b>Amministratore COTRAP</b>, specificando gli abbonamenti standard che si desidera vendere online. Sono anche disponibili abbonamenti per Invalidi con o senza accompagnatore. Per abbonamenti dedicati (es. studenti, pendolari con tessere speciali) è necessario confrontarsi preventivamente con l'Amministratore di Sistema."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Abb. Mensile/52:</b> abbonamento mensile 52 corse",
+            "<b>Abb. Mensile/42:</b> abbonamento mensile 42 corse — previsto per linee con servizio dal lunedì al venerdì (es. corse operaie)",
+            "<b>Abb. Sett/12:</b> abbonamento settimanale 12 corse",
+            "<b>Abb. Sett/10:</b> abbonamento settimanale 10 corse — previsto per linee con servizio dal lunedì al venerdì",
+            "<b>Abb. Mensile Invalidi Acc/52:</b> abbonamento mensile invalidi con accompagnatore 52 corse",
+            "<b>Abb. Mensile Invalidi/52:</b> abbonamento mensile invalidi senza accompagnatore 52 corse"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Dopo aver richiesto l'attivazione, accedere a <b>Gestione Movimento → Titoli di Viaggio</b>. Inizialmente i titoli risulteranno nello stato <b>\"Non Attivi\"</b>."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "La schermata mostra le seguenti colonne per ogni titolo di viaggio:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione:</b> campo non modificabile, impostato dall'Amministratore in base agli abbonamenti cartacei emessi dalle macchinette Tecbus",
+            "<b>Raggruppamento Tariffario:</b> extraurbano o urbano",
+            "<b>Tipologia:</b> mensile o settimanale",
+            "<b>Periodo e stagionalità:</b> per abbonamenti con validità limitata (es. estivi)",
+            "<b>Categoria calcolo sconto:</b> tipologia di tessera associata al titolo di viaggio, che determina il fattore di sconto sull'importo lordo del tariffario (es. la <b>Categoria 1</b> prevede uno sconto del 10% sulla base della delibera della Regione Puglia). Se occorre una tessera 'speciale' non presente nell'elenco, è necessario contattare sia l'Amministratore di Sistema di Itineris sia Tecbus.",
+            "<b>Stato attivazione:</b> attivo o non attivo",
+            "<b>Operazioni:</b> attivazione/disattivazione e configurazione del titolo"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione:</b> Il corretto funzionamento degli abbonamenti dipende interamente dalla corretta configurazione del titolo di viaggio. I titoli standard sono già configurati dall'Amministratore secondo la normativa regionale."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Configurazione titolo di viaggio</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Accedendo tramite il tasto <b>Visualizza/Modifica</b>, il consorziato può abilitare o escludere alcuni collegamenti dalla tipologia di abbonamento. È possibile agire su:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Intere <b>linee</b>",
+            "Singole <b>corse</b> all'interno di una linea",
+            "<b>Coppie di codici contabili poli</b>"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Se si lasciano tutti i campi vuoti, il sistema permetterà di acquistare l'abbonamento per tutti i collegamenti presenti."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Esempi di configurazione abbonamenti",
+          "contenuto": [
+            "<b>Esempio 1:</b> Le linee 1001-1002 (andata e ritorno) risultano abilitate, ad esclusione della coppia di codici contabili polo 944-14 (collegamento estivo, non prevede abbonamento).",
+            "<b>Esempio 2:</b> Nell'Abb. 42 corse sono state abilitate solo le linee da e per la zona industriale, poiché il servizio è previsto solo dal lunedì al venerdì.",
+            "<b>Esempio 3:</b> Nella configurazione degli abbonamenti mensili invalidi non è stato escluso alcun collegamento.",
+            "<b>Esempio 4:</b> Quando vengono escluse coppie di codici contabili, l'esclusione vale anche per la tratta inversa (es. escludendo A→B, viene escluso automaticamente anche B→A).",
+            "<b>Esempio 5:</b> È possibile che l'Amministratore di sistema inserisca in fase di configurazione la stagionalità di un abbonamento (es. abbonamenti ridotti al 50% per studenti che hanno beneficiato del bonus trasporti della Regione Puglia, attivi solo nel periodo specifico previsto dall'agevolazione)."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione:</b> L'esclusione di coppie di codici contabili vale sempre in entrambe le direzioni."
         }
       ]
     }

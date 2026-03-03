@@ -1,7 +1,7 @@
 {
   "id": "guida-veloce",
-  "titolo": "GUIDA VELOCE",
-  "aggiornato": "2026-02-23",
+  "titolo": "Guida Veloce",
+  "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [
     {
@@ -14,32 +14,32 @@
         {
           "numero": 1,
           "titolo": "Accesso al portale",
-          "descrizione": "Vai su cotrap.itineris.it e inserisci le credenziali (ID utente e password) fornite dal consorzio. Dopo il login visualizzerai la dashboard principale."
+          "descrizione": "Accedi al Portale Itineris (itinerisadminpanel.azurewebsites.net) e inserisci le credenziali (ID utente e password) fornite dal consorzio. Dopo il login visualizzerai la dashboard principale."
         },
         {
           "numero": 2,
-          "titolo": "Configurazione Profilo Commerciale",
-          "descrizione": "Accedi alla sezione Profilo Commerciale per verificare i dati aziendali, configurare i titoli di viaggio (biglietti e abbonamenti) e impostare le tariffe."
+          "titolo": "Configurazione",
+          "descrizione": "Nella sezione Configurazione (accessibile dal menu Profilo Commerciale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica). Inserisci anche gli autisti/controllori in Utenti App Controlli."
         },
         {
           "numero": 3,
           "titolo": "Inserimento Codici Contabili e Poli",
-          "descrizione": "Nella sezione Gestione Movimento, inserisci i codici contabili per le voci di ricavo e i poli (fermate/capolinea) con i relativi comuni."
+          "descrizione": "Nella sezione Gestione Movimento, inserisci i codici contabili dei Comuni/frazioni (recuperati da Tecbus) e i poli (le fermate precise con coordinate GPS)."
         },
         {
           "numero": 4,
-          "titolo": "Creazione Linee",
-          "descrizione": "Crea le linee associando i poli di partenza e arrivo, imposta i template orario e configura i titoli di viaggio abilitati."
+          "titolo": "Creazione Linee e Template",
+          "descrizione": "Crea le linee con denominazione, codice e tipologia (Regionale/Provinciale/Comunale). Per ogni linea crea il template: il modello del percorso con tutte le fermate, i km tra fermata e fermata e i minuti dal capolinea (non dalla fermata precedente). Crea anche il template di ritorno usando 'Duplica e Inverti'."
         },
         {
           "numero": 5,
           "titolo": "Creazione Corse",
-          "descrizione": "Per ogni linea, crea le corse indicando orari, giorni di validità e frequenza. Puoi creare corse singole o generarle in blocco tramite i template."
+          "descrizione": "Per ogni linea, crea le corse una per una: collega linea e template, inserisci l'orario di partenza dal capolinea (il sistema calcola automaticamente tutti gli altri orari), scegli la frequenza e imposta l'occupazione massima."
         },
         {
           "numero": 6,
-          "titolo": "Attivazione e Pubblicazione",
-          "descrizione": "Attiva le corse create per renderle visibili sull'app e sul portale web. Le corse non attivate restano in bozza."
+          "titolo": "Pubblicazione delle Corse",
+          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili su COTRAP. In Gestione Movimento → Corse, cliccare sull'icona 'Pubblica/Nascondi' a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo stato diventa 'Attiva'. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
         },
         {
           "numero": 7,

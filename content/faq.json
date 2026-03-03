@@ -1,0 +1,313 @@
+{
+    "id": "faq",
+    "titolo": "Domande e Risposte",
+    "aggiornato": "2026-03-03",
+    "nuovo": true,
+    "contenuto": [
+        {
+            "tipo": "paragrafo",
+            "testo": "In questa sezione sono raccolte le domande più frequenti operative sull'utilizzo di Itineris, organizzate per argomento."
+        },
+        {
+            "tipo": "avviso",
+            "stile": "warning",
+            "testo": "<b>Sezione extra:</b> Queste FAQ integrano la guida operativa con risposte condensate ai dubbi più comuni. Per le istruzioni complete consultare le sezioni dedicate del manuale."
+        }
+    ],
+    "sottosezioni": [
+        {
+            "id": "faq-accesso",
+            "titolo": "Accesso e Profili",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Quali credenziali usare per accedere?",
+                    "risposta": "Sono necessari <b>ID utente e password</b> forniti dall'Amministratore COTRAP. Esistono due account separati: uno per il <b>profilo commerciale</b> e uno per il <b>profilo contabile</b>. Non usare le stesse credenziali per entrambi."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come faccio a sapere con quale profilo sono loggato?",
+                    "risposta": "In <b>basso a sinistra</b> della pagina è visibile il nome e cognome dell'utente e tra parentesi il nome dell'azienda. Verificarlo sempre prima di operare, soprattutto se si hanno più account."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Ho sbagliato profilo (commerciale invece di contabile o viceversa): cosa succede?",
+                    "risposta": "Le due sezioni hanno funzionalità diverse. <b>Il profilo commerciale</b> gestisce linee, corse, eccezioni e titoli di viaggio e consulta gli ordini in modo operativo. <b>Il profilo contabile</b> accede a ordini, dati contabili, biglietti, abbonamenti e statistiche per la gestione amministrativa. Se si usano credenziali sbagliate si accede alla sezione sbagliata senza dati operativi utili. Fare logout e accedere con le credenziali corrette."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Ho dimenticato la password, come la recupero?",
+                    "risposta": "Nella pagina di login cliccare su <b>\"Recupero password\"</b> e inserire l'email di recupero indicata preventivamente all'Amministratore COTRAP. Se non si ricorda l'email di recupero, contattare l'Amministratore."
+                }
+            ]
+        },
+        {
+            "id": "faq-configurazione",
+            "titolo": "Configurazione",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Posso modificare i tariffari o i calendari scolastici?",
+                    "risposta": "<b>No.</b> I tariffari chilometrici regionali e i calendari scolastici sono inseriti e aggiornati esclusivamente da COTRAP. Il consorziato può <b>solo consultarli</b> per regolarsi sull'impostazione delle proprie linee."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Devo inserire le date nella frequenza scolastica?",
+                    "risposta": "<b>No.</b> Se si sceglie la tipologia \"Scolastica\", il sistema usa automaticamente il calendario scolastico configurato da COTRAP. Le date di inizio/fine vanno inserite solo per frequenze con range di validità personalizzato (es. servizio estivo con date precise)."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Ho inserito un utente app controlli, ma risulta ancora 'in attesa di conferma': è normale?",
+                    "risposta": "<b>Sì, è normale.</b> Dopo l'inserimento lo stato parte da 'in attesa di conferma'. È necessario anche un secondo passaggio: l'utente deve scaricare l'app di controllo sul proprio dispositivo Android tramite il link <a href=\"https://www.cotrap.it/app-controlli/\" target=\"_blank\">www.cotrap.it/app-controlli</a> e impostare la propria password, dopodiché lo stato passerà a 'confermato'."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Quante tipologie di frequenza esistono?",
+                    "risposta": "Le tipologie disponibili su Itineris sono: <b>Giornaliera</b> (tutti i giorni), <b>Feriale</b> (personalizzabile per giorni specifici, es. lunedì–venerdì o solo sabato), <b>Scolastica</b>, <b>Non Scolastica</b>, <b>Festiva</b>."
+                }
+            ]
+        },
+        {
+            "id": "faq-codici-poli",
+            "titolo": "Codici Contabili e Poli",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Da dove recupero i codici contabili?",
+                    "risposta": "I codici contabili dei poli si recuperano da <b>Tecbus</b>. Vanno poi inseriti su Itineris in <b>Gestione Movimento → Codici Contabili Poli</b>. Un solo codice contabile deve corrispondere a un Comune; le frazioni hanno codici distinti."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Uno stesso Comune può avere due codici contabili diversi?",
+                    "risposta": "<b>Sì, eccezionalmente.</b> Se ci sono corse con un tragitto particolare che comporta una tariffa diversa (es. corse rapide), si può usare un secondo codice contabile per quel polo, purché esista già su Tecbus. Si tratta dei cosiddetti <b>codici contabili alternativi</b>."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come recupero le coordinate GPS per inserire un polo?",
+                    "risposta": "Le coordinate (latitudine e longitudine) si copiano da <b>Google Maps</b>. Dopo averle inserite nei campi appositi, cliccare su <b>Geolocalizza</b>: apparirà il punto sulla mappa. Se la posizione non è precisa, è possibile trascinare l'indicatore nel punto esatto."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Cosa sono 'Fermata principale' e 'Primaria' in un polo?",
+                    "risposta": "<b>Fermata principale:</b> selezionare se si vuole mettere in evidenza quella fermata tra le altre dello stesso polo. <b>Primaria:</b> selezionare quando ci sono più fermate principali e si vuole indicare la più importante tra queste."
+                }
+            ]
+        },
+        {
+            "id": "faq-linee-template",
+            "titolo": "Linee, Template e Corse",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Cosa succede se due fermate consecutive nel template hanno lo stesso codice contabile?",
+                    "risposta": "Va inserito <b>0 km</b>. In questo modo il sistema non genera tariffa tra queste due fermate e non sarà possibile acquistare biglietti con partenza e arrivo sullo stesso polo. I minuti di transito vanno comunque inseriti correttamente."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "I minuti nel template sono calcolati dalla fermata precedente o dal capolinea?",
+                    "risposta": "I minuti indicati nel template sono calcolati <b>sempre dalla prima fermata (capolinea)</b>, non dalla fermata precedente. Questo permette al sistema di calcolare automaticamente tutti gli orari partendo dall'orario di partenza dal capolinea."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Ho modificato un template con corse già attive: la modifica è andata a buon fine?",
+                    "risposta": "<b>Non automaticamente.</b> La modifica del template viene propagata alle corse <b>solo se sono disattivate</b> e tramite il pulsante <b>\"Aggiorna Corse inattive del Template\"</b>. Le corse attive non vengono aggiornate. Procedura: 1) Disattivare le corse, 2) Modificare il template, 3) Cliccare Conferma, 4) Cliccare \"Aggiorna Corse inattive del Template\", 5) Confermare, 6) Cliccare Conferma in basso a destra, 7) Riattivare le corse."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Quali corse sono escluse dalla modifica massiva del template?",
+                    "risposta": "Sono escluse le corse che hanno subito una <b>modifica diretta</b> al template, cioè: modifica km, aggiunta o eliminazione di un polo, modifica orario, modifica sosta, impostazione dei flag solo discesa/salita/transito. L'aggiunta o eliminazione di un codice contabile alternativo <b>NON è considerata modifica diretta</b> e non esclude la corsa dalla modifica massiva."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "La corsa creata non è ancora visibile su cotrap.it: perché?",
+                    "risposta": "La corsa non è stata <b>attivata/pubblicata</b>. Dopo aver creato la corsa, lo stato è 'non attiva'. Per renderla vendibile è necessario cliccare sull'icona <b>pubblica/nascondi</b> nella colonna operazioni e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Cosa indica il campo 'Occupazione Massima' nella corsa?",
+                    "risposta": "Indica il numero massimo di biglietti vendibili <b>online</b> per quella corsa. Si usa quando si vuole riservare una parte dei posti alla vendita a bordo o in agenzia, limitando la vendita digitale. La percentuale di occupazione mostrata in 'Stati Occupazionali' si riferisce <b>solo ai biglietti online</b>, non al venduto cartaceo."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Cos'è una linea multitratta e quando si usa?",
+                    "risposta": "Una linea multitratta permette di generare <b>abbonamenti con coppie di codici contabili che non appartengono alla stessa linea</b> (es. abbonamenti con cambio tra due linee di aziende diverse). La spunta 'multitratta' <b>inibisce la creazione di biglietti</b>: serve solo per abbonamenti. Il template richiede obbligatoriamente 3 poli (partenza, cambio, arrivo) e il polo di cambio deve avere un codice contabile presente in entrambe le linee."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come gestisco un servizio stagionale (es. servizio estivo)?",
+                    "risposta": "Per un servizio stagionale compilare i campi <b>Data inizio corsa</b> e <b>Data fine corsa</b> nella creazione della corsa. In questo modo la corsa sarà automaticamente visibile su COTRAP solo nel periodo indicato. Per i servizi che durano tutto l'anno lasciare questi campi vuoti. Se la corsa ha frequenza scolastica o non scolastica è possibile usare anche l'opzione <b>Attivazione/Disattivazione Automatica</b> per gestire il calendario scolastico in modo automatico."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Posso modificare una corsa già pubblicata senza disattivarla?",
+                    "risposta": "Dipende dal tipo di modifica. I campi generali della corsa (denominazione, occupazione massima, frequenza, date) si possono modificare anche da corsa attiva. <b>Se invece si deve modificare il template</b> (percorso, km, orari), è obbligatorio prima disattivare la corsa, modificare il template, aggiornare le corse inattive con il pulsante dedicato, e poi riattivare la corsa. Modificare un template con corse ancora attive non applica le modifiche alle corse esistenti."
+                }
+            ]
+        },
+        {
+            "id": "faq-eccezioni",
+            "titolo": "Eccezioni",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Quando si crea un'eccezione di movimento, la corsa sparisce da cotrap.it?",
+                    "risposta": "<b>Sì.</b> Durante il periodo di validità dell'eccezione, la corsa (o il polo, o la linea) non sarà visibile sul sito cotrap.it agli utenti. Al termine del periodo l'eccezione si disattiva automaticamente e la corsa torna visibile."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "C'è differenza tra eccezione su 'corsa', 'linea' e 'servizio'?",
+                    "risposta": "Sì: <b>Polo</b> = sospensione di una singola fermata (con possibile fermata sostitutiva). <b>Corsa</b> = sospensione di una singola corsa. <b>Linea</b> = sospensione di tutte le corse di una linea. <b>Servizio</b> = sospensione dell'intero servizio. <b>Calendario</b> = permette di cambiare la tipologia di frequenza di alcune corse eccezionalmente (es. da feriale a scolastica)."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "L'eccezione tariffaria su biglietti richiede una data di fine?",
+                    "risposta": "Non è obbligatoria, ma è consigliabile inserirla solo se si conosce con certezza la data di termine. Nel caso degli abbonamenti, è anzi consigliato <b>lasciare vuota</b> la data di fine, in quanto potrebbe non essere certa la data della nuova variazione del tariffario regionale."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
+                    "risposta": "<b>No.</b> Dopo aver cliccato Conferma, l'eccezione viene pubblicata automaticamente tramite un processo di denormalizzazione. Il tasto <b>Pubblica</b> è presente solo come rimedio in caso di errori nella denormalizzazione. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Posso scegliere qualsiasi data di inizio per un'eccezione chilometrica?",
+                    "risposta": "<b>No.</b> Si può selezionare solo il <b>primo di ogni mese</b> come data di inizio. La data di fine validità, se inserita, deve obbligatoriamente essere l'<b>ultimo giorno del mese</b>."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come verifico che una variazione tariffaria sia stata applicata correttamente a tutte le corse?",
+                    "risposta": "Con la funzione <b>Controllo Tariffario Itinerario</b> (in Eccezioni). Inserire la data, l'importo precedente alla variazione, il comune di partenza e quello di arrivo. Se la vecchia tariffa non compare nei risultati, la variazione è stata applicata correttamente a tutte le corse."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Quando uso 'Eccezione Tariffaria' e quando 'Eccezione Chilometrica'?",
+                    "risposta": "<b>Eccezione Tariffaria:</b> Modifica direttamente l'importo in euro della tariffa di una tratta (biglietti, abbonamenti o entrambi). Si usa quando il tariffario regionale viene aggiornato con nuovi prezzi o quando una tratta ha un importo errato da correggere. La data di inizio è libera; la data di fine è opzionale (per gli abbonamenti è consigliato non inserirla).<br><br><b>Eccezione Chilometrica:</b> Modifica la distanza in km tra due codici contabili, dalla quale il sistema calcola poi le tariffe. Si usa quando le polimetriche ufficiali cambiano (es. variazione del percorso reale). La data di inizio deve essere obbligatoriamente il <b>primo del mese</b>; la data di fine (se inserita) deve essere l'<b>ultimo giorno del mese</b>. Dopo la conferma la modifica viene propagata automaticamente tramite denormalizzazione."
+                }
+            ]
+        },
+        {
+            "id": "faq-ordini-biglietti",
+            "titolo": "Ordini e Biglietti",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Qual è la differenza tra 'Ordine' e 'Biglietto'?",
+                    "risposta": "Un <b>ordine</b> è la transazione complessiva e può contenere più biglietti (es. andata + ritorno). Ogni biglietto all'interno dell'ordine è identificato dal <b>numero ordine + una lettera finale</b>. In Biglietti si cercano i singoli titoli di viaggio con filtri più dettagliati (linea, corsa, comune, ecc.)."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Un cliente dice di aver acquistato un biglietto ma non riesco a trovarlo: come cerco?",
+                    "risposta": "Usare in Ordini → Biglietti i filtri: <b>Codice Biglietto</b> (se disponibile, includere la lettera finale), oppure <b>Acquirente</b> (nome/cognome o email), oppure <b>N° Ordine</b>. Se non si trova, verificare il <b>Canale</b> (App o Portale Web) e il <b>Tipo pagamento</b> (Online, Credito o Gratuito). Non usare il 'Progressivo biglietto' perché è un codice interno non utile."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Cosa significa 'Credito' come tipo di pagamento?",
+                    "risposta": "Il tipo pagamento <b>Credito</b> indica un biglietto acquistato tramite l'app COTRAP usando il saldo della ricarica effettuata in precedenza dall'utente. Questa modalità è disponibile <b>solo sull'app</b>, non sul portale web."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come blocco un abbonamento usato in modo fraudolento?",
+                    "risposta": "Nella sezione Ordini → Abbonamenti, trovare l'abbonamento tramite i filtri e cliccare sull'icona <b>Blocca</b>. L'abbonamento risulterà bloccato e non potrà essere utilizzato. Questa operazione è reversibile solo dall'Amministratore."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Un abbonato ha perso corse per colpa del vettore: come compenso?",
+                    "risposta": "In Ordini → Abbonamenti, trovare l'abbonamento e usare l'operazione <b>Aggiungi/Scala corse</b>, che permette di aggiungere corse extra come compensazione. Questa funzione è utile anche in caso di macchinetta vidimatrice rotta, come alternativa al rimborso."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "La percentuale di occupazione del mezzo è affidabile?",
+                    "risposta": "<b>È parziale.</b> La percentuale in 'Stati Occupazionali Corse' rappresenta solo i biglietti acquistati <b>online</b>. Non tiene conto del venduto cartaceo (macchinetta di bordo). Quindi il mezzo reale può essere più pieno di quanto mostrato dal sistema."
+                }
+            ]
+        },
+        {
+            "id": "faq-titoli-gratuiti",
+            "titolo": "Emissione Titoli Gratuiti",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Come accedo alla funzione 'Emetti Titoli di Viaggio'?",
+                    "risposta": "La funzione è disponibile <b>solo per il profilo commerciale</b> tramite il tasto <b>\"Emetti Titoli di Viaggio\"</b> su Admin Panel. Cliccandolo si apre il Portale Clienti con privilegi di amministratore, attraverso il quale si può procedere con l'emissione."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Posso scegliere l'azienda dalla pagina di ricerca del Portale Clienti?",
+                    "risposta": "<b>No.</b> L'azienda con cui si accede al Portale Clienti è automaticamente quella selezionata in quel momento su Admin Panel. Non è possibile cambiarla dalla pagina di ricerca. Se si gestiscono più aziende, selezionare quella corretta prima di cliccare 'Emetti Titoli di Viaggio'."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "La sessione di emissione gratuita è scaduta a metà operazione: cosa faccio?",
+                    "risposta": "La sessione dura <b>15 minuti</b>. Alla scadenza appare una modale di notifica. Tornare su Admin Panel e cliccare nuovamente <b>\"Emetti Titoli di Viaggio\"</b> per ottenere una nuova sessione di 15 minuti e continuare con le emissioni."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "I titoli gratuiti vengono notificati al cliente?",
+                    "risposta": "<b>Sì.</b> All'emissione viene inviata automaticamente una <b>email di conferma</b> al cliente. È anche possibile stampare i titoli emessi in formato PDF direttamente dalla schermata di conferma."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come trovo tutti i titoli emessi gratuitamente?",
+                    "risposta": "Usare il filtro <b>Gratuito</b> nel metodo di pagamento, disponibile in: Ordini → Biglietti, Ordini → Abbonamenti (profilo commerciale), e nella Sezione Contabile → Ordini, Biglietti, Abbonamenti. Nel dettaglio di ogni titolo è presente il campo <b>\"Emesso da Admin\"</b> che identifica i titoli emessi da profilo commerciale."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "I titoli gratuiti impattano le statistiche di vendita?",
+                    "risposta": "<b>No.</b> Le statistiche mensili, statistiche linee, statistiche venduto e i <b>dati contabili ignorano completamente</b> le transazioni relative ai titoli emessi gratuitamente. Questo per evitare che distorcano i dati di fatturato reale."
+                }
+            ]
+        },
+        {
+            "id": "faq-contabile",
+            "titolo": "Sezione Contabile",
+            "aggiornato": "2026-03-03",
+            "nuovo": true,
+            "contenuto": [
+                {
+                    "tipo": "faq",
+                    "domanda": "Perché non vedo i miei dati nella Sezione Contabile pur essendo loggato?",
+                    "risposta": "Verificare di essere loggato con le <b>credenziali contabili</b> (non quelle commerciali). Il profilo è visibile in basso a sinistra. Se si è nel profilo commerciale, fare logout e accedere con le credenziali della sezione contabile."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Perché devo fare due esportazioni separate nei Dati Contabili?",
+                    "risposta": "Perché i biglietti acquistati con <b>carta di credito</b> (tipo 'Online') e quelli acquistati con il <b>credito da ricariche</b> (tipo 'Credito') sono registrati separatamente. Per avere il quadro completo del venduto bisogna esportare: 1) <b>Online → Pagato → Tutti</b>, poi 2) <b>Credito → Pagato</b>."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Qual è la differenza tra 'Esporta' e 'Esporta SEP' nei Dati Contabili?",
+                    "risposta": "<b>Esporta</b> genera un file <b>.txt</b> (per i software gestionali aziendali). <b>Esporta SEP</b> genera un file <b>.xls</b> (Excel). Entrambi i file sono poi recuperabili nella sezione Esportazioni."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Le statistiche venduto includono gli abbonamenti gratuiti emessi dal commerciale?",
+                    "risposta": "<b>No.</b> Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili <b>ignorano tutte le transazioni</b> relative ai titoli emessi gratuitamente dal profilo commerciale."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come verifico che un rimborso sia andato a buon fine?",
+                    "risposta": "Cercare il biglietto o l'ordine in <b>Ordini → Biglietti</b> (profilo commerciale) o in <b>Ordini</b> (sezione contabile). Lo stato del pagamento indica: <b>'Attesa Rimborso'</b> = il rimborso è stato richiesto ma non ancora elaborato; <b>'Rimborsato'</b> = il rimborso in denaro (su carta di credito) è andato a buon fine; <b>'Rimborsato Credito'</b> = il rimborso è stato accreditato come saldo sull'account dell'utente (solo per pagamenti con credito da ricariche). Se lo stato è ancora 'Attesa Rimborso', attendere i tempi bancari o contattare l'Amministratore COTRAP."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Dove trovo i file già scaricati in precedenza?",
+                    "risposta": "Tutti i file generati dalle esportazioni sono disponibili nella sezione <b>Esportazioni</b> (sia nel profilo commerciale che in quello contabile). Cliccando sull'icona di download il file viene salvato nella cartella Download del PC."
+                }
+            ]
+        }
+    ]
+}

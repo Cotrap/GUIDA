@@ -4,6 +4,33 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.3",
+      "data": "2026-03-03",
+      "tipo": "fix",
+      "titolo": "Revisione accuratezza contenuti, FAQ operative, distinzione visiva menu",
+      "descrizione": "Controllo incrociato di tutti i contenuti con la guida originale e i documenti di aggiornamento. Riscrittura FAQ con domande operative reali. Struttura menu migliorata.",
+      "dettagli": [
+        "Rimossa FAQ sui requisiti minimi (non rilevante per operativi)",
+        "FAQ completamente riscritta con 35 domande operative basate sulla guida originale",
+        "Aggiunte FAQ su: corse, template, multitratta, eccezioni, titoli gratuiti, sezione contabile",
+        "Aggiunto filtro Gratuito nella ricerca Abbonamenti (Ordini commerciale)",
+        "Aggiunto dettaglio Esempio 5 abbonamenti stagionali studenti",
+        "Aggiunto dettaglio Categoria calcolo sconto (Categoria 1 = 10% delibera Regione Puglia)",
+        "Menu laterale: aggiunto separatore visivo tra GUIDA OPERATIVA e SEZIONI EXTRA",
+        "Corretti step 2 e 3 Guida Veloce con terminologia corretta dalla guida",
+        "Card Home aggiornate con descrizioni più accurate e complete",
+        "Aggiunta card Domande e Risposte nella Home"
+      ],
+      "sezioni_modificate": [
+        "home",
+        "faq",
+        "guida-veloce",
+        "ordini",
+        "gestione-movimento",
+        "sezione-contabile"
+      ]
+    },
+    {
       "versione": "2.2",
       "data": "2026-03-02",
       "tipo": "major",

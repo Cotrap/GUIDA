@@ -83,7 +83,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     try {
         // Menu e changelog in parallelo (sono indipendenti)
         await Promise.all([loadMenu(), loadChangelog()]);
-        await buildSearchIndex();
+        // buildSubSectionMap (chiamata dentro loadMenu) ha già precariato la cache.
+        // buildSearchIndex usa la cache senza refetch.
+        buildSearchIndexFromCache();
         initSearch();
         initScrollToTop();
 
@@ -139,26 +141,24 @@ window.addEventListener('hashchange', async () => {
     }
 });
 
-/** Risolve un hash URL in { sectionId, subId } cercando menu + sottosezioni in cache */
+/** Risolve un hash URL in { sectionId, subId } usando la mappa esplicita costruita al caricamento */
 function resolveHash(hash) {
     if (!hash || !state.menu) return null;
 
-    // Voce di menu principale
-    const voce = state.menu.voci.find(v => v.id === hash);
+    // 1. Voce di menu principale
+    const voce = state.menu.voci.find(v => v.id === hash && v.tipo !== 'separatore');
     if (voce) return { sectionId: hash, subId: null };
 
-    // Cerca nelle sottosezioni già in cache
+    // 2. Mappa esplicita subId → sectionId (costruita al caricamento, non dipende dalla cache)
+    if (_subSectionMap[hash]) {
+        return { sectionId: _subSectionMap[hash], subId: hash };
+    }
+
+    // 3. Fallback: cerca nelle sottosezioni già in cache
     for (const [sectionId, content] of Object.entries(state.contentCache)) {
         if (content.sottosezioni) {
             const sub = content.sottosezioni.find(s => s.id === hash);
             if (sub) return { sectionId, subId: hash };
-        }
-    }
-
-    // Fallback: controlla se l'hash inizia con l'id di una voce di menu
-    for (const voce of state.menu.voci) {
-        if (hash.startsWith(voce.id.replace(/-/g, ''))) {
-            return { sectionId: voce.id, subId: hash };
         }
     }
 
@@ -168,10 +168,37 @@ function resolveHash(hash) {
 // ============================================
 // CARICAMENTO MENU
 // ============================================
+// Mappa esplicita subId → sectionId, costruita al caricamento menu
+// Evita il bug per cui resolveHash cercava solo nella cache (vuota al 1° click)
+const _subSectionMap = {};
+
 async function loadMenu() {
     state.menu = await safeFetch(`${CONFIG.contentPath}menu.json`);
     renderMenu();
     document.getElementById('versionBadge').textContent = `v${state.menu.versione}`;
+    // Costruiamo la mappa subId→sectionId da tutti i JSON disponibili nel bundle
+    await buildSubSectionMap();
+}
+
+async function buildSubSectionMap() {
+    if (!state.menu) return;
+    const normalVoci = state.menu.voci.filter(v => v.tipo !== 'separatore');
+    await Promise.all(normalVoci.map(async (voce) => {
+        try {
+            const content = await safeFetch(`${CONFIG.contentPath}${voce.id}.json`);
+            if (content && content.sottosezioni) {
+                content.sottosezioni.forEach(sub => {
+                    _subSectionMap[sub.id] = voce.id;
+                });
+            }
+            // Precarica in cache così la navigazione successiva è istantanea
+            if (!state.contentCache[voce.id]) {
+                state.contentCache[voce.id] = content;
+            }
+        } catch (e) {
+            // Sezione non trovata, ignora
+        }
+    }));
 }
 
 function renderMenu() {
@@ -180,8 +207,19 @@ function renderMenu() {
     menuList.setAttribute('role', 'menu');
 
     state.menu.voci.forEach(voce => {
+        // Separatore tra sezioni guida e sezioni extra
+        if (voce.tipo === 'separatore') {
+            const sep = document.createElement('li');
+            sep.className = 'menu-separator';
+            sep.setAttribute('role', 'presentation');
+            sep.setAttribute('aria-hidden', 'true');
+            sep.innerHTML = `<span class="menu-separator-label">${voce.label}</span>`;
+            menuList.appendChild(sep);
+            return;
+        }
+
         const li = document.createElement('li');
-        li.className = voce.tipo === 'speciale' ? 'special' : 'grosso';
+        li.className = voce.tipo === 'speciale' ? 'special' : '';
         li.dataset.section = voce.id;
         li.setAttribute('role', 'menuitem');
         li.setAttribute('tabindex', '0');
@@ -261,11 +299,8 @@ function renderContent(content) {
     const article = document.getElementById('articleContent');
     let html = '';
 
-    html += `<h1 class="section-title">${content.titolo}</h1>`;
-
-    if (content.aggiornato && content.id === 'home') {
-        html += `<p class="last-updated">Ultimo aggiornamento: ${formatDate(content.aggiornato)}</p>`;
-    }
+    const badge = getStatusBadge(content.aggiornato, content.nuovo);
+    html += `<h1 class="section-title">${content.titolo}${badge ? ' ' + badge : ''}</h1>`;
 
     if (content.contenuto && content.contenuto.length > 0) {
         html += renderContentBlocks(content.contenuto);
@@ -295,6 +330,18 @@ function renderContent(content) {
             placeholder.className = 'img-missing';
             placeholder.innerHTML = `<span>🖼️</span><span>Immagine non disponibile</span>`;
             this.parentNode.insertBefore(placeholder, this);
+        };
+    });
+
+    // Listener sicuro per le cards con data-link (Bug #4 fix)
+    article.querySelectorAll('.section-card[data-link]').forEach(card => {
+        const link = card.dataset.link;
+        card.onclick = () => loadSection(link);
+        card.onkeydown = (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                loadSection(link);
+            }
         };
     });
 }
@@ -396,7 +443,7 @@ function renderContentBlocks(blocks) {
                 return `
                     <div class="section-cards">
                         ${block.items.map(card => `
-                            <div class="section-card" onclick="loadSection('${card.link}')" onkeydown="if(event.key==='Enter')loadSection('${card.link}')" role="button" tabindex="0" aria-label="Vai a ${sanitize(card.titolo)}">
+                            <div class="section-card" data-link="${sanitize(card.link)}" role="button" tabindex="0" aria-label="Vai a ${sanitize(card.titolo)}">
                                 <span class="section-card-icon" aria-hidden="true">${card.icona}</span>
                                 <div class="section-card-body">
                                     <strong>${card.titolo}</strong>
@@ -404,6 +451,19 @@ function renderContentBlocks(blocks) {
                                 </div>
                             </div>
                         `).join('')}
+                    </div>`;
+
+            case 'faq':
+                return `
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)" role="button" tabindex="0" aria-expanded="false" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleFaq(this)}">
+                            <span class="faq-icon" aria-hidden="true">❓</span>
+                            <span class="faq-q-text">${block.domanda}</span>
+                            <span class="faq-toggle" aria-hidden="true">▼</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>${block.risposta}</p>
+                        </div>
                     </div>`;
 
             default:
@@ -477,26 +537,22 @@ function renderChangelog(content) {
 // RICERCA (con navigazione tastiera e ARIA)
 // ============================================
 
-/** Costruisce l'indice di ricerca full-text (fetch parallelo) */
-async function buildSearchIndex() {
+/**
+ * Costruisce l'indice di ricerca full-text usando la cache già popolata
+ * da buildSubSectionMap (nessun fetch aggiuntivo).
+ */
+function buildSearchIndexFromCache() {
     state.searchIndex = [];
+    if (!state.menu) return;
 
-    const results = await Promise.allSettled(
-        state.menu.voci.map(voce =>
-            safeFetch(`${CONFIG.contentPath}${voce.id}.json`)
-                .then(content => ({ voce, content }))
-        )
-    );
-
-    results.forEach(result => {
-        if (result.status === 'rejected') {
-            console.warn('Impossibile indicizzare:', result.reason);
-            return;
-        }
-        const { voce, content } = result.value;
-        state.contentCache[voce.id] = content;
-        indexContentRecursive(content, voce, null);
-    });
+    state.menu.voci
+        .filter(v => v.tipo !== 'separatore')
+        .forEach(voce => {
+            const content = state.contentCache[voce.id];
+            if (content) {
+                indexContentRecursive(content, voce, null);
+            }
+        });
 }
 
 /** Indicizza ricorsivamente sezione e tutte le sue sottosezioni */
@@ -677,14 +733,20 @@ function goToResult(sectionId, elementId) {
     document.getElementById('searchClear').style.display = 'none';
 
     loadSection(sectionId).then(() => {
-        setTimeout(() => {
+        // Polling con rAF: aspetta che l'elemento esista nel DOM prima di scrollare
+        let attempts = 0;
+        const maxAttempts = 30;
+        function tryScroll() {
             const element = document.getElementById(elementId);
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 element.classList.add('highlight-section');
                 setTimeout(() => element.classList.remove('highlight-section'), 2000);
+            } else if (attempts++ < maxAttempts) {
+                requestAnimationFrame(tryScroll);
             }
-        }, 100);
+        }
+        requestAnimationFrame(tryScroll);
     });
 }
 
@@ -732,7 +794,39 @@ function updateHorizontalMenu(content) {
         li.appendChild(a);
         menuList.appendChild(li);
     });
+
+    // Calcola altezza dinamica del menu multi-riga
+    requestAnimationFrame(() => adjustContentForMenu());
 }
+
+/** Ricalcola margin-top del contenuto in base all'altezza effettiva del menu orizzontale */
+function adjustContentForMenu() {
+    const hMenu = document.querySelector('.horizontal-menu');
+    const content = document.querySelector('.content');
+    const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 60;
+    const searchH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--search-height')) || 56;
+
+    if (hMenu && hMenu.classList.contains('visible')) {
+        const menuH = hMenu.offsetHeight;
+        content.style.marginTop = (headerH + searchH + menuH) + 'px';
+        // Aggiorna scroll-margin per subsection
+        document.querySelectorAll('.subsection').forEach(s => {
+            s.style.scrollMarginTop = (headerH + searchH + menuH + 16) + 'px';
+        });
+    } else {
+        content.style.marginTop = '';
+        document.querySelectorAll('.subsection').forEach(s => {
+            s.style.scrollMarginTop = '';
+        });
+    }
+}
+
+// Ricalcola su resize
+window.addEventListener('resize', () => {
+    if (document.querySelector('.horizontal-menu.visible')) {
+        adjustContentForMenu();
+    }
+});
 
 /** ScrollSpy: evidenzia la sottosezione visibile nel menu orizzontale */
 function initScrollSpy(content) {
@@ -744,7 +838,7 @@ function initScrollSpy(content) {
 
     if (!content.sottosezioni || content.sottosezioni.length === 0) return;
 
-    // Ritardo per assicurarsi che il DOM sia renderizzato
+    // Ritardo minimo per assicurarsi che il DOM sia renderizzato
     setTimeout(() => {
         const sections = content.sottosezioni
             .map(sub => document.getElementById(sub.id))
@@ -769,7 +863,7 @@ function initScrollSpy(content) {
         });
 
         sections.forEach(section => state.scrollObserver.observe(section));
-    }, 200);
+    }, 50);
 }
 
 // Badge aggiornamento nel menu laterale (disabilitati)
@@ -821,13 +915,7 @@ function initScrollToTop() {
 }
 
 function getStatusBadge(dateStr, isNew) {
-    if (isNew) {
-        return '<span class="status-badge badge-new">NUOVO</span>';
-    }
-    if (isRecentlyUpdated(dateStr)) {
-        return '<span class="status-badge badge-updated">Aggiornato</span>';
-    }
-    return '';
+    return ''; // Badge rimossi su richiesta
 }
 
 function isRecentlyUpdated(dateStr) {
@@ -916,6 +1004,12 @@ function openImageModal(img) {
 
     // Focus per accessibilità
     closeBtn.focus();
+}
+
+function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.toggle('faq-open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
 }
 
 function closeImageModal(modal) {

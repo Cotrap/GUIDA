@@ -1,7 +1,7 @@
 {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.2",
-  "ultimo_aggiornamento": "2026-03-02",
+  "versione": "2.3",
+  "ultimo_aggiornamento": "2026-03-03",
   "voci": [
     {
       "id": "home",
@@ -10,10 +10,9 @@
       "tipo": "normale"
     },
     {
-      "id": "introduzione",
-      "label": "Introduzione",
-      "icona": "📖",
-      "tipo": "normale"
+      "id": "_sep_guida",
+      "label": "GUIDA OPERATIVA",
+      "tipo": "separatore"
     },
     {
       "id": "profilo-commerciale",
@@ -50,6 +49,17 @@
       "label": "Sezione Contabile",
       "icona": "📊",
       "tipo": "normale"
+    },
+    {
+      "id": "_sep_extra",
+      "label": "SEZIONI EXTRA",
+      "tipo": "separatore"
+    },
+    {
+      "id": "faq",
+      "label": "Domande e Risposte",
+      "icona": "❓",
+      "tipo": "speciale"
     },
     {
       "id": "guida-veloce",

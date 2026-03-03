@@ -1,14 +1,56 @@
 {
   "id": "esportazioni",
-  "titolo": "ESPORTAZIONI",
-  "aggiornato": "2026-02-23",
+  "titolo": "Esportazioni",
+  "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [
-    { "tipo": "immagine", "src": "Immagine20.png", "alt": "Menu Esportazioni", "didascalia": "Accesso alla sezione Esportazioni" },
-    { "tipo": "paragrafo", "testo": "Permette di effettuare il download di tutte le esportazioni effettuate. Sia in formato xls, sia in txt." },
-    { "tipo": "paragrafo", "testo": "Esempio:" },
-    { "tipo": "immagine", "src": "Immagine21.png", "alt": "Lista File Esportazioni", "didascalia": "Elenco file disponibili per il download" },
-    { "tipo": "icona-azione", "icona": "icona12.png", "testo": "Cliccando sul tasto a destra saranno scaricati i file corrispondenti." }
+    {
+      "tipo": "immagine",
+      "src": "Immagine20.png",
+      "alt": "Menu Esportazioni",
+      "didascalia": "Accesso alla sezione Esportazioni"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "La sezione Esportazioni è un <b>archivio centralizzato</b> di tutti i file generati dai tasti 'Esporta' e 'Download' presenti nelle varie sezioni del portale (Ordini, Controllo Tariffario, Dati Contabili, ecc.). I file rimangono disponibili per il download in qualsiasi momento successivo alla loro generazione."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "I file non vengono cancellati automaticamente. È possibile tornare in questa sezione in qualsiasi momento per scaricare esportazioni generate in precedenza."
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine21.png",
+      "alt": "Lista File Esportazioni",
+      "didascalia": "Elenco file disponibili per il download"
+    },
+    {
+      "tipo": "icona-azione",
+      "icona": "icona12.png",
+      "testo": "Cliccare sull'icona di download a destra. Il file sarà scaricato nella cartella <b>Download</b> del proprio PC."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Tipi di file disponibili in questa sezione:</b>"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "<b>Esportazioni Biglietti (.xls):</b> generate dalla sezione Ordini → Biglietti con i dettagli dei singoli titoli di viaggio ricercati",
+        "<b>Esportazioni Abbonamenti (.xls):</b> generate dalla sezione Ordini → Abbonamenti",
+        "<b>Esportazioni Ordini (.xls):</b> generate dalla sezione Ordini → Ordini (profilo contabile)",
+        "<b>Esportazioni Stati Occupazionali (.xls):</b> generate da Ordini → Stati Occupazionali Corse",
+        "<b>Controllo Tariffario (.xls):</b> generate da Eccezioni → Controllo Tariffario",
+        "<b>Dati Contabili (.txt e .xls):</b> generate da Sezione Contabile → Dati Contabili tramite i pulsanti Esporta e Esporta SEP",
+        "<b>Statistiche Venduto (.txt e .xls):</b> generate da Sezione Contabile → Statistiche Venduto"
+      ]
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Nota:</b> Sia il profilo commerciale che il profilo contabile hanno la propria sezione Esportazioni separata, ciascuna contenente solo i file generati da quel profilo."
+    }
   ],
   "sottosezioni": []
 }

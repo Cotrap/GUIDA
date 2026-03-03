@@ -1,7 +1,7 @@
 {
   "id": "ordini",
-  "titolo": "ORDINI",
-  "aggiornato": "2026-02-23",
+  "titolo": "Ordini",
+  "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [
     {
@@ -12,11 +12,7 @@
     },
     {
       "tipo": "paragrafo",
-      "testo": "La sezione ORDINI è di consultazione. È possibile effettuare ricerche e controlli su quanto venduto dal sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e anche dall'app COTRAP."
-    },
-    {
-      "tipo": "paragrafo",
-      "testo": "Come si può vedere dalla schermata riportata di seguito ci sono diverse possibilità di ricerca:"
+      "testo": "La sezione Ordini è di sola consultazione. Permette di effettuare ricerche e monitorare tutto il venduto dal portale <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e dall'app COTRAP. Le funzioni disponibili sono: Biglietti, Abbonamenti, Stati Occupazionali Corse, Stato Controlli e Statistiche Biglietti."
     },
     {
       "tipo": "immagine",
@@ -28,7 +24,7 @@
   "sottosezioni": [
     {
       "id": "biglietti",
-      "titolo": "BIGLIETTI",
+      "titolo": "Biglietti",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -50,26 +46,26 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "È necessario inserire i parametri di ricerca e cliccare su applica."
+          "testo": "Inserire i parametri di ricerca desiderati e cliccare su <b>\"Applica\"</b>."
         },
         {
           "tipo": "lista",
           "items": [
-            "È possibile effettuare una ricerca in base alla <b>data di acquisto</b> inserendo il range: Data Inizio Ordine - Data Fine Ordine",
-            "Invece se si vuole fare una ricerca in base alla <b>data di partenza</b> si può inserire il range di date nei parametri di ricerca dedicati",
-            "L'<b>azienda</b> non è modificabile perché il sistema identificherà automaticamente il consorziato",
-            "Altri parametri di ricerca sono intuitivi: <b>Linea, Corsa, Comune di partenza, frazione…</b>",
-            "<b>Tipologia di pagamento:</b> online (tutti i biglietti acquistati dal sito e dall'app); Credito (tutti i biglietti acquistati con l'app con la modalità di utilizzo credito delle ricariche effettuare precedentemente - ricordiamo che tale funzione è possibile solo su app); <b>Gratuito</b> (tutti i titoli emessi da profilo commerciale)",
-            "<b>Acquirente:</b> è possibile effettuare la ricerca con nome e cognome dell'utente o indirizzo email",
-            "<b>N° Ordine:</b> inserire il numero d'ordine, all'interno nel quale possono essere compresi più biglietti, che saranno differenziati da una lettera finale",
-            "<b>Codice Biglietto:</b> inserire il codice compresa la lettera finale. Permette una ricerca mirata del singolo biglietto",
-            "<b>Progressivo biglietto:</b> è preferibile non usare questo parametro di ricerca perché il codice numerico è un progressivo interno"
+            "<b>Data Inizio Ordine / Data Fine Ordine:</b> filtra per data di acquisto del biglietto",
+            "<b>Data di partenza:</b> filtra per la data del viaggio (indipendentemente da quando è stato acquistato)",
+            "<b>Azienda:</b> campo non modificabile — il sistema identifica automaticamente il consorziato loggato",
+            "<b>Linea, Corsa, Comune di partenza, Frazione:</b> filtri per restringere la ricerca a un percorso specifico",
+            "<b>Tipo di pagamento:</b> <b>Online</b> = biglietti acquistati con carta di credito dal portale web o dall'app; <b>Credito</b> = biglietti acquistati usando il saldo ricariche dell'app (funzione disponibile solo su app); <b>Gratuito</b> = titoli emessi gratuitamente da profilo commerciale",
+            "<b>Acquirente:</b> ricerca per nome e cognome o indirizzo email del cliente",
+            "<b>N° Ordine:</b> un ordine può contenere più biglietti (es. andata + ritorno). Ogni biglietto è identificato dal numero ordine + una lettera finale (es. 1234A, 1234B)",
+            "<b>Codice Biglietto:</b> inserire il codice completo inclusa la lettera finale (es. 1234A). È il modo più preciso per trovare un singolo biglietto",
+            "<b>Progressivo biglietto:</b> non utilizzare — è un identificativo numerico interno non utile per le ricerche operative"
           ]
         },
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "È possibile esportare tutti i risultati di ricerca se necessario con il tasto esporta che restituisce un file .xls con tutti i dettagli dei biglietti ricercati."
+          "testo": "È possibile esportare i risultati della ricerca cliccando su <b>\"Esporta\"</b>: viene generato un file <b>.xls</b> con tutti i dettagli dei biglietti trovati, recuperabile poi nella sezione Esportazioni."
         },
         {
           "tipo": "avviso",
@@ -79,8 +75,49 @@
       ]
     },
     {
+      "id": "abbonamenti",
+      "titolo": "Abbonamenti",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa funzione è possibile, impostando i filtri di ricerca, verificare gli abbonamenti emessi."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Ricerca per <b>data di emissione</b>",
+            "Ricerca per <b>data di validità</b>",
+            "Ricerca per <b>n. di tessera</b>",
+            "Ricerca per <b>tipologia di abbonamento</b>",
+            "Ricerca per <b>metodo di pagamento</b>, incluso il filtro <b>Gratuito</b> per risalire agli abbonamenti emessi da profilo commerciale"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "È inoltre possibile verificare quante volte è stato vidimato a bordo un abbonamento, quante corse residue siano associate, e inserire un controllo amministrativo (nel caso il controllore non abbia modo di inserire il dato del controllo oppure non funzioni la macchinetta di bordo)."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Le <b>operazioni</b> disponibili per ogni abbonamento sono:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Inserisci controllo:</b> permette di inserire un controllo dall'account commerciale con eventuale commento",
+            "<b>Oblitera:</b> permette lo scalo di una corsa dall'abbonamento",
+            "<b>Visualizza vidimazioni:</b> mostra quante vidimazioni sono state effettuate",
+            "<b>Dettaglio abbonamento:</b> permette di vedere il dettaglio completo dell'abbonamento",
+            "<b>Blocca:</b> blocca l'abbonamento — da utilizzare in caso di uso fraudolento",
+            "<b>Aggiungi/Scala corse:</b> permette di aggiungere o scalare delle corse (utile in caso di macchinetta vidimatrice rotta, oppure come alternativa a un rimborso per una corsa non utilizzata per responsabilità del vettore)"
+          ]
+        }
+      ]
+    },
+    {
       "id": "stati-occupazionali-corse",
-      "titolo": "STATI OCCUPAZIONALI CORSE",
+      "titolo": "Stati Occupazionali Corse",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -102,23 +139,24 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Inserire i parametri di ricerca e cliccare su applica."
+          "testo": "Inserire i parametri di ricerca (linea, corsa, data) e cliccare su <b>\"Applica\"</b>."
         },
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> la percentuale di occupazione è riferita unicamente ai biglietti acquistati online e non tiene conto del venduto cartaceo."
+          "testo": "<b>Attenzione:</b> la percentuale di occupazione mostrata è riferita <b>esclusivamente ai biglietti acquistati online</b> (portale web e app). Non include il venduto cartaceo (biglietti emessi a bordo o in agenzia). Il mezzo reale può quindi essere più pieno di quanto indicato."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Anche in questo caso è possibile procedere con l'esportazione."
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "È possibile esportare i risultati in formato .xls cliccando su <b>\"Esporta\"</b>."
         }
       ]
     },
     {
       "id": "stato-controlli",
-      "titolo": "STATO CONTROLLI",
-      "aggiornato": "2026-02-23",
+      "titolo": "Stato Controlli",
+      "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
         {
@@ -129,7 +167,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Con questa funzione è possibile verificare i controlli fatti a bordo sui biglietti online."
+          "testo": "Con questa funzione è possibile verificare i controlli effettuati a bordo sui biglietti online da parte degli autisti/controllori tramite l'app."
         },
         {
           "tipo": "immagine",
@@ -139,14 +177,26 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Si può inserire la data di controllo e cliccare su applica, ma anche il controllore specifico (nella voce utente)."
+          "testo": "Parametri di ricerca disponibili:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Data di controllo</b>: filtra per il giorno in cui è stato effettuato il controllo a bordo",
+            "<b>Utente</b>: permette di filtrare per il singolo controllore/autista specifico che ha effettuato il controllo"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Questa sezione è utile per verificare che i controllori abbiano effettivamente eseguito i controlli e per monitorare eventuali anomalie (biglietti non validi accettati a bordo)."
         }
       ]
     },
     {
       "id": "statistiche-biglietti",
-      "titolo": "STATISTICHE BIGLIETTI",
-      "aggiornato": "2026-02-23",
+      "titolo": "Statistiche Biglietti",
+      "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
         {
@@ -157,7 +207,20 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Permette di controllare su determinate corse i biglietti venduti online, quelli controllati e quelli eventualmente non validi. Anche in questo caso è possibile esportare i dati."
+          "testo": "Questa sotto-funzione permette di ottenere un riepilogo statistico per singola corsa su:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Biglietti venduti online</b>: quanti biglietti sono stati acquistati dal portale web o dall'app per quella corsa",
+            "<b>Biglietti controllati</b>: quanti biglietti sono stati effettivamente validati a bordo dal controllore tramite l'app",
+            "<b>Biglietti non validi</b>: biglietti che al momento del controllo risultavano non validi (es. già utilizzati, scaduti, errata tratta)"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Anche in questo caso è possibile esportare i dati in formato .xls per analisi esterne."
         },
         {
           "tipo": "immagine",
