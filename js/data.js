@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-04 10:01:12
+ * Generato il: 2026-03-04 11:42:48
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -206,6 +206,28 @@ var BUNDLED_DATA = {
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.4",
+      "data": "2026-03-04",
+      "tipo": "fix",
+      "titolo": "Rimozione App Controllo, fix scroll menu orizzontale, FAQ ampliate",
+      "descrizione": "Rimossa la sezione App Controllo dalla guida (diventerà un sito dedicato separato). Corretto bug critico sul menu orizzontale che bloccava la navigazione alle ultime sottosezioni. Aggiunte nuove FAQ e corrette inconsistenze.",
+      "dettagli": [
+        "Rimossa sezione APP Controllo dal menu e dalla Home (il sito dedicato sarà pubblicato separatamente)",
+        "Fix bug menu orizzontale: le ultime sottosezioni ora raggiungono correttamente la posizione nel viewport",
+        "Aggiunto padding dinamico al fondo del contenuto per garantire scroll corretto anche degli elementi finali",
+        "Click handler menu orizzontale usa ora offset esplicito invece di scrollIntoView (più affidabile)",
+        "Aggiunte FAQ: Eccezione Tariffaria vs Chilometrica, verifica stato rimborso, servizio stagionale, modifica corsa pubblicata",
+        "Totale FAQ: 45 domande in 8 categorie operative",
+        "Corretti riferimenti obsoleti ad 'app-controllo' in changelog e home",
+        "Corretta capitalizzazione 'COTRAP' in introduzione.json"
+      ],
+      "sezioni_modificate": [
+        "home",
+        "faq",
+        "menu"
+      ]
+    },
+    {
       "versione": "2.3",
       "data": "2026-03-03",
       "tipo": "fix",
@@ -213,7 +235,7 @@ var BUNDLED_DATA = {
       "descrizione": "Controllo incrociato di tutti i contenuti con la guida originale e i documenti di aggiornamento. Riscrittura FAQ con domande operative reali. Struttura menu migliorata.",
       "dettagli": [
         "Rimossa FAQ sui requisiti minimi (non rilevante per operativi)",
-        "FAQ completamente riscritta con 35 domande operative basate sulla guida originale",
+        "FAQ completamente riscritta con domande operative basate sulla guida originale",
         "Aggiunte FAQ su: corse, template, multitratta, eccezioni, titoli gratuiti, sezione contabile",
         "Aggiunto filtro Gratuito nella ricerca Abbonamenti (Ordini commerciale)",
         "Aggiunto dettaglio Esempio 5 abbonamenti stagionali studenti",
@@ -279,8 +301,7 @@ var BUNDLED_DATA = {
       "sezioni_modificate": [
         "home",
         "guida-veloce",
-        "sezione-contabile",
-        "app-controllo"
+        "sezione-contabile"
       ]
     },
     {
@@ -2175,12 +2196,6 @@ var BUNDLED_DATA = {
           "link": "sezione-contabile"
         },
         {
-          "icona": "📱",
-          "titolo": "APP Controllo",
-          "descrizione": "Installazione e utilizzo dell'app Android per il controllo biglietti a bordo.",
-          "link": "app-controllo"
-        },
-        {
           "icona": "❓",
           "titolo": "Domande e Risposte",
           "descrizione": "Risposte rapide alle domande più frequenti, organizzate per argomento.",
@@ -2309,7 +2324,7 @@ var BUNDLED_DATA = {
         },
         {
           "tipo": "paragrafo",
-          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale in cui sarà possibile visionare in basso a sinistra il profilo con cui avete effettuato l'accesso (es. commerciale e il nome dell'azienda). In questo manuale sarà visualizzato il profilo cotrap, ma ha validità per tutti i consorziati."
+          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In basso a sinistra è sempre visibile il profilo con cui si è effettuato l'accesso: nome e cognome dell'utente e tra parentesi il nome dell'azienda consorziata. In questo manuale sarà visualizzato il profilo COTRAP, ma le istruzioni sono valide per tutti i consorziati."
         },
         {
           "tipo": "immagine",
@@ -2323,8 +2338,8 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.3",
-  "ultimo_aggiornamento": "2026-03-03",
+  "versione": "2.4",
+  "ultimo_aggiornamento": "2026-03-04",
   "voci": [
     {
       "id": "home",

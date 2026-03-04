@@ -4,6 +4,28 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.4",
+      "data": "2026-03-04",
+      "tipo": "fix",
+      "titolo": "Rimozione App Controllo, fix scroll menu orizzontale, FAQ ampliate",
+      "descrizione": "Rimossa la sezione App Controllo dalla guida (diventerà un sito dedicato separato). Corretto bug critico sul menu orizzontale che bloccava la navigazione alle ultime sottosezioni. Aggiunte nuove FAQ e corrette inconsistenze.",
+      "dettagli": [
+        "Rimossa sezione APP Controllo dal menu e dalla Home (il sito dedicato sarà pubblicato separatamente)",
+        "Fix bug menu orizzontale: le ultime sottosezioni ora raggiungono correttamente la posizione nel viewport",
+        "Aggiunto padding dinamico al fondo del contenuto per garantire scroll corretto anche degli elementi finali",
+        "Click handler menu orizzontale usa ora offset esplicito invece di scrollIntoView (più affidabile)",
+        "Aggiunte FAQ: Eccezione Tariffaria vs Chilometrica, verifica stato rimborso, servizio stagionale, modifica corsa pubblicata",
+        "Totale FAQ: 45 domande in 8 categorie operative",
+        "Corretti riferimenti obsoleti ad 'app-controllo' in changelog e home",
+        "Corretta capitalizzazione 'COTRAP' in introduzione.json"
+      ],
+      "sezioni_modificate": [
+        "home",
+        "faq",
+        "menu"
+      ]
+    },
+    {
       "versione": "2.3",
       "data": "2026-03-03",
       "tipo": "fix",
@@ -11,7 +33,7 @@
       "descrizione": "Controllo incrociato di tutti i contenuti con la guida originale e i documenti di aggiornamento. Riscrittura FAQ con domande operative reali. Struttura menu migliorata.",
       "dettagli": [
         "Rimossa FAQ sui requisiti minimi (non rilevante per operativi)",
-        "FAQ completamente riscritta con 35 domande operative basate sulla guida originale",
+        "FAQ completamente riscritta con domande operative basate sulla guida originale",
         "Aggiunte FAQ su: corse, template, multitratta, eccezioni, titoli gratuiti, sezione contabile",
         "Aggiunto filtro Gratuito nella ricerca Abbonamenti (Ordini commerciale)",
         "Aggiunto dettaglio Esempio 5 abbonamenti stagionali studenti",
@@ -77,8 +99,7 @@
       "sezioni_modificate": [
         "home",
         "guida-veloce",
-        "sezione-contabile",
-        "app-controllo"
+        "sezione-contabile"
       ]
     },
     {

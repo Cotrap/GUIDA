@@ -77,7 +77,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale in cui sarà possibile visionare in basso a sinistra il profilo con cui avete effettuato l'accesso (es. commerciale e il nome dell'azienda). In questo manuale sarà visualizzato il profilo cotrap, ma ha validità per tutti i consorziati."
+          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In basso a sinistra è sempre visibile il profilo con cui si è effettuato l'accesso: nome e cognome dell'utente e tra parentesi il nome dell'azienda consorziata. In questo manuale sarà visualizzato il profilo COTRAP, ma le istruzioni sono valide per tutti i consorziati."
         },
         {
           "tipo": "immagine",
