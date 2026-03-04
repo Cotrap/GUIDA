@@ -61,11 +61,6 @@
                 },
                 {
                     "tipo": "faq",
-                    "domanda": "Ho inserito un utente app controlli, ma risulta ancora 'in attesa di conferma': è normale?",
-                    "risposta": "<b>Sì, è normale.</b> Dopo l'inserimento lo stato parte da 'in attesa di conferma'. È necessario anche un secondo passaggio: l'utente deve scaricare l'app di controllo sul proprio dispositivo Android tramite il link <a href=\"https://www.cotrap.it/app-controlli/\" target=\"_blank\">www.cotrap.it/app-controlli</a> e impostare la propria password, dopodiché lo stato passerà a 'confermato'."
-                },
-                {
-                    "tipo": "faq",
                     "domanda": "Quante tipologie di frequenza esistono?",
                     "risposta": "Le tipologie disponibili su Itineris sono: <b>Giornaliera</b> (tutti i giorni), <b>Feriale</b> (personalizzabile per giorni specifici, es. lunedì–venerdì o solo sabato), <b>Scolastica</b>, <b>Non Scolastica</b>, <b>Festiva</b>."
                 }

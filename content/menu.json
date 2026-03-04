@@ -68,12 +68,6 @@
       "tipo": "speciale"
     },
     {
-      "id": "app-controllo",
-      "label": "APP Controllo",
-      "icona": "📱",
-      "tipo": "speciale"
-    },
-    {
       "id": "changelog",
       "label": "Novità",
       "icona": "🆕",

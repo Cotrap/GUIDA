@@ -789,7 +789,14 @@ function updateHorizontalMenu(content) {
         a.dataset.subsection = sub.id;
         a.onclick = (e) => {
             e.preventDefault();
-            document.getElementById(sub.id)?.scrollIntoView({ behavior: 'smooth' });
+            const el = document.getElementById(sub.id);
+            if (!el) return;
+            const hMenuEl = document.querySelector('.horizontal-menu');
+            const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 60;
+            const searchH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--search-height')) || 56;
+            const menuH = hMenuEl ? hMenuEl.offsetHeight : 0;
+            const top = el.getBoundingClientRect().top + window.scrollY - headerH - searchH - menuH - 16;
+            window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
         };
         li.appendChild(a);
         menuList.appendChild(li);
@@ -806,6 +813,7 @@ function adjustContentForMenu() {
     const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 60;
     const searchH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--search-height')) || 56;
 
+    const article = document.getElementById('articleContent');
     if (hMenu && hMenu.classList.contains('visible')) {
         const menuH = hMenu.offsetHeight;
         content.style.marginTop = (headerH + searchH + menuH) + 'px';
@@ -813,11 +821,19 @@ function adjustContentForMenu() {
         document.querySelectorAll('.subsection').forEach(s => {
             s.style.scrollMarginTop = (headerH + searchH + menuH + 16) + 'px';
         });
+        // Padding al fondo: garantisce che anche l'ultima sottosezione possa
+        // scrollare correttamente in cima alla viewport (senza il padding
+        // il browser non ha spazio sufficiente per scorrere gli elementi finali)
+        if (article) {
+            const extraPad = Math.max(80, window.innerHeight - (headerH + searchH + menuH + 32));
+            article.style.paddingBottom = extraPad + 'px';
+        }
     } else {
         content.style.marginTop = '';
         document.querySelectorAll('.subsection').forEach(s => {
             s.style.scrollMarginTop = '';
         });
+        if (article) article.style.paddingBottom = '';
     }
 }
 

@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-03 13:50:44
+ * Generato il: 2026-03-04 10:01:12
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -811,11 +811,6 @@ var BUNDLED_DATA = {
                     "tipo": "faq",
                     "domanda": "Devo inserire le date nella frequenza scolastica?",
                     "risposta": "<b>No.</b> Se si sceglie la tipologia \"Scolastica\", il sistema usa automaticamente il calendario scolastico configurato da COTRAP. Le date di inizio/fine vanno inserite solo per frequenze con range di validità personalizzato (es. servizio estivo con date precise)."
-                },
-                {
-                    "tipo": "faq",
-                    "domanda": "Ho inserito un utente app controlli, ma risulta ancora 'in attesa di conferma': è normale?",
-                    "risposta": "<b>Sì, è normale.</b> Dopo l'inserimento lo stato parte da 'in attesa di conferma'. È necessario anche un secondo passaggio: l'utente deve scaricare l'app di controllo sul proprio dispositivo Android tramite il link <a href=\"https://www.cotrap.it/app-controlli/\" target=\"_blank\">www.cotrap.it/app-controlli</a> e impostare la propria password, dopodiché lo stato passerà a 'confermato'."
                 },
                 {
                     "tipo": "faq",
@@ -2393,12 +2388,6 @@ var BUNDLED_DATA = {
       "id": "guida-veloce",
       "label": "Guida Veloce",
       "icona": "🚀",
-      "tipo": "speciale"
-    },
-    {
-      "id": "app-controllo",
-      "label": "APP Controllo",
-      "icona": "📱",
       "tipo": "speciale"
     },
     {
