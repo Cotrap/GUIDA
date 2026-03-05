@@ -791,18 +791,23 @@ function updateHorizontalMenu(content) {
             e.preventDefault();
             const el = document.getElementById(sub.id);
             if (!el) return;
-            // Misura il bottom effettivo degli elementi fissi al momento del click
-            // (getBoundingClientRect è sempre preciso, non dipende da CSS variables o offsetHeight)
+            // Usa offsetTop/offsetParent: posizione ASSOLUTA nel documento,
+            // indipendente da scroll corrente o animazioni in corso.
+            // getBoundingClientRect() è relativo al viewport e dà valori sbagliati
+            // se è in corso uno scroll animato precedente.
+            let docTop = 0;
+            let node = el;
+            while (node && node !== document.documentElement) {
+                docTop += node.offsetTop;
+                node = node.offsetParent;
+            }
             const header = document.querySelector('header');
             const searchBar = document.querySelector('.search-container');
             const hMenuEl = document.querySelector('.horizontal-menu');
-            const fixedBottom = Math.max(
-                header ? header.getBoundingClientRect().bottom : 0,
-                searchBar ? searchBar.getBoundingClientRect().bottom : 0,
-                hMenuEl ? hMenuEl.getBoundingClientRect().bottom : 0
-            );
-            const scrollAmount = el.getBoundingClientRect().top - fixedBottom - 8;
-            window.scrollTo({ top: Math.max(0, window.scrollY + scrollAmount), behavior: 'smooth' });
+            const fixedH = (header ? header.offsetHeight : 0) +
+                           (searchBar ? searchBar.offsetHeight : 0) +
+                           (hMenuEl && hMenuEl.classList.contains('visible') ? hMenuEl.offsetHeight : 0);
+            window.scrollTo({ top: Math.max(0, docTop - fixedH - 8), behavior: 'smooth' });
         };
         li.appendChild(a);
         menuList.appendChild(li);
