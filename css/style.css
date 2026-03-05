@@ -408,7 +408,7 @@ header h1 {
 
 .menu-separator-label {
     display: block;
-    font-size: 0.68rem;
+    font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.1em;
     color: var(--gray-400);
@@ -895,7 +895,7 @@ header h1 {
 }
 
 .faq-open .faq-answer {
-    max-height: 500px;
+    max-height: 1200px;
     padding: var(--spacing-md) var(--spacing-lg);
 }
 

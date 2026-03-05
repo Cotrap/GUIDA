@@ -1,7 +1,7 @@
 {
   "id": "guida-veloce",
   "titolo": "Guida Veloce",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-03-04",
   "nuovo": false,
   "contenuto": [
     {
@@ -19,7 +19,7 @@
         {
           "numero": 2,
           "titolo": "Configurazione",
-          "descrizione": "Nella sezione Configurazione (accessibile dal menu Profilo Commerciale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica). Inserisci anche gli autisti/controllori in Utenti App Controlli."
+          "descrizione": "Nella sezione Configurazione (accessibile dal menu Profilo Commerciale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica)."
         },
         {
           "numero": 3,
@@ -55,8 +55,8 @@
     },
     {
       "tipo": "avviso",
-      "stile": "info",
-      "testo": "Per il controllo biglietti a bordo, installa l'<b>APP Controllo</b> sui dispositivi Android dei verificatori. Consulta la sezione dedicata per le istruzioni di installazione e utilizzo."
+      "stile": "success",
+      "testo": "<b>Configurazione completata?</b> Consulta le sezioni della guida per approfondire ogni passaggio: ogni sezione del menu laterale corrisponde a una fase del processo."
     }
   ],
   "sottosezioni": []

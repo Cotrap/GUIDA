@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-04 11:42:48
+ * Generato il: 2026-03-05 09:25:32
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -206,6 +206,32 @@ var BUNDLED_DATA = {
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.5",
+      "data": "2026-03-04",
+      "tipo": "fix",
+      "titolo": "Fix CRITICO guida-veloce, miglioramenti eccezioni, CSS accessibilità, FAQ",
+      "descrizione": "Corretti riferimenti residui all'App Controllo nella Guida Veloce. Migliorati testi su denormalizzazione, terminologia eccezioni chilometriche e FAQ. Aggiornato CSS per accessibilità e fix risposta FAQ troncata.",
+      "dettagli": [
+        "Fix CRITICO guida-veloce.json: rimosso riferimento a 'Utenti App Controlli' dal passo 2",
+        "Fix CRITICO guida-veloce.json: rimosso avviso APP Controllo in fondo alla guida veloce, sostituito con avviso generico",
+        "eccezioni.json: 'codici dei polo' → 'Codici Contabili dei Poli' (terminologia corretta)",
+        "eccezioni.json: aggiunta spiegazione del perché la data inizio è solo il primo del mese (ricalcolo tariffe mensile)",
+        "eccezioni.json: riformulati avvisi sulla 'denormalizzazione' con linguaggio operativo più chiaro",
+        "faq.json: aggiornata risposta FAQ denormalizzazione con linguaggio più comprensibile",
+        "faq.json: aggiunta FAQ 'I biglietti già acquistati prima di un'eccezione rimangono validi?'",
+        "introduzione.json: rimossa sottosezione 'Contenuti' duplicata (identica ad Accesso al Portale in home), sostituita con 'Struttura del Manuale'",
+        "introduzione.json: aggiornate date e testi per coerenza con il resto della guida",
+        "css/style.css: font-size separatori menu 0.68rem → 0.75rem (accessibilità, soglia minima 12px)",
+        "css/style.css: max-height FAQ aperta 500px → 1200px (previene troncamento risposte lunghe)"
+      ],
+      "sezioni_modificate": [
+        "guida-veloce",
+        "eccezioni",
+        "faq",
+        "introduzione"
+      ]
+    },
+    {
       "versione": "2.4",
       "data": "2026-03-04",
       "tipo": "fix",
@@ -360,7 +386,7 @@ var BUNDLED_DATA = {
   "eccezioni": {
   "id": "eccezioni",
   "titolo": "Eccezioni",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-03-04",
   "nuovo": false,
   "contenuto": [
     {
@@ -481,7 +507,7 @@ var BUNDLED_DATA = {
         },
         {
           "tipo": "paragrafo",
-          "testo": "Dopo aver selezionato linea e corsa, è necessario inserire i codici dei polo nella sezione sottostante."
+          "testo": "Dopo aver selezionato linea e corsa, è necessario inserire i <b>Codici Contabili dei Poli</b> (partenza e arrivo) nella sezione sottostante."
         },
         {
           "tipo": "immagine",
@@ -664,12 +690,13 @@ var BUNDLED_DATA = {
           "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>."
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>. Questo perché la modifica dei chilometri influenza il calcolo delle tariffe di tutti gli abbonamenti attivi, e il sistema esegue questo ricalcolo (detto <b>denormalizzazione</b>) su base mensile, sincronizzato con i periodi tariffari regionali."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Dopo aver cliccato il tasto \"Conferma\", l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
+          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
         },
         {
           "tipo": "immagine",
@@ -680,12 +707,12 @@ var BUNDLED_DATA = {
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> Il tasto \"Pubblica\" è presente nel caso in cui possano avvenire errori nella denormalizzazione. Cliccandolo verrà fatto ripartire il processo di denormalizzazione risolvendo eventuali problemi. La pubblicazione è un procedimento oneroso in termini di tempo."
+          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
         },
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> Nel caso in cui occorra modificare l'eccezione appena creata, è necessario aspettare che le precedenti denormalizzazioni siano terminate. Occorre quindi aspettare che il contatore sia arrivato a 0."
+          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
         },
         {
           "tipo": "box-nota",
@@ -775,7 +802,7 @@ var BUNDLED_DATA = {
   "faq": {
     "id": "faq",
     "titolo": "Domande e Risposte",
-    "aggiornato": "2026-03-03",
+    "aggiornato": "2026-03-04",
     "nuovo": true,
     "contenuto": [
         {
@@ -945,7 +972,12 @@ var BUNDLED_DATA = {
                 {
                     "tipo": "faq",
                     "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
-                    "risposta": "<b>No.</b> Dopo aver cliccato Conferma, l'eccezione viene pubblicata automaticamente tramite un processo di denormalizzazione. Il tasto <b>Pubblica</b> è presente solo come rimedio in caso di errori nella denormalizzazione. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+                    "risposta": "<b>No.</b> Dopo aver cliccato Conferma, l'eccezione viene pubblicata automaticamente: il sistema ricalcola le tariffe di tutti gli abbonamenti interessati (ricalcolo visibile tramite il contatore a schermo). Il tasto <b>Pubblica</b> è disponibile solo come rimedio se il contatore si blocca. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "I biglietti già acquistati prima di un'eccezione di movimento rimangono validi?",
+                    "risposta": "<b>Sì.</b> Un'eccezione di movimento nasconde la corsa ai nuovi acquirenti (non apparirà su COTRAP nel periodo di validità), ma <b>non annulla automaticamente</b> i biglietti già emessi. Chi ha acquistato prima dell'eccezione dovrà essere gestito manualmente dal consorziato (rimborso o comunicazione diretta). Per gli abbonamenti: le corse sospese non consumano convalide per gli abbonati."
                 },
                 {
                     "tipo": "faq",
@@ -2077,7 +2109,7 @@ var BUNDLED_DATA = {
   "guida-veloce": {
   "id": "guida-veloce",
   "titolo": "Guida Veloce",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-03-04",
   "nuovo": false,
   "contenuto": [
     {
@@ -2095,7 +2127,7 @@ var BUNDLED_DATA = {
         {
           "numero": 2,
           "titolo": "Configurazione",
-          "descrizione": "Nella sezione Configurazione (accessibile dal menu Profilo Commerciale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica). Inserisci anche gli autisti/controllori in Utenti App Controlli."
+          "descrizione": "Nella sezione Configurazione (accessibile dal menu Profilo Commerciale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica)."
         },
         {
           "numero": 3,
@@ -2131,8 +2163,8 @@ var BUNDLED_DATA = {
     },
     {
       "tipo": "avviso",
-      "stile": "info",
-      "testo": "Per il controllo biglietti a bordo, installa l'<b>APP Controllo</b> sui dispositivi Android dei verificatori. Consulta la sezione dedicata per le istruzioni di installazione e utilizzo."
+      "stile": "success",
+      "testo": "<b>Configurazione completata?</b> Consulta le sezioni della guida per approfondire ogni passaggio: ogni sezione del menu laterale corrisponde a una fase del processo."
     }
   ],
   "sottosezioni": []
@@ -2248,31 +2280,31 @@ var BUNDLED_DATA = {
   "introduzione": {
   "id": "introduzione",
   "titolo": "Introduzione",
-  "aggiornato": "2026-02-23",
+  "aggiornato": "2026-03-04",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "obiettivo-del-documento",
       "titolo": "Obiettivo del Documento",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Tale manuale ha lo scopo di guidare i consorziati nella creazione di una linea che sarà poi vendibile sul portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e al conseguente controllo contabile e amministrativo del venduto."
+          "testo": "Questo manuale ha lo scopo di guidare i Consorziati nella creazione di una linea che sarà poi vendibile sul portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e nel conseguente controllo contabile e amministrativo del venduto."
         }
       ]
     },
     {
       "id": "sintesi-del-documento",
       "titolo": "Sintesi del Documento",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Il documento descrive le funzionalità del software Itineris, finalizzate alla gestione delle linee, corse e bigliettazione e delle interazioni con il portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e app clienti. Pertanto sono state redatte due sezioni distinte: una dedicata al reparto commerciale e una al reparto contabile/amministrativo."
+          "testo": "Il documento descrive le funzionalità del software Itineris, finalizzate alla gestione delle linee, corse e bigliettazione e delle interazioni con il portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e l'app clienti. Sono state redatte due macro-sezioni distinte: una dedicata al <b>profilo commerciale</b> e una al <b>profilo contabile/amministrativo</b>."
         },
         {
           "tipo": "paragrafo",
@@ -2281,10 +2313,10 @@ var BUNDLED_DATA = {
         {
           "tipo": "lista",
           "items": [
-            "<b>Configurazione ed inserimento Linee</b>",
-            "Procedimento per gestione eccezioni tariffarie e di movimento",
+            "<b>Configurazione e inserimento Linee, Template e Corse</b>",
+            "Gestione eccezioni tariffarie, di movimento e chilometriche",
             "Esportazione dati",
-            "Controlli contabili"
+            "Controllo contabile e statistiche venduto"
           ]
         }
       ]
@@ -2292,45 +2324,45 @@ var BUNDLED_DATA = {
     {
       "id": "destinatari-del-manuale",
       "titolo": "Destinatari",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Il manuale è volto a supportare i Consorziati nella corretta gestione del caricamento Linee e corse sul software Itineris."
+          "testo": "Il manuale è destinato ai <b>Consorziati COTRAP</b> che devono gestire il caricamento di linee e corse sul software Itineris e controllare il venduto tramite il profilo contabile."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Sono previsti <b>due account separati</b> per ciascun consorziato: uno per il <b>profilo commerciale</b> (gestione operativa) e uno per il <b>profilo contabile</b> (reportistica e dati contabili). Le credenziali vengono fornite dall'Amministratore COTRAP."
         }
       ]
     },
     {
-      "id": "contenuti-manuale",
-      "titolo": "Contenuti",
-      "aggiornato": "2026-02-23",
+      "id": "struttura-del-manuale",
+      "titolo": "Struttura del Manuale",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "L'accesso al portale Itineris avviene tramite il link <a href=\"https://itinerisadminpanel.azurewebsites.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Portale Itineris</a> (consigliamo di salvarlo tra i preferiti del browser). Per accedere sono necessarie le credenziali (ID utente e password) fornite dall'Amministratore COTRAP al momento della creazione dell'account. In caso di password dimenticata, è possibile recuperarla tramite il tasto <b>\"Recupero password\"</b> inserendo l'email di recupero comunicata preventivamente all'amministratore."
+          "testo": "Il manuale è suddiviso nelle seguenti sezioni principali, accessibili dal menu laterale:"
         },
         {
-          "tipo": "immagine",
-          "src": "Immagine03.png",
-          "alt": "Schermata accesso ITINERIS",
-          "didascalia": "Schermata di login al portale Itineris"
+          "tipo": "lista",
+          "items": [
+            "<b>Profilo Commerciale:</b> prerequisiti, configurazione tariffari e calendari, emissione titoli gratuiti",
+            "<b>Gestione Movimento:</b> codici contabili, poli, linee, template, corse e titoli di viaggio",
+            "<b>Eccezioni:</b> sospensioni di corse/fermate, variazioni tariffarie e chilometriche",
+            "<b>Ordini:</b> monitoraggio ordini, biglietti, abbonamenti e stati occupazionali",
+            "<b>Esportazioni:</b> archivio centralizzato dei file generati dal portale",
+            "<b>Sezione Contabile:</b> ordini, dati contabili, biglietti, abbonamenti e statistiche"
+          ]
         },
         {
           "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione:</b> saranno forniti al consorziato due account: uno relativo alla sezione contabile ed uno relativo alla sezione commerciale."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In basso a sinistra è sempre visibile il profilo con cui si è effettuato l'accesso: nome e cognome dell'utente e tra parentesi il nome dell'azienda consorziata. In questo manuale sarà visualizzato il profilo COTRAP, ma le istruzioni sono valide per tutti i consorziati."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine03.01.png",
-          "alt": "Dashboard ITINERIS",
-          "didascalia": "Dashboard principale dopo il login"
+          "stile": "success",
+          "testo": "<b>Primo accesso?</b> Consulta la <b>Guida Veloce</b> nel menu per una panoramica rapida dei passaggi essenziali prima di procedere con le sezioni di dettaglio."
         }
       ]
     }
@@ -2338,7 +2370,7 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.4",
+  "versione": "2.5",
   "ultimo_aggiornamento": "2026-03-04",
   "voci": [
     {

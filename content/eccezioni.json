@@ -1,7 +1,7 @@
 {
   "id": "eccezioni",
   "titolo": "Eccezioni",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-03-04",
   "nuovo": false,
   "contenuto": [
     {
@@ -122,7 +122,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Dopo aver selezionato linea e corsa, è necessario inserire i codici dei polo nella sezione sottostante."
+          "testo": "Dopo aver selezionato linea e corsa, è necessario inserire i <b>Codici Contabili dei Poli</b> (partenza e arrivo) nella sezione sottostante."
         },
         {
           "tipo": "immagine",
@@ -305,12 +305,13 @@
           "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>."
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>. Questo perché la modifica dei chilometri influenza il calcolo delle tariffe di tutti gli abbonamenti attivi, e il sistema esegue questo ricalcolo (detto <b>denormalizzazione</b>) su base mensile, sincronizzato con i periodi tariffari regionali."
         },
         {
           "tipo": "paragrafo",
-          "testo": "Dopo aver cliccato il tasto \"Conferma\", l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
+          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
         },
         {
           "tipo": "immagine",
@@ -321,12 +322,12 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> Il tasto \"Pubblica\" è presente nel caso in cui possano avvenire errori nella denormalizzazione. Cliccandolo verrà fatto ripartire il processo di denormalizzazione risolvendo eventuali problemi. La pubblicazione è un procedimento oneroso in termini di tempo."
+          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
         },
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione:</b> Nel caso in cui occorra modificare l'eccezione appena creata, è necessario aspettare che le precedenti denormalizzazioni siano terminate. Occorre quindi aspettare che il contatore sia arrivato a 0."
+          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
         },
         {
           "tipo": "box-nota",

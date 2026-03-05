@@ -1,31 +1,31 @@
 {
   "id": "introduzione",
   "titolo": "Introduzione",
-  "aggiornato": "2026-02-23",
+  "aggiornato": "2026-03-04",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "obiettivo-del-documento",
       "titolo": "Obiettivo del Documento",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Tale manuale ha lo scopo di guidare i consorziati nella creazione di una linea che sarà poi vendibile sul portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e al conseguente controllo contabile e amministrativo del venduto."
+          "testo": "Questo manuale ha lo scopo di guidare i Consorziati nella creazione di una linea che sarà poi vendibile sul portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e nel conseguente controllo contabile e amministrativo del venduto."
         }
       ]
     },
     {
       "id": "sintesi-del-documento",
       "titolo": "Sintesi del Documento",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Il documento descrive le funzionalità del software Itineris, finalizzate alla gestione delle linee, corse e bigliettazione e delle interazioni con il portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e app clienti. Pertanto sono state redatte due sezioni distinte: una dedicata al reparto commerciale e una al reparto contabile/amministrativo."
+          "testo": "Il documento descrive le funzionalità del software Itineris, finalizzate alla gestione delle linee, corse e bigliettazione e delle interazioni con il portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e l'app clienti. Sono state redatte due macro-sezioni distinte: una dedicata al <b>profilo commerciale</b> e una al <b>profilo contabile/amministrativo</b>."
         },
         {
           "tipo": "paragrafo",
@@ -34,10 +34,10 @@
         {
           "tipo": "lista",
           "items": [
-            "<b>Configurazione ed inserimento Linee</b>",
-            "Procedimento per gestione eccezioni tariffarie e di movimento",
+            "<b>Configurazione e inserimento Linee, Template e Corse</b>",
+            "Gestione eccezioni tariffarie, di movimento e chilometriche",
             "Esportazione dati",
-            "Controlli contabili"
+            "Controllo contabile e statistiche venduto"
           ]
         }
       ]
@@ -45,45 +45,45 @@
     {
       "id": "destinatari-del-manuale",
       "titolo": "Destinatari",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Il manuale è volto a supportare i Consorziati nella corretta gestione del caricamento Linee e corse sul software Itineris."
+          "testo": "Il manuale è destinato ai <b>Consorziati COTRAP</b> che devono gestire il caricamento di linee e corse sul software Itineris e controllare il venduto tramite il profilo contabile."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Sono previsti <b>due account separati</b> per ciascun consorziato: uno per il <b>profilo commerciale</b> (gestione operativa) e uno per il <b>profilo contabile</b> (reportistica e dati contabili). Le credenziali vengono fornite dall'Amministratore COTRAP."
         }
       ]
     },
     {
-      "id": "contenuti-manuale",
-      "titolo": "Contenuti",
-      "aggiornato": "2026-02-23",
+      "id": "struttura-del-manuale",
+      "titolo": "Struttura del Manuale",
+      "aggiornato": "2026-03-04",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "L'accesso al portale Itineris avviene tramite il link <a href=\"https://itinerisadminpanel.azurewebsites.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Portale Itineris</a> (consigliamo di salvarlo tra i preferiti del browser). Per accedere sono necessarie le credenziali (ID utente e password) fornite dall'Amministratore COTRAP al momento della creazione dell'account. In caso di password dimenticata, è possibile recuperarla tramite il tasto <b>\"Recupero password\"</b> inserendo l'email di recupero comunicata preventivamente all'amministratore."
+          "testo": "Il manuale è suddiviso nelle seguenti sezioni principali, accessibili dal menu laterale:"
         },
         {
-          "tipo": "immagine",
-          "src": "Immagine03.png",
-          "alt": "Schermata accesso ITINERIS",
-          "didascalia": "Schermata di login al portale Itineris"
+          "tipo": "lista",
+          "items": [
+            "<b>Profilo Commerciale:</b> prerequisiti, configurazione tariffari e calendari, emissione titoli gratuiti",
+            "<b>Gestione Movimento:</b> codici contabili, poli, linee, template, corse e titoli di viaggio",
+            "<b>Eccezioni:</b> sospensioni di corse/fermate, variazioni tariffarie e chilometriche",
+            "<b>Ordini:</b> monitoraggio ordini, biglietti, abbonamenti e stati occupazionali",
+            "<b>Esportazioni:</b> archivio centralizzato dei file generati dal portale",
+            "<b>Sezione Contabile:</b> ordini, dati contabili, biglietti, abbonamenti e statistiche"
+          ]
         },
         {
           "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione:</b> saranno forniti al consorziato due account: uno relativo alla sezione contabile ed uno relativo alla sezione commerciale."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In basso a sinistra è sempre visibile il profilo con cui si è effettuato l'accesso: nome e cognome dell'utente e tra parentesi il nome dell'azienda consorziata. In questo manuale sarà visualizzato il profilo COTRAP, ma le istruzioni sono valide per tutti i consorziati."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine03.01.png",
-          "alt": "Dashboard ITINERIS",
-          "didascalia": "Dashboard principale dopo il login"
+          "stile": "success",
+          "testo": "<b>Primo accesso?</b> Consulta la <b>Guida Veloce</b> nel menu per una panoramica rapida dei passaggi essenziali prima di procedere con le sezioni di dettaglio."
         }
       ]
     }

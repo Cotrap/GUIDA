@@ -791,19 +791,26 @@ function updateHorizontalMenu(content) {
             e.preventDefault();
             const el = document.getElementById(sub.id);
             if (!el) return;
+            // Misura il bottom effettivo degli elementi fissi al momento del click
+            // (getBoundingClientRect è sempre preciso, non dipende da CSS variables o offsetHeight)
+            const header = document.querySelector('header');
+            const searchBar = document.querySelector('.search-container');
             const hMenuEl = document.querySelector('.horizontal-menu');
-            const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 60;
-            const searchH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--search-height')) || 56;
-            const menuH = hMenuEl ? hMenuEl.offsetHeight : 0;
-            const top = el.getBoundingClientRect().top + window.scrollY - headerH - searchH - menuH - 16;
-            window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+            const fixedBottom = Math.max(
+                header ? header.getBoundingClientRect().bottom : 0,
+                searchBar ? searchBar.getBoundingClientRect().bottom : 0,
+                hMenuEl ? hMenuEl.getBoundingClientRect().bottom : 0
+            );
+            const scrollAmount = el.getBoundingClientRect().top - fixedBottom - 8;
+            window.scrollTo({ top: Math.max(0, window.scrollY + scrollAmount), behavior: 'smooth' });
         };
         li.appendChild(a);
         menuList.appendChild(li);
     });
 
-    // Calcola altezza dinamica del menu multi-riga
-    requestAnimationFrame(() => adjustContentForMenu());
+    // Doppio rAF: aspetta che il layout del menu multi-riga sia stabilizzato
+    // prima di misurare offsetHeight e applicare padding/margin
+    requestAnimationFrame(() => requestAnimationFrame(() => adjustContentForMenu()));
 }
 
 /** Ricalcola margin-top del contenuto in base all'altezza effettiva del menu orizzontale */
@@ -822,11 +829,11 @@ function adjustContentForMenu() {
             s.style.scrollMarginTop = (headerH + searchH + menuH + 16) + 'px';
         });
         // Padding al fondo: garantisce che anche l'ultima sottosezione possa
-        // scrollare correttamente in cima alla viewport (senza il padding
-        // il browser non ha spazio sufficiente per scorrere gli elementi finali)
+        // scrollare correttamente in cima alla viewport.
+        // Usiamo window.innerHeight come padding minimo per assicurare che
+        // qualsiasi elemento (anche l'ultimo) abbia sempre abbastanza spazio sotto.
         if (article) {
-            const extraPad = Math.max(80, window.innerHeight - (headerH + searchH + menuH + 32));
-            article.style.paddingBottom = extraPad + 'px';
+            article.style.paddingBottom = window.innerHeight + 'px';
         }
     } else {
         content.style.marginTop = '';

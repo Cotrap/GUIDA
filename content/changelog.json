@@ -4,6 +4,32 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.5",
+      "data": "2026-03-04",
+      "tipo": "fix",
+      "titolo": "Fix CRITICO guida-veloce, miglioramenti eccezioni, CSS accessibilità, FAQ",
+      "descrizione": "Corretti riferimenti residui all'App Controllo nella Guida Veloce. Migliorati testi su denormalizzazione, terminologia eccezioni chilometriche e FAQ. Aggiornato CSS per accessibilità e fix risposta FAQ troncata.",
+      "dettagli": [
+        "Fix CRITICO guida-veloce.json: rimosso riferimento a 'Utenti App Controlli' dal passo 2",
+        "Fix CRITICO guida-veloce.json: rimosso avviso APP Controllo in fondo alla guida veloce, sostituito con avviso generico",
+        "eccezioni.json: 'codici dei polo' → 'Codici Contabili dei Poli' (terminologia corretta)",
+        "eccezioni.json: aggiunta spiegazione del perché la data inizio è solo il primo del mese (ricalcolo tariffe mensile)",
+        "eccezioni.json: riformulati avvisi sulla 'denormalizzazione' con linguaggio operativo più chiaro",
+        "faq.json: aggiornata risposta FAQ denormalizzazione con linguaggio più comprensibile",
+        "faq.json: aggiunta FAQ 'I biglietti già acquistati prima di un'eccezione rimangono validi?'",
+        "introduzione.json: rimossa sottosezione 'Contenuti' duplicata (identica ad Accesso al Portale in home), sostituita con 'Struttura del Manuale'",
+        "introduzione.json: aggiornate date e testi per coerenza con il resto della guida",
+        "css/style.css: font-size separatori menu 0.68rem → 0.75rem (accessibilità, soglia minima 12px)",
+        "css/style.css: max-height FAQ aperta 500px → 1200px (previene troncamento risposte lunghe)"
+      ],
+      "sezioni_modificate": [
+        "guida-veloce",
+        "eccezioni",
+        "faq",
+        "introduzione"
+      ]
+    },
+    {
       "versione": "2.4",
       "data": "2026-03-04",
       "tipo": "fix",

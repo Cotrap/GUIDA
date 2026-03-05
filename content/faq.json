@@ -1,7 +1,7 @@
 {
     "id": "faq",
     "titolo": "Domande e Risposte",
-    "aggiornato": "2026-03-03",
+    "aggiornato": "2026-03-04",
     "nuovo": true,
     "contenuto": [
         {
@@ -171,7 +171,12 @@
                 {
                     "tipo": "faq",
                     "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
-                    "risposta": "<b>No.</b> Dopo aver cliccato Conferma, l'eccezione viene pubblicata automaticamente tramite un processo di denormalizzazione. Il tasto <b>Pubblica</b> è presente solo come rimedio in caso di errori nella denormalizzazione. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+                    "risposta": "<b>No.</b> Dopo aver cliccato Conferma, l'eccezione viene pubblicata automaticamente: il sistema ricalcola le tariffe di tutti gli abbonamenti interessati (ricalcolo visibile tramite il contatore a schermo). Il tasto <b>Pubblica</b> è disponibile solo come rimedio se il contatore si blocca. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "I biglietti già acquistati prima di un'eccezione di movimento rimangono validi?",
+                    "risposta": "<b>Sì.</b> Un'eccezione di movimento nasconde la corsa ai nuovi acquirenti (non apparirà su COTRAP nel periodo di validità), ma <b>non annulla automaticamente</b> i biglietti già emessi. Chi ha acquistato prima dell'eccezione dovrà essere gestito manualmente dal consorziato (rimborso o comunicazione diretta). Per gli abbonamenti: le corse sospese non consumano convalide per gli abbonati."
                 },
                 {
                     "tipo": "faq",
