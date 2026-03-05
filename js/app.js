@@ -413,6 +413,15 @@ function renderContentBlocks(blocks) {
                     </div>`;
             }
 
+            case 'tldr':
+                return `
+                    <div class="tldr" role="note" aria-label="Riepilogo sezione">
+                        <div class="tldr-header">⚡ In breve</div>
+                        <ul class="tldr-items">
+                            ${block.items.map(item => `<li>${item}</li>`).join('')}
+                        </ul>
+                    </div>`;
+
             case 'steps':
                 return `
                     <div class="steps-container">

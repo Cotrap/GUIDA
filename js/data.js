@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-05 10:42:01
+ * Generato il: 2026-03-05 11:57:06
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -1289,30 +1289,20 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Questa è la sezione operativa principale: qui si inserisce tutta la struttura del servizio di trasporto — percorsi, fermate, orari e corse — che sarà poi pubblicata sul portale COTRAP."
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "La logica del sistema: come funziona Itineris",
-          "contenuto": [
-            "Itineris è un sistema a livelli: ogni elemento dipende da quelli precedenti.",
-            "<b>Codici Contabili</b> → identificano le fermate per il sistema contabile. Devono esistere prima dei Poli.",
-            "<b>Poli</b> → sono le fermate fisiche del percorso. Devono esistere prima delle Linee e dei Template.",
-            "<b>Linee e Template</b> → la Linea definisce il percorso (quali fermate, in che ordine); il Template è il modello-orario riutilizzabile su più corse. Devono esistere prima delle Corse.",
-            "<b>Corse</b> → sono le singole partenze (es. 'lunedì ore 07:30 da Bari'). Si basano su un Template e vanno <b>pubblicate</b> per essere visibili su COTRAP.",
-            "Questa sequenza è obbligatoria: non è possibile saltare un livello."
+          "tipo": "tldr",
+          "items": [
+            "Sistema a livelli: <b>Codici Contabili → Poli → Linee/Template → Corse</b>. L'ordine è obbligatorio.",
+            "Prima di iniziare: recupera codici, denominazione linea, polimetriche e tariffe da <b>Tecbus</b>.",
+            "Creare la corsa non basta: va <b>pubblicata</b> per apparire su COTRAP."
           ]
         },
         {
-          "tipo": "box-nota",
-          "titolo": "Ordine obbligatorio di inserimento",
-          "contenuto": [
-            "<b>1. Codici Contabili Poli</b> — prerequisito per i Poli (ogni polo deve avere un codice contabile associato)",
-            "<b>2. Poli</b> — prerequisito per i Template (le fermate devono esistere prima di poterle aggiungere a un percorso)",
-            "<b>3. Linee e Template</b> — prerequisito per le Corse (il percorso deve essere definito prima di creare gli orari)",
-            "<b>4. Corse</b> — creare tutte le corse e infine pubblicarle per renderle visibili sul portale COTRAP",
-            "<b>Prima di iniziare:</b> recuperare da Tecbus i codici contabili dei poli, il codice e la denominazione di ogni linea, le polimetriche attive e le tariffe vigenti"
+          "tipo": "steps",
+          "items": [
+            { "numero": "1", "titolo": "Codici Contabili Poli", "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto." },
+            { "numero": "2", "titolo": "Poli", "descrizione": "Le fermate fisiche con coordinate GPS, collegate ai codici contabili già inseriti." },
+            { "numero": "3", "titolo": "Linee e Template", "descrizione": "La linea è il contenitore; il template definisce fermate, km e minuti dal capolinea." },
+            { "numero": "4", "titolo": "Corse", "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire su COTRAP." }
           ]
         },
         {
@@ -1380,8 +1370,12 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Come anticipato è necessario recuperare i codici contabili dei poli in uso da Tecbus. Un solo codice contabile deve essere associato ad un Comune."
+          "tipo": "tldr",
+          "items": [
+            "Recupera i codici da <b>Tecbus</b> — senza di essi non puoi creare poli, template o corse.",
+            "Un codice per Comune; le frazioni hanno codici separati (es. Bari ≠ Palese-Bari).",
+            "Se lo stesso Comune ha più codici, compila <b>Descrizione</b> con il nome della frazione — altrimenti nello shop COTRAP appaiono nomi duplicati."
+          ]
         },
         {
           "tipo": "avviso",
@@ -1440,18 +1434,22 @@ var BUNDLED_DATA = {
     {
       "id": "poli",
       "titolo": "Poli",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "I Poli sono le fermate fisiche del bus. Ogni polo deve avere coordinate GPS e un Codice Contabile già inserito.",
+            "Non duplicare: se la stessa città compare su più linee, usa il polo esistente — non crearne uno nuovo.",
+            "Dopo l'inserimento, usare l'icona <b>Pubblica</b> nella colonna Operazioni per rendere la fermata visibile su COTRAP."
+          ]
+        },
         {
           "tipo": "immagine",
           "src": "Immagine5.3.png",
           "alt": "Menu Poli",
           "didascalia": "Accesso alla gestione Poli"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione è possibile inserire le fermate associate al polo codificato nel passaggio precedente."
         },
         {
           "tipo": "immagine",
@@ -1518,18 +1516,22 @@ var BUNDLED_DATA = {
     {
       "id": "linee",
       "titolo": "Linee",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "La Linea è il contenitore del percorso. All'interno si crea il <b>Template</b> con fermate, km e minuti.",
+            "Creare sempre sia il template di <b>andata</b> che quello di <b>ritorno</b>: usa l'icona <b>Duplica e Inverti</b>.",
+            "La tipologia (<b>Regionale/Provinciale/Comunale</b>) determina come viene calcolata la tariffa."
+          ]
+        },
         {
           "tipo": "immagine",
           "src": "Immagine5.4.png",
           "alt": "Menu Linee",
           "didascalia": "Accesso alla gestione Linee"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione si crea il <b>template</b> (il modello predefinito del percorso) che sarà riutilizzato per tutte le corse di una stessa linea."
         },
         {
           "tipo": "paragrafo",
@@ -1723,16 +1725,16 @@ var BUNDLED_DATA = {
     {
       "id": "creazione-template",
       "titolo": "Creazione del Template",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Questa fase risulta tra le più delicate in quanto determina la correttezza del percorso che poi sarà replicato su tutte le corse che fanno parte di una determinata linea. Quindi determinano anche ciò che verrà mostrato vendibile sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Cliccando sull'icona \"visualizza template\" si apre la seguente schermata"
+          "tipo": "tldr",
+          "items": [
+            "Il template è la lista ordinata delle fermate con i <b>km tra fermata e fermata</b> e i <b>minuti dal capolinea</b>.",
+            "<b>I minuti si contano SEMPRE dalla prima fermata (capolinea)</b>, non dalla fermata precedente. Es: A=0 min, B=12 min, C=20 min, D=35 min.",
+            "Due fermate dello stesso Comune? Inserire km=0 — nessuna tariffa verrà calcolata per quella tratta."
+          ]
         },
         {
           "tipo": "immagine",
