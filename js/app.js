@@ -817,6 +817,8 @@ function updateHorizontalMenu(content) {
                            (searchBar ? searchBar.offsetHeight : 0) +
                            (hMenuEl && hMenuEl.classList.contains('visible') ? hMenuEl.offsetHeight : 0);
             window.scrollTo({ top: Math.max(0, docTop - fixedH - 8), behavior: 'smooth' });
+            _ignoreNextHashChange = true;
+            window.location.hash = sub.id;
         };
         li.appendChild(a);
         menuList.appendChild(li);

@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-05 12:17:53
+ * Generato il: 2026-03-05 13:17:43
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -431,12 +431,16 @@ var BUNDLED_DATA = {
     {
       "id": "eccezioni-movimento",
       "titolo": "Eccezioni di Movimento",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione è possibile gestire una situazione straordinaria legata all'esercizio. Ad esempio una fermata che non viene effettuata in alcuni periodi per lavori stradali (in questo caso sarà gestito il polo) oppure una corsa che non viene effettuata per festività natalizie o pasquali o sciopero (in questo caso sarà possibile gestire la singola corsa oppure tutte le linee). In questo modo la corsa non sarà visibile sul sito <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>."
+          "tipo": "tldr",
+          "items": [
+            "Usa questa sezione per sospendere temporaneamente corse, fermate o intere linee (es. sciopero, festività, lavori stradali).",
+            "La corsa sospesa sparisce automaticamente da biglietteria.cotrap.it nel periodo indicato e torna alla scadenza senza intervento.",
+            "Se non imposti la Data fine, la sospensione è indefinita — ricordati di rimuoverla quando non serve più."
+          ]
         },
         {
           "tipo": "immagine",
@@ -489,12 +493,16 @@ var BUNDLED_DATA = {
     {
       "id": "eccezioni-tariffarie",
       "titolo": "Eccezioni Tariffarie",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Con questa funzione è possibile modificare eccezionalmente il tariffario di alcune corse che non seguono il tariffario chilometrico. Ad esempio corse che hanno un tariffario fisso."
+          "tipo": "tldr",
+          "items": [
+            "Usa questa eccezione quando il prezzo di un <b>biglietto</b> non deve seguire il tariffario chilometrico (es. tariffa fissa, linea urbana con tariffa speciale).",
+            "Si applica a una singola corsa o a tutte le linee per un periodo specifico.",
+            "Inserisci Codice Contabile partenza + arrivo e l'importo esatto che comparirà sullo shop."
+          ]
         },
         {
           "tipo": "immagine",
@@ -545,12 +553,16 @@ var BUNDLED_DATA = {
     {
       "id": "eccezioni-tariffarie-abbonamenti",
       "titolo": "Eccezioni Tariffarie Abbonamenti",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Con questa funzione è possibile variare in modo forzato l'importo di un abbonamento, riportando l'importo lordo della relativa fascia km del tariffario regionale (superiore o inferiore rispetto a quella che si avrebbe se l'abbonamento fosse associato al percorso impostato dal template)."
+          "tipo": "tldr",
+          "items": [
+            "Usa questa eccezione quando il prezzo di un <b>abbonamento mensile</b> è diverso da quello calcolato automaticamente dai km del template.",
+            "Forza il prezzo su una fascia km specifica del tariffario regionale, indipendentemente dai km reali del percorso.",
+            "Inserisci sempre l'<b>importo lordo</b>: gli sconti da tessera vengono applicati automaticamente dal sistema al momento dell'acquisto."
+          ]
         },
         {
           "tipo": "paragrafo",
@@ -1943,12 +1955,16 @@ var BUNDLED_DATA = {
     {
       "id": "corse",
       "titolo": "Corse",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione sarà possibile creare le corse associate alle rispettive linee create nel passaggio precedente."
+          "tipo": "tldr",
+          "items": [
+            "La corsa è una singola partenza: collega un template, ha orario, frequenza e numero di posti disponibili online.",
+            "<b>Stato Corsa ≠ Pubblicazione.</b> 'Attiva' nel form è lo stato interno. La corsa appare su biglietteria.cotrap.it solo dopo aver cliccato esplicitamente su <b>Pubblica</b>.",
+            "Stagionale? Compila Data inizio/fine. Tutto l'anno? Lascia quei campi vuoti."
+          ]
         },
         {
           "tipo": "immagine",

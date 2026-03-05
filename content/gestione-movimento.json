@@ -666,12 +666,16 @@
     {
       "id": "corse",
       "titolo": "Corse",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione sarà possibile creare le corse associate alle rispettive linee create nel passaggio precedente."
+          "tipo": "tldr",
+          "items": [
+            "La corsa è una singola partenza: collega un template, ha orario, frequenza e numero di posti disponibili online.",
+            "<b>Stato Corsa ≠ Pubblicazione.</b> 'Attiva' nel form è lo stato interno. La corsa appare su biglietteria.cotrap.it solo dopo aver cliccato esplicitamente su <b>Pubblica</b>.",
+            "Stagionale? Compila Data inizio/fine. Tutto l'anno? Lascia quei campi vuoti."
+          ]
         },
         {
           "tipo": "immagine",
