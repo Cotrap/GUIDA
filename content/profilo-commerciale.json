@@ -42,7 +42,7 @@
         {
           "tipo": "lista-numerata",
           "items": [
-            "<b>Configurazione</b> — consultare i parametri regionali configurati da COTRAP (tariffari, calendari scolastici) e inserire le frequenze delle proprie corse e gli utenti dell'app controllo. Questa sezione è accessibile dal menu principale.",
+            "<b>Configurazione</b> — consultare i parametri regionali configurati da COTRAP (tariffari, calendari scolastici) e inserire le frequenze delle proprie corse. Questa sezione è accessibile dal menu principale.",
             "<b>Gestione Movimento</b> — inserire i dati operativi: codici contabili, poli (fermate), linee con template di percorso e corse con orari. Questa è la sezione più importante e quella dove si costruisce tutto l'esercizio.",
             "<b>Eccezioni</b> — gestire variazioni straordinarie: sospensioni, modifiche tariffarie temporanee, variazioni chilometriche.",
             "<b>Ordini</b> — consultare i biglietti e abbonamenti venduti, verificare lo stato delle corse e monitorare i controlli.",
@@ -59,7 +59,7 @@
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse e gli utenti dell'app controllo sono invece inseriti dal consorziato stesso."
+          "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse sono invece inserite dal consorziato stesso."
         },
         {
           "tipo": "immagine",
@@ -76,8 +76,7 @@
           "items": [
             "<b>Tariffari</b>",
             "Calendari",
-            "Frequenza Corsa",
-            "Utenti App Controlli"
+            "Frequenza Corsa"
           ]
         },
         {

@@ -1,23 +1,31 @@
 {
   "id": "gestione-movimento",
   "titolo": "Gestione Movimento",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-03-05",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "comprendere-il-sistema",
       "titolo": "Comprendere il Sistema",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Questa sezione è la parte operativa più importante in quanto si riporta su itineris tutto l'esercizio."
+          "testo": "Questa è la sezione operativa principale: qui si inserisce tutta la struttura del servizio di trasporto — percorsi, fermate, orari e corse — che sarà poi pubblicata sul portale COTRAP."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Dopo aver consultato la sezione Configurazione è necessario inserire i codici contabili, i poli, le linee e le corse. Tutte queste operazioni si eseguono nella sezione Gestione Movimento."
+          "tipo": "box-nota",
+          "titolo": "La logica del sistema: come funziona Itineris",
+          "contenuto": [
+            "Itineris è un sistema a livelli: ogni elemento dipende da quelli precedenti.",
+            "<b>Codici Contabili</b> → identificano le fermate per il sistema contabile. Devono esistere prima dei Poli.",
+            "<b>Poli</b> → sono le fermate fisiche del percorso. Devono esistere prima delle Linee e dei Template.",
+            "<b>Linee e Template</b> → la Linea definisce il percorso (quali fermate, in che ordine); il Template è il modello-orario riutilizzabile su più corse. Devono esistere prima delle Corse.",
+            "<b>Corse</b> → sono le singole partenze (es. 'lunedì ore 07:30 da Bari'). Si basano su un Template e vanno <b>pubblicate</b> per essere visibili su COTRAP.",
+            "Questa sequenza è obbligatoria: non è possibile saltare un livello."
+          ]
         },
         {
           "tipo": "box-nota",
@@ -37,19 +45,20 @@
           "didascalia": "Accesso alla sezione Gestione Movimento"
         },
         {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione è possibile visualizzare le seguenti voci di menu:"
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Dove vado per fare cosa?</b> Riferimento rapido per orientarsi tra le sezioni:"
         },
         {
           "tipo": "lista",
           "items": [
-            "<b>Mezzi</b>",
-            "<b>Codici contabili poli</b>",
-            "<b>Poli</b>",
-            "<b>Linee</b>",
-            "<b>Corse</b>",
-            "<b>Note</b>",
-            "<b>Titoli di Viaggio</b>"
+            "<b>Cambiare il percorso di una linea</b> (fermate, ordine tappe) → <b>Linee</b>",
+            "<b>Cambiare gli orari di partenza</b> → <b>Corse</b> (modificare la corsa o crearne una nuova)",
+            "<b>Sospendere una corsa temporaneamente</b> → <b>Eccezioni → Sospensione Corsa/Fermata</b>",
+            "<b>Cambiare il prezzo di un biglietto o abbonamento</b> → <b>Eccezioni → Eccezione Tariffaria</b>",
+            "<b>Correggere i km tra fermate</b> (influenza il costo degli abbonamenti) → <b>Eccezioni → Eccezione Chilometrica</b>",
+            "<b>Vedere gli acquisti dei clienti</b> → <b>Ordini</b>",
+            "<b>Estrarre dati contabili e incassi</b> → <b>Sezione Contabile</b>"
           ]
         },
         {
@@ -57,6 +66,21 @@
           "src": "Immagine5.0b.png",
           "alt": "Sottomenu Gestione Movimento",
           "didascalia": "Voci disponibili in Gestione Movimento"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Errori comuni da evitare:</b>"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Corsa non visibile su COTRAP?</b> Probabilmente non è stata pubblicata. Aprire Corse, cercare la corsa e cliccare sull'icona Pubblica. Attenzione: lo Stato Corsa (attiva/non attiva nel form) è diverso dalla pubblicazione.",
+            "<b>Nomi di città duplicati nello shop COTRAP?</b> Il campo Descrizione di uno o più Codici Contabili è vuoto o non contiene il nome della frazione. Se per uno stesso Comune esistono più codici, compilare il campo Descrizione con il nome della frazione (es. 'Palese' per Bari-Palese).",
+            "<b>Orari sbagliati nel template?</b> I minuti si calcolano sempre dal capolinea (prima fermata del percorso), non dalla fermata precedente. Es: Fermata A = 0 min, Fermata B = 12 min (dal capolinea), Fermata C = 20 min (dal capolinea, non 8 min da B).",
+            "<b>Modifica al template ma gli orari delle corse non cambiano?</b> Le corse esistenti non si aggiornano in automatico. Disattivare la corsa, salvare le modifiche al template, poi riattivare.",
+            "<b>Eccezione chilometrica non attiva?</b> La data di inizio deve essere il 1° del mese (es. 01/04/2026): il sistema ricalcola le tariffe su base mensile."
+          ]
         }
       ]
     },
@@ -75,7 +99,7 @@
     {
       "id": "codici-contabili",
       "titolo": "Codici Contabili Poli",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
@@ -107,10 +131,15 @@
           "tipo": "lista",
           "items": [
             "<b>Codice:</b> inserire codice contabile",
-            "<b>Descrizione:</b> lasciare il campo vuoto (riservato all'uso interno del Consorzio)",
+            "<b>Descrizione:</b> inserire il nome della frazione o della località se per lo stesso Comune esistono più codici contabili (es. <i>'Palese'</i> per Bari-Palese). Se il Comune ha un solo codice contabile, lasciare vuoto.",
             "<b>Comune:</b> inserire il comune",
             "<b>Frazione:</b> scegliere tra le opzioni in caso sia necessario"
           ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — nomi duplicati nello shop COTRAP:</b> se nello shop appaiono più risultati con lo stesso nome di Comune (es. due volte 'Bari'), significa che il campo Descrizione di uno o più codici contabili non è stato compilato. Inserire sempre il nome della frazione nel campo Descrizione quando esistono più codici per lo stesso Comune."
         },
         {
           "tipo": "avviso",

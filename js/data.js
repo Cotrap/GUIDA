@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-05 09:52:22
+ * Generato il: 2026-03-05 10:42:01
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -205,6 +205,27 @@ var BUNDLED_DATA = {
   "titolo": "Novità e Aggiornamenti",
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
+    {
+      "versione": "2.6",
+      "data": "2026-03-05",
+      "tipo": "miglioramento",
+      "titolo": "Filosofia sistema, errori comuni, fix CRITICO Descrizione codici contabili",
+      "descrizione": "Completamente riscritta la sezione 'Comprendere il Sistema' con la logica a livelli di Itineris, mappa 'dove vado per fare cosa' e lista errori comuni. Corretto istruzione CRITICA errata su Codici Contabili (Descrizione non va lasciata vuota). Rimossi ultimi riferimenti App Controllo da profilo-commerciale. Aggiunta FAQ nomi duplicati nello shop.",
+      "dettagli": [
+        "gestione-movimento.json: aggiunto box-nota 'La logica del sistema' con spiegazione sistema a livelli (Codici → Poli → Linee/Template → Corse)",
+        "gestione-movimento.json: aggiunto box 'Dove vado per fare cosa' con mappa navigazione tra sezioni",
+        "gestione-movimento.json: aggiunta lista 'Errori comuni da evitare' con 5 scenari operativi",
+        "gestione-movimento.json: FIX CRITICO — campo Descrizione in Codici Contabili: da 'lasciare vuoto' a istruzione corretta (compilare con nome frazione quando ci sono più codici per stesso Comune)",
+        "gestione-movimento.json: aggiunto avviso warning sui nomi duplicati nello shop COTRAP nella sezione Codici Contabili",
+        "profilo-commerciale.json: rimossi tutti i riferimenti residui a 'Utenti App Controlli' (da lista Configurazione, da testo introduttivo, dalla lista-numerata)",
+        "faq.json: aggiunta FAQ 'Nello shop di COTRAP appaiono più risultati con lo stesso nome di città' nella sezione Capire il sistema"
+      ],
+      "sezioni_modificate": [
+        "gestione-movimento",
+        "profilo-commerciale",
+        "faq"
+      ]
+    },
     {
       "versione": "2.5",
       "data": "2026-03-04",
@@ -841,6 +862,11 @@ var BUNDLED_DATA = {
                     "tipo": "faq",
                     "domanda": "Cosa significa che la corsa è 'non attiva'? È la stessa cosa di 'nascosta'?",
                     "risposta": "Sì, è la stessa cosa. Una corsa <b>non attiva</b> (o 'nascosta') non è visibile su cotrap.it: i passeggeri non possono vederla né acquistare biglietti. Questo è lo stato predefinito quando crei una nuova corsa.<br><br>Per renderla acquistabile devi <b>pubblicarla</b>: in Gestione Movimento → Corse, clicca sull'icona Pubblica/Nascondi a destra della corsa e conferma. Lo stato diventa 'Attiva'.<br><br>Puoi anche nascondere temporaneamente una corsa attiva (senza eliminarla) usando la stessa icona — utile se devi sospendere il servizio ma poi vuoi riattivarla."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Nello shop di COTRAP appaiono più risultati con lo stesso nome di città: come si risolve?",
+                    "risposta": "Questo problema è causato dal campo <b>Descrizione</b> vuoto nei Codici Contabili. Quando un Comune ha più codici contabili (es. Bari città e Palese-Bari), il sistema li mostra entrambi nello shop. Se il campo Descrizione è vuoto su entrambi, appaiono entrambi come 'Bari', creando confusione all'utente.<br><br><b>Soluzione:</b> vai in Gestione Movimento → Codici Contabili Poli, modifica il codice della variante (nell'esempio: Palese-Bari) e inserisci nel campo <b>Descrizione</b> il nome della frazione (es. 'Palese'). Nello shop appariranno ora 'Bari' e 'Bari - Palese', chiaramente distinguibili.<br><br><b>Regola generale:</b> se per uno stesso Comune esistono più codici contabili, tutti tranne quello principale devono avere il campo Descrizione compilato con il nome della frazione."
                 }
             ]
         },
@@ -1252,23 +1278,31 @@ var BUNDLED_DATA = {
   "gestione-movimento": {
   "id": "gestione-movimento",
   "titolo": "Gestione Movimento",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-03-05",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "comprendere-il-sistema",
       "titolo": "Comprendere il Sistema",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Questa sezione è la parte operativa più importante in quanto si riporta su itineris tutto l'esercizio."
+          "testo": "Questa è la sezione operativa principale: qui si inserisce tutta la struttura del servizio di trasporto — percorsi, fermate, orari e corse — che sarà poi pubblicata sul portale COTRAP."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Dopo aver consultato la sezione Configurazione è necessario inserire i codici contabili, i poli, le linee e le corse. Tutte queste operazioni si eseguono nella sezione Gestione Movimento."
+          "tipo": "box-nota",
+          "titolo": "La logica del sistema: come funziona Itineris",
+          "contenuto": [
+            "Itineris è un sistema a livelli: ogni elemento dipende da quelli precedenti.",
+            "<b>Codici Contabili</b> → identificano le fermate per il sistema contabile. Devono esistere prima dei Poli.",
+            "<b>Poli</b> → sono le fermate fisiche del percorso. Devono esistere prima delle Linee e dei Template.",
+            "<b>Linee e Template</b> → la Linea definisce il percorso (quali fermate, in che ordine); il Template è il modello-orario riutilizzabile su più corse. Devono esistere prima delle Corse.",
+            "<b>Corse</b> → sono le singole partenze (es. 'lunedì ore 07:30 da Bari'). Si basano su un Template e vanno <b>pubblicate</b> per essere visibili su COTRAP.",
+            "Questa sequenza è obbligatoria: non è possibile saltare un livello."
+          ]
         },
         {
           "tipo": "box-nota",
@@ -1288,19 +1322,20 @@ var BUNDLED_DATA = {
           "didascalia": "Accesso alla sezione Gestione Movimento"
         },
         {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione è possibile visualizzare le seguenti voci di menu:"
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Dove vado per fare cosa?</b> Riferimento rapido per orientarsi tra le sezioni:"
         },
         {
           "tipo": "lista",
           "items": [
-            "<b>Mezzi</b>",
-            "<b>Codici contabili poli</b>",
-            "<b>Poli</b>",
-            "<b>Linee</b>",
-            "<b>Corse</b>",
-            "<b>Note</b>",
-            "<b>Titoli di Viaggio</b>"
+            "<b>Cambiare il percorso di una linea</b> (fermate, ordine tappe) → <b>Linee</b>",
+            "<b>Cambiare gli orari di partenza</b> → <b>Corse</b> (modificare la corsa o crearne una nuova)",
+            "<b>Sospendere una corsa temporaneamente</b> → <b>Eccezioni → Sospensione Corsa/Fermata</b>",
+            "<b>Cambiare il prezzo di un biglietto o abbonamento</b> → <b>Eccezioni → Eccezione Tariffaria</b>",
+            "<b>Correggere i km tra fermate</b> (influenza il costo degli abbonamenti) → <b>Eccezioni → Eccezione Chilometrica</b>",
+            "<b>Vedere gli acquisti dei clienti</b> → <b>Ordini</b>",
+            "<b>Estrarre dati contabili e incassi</b> → <b>Sezione Contabile</b>"
           ]
         },
         {
@@ -1308,6 +1343,21 @@ var BUNDLED_DATA = {
           "src": "Immagine5.0b.png",
           "alt": "Sottomenu Gestione Movimento",
           "didascalia": "Voci disponibili in Gestione Movimento"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Errori comuni da evitare:</b>"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Corsa non visibile su COTRAP?</b> Probabilmente non è stata pubblicata. Aprire Corse, cercare la corsa e cliccare sull'icona Pubblica. Attenzione: lo Stato Corsa (attiva/non attiva nel form) è diverso dalla pubblicazione.",
+            "<b>Nomi di città duplicati nello shop COTRAP?</b> Il campo Descrizione di uno o più Codici Contabili è vuoto o non contiene il nome della frazione. Se per uno stesso Comune esistono più codici, compilare il campo Descrizione con il nome della frazione (es. 'Palese' per Bari-Palese).",
+            "<b>Orari sbagliati nel template?</b> I minuti si calcolano sempre dal capolinea (prima fermata del percorso), non dalla fermata precedente. Es: Fermata A = 0 min, Fermata B = 12 min (dal capolinea), Fermata C = 20 min (dal capolinea, non 8 min da B).",
+            "<b>Modifica al template ma gli orari delle corse non cambiano?</b> Le corse esistenti non si aggiornano in automatico. Disattivare la corsa, salvare le modifiche al template, poi riattivare.",
+            "<b>Eccezione chilometrica non attiva?</b> La data di inizio deve essere il 1° del mese (es. 01/04/2026): il sistema ricalcola le tariffe su base mensile."
+          ]
         }
       ]
     },
@@ -1326,7 +1376,7 @@ var BUNDLED_DATA = {
     {
       "id": "codici-contabili",
       "titolo": "Codici Contabili Poli",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
         {
@@ -1358,10 +1408,15 @@ var BUNDLED_DATA = {
           "tipo": "lista",
           "items": [
             "<b>Codice:</b> inserire codice contabile",
-            "<b>Descrizione:</b> lasciare il campo vuoto (riservato all'uso interno del Consorzio)",
+            "<b>Descrizione:</b> inserire il nome della frazione o della località se per lo stesso Comune esistono più codici contabili (es. <i>'Palese'</i> per Bari-Palese). Se il Comune ha un solo codice contabile, lasciare vuoto.",
             "<b>Comune:</b> inserire il comune",
             "<b>Frazione:</b> scegliere tra le opzioni in caso sia necessario"
           ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — nomi duplicati nello shop COTRAP:</b> se nello shop appaiono più risultati con lo stesso nome di Comune (es. due volte 'Bari'), significa che il campo Descrizione di uno o più codici contabili non è stato compilato. Inserire sempre il nome della frazione nel campo Descrizione quando esistono più codici per lo stesso Comune."
         },
         {
           "tipo": "avviso",
@@ -2507,8 +2562,8 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.5",
-  "ultimo_aggiornamento": "2026-03-04",
+  "versione": "2.6",
+  "ultimo_aggiornamento": "2026-03-05",
   "voci": [
     {
       "id": "home",
@@ -2860,7 +2915,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "lista-numerata",
           "items": [
-            "<b>Configurazione</b> — consultare i parametri regionali configurati da COTRAP (tariffari, calendari scolastici) e inserire le frequenze delle proprie corse e gli utenti dell'app controllo. Questa sezione è accessibile dal menu principale.",
+            "<b>Configurazione</b> — consultare i parametri regionali configurati da COTRAP (tariffari, calendari scolastici) e inserire le frequenze delle proprie corse. Questa sezione è accessibile dal menu principale.",
             "<b>Gestione Movimento</b> — inserire i dati operativi: codici contabili, poli (fermate), linee con template di percorso e corse con orari. Questa è la sezione più importante e quella dove si costruisce tutto l'esercizio.",
             "<b>Eccezioni</b> — gestire variazioni straordinarie: sospensioni, modifiche tariffarie temporanee, variazioni chilometriche.",
             "<b>Ordini</b> — consultare i biglietti e abbonamenti venduti, verificare lo stato delle corse e monitorare i controlli.",
@@ -2877,7 +2932,7 @@ var BUNDLED_DATA = {
       "contenuto": [
         {
           "tipo": "paragrafo",
-          "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse e gli utenti dell'app controllo sono invece inseriti dal consorziato stesso."
+          "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse sono invece inserite dal consorziato stesso."
         },
         {
           "tipo": "immagine",
@@ -2894,8 +2949,7 @@ var BUNDLED_DATA = {
           "items": [
             "<b>Tariffari</b>",
             "Calendari",
-            "Frequenza Corsa",
-            "Utenti App Controlli"
+            "Frequenza Corsa"
           ]
         },
         {

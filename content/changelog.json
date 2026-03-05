@@ -4,6 +4,27 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.6",
+      "data": "2026-03-05",
+      "tipo": "miglioramento",
+      "titolo": "Filosofia sistema, errori comuni, fix CRITICO Descrizione codici contabili",
+      "descrizione": "Completamente riscritta la sezione 'Comprendere il Sistema' con la logica a livelli di Itineris, mappa 'dove vado per fare cosa' e lista errori comuni. Corretto istruzione CRITICA errata su Codici Contabili (Descrizione non va lasciata vuota). Rimossi ultimi riferimenti App Controllo da profilo-commerciale. Aggiunta FAQ nomi duplicati nello shop.",
+      "dettagli": [
+        "gestione-movimento.json: aggiunto box-nota 'La logica del sistema' con spiegazione sistema a livelli (Codici → Poli → Linee/Template → Corse)",
+        "gestione-movimento.json: aggiunto box 'Dove vado per fare cosa' con mappa navigazione tra sezioni",
+        "gestione-movimento.json: aggiunta lista 'Errori comuni da evitare' con 5 scenari operativi",
+        "gestione-movimento.json: FIX CRITICO — campo Descrizione in Codici Contabili: da 'lasciare vuoto' a istruzione corretta (compilare con nome frazione quando ci sono più codici per stesso Comune)",
+        "gestione-movimento.json: aggiunto avviso warning sui nomi duplicati nello shop COTRAP nella sezione Codici Contabili",
+        "profilo-commerciale.json: rimossi tutti i riferimenti residui a 'Utenti App Controlli' (da lista Configurazione, da testo introduttivo, dalla lista-numerata)",
+        "faq.json: aggiunta FAQ 'Nello shop di COTRAP appaiono più risultati con lo stesso nome di città' nella sezione Capire il sistema"
+      ],
+      "sezioni_modificate": [
+        "gestione-movimento",
+        "profilo-commerciale",
+        "faq"
+      ]
+    },
+    {
       "versione": "2.5",
       "data": "2026-03-04",
       "tipo": "fix",

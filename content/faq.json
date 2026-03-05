@@ -40,6 +40,11 @@
                     "tipo": "faq",
                     "domanda": "Cosa significa che la corsa è 'non attiva'? È la stessa cosa di 'nascosta'?",
                     "risposta": "Sì, è la stessa cosa. Una corsa <b>non attiva</b> (o 'nascosta') non è visibile su cotrap.it: i passeggeri non possono vederla né acquistare biglietti. Questo è lo stato predefinito quando crei una nuova corsa.<br><br>Per renderla acquistabile devi <b>pubblicarla</b>: in Gestione Movimento → Corse, clicca sull'icona Pubblica/Nascondi a destra della corsa e conferma. Lo stato diventa 'Attiva'.<br><br>Puoi anche nascondere temporaneamente una corsa attiva (senza eliminarla) usando la stessa icona — utile se devi sospendere il servizio ma poi vuoi riattivarla."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Nello shop di COTRAP appaiono più risultati con lo stesso nome di città: come si risolve?",
+                    "risposta": "Questo problema è causato dal campo <b>Descrizione</b> vuoto nei Codici Contabili. Quando un Comune ha più codici contabili (es. Bari città e Palese-Bari), il sistema li mostra entrambi nello shop. Se il campo Descrizione è vuoto su entrambi, appaiono entrambi come 'Bari', creando confusione all'utente.<br><br><b>Soluzione:</b> vai in Gestione Movimento → Codici Contabili Poli, modifica il codice della variante (nell'esempio: Palese-Bari) e inserisci nel campo <b>Descrizione</b> il nome della frazione (es. 'Palese'). Nello shop appariranno ora 'Bari' e 'Bari - Palese', chiaramente distinguibili.<br><br><b>Regola generale:</b> se per uno stesso Comune esistono più codici contabili, tutti tranne quello principale devono avere il campo Descrizione compilato con il nome della frazione."
                 }
             ]
         },
