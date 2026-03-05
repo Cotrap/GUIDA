@@ -39,7 +39,7 @@
         {
           "numero": 6,
           "titolo": "Pubblicazione delle Corse",
-          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili su COTRAP. In Gestione Movimento → Corse, cliccare sull'icona 'Pubblica/Nascondi' a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo stato diventa 'Attiva'. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
+          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili sullo shop COTRAP (<a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>). In Gestione Movimento → Corse, cliccare sull'icona 'Pubblica/Nascondi' a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo stato diventa 'Attiva'. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
         },
         {
           "numero": 7,

@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-05 11:57:06
+ * Generato il: 2026-03-05 12:17:53
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -1293,7 +1293,7 @@ var BUNDLED_DATA = {
           "items": [
             "Sistema a livelli: <b>Codici Contabili → Poli → Linee/Template → Corse</b>. L'ordine è obbligatorio.",
             "Prima di iniziare: recupera codici, denominazione linea, polimetriche e tariffe da <b>Tecbus</b>.",
-            "Creare la corsa non basta: va <b>pubblicata</b> per apparire su COTRAP."
+            "Creare la corsa non basta: va <b>pubblicata</b> per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>."
           ]
         },
         {
@@ -1302,7 +1302,7 @@ var BUNDLED_DATA = {
             { "numero": "1", "titolo": "Codici Contabili Poli", "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto." },
             { "numero": "2", "titolo": "Poli", "descrizione": "Le fermate fisiche con coordinate GPS, collegate ai codici contabili già inseriti." },
             { "numero": "3", "titolo": "Linee e Template", "descrizione": "La linea è il contenitore; il template definisce fermate, km e minuti dal capolinea." },
-            { "numero": "4", "titolo": "Corse", "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire su COTRAP." }
+            { "numero": "4", "titolo": "Corse", "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>." }
           ]
         },
         {
@@ -1342,7 +1342,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "lista",
           "items": [
-            "<b>Corsa non visibile su COTRAP?</b> Probabilmente non è stata pubblicata. Aprire Corse, cercare la corsa e cliccare sull'icona Pubblica. Attenzione: lo Stato Corsa (attiva/non attiva nel form) è diverso dalla pubblicazione.",
+            "<b>Corsa non visibile sullo shop COTRAP (biglietteria.cotrap.it)?</b> Probabilmente non è stata pubblicata. Aprire Corse, cercare la corsa e cliccare sull'icona Pubblica. Attenzione: lo Stato Corsa (attiva/non attiva nel form) è diverso dalla pubblicazione.",
             "<b>Nomi di città duplicati nello shop COTRAP?</b> Il campo Descrizione di uno o più Codici Contabili è vuoto o non contiene il nome della frazione. Se per uno stesso Comune esistono più codici, compilare il campo Descrizione con il nome della frazione (es. 'Palese' per Bari-Palese).",
             "<b>Orari sbagliati nel template?</b> I minuti si calcolano sempre dal capolinea (prima fermata del percorso), non dalla fermata precedente. Es: Fermata A = 0 min, Fermata B = 12 min (dal capolinea), Fermata C = 20 min (dal capolinea, non 8 min da B).",
             "<b>Modifica al template ma gli orari delle corse non cambiano?</b> Le corse esistenti non si aggiornano in automatico. Disattivare la corsa, salvare le modifiche al template, poi riattivare.",
@@ -1442,7 +1442,7 @@ var BUNDLED_DATA = {
           "items": [
             "I Poli sono le fermate fisiche del bus. Ogni polo deve avere coordinate GPS e un Codice Contabile già inserito.",
             "Non duplicare: se la stessa città compare su più linee, usa il polo esistente — non crearne uno nuovo.",
-            "Dopo l'inserimento, usare l'icona <b>Pubblica</b> nella colonna Operazioni per rendere la fermata visibile su COTRAP."
+            "Dopo l'inserimento, usare l'icona <b>Pubblica</b> nella colonna Operazioni per rendere la fermata visibile sullo shop COTRAP."
           ]
         },
         {
@@ -1978,13 +1978,13 @@ var BUNDLED_DATA = {
             "<b>Mezzo:</b> lasciare vuoto. La disponibilità dei posti per la vendita online si gestisce tramite il campo Occupazione Massima",
             "<b>Occupazione Massima:</b> inserire il numero di biglietti che si vogliono rendere disponibili per la vendita online sulla corsa. Se la corsa ha anche vendita a bordo o presso agenzie di terra, si consiglia di inserire un numero inferiore rispetto alla capienza totale del mezzo, riservando così i posti rimanenti agli acquisti fisici",
             "<b>Frequenza:</b> scegliere dal menu a tendina tra le tipologie di frequenza inserite nella prima fase di progettazione",
-            "<b>Stato corsa:</b> lasciare su <b>Attiva</b>. Questo campo controlla lo stato interno della corsa nel sistema (attiva = operativa, non attiva = sospesa temporaneamente, ad es. per modificare il template). È distinto dallo stato di pubblicazione su COTRAP (vedi sotto)"
+            "<b>Stato corsa:</b> lasciare su <b>Attiva</b>. Questo campo controlla lo stato interno della corsa nel sistema (attiva = operativa, non attiva = sospesa temporaneamente, ad es. per modificare il template). È distinto dallo stato di pubblicazione sullo shop COTRAP (vedi sotto)"
           ]
         },
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione — due stati distinti della corsa:</b> <br>• <b>Stato corsa</b> (campo del form): indica se la corsa è attiva nel sistema interno. Lasciare sempre su \"Attiva\", tranne quando si deve modificare il template (in quel caso va temporaneamente disattivata). <br>• <b>Stato di pubblicazione</b> (icona Pubblica/Nascondi nelle operazioni): indica se la corsa è visibile e vendibile sul portale COTRAP. Dopo aver creato la corsa, questa è inizialmente non pubblicata (non visibile su COTRAP) finché non si clicca esplicitamente su \"Pubblica\"."
+          "testo": "<b>Attenzione — due stati distinti della corsa:</b> <br>• <b>Stato corsa</b> (campo del form): indica se la corsa è attiva nel sistema interno. Lasciare sempre su \"Attiva\", tranne quando si deve modificare il template (in quel caso va temporaneamente disattivata). <br>• <b>Stato di pubblicazione</b> (icona Pubblica/Nascondi nelle operazioni): indica se la corsa è visibile e vendibile su <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>. Dopo aver creato la corsa, questa è inizialmente non pubblicata (non visibile sullo shop COTRAP) finché non si clicca esplicitamente su \"Pubblica\"."
         },
         {
           "tipo": "avviso",
@@ -2046,7 +2046,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "icona-azione",
           "icona": "icona10.png",
-          "testo": "Per rendere la corsa visibile e vendibile sul portale COTRAP, cliccare sull'icona <b>\"Pubblica/Nascondi\"</b> nella colonna Operazioni."
+          "testo": "Per rendere la corsa visibile e vendibile su <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>, cliccare sull'icona <b>\"Pubblica/Nascondi\"</b> nella colonna Operazioni."
         },
         {
           "tipo": "paragrafo",
@@ -2341,7 +2341,7 @@ var BUNDLED_DATA = {
         {
           "numero": 6,
           "titolo": "Pubblicazione delle Corse",
-          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili su COTRAP. In Gestione Movimento → Corse, cliccare sull'icona 'Pubblica/Nascondi' a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo stato diventa 'Attiva'. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
+          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili sullo shop COTRAP (<a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>). In Gestione Movimento → Corse, cliccare sull'icona 'Pubblica/Nascondi' a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo stato diventa 'Attiva'. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
         },
         {
           "numero": 7,
