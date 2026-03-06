@@ -33,6 +33,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Cerca biglietti per data acquisto, data viaggio, linea, corsa, codice biglietto o acquirente.",
+            "Ordine e Biglietto sono distinti: un ordine puo' contenere piu' biglietti (es. 1234A, 1234B). Usa il <b>Codice Biglietto</b> completo per trovare un titolo specifico.",
+            "Tipo pagamento <b>Gratuito</b> = titoli emessi dal profilo commerciale. Esporta il risultato in .xls da Esportazioni."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine12.png",
           "alt": "Menu Biglietti",
@@ -85,6 +93,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Cerca abbonamenti per data emissione, validita', n. tessera, tipologia e metodo di pagamento.",
+            "Da qui puoi: inserire un controllo manuale, obliterare una corsa, bloccare un abbonamento in caso di frode, aggiungere o scalare corse.",
+            "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Con questa funzione è possibile, impostando i filtri di ricerca, verificare gli abbonamenti emessi."
         },
@@ -126,6 +142,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Monitora i posti occupati per corsa e data — <b>solo biglietti online</b>, non include il venduto fisico a bordo o in agenzia.",
+            "Il mezzo reale puo' essere piu' pieno di quanto indicato: considera questo dato come occupazione online, non totale.",
+            "Filtra per linea, corsa, data e clicca Applica. Esportabile in .xls."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine14.png",
           "alt": "Menu Stati Occupazionali",
@@ -163,6 +187,14 @@
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Mostra i controlli effettuati a bordo tramite l'<b>app Itineris</b> su biglietti online da autisti e controllori.",
+            "Utile per verificare che i controllori operino correttamente e per individuare anomalie (es. biglietti non validi accettati).",
+            "Filtra per data di controllo e per singolo autista o controllore."
+          ]
+        },
         {
           "tipo": "immagine",
           "src": "Immagine16.png",
@@ -203,6 +235,14 @@
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo aggregato per corsa: biglietti venduti online, controllati a bordo e non validi al momento del controllo.",
+            "Dati di sintesi per corsa — per i singoli titoli vai alla sezione <b>Biglietti</b>.",
+            "Esportabile in .xls per analisi esterne."
+          ]
+        },
         {
           "tipo": "immagine",
           "src": "Immagine18.png",

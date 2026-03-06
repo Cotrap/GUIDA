@@ -193,6 +193,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Strumento di <b>sola consultazione</b>: mostra le tariffe vigenti polo per polo per una corsa in una data specifica.",
+            "Utile per verificare i prezzi che vede il cliente o per controllare le tariffe dopo una variazione regionale.",
+            "Seleziona data, linea, corsa e clicca Applica. Esportabile in .xls (recuperabile in Esportazioni)."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine6.3.png",
           "alt": "Menu Controllo Tariffario",
@@ -231,6 +239,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Verifica se una <b>variazione tariffaria e' stata applicata correttamente</b> su tutti i collegamenti tra due poli.",
+            "Inserisci l'importo <b>precedente</b> alla variazione: il sistema trova le corse che usano ancora il vecchio prezzo.",
+            "Se il risultato e' vuoto significa che tutti i collegamenti sono gia' aggiornati alla nuova tariffa."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine29.png",
           "alt": "Menu Controllo Itinerario",
@@ -260,6 +276,14 @@
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Verifica gli importi degli abbonamenti attivi su tutte le tratte — utile dopo aggiornamenti del tariffario regionale.",
+            "Funziona solo se i titoli di viaggio <b>e</b> le corse dei percorsi risultano entrambi attivi.",
+            "Individua tratte senza abbonamento previsto (soluzione: eccezione tariffaria a 0 euro) o andata/ritorno con prezzi diversi (soluzione: uniformare template o aggiungere eccezione)."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Con questa funzionalità è possibile verificare gli importi associati agli abbonamenti."

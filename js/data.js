@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-06 11:42:32
+ * Generato il: 2026-03-06 11:56:01
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -599,6 +599,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Strumento di <b>sola consultazione</b>: mostra le tariffe vigenti polo per polo per una corsa in una data specifica.",
+            "Utile per verificare i prezzi che vede il cliente o per controllare le tariffe dopo una variazione regionale.",
+            "Seleziona data, linea, corsa e clicca Applica. Esportabile in .xls (recuperabile in Esportazioni)."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine6.3.png",
           "alt": "Menu Controllo Tariffario",
@@ -637,6 +645,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Verifica se una <b>variazione tariffaria e' stata applicata correttamente</b> su tutti i collegamenti tra due poli.",
+            "Inserisci l'importo <b>precedente</b> alla variazione: il sistema trova le corse che usano ancora il vecchio prezzo.",
+            "Se il risultato e' vuoto significa che tutti i collegamenti sono gia' aggiornati alla nuova tariffa."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine29.png",
           "alt": "Menu Controllo Itinerario",
@@ -666,6 +682,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Verifica gli importi degli abbonamenti attivi su tutte le tratte — utile dopo aggiornamenti del tariffario regionale.",
+            "Funziona solo se i titoli di viaggio <b>e</b> le corse dei percorsi risultano entrambi attivi.",
+            "Individua tratte senza abbonamento previsto (soluzione: eccezione tariffaria a 0 euro) o andata/ritorno con prezzi diversi (soluzione: uniformare template o aggiungere eccezione)."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Con questa funzionalità è possibile verificare gli importi associati agli abbonamenti."
@@ -1311,10 +1335,26 @@ var BUNDLED_DATA = {
         {
           "tipo": "steps",
           "items": [
-            { "numero": "1", "titolo": "Codici Contabili Poli", "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto." },
-            { "numero": "2", "titolo": "Poli", "descrizione": "Le fermate fisiche con coordinate GPS, collegate ai codici contabili già inseriti." },
-            { "numero": "3", "titolo": "Linee e Template", "descrizione": "La linea è il contenitore; il template definisce fermate, km e minuti dal capolinea." },
-            { "numero": "4", "titolo": "Corse", "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>." }
+            {
+              "numero": "1",
+              "titolo": "Codici Contabili Poli",
+              "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto."
+            },
+            {
+              "numero": "2",
+              "titolo": "Poli",
+              "descrizione": "Le fermate fisiche con coordinate GPS, collegate ai codici contabili già inseriti."
+            },
+            {
+              "numero": "3",
+              "titolo": "Linee e Template",
+              "descrizione": "La linea è il contenitore; il template definisce fermate, km e minuti dal capolinea."
+            },
+            {
+              "numero": "4",
+              "titolo": "Corse",
+              "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>."
+            }
           ]
         },
         {
@@ -1369,6 +1409,13 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Non e' necessario inserire mezzi specifici: il numero di biglietti online si imposta nel campo <b>Occupazione Massima</b> di ogni corsa.",
+            "Lasciare questa sezione vuota — e' gestita dall'Amministratore COTRAP se necessario."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa sezione è dedicata all'inserimento dei mezzi del parco veicoli. Non è attualmente necessario inserire mezzi specifici: il numero di posti disponibili per la vendita online si gestisce tramite il campo <b>Occupazione Massima</b> nella creazione di ogni corsa."
@@ -1437,6 +1484,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Caso eccezionale: quando uno stesso Comune ha <b>due codici contabili</b> perche' alcune corse seguono un percorso con tariffa diversa.",
+            "Va comunicato all'<b>Amministratore COTRAP</b> che attivera' il codice alternativo — il consorziato non puo' farlo autonomamente.",
+            "Le corse con codice alternativo devono conservarlo anche dopo modifiche massive al template."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Eccezionalmente è possibile identificare uno stesso Comune con due codici contabili differenti. Se per esempio ci sono corse con un tragitto particolare per cui cambia anche la tariffa (Esempio: Corse rapide che potrebbero costare di più) si può identificare (se esiste già su tecbus) il polo con due codici."
@@ -2094,6 +2149,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Permette di aggiungere comunicazioni visibili agli utenti sullo shop COTRAP nel dettaglio di corsa, polo o linea.",
+            "La nota appare automaticamente nel periodo di validita' impostato e scompare alla scadenza — senza intervento manuale.",
+            "Il campo <b>Denominazione</b> e' solo interno (non visibile ai clienti). Il <b>Testo</b> e' quello che compare sullo shop."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine5.6.png",
           "alt": "Menu Note",
@@ -2166,6 +2229,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Questi parametri (tariffari, raggruppamenti, categorie sconto) sono gestiti <b>solo dall'Amministratore COTRAP</b> — il consorziato puo' solo consultarli.",
+            "Prezzo abbonamento = importo lordo tariffario regionale meno sconto tessera (es. Categoria 1 = -10% delibera Puglia).",
+            "Servizio urbano + extraurbano sullo stesso Comune? Usare <b>due codici contabili polo distinti</b> e comunicarlo all'Amministratore."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Prima di procedere con la configurazione degli abbonamenti è necessario comprendere tre concetti fondamentali gestiti dall'<b>Amministratore di Sistema COTRAP</b>. Il consorziato non può modificare questi valori, ma deve conoscerli per capire come funzionano i prezzi."
         },
@@ -2218,6 +2289,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Prima di attivare gli abbonamenti: invia <b>richiesta formale all'Amministratore COTRAP</b> specificando i tipi di abbonamento da vendere (mensile 52, settimanale 12, invalidi, ecc.).",
+            "Il prezzo usa la corsa attiva con il <b>template piu' lungo</b> tra i poli. Se andata e ritorno hanno distanze diverse i prezzi differiscono (soluzione: uniformare template o aggiungere eccezione tariffaria).",
+            "Da Titoli di Viaggio puoi abilitare/disabilitare l'abbonamento per linee, singole corse o coppie di poli specifici."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Oltre al biglietto di corsa semplice, il Consorzio fornisce la possibilità di attivare anche gli abbonamenti. Le configurazioni base (tariffari abbonamenti, raggruppamenti tariffari, categorie di sconto) sono gestite dall'Amministratore di Sistema; il consorziato può invece gestire l'attivazione e la configurazione dei propri titoli di viaggio."
@@ -2690,6 +2769,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Cerca biglietti per data acquisto, data viaggio, linea, corsa, codice biglietto o acquirente.",
+            "Ordine e Biglietto sono distinti: un ordine puo' contenere piu' biglietti (es. 1234A, 1234B). Usa il <b>Codice Biglietto</b> completo per trovare un titolo specifico.",
+            "Tipo pagamento <b>Gratuito</b> = titoli emessi dal profilo commerciale. Esporta il risultato in .xls da Esportazioni."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine12.png",
           "alt": "Menu Biglietti",
@@ -2742,6 +2829,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Cerca abbonamenti per data emissione, validita', n. tessera, tipologia e metodo di pagamento.",
+            "Da qui puoi: inserire un controllo manuale, obliterare una corsa, bloccare un abbonamento in caso di frode, aggiungere o scalare corse.",
+            "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Con questa funzione è possibile, impostando i filtri di ricerca, verificare gli abbonamenti emessi."
         },
@@ -2783,6 +2878,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Monitora i posti occupati per corsa e data — <b>solo biglietti online</b>, non include il venduto fisico a bordo o in agenzia.",
+            "Il mezzo reale puo' essere piu' pieno di quanto indicato: considera questo dato come occupazione online, non totale.",
+            "Filtra per linea, corsa, data e clicca Applica. Esportabile in .xls."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine14.png",
           "alt": "Menu Stati Occupazionali",
@@ -2820,6 +2923,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Mostra i controlli effettuati a bordo tramite l'<b>app Itineris</b> su biglietti online da autisti e controllori.",
+            "Utile per verificare che i controllori operino correttamente e per individuare anomalie (es. biglietti non validi accettati).",
+            "Filtra per data di controllo e per singolo autista o controllore."
+          ]
+        },
         {
           "tipo": "immagine",
           "src": "Immagine16.png",
@@ -2860,6 +2971,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo aggregato per corsa: biglietti venduti online, controllati a bordo e non validi al momento del controllo.",
+            "Dati di sintesi per corsa — per i singoli titoli vai alla sezione <b>Biglietti</b>.",
+            "Esportabile in .xls per analisi esterne."
+          ]
+        },
         {
           "tipo": "immagine",
           "src": "Immagine18.png",
@@ -2912,6 +3031,13 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Prima di tutto: controlla i dati su <b>Tecbus</b> (polimetriche, tariffe, codici contabili) per garantire uniformita' tra vendita online e macchinette di bordo.",
+            "Servono: codici contabili dei poli, codice linea, descrizione, competenza (Regionale / Provinciale / Comunale)."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "È necessario procedere con alcune azioni da fare preventivamente rispetto alla creazione di una linea su Itineris. Queste operazioni sono necessarie per garantire uniformità di dati tra Itineris e Tecbus."
         },
@@ -2930,6 +3056,13 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Il flusso completo per attivare una linea online: <b>Configurazione → Gestione Movimento → Eccezioni → Ordini → Esportazioni</b>.",
+            "Ogni sezione e' indipendente: nella prima configurazione segui l'ordine; poi accedi solo a quella che ti serve."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Per inserire una linea vendibile su <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>, seguire in ordine le sezioni del manuale:"
@@ -2952,6 +3085,13 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "I parametri regionali (tariffari, calendari scolastici) sono inseriti solo da <b>COTRAP</b> — il consorziato puo' solo consultarli.",
+            "L'unica voce che il consorziato gestisce qui e' la <b>Frequenza Corsa</b> (Giornaliera, Feriale, Scolastica, ecc.)."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse sono invece inserite dal consorziato stesso."
@@ -2989,6 +3129,13 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Tabella delle tariffe chilometriche regionali — aggiornata da COTRAP, <b>sola lettura</b> per il consorziato.",
+            "Usala per verificare i prezzi che il sistema applicera' automaticamente alle tue corse e abbonamenti."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "In questa sezione COTRAP aggiorna i tariffari chilometrici regionali. Il consorziato può solo consultarli: i dati non sono modificabili. Utile per verificare i prezzi che saranno applicati alle corse e agli abbonamenti."
         },
@@ -3023,6 +3170,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Calendari scolastici regionali — inseriti da COTRAP, <b>sola lettura</b>.",
+            "Il sistema blocca automaticamente la vendita di corse <b>Scolastiche</b> nelle date di vacanza (Natale, Pasqua, estate).",
+            "Utili per capire quali date il sistema gestira' automaticamente per le corse con frequenza Scolastica o Non Scolastica."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "In questa sezione COTRAP aggiorna i calendari scolastici regionali. Admin Panel Itineris usa questi calendari per gestire automaticamente la vendita in base alla frequenza delle corse: ad esempio, se una corsa ha frequenza Scolastica, il sistema non permetterà l'acquisto per date che ricadono nelle vacanze natalizie o estive. Il consorziato può solo consultare questi calendari."
@@ -3064,6 +3219,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Imposta le frequenze delle tue corse: Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva.",
+            "Per frequenze <b>Scolastica / Non Scolastica</b> non inserire date di validita': il sistema usa automaticamente il calendario regionale COTRAP.",
+            "Per Giornaliera/Feriale puoi personalizzare i giorni della settimana (es. solo lunedi'-venerdi')."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "In questa sezione saranno inserite da ciascun consorziato le frequenze relative alle proprie linee."
@@ -3116,6 +3279,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Inserisci qui autisti e controllori che useranno l'<b>app Itineris</b> per controllare i biglietti a bordo.",
+            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve scaricare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
+            "App disponibile su Android: <b>www.cotrap.it/app-controlli</b>."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Con questa funzione è possibile inserire gli autisti o i controllori che utilizzeranno l'app Itineris per il controllo dei biglietti a bordo."
         },
@@ -3157,6 +3328,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-03-02",
       "nuovo": true,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Permette al profilo commerciale di emettere biglietti e abbonamenti a <b>prezzo 0 euro</b> tramite il Portale Clienti con privilegi admin.",
+            "L'accesso admin dura <b>15 minuti</b>: alla scadenza torna in Admin Panel e clicca di nuovo 'Emetti Titoli di Viaggio'.",
+            "Tutti gli ordini gratuiti sono tracciati e identificabili dal campo <b>'Emesso da Admin'</b> nelle esportazioni."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa funzione dà la possibilità al profilo commerciale di emettere titoli di viaggio gratuitamente, inserendo tutte le informazioni necessarie ai fini dell'emissione."
@@ -3301,6 +3480,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Cerca ordini per data, numero progressivo, tipo pagamento, stato e acquirente.",
+            "Un ordine puo' contenere piu' biglietti. Usa <b>Codice Biglietto</b> per trovare un titolo specifico.",
+            "Usa il filtro <b>Gratuito</b> per risalire ai titoli emessi da profilo commerciale."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Ordini ci mostra tutti gli ordini (alcuni dei quali contenenti più biglietti), acquistati dal portale web, dall'app con carta di credito e con il credito e le prenotazioni con abbonamenti."
         },
@@ -3366,6 +3553,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Esegui <b>due esportazioni separate</b>: una con Tipo pagamento <b>Online</b> e una con <b>Credito</b> — sono registrate in partite contabili distinte.",
+            "<b>Esporta</b> = file .txt per software gestionali aziendali. <b>Esporta SEP</b> = file .xls per analisi manuale in Excel.",
+            "Entrambi i file sono poi recuperabili nella sezione Esportazioni."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Con questa sotto-funzione è possibile recuperare i dati relativi al venduto. Questi dati potranno poi essere acquisiti e trasferiti sui software di gestione aziendale. Anche in questo caso è possibile applicare i filtri per effettuare la ricerca di interesse."
         },
@@ -3411,6 +3606,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Ricerca dettagliata dei singoli biglietti con filtri aggiuntivi: Linea, Corsa, Comune di partenza, Frazione.",
+            "Filtro <b>Gratuito</b> disponibile per risalire ai titoli emessi da profilo commerciale.",
+            "Il tasto Esporta restituisce un file .xls con tutti i dettagli dei biglietti trovati."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli titoli di viaggio."
         },
@@ -3432,6 +3635,14 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Ricerca dettagliata dei singoli abbonamenti con filtro <b>Gratuito</b> per i titoli emessi da profilo commerciale.",
+            "Il tasto Esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati.",
+            "Il campo <b>Emesso da Admin</b> nel dettaglio identifica i titoli emessi gratuitamente."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli abbonamenti. È disponibile il filtro <b>Gratuito</b> nel metodo di pagamento per risalire ai titoli emessi da profilo commerciale. Il tasto esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati."
         },
@@ -3448,6 +3659,13 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo aggregato del venduto <b>per mese</b> — visione d'insieme delle entrate mensili.",
+            "I titoli emessi gratuitamente da profilo commerciale sono <b>esclusi</b> per non alterare i dati reali di fatturato."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione fornisce un riepilogo del venduto aggregato <b>per mese</b>, utile per avere una visione d'insieme delle entrate mensili dell'azienda consorziata."
@@ -3466,6 +3684,13 @@ var BUNDLED_DATA = {
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo del venduto <b>per singola linea</b> — utile per analizzare le performance di ciascuna tratta.",
+            "I titoli emessi gratuitamente da profilo commerciale sono <b>esclusi</b> dai totali."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione fornisce un riepilogo del venduto <b>per singola linea</b>, utile per analizzare le performance di ciascuna tratta."
         },
@@ -3482,6 +3707,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Venduto totale per periodo selezionato — il file scaricato si importa nel gestionale aziendale.",
+            "<b>Esporta</b> = file .txt per software gestionali. <b>Esporta XLS</b> = file .xls per Excel.",
+            "I titoli gratuiti sono <b>esclusi</b> dai totali di tutte le statistiche contabili."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione è utilizzata per verificare il <b>venduto totale</b> per l'azienda consorziata nel periodo selezionato. I file scaricati sono trasferiti al sistema di gestione amministrativo aziendale."
@@ -3503,6 +3736,14 @@ var BUNDLED_DATA = {
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Tutti i file generati nelle funzioni precedenti (Ordini, Dati Contabili, Biglietti, ecc.) sono recuperabili qui.",
+            "Clicca sull'icona di download per scaricare il file nella cartella Download del PC.",
+            "Il campo <b>Emesso da Admin</b> nelle esportazioni identifica i titoli emessi gratuitamente da profilo commerciale."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Tutti i file scaricati nelle precedenti funzioni sono recuperabili nella funzione ESPORTAZIONI."

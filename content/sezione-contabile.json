@@ -63,6 +63,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Cerca ordini per data, numero progressivo, tipo pagamento, stato e acquirente.",
+            "Un ordine puo' contenere piu' biglietti. Usa <b>Codice Biglietto</b> per trovare un titolo specifico.",
+            "Usa il filtro <b>Gratuito</b> per risalire ai titoli emessi da profilo commerciale."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Ordini ci mostra tutti gli ordini (alcuni dei quali contenenti più biglietti), acquistati dal portale web, dall'app con carta di credito e con il credito e le prenotazioni con abbonamenti."
         },
@@ -128,6 +136,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Esegui <b>due esportazioni separate</b>: una con Tipo pagamento <b>Online</b> e una con <b>Credito</b> — sono registrate in partite contabili distinte.",
+            "<b>Esporta</b> = file .txt per software gestionali aziendali. <b>Esporta SEP</b> = file .xls per analisi manuale in Excel.",
+            "Entrambi i file sono poi recuperabili nella sezione Esportazioni."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Con questa sotto-funzione è possibile recuperare i dati relativi al venduto. Questi dati potranno poi essere acquisiti e trasferiti sui software di gestione aziendale. Anche in questo caso è possibile applicare i filtri per effettuare la ricerca di interesse."
         },
@@ -173,6 +189,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Ricerca dettagliata dei singoli biglietti con filtri aggiuntivi: Linea, Corsa, Comune di partenza, Frazione.",
+            "Filtro <b>Gratuito</b> disponibile per risalire ai titoli emessi da profilo commerciale.",
+            "Il tasto Esporta restituisce un file .xls con tutti i dettagli dei biglietti trovati."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli titoli di viaggio."
         },
@@ -194,6 +218,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Ricerca dettagliata dei singoli abbonamenti con filtro <b>Gratuito</b> per i titoli emessi da profilo commerciale.",
+            "Il tasto Esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati.",
+            "Il campo <b>Emesso da Admin</b> nel dettaglio identifica i titoli emessi gratuitamente."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli abbonamenti. È disponibile il filtro <b>Gratuito</b> nel metodo di pagamento per risalire ai titoli emessi da profilo commerciale. Il tasto esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati."
         },
@@ -210,6 +242,13 @@
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo aggregato del venduto <b>per mese</b> — visione d'insieme delle entrate mensili.",
+            "I titoli emessi gratuitamente da profilo commerciale sono <b>esclusi</b> per non alterare i dati reali di fatturato."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione fornisce un riepilogo del venduto aggregato <b>per mese</b>, utile per avere una visione d'insieme delle entrate mensili dell'azienda consorziata."
@@ -228,6 +267,13 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo del venduto <b>per singola linea</b> — utile per analizzare le performance di ciascuna tratta.",
+            "I titoli emessi gratuitamente da profilo commerciale sono <b>esclusi</b> dai totali."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione fornisce un riepilogo del venduto <b>per singola linea</b>, utile per analizzare le performance di ciascuna tratta."
         },
@@ -244,6 +290,14 @@
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Venduto totale per periodo selezionato — il file scaricato si importa nel gestionale aziendale.",
+            "<b>Esporta</b> = file .txt per software gestionali. <b>Esporta XLS</b> = file .xls per Excel.",
+            "I titoli gratuiti sono <b>esclusi</b> dai totali di tutte le statistiche contabili."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa sotto-funzione è utilizzata per verificare il <b>venduto totale</b> per l'azienda consorziata nel periodo selezionato. I file scaricati sono trasferiti al sistema di gestione amministrativo aziendale."
@@ -265,6 +319,14 @@
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Tutti i file generati nelle funzioni precedenti (Ordini, Dati Contabili, Biglietti, ecc.) sono recuperabili qui.",
+            "Clicca sull'icona di download per scaricare il file nella cartella Download del PC.",
+            "Il campo <b>Emesso da Admin</b> nelle esportazioni identifica i titoli emessi gratuitamente da profilo commerciale."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Tutti i file scaricati nelle precedenti funzioni sono recuperabili nella funzione ESPORTAZIONI."

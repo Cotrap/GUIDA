@@ -22,10 +22,26 @@
         {
           "tipo": "steps",
           "items": [
-            { "numero": "1", "titolo": "Codici Contabili Poli", "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto." },
-            { "numero": "2", "titolo": "Poli", "descrizione": "Le fermate fisiche con coordinate GPS, collegate ai codici contabili già inseriti." },
-            { "numero": "3", "titolo": "Linee e Template", "descrizione": "La linea è il contenitore; il template definisce fermate, km e minuti dal capolinea." },
-            { "numero": "4", "titolo": "Corse", "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>." }
+            {
+              "numero": "1",
+              "titolo": "Codici Contabili Poli",
+              "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto."
+            },
+            {
+              "numero": "2",
+              "titolo": "Poli",
+              "descrizione": "Le fermate fisiche con coordinate GPS, collegate ai codici contabili già inseriti."
+            },
+            {
+              "numero": "3",
+              "titolo": "Linee e Template",
+              "descrizione": "La linea è il contenitore; il template definisce fermate, km e minuti dal capolinea."
+            },
+            {
+              "numero": "4",
+              "titolo": "Corse",
+              "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>."
+            }
           ]
         },
         {
@@ -80,6 +96,13 @@
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Non e' necessario inserire mezzi specifici: il numero di biglietti online si imposta nel campo <b>Occupazione Massima</b> di ogni corsa.",
+            "Lasciare questa sezione vuota — e' gestita dall'Amministratore COTRAP se necessario."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Questa sezione è dedicata all'inserimento dei mezzi del parco veicoli. Non è attualmente necessario inserire mezzi specifici: il numero di posti disponibili per la vendita online si gestisce tramite il campo <b>Occupazione Massima</b> nella creazione di ogni corsa."
@@ -148,6 +171,14 @@
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Caso eccezionale: quando uno stesso Comune ha <b>due codici contabili</b> perche' alcune corse seguono un percorso con tariffa diversa.",
+            "Va comunicato all'<b>Amministratore COTRAP</b> che attivera' il codice alternativo — il consorziato non puo' farlo autonomamente.",
+            "Le corse con codice alternativo devono conservarlo anche dopo modifiche massive al template."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Eccezionalmente è possibile identificare uno stesso Comune con due codici contabili differenti. Se per esempio ci sono corse con un tragitto particolare per cui cambia anche la tariffa (Esempio: Corse rapide che potrebbero costare di più) si può identificare (se esiste già su tecbus) il polo con due codici."
@@ -805,6 +836,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Permette di aggiungere comunicazioni visibili agli utenti sullo shop COTRAP nel dettaglio di corsa, polo o linea.",
+            "La nota appare automaticamente nel periodo di validita' impostato e scompare alla scadenza — senza intervento manuale.",
+            "Il campo <b>Denominazione</b> e' solo interno (non visibile ai clienti). Il <b>Testo</b> e' quello che compare sullo shop."
+          ]
+        },
+        {
           "tipo": "immagine",
           "src": "Immagine5.6.png",
           "alt": "Menu Note",
@@ -877,6 +916,14 @@
       "nuovo": false,
       "contenuto": [
         {
+          "tipo": "tldr",
+          "items": [
+            "Questi parametri (tariffari, raggruppamenti, categorie sconto) sono gestiti <b>solo dall'Amministratore COTRAP</b> — il consorziato puo' solo consultarli.",
+            "Prezzo abbonamento = importo lordo tariffario regionale meno sconto tessera (es. Categoria 1 = -10% delibera Puglia).",
+            "Servizio urbano + extraurbano sullo stesso Comune? Usare <b>due codici contabili polo distinti</b> e comunicarlo all'Amministratore."
+          ]
+        },
+        {
           "tipo": "paragrafo",
           "testo": "Prima di procedere con la configurazione degli abbonamenti è necessario comprendere tre concetti fondamentali gestiti dall'<b>Amministratore di Sistema COTRAP</b>. Il consorziato non può modificare questi valori, ma deve conoscerli per capire come funzionano i prezzi."
         },
@@ -929,6 +976,14 @@
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Prima di attivare gli abbonamenti: invia <b>richiesta formale all'Amministratore COTRAP</b> specificando i tipi di abbonamento da vendere (mensile 52, settimanale 12, invalidi, ecc.).",
+            "Il prezzo usa la corsa attiva con il <b>template piu' lungo</b> tra i poli. Se andata e ritorno hanno distanze diverse i prezzi differiscono (soluzione: uniformare template o aggiungere eccezione tariffaria).",
+            "Da Titoli di Viaggio puoi abilitare/disabilitare l'abbonamento per linee, singole corse o coppie di poli specifici."
+          ]
+        },
         {
           "tipo": "paragrafo",
           "testo": "Oltre al biglietto di corsa semplice, il Consorzio fornisce la possibilità di attivare anche gli abbonamenti. Le configurazioni base (tariffari abbonamenti, raggruppamenti tariffari, categorie di sconto) sono gestite dall'Amministratore di Sistema; il consorziato può invece gestire l'attivazione e la configurazione dei propri titoli di viaggio."
