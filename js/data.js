@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-05 13:17:43
+ * Generato il: 2026-03-06 11:24:12
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -695,16 +695,16 @@ var BUNDLED_DATA = {
     {
       "id": "eccezioni-chilometriche",
       "titolo": "Eccezioni Chilometriche",
-      "aggiornato": "2026-03-02",
+      "aggiornato": "2026-03-05",
       "nuovo": true,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Questa funzione permette di modificare la distanza tra due codici contabili in un determinato range di validità temporale, stabilendo una data di inizio (obbligatoria) e una data di fine (opzionale)."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "La pagina è disponibile all'utente commerciale e si trova nella sezione \"Eccezioni\"."
+          "tipo": "tldr",
+          "items": [
+            "Corregge i km tra due codici contabili quando la distanza nel template non corrisponde alla realtà. Influenza il costo di biglietti e abbonamenti.",
+            "La data di inizio deve essere il <b>1° del mese</b>: il sistema ricalcola le tariffe mensilmente. Vale in entrambi i sensi (A→B e B→A).",
+            "Dopo il salvataggio il sistema ricalcola automaticamente (contatore visibile). Il tasto Pubblica serve solo se il contatore si blocca."
+          ]
         },
         {
           "tipo": "immagine",
@@ -2662,14 +2662,18 @@ var BUNDLED_DATA = {
   "nuovo": false,
   "contenuto": [
     {
+      "tipo": "tldr",
+      "items": [
+        "Sezione di sola consultazione: nessuna modifica operativa possibile qui.",
+        "Funzioni: <b>Biglietti</b> (singoli titoli), <b>Abbonamenti</b>, <b>Stati Occupazionali Corse</b>, <b>Statistiche</b>.",
+        "Esporta i risultati con 'Esporta' → il file XLS viene generato e recuperabile nella sezione Esportazioni."
+      ]
+    },
+    {
       "tipo": "immagine",
       "src": "Immagine10.png",
       "alt": "Menu Ordini",
       "didascalia": "Accesso alla sezione Ordini"
-    },
-    {
-      "tipo": "paragrafo",
-      "testo": "La sezione Ordini è di sola consultazione. Permette di effettuare ricerche e monitorare tutto il venduto dal portale <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e dall'app COTRAP. Le funzioni disponibili sono: Biglietti, Abbonamenti, Stati Occupazionali Corse, Stato Controlli e Statistiche Biglietti."
     },
     {
       "tipo": "immagine",
@@ -3238,6 +3242,14 @@ var BUNDLED_DATA = {
   "aggiornato": "2026-03-03",
   "nuovo": false,
   "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Account separato dall'account commerciale: credenziali diverse, fornite da COTRAP.",
+        "Serve per consultare ordini, biglietti venduti ed estrarre dati contabili — nessuna modifica operativa possibile.",
+        "Controlla di essere nell'account giusto: nome e azienda sono visibili in <b>basso a sinistra</b>."
+      ]
+    },
     {
       "tipo": "paragrafo",
       "testo": "La Sezione Contabile è accessibile tramite credenziali <b>separate</b> rispetto al profilo commerciale. Inserire nella pagina di login l'ID utente e la password dedicati all'account contabile, forniti dall'Amministratore COTRAP."

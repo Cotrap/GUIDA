@@ -5,6 +5,14 @@
   "nuovo": false,
   "contenuto": [
     {
+      "tipo": "tldr",
+      "items": [
+        "Account separato dall'account commerciale: credenziali diverse, fornite da COTRAP.",
+        "Serve per consultare ordini, biglietti venduti ed estrarre dati contabili — nessuna modifica operativa possibile.",
+        "Controlla di essere nell'account giusto: nome e azienda sono visibili in <b>basso a sinistra</b>."
+      ]
+    },
+    {
       "tipo": "paragrafo",
       "testo": "La Sezione Contabile è accessibile tramite credenziali <b>separate</b> rispetto al profilo commerciale. Inserire nella pagina di login l'ID utente e la password dedicati all'account contabile, forniti dall'Amministratore COTRAP."
     },

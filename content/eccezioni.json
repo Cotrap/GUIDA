@@ -289,16 +289,16 @@
     {
       "id": "eccezioni-chilometriche",
       "titolo": "Eccezioni Chilometriche",
-      "aggiornato": "2026-03-02",
+      "aggiornato": "2026-03-05",
       "nuovo": true,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Questa funzione permette di modificare la distanza tra due codici contabili in un determinato range di validità temporale, stabilendo una data di inizio (obbligatoria) e una data di fine (opzionale)."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "La pagina è disponibile all'utente commerciale e si trova nella sezione \"Eccezioni\"."
+          "tipo": "tldr",
+          "items": [
+            "Corregge i km tra due codici contabili quando la distanza nel template non corrisponde alla realtà. Influenza il costo di biglietti e abbonamenti.",
+            "La data di inizio deve essere il <b>1° del mese</b>: il sistema ricalcola le tariffe mensilmente. Vale in entrambi i sensi (A→B e B→A).",
+            "Dopo il salvataggio il sistema ricalcola automaticamente (contatore visibile). Il tasto Pubblica serve solo se il contatore si blocca."
+          ]
         },
         {
           "tipo": "immagine",
