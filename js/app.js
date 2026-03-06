@@ -800,23 +800,15 @@ function updateHorizontalMenu(content) {
             e.preventDefault();
             const el = document.getElementById(sub.id);
             if (!el) return;
-            // Usa offsetTop/offsetParent: posizione ASSOLUTA nel documento,
-            // indipendente da scroll corrente o animazioni in corso.
-            // getBoundingClientRect() è relativo al viewport e dà valori sbagliati
-            // se è in corso uno scroll animato precedente.
-            let docTop = 0;
-            let node = el;
-            while (node && node !== document.documentElement) {
-                docTop += node.offsetTop;
-                node = node.offsetParent;
-            }
-            const header = document.querySelector('header');
-            const searchBar = document.querySelector('.search-container');
-            const hMenuEl = document.querySelector('.horizontal-menu');
-            const fixedH = (header ? header.offsetHeight : 0) +
-                           (searchBar ? searchBar.offsetHeight : 0) +
-                           (hMenuEl && hMenuEl.classList.contains('visible') ? hMenuEl.offsetHeight : 0);
-            window.scrollTo({ top: Math.max(0, docTop - fixedH - 8), behavior: 'smooth' });
+            // FIX: aggiorna sinconamente content.marginTop e scroll-margin-top
+            // PRIMA di misurare le posizioni. Senza questo, se l'utente clicca prima
+            // che il double-rAF di adjustContentForMenu sia scattato, content.marginTop
+            // è ancora quello del CSS (--horizontal-menu-height: 50px) mentre il menu
+            // ha wrappato ed è più alto → offsetTop dell'elemento è troppo piccolo
+            // rispetto a fixedH → scrollTarget negativo o insufficiente.
+            adjustContentForMenu();
+            // scrollIntoView usa scroll-margin-top già impostato da adjustContentForMenu.
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
             _ignoreNextHashChange = true;
             window.location.hash = sub.id;
         };
