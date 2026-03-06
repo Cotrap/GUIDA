@@ -65,7 +65,7 @@
           "titolo": "Tipologie di eccezione disponibili",
           "contenuto": [
             "<b>Polo:</b> sospende una singola fermata. Permette di inserire una fermata sostitutiva se prevista da ordinanza comunale o scelta aziendale",
-            "<b>Corsa:</b> sospende una singola corsa. La corsa non sarà visibile né acquistabile su COTRAP durante il periodo di validità",
+            "<b>Corsa:</b> sospende una singola corsa. La corsa non sarà visibile né acquistabile sullo shop COTRAP durante il periodo di validità",
             "<b>Linea:</b> sospende tutte le corse di una linea",
             "<b>Servizio:</b> sospende l'intero servizio dell'azienda consorziata",
             "<b>Calendario:</b> permette di modificare eccezionalmente la tipologia di frequenza di una o più corse. Utile ad esempio quando alcune scuole richiedono corse scolastiche prima dell'inizio ufficiale del calendario regionale: si può trasformare temporaneamente una corsa Feriale in Scolastica per quel periodo specifico"
@@ -140,7 +140,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Inserire il comune di partenza (e l'eventuale frazione) e selezionare il codice contabile del polo. Ripetere per il polo di arrivo. Indicare quindi l'importo che sarà mostrato agli utenti sul portale COTRAP. Cliccare su <b>\"Conferma\"</b> in basso a destra per salvare."
+          "testo": "Inserire il comune di partenza (e l'eventuale frazione) e selezionare il codice contabile del polo. Ripetere per il polo di arrivo. Indicare quindi l'importo che sarà mostrato agli utenti sullo shop COTRAP. Cliccare su <b>\"Conferma\"</b> in basso a destra per salvare."
         }
       ]
     },

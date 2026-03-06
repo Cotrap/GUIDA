@@ -230,7 +230,7 @@
           "items": [
             "<b>Geolocalizzazione:</b> apre la mappa con il punto della fermata per verificare o correggere le coordinate",
             "<b>Visualizza/Modifica:</b> apre il form per modificare i dati della fermata",
-            "<b>Pubblica:</b> rende la fermata attiva e visibile sul portale COTRAP",
+            "<b>Pubblica:</b> rende la fermata attiva e visibile sullo shop COTRAP",
             "<b>Cancella:</b> elimina la fermata (operazione irreversibile)"
           ]
         }
@@ -762,7 +762,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su <b>\"Conferma\"</b> in basso a destra. A questo punto la corsa è stata creata ma non è ancora visibile o vendibile sul portale COTRAP — per pubblicarla è necessario un passaggio ulteriore."
+          "testo": "Cliccare su <b>\"Conferma\"</b> in basso a destra. A questo punto la corsa è stata creata ma non è ancora visibile o vendibile sullo shop COTRAP — per pubblicarla è necessario un passaggio ulteriore."
         },
         {
           "tipo": "immagine",
@@ -777,7 +777,7 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Il sistema richiede conferma prima di pubblicare: da quel momento la corsa sarà visibile agli utenti su COTRAP. Verificare la correttezza di tutti i dati prima di confermare."
+          "testo": "Il sistema richiede conferma prima di pubblicare: da quel momento la corsa sarà visibile agli utenti sullo shop COTRAP. Verificare la correttezza di tutti i dati prima di confermare."
         },
         {
           "tipo": "immagine",

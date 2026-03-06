@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-06 11:40:19
+ * Generato il: 2026-03-06 11:42:32
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -471,7 +471,7 @@ var BUNDLED_DATA = {
           "titolo": "Tipologie di eccezione disponibili",
           "contenuto": [
             "<b>Polo:</b> sospende una singola fermata. Permette di inserire una fermata sostitutiva se prevista da ordinanza comunale o scelta aziendale",
-            "<b>Corsa:</b> sospende una singola corsa. La corsa non sarà visibile né acquistabile su COTRAP durante il periodo di validità",
+            "<b>Corsa:</b> sospende una singola corsa. La corsa non sarà visibile né acquistabile sullo shop COTRAP durante il periodo di validità",
             "<b>Linea:</b> sospende tutte le corse di una linea",
             "<b>Servizio:</b> sospende l'intero servizio dell'azienda consorziata",
             "<b>Calendario:</b> permette di modificare eccezionalmente la tipologia di frequenza di una o più corse. Utile ad esempio quando alcune scuole richiedono corse scolastiche prima dell'inizio ufficiale del calendario regionale: si può trasformare temporaneamente una corsa Feriale in Scolastica per quel periodo specifico"
@@ -546,7 +546,7 @@ var BUNDLED_DATA = {
         },
         {
           "tipo": "paragrafo",
-          "testo": "Inserire il comune di partenza (e l'eventuale frazione) e selezionare il codice contabile del polo. Ripetere per il polo di arrivo. Indicare quindi l'importo che sarà mostrato agli utenti sul portale COTRAP. Cliccare su <b>\"Conferma\"</b> in basso a destra per salvare."
+          "testo": "Inserire il comune di partenza (e l'eventuale frazione) e selezionare il codice contabile del polo. Ripetere per il polo di arrivo. Indicare quindi l'importo che sarà mostrato agli utenti sullo shop COTRAP. Cliccare su <b>\"Conferma\"</b> in basso a destra per salvare."
         }
       ]
     },
@@ -853,12 +853,12 @@ var BUNDLED_DATA = {
                 {
                     "tipo": "faq",
                     "domanda": "Non conosco Itineris: com'è fatto il sistema in parole semplici?",
-                    "risposta": "Itineris funziona a 'mattoncini': prima costruisci gli elementi base, poi li assembli. L'ordine è questo:<br><br><b>1. Codici Contabili</b> = i codici univoci dei Comuni del tuo percorso (li recuperi da Tecbus). Servono al sistema per calcolare i prezzi tra una città e l'altra.<br><b>2. Poli</b> = le fermate fisiche del bus con coordinate GPS (es. 'Piazza Roma, Bari'). Ogni polo è associato al codice contabile del suo Comune.<br><b>3. Linea</b> = il nome del servizio (es. 'Bari–Altamura').<br><b>4. Template</b> = il 'percorso modello' della linea: l'elenco di tutte le fermate in ordine, con i km tra una fermata e l'altra e i minuti dal capolinea.<br><b>5. Corsa</b> = una singola partenza: usa il template, ha un orario di partenza e una frequenza (es. feriale, scolastica). Finché non la pubblichi, non è visibile su COTRAP.<br><br>I prezzi di biglietti e abbonamenti vengono calcolati automaticamente dai km del template e dal tariffario regionale. Non devi inserire i prezzi a mano."
+                    "risposta": "Itineris funziona a 'mattoncini': prima costruisci gli elementi base, poi li assembli. L'ordine è questo:<br><br><b>1. Codici Contabili</b> = i codici univoci dei Comuni del tuo percorso (li recuperi da Tecbus). Servono al sistema per calcolare i prezzi tra una città e l'altra.<br><b>2. Poli</b> = le fermate fisiche del bus con coordinate GPS (es. 'Piazza Roma, Bari'). Ogni polo è associato al codice contabile del suo Comune.<br><b>3. Linea</b> = il nome del servizio (es. 'Bari–Altamura').<br><b>4. Template</b> = il 'percorso modello' della linea: l'elenco di tutte le fermate in ordine, con i km tra una fermata e l'altra e i minuti dal capolinea.<br><b>5. Corsa</b> = una singola partenza: usa il template, ha un orario di partenza e una frequenza (es. feriale, scolastica). Finché non la pubblichi, non è visibile sullo shop COTRAP.<br><br>I prezzi di biglietti e abbonamenti vengono calcolati automaticamente dai km del template e dal tariffario regionale. Non devi inserire i prezzi a mano."
                 },
                 {
                     "tipo": "faq",
                     "domanda": "Qual è la sequenza completa per far comprare biglietti e abbonamenti su cotrap.it?",
-                    "risposta": "Ecco i passaggi nell'ordine giusto:<br><br><b>Passo 1 — Codici Contabili</b>: inserisci i codici dei Comuni del percorso (da Tecbus) in Gestione Movimento → Codici Contabili Poli.<br><b>Passo 2 — Poli</b>: crea le fermate con coordinate GPS, ognuna associata al suo codice contabile.<br><b>Passo 3 — Linea</b>: crea la linea (nome, codice, tipologia Regionale/Provinciale/Comunale).<br><b>Passo 4 — Template</b>: crea il template della linea con tutte le fermate, i km tra fermata e fermata, e i minuti dal capolinea (non dalla fermata precedente). Crea anche il template di ritorno con 'Duplica e Inverti'.<br><b>Passo 5 — Corse</b>: crea le corse singole collegate al template (orario partenza, frequenza, occupazione massima).<br><b>Passo 6 — Pubblica</b>: attiva le corse cliccando l'icona Pubblica/Nascondi.<br><br>Risultato: biglietti e abbonamenti compaiono automaticamente su COTRAP. I prezzi sono calcolati dal sistema senza ulteriori interventi."
+                    "risposta": "Ecco i passaggi nell'ordine giusto:<br><br><b>Passo 1 — Codici Contabili</b>: inserisci i codici dei Comuni del percorso (da Tecbus) in Gestione Movimento → Codici Contabili Poli.<br><b>Passo 2 — Poli</b>: crea le fermate con coordinate GPS, ognuna associata al suo codice contabile.<br><b>Passo 3 — Linea</b>: crea la linea (nome, codice, tipologia Regionale/Provinciale/Comunale).<br><b>Passo 4 — Template</b>: crea il template della linea con tutte le fermate, i km tra fermata e fermata, e i minuti dal capolinea (non dalla fermata precedente). Crea anche il template di ritorno con 'Duplica e Inverti'.<br><b>Passo 5 — Corse</b>: crea le corse singole collegate al template (orario partenza, frequenza, occupazione massima).<br><b>Passo 6 — Pubblica</b>: attiva le corse cliccando l'icona Pubblica/Nascondi.<br><br>Risultato: biglietti e abbonamenti compaiono automaticamente sullo shop COTRAP. I prezzi sono calcolati dal sistema senza ulteriori interventi."
                 },
                 {
                     "tipo": "faq",
@@ -891,7 +891,7 @@ var BUNDLED_DATA = {
                 {
                     "tipo": "faq",
                     "domanda": "Come faccio a far sì che i passeggeri possano acquistare abbonamenti per le mie corse?",
-                    "risposta": "Gli abbonamenti si attivano <b>automaticamente</b>, senza azioni separate. Non esiste un pulsante 'attiva abbonamenti'. Compaiono su COTRAP non appena tutte queste condizioni sono soddisfatte:<br><br>✅ La linea è creata con un template che collega le fermate di interesse<br>✅ I km tra le fermate nel template sono &gt; 0 (se sono 0, nessuna tariffa viene generata)<br>✅ Almeno una corsa è pubblicata (attiva)<br>✅ I titoli di viaggio per quella tratta risultano attivi<br><br>Se gli abbonamenti non compaiono, verifica questi punti nell'ordine: 1) La corsa è attiva? 2) I km nel template sono corretti? 3) Vai in Eccezioni → Controllo Tariffario Abbonamenti per vedere se il sistema trova un prezzo per quella tratta."
+                    "risposta": "Gli abbonamenti si attivano <b>automaticamente</b>, senza azioni separate. Non esiste un pulsante 'attiva abbonamenti'. Compaiono sullo shop COTRAP non appena tutte queste condizioni sono soddisfatte:<br><br>✅ La linea è creata con un template che collega le fermate di interesse<br>✅ I km tra le fermate nel template sono &gt; 0 (se sono 0, nessuna tariffa viene generata)<br>✅ Almeno una corsa è pubblicata (attiva)<br>✅ I titoli di viaggio per quella tratta risultano attivi<br><br>Se gli abbonamenti non compaiono, verifica questi punti nell'ordine: 1) La corsa è attiva? 2) I km nel template sono corretti? 3) Vai in Eccezioni → Controllo Tariffario Abbonamenti per vedere se il sistema trova un prezzo per quella tratta."
                 },
                 {
                     "tipo": "faq",
@@ -911,7 +911,7 @@ var BUNDLED_DATA = {
                 {
                     "tipo": "faq",
                     "domanda": "Un passeggero ha acquistato un abbonamento ma non riesce a usarlo sulle corse: cosa può essere?",
-                    "risposta": "Le cause più comuni:<br><br><b>Abbonamento bloccato</b>: verifica in Ordini → Abbonamenti (profilo commerciale) se il suo abbonamento è nello stato 'Bloccato'. Può essere stato bloccato manualmente da un operatore. Se giustificato, solo l'Amministratore può sbloccare.<br><br><b>Corsa sospesa con eccezione di movimento</b>: la corsa è nascosta durante il periodo di sospensione. L'abbonamento rimane valido ma in quel periodo non ci sono corse disponibili su COTRAP da convalidare.<br><br><b>Corsa non attiva</b>: la corsa è stata disattivata dopo l'acquisto dell'abbonamento. Riattivandola, l'abbonamento torna funzionante.<br><br><b>Corse finite</b>: con Aggiungi/Scala Corse in Ordini → Abbonamenti puoi verificare quante corse ha ancora disponibili."
+                    "risposta": "Le cause più comuni:<br><br><b>Abbonamento bloccato</b>: verifica in Ordini → Abbonamenti (profilo commerciale) se il suo abbonamento è nello stato 'Bloccato'. Può essere stato bloccato manualmente da un operatore. Se giustificato, solo l'Amministratore può sbloccare.<br><br><b>Corsa sospesa con eccezione di movimento</b>: la corsa è nascosta durante il periodo di sospensione. L'abbonamento rimane valido ma in quel periodo non ci sono corse disponibili sullo shop COTRAP da convalidare.<br><br><b>Corsa non attiva</b>: la corsa è stata disattivata dopo l'acquisto dell'abbonamento. Riattivandola, l'abbonamento torna funzionante.<br><br><b>Corse finite</b>: con Aggiungi/Scala Corse in Ordini → Abbonamenti puoi verificare quante corse ha ancora disponibili."
                 },
                 {
                     "tipo": "faq",
@@ -987,7 +987,7 @@ var BUNDLED_DATA = {
                 {
                     "tipo": "faq",
                     "domanda": "Una corsa che avevo sospeso con un'eccezione è ora finita la sospensione: devo riattivare qualcosa manualmente?",
-                    "risposta": "<b>No.</b> L'eccezione di movimento si disattiva automaticamente alla data di fine impostata. La corsa torna visibile su COTRAP senza nessun intervento.<br><br>Se hai lasciato la data di fine vuota (sospensione indefinita), la corsa rimane nascosta finché non vai in Eccezioni → Eccezioni di Movimento e imposti una data di fine oppure elimini l'eccezione."
+                    "risposta": "<b>No.</b> L'eccezione di movimento si disattiva automaticamente alla data di fine impostata. La corsa torna visibile sullo shop COTRAP senza nessun intervento.<br><br>Se hai lasciato la data di fine vuota (sospensione indefinita), la corsa rimane nascosta finché non vai in Eccezioni → Eccezioni di Movimento e imposti una data di fine oppure elimini l'eccezione."
                 }
             ]
         },
@@ -1114,7 +1114,7 @@ var BUNDLED_DATA = {
                 {
                     "tipo": "faq",
                     "domanda": "Come gestisco un servizio stagionale (es. servizio estivo)?",
-                    "risposta": "Compila i campi <b>Data inizio corsa</b> e <b>Data fine corsa</b> nella creazione della corsa. La corsa sarà visibile su COTRAP solo nel periodo indicato. Per servizi tutto l'anno, lascia questi campi vuoti. Per frequenze scolastiche e non, puoi usare anche <b>Attivazione/Disattivazione Automatica</b> per gestire il calendario in modo automatico."
+                    "risposta": "Compila i campi <b>Data inizio corsa</b> e <b>Data fine corsa</b> nella creazione della corsa. La corsa sarà visibile sullo shop COTRAP solo nel periodo indicato. Per servizi tutto l'anno, lascia questi campi vuoti. Per frequenze scolastiche e non, puoi usare anche <b>Attivazione/Disattivazione Automatica</b> per gestire il calendario in modo automatico."
                 },
                 {
                     "tipo": "faq",
@@ -1519,7 +1519,7 @@ var BUNDLED_DATA = {
           "items": [
             "<b>Geolocalizzazione:</b> apre la mappa con il punto della fermata per verificare o correggere le coordinate",
             "<b>Visualizza/Modifica:</b> apre il form per modificare i dati della fermata",
-            "<b>Pubblica:</b> rende la fermata attiva e visibile sul portale COTRAP",
+            "<b>Pubblica:</b> rende la fermata attiva e visibile sullo shop COTRAP",
             "<b>Cancella:</b> elimina la fermata (operazione irreversibile)"
           ]
         }
@@ -2051,7 +2051,7 @@ var BUNDLED_DATA = {
         },
         {
           "tipo": "paragrafo",
-          "testo": "Cliccare su <b>\"Conferma\"</b> in basso a destra. A questo punto la corsa è stata creata ma non è ancora visibile o vendibile sul portale COTRAP — per pubblicarla è necessario un passaggio ulteriore."
+          "testo": "Cliccare su <b>\"Conferma\"</b> in basso a destra. A questo punto la corsa è stata creata ma non è ancora visibile o vendibile sullo shop COTRAP — per pubblicarla è necessario un passaggio ulteriore."
         },
         {
           "tipo": "immagine",
@@ -2066,7 +2066,7 @@ var BUNDLED_DATA = {
         },
         {
           "tipo": "paragrafo",
-          "testo": "Il sistema richiede conferma prima di pubblicare: da quel momento la corsa sarà visibile agli utenti su COTRAP. Verificare la correttezza di tutti i dati prima di confermare."
+          "testo": "Il sistema richiede conferma prima di pubblicare: da quel momento la corsa sarà visibile agli utenti sullo shop COTRAP. Verificare la correttezza di tutti i dati prima di confermare."
         },
         {
           "tipo": "immagine",
