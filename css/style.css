@@ -1519,6 +1519,91 @@ header h1 {
 }
 
 /* ============================================
+   FOOTER
+   ============================================ */
+.site-footer {
+    background: #0f172a;
+    color: #94a3b8;
+    padding: 1.5rem 2rem;
+    margin-top: 3rem;
+    font-size: 0.82rem;
+    font-family: var(--font-family);
+}
+
+.footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.footer-logo {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    opacity: 0.85;
+    border-radius: 4px;
+}
+
+.footer-company {
+    font-weight: 600;
+    color: #e2e8f0;
+    font-size: 0.85rem;
+}
+
+.footer-copy {
+    font-size: 0.75rem;
+    color: #475569;
+    margin-top: 1px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+}
+
+.footer-nav-label {
+    color: #475569;
+    font-size: 0.75rem;
+    margin-right: 0.25rem;
+}
+
+.footer-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.78rem;
+    padding: 3px 9px;
+    border-radius: 12px;
+    border: 1px solid #334155;
+    transition: background 0.15s, color 0.15s;
+    white-space: nowrap;
+}
+
+.footer-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: white;
+    border-color: #64748b;
+}
+
+@media (max-width: 600px) {
+    .footer-inner {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+/* ============================================
    STAMPA
    ============================================ */
 @media print {
@@ -1539,7 +1624,8 @@ header h1 {
     #scrollToTop,
     .loading,
     .spinner,
-    .print-btn {
+    .print-btn,
+    .site-footer {
         display: none !important;
     }
 
