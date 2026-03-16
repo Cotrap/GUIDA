@@ -1501,22 +1501,167 @@ header h1 {
    ============================================ */
 @media print {
 
+    /* === PAGINA ================================================= */
+    @page {
+        size: A4 portrait;
+        margin: 1.8cm 1.5cm 2cm;
+    }
+
+    /* === ELEMENTI DA NASCONDERE ================================= */
     header,
     .menu,
     .horizontal-menu,
     .search-container,
     .menu-overlay,
     .toast-container,
-    #scrollToTop {
+    #scrollToTop,
+    .loading,
+    .spinner {
         display: none !important;
     }
 
+    /* === RESET ================================================== */
+    *,
+    *::before,
+    *::after {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: none !important;
+        animation: none !important;
+    }
+
+    body {
+        background: white !important;
+        color: #1e293b !important;
+        font-size: 10.5pt;
+        line-height: 1.65;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* === LAYOUT ================================================= */
     .content {
-        margin: 0;
-        padding: 0;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+
+    article#articleContent {
+        max-width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* === TIPOGRAFIA ============================================= */
+    h1 { font-size: 16pt !important; page-break-after: avoid; break-after: avoid; }
+    h2 { font-size: 13pt !important; page-break-after: avoid; break-after: avoid; margin-top: 1rem !important; }
+    h3 { font-size: 11pt !important; page-break-after: avoid; break-after: avoid; }
+    h4 { font-size: 10pt !important; page-break-after: avoid; break-after: avoid; }
+    p  { font-size: 9.5pt !important; margin-bottom: 0.4rem !important; }
+
+    /* === SEZIONI ================================================ */
+    .section-card,
+    .step-block,
+    .info-block,
+    .note-block,
+    .warning-block {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* === IMMAGINI =============================================== */
+    .img-container {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        margin: 0.6rem 0 !important;
+        text-align: center !important;
     }
 
     .img-container img {
-        box-shadow: none;
+        box-shadow: none !important;
+        max-width: 60% !important;
+        max-height: 200px !important;
+        border: 1px solid #e2e8f0 !important;
+        display: inline-block !important;
+    }
+
+    figcaption,
+    .img-caption {
+        font-size: 7.5pt !important;
+        color: #64748b !important;
+    }
+
+    /* === AVVISI / NOTE ========================================== */
+    .note,
+    .warning,
+    .info,
+    .tip,
+    [class*="alert"],
+    [class*="callout"] {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 9pt !important;
+        padding: 0.5rem 0.8rem !important;
+        margin: 0.5rem 0 !important;
+    }
+
+    /* === TABELLE =============================================== */
+    table {
+        break-inside: avoid;
+        page-break-inside: avoid;
+        width: 100% !important;
+        border-collapse: collapse !important;
+        font-size: 9pt !important;
+    }
+
+    th, td {
+        border: 1px solid #cbd5e1 !important;
+        padding: 0.3rem 0.5rem !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    th {
+        background: #f1f5f9 !important;
+        font-weight: 600 !important;
+    }
+
+    /* === LINK ================================================== */
+    a {
+        color: #1e293b !important;
+        text-decoration: none !important;
+    }
+
+    /* Mostra URL per i link di testo */
+    a[href^="http"]::after,
+    a[href^="https"]::after {
+        content: " (" attr(href) ")";
+        font-size: 7.5pt;
+        color: #64748b;
+        word-break: break-all;
+    }
+
+    /* Non mostrare URL per link interni o link-card */
+    a[href^="#"]::after,
+    .link-card::after,
+    .nav-item::after {
+        content: none !important;
+    }
+
+    /* === CODICE ================================================ */
+    code, pre {
+        font-size: 8.5pt !important;
+        background: #f1f5f9 !important;
+        border: 1px solid #e2e8f0 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* === CHANGELOG / VERSIONI ================================== */
+    .changelog-item,
+    .version-block {
+        break-inside: avoid;
+        page-break-inside: avoid;
     }
 }
