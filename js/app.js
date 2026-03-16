@@ -785,6 +785,7 @@ function updateHorizontalMenu(content) {
 
     if (!content.sottosezioni || content.sottosezioni.length === 0) {
         hMenu.classList.remove('visible');
+        adjustContentForMenu(); // FIX: resetta margin-top inline quando menu scompare
         return;
     }
 
@@ -800,15 +801,13 @@ function updateHorizontalMenu(content) {
             e.preventDefault();
             const el = document.getElementById(sub.id);
             if (!el) return;
-            // FIX: aggiorna sinconamente content.marginTop e scroll-margin-top
-            // PRIMA di misurare le posizioni. Senza questo, se l'utente clicca prima
-            // che il double-rAF di adjustContentForMenu sia scattato, content.marginTop
-            // è ancora quello del CSS (--horizontal-menu-height: 50px) mentre il menu
-            // ha wrappato ed è più alto → offsetTop dell'elemento è troppo piccolo
-            // rispetto a fixedH → scrollTarget negativo o insufficiente.
+            // Aggiorna scroll-margin-top prima dello scroll
             adjustContentForMenu();
-            // scrollIntoView usa scroll-margin-top già impostato da adjustContentForMenu.
-            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            // FIX: aspetta un frame per dare al browser il tempo di applicare
+            // il nuovo scroll-margin-top prima di chiamare scrollIntoView
+            requestAnimationFrame(() => {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
             _ignoreNextHashChange = true;
             window.location.hash = sub.id;
         };
@@ -826,7 +825,7 @@ function adjustContentForMenu() {
     const hMenu = document.querySelector('.horizontal-menu');
     const content = document.querySelector('.content');
     const headerH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--header-height')) || 60;
-    const searchH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--search-height')) || 56;
+    const searchH = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--search-height')) || 60;
 
     const article = document.getElementById('articleContent');
     if (hMenu && hMenu.classList.contains('visible')) {

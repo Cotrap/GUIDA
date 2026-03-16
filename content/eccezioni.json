@@ -12,7 +12,7 @@
     },
     {
       "tipo": "paragrafo",
-      "testo": "La sezione Eccezioni gestisce variazioni straordinarie rispetto alla normale operatività. Si divide in tre aree: <b>Eccezioni di Movimento</b> (sospensioni di corse, fermate o linee), <b>Eccezioni Tariffarie</b> (variazioni temporanee di prezzi) ed <b>Eccezioni Chilometriche</b> (modifica delle distanze tra codici contabili). Sono presenti anche gli strumenti di <b>Controllo Tariffario</b> per verificare la correttezza delle tariffe applicate."
+      "testo": "La sezione Eccezioni gestisce variazioni straordinarie rispetto alla normale operatività. Si divide in tre aree: <b>Eccezioni</b> (sospensioni di corse, fermate o linee), <b>Eccezioni Tariffarie Biglietti</b> ed <b>Eccezioni Tariffarie Abbonamenti</b> (variazioni temporanee di prezzi) ed <b>Eccezioni Chilometriche</b> (modifica delle distanze tra codici contabili). Sono presenti anche gli strumenti di <b>Controllo Tariffario</b> per verificare la correttezza delle tariffe applicate."
     },
     {
       "tipo": "immagine",
@@ -24,7 +24,7 @@
   "sottosezioni": [
     {
       "id": "eccezioni-movimento",
-      "titolo": "Eccezioni di Movimento",
+      "titolo": "Eccezioni",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -86,7 +86,7 @@
     },
     {
       "id": "eccezioni-tariffarie",
-      "titolo": "Eccezioni Tariffarie",
+      "titolo": "Eccezioni Tariffarie Biglietti",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -187,6 +187,88 @@
       ]
     },
     {
+      "id": "eccezioni-chilometriche",
+      "titolo": "Eccezioni Chilometriche",
+      "aggiornato": "2026-03-05",
+      "nuovo": true,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Corregge i km tra due codici contabili quando la distanza nel template non corrisponde alla realtà. Influenza il costo di biglietti e abbonamenti.",
+            "La data di inizio deve essere il <b>1° del mese</b>: il sistema ricalcola le tariffe mensilmente. Vale in entrambi i sensi (A→B e B→A).",
+            "Dopo il salvataggio il sistema ricalcola automaticamente (contatore visibile). Il tasto Pubblica serve solo se il contatore si blocca."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-ecckm-1.png",
+          "alt": "Maschera creazione eccezione chilometrica",
+          "didascalia": "Maschera di creazione eccezione chilometrica"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Queste eccezioni valgono sia per <b>biglietti</b> che <b>abbonamenti</b>."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>. Questo perché la modifica dei chilometri influenza il calcolo delle tariffe di tutti gli abbonamenti attivi, e il sistema esegue questo ricalcolo (detto <b>denormalizzazione</b>) su base mensile, sincronizzato con i periodi tariffari regionali."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-ecckm-2.png",
+          "alt": "Eccezione chilometrica con contatore denormalizzazione",
+          "didascalia": "Schermata con contatore di denormalizzazione"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Dati obbligatori per la creazione",
+          "contenuto": [
+            "Denominazione",
+            "Data inizio validità (solo il primo di ogni mese)",
+            "Chilometri: inserire il valore presente nelle tabelle tariffarie corrispondenti (il valore usato dal sistema per determinare la fascia tariffaria, non necessariamente la distanza stradale reale)",
+            "Codice contabile di partenza",
+            "Codice contabile di arrivo"
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Vincoli e regole",
+          "contenuto": [
+            "Se si decide di usare anche una data di fine validità, essa deve obbligatoriamente essere l'ultimo giorno del mese",
+            "Non è possibile creare due eccezioni chilometriche con gli stessi codici contabili di partenza e arrivo",
+            "Se si modifica un'eccezione impostando gli stessi codici contabili di un'altra già esistente, il sistema restituirà errore"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Priorità:</b> L'eccezione chilometrica viene applicata a prescindere dall'esistenza di un altro tipo di eccezione in vigore."
+        }
+      ]
+    },
+    {
       "id": "controllo-tariffario",
       "titolo": "Controllo Tariffario",
       "aggiornato": "2026-02-23",
@@ -234,7 +316,7 @@
     },
     {
       "id": "controllo-tariffario-itinerario",
-      "titolo": "Controllo Tariffario Itinerario",
+      "titolo": "Controllo Tariffario Itinerario Biglietto",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -307,88 +389,6 @@
         {
           "tipo": "paragrafo",
           "testo": "I filtri permettono di indirizzare la ricerca in base alle esigenze. È possibile esportare i dati."
-        }
-      ]
-    },
-    {
-      "id": "eccezioni-chilometriche",
-      "titolo": "Eccezioni Chilometriche",
-      "aggiornato": "2026-03-05",
-      "nuovo": true,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Corregge i km tra due codici contabili quando la distanza nel template non corrisponde alla realtà. Influenza il costo di biglietti e abbonamenti.",
-            "La data di inizio deve essere il <b>1° del mese</b>: il sistema ricalcola le tariffe mensilmente. Vale in entrambi i sensi (A→B e B→A).",
-            "Dopo il salvataggio il sistema ricalcola automaticamente (contatore visibile). Il tasto Pubblica serve solo se il contatore si blocca."
-          ]
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-ecckm-1.png",
-          "alt": "Maschera creazione eccezione chilometrica",
-          "didascalia": "Maschera di creazione eccezione chilometrica"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Queste eccezioni valgono sia per <b>biglietti</b> che <b>abbonamenti</b>."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>. Questo perché la modifica dei chilometri influenza il calcolo delle tariffe di tutti gli abbonamenti attivi, e il sistema esegue questo ricalcolo (detto <b>denormalizzazione</b>) su base mensile, sincronizzato con i periodi tariffari regionali."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-ecckm-2.png",
-          "alt": "Eccezione chilometrica con contatore denormalizzazione",
-          "didascalia": "Schermata con contatore di denormalizzazione"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Dati obbligatori per la creazione",
-          "contenuto": [
-            "Denominazione",
-            "Data inizio validità (solo il primo di ogni mese)",
-            "Chilometri",
-            "Codice contabile di partenza",
-            "Codice contabile di arrivo"
-          ]
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Vincoli e regole",
-          "contenuto": [
-            "Se si decide di usare anche una data di fine validità, essa deve obbligatoriamente essere l'ultimo giorno del mese",
-            "Non è possibile creare due eccezioni chilometriche con gli stessi codici contabili di partenza e arrivo",
-            "Se si modifica un'eccezione impostando gli stessi codici contabili di un'altra già esistente, il sistema restituirà errore"
-          ]
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Priorità:</b> L'eccezione chilometrica viene applicata a prescindere dall'esistenza di un altro tipo di eccezione in vigore."
         }
       ]
     }

@@ -1,0 +1,92 @@
+{
+  "id": "emetti-titolo-viaggio",
+  "titolo": "Emetti Titolo di Viaggio",
+  "aggiornato": "2026-03-02",
+  "nuovo": true,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Permette al profilo commerciale di emettere biglietti e abbonamenti a <b>prezzo 0 euro</b> tramite il Portale Clienti con privilegi admin.",
+        "L'accesso admin dura <b>15 minuti</b>: alla scadenza torna in Admin Panel e clicca di nuovo 'Emetti Titoli di Viaggio'.",
+        "Tutti gli ordini gratuiti sono tracciati e identificabili dal campo <b>'Emesso da Admin'</b> nelle esportazioni."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Questa funzione dà la possibilità al profilo commerciale di emettere titoli di viaggio gratuitamente, inserendo tutte le informazioni necessarie ai fini dell'emissione."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Si dà la possibilità di effettuare l'accesso a <b>Portale Clienti con privilegi di amministratore</b> e di effettuare emissioni di titoli di viaggio (CS e abbonamenti, urbani ed extraurbani). Questa possibilità è concessa soltanto ai profili commerciali."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "I profili commerciali effettueranno l'accesso su Portale Clienti con l'azienda di appartenenza. Nel caso di profili commerciali con più aziende collegate, l'azienda con cui si farà accesso su Portale Clienti sarà quella selezionata in quel momento su Admin Panel."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-1.png",
+      "alt": "Pagina emissione titoli gratuiti",
+      "didascalia": "Pagina di ricerca per emissione titoli di viaggio gratuiti"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "Nella pagina di ricerca per biglietto o abbonamento extra urbano, <b>non sarà possibile selezionare l'azienda</b>",
+        "Per i biglietti e abbonamenti urbani, le località sono filtrate per azienda",
+        "Tra i risultati, vengono mostrati tutti gli abbonamenti a prescindere dalla tessera e codice fiscale, e presentano tutti <b>prezzo 0 €</b>"
+      ]
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-2.png",
+      "alt": "Risultati ricerca con prezzo zero",
+      "didascalia": "I risultati mostrano prezzo 0 € per tutti i titoli"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Alla creazione dell'ordine, è necessario specificare tutte le informazioni del cliente a cui è indirizzato il titolo di viaggio (procedimento analogo per i CS). Nel caso degli abbonamenti che richiedono una tessera MyCard, è necessario anche inserire i dati corretti del cliente."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-3.png",
+      "alt": "Creazione ordine gratuito",
+      "didascalia": "Inserimento dati cliente per la creazione dell'ordine"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "All'emissione del titolo, verrà inviata la <b>mail di conferma al cliente</b>, e sarà possibile stampare i titoli emessi in formato PDF."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-4.png",
+      "alt": "Stampa PDF titolo gratuito",
+      "didascalia": "Possibilità di stampare i titoli emessi in formato PDF"
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Attenzione:</b> L'accesso a Portale Clienti con privilegi di Admin dura <b>15 minuti</b>. Una volta scaduti, quando si tenta di effettuare un'azione (ricerca, creazione ordine o pagamento) apparirà una modale che ne notifica la scadenza. A questo punto è possibile tornare su Admin Panel e cliccare nuovamente il tasto \"Emetti Titoli di Viaggio\" per effettuare altre emissioni."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "<b>CS con cambio:</b> Se si vuole emettere una corsa semplice con cambio, è possibile emettere la corsa semplice solo per la tratta di propria competenza."
+    },
+    {
+      "tipo": "box-nota",
+      "titolo": "Tracciamento ordini gratuiti",
+      "contenuto": [
+        "Gli ordini effettuati con profilo commerciale sono tracciati ed è possibile risalire all'utente admin panel che ha effettuato l'emissione",
+        "Gli ordini presentano importo nullo",
+        "È stato inserito un nuovo filtro \"Gratuito\" nel metodo di pagamento nelle pagine Ordini, Biglietti e Abbonamenti",
+        "Nel dettaglio di ogni titolo di viaggio, è presente un campo \"Emesso da Admin\" che identifica un titolo emesso da profilo commerciale",
+        "Le esportazioni biglietti, abbonamenti e ordini presentano il campo \"Emesso da Admin\"",
+        "Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano le transazioni relative ai titoli emessi gratuitamente"
+      ]
+    }
+  ],
+  "sottosezioni": []
+}

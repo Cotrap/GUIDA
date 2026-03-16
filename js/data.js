@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-06 11:56:01
+ * Generato il: 2026-03-16 12:14:50
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -404,6 +404,251 @@ var BUNDLED_DATA = {
     ]
   }
 },
+  "configurazione": {
+  "id": "configurazione",
+  "titolo": "Configurazione",
+  "aggiornato": "2026-03-13",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "I parametri regionali (tariffari, calendari scolastici) sono inseriti solo da <b>COTRAP</b> — il consorziato puo' solo consultarli.",
+        "L'unica voce che il consorziato gestisce qui e' la <b>Frequenza Corsa</b> (Giornaliera, Feriale, Scolastica, ecc.)."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse sono invece inserite dal consorziato stesso."
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine04.3.png",
+      "alt": "Menu Configurazione",
+      "didascalia": "Accesso alla sezione Configurazione"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Di <b>\"Configurazione\"</b> fanno parte i seguenti punti:"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "<b>Tariffari</b>",
+        "Calendari",
+        "Frequenza Corsa"
+      ]
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine04.3b.png",
+      "alt": "Sottomenu Configurazione",
+      "didascalia": "Voci del menu Configurazione"
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "tariffari",
+      "titolo": "Tariffari",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Tabella delle tariffe chilometriche regionali — aggiornata da COTRAP, <b>sola lettura</b> per il consorziato.",
+            "Usala per verificare i prezzi che il sistema applicera' automaticamente alle tue corse e abbonamenti."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione COTRAP aggiorna i tariffari chilometrici regionali. Il consorziato può solo consultarli: i dati non sono modificabili. Utile per verificare i prezzi che saranno applicati alle corse e agli abbonamenti."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1.png",
+          "alt": "Lista Tariffari",
+          "didascalia": "Elenco dei tariffari disponibili"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1b.png",
+          "alt": "Tariffari dettaglio",
+          "didascalia": ""
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona01.png",
+          "testo": "Cliccando sull'icona è possibile visualizzare i tariffari km regionali, i dati non sono modificabili."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1c.png",
+          "alt": "Dettaglio Tariffari",
+          "didascalia": "Visualizzazione dettaglio tariffario chilometrico"
+        }
+      ]
+    },
+    {
+      "id": "calendari",
+      "titolo": "Calendari",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Calendari scolastici regionali — inseriti da COTRAP, <b>sola lettura</b>.",
+            "Il sistema blocca automaticamente la vendita di corse <b>Scolastiche</b> nelle date di vacanza (Natale, Pasqua, estate).",
+            "Utili per capire quali date il sistema gestira' automaticamente per le corse con frequenza Scolastica o Non Scolastica."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione COTRAP aggiorna i calendari scolastici regionali. Admin Panel Itineris usa questi calendari per gestire automaticamente la vendita in base alla frequenza delle corse: ad esempio, se una corsa ha frequenza Scolastica, il sistema non permetterà l'acquisto per date che ricadono nelle vacanze natalizie o estive. Il consorziato può solo consultare questi calendari."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2.png",
+          "alt": "Lista Calendari",
+          "didascalia": "Elenco dei calendari scolastici"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2b.png",
+          "alt": "Calendari dettaglio",
+          "didascalia": ""
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona01.png",
+          "testo": "Cliccando sull'icona sarà possibile visionare il calendario."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2c.png",
+          "alt": "Dettaglio Calendario",
+          "didascalia": "Visualizzazione calendario scolastico"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2d.png",
+          "alt": "Calendario dettaglio 2",
+          "didascalia": ""
+        }
+      ]
+    },
+    {
+      "id": "frequenza-corsa",
+      "titolo": "Frequenza Corsa",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Imposta le frequenze delle tue corse: Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva.",
+            "Per frequenze <b>Scolastica / Non Scolastica</b> non inserire date di validita': il sistema usa automaticamente il calendario regionale COTRAP.",
+            "Per Giornaliera/Feriale puoi personalizzare i giorni della settimana (es. solo lunedi'-venerdi')."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione saranno inserite da ciascun consorziato le frequenze relative alle proprie linee."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3.png",
+          "alt": "Lista Frequenze",
+          "didascalia": "Elenco delle frequenze corsa"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3b.png",
+          "alt": "Form Frequenza 1",
+          "didascalia": ""
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3c.png",
+          "alt": "Form Frequenza",
+          "didascalia": "Maschera inserimento nuova frequenza"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Compilare i campi richiesti:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione:</b> nome descrittivo della frequenza (es. Giornaliera, Giornaliera estiva, Feriale lun-ven, Feriale sabato, Scolastica, Non scolastica)",
+            "<b>Tipologia:</b> selezionare dal menu a tendina tra Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva. Per le tipologie Feriale e Giornaliera è possibile personalizzare i giorni di validità settimanale",
+            "<b>Data inizio validità / Data fine validità:</b> compilare solo se la frequenza ha un range temporale personalizzato (es. servizio estivo con date precise). Non compilare per frequenze Scolastiche o Non Scolastiche: in quel caso il sistema usa automaticamente il calendario scolastico configurato da COTRAP"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Al termine cliccare su <b>\"Conferma\"</b> in basso a destra. In caso di dubbi sulla corretta impostazione della frequenza, rivolgersi all'Amministratore COTRAP."
+        }
+      ]
+    },
+    {
+      "id": "utenti-app-controlli",
+      "titolo": "Utenti App Controlli",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Inserisci qui autisti e controllori che useranno l'<b>app Itineris</b> per controllare i biglietti a bordo.",
+            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve scaricare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
+            "App disponibile su Android: <b>www.cotrap.it/app-controlli</b>."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa funzione è possibile inserire gli autisti o i controllori che utilizzeranno l'app Itineris per il controllo dei biglietti a bordo."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> per inserire un nuovo utente dell'app (autista, controllore o controllore esterno)."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.4.png",
+          "alt": "Lista Utenti App",
+          "didascalia": "Elenco utenti app controllo"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire nome, cognome, email e gli altri dati richiesti. Cliccare su <b>\"Conferma\"</b> per salvare."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.4b.png",
+          "alt": "Form Utente App",
+          "didascalia": "Maschera inserimento nuovo utente"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Dopo il salvataggio, la colonna <b>\"Stato\"</b> mostrerà <b>\"In attesa di conferma\"</b>. Lo stato passerà a <b>\"Confermato\"</b> solo dopo che l'utente completa l'attivazione sul proprio dispositivo (vedi sotto)."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve scaricare l'app di controllo Itineris sul proprio smartphone Android tramite il link <b>www.cotrap.it/app-controlli</b> e impostare la propria password. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
+        }
+      ]
+    }
+  ]
+},
   "eccezioni": {
   "id": "eccezioni",
   "titolo": "Eccezioni",
@@ -418,7 +663,7 @@ var BUNDLED_DATA = {
     },
     {
       "tipo": "paragrafo",
-      "testo": "La sezione Eccezioni gestisce variazioni straordinarie rispetto alla normale operatività. Si divide in tre aree: <b>Eccezioni di Movimento</b> (sospensioni di corse, fermate o linee), <b>Eccezioni Tariffarie</b> (variazioni temporanee di prezzi) ed <b>Eccezioni Chilometriche</b> (modifica delle distanze tra codici contabili). Sono presenti anche gli strumenti di <b>Controllo Tariffario</b> per verificare la correttezza delle tariffe applicate."
+      "testo": "La sezione Eccezioni gestisce variazioni straordinarie rispetto alla normale operatività. Si divide in tre aree: <b>Eccezioni</b> (sospensioni di corse, fermate o linee), <b>Eccezioni Tariffarie Biglietti</b> ed <b>Eccezioni Tariffarie Abbonamenti</b> (variazioni temporanee di prezzi) ed <b>Eccezioni Chilometriche</b> (modifica delle distanze tra codici contabili). Sono presenti anche gli strumenti di <b>Controllo Tariffario</b> per verificare la correttezza delle tariffe applicate."
     },
     {
       "tipo": "immagine",
@@ -430,7 +675,7 @@ var BUNDLED_DATA = {
   "sottosezioni": [
     {
       "id": "eccezioni-movimento",
-      "titolo": "Eccezioni di Movimento",
+      "titolo": "Eccezioni",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -492,7 +737,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "eccezioni-tariffarie",
-      "titolo": "Eccezioni Tariffarie",
+      "titolo": "Eccezioni Tariffarie Biglietti",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -593,6 +838,88 @@ var BUNDLED_DATA = {
       ]
     },
     {
+      "id": "eccezioni-chilometriche",
+      "titolo": "Eccezioni Chilometriche",
+      "aggiornato": "2026-03-05",
+      "nuovo": true,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Corregge i km tra due codici contabili quando la distanza nel template non corrisponde alla realtà. Influenza il costo di biglietti e abbonamenti.",
+            "La data di inizio deve essere il <b>1° del mese</b>: il sistema ricalcola le tariffe mensilmente. Vale in entrambi i sensi (A→B e B→A).",
+            "Dopo il salvataggio il sistema ricalcola automaticamente (contatore visibile). Il tasto Pubblica serve solo se il contatore si blocca."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-ecckm-1.png",
+          "alt": "Maschera creazione eccezione chilometrica",
+          "didascalia": "Maschera di creazione eccezione chilometrica"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Queste eccezioni valgono sia per <b>biglietti</b> che <b>abbonamenti</b>."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>. Questo perché la modifica dei chilometri influenza il calcolo delle tariffe di tutti gli abbonamenti attivi, e il sistema esegue questo ricalcolo (detto <b>denormalizzazione</b>) su base mensile, sincronizzato con i periodi tariffari regionali."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-ecckm-2.png",
+          "alt": "Eccezione chilometrica con contatore denormalizzazione",
+          "didascalia": "Schermata con contatore di denormalizzazione"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Dati obbligatori per la creazione",
+          "contenuto": [
+            "Denominazione",
+            "Data inizio validità (solo il primo di ogni mese)",
+            "Chilometri: inserire il valore presente nelle tabelle tariffarie corrispondenti (il valore usato dal sistema per determinare la fascia tariffaria, non necessariamente la distanza stradale reale)",
+            "Codice contabile di partenza",
+            "Codice contabile di arrivo"
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Vincoli e regole",
+          "contenuto": [
+            "Se si decide di usare anche una data di fine validità, essa deve obbligatoriamente essere l'ultimo giorno del mese",
+            "Non è possibile creare due eccezioni chilometriche con gli stessi codici contabili di partenza e arrivo",
+            "Se si modifica un'eccezione impostando gli stessi codici contabili di un'altra già esistente, il sistema restituirà errore"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Priorità:</b> L'eccezione chilometrica viene applicata a prescindere dall'esistenza di un altro tipo di eccezione in vigore."
+        }
+      ]
+    },
+    {
       "id": "controllo-tariffario",
       "titolo": "Controllo Tariffario",
       "aggiornato": "2026-02-23",
@@ -640,7 +967,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "controllo-tariffario-itinerario",
-      "titolo": "Controllo Tariffario Itinerario",
+      "titolo": "Controllo Tariffario Itinerario Biglietto",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -715,90 +1042,100 @@ var BUNDLED_DATA = {
           "testo": "I filtri permettono di indirizzare la ricerca in base alle esigenze. È possibile esportare i dati."
         }
       ]
-    },
-    {
-      "id": "eccezioni-chilometriche",
-      "titolo": "Eccezioni Chilometriche",
-      "aggiornato": "2026-03-05",
-      "nuovo": true,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Corregge i km tra due codici contabili quando la distanza nel template non corrisponde alla realtà. Influenza il costo di biglietti e abbonamenti.",
-            "La data di inizio deve essere il <b>1° del mese</b>: il sistema ricalcola le tariffe mensilmente. Vale in entrambi i sensi (A→B e B→A).",
-            "Dopo il salvataggio il sistema ricalcola automaticamente (contatore visibile). Il tasto Pubblica serve solo se il contatore si blocca."
-          ]
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-ecckm-1.png",
-          "alt": "Maschera creazione eccezione chilometrica",
-          "didascalia": "Maschera di creazione eccezione chilometrica"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Queste eccezioni valgono sia per <b>biglietti</b> che <b>abbonamenti</b>."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Il campo di inizio validità permetterà di selezionare solo il <b>primo di ogni mese</b>. Questo perché la modifica dei chilometri influenza il calcolo delle tariffe di tutti gli abbonamenti attivi, e il sistema esegue questo ricalcolo (detto <b>denormalizzazione</b>) su base mensile, sincronizzato con i periodi tariffari regionali."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-ecckm-2.png",
-          "alt": "Eccezione chilometrica con contatore denormalizzazione",
-          "didascalia": "Schermata con contatore di denormalizzazione"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Dati obbligatori per la creazione",
-          "contenuto": [
-            "Denominazione",
-            "Data inizio validità (solo il primo di ogni mese)",
-            "Chilometri",
-            "Codice contabile di partenza",
-            "Codice contabile di arrivo"
-          ]
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Vincoli e regole",
-          "contenuto": [
-            "Se si decide di usare anche una data di fine validità, essa deve obbligatoriamente essere l'ultimo giorno del mese",
-            "Non è possibile creare due eccezioni chilometriche con gli stessi codici contabili di partenza e arrivo",
-            "Se si modifica un'eccezione impostando gli stessi codici contabili di un'altra già esistente, il sistema restituirà errore"
-          ]
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Priorità:</b> L'eccezione chilometrica viene applicata a prescindere dall'esistenza di un altro tipo di eccezione in vigore."
-        }
-      ]
     }
   ]
+},
+  "emetti-titolo-viaggio": {
+  "id": "emetti-titolo-viaggio",
+  "titolo": "Emetti Titolo di Viaggio",
+  "aggiornato": "2026-03-02",
+  "nuovo": true,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Permette al profilo commerciale di emettere biglietti e abbonamenti a <b>prezzo 0 euro</b> tramite il Portale Clienti con privilegi admin.",
+        "L'accesso admin dura <b>15 minuti</b>: alla scadenza torna in Admin Panel e clicca di nuovo 'Emetti Titoli di Viaggio'.",
+        "Tutti gli ordini gratuiti sono tracciati e identificabili dal campo <b>'Emesso da Admin'</b> nelle esportazioni."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Questa funzione dà la possibilità al profilo commerciale di emettere titoli di viaggio gratuitamente, inserendo tutte le informazioni necessarie ai fini dell'emissione."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Si dà la possibilità di effettuare l'accesso a <b>Portale Clienti con privilegi di amministratore</b> e di effettuare emissioni di titoli di viaggio (CS e abbonamenti, urbani ed extraurbani). Questa possibilità è concessa soltanto ai profili commerciali."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "I profili commerciali effettueranno l'accesso su Portale Clienti con l'azienda di appartenenza. Nel caso di profili commerciali con più aziende collegate, l'azienda con cui si farà accesso su Portale Clienti sarà quella selezionata in quel momento su Admin Panel."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-1.png",
+      "alt": "Pagina emissione titoli gratuiti",
+      "didascalia": "Pagina di ricerca per emissione titoli di viaggio gratuiti"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "Nella pagina di ricerca per biglietto o abbonamento extra urbano, <b>non sarà possibile selezionare l'azienda</b>",
+        "Per i biglietti e abbonamenti urbani, le località sono filtrate per azienda",
+        "Tra i risultati, vengono mostrati tutti gli abbonamenti a prescindere dalla tessera e codice fiscale, e presentano tutti <b>prezzo 0 €</b>"
+      ]
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-2.png",
+      "alt": "Risultati ricerca con prezzo zero",
+      "didascalia": "I risultati mostrano prezzo 0 € per tutti i titoli"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Alla creazione dell'ordine, è necessario specificare tutte le informazioni del cliente a cui è indirizzato il titolo di viaggio (procedimento analogo per i CS). Nel caso degli abbonamenti che richiedono una tessera MyCard, è necessario anche inserire i dati corretti del cliente."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-3.png",
+      "alt": "Creazione ordine gratuito",
+      "didascalia": "Inserimento dati cliente per la creazione dell'ordine"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "All'emissione del titolo, verrà inviata la <b>mail di conferma al cliente</b>, e sarà possibile stampare i titoli emessi in formato PDF."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-4.png",
+      "alt": "Stampa PDF titolo gratuito",
+      "didascalia": "Possibilità di stampare i titoli emessi in formato PDF"
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Attenzione:</b> L'accesso a Portale Clienti con privilegi di Admin dura <b>15 minuti</b>. Una volta scaduti, quando si tenta di effettuare un'azione (ricerca, creazione ordine o pagamento) apparirà una modale che ne notifica la scadenza. A questo punto è possibile tornare su Admin Panel e cliccare nuovamente il tasto \"Emetti Titoli di Viaggio\" per effettuare altre emissioni."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "<b>CS con cambio:</b> Se si vuole emettere una corsa semplice con cambio, è possibile emettere la corsa semplice solo per la tratta di propria competenza."
+    },
+    {
+      "tipo": "box-nota",
+      "titolo": "Tracciamento ordini gratuiti",
+      "contenuto": [
+        "Gli ordini effettuati con profilo commerciale sono tracciati ed è possibile risalire all'utente admin panel che ha effettuato l'emissione",
+        "Gli ordini presentano importo nullo",
+        "È stato inserito un nuovo filtro \"Gratuito\" nel metodo di pagamento nelle pagine Ordini, Biglietti e Abbonamenti",
+        "Nel dettaglio di ogni titolo di viaggio, è presente un campo \"Emesso da Admin\" che identifica un titolo emesso da profilo commerciale",
+        "Le esportazioni biglietti, abbonamenti e ordini presentano il campo \"Emesso da Admin\"",
+        "Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano le transazioni relative ai titoli emessi gratuitamente"
+      ]
+    }
+  ],
+  "sottosezioni": []
 },
   "esportazioni": {
   "id": "esportazioni",
@@ -2466,7 +2803,7 @@ var BUNDLED_DATA = {
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "Benvenuti sulla <b>Guida per i Sistemi Itineris</b>! Questo manuale supporta i Consorziati COTRAP nella gestione delle linee e corse su Itineris e nel controllo contabile del venduto."
+      "testo": "Benvenuti nella <b>Guida Operativa ITINERIS</b>! Questo manuale supporta i Consorziati COTRAP nella gestione delle linee e corse su Itineris e nel controllo contabile del venduto."
     },
     {
       "tipo": "avviso",
@@ -2517,6 +2854,12 @@ var BUNDLED_DATA = {
           "link": "sezione-contabile"
         },
         {
+          "icona": "🚀",
+          "titolo": "Guida Veloce",
+          "descrizione": "Panoramica rapida dei passaggi fondamentali in sequenza: dal primo accesso alla pubblicazione delle corse.",
+          "link": "guida-veloce"
+        },
+        {
           "icona": "❓",
           "titolo": "Domande e Risposte",
           "descrizione": "Risposte rapide alle domande più frequenti, organizzate per argomento.",
@@ -2527,7 +2870,7 @@ var BUNDLED_DATA = {
     {
       "tipo": "avviso",
       "stile": "success",
-      "testo": "<b>Primo accesso?</b> Consulta la <b>Guida Veloce</b> nel menu per una panoramica rapida dei passaggi essenziali."
+      "testo": "<b>Primo accesso?</b> Consulta la <a href=\"#guida-veloce\">Guida Veloce</a> per una panoramica rapida dei passaggi fondamentali in ordine sequenziale."
     }
   ],
   "sottosezioni": [
@@ -2680,6 +3023,12 @@ var BUNDLED_DATA = {
       "tipo": "normale"
     },
     {
+      "id": "configurazione",
+      "label": "Configurazione",
+      "icona": "⚙️",
+      "tipo": "normale"
+    },
+    {
       "id": "gestione-movimento",
       "label": "Gestione Movimento",
       "icona": "🚌",
@@ -2707,6 +3056,12 @@ var BUNDLED_DATA = {
       "id": "sezione-contabile",
       "label": "Sezione Contabile",
       "icona": "📊",
+      "tipo": "normale"
+    },
+    {
+      "id": "emetti-titolo-viaggio",
+      "label": "Emetti Titolo di Viaggio",
+      "icona": "🎫",
       "tipo": "normale"
     },
     {
@@ -2967,7 +3322,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "statistiche-biglietti",
-      "titolo": "Statistiche Biglietti",
+      "titolo": "Statistiche Biglietti Venduti / Controllati",
       "aggiornato": "2026-03-03",
       "nuovo": false,
       "contenuto": [
@@ -3075,340 +3430,6 @@ var BUNDLED_DATA = {
             "<b>Eccezioni</b> — gestire variazioni straordinarie: sospensioni, modifiche tariffarie temporanee, variazioni chilometriche.",
             "<b>Ordini</b> — consultare i biglietti e abbonamenti venduti, verificare lo stato delle corse e monitorare i controlli.",
             "<b>Esportazioni</b> — scaricare in formato Excel (.xls) o testo (.txt) i dati ricercati nelle sezioni precedenti."
-          ]
-        }
-      ]
-    },
-    {
-      "id": "configurazione",
-      "titolo": "Configurazione",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "I parametri regionali (tariffari, calendari scolastici) sono inseriti solo da <b>COTRAP</b> — il consorziato puo' solo consultarli.",
-            "L'unica voce che il consorziato gestisce qui e' la <b>Frequenza Corsa</b> (Giornaliera, Feriale, Scolastica, ecc.)."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse sono invece inserite dal consorziato stesso."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine04.3.png",
-          "alt": "Menu Configurazione",
-          "didascalia": "Accesso alla sezione Configurazione"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Di <b>\"Configurazione\"</b> fanno parte i seguenti punti:"
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "<b>Tariffari</b>",
-            "Calendari",
-            "Frequenza Corsa"
-          ]
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine04.3b.png",
-          "alt": "Sottomenu Configurazione",
-          "didascalia": "Voci del menu Configurazione"
-        }
-      ]
-    },
-    {
-      "id": "tariffari",
-      "titolo": "Tariffari",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Tabella delle tariffe chilometriche regionali — aggiornata da COTRAP, <b>sola lettura</b> per il consorziato.",
-            "Usala per verificare i prezzi che il sistema applicera' automaticamente alle tue corse e abbonamenti."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione COTRAP aggiorna i tariffari chilometrici regionali. Il consorziato può solo consultarli: i dati non sono modificabili. Utile per verificare i prezzi che saranno applicati alle corse e agli abbonamenti."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.1.png",
-          "alt": "Lista Tariffari",
-          "didascalia": "Elenco dei tariffari disponibili"
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.1b.png",
-          "alt": "Tariffari dettaglio",
-          "didascalia": ""
-        },
-        {
-          "tipo": "icona-azione",
-          "icona": "icona01.png",
-          "testo": "Cliccando sull'icona è possibile visualizzare i tariffari km regionali, i dati non sono modificabili."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.1c.png",
-          "alt": "Dettaglio Tariffari",
-          "didascalia": "Visualizzazione dettaglio tariffario chilometrico"
-        }
-      ]
-    },
-    {
-      "id": "calendari",
-      "titolo": "Calendari",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Calendari scolastici regionali — inseriti da COTRAP, <b>sola lettura</b>.",
-            "Il sistema blocca automaticamente la vendita di corse <b>Scolastiche</b> nelle date di vacanza (Natale, Pasqua, estate).",
-            "Utili per capire quali date il sistema gestira' automaticamente per le corse con frequenza Scolastica o Non Scolastica."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione COTRAP aggiorna i calendari scolastici regionali. Admin Panel Itineris usa questi calendari per gestire automaticamente la vendita in base alla frequenza delle corse: ad esempio, se una corsa ha frequenza Scolastica, il sistema non permetterà l'acquisto per date che ricadono nelle vacanze natalizie o estive. Il consorziato può solo consultare questi calendari."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.2.png",
-          "alt": "Lista Calendari",
-          "didascalia": "Elenco dei calendari scolastici"
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.2b.png",
-          "alt": "Calendari dettaglio",
-          "didascalia": ""
-        },
-        {
-          "tipo": "icona-azione",
-          "icona": "icona01.png",
-          "testo": "Cliccando sull'icona sarà possibile visionare il calendario."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.2c.png",
-          "alt": "Dettaglio Calendario",
-          "didascalia": "Visualizzazione calendario scolastico"
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.2d.png",
-          "alt": "Calendario dettaglio 2",
-          "didascalia": ""
-        }
-      ]
-    },
-    {
-      "id": "frequenza-corsa",
-      "titolo": "Frequenza Corsa",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Imposta le frequenze delle tue corse: Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva.",
-            "Per frequenze <b>Scolastica / Non Scolastica</b> non inserire date di validita': il sistema usa automaticamente il calendario regionale COTRAP.",
-            "Per Giornaliera/Feriale puoi personalizzare i giorni della settimana (es. solo lunedi'-venerdi')."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "In questa sezione saranno inserite da ciascun consorziato le frequenze relative alle proprie linee."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.3.png",
-          "alt": "Lista Frequenze",
-          "didascalia": "Elenco delle frequenze corsa"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.3b.png",
-          "alt": "Form Frequenza 1",
-          "didascalia": ""
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.3c.png",
-          "alt": "Form Frequenza",
-          "didascalia": "Maschera inserimento nuova frequenza"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Compilare i campi richiesti:"
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "<b>Denominazione:</b> nome descrittivo della frequenza (es. Giornaliera, Giornaliera estiva, Feriale lun-ven, Feriale sabato, Scolastica, Non scolastica)",
-            "<b>Tipologia:</b> selezionare dal menu a tendina tra Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva. Per le tipologie Feriale e Giornaliera è possibile personalizzare i giorni di validità settimanale",
-            "<b>Data inizio validità / Data fine validità:</b> compilare solo se la frequenza ha un range temporale personalizzato (es. servizio estivo con date precise). Non compilare per frequenze Scolastiche o Non Scolastiche: in quel caso il sistema usa automaticamente il calendario scolastico configurato da COTRAP"
-          ]
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Al termine cliccare su <b>\"Conferma\"</b> in basso a destra. In caso di dubbi sulla corretta impostazione della frequenza, rivolgersi all'Amministratore COTRAP."
-        }
-      ]
-    },
-    {
-      "id": "utenti-app-controlli",
-      "titolo": "Utenti App Controlli",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Inserisci qui autisti e controllori che useranno l'<b>app Itineris</b> per controllare i biglietti a bordo.",
-            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve scaricare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
-            "App disponibile su Android: <b>www.cotrap.it/app-controlli</b>."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Con questa funzione è possibile inserire gli autisti o i controllori che utilizzeranno l'app Itineris per il controllo dei biglietti a bordo."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Cliccare su <b>\"Aggiungi\"</b> per inserire un nuovo utente dell'app (autista, controllore o controllore esterno)."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.4.png",
-          "alt": "Lista Utenti App",
-          "didascalia": "Elenco utenti app controllo"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Inserire nome, cognome, email e gli altri dati richiesti. Cliccare su <b>\"Conferma\"</b> per salvare."
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine4.3.4b.png",
-          "alt": "Form Utente App",
-          "didascalia": "Maschera inserimento nuovo utente"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "Dopo il salvataggio, la colonna <b>\"Stato\"</b> mostrerà <b>\"In attesa di conferma\"</b>. Lo stato passerà a <b>\"Confermato\"</b> solo dopo che l'utente completa l'attivazione sul proprio dispositivo (vedi sotto)."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve scaricare l'app di controllo Itineris sul proprio smartphone Android tramite il link <b>www.cotrap.it/app-controlli</b> e impostare la propria password. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
-        }
-      ]
-    },
-    {
-      "id": "emissione-titoli-gratuiti",
-      "titolo": "Emissione Titoli di Viaggio Gratuiti",
-      "aggiornato": "2026-03-02",
-      "nuovo": true,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Permette al profilo commerciale di emettere biglietti e abbonamenti a <b>prezzo 0 euro</b> tramite il Portale Clienti con privilegi admin.",
-            "L'accesso admin dura <b>15 minuti</b>: alla scadenza torna in Admin Panel e clicca di nuovo 'Emetti Titoli di Viaggio'.",
-            "Tutti gli ordini gratuiti sono tracciati e identificabili dal campo <b>'Emesso da Admin'</b> nelle esportazioni."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Questa funzione dà la possibilità al profilo commerciale di emettere titoli di viaggio gratuitamente, inserendo tutte le informazioni necessarie ai fini dell'emissione."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Si dà la possibilità di effettuare l'accesso a <b>Portale Clienti con privilegi di amministratore</b> e di effettuare emissioni di titoli di viaggio (CS e abbonamenti, urbani ed extraurbani). Questa possibilità è concessa soltanto ai profili commerciali."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "I profili commerciali effettueranno l'accesso su Portale Clienti con l'azienda di appartenenza. Nel caso di profili commerciali con più aziende collegate, l'azienda con cui si farà accesso su Portale Clienti sarà quella selezionata in quel momento su Admin Panel."
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-gratuiti-1.png",
-          "alt": "Pagina emissione titoli gratuiti",
-          "didascalia": "Pagina di ricerca per emissione titoli di viaggio gratuiti"
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "Nella pagina di ricerca per biglietto o abbonamento extra urbano, <b>non sarà possibile selezionare l'azienda</b>",
-            "Per i biglietti e abbonamenti urbani, le località sono filtrate per azienda",
-            "Tra i risultati, vengono mostrati tutti gli abbonamenti a prescindere dalla tessera e codice fiscale, e presentano tutti <b>prezzo 0 €</b>"
-          ]
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-gratuiti-2.png",
-          "alt": "Risultati ricerca con prezzo zero",
-          "didascalia": "I risultati mostrano prezzo 0 € per tutti i titoli"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Alla creazione dell'ordine, è necessario specificare tutte le informazioni del cliente a cui è indirizzato il titolo di viaggio (procedimento analogo per i CS). Nel caso degli abbonamenti che richiedono una tessera MyCard, è necessario anche inserire i dati corretti del cliente."
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-gratuiti-3.png",
-          "alt": "Creazione ordine gratuito",
-          "didascalia": "Inserimento dati cliente per la creazione dell'ordine"
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "All'emissione del titolo, verrà inviata la <b>mail di conferma al cliente</b>, e sarà possibile stampare i titoli emessi in formato PDF."
-        },
-        {
-          "tipo": "immagine",
-          "src": "aggiornamento-gratuiti-4.png",
-          "alt": "Stampa PDF titolo gratuito",
-          "didascalia": "Possibilità di stampare i titoli emessi in formato PDF"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione:</b> L'accesso a Portale Clienti con privilegi di Admin dura <b>15 minuti</b>. Una volta scaduti, quando si tenta di effettuare un'azione (ricerca, creazione ordine o pagamento) apparirà una modale che ne notifica la scadenza. A questo punto è possibile tornare su Admin Panel e cliccare nuovamente il tasto \"Emetti Titoli di Viaggio\" per effettuare altre emissioni."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>CS con cambio:</b> Se si vuole emettere una corsa semplice con cambio, è possibile emettere la corsa semplice solo per la tratta di propria competenza."
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Tracciamento ordini gratuiti",
-          "contenuto": [
-            "Gli ordini effettuati con profilo commerciale sono tracciati ed è possibile risalire all'utente admin panel che ha effettuato l'emissione",
-            "Gli ordini presentano importo nullo",
-            "È stato inserito un nuovo filtro \"Gratuito\" nel metodo di pagamento nelle pagine Ordini, Biglietti e Abbonamenti",
-            "Nel dettaglio di ogni titolo di viaggio, è presente un campo \"Emesso da Admin\" che identifica un titolo emesso da profilo commerciale",
-            "Le esportazioni biglietti, abbonamenti e ordini presentano il campo \"Emesso da Admin\"",
-            "Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano le transazioni relative ai titoli emessi gratuitamente"
           ]
         }
       ]

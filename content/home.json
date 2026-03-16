@@ -6,7 +6,7 @@
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "Benvenuti sulla <b>Guida per i Sistemi Itineris</b>! Questo manuale supporta i Consorziati COTRAP nella gestione delle linee e corse su Itineris e nel controllo contabile del venduto."
+      "testo": "Benvenuti nella <b>Guida Operativa ITINERIS</b>! Questo manuale supporta i Consorziati COTRAP nella gestione delle linee e corse su Itineris e nel controllo contabile del venduto."
     },
     {
       "tipo": "avviso",
@@ -57,6 +57,12 @@
           "link": "sezione-contabile"
         },
         {
+          "icona": "🚀",
+          "titolo": "Guida Veloce",
+          "descrizione": "Panoramica rapida dei passaggi fondamentali in sequenza: dal primo accesso alla pubblicazione delle corse.",
+          "link": "guida-veloce"
+        },
+        {
           "icona": "❓",
           "titolo": "Domande e Risposte",
           "descrizione": "Risposte rapide alle domande più frequenti, organizzate per argomento.",
@@ -67,7 +73,7 @@
     {
       "tipo": "avviso",
       "stile": "success",
-      "testo": "<b>Primo accesso?</b> Consulta la <b>Guida Veloce</b> nel menu per una panoramica rapida dei passaggi essenziali."
+      "testo": "<b>Primo accesso?</b> Consulta la <a href=\"#guida-veloce\">Guida Veloce</a> per una panoramica rapida dei passaggi fondamentali in ordine sequenziale."
     }
   ],
   "sottosezioni": [

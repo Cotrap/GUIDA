@@ -1,0 +1,245 @@
+{
+  "id": "configurazione",
+  "titolo": "Configurazione",
+  "aggiornato": "2026-03-13",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "I parametri regionali (tariffari, calendari scolastici) sono inseriti solo da <b>COTRAP</b> — il consorziato puo' solo consultarli.",
+        "L'unica voce che il consorziato gestisce qui e' la <b>Frequenza Corsa</b> (Giornaliera, Feriale, Scolastica, ecc.)."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Dalla Home cliccare su <b>Configurazione</b> nel menu principale. I parametri regionali (tariffari, calendari scolastici) sono inseriti e aggiornati esclusivamente da COTRAP: il consorziato può <b>solo consultarli</b>. Le frequenze delle corse sono invece inserite dal consorziato stesso."
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine04.3.png",
+      "alt": "Menu Configurazione",
+      "didascalia": "Accesso alla sezione Configurazione"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Di <b>\"Configurazione\"</b> fanno parte i seguenti punti:"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "<b>Tariffari</b>",
+        "Calendari",
+        "Frequenza Corsa"
+      ]
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine04.3b.png",
+      "alt": "Sottomenu Configurazione",
+      "didascalia": "Voci del menu Configurazione"
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "tariffari",
+      "titolo": "Tariffari",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Tabella delle tariffe chilometriche regionali — aggiornata da COTRAP, <b>sola lettura</b> per il consorziato.",
+            "Usala per verificare i prezzi che il sistema applicera' automaticamente alle tue corse e abbonamenti."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione COTRAP aggiorna i tariffari chilometrici regionali. Il consorziato può solo consultarli: i dati non sono modificabili. Utile per verificare i prezzi che saranno applicati alle corse e agli abbonamenti."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1.png",
+          "alt": "Lista Tariffari",
+          "didascalia": "Elenco dei tariffari disponibili"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1b.png",
+          "alt": "Tariffari dettaglio",
+          "didascalia": ""
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona01.png",
+          "testo": "Cliccando sull'icona è possibile visualizzare i tariffari km regionali, i dati non sono modificabili."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.1c.png",
+          "alt": "Dettaglio Tariffari",
+          "didascalia": "Visualizzazione dettaglio tariffario chilometrico"
+        }
+      ]
+    },
+    {
+      "id": "calendari",
+      "titolo": "Calendari",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Calendari scolastici regionali — inseriti da COTRAP, <b>sola lettura</b>.",
+            "Il sistema blocca automaticamente la vendita di corse <b>Scolastiche</b> nelle date di vacanza (Natale, Pasqua, estate).",
+            "Utili per capire quali date il sistema gestira' automaticamente per le corse con frequenza Scolastica o Non Scolastica."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione COTRAP aggiorna i calendari scolastici regionali. Admin Panel Itineris usa questi calendari per gestire automaticamente la vendita in base alla frequenza delle corse: ad esempio, se una corsa ha frequenza Scolastica, il sistema non permetterà l'acquisto per date che ricadono nelle vacanze natalizie o estive. Il consorziato può solo consultare questi calendari."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2.png",
+          "alt": "Lista Calendari",
+          "didascalia": "Elenco dei calendari scolastici"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2b.png",
+          "alt": "Calendari dettaglio",
+          "didascalia": ""
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona01.png",
+          "testo": "Cliccando sull'icona sarà possibile visionare il calendario."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2c.png",
+          "alt": "Dettaglio Calendario",
+          "didascalia": "Visualizzazione calendario scolastico"
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.2d.png",
+          "alt": "Calendario dettaglio 2",
+          "didascalia": ""
+        }
+      ]
+    },
+    {
+      "id": "frequenza-corsa",
+      "titolo": "Frequenza Corsa",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Imposta le frequenze delle tue corse: Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva.",
+            "Per frequenze <b>Scolastica / Non Scolastica</b> non inserire date di validita': il sistema usa automaticamente il calendario regionale COTRAP.",
+            "Per Giornaliera/Feriale puoi personalizzare i giorni della settimana (es. solo lunedi'-venerdi')."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In questa sezione saranno inserite da ciascun consorziato le frequenze relative alle proprie linee."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3.png",
+          "alt": "Lista Frequenze",
+          "didascalia": "Elenco delle frequenze corsa"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3b.png",
+          "alt": "Form Frequenza 1",
+          "didascalia": ""
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.3c.png",
+          "alt": "Form Frequenza",
+          "didascalia": "Maschera inserimento nuova frequenza"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Compilare i campi richiesti:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione:</b> nome descrittivo della frequenza (es. Giornaliera, Giornaliera estiva, Feriale lun-ven, Feriale sabato, Scolastica, Non scolastica)",
+            "<b>Tipologia:</b> selezionare dal menu a tendina tra Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva. Per le tipologie Feriale e Giornaliera è possibile personalizzare i giorni di validità settimanale",
+            "<b>Data inizio validità / Data fine validità:</b> compilare solo se la frequenza ha un range temporale personalizzato (es. servizio estivo con date precise). Non compilare per frequenze Scolastiche o Non Scolastiche: in quel caso il sistema usa automaticamente il calendario scolastico configurato da COTRAP"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Al termine cliccare su <b>\"Conferma\"</b> in basso a destra. In caso di dubbi sulla corretta impostazione della frequenza, rivolgersi all'Amministratore COTRAP."
+        }
+      ]
+    },
+    {
+      "id": "utenti-app-controlli",
+      "titolo": "Utenti App Controlli",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Inserisci qui autisti e controllori che useranno l'<b>app Itineris</b> per controllare i biglietti a bordo.",
+            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve scaricare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
+            "App disponibile su Android: <b>www.cotrap.it/app-controlli</b>."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa funzione è possibile inserire gli autisti o i controllori che utilizzeranno l'app Itineris per il controllo dei biglietti a bordo."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> per inserire un nuovo utente dell'app (autista, controllore o controllore esterno)."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.4.png",
+          "alt": "Lista Utenti App",
+          "didascalia": "Elenco utenti app controllo"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire nome, cognome, email e gli altri dati richiesti. Cliccare su <b>\"Conferma\"</b> per salvare."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.3.4b.png",
+          "alt": "Form Utente App",
+          "didascalia": "Maschera inserimento nuovo utente"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Dopo il salvataggio, la colonna <b>\"Stato\"</b> mostrerà <b>\"In attesa di conferma\"</b>. Lo stato passerà a <b>\"Confermato\"</b> solo dopo che l'utente completa l'attivazione sul proprio dispositivo (vedi sotto)."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve scaricare l'app di controllo Itineris sul proprio smartphone Android tramite il link <b>www.cotrap.it/app-controlli</b> e impostare la propria password. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
+        }
+      ]
+    }
+  ]
+}

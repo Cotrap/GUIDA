@@ -21,6 +21,12 @@
       "tipo": "normale"
     },
     {
+      "id": "configurazione",
+      "label": "Configurazione",
+      "icona": "⚙️",
+      "tipo": "normale"
+    },
+    {
       "id": "gestione-movimento",
       "label": "Gestione Movimento",
       "icona": "🚌",
@@ -48,6 +54,12 @@
       "id": "sezione-contabile",
       "label": "Sezione Contabile",
       "icona": "📊",
+      "tipo": "normale"
+    },
+    {
+      "id": "emetti-titolo-viaggio",
+      "label": "Emetti Titolo di Viaggio",
+      "icona": "🎫",
       "tipo": "normale"
     },
     {
