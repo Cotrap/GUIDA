@@ -2,13 +2,13 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-16 12:14:50
+ * Generato il: 2026-03-17 13:46:35
  */
 var BUNDLED_DATA = {
   "app-controllo": {
   "id": "app-controllo",
   "titolo": "APP Controllo",
-  "aggiornato": "2026-02-24",
+  "aggiornato": "2026-03-17",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
@@ -589,7 +589,7 @@ var BUNDLED_DATA = {
     {
       "id": "utenti-app-controlli",
       "titolo": "Utenti App Controlli",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-17",
       "nuovo": false,
       "contenuto": [
         {
