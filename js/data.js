@@ -15,34 +15,23 @@ var BUNDLED_DATA = {
     {
       "id": "installazione",
       "titolo": "Installazione (solo Android)",
-      "aggiornato": "2026-02-24",
+      "aggiornato": "2026-03-17",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "L'app è disponibile per il download al seguente link, sempre aggiornato all'ultima versione disponibile:"
-        },
-        {
-          "tipo": "links",
-          "items": [
-            {
-              "icona": "📲",
-              "titolo": "Scarica APP Controllo Biglietti",
-              "url": "https://www.cotrap.it/app-controlli/"
-            }
-          ]
-        },
-        {
           "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Nota:</b> Il link riportato sarà sempre aggiornato con l'ultima versione dell'app. Non è necessario cercare altrove."
+          "stile": "warning",
+          "testo": "<b>File APK sempre aggiornato:</b> Il file di installazione dell'app viene aggiornato frequentemente. Per ottenere sempre la versione corretta, <b>richiedere il file .apk direttamente agli amministratori del sistema</b>. Non utilizzare file ricevuti in precedenza: potrebbero non essere aggiornati."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta ricevuto il file .apk dagli amministratori, procedere con l'installazione sul dispositivo Android:"
         },
         {
           "tipo": "lista",
           "items": [
-            "Apri il link dal dispositivo Android su cui vuoi installare l'app.",
-            "Tocca \"Scarica\" per salvare l'app sul dispositivo.",
-            "Apri il file scaricato dal gestore file > cartella \"Download\".",
+            "Trasferisci il file .apk ricevuto sul dispositivo Android (via email, WhatsApp o cavo USB).",
+            "Apri il file dal gestore file > cartella \"Download\" (o dalla cartella in cui è stato salvato).",
             "Consenti l'installazione da fonti sconosciute se richiesto.",
             "Una volta installata, troverai l'icona dell'app \"Itineris\" nella schermata principale."
           ]
@@ -607,8 +596,8 @@ var BUNDLED_DATA = {
           "tipo": "tldr",
           "items": [
             "Inserisci qui autisti e controllori che useranno l'<b>app Itineris</b> per controllare i biglietti a bordo.",
-            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve scaricare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
-            "App disponibile su Android: <b>www.cotrap.it/app-controlli</b>."
+            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve installare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
+            "Il file .apk dell'app si aggiorna frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>."
           ]
         },
         {
@@ -643,7 +632,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve scaricare l'app di controllo Itineris sul proprio smartphone Android tramite il link <b>www.cotrap.it/app-controlli</b> e impostare la propria password. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
+          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve installare l'app di controllo Itineris sul proprio smartphone Android e impostare la propria password. Il file .apk viene aggiornato frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
         }
       ]
     }
