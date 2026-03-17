@@ -194,15 +194,15 @@
     {
       "id": "utenti-app-controlli",
       "titolo": "Utenti App Controlli",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-17",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "tldr",
           "items": [
             "Inserisci qui autisti e controllori che useranno l'<b>app Itineris</b> per controllare i biglietti a bordo.",
-            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve scaricare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
-            "App disponibile su Android: <b>www.cotrap.it/app-controlli</b>."
+            "L'inserimento in Admin Panel <b>non basta</b>: l'utente deve installare l'app Android e impostare la propria password. Solo allora diventa 'Confermato'.",
+            "Il file .apk dell'app si aggiorna frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>."
           ]
         },
         {
@@ -237,7 +237,7 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve scaricare l'app di controllo Itineris sul proprio smartphone Android tramite il link <b>www.cotrap.it/app-controlli</b> e impostare la propria password. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
+          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve installare l'app di controllo Itineris sul proprio smartphone Android e impostare la propria password. Il file .apk viene aggiornato frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
         }
       ]
     }

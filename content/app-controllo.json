@@ -1,41 +1,30 @@
 {
   "id": "app-controllo",
   "titolo": "APP Controllo",
-  "aggiornato": "2026-02-24",
+  "aggiornato": "2026-03-17",
   "nuovo": false,
   "contenuto": [],
   "sottosezioni": [
     {
       "id": "installazione",
       "titolo": "Installazione (solo Android)",
-      "aggiornato": "2026-02-24",
+      "aggiornato": "2026-03-17",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "L'app è disponibile per il download al seguente link, sempre aggiornato all'ultima versione disponibile:"
-        },
-        {
-          "tipo": "links",
-          "items": [
-            {
-              "icona": "📲",
-              "titolo": "Scarica APP Controllo Biglietti",
-              "url": "https://www.cotrap.it/app-controlli/"
-            }
-          ]
-        },
-        {
           "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Nota:</b> Il link riportato sarà sempre aggiornato con l'ultima versione dell'app. Non è necessario cercare altrove."
+          "stile": "warning",
+          "testo": "<b>File APK sempre aggiornato:</b> Il file di installazione dell'app viene aggiornato frequentemente. Per ottenere sempre la versione corretta, <b>richiedere il file .apk direttamente agli amministratori del sistema</b>. Non utilizzare file ricevuti in precedenza: potrebbero non essere aggiornati."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta ricevuto il file .apk dagli amministratori, procedere con l'installazione sul dispositivo Android:"
         },
         {
           "tipo": "lista",
           "items": [
-            "Apri il link dal dispositivo Android su cui vuoi installare l'app.",
-            "Tocca \"Scarica\" per salvare l'app sul dispositivo.",
-            "Apri il file scaricato dal gestore file > cartella \"Download\".",
+            "Trasferisci il file .apk ricevuto sul dispositivo Android (via email, WhatsApp o cavo USB).",
+            "Apri il file dal gestore file > cartella \"Download\" (o dalla cartella in cui è stato salvato).",
             "Consenti l'installazione da fonti sconosciute se richiesto.",
             "Una volta installata, troverai l'icona dell'app \"Itineris\" nella schermata principale."
           ]
