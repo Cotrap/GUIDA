@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-17 13:46:35
+ * Generato il: 2026-03-18 09:19:44
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -1185,7 +1185,7 @@ var BUNDLED_DATA = {
   "faq": {
     "id": "faq",
     "titolo": "Domande e Risposte",
-    "aggiornato": "2026-03-05",
+    "aggiornato": "2026-03-18",
     "nuovo": true,
     "contenuto": [
         {
@@ -1267,6 +1267,11 @@ var BUNDLED_DATA = {
                     "tipo": "faq",
                     "domanda": "Come verifico quanti abbonamenti attivi ci sono e chi li ha acquistati?",
                     "risposta": "Vai in Ordini → Abbonamenti (profilo commerciale o contabile). Usa i filtri per cercare per: Tipo pagamento (Online, Credito, Gratuito), Stato (Attivo, Bloccato, Scaduto), Acquirente (nome o email), N° Tessera. Puoi esportare la lista in Excel cliccando l'icona di download — il file sarà poi recuperabile in Esportazioni."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come faccio a disabilitare la vendita degli abbonamenti per una specifica tratta (es. lasciare solo i biglietti di corsa semplice)?",
+                    "risposta": "Per disabilitare la vendita di tutti gli abbonamenti per una specifica tratta, devi operare per \"esclusione\" nella configurazione di ciascun abbonamento.<br><br><b>1.</b> Vai in Gestione Movimento → Titoli di Viaggio.<br><b>2.</b> Per ogni singolo abbonamento (es. Abb. Mensile/52, Abb. Sett/12, ecc.), clicca su <b>Visualizza/Modifica</b>.<br><b>3.</b> Nella schermata di configurazione, escludi la <b>coppia di codici contabili</b> corrispondenti ai poli della tratta (es. Taranto e Brindisi Aeroporto).<br><br><b>Attenzione:</b> l'esclusione di una coppia vale in entrambe le direzioni (A→B e B→A). Devi ripetere l'operazione per tutti i titoli di viaggio da cui vuoi escludere quella tratta. Se un campo viene lasciato vuoto, il sistema permetterà di acquistare l'abbonamento per tutti i collegamenti presenti."
                 }
             ]
         },
@@ -1433,6 +1438,11 @@ var BUNDLED_DATA = {
                 },
                 {
                     "tipo": "faq",
+                    "domanda": "Per bloccare la vendita di biglietti per piccole sottotratte non gestite, devo impostare i km a zero nel template o basta un'eccezione chilometrica a zero?",
+                    "risposta": "Entrambi i metodi funzionano per inibire la generazione di tariffe e quindi la vendita di biglietti/abbonamenti per quella specifica coppia di codici contabili.<br><br><b>Eccezione chilometrica a 0 km:</b> È la soluzione più rapida se le corse sono già attive. Creando un'Eccezione Chilometrica a 0 km tra il codice di partenza e arrivo della sottotratta, il sistema non troverà una tariffa valida e inibirà l'acquisto. La data d'inizio inserita deve obbligatoriamente essere il 1° di un mese (è possibile inserire anche il 1° del mese *in corso* per far entrare l'eccezione in validità immediata per il mese corrente).<br><br><b>Impostare i km a 0 nel template:</b> È la soluzione strutturale definitiva. Utile specialmente per fermate molto vicine o interne allo stesso Comune. Richiede di disattivare le corse, modificare il template e riattivare, ma ha effetto immediato e risolve il problema alla radice."
+                },
+                {
+                    "tipo": "faq",
                     "domanda": "I minuti nel template sono calcolati dalla fermata precedente o dal capolinea?",
                     "risposta": "Sempre dalla <b>prima fermata (capolinea)</b>, non dalla precedente. Questo permette al sistema di calcolare automaticamente tutti gli orari partendo dall'orario di partenza inserito nella corsa."
                 },
@@ -1476,7 +1486,7 @@ var BUNDLED_DATA = {
         {
             "id": "faq-eccezioni",
             "titolo": "Eccezioni: sospensioni e variazioni",
-            "aggiornato": "2026-03-04",
+            "aggiornato": "2026-03-18",
             "nuovo": false,
             "contenuto": [
                 {
@@ -1513,6 +1523,11 @@ var BUNDLED_DATA = {
                     "tipo": "faq",
                     "domanda": "Come verifico che una variazione tariffaria sia stata applicata correttamente a tutte le corse?",
                     "risposta": "Con <b>Controllo Tariffario Itinerario</b> (Eccezioni). Inserisci la data, il vecchio importo, il comune partenza e arrivo. Se il vecchio prezzo non compare nei risultati, la variazione è stata applicata correttamente a tutte le corse."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
+                    "risposta": "L'eccezione chilometrica <b>da sola non genera titoli di viaggio</b>. Per ottenere un prezzo su una tratta (es. un abbonamento da 52 corse) è necessario che esistano un <b>template</b> con quei poli e almeno una <b>corsa attiva</b> che utilizzi quel template.<br><br>Il sistema permette di inserire un'eccezione chilometrica su qualsiasi coppia di codici contabili senza errori perché quella coppia potrebbe essere presente su più linee: il controllo non avviene in fase di inserimento. Il calcolo del prezzo e la generazione del titolo di viaggio avvengono <b>solo in fase di pubblicazione della corsa</b>, quando il sistema verifica l'esistenza di eventuali eccezioni (chilometriche o tariffarie) e produce il titolo con il relativo importo.<br><br><b>Non è possibile generare un prezzo tra due poli senza una linea, un template e una corsa attiva associati.</b>"
                 }
             ]
         },
