@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-03-18 09:19:44
+ * Generato il: 2026-03-18 09:40:44
  */
 var BUNDLED_DATA = {
   "app-controllo": {
