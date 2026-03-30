@@ -308,7 +308,7 @@
           "items": [
             "<b>Denominazione:</b> riportare denominazione della linea presente su Tecbus (es. Corato - Trani)",
             "<b>Codice Contabile:</b> inserire il codice contabile della linea presente in Tecbus",
-            "<b>Tipologia:</b> selezionare la competenza della linea tra Regionale, Provinciale, Comunale. Per le linee urbane (Comunale) la tariffa non è calcolata su base chilometrica ma è importata direttamente dalla tariffa fissa indicata dalla Regione per il servizio urbano",
+            "<b>Tipologia:</b> selezionare la competenza della linea tra Regionale, Provinciale, Comunale. Per le linee urbane (Comunale) la tariffa non è calcolata su base chilometrica ma è importata direttamente dalla tariffa fissa indicata dalla Regione per il servizio urbano. <b>Attenzione:</b> la tipologia determina anche quali biglietti CS sono disponibili: le linee Regionale/Provinciale usano CS, CSI, CSIA; le linee Comunali usano CSU, CSUI, CSUIA.",
             "<b>Descrizione:</b> inserire eventuali aspetti identificativi della linea"
           ]
         },
@@ -973,20 +973,25 @@
     {
       "id": "titoli-di-viaggio",
       "titolo": "Titoli di Viaggio",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-30",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "tldr",
           "items": [
-            "Prima di attivare gli abbonamenti: invia <b>richiesta formale all'Amministratore COTRAP</b> specificando i tipi di abbonamento da vendere (mensile 52, settimanale 12, invalidi, ecc.).",
-            "Il prezzo usa la corsa attiva con il <b>template piu' lungo</b> tra i poli. Se andata e ritorno hanno distanze diverse i prezzi differiscono (soluzione: uniformare template o aggiungere eccezione tariffaria).",
-            "Da Titoli di Viaggio puoi abilitare/disabilitare l'abbonamento per linee, singole corse o coppie di poli specifici."
+            "Da qui gestisci sia i <b>biglietti CS</b> (corsa semplice, inclusi CSI invalidi) che gli <b>abbonamenti</b>. Per entrambi serve prima l'attivazione dell'Admin.",
+            "I biglietti CS/CSI vengono generati <b>automaticamente</b> all'attivazione del titolo su tutte le corse attive. Gli abbonamenti richiedono invece richiesta formale all'Amministratore.",
+            "La tipologia della linea (Regionale/Provinciale vs Comunale) determina quali CS sono disponibili: CS/CSI/CSIA per extraurbane, CSU/CSUI/CSUIA per urbane."
           ]
         },
         {
           "tipo": "paragrafo",
-          "testo": "Oltre al biglietto di corsa semplice, il Consorzio fornisce la possibilità di attivare anche gli abbonamenti. Le configurazioni base (tariffari abbonamenti, raggruppamenti tariffari, categorie di sconto) sono gestite dall'Amministratore di Sistema; il consorziato può invece gestire l'attivazione e la configurazione dei propri titoli di viaggio."
+          "testo": "Da questa sezione il consorziato gestisce due tipologie di titoli di viaggio: i <b>biglietti di corsa semplice</b> (CS e varianti) e gli <b>abbonamenti</b>. Le configurazioni base (tariffari, raggruppamenti tariffari, categorie di sconto) sono gestite dall'Amministratore; il consorziato gestisce l'attivazione e la configurazione dei propri titoli."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Titoli biglietto disponibili (6 categorie CS):</b><br>• <b>CS</b> — Corsa Semplice standard (tessera 1,15) — solo linee Regionale/Provinciale<br>• <b>CSI</b> — Corsa Semplice Invalidi — solo linee Regionale/Provinciale<br>• <b>CSIA</b> — Corsa Semplice Invalidi + Accompagnatore — solo linee Regionale/Provinciale<br>• <b>CSU</b> — Corsa Semplice Urbana standard — solo linee Comunali<br>• <b>CSUI</b> — Corsa Semplice Urbana Invalidi — solo linee Comunali<br>• <b>CSUIA</b> — Corsa Semplice Urbana Invalidi + Accompagnatore — solo linee Comunali<br><br>Per attivare CSI/CSIA/CSUI/CSUIA: il profilo Admin deve prima creare e configurare il titolo. Solo dopo appare nell'elenco del commerciale. Vedi sezione <b>CS Invalidi</b> per la procedura completa."
         },
         {
           "tipo": "avviso",

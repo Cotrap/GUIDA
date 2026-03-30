@@ -4,6 +4,27 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.10",
+      "data": "2026-03-30",
+      "tipo": "fix",
+      "titolo": "Allineamento tutte le sezioni alle modifiche CS Invalidi",
+      "descrizione": "Aggiornate tutte le sezioni impattate dall'introduzione dei CS Invalidi: Linee, Titoli di Viaggio, Ordini Biglietti, Statistiche Linee, Statistiche Venduto, FAQ.",
+      "dettagli": [
+        "gestione-movimento.json → Linee: aggiunto avviso che la Tipologia (Regionale/Provinciale vs Comunale) determina quali CS sono disponibili (CS/CSI/CSIA vs CSU/CSUI/CSUIA)",
+        "gestione-movimento.json → Titoli di Viaggio: riscritta sezione con le 6 categorie CS, separazione extraurbano/urbano, rimando a sezione CS Invalidi per procedura completa CSI",
+        "ordini.json → Biglietti: aggiunti 5 nuovi filtri (Titolo di viaggio, Categoria calcolo sconto, Numero tessera, Codice fiscale, FID), aggiornato dettaglio biglietto con nuovi campi",
+        "sezione-contabile.json → Statistiche Linee: aggiunto info su colonna Denominazione titolo di viaggio (CS/CSI ecc.) e importo scontato, aggiornata nota su esportazione con campi leggibili",
+        "sezione-contabile.json → Statistiche Venduto: aggiunto filtro Titolo di Viaggio con fattore di sconto, nota che è presente in .xls ma non in .txt",
+        "faq.json: aggiunta FAQ su come trovare biglietti CSI, aggiornata FAQ ricerca biglietto cliente con riferimento a numero tessera/CF"
+      ],
+      "sezioni_modificate": [
+        "gestione-movimento",
+        "ordini",
+        "sezione-contabile",
+        "faq"
+      ]
+    },
+    {
       "versione": "2.9",
       "data": "2026-03-30",
       "tipo": "major",

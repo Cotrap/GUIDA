@@ -434,7 +434,12 @@
                 {
                     "tipo": "faq",
                     "domanda": "Un cliente dice di aver acquistato un biglietto ma non riesco a trovarlo: come cerco?",
-                    "risposta": "Vai in Ordini → Biglietti e usa i filtri: <b>Codice Biglietto</b> (includi la lettera finale), oppure <b>Acquirente</b> (nome, cognome o email), oppure <b>N° Ordine</b>. Se non trovi nulla, verifica anche il <b>Canale</b> (App o Portale Web) e il <b>Tipo pagamento</b> (Online, Credito o Gratuito)."
+                    "risposta": "Vai in Ordini → Biglietti e usa i filtri: <b>Codice Biglietto</b> (includi la lettera finale), oppure <b>Acquirente</b> (nome, cognome o email), oppure <b>N° Ordine</b>. Se non trovi nulla, verifica anche il <b>Canale</b> (App o Portale Web) e il <b>Tipo pagamento</b> (Online, Credito o Gratuito).<br><br>Se il biglietto è un <b>CSI invalidi</b>, usa i nuovi filtri: <b>Numero tessera</b> o <b>Codice fiscale</b> del passeggero per trovarlo rapidamente."
+                },
+                {
+                    "tipo": "faq",
+                    "domanda": "Come trovo tutti i biglietti CSI (invalidi) venduti in un periodo?",
+                    "risposta": "Vai in Ordini → Biglietti e usa il filtro <b>'Titolo di viaggio'</b>: seleziona CSI (o CSIA, CSUI, CSUIA a seconda del tipo). Imposta le date e clicca Applica.<br><br>Puoi anche filtrare per <b>Categoria calcolo sconto</b> se vuoi vedere tutti i biglietti di una specifica categoria tessera, oppure per <b>Numero tessera</b> o <b>Codice fiscale</b> per trovare tutti i biglietti di un singolo utente invalido.<br><br>Esporta il risultato in .xls per avere anche numero tessera, CF, FID e fattore di sconto applicato."
                 },
                 {
                     "tipo": "faq",

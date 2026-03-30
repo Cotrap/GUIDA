@@ -29,13 +29,13 @@
     {
       "id": "biglietti",
       "titolo": "Biglietti",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-03-30",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "tldr",
           "items": [
-            "Cerca biglietti per data acquisto, data viaggio, linea, corsa, codice biglietto o acquirente.",
+            "Cerca biglietti per data acquisto, data viaggio, linea, corsa, codice biglietto, acquirente o <b>tessera MyCard</b>.",
             "Ordine e Biglietto sono distinti: un ordine puo' contenere piu' biglietti (es. 1234A, 1234B). Usa il <b>Codice Biglietto</b> completo per trovare un titolo specifico.",
             "Tipo pagamento <b>Gratuito</b> = titoli emessi dal profilo commerciale. Esporta il risultato in .xls da Esportazioni."
           ]
@@ -71,18 +71,23 @@
             "<b>Acquirente:</b> ricerca per nome e cognome o indirizzo email del cliente",
             "<b>N° Ordine:</b> un ordine può contenere più biglietti (es. andata + ritorno). Ogni biglietto è identificato dal numero ordine + una lettera finale (es. 1234A, 1234B)",
             "<b>Codice Biglietto:</b> inserire il codice completo inclusa la lettera finale (es. 1234A). È il modo più preciso per trovare un singolo biglietto",
+            "<b>Titolo di viaggio:</b> filtra per tipologia di biglietto (CS, CSI, CSIA, CSU, CSUI, CSUIA)",
+            "<b>Categoria calcolo sconto:</b> filtra per la categoria tessera applicata al biglietto",
+            "<b>Numero tessera:</b> filtra per numero tessera MyCard del passeggero — utile per trovare tutti i biglietti invalidi di un utente specifico",
+            "<b>Codice fiscale:</b> filtra per codice fiscale del passeggero",
+            "<b>FID:</b> identificativo univoco della tessera nel sistema",
             "<b>Progressivo biglietto:</b> non utilizzare — è un identificativo numerico interno non utile per le ricerche operative"
           ]
         },
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "È possibile esportare i risultati della ricerca cliccando su <b>\"Esporta\"</b>: viene generato un file <b>.xls</b> con tutti i dettagli dei biglietti trovati, recuperabile poi nella sezione Esportazioni."
+          "testo": "Nel dettaglio del singolo biglietto sono ora visibili anche: <b>numero tessera</b>, <b>codice fiscale</b>, <b>FID</b> e <b>fattore di sconto</b> applicato. Questi dati sono presenti anche nell'esportazione Excel."
         },
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "Nel dettaglio di ogni titolo di viaggio, è presente un campo <b>\"Emesso da Admin\"</b> che, se true, identifica un titolo di viaggio emesso da profilo commerciale. Le esportazioni biglietti, abbonamenti e ordini presentano questo campo."
+          "testo": "È possibile esportare i risultati della ricerca cliccando su <b>\"Esporta\"</b>: viene generato un file <b>.xls</b> con tutti i dettagli dei biglietti trovati, recuperabile poi nella sezione Esportazioni. Il campo <b>\"Emesso da Admin\"</b> identifica i titoli emessi gratuitamente da profilo commerciale."
         }
       ]
     },
