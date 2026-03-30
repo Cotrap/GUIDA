@@ -1,7 +1,7 @@
 {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.6",
-  "ultimo_aggiornamento": "2026-03-05",
+  "versione": "2.9",
+  "ultimo_aggiornamento": "2026-03-30",
   "voci": [
     {
       "id": "home",
@@ -60,6 +60,12 @@
       "id": "emetti-titolo-viaggio",
       "label": "Emetti Titolo di Viaggio",
       "icona": "🎫",
+      "tipo": "normale"
+    },
+    {
+      "id": "cs-invalidi",
+      "label": "CS Invalidi",
+      "icona": "♿",
       "tipo": "normale"
     },
     {

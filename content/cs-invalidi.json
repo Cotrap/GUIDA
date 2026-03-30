@@ -1,0 +1,156 @@
+{
+  "id": "cs-invalidi",
+  "titolo": "CS Invalidi",
+  "aggiornato": "2026-03-30",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Permette ai possessori di tessera <b>MyCard invalidi</b> di acquistare biglietti di corsa semplice a tariffa agevolata (CSI/CSIA) o urbana (CSUI/CSUIA).",
+        "Il profilo admin deve creare e attivare i titoli <b>prima</b> che il commerciale possa farlo. Il commerciale deve poi selezionare le linee e attivare il titolo.",
+        "Limite: <b>2 biglietti al giorno</b> per utente, indipendentemente da tratta e orario. Il CSI è sempre a <b>prezzo pieno</b> nonostante la categoria sconto."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Con l'introduzione dei biglietti per invalidi (CSI) è stata introdotta una separazione netta tra i titoli di biglietto. Da questa versione in poi:"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "<b>CS</b> e derivati (CSI, CSIA) → riservati alle sole linee <b>extraurbane</b> (Tipologia linea: Regionale o Provinciale)",
+        "<b>CSU</b> e derivati (CSUI, CSUIA) → riservati alle sole linee <b>urbane</b> (Tipologia linea: Comunale)"
+      ]
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "Le aziende che vendono solo CS urbani (es. linee comunali) avranno disponibili solo CSU, CSUI e CSUIA. Le aziende con entrambi i tipi di linea dovranno avere attivi entrambi i gruppi di titoli."
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "cs-invalidi-categorie",
+      "titolo": "Le 6 categorie di Corsa Semplice",
+      "aggiornato": "2026-03-30",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Sono ora disponibili 6 tipologie di biglietto di corsa semplice:"
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "<b>CS</b> — Corsa Semplice standard (per tessere 1,15) — solo linee extraurbane",
+            "<b>CSI</b> — Corsa Semplice Invalidi — solo linee extraurbane",
+            "<b>CSIA</b> — Corsa Semplice Invalidi + Accompagnatore — solo linee extraurbane",
+            "<b>CSU</b> — Corsa Semplice Urbana standard (per tessere 1,15) — solo linee urbane",
+            "<b>CSUI</b> — Corsa Semplice Urbana Invalidi — solo linee urbane",
+            "<b>CSUIA</b> — Corsa Semplice Urbana Invalidi + Accompagnatore — solo linee urbane"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione sul prezzo:</b> il CSI (e CSUI) è associato a una categoria calcolo sconto, ma <b>non subisce nessuno sconto</b>. Il costo è sempre a prezzo pieno. Lo sconto si applica solo al CSIA e CSUIA (accompagnatore incluso)."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Nessuna opzione 'con cambio':</b> per i CSI e CSUI non è disponibile la scelta della tratta con cambio linea."
+        }
+      ]
+    },
+    {
+      "id": "cs-invalidi-configurazione",
+      "titolo": "Configurazione (profilo Commerciale)",
+      "aggiornato": "2026-03-30",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Prerequisito obbligatorio:</b> il titolo di viaggio CSI/CSIA/CSUI/CSUIA deve essere prima creato e attivato dal <b>profilo Admin</b> (con categoria calcolo sconto, numero massimo emissioni e aziende abilitate). Solo dopo il commerciale lo vedrà disponibile."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta che il profilo Admin ha attivato il titolo, il profilo Commerciale può procedere. La procedura corretta è:"
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "Vai in <b>Gestione Movimento → Titoli di Viaggio</b>",
+            "Seleziona il titolo CSI (o CSIA, CSUI, CSUIA) tra quelli disponibili",
+            "Prima di attivarlo, <b>seleziona le linee</b> su cui deve essere attivo il titolo — questa operazione va fatta prima dell'attivazione",
+            "Attiva il titolo"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Effetto dell'attivazione:</b> quando si attiva il titolo, il sistema prende automaticamente tutte le corse attive valide e genera i biglietti corrispondenti nella biglietteria. Da quel momento in poi, ogni corsa che viene attivata genererà automaticamente i biglietti; ogni corsa disattivata li rimuoverà."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Effetto della disattivazione:</b> disattivare il titolo rimuove tutti i biglietti CSI/CSIA/CSUI/CSUIA dalla biglietteria per le corse correlate."
+        }
+      ]
+    },
+    {
+      "id": "cs-invalidi-vendita",
+      "titolo": "Come funziona la vendita per l'utente",
+      "aggiornato": "2026-03-30",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "lista",
+          "items": [
+            "L'utente deve avere i <b>dati della tessera MyCard</b> inseriti nel proprio profilo su cotrap.it per visualizzare i biglietti invalidi",
+            "Al login su cotrap.it, l'utente vede <b>solo i titoli di viaggio a lui riservati</b> in base alla tessera",
+            "Se un invalido vuole acquistare un CS a prezzo pieno (senza agevolazione), deve effettuare il <b>logout</b> e riacquistare come utente anonimo",
+            "Limite massimo: <b>2 biglietti CSI al giorno</b> per utente, indipendentemente dalla tratta e dall'orario"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Visibilità titoli senza tessera:</b> esiste un'opzione nella categoria calcolo sconto chiamata 'Visibilità titoli senza tessera'. Se impostata su 'Solo Corsa Semplice', gli utenti con quella tessera vedono anche i CS normali (senza agevolazione) oltre ai CSI. Questa opzione è configurata dal profilo Admin."
+        }
+      ]
+    },
+    {
+      "id": "cs-invalidi-ordini",
+      "titolo": "Nuovi filtri in Ordini e Statistiche",
+      "aggiornato": "2026-03-30",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Con l'introduzione dei CS Invalidi sono stati aggiunti nuovi filtri e campi in diverse sezioni del pannello."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Ordini → Biglietti (profilo Commerciale)",
+          "contenuto": [
+            "Nuovi filtri disponibili: <b>Titolo di viaggio</b> (filtrato per tipologia biglietto), <b>Categoria calcolo sconto</b>, <b>Numero tessera</b>, <b>Codice fiscale</b>, <b>FID</b>",
+            "Nel dettaglio del singolo biglietto sono ora visibili: numero tessera, codice fiscale, FID e fattore di sconto applicato",
+            "Questi dati aggiuntivi sono presenti anche nell'esportazione Excel"
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Statistiche (profilo Direttore)",
+          "contenuto": [
+            "<b>Statistiche Linee:</b> la colonna 'Denominazione titolo di viaggio' riporta ora il nome del biglietto venduto (CS, CSI, CSIA ecc.) e l'importo scontato finale. L'esportazione riporta comune, frazione, linea e corsa in forma leggibile (non più gli ID numerici)",
+            "<b>Statistiche Corse:</b> aggiunto filtro 'Titolo di viaggio' e relativa colonna nella tabella",
+            "<b>Statistiche Venduto:</b> aggiunto filtro 'Titolo di Viaggio' con fattore di sconto. Presente nel CSV, non nel file .txt",
+            "<b>Statistiche Mensili e Dati Contabili:</b> nessuna modifica"
+          ]
+        }
+      ]
+    }
+  ]
+}

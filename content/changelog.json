@@ -4,6 +4,27 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.9",
+      "data": "2026-03-30",
+      "tipo": "major",
+      "titolo": "Nuova sezione CS Invalidi (CSI, CSIA, CSUI, CSUIA)",
+      "descrizione": "Aggiunta nuova sezione dedicata ai biglietti di Corsa Semplice per invalidi. Documenta le 6 categorie CS, la separazione CS/CSU per tipo linea, la procedura di configurazione e i nuovi filtri in Ordini e Statistiche.",
+      "dettagli": [
+        "Nuova sezione cs-invalidi.json con 4 sottosezioni: Le 6 categorie, Configurazione profilo Commerciale, Come funziona per l'utente, Nuovi filtri in Ordini e Statistiche",
+        "Chiarita la separazione CS (extraurbano) vs CSU (urbano) introdotta con i CSI",
+        "Documentata la procedura obbligatoria: Admin crea il titolo → Commerciale seleziona le linee → Commerciale attiva",
+        "Documentato il limite di 2 biglietti CSI al giorno per utente",
+        "Documentata l'opzione 'Visibilità titoli senza tessera' nella categoria calcolo sconto",
+        "Documentati i nuovi filtri in Ordini → Biglietti: Titolo di viaggio, Categoria calcolo sconto, Numero tessera, Codice fiscale, FID",
+        "Documentate le modifiche alle statistiche: Statistiche Linee, Corse, Venduto",
+        "Aggiunta voce menu CS Invalidi con icona ♿"
+      ],
+      "sezioni_modificate": [
+        "cs-invalidi",
+        "menu"
+      ]
+    },
+    {
       "versione": "2.8",
       "data": "2026-03-30",
       "tipo": "major",
