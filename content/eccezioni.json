@@ -190,7 +190,7 @@
       "id": "eccezioni-chilometriche",
       "titolo": "Eccezioni Chilometriche",
       "aggiornato": "2026-03-05",
-      "nuovo": true,
+      "nuovo": false,
       "contenuto": [
         {
           "tipo": "tldr",

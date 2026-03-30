@@ -4,6 +4,51 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.8",
+      "data": "2026-03-30",
+      "tipo": "major",
+      "titolo": "FAQ ampliate: eccezioni step-by-step, Template Massivo, Multitratta, Controllo Prezzi",
+      "descrizione": "Riscritta e ampliata la sezione FAQ con procedure operative complete, nuove sezioni dedicate a Modifica Template Massivo e Linea Multitratta, guida dettagliata alla scelta tra Eccezione Chilometrica e Tariffaria, FAQ su errori comuni del browser.",
+      "dettagli": [
+        "faq-prezzi: riscritta completamente con 6 FAQ — procedura diagnostica completa per prezzi sbagliati, guida alla scelta Chilometrica vs Tariffaria con casi pratici e caso ibrido, step-by-step per Controllo Tariffario, Controllo Tariffario Itinerario e Controllo Tariffario Abbonamenti",
+        "Nuova sezione FAQ 'Modifica Template Massivo': cos'è, procedura passo per passo, quali corse sono escluse, come risolvere corse con vecchi orari, Duplica e Inverti",
+        "Nuova sezione FAQ 'Linea Multitratta': quando usarla, struttura template a 3 poli, debug abbonamento non visibile, limitazione biglietti",
+        "faq-eccezioni: aggiunte procedure complete step-by-step per Eccezione Chilometrica, Eccezione Tariffaria Biglietti e Eccezione Tariffaria Abbonamenti",
+        "faq-corse-problemi: aggiunte FAQ su cache browser e Admin Panel lento",
+        "faq-abbonamenti: aggiunta FAQ su tessera MyCard (quando è obbligatoria, emissione gratuita)",
+        "faq-contabile: aggiunta procedura completa step-by-step esportazione Dati Contabili, FAQ differenza statistiche mensili/linee/venduto, FAQ lettura statistiche con esclusioni"
+      ],
+      "sezioni_modificate": [
+        "faq"
+      ]
+    },
+    {
+      "versione": "2.7",
+      "data": "2026-03-30",
+      "tipo": "fix",
+      "titolo": "Fix navigazione, link Tecbus, terminologia CS, struttura manuale",
+      "descrizione": "Corretti errori di navigazione nella Guida Veloce, aggiunto link Tecbus in tutti i punti dove è citato, corretta terminologia acronimo CS, aggiornata Struttura del Manuale in Introduzione, rimossi tutti i badge NUOVO scaduti.",
+      "dettagli": [
+        "guida-veloce.json: fix CRITICO passo 2 — rimosso 'accessibile dal menu Profilo Commerciale' (Configurazione è voce indipendente nel menu)",
+        "guida-veloce.json: aggiunto link https://tecbus.eu/ nella descrizione di Tecbus al passo 3",
+        "introduzione.json: aggiornata 'Struttura del Manuale' — aggiunta Configurazione come sezione separata e aggiunta sezione Emetti Titolo di Viaggio",
+        "emetti-titolo-viaggio.json: corretto acronimo CS → 'Corsa Semplice (CS)' con spiegazione esplicita",
+        "profilo-commerciale.json: aggiunti link cliccabili a https://tecbus.eu/ nelle tre menzioni di Tecbus",
+        "gestione-movimento.json: aggiunti link cliccabili a https://tecbus.eu/ nelle menzioni TLDR di Tecbus",
+        "faq.json: aggiunto link https://tecbus.eu/ e descrizione 'azienda che fornisce i dati di linea' nella risposta sui codici contabili",
+        "Rimossi tutti i badge 'nuovo': true scaduti da emetti-titolo-viaggio, eccezioni, faq (sezione principale e 4 sottosezioni)"
+      ],
+      "sezioni_modificate": [
+        "guida-veloce",
+        "introduzione",
+        "emetti-titolo-viaggio",
+        "profilo-commerciale",
+        "gestione-movimento",
+        "faq",
+        "eccezioni"
+      ]
+    },
+    {
       "versione": "2.6",
       "data": "2026-03-05",
       "tipo": "miglioramento",

@@ -72,12 +72,14 @@
         {
           "tipo": "lista",
           "items": [
-            "<b>Profilo Commerciale:</b> prerequisiti, configurazione tariffari e calendari, emissione titoli gratuiti",
+            "<b>Profilo Commerciale:</b> prerequisiti e dati del consorziato",
+            "<b>Configurazione:</b> tariffari regionali, calendari scolastici, frequenze corse e utenti app controllo",
             "<b>Gestione Movimento:</b> codici contabili, poli, linee, template, corse e titoli di viaggio",
             "<b>Eccezioni:</b> sospensioni di corse/fermate, variazioni tariffarie e chilometriche",
             "<b>Ordini:</b> monitoraggio ordini, biglietti, abbonamenti e stati occupazionali",
             "<b>Esportazioni:</b> archivio centralizzato dei file generati dal portale",
-            "<b>Sezione Contabile:</b> ordini, dati contabili, biglietti, abbonamenti e statistiche"
+            "<b>Sezione Contabile:</b> ordini, dati contabili, biglietti, abbonamenti e statistiche",
+            "<b>Emetti Titolo di Viaggio:</b> emissione gratuita di biglietti e abbonamenti dal profilo commerciale"
           ]
         },
         {

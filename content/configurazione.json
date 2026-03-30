@@ -237,7 +237,7 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve installare l'app di controllo Itineris sul proprio smartphone Android e impostare la propria password. Il file .apk viene aggiornato frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare. Consultare la sezione <b>APP Controllo</b> per le istruzioni complete."
+          "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve installare l'app di controllo Itineris sul proprio smartphone Android e impostare la propria password. Il file .apk viene aggiornato frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare."
         }
       ]
     }

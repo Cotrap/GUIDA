@@ -19,12 +19,12 @@
         {
           "numero": 2,
           "titolo": "Configurazione",
-          "descrizione": "Nella sezione Configurazione (accessibile dal menu Profilo Commerciale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica)."
+          "descrizione": "Nella sezione <b>Configurazione</b> (voce separata nel menu laterale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica)."
         },
         {
           "numero": 3,
           "titolo": "Inserimento Codici Contabili e Poli",
-          "descrizione": "Nella sezione Gestione Movimento, inserisci i codici contabili dei Comuni/frazioni (recuperati da Tecbus) e i poli (le fermate precise con coordinate GPS)."
+          "descrizione": "Nella sezione Gestione Movimento, inserisci i codici contabili dei Comuni/frazioni (recuperati da <b>Tecbus</b>) e i poli (le fermate precise con coordinate GPS)."
         },
         {
           "numero": 4,

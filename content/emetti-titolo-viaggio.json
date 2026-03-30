@@ -2,7 +2,7 @@
   "id": "emetti-titolo-viaggio",
   "titolo": "Emetti Titolo di Viaggio",
   "aggiornato": "2026-03-02",
-  "nuovo": true,
+  "nuovo": false,
   "contenuto": [
     {
       "tipo": "tldr",
@@ -73,7 +73,7 @@
     {
       "tipo": "avviso",
       "stile": "info",
-      "testo": "<b>CS con cambio:</b> Se si vuole emettere una corsa semplice con cambio, è possibile emettere la corsa semplice solo per la tratta di propria competenza."
+      "testo": "<b>Corsa Semplice (CS) con cambio:</b> Se si vuole emettere un biglietto per una corsa con cambio linea, è possibile emettere il titolo solo per la tratta di propria competenza."
     },
     {
       "tipo": "box-nota",
