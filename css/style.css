@@ -7,10 +7,10 @@
    VARIABILI E RESET
    ============================================ */
 :root {
-    /* Colori primari – COTRAP green */
-    --primary: #009B3A;
-    --primary-dark: #007A2F;
-    --primary-light: #2DB84B;
+    /* Colori primari – COTRAP suite (verde oliva istituzionale) */
+    --primary: #757A43;        /* verde oliva brand COTRAP */
+    --primary-dark: #5e6235;   /* oliva scuro (hover) */
+    --primary-light: #008F20;  /* verde brillante logo (accenti) */
 
     /* Colori secondari – COTRAP gray */
     --secondary: #555555;
@@ -42,7 +42,7 @@
     --horizontal-menu-height: 50px;
 
     /* Tipografia */
-    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
