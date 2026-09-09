@@ -7,8 +7,8 @@
     {
       "tipo": "tldr",
       "items": [
-        "I parametri regionali (tariffari, calendari scolastici) sono inseriti solo da <b>COTRAP</b> — il consorziato puo' solo consultarli.",
-        "L'unica voce che il consorziato gestisce qui e' la <b>Frequenza Corsa</b> (Giornaliera, Feriale, Scolastica, ecc.)."
+        "I parametri regionali (tariffari e calendari scolastici) sono inseriti solo da <b>COTRAP</b>: il consorziato può soltanto consultarli.",
+        "Le voci che il consorziato gestisce davvero sono due: <b>Frequenze Corsa</b> e <b>Utenti App Controlli</b>."
       ]
     },
     {
@@ -28,9 +28,10 @@
     {
       "tipo": "lista",
       "items": [
-        "<b>Tariffari</b>",
-        "Calendari",
-        "Frequenza Corsa"
+        "<b>Tariffari</b> — sola consultazione",
+        "<b>Calendari</b> — sola consultazione",
+        "<b>Frequenze Corsa</b> — le gestisce il consorziato",
+        "<b>Utenti App Controlli</b> — li gestisce il consorziato"
       ]
     },
     {
@@ -68,7 +69,7 @@
           "tipo": "immagine",
           "src": "Immagine4.3.1b.png",
           "alt": "Tariffari dettaglio",
-          "didascalia": ""
+          "didascalia": "L'elenco dei tariffari regionali: denominazione, delibera di riferimento e <b>data di inizio validità</b>. Il consorziato li vede in sola lettura."
         },
         {
           "tipo": "icona-azione",
@@ -80,6 +81,11 @@
           "src": "Immagine4.3.1c.png",
           "alt": "Dettaglio Tariffari",
           "didascalia": "Visualizzazione dettaglio tariffario chilometrico"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Come si lega alle tue corse:</b> il tariffario è organizzato per <b>fasce chilometriche</b>. Il sistema prende i chilometri fra i due codici contabili — quelli indicati come <i>Km tariffario</i> nel percorso della corsa — individua la fascia corrispondente e ne ricava il prezzo. Per questo un errore nei km si traduce sempre in un prezzo sbagliato."
         }
       ]
     },
@@ -111,7 +117,7 @@
           "tipo": "immagine",
           "src": "Immagine4.3.2b.png",
           "alt": "Calendari dettaglio",
-          "didascalia": ""
+          "didascalia": "I calendari scolastici regionali, uno per anno. Lo <b>Stato elaborazione</b> «Elaborato» indica che il calendario è stato caricato ed è utilizzabile dalle frequenze scolastiche."
         },
         {
           "tipo": "icona-azione",
@@ -128,13 +134,13 @@
           "tipo": "immagine",
           "src": "Immagine4.3.2d.png",
           "alt": "Calendario dettaglio 2",
-          "didascalia": ""
+          "didascalia": "Il dettaglio di un calendario: in rosso i giorni <b>non scolastici</b>, quelli in cui le corse con frequenza Scolastica non vengono effettuate."
         }
       ]
     },
     {
       "id": "frequenza-corsa",
-      "titolo": "Frequenza Corsa",
+      "titolo": "Frequenze Corsa",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -164,7 +170,7 @@
           "tipo": "immagine",
           "src": "Immagine4.3.3b.png",
           "alt": "Form Frequenza 1",
-          "didascalia": ""
+          "didascalia": "La pagina <b>Frequenze Corsa</b>: si parte dal pulsante <b>Aggiungi</b> in alto a destra; le colonne mostrano denominazione, tipologia e periodo di validità."
         },
         {
           "tipo": "immagine",
@@ -188,6 +194,11 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "Al termine cliccare su <b>\"Conferma\"</b> in basso a destra. In caso di dubbi sulla corretta impostazione della frequenza, rivolgersi all'Amministratore COTRAP."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Denominazione e Tipologia non sono sinonimi:</b> il nome è libero. Per verificare una frequenza controlla anche <b>giorni selezionati, date di validità e calendario</b>. Un nome come «FESTIVO» non dimostra che la frequenza includa tutte le festività."
         }
       ]
     },

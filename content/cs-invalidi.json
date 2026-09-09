@@ -7,9 +7,9 @@
     {
       "tipo": "tldr",
       "items": [
-        "Permette ai possessori di tessera <b>MyCard invalidi</b> di acquistare biglietti di corsa semplice a tariffa agevolata (CSI/CSIA) o urbana (CSUI/CSUIA).",
-        "Il profilo admin deve creare e attivare i titoli <b>prima</b> che il commerciale possa farlo. Il commerciale deve poi selezionare le linee e attivare il titolo.",
-        "Limite: <b>2 biglietti al giorno</b> per utente, indipendentemente da tratta e orario. Il CSI è sempre a <b>prezzo pieno</b> nonostante la categoria sconto."
+        "Permette ai possessori di <b>tessera MyCard per invalidi</b> di ottenere i biglietti di corsa semplice previsti dall'art. 30 c. 3 della L.R. Puglia n. 18/2002, extraurbani (CSI/CSIA) o urbani (CSUI/CSUIA).",
+        "<b>Sono titoli gratuiti per il cliente.</b> Il limite è di <b>2 biglietti al giorno</b> (andata e ritorno) più <b>altri 2 per l'accompagnatore</b>, quando l'utente ne ha diritto.",
+        "Il profilo Admin deve creare e attivare i titoli <b>prima</b> che il commerciale possa farlo. Il commerciale deve poi selezionare le linee e attivare il titolo."
       ]
     },
     {
@@ -26,7 +26,7 @@
     {
       "tipo": "avviso",
       "stile": "info",
-      "testo": "Le aziende che vendono solo CS urbani (es. linee comunali) avranno disponibili solo CSU, CSUI e CSUIA. Le aziende con entrambi i tipi di linea dovranno avere attivi entrambi i gruppi di titoli."
+      "testo": "Le aziende che vendono solo CS urbani (es. linee comunali) avranno disponibili solo CSU, CSUI e CSUIA. Le aziende con entrambi i tipi di linea dovranno avere attivi entrambi i gruppi di titoli. <b>Se in Gestione Movimento → Titoli di Viaggio non compare alcun titolo CSI/CSIA/CSUI/CSUIA</b>, significa che l'Amministratore non lo ha ancora creato e abilitato per la tua azienda: va richiesto."
     }
   ],
   "sottosezioni": [
@@ -43,18 +43,18 @@
         {
           "tipo": "lista-numerata",
           "items": [
-            "<b>CS</b> — Corsa Semplice standard (per tessere 1,15) — solo linee extraurbane",
+            "<b>CS</b> — Corsa Semplice standard, il biglietto ordinario che chiunque può acquistare — solo linee extraurbane",
             "<b>CSI</b> — Corsa Semplice Invalidi — solo linee extraurbane",
             "<b>CSIA</b> — Corsa Semplice Invalidi + Accompagnatore — solo linee extraurbane",
-            "<b>CSU</b> — Corsa Semplice Urbana standard (per tessere 1,15) — solo linee urbane",
+            "<b>CSU</b> — Corsa Semplice Urbana standard, il biglietto ordinario che chiunque può acquistare — solo linee urbane",
             "<b>CSUI</b> — Corsa Semplice Urbana Invalidi — solo linee urbane",
             "<b>CSUIA</b> — Corsa Semplice Urbana Invalidi + Accompagnatore — solo linee urbane"
           ]
         },
         {
           "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Attenzione sul prezzo:</b> il CSI (e CSUI) è associato a una categoria calcolo sconto, ma <b>non subisce nessuno sconto</b>. Il costo è sempre a prezzo pieno. Lo sconto si applica solo al CSIA e CSUIA (accompagnatore incluso)."
+          "stile": "info",
+          "testo": "<b>Titoli gratuiti per il cliente:</b> CSI, CSIA, CSUI e CSUIA sono associati alle categorie tessera dedicate. Nella verifica di un titolo usa i campi del dettaglio e la categoria configurata; non ricavare l’importo pagato dalla sola denominazione della tessera."
         },
         {
           "tipo": "avviso",
@@ -109,9 +109,9 @@
           "tipo": "lista",
           "items": [
             "L'utente deve avere i <b>dati della tessera MyCard</b> inseriti nel proprio profilo su cotrap.it per visualizzare i biglietti invalidi",
-            "Al login su cotrap.it, l'utente vede <b>solo i titoli di viaggio a lui riservati</b> in base alla tessera",
-            "Se un invalido vuole acquistare un CS a prezzo pieno (senza agevolazione), deve effettuare il <b>logout</b> e riacquistare come utente anonimo",
-            "Limite massimo: <b>2 biglietti CSI al giorno</b> per utente, indipendentemente dalla tratta e dall'orario"
+            "Al login, la disponibilità dei titoli dipende dai dati tessera e dalle opzioni di visibilità configurate dall’Admin",
+            "Se l’account vede soltanto i titoli riservati, per acquistare un CS ordinario può essere necessario uscire dall’account. Verificare anche l’opzione <b>Visibilità titoli senza tessera</b> descritta sotto",
+            "<b>Limite:</b> massimo <b>2 biglietti al giorno</b> (uno per l'andata e uno per il ritorno), indipendentemente dalla tratta e dall'orario, più <b>ulteriori 2</b> per l'accompagnatore quando l'utente ha diritto all'accompagnamento"
           ]
         },
         {
@@ -142,11 +142,11 @@
         },
         {
           "tipo": "box-nota",
-          "titolo": "Statistiche (profilo Direttore)",
+          "titolo": "Statistiche",
           "contenuto": [
-            "<b>Statistiche Linee:</b> la colonna 'Denominazione titolo di viaggio' riporta ora il nome del biglietto venduto (CS, CSI, CSIA ecc.) e l'importo scontato finale. L'esportazione riporta comune, frazione, linea e corsa in forma leggibile (non più gli ID numerici)",
-            "<b>Statistiche Corse:</b> aggiunto filtro 'Titolo di viaggio' e relativa colonna nella tabella",
-            "<b>Statistiche Venduto:</b> aggiunto filtro 'Titolo di Viaggio' con fattore di sconto. Presente nel CSV, non nel file .txt",
+            "<b>Statistiche linee</b> (menu Ordini, se il profilo è abilitato a vederle): la colonna 'Denominazione titolo di viaggio' riporta ora il nome del biglietto venduto (CS, CSI, CSIA ecc.) e l'importo scontato finale. L'esportazione riporta comune, frazione, linea e corsa in forma leggibile, non più gli ID numerici",
+            "<b>Statistiche corse CS</b> (menu Ordini, se il profilo è abilitato a vederle): aggiunto il filtro 'Titolo di viaggio' e la relativa colonna. Attenzione: qui il conteggio è <b>per data di partenza</b>, mentre le Statistiche linee sono per data di emissione",
+            "<b>Statistiche Venduto</b> (Sezione Contabile): aggiunto il filtro 'Titolo di Viaggio' con il fattore di sconto. Presente nel file .xls, non nel file .txt",
             "<b>Statistiche Mensili e Dati Contabili:</b> nessuna modifica"
           ]
         }

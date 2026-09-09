@@ -21,6 +21,12 @@
       "tipo": "cards",
       "items": [
         {
+          "icona": "🔧",
+          "titolo": "Risolvi un problema",
+          "descrizione": "Parti dal sintomo: i controlli da fare, nell'ordine giusto, quando una corsa non compare, un prezzo non torna o un cliente ha un problema.",
+          "link": "diagnostica"
+        },
+        {
           "icona": "💼",
           "titolo": "Profilo Commerciale",
           "descrizione": "Pre-requisiti, iter creazione linea, configurazione tariffari, calendari, frequenze, utenti app ed emissione titoli gratuiti.",
@@ -41,7 +47,7 @@
         {
           "icona": "🧾",
           "titolo": "Ordini",
-          "descrizione": "Monitoraggio ordini, biglietti, abbonamenti, stati occupazionali e statistiche venduto.",
+          "descrizione": "Consultazione di biglietti e abbonamenti venduti, stati occupazionali delle corse, stato dei controlli a bordo e statistiche dei biglietti.",
           "link": "ordini"
         },
         {
@@ -55,6 +61,18 @@
           "titolo": "Sezione Contabile",
           "descrizione": "Accesso contabile separato, ordini, dati contabili, biglietti, abbonamenti e statistiche venduto.",
           "link": "sezione-contabile"
+        },
+        {
+          "icona": "🎫",
+          "titolo": "Emetti Titolo di Viaggio",
+          "descrizione": "Emissione gratuita di biglietti e abbonamenti dal profilo commerciale, tramite il Portale Clienti.",
+          "link": "emetti-titolo-viaggio"
+        },
+        {
+          "icona": "♿",
+          "titolo": "CS Invalidi",
+          "descrizione": "I biglietti di corsa semplice per invalidi: le sei categorie, l'attivazione del titolo e i filtri dedicati.",
+          "link": "cs-invalidi"
         },
         {
           "icona": "🚀",
@@ -100,13 +118,18 @@
         },
         {
           "tipo": "paragrafo",
-          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In basso a sinistra è sempre visibile il profilo con cui si è effettuato l'accesso: nome e cognome dell'utente e tra parentesi il nome dell'azienda consorziata."
+          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In <b>basso a sinistra</b> è sempre visibile l'<b>utente</b> con cui si è entrati, con l'icona di logout. Nel pannello commerciale l'<b>azienda</b> su cui si sta operando è indicata nel pulsante in <b>alto a destra</b>. In alto sono presenti anche il pulsante <b>ASSISTENZA</b> e la campanella delle notifiche, che segnala le esportazioni completate."
         },
         {
           "tipo": "immagine",
           "src": "Immagine03.01.png",
           "alt": "Dashboard ITINERIS",
           "didascalia": "Dashboard principale dopo il login"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Se il tuo profilo gestisce più aziende:</b> in Itineris \"azienda\" indica un'<b>area di lavoro</b>, non necessariamente una società diversa. La stessa società può averne più di una (per esempio una sede regionale e un gruppo provinciale, oppure le linee urbane separate da quelle extraurbane). <b>Prima di operare verifica sempre quale azienda è selezionata in alto a destra</b>: linee, corse e titoli che vedi sono solo quelli di quell'area."
         }
       ]
     }

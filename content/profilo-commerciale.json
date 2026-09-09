@@ -6,7 +6,7 @@
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "Questa sezione descrive il percorso completo per inserire e gestire le linee del servizio di trasporto su <b>Admin Panel Itineris</b>. Le sezioni del menu (Configurazione, Gestione Movimento, Eccezioni, Ordini, Esportazioni) sono indipendenti tra loro e ognuna è descritta in dettaglio nel manuale."
+      "testo": "Il profilo commerciale gestisce l’offerta in <b>Admin Panel Itineris</b>. Configurazione, movimento, eccezioni e titoli sono collegati: un dato a monte può cambiare orari, disponibilità o prezzi. Ordini ed esportazioni permettono di controllare il risultato."
     }
   ],
   "sottosezioni": [
@@ -46,7 +46,7 @@
           "tipo": "tldr",
           "items": [
             "Il flusso completo per attivare una linea online: <b>Configurazione → Gestione Movimento → Eccezioni → Ordini → Esportazioni</b>.",
-            "Ogni sezione e' indipendente: nella prima configurazione segui l'ordine; poi accedi solo a quella che ti serve."
+            "Nella prima configurazione segui l’ordine delle dipendenze; per una modifica successiva verifica anche gli elementi collegati."
           ]
         },
         {
@@ -56,11 +56,12 @@
         {
           "tipo": "lista-numerata",
           "items": [
-            "<b>Configurazione</b> — consultare i parametri regionali configurati da COTRAP (tariffari, calendari scolastici) e inserire le frequenze delle proprie corse. Questa sezione è accessibile dal menu principale.",
-            "<b>Gestione Movimento</b> — inserire i dati operativi: codici contabili, poli (fermate), linee con template di percorso e corse con orari. Questa è la sezione più importante e quella dove si costruisce tutto l'esercizio.",
-            "<b>Eccezioni</b> — gestire variazioni straordinarie: sospensioni, modifiche tariffarie temporanee, variazioni chilometriche.",
-            "<b>Ordini</b> — consultare i biglietti e abbonamenti venduti, verificare lo stato delle corse e monitorare i controlli.",
-            "<b>Esportazioni</b> — scaricare in formato Excel (.xls) o testo (.txt) i dati ricercati nelle sezioni precedenti."
+            "<b>Configurazione</b> — consultare i parametri regionali gestiti da COTRAP (tariffari e calendari scolastici) e inserire le <b>frequenze</b> delle proprie corse. Qui si registrano anche gli <b>utenti dell'app di controllo</b>.",
+            "<b>Gestione Movimento</b> — è la sezione dove si costruisce l'esercizio: codici contabili, poli (fermate), linee con i template di percorso, corse con gli orari, note per i clienti e titoli di viaggio.",
+            "<b>Pubblicare le corse</b> — una corsa creata non è ancora vendibile: va pubblicata, altrimenti non compare sullo shop.",
+            "<b>Eccezioni</b> — gestire le variazioni straordinarie: sospensioni di corse o fermate, variazioni tariffarie e chilometriche, più gli strumenti di controllo delle tariffe.",
+            "<b>Ordini</b> — consultare biglietti e abbonamenti venduti, l'occupazione delle corse e i controlli effettuati a bordo.",
+            "<b>Esportazioni</b> — scaricare i file generati dalle ricerche fatte nelle sezioni precedenti."
           ]
         }
       ]

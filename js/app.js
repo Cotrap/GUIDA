@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         const hash = window.location.hash.slice(1);
         const target = resolveHash(hash);
         if (target) {
-            await loadSection(target.sectionId);
+            await loadSection(target.sectionId, false);
             if (target.subId) {
                 setTimeout(() => {
                     const el = document.getElementById(target.subId);
@@ -131,7 +131,7 @@ window.addEventListener('hashchange', async () => {
     const hash = window.location.hash.slice(1);
     const target = resolveHash(hash);
     if (target && target.sectionId !== state.currentSection) {
-        await loadSection(target.sectionId);
+        await loadSection(target.sectionId, false);
         if (target.subId) {
             setTimeout(() => {
                 const el = document.getElementById(target.subId);
@@ -255,7 +255,7 @@ function renderMenu() {
 // ============================================
 // CARICAMENTO SEZIONI
 // ============================================
-async function loadSection(sectionId) {
+async function loadSection(sectionId, updateHash = true) {
     showLoading(true);
 
     try {
@@ -269,9 +269,16 @@ async function loadSection(sectionId) {
 
         state.currentSection = sectionId;
 
-        // Setta hash senza innescare l'evento hashchange
-        _ignoreNextHashChange = true;
-        window.location.hash = sectionId;
+        // Setta hash senza innescare l'evento hashchange.
+        // Se l'hash e' gia' quello giusto NON va armato il flag: l'evento non arriverebbe
+        // e il flag resterebbe alzato, mangiandosi la navigazione successiva
+        // (era il motivo per cui i link interni alla guida a volte non funzionavano).
+        // Un link a una sottosezione o Indietro ha già aggiornato l'URL:
+        // conservarlo evita una seconda voce nella cronologia.
+        if (updateHash && window.location.hash !== `#${sectionId}`) {
+            _ignoreNextHashChange = true;
+            window.location.hash = sectionId;
+        }
 
         // Aggiorna il titolo del tab del browser
         document.title = content.titolo

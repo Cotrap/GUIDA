@@ -1,3 +1,5 @@
 temp/
 .claude/
 *.backup-*
+.ai/
+AGENTS.md

@@ -4,6 +4,196 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.16",
+      "data": "2026-09-09",
+      "tipo": "major",
+      "titolo": "Procedure e diagnosi allineate",
+      "descrizione": "Revisione delle procedure commerciali, delle FAQ e dei controlli per individuare problemi di configurazione.",
+      "dettagli": [
+        "Diagnostica per corsa assente, prezzi, abbonamenti e modifiche non propagate: controlli con azienda, date e filtri coerenti.",
+        "Frequenze: verificare tipologia, giorni, date e calendario; la denominazione da sola non definisce il servizio.",
+        "Template: aggiornare le sole corse interessate, distinguendo pubblicazione e stato interno; verificare quelle escluse per modifiche dirette.",
+        "Tariffe: distinguere distanza, eccezioni e sconto; un risultato vuoto non certifica l’aggiornamento dell’intera rete.",
+        "Ordini: separati consultazione, controlli e rettifiche; corrette le indicazioni non confermate sullo sblocco.",
+        "Confermate in guida Notifica App Broadcast e Note emissione, con le rispettive precauzioni operative.",
+        "Corretti riferimenti e collegamenti fra procedure e FAQ."
+      ],
+      "sezioni_modificate": [
+        "diagnostica",
+        "faq",
+        "gestione-movimento",
+        "eccezioni",
+        "configurazione",
+        "ordini",
+        "cs-invalidi",
+        "guida-veloce",
+        "profilo-commerciale",
+        "esportazioni"
+      ]
+    },
+    {
+      "versione": "2.15",
+      "data": "2026-09-09",
+      "tipo": "major",
+      "titolo": "Le novità del rilascio: notifiche broadcast e note sui titoli gratuiti",
+      "descrizione": "Le due funzioni annunciate con la mail di rilascio sono ora attive in produzione e sono state documentate: la notifica broadcast a tutti gli utenti dell'app e la nota da associare ai titoli emessi gratuitamente. Nel verificarle sono emerse alcune differenze fra la guida e il pannello, corrette qui.",
+      "dettagli": [
+        "Nuova sezione <b>Risolvi un problema</b>: un indice diagnostico organizzato per sintomo (la corsa non compare, il prezzo non torna, l'abbonamento non si compra, il cliente ha un problema...) con i controlli da fare nell'ordine giusto e il collegamento diretto al punto della guida che spiega come si fa",
+        "Ordini → Biglietti: documentata la nuova tipologia <b>Notifica App Broadcast</b>, che manda l'avviso a tutti gli utenti che hanno installato l'app COTRAP e non solo ai propri clienti. Va concordata con l'Amministratore COTRAP",
+        "Ordini → Biglietti: descritti i campi della maschera <b>Invia notifica a clienti</b>, compreso il limite di 200 caratteri del testo quando si sceglie la notifica broadcast",
+        "Emetti titolo di viaggio: nuova parte <b>Note per titolo</b>. Ad ogni titolo emesso gratuitamente si può associare una nota, che resta visibile solo al commerciale. Se il titolo prevede più quantità la nota non viene duplicata, ma applicata a ciascun titolo",
+        "Ordini: le note si rileggono nel <b>Dettaglio</b> del titolo, campo <b>Note emissione</b>, sia sui biglietti sia sugli abbonamenti",
+        "Ordini → Abbonamenti: corretto l'elenco delle operazioni di riga. Sono <b>Inserisci Controllo</b>, <b>Dettaglio Controllo</b>, <b>Dettaglio</b>, <b>Blocca</b> e <b>Modifica corse</b>. I nomi si riferiscono alle icone di riga, non ai pulsanti interni delle maschere",
+        "Ordini → Abbonamenti: completato l'elenco dei filtri con quelli realmente disponibili, dai codici contabili al numero di corse residue",
+        "Ordini → Abbonamenti: nuovo riquadro sui campi del dettaglio che servono in assistenza, fra cui <b>Importo Da Tariffario</b>, <b>Km Tariffario</b> ed <b>Eccezione Tariffaria</b>, che dicono subito perché un abbonamento costa quello che costa",
+        "Ordini → Biglietti: documentate le due operazioni di riga (Inserisci Controllo e Dettaglio) e i campi aggiuntivi del dettaglio, compreso Importo Non Scontato",
+        "Ordini → Biglietti: segnalato che la ricerca accetta un intervallo di date di <b>massimo 40 giorni</b>, altrimenti compare un messaggio di errore e la ricerca non parte",
+        "Home: aggiunta la scheda della nuova sezione Risolvi un problema"
+      ],
+      "sezioni_modificate": [
+        "ordini",
+        "emetti-titolo-viaggio",
+        "diagnostica",
+        "home"
+      ]
+    },
+    {
+      "versione": "2.14",
+      "data": "2026-09-09",
+      "tipo": "major",
+      "titolo": "Revisione completa della guida, sezione per sezione",
+      "descrizione": "Riletta e corretta tutta la guida confrontandola con il pannello reale e con la documentazione di sistema. Sistemate incoerenze fra quello che la guida elencava e quello che il portale mostra davvero, completati gli elenchi dei filtri e delle esportazioni, e colmati due buchi importanti: i Titoli di Viaggio mancavano dalla Guida Veloce e la sezione Ordini era descritta come di sola consultazione.",
+      "dettagli": [
+        "Ordini: corretta l'affermazione secondo cui la sezione sarebbe di sola consultazione. Dagli abbonamenti si inseriscono controlli, si blocca un titolo e si aggiungono o scalano corse",
+        "Ordini: elencata anche Stato Controlli, che mancava fra le voci della sezione",
+        "Ordini → Biglietti: completato l'elenco dei filtri con quelli realmente presenti (Data Inizio/Fine Partenza, comune e frazione di arrivo, stato pagamento, canale, vidimato a bordo, stato biglietto, tipo anomalia, con cambio, azione controllore)",
+        "Ordini → Biglietti: documentato il pulsante Invia notifica ad Utenti, con i suoi campi e l'avvertenza che la comunicazione parte davvero e non si può richiamare",
+        "Ordini → Abbonamenti: precisato che un abbonamento bloccato non si sblocca dal profilo commerciale",
+        "Guida Veloce: aggiunto il passo mancante sull'attivazione dei Titoli di Viaggio. Pubblicare le corse fa comparire i biglietti, ma gli abbonamenti vanno richiesti e attivati a parte",
+        "Guida Veloce: nel passo sulla Configurazione aggiunti gli utenti dell'app di controllo",
+        "Configurazione: l'elenco delle voci dimenticava Utenti App Controlli, che pure era già documentata sotto; corretto anche il riepilogo che diceva che il consorziato gestisce una sola voce",
+        "Configurazione → Tariffari: spiegato come il tariffario si lega alle proprie corse, cioè per fasce chilometriche a partire dai km del percorso",
+        "Configurazione → Frequenze Corsa: aggiunta l'avvertenza che conta la Tipologia e non il nome dato alla frequenza",
+        "Esportazioni: completato l'elenco dei file con Corse, PoliTemplate ed Eccezioni tariffarie Abbonamenti; spiegato che la campanella avvisa quando un'esportazione è pronta; aggiunta la nota su Excel per i file che hanno estensione .xls ma sono testo separato da tabulazioni",
+        "Home: corretta la descrizione della card Ordini, aggiunte le card Emetti Titolo di Viaggio e CS Invalidi che mancavano, e spiegato che in Itineris «azienda» è un'area di lavoro, per chi ne gestisce più di una",
+        "Profilo Commerciale: l'iter di creazione di una linea ora comprende la pubblicazione delle corse e i titoli di viaggio, e cita anche la voce Emetti titolo di viaggio",
+        "Eccezioni tariffarie Abbonamenti: non riguardano solo i mensili, l'importo si imposta per raggruppamento tariffario",
+        "Eccezioni Chilometriche: spiegato perché la data può essere solo il primo del mese e cosa indica davvero la colonna In elaborazione",
+        "Controllo Tariffario Abbonamenti: riscritte le indicazioni su cosa fare quando una tratta non ha abbonamento o quando andata e ritorno hanno importi diversi",
+        "Sezione Contabile: il riepilogo ora cita anche la funzione Credito",
+        "FAQ: corretta la risposta che diceva che gli abbonamenti si attivano da soli. Il titolo va prima richiesto all'Amministratore COTRAP e poi attivato in Gestione Movimento → Titoli di viaggio",
+        "FAQ: tolto il riferimento a un flag «Richiede Tessera» che nel pannello non esiste. Se un abbonamento richiede la MyCard si legge nella Categoria Calcolo Sconto e nel campo Visibilità del titolo (Account oppure Account_Tessera)",
+        "FAQ e Gestione Movimento: la linea multitratta non riguarda aziende diverse, ma due proprie linee che hanno un codice contabile in comune. Corretti anche gli esempi",
+        "FAQ: tolta l'indicazione, mai verificata, di evitare Safari",
+        "FAQ: precisato che il selettore dell'azienda in alto a destra è quello del pannello commerciale",
+        "FAQ: spiegata la differenza fra Statistiche linee, che conta per data di emissione, e Statistiche corse CS, che conta per data di partenza",
+        "Gestione Movimento → Titoli di Viaggio: corretto l'elenco delle colonne. Raggruppamento Tariffario Urbano ed Extra Urbano sono due colonne distinte, la Tipologia vale Biglietto o Abbonamento e non mensile o settimanale, e lo Stato attivazione ha quattro valori come quello delle corse",
+        "Gestione Movimento → Titoli di Viaggio: chiarito che nella configurazione i campi in alto sono in sola lettura e che i riquadri su cui interviene il consorziato sono quattro: linee e corse abilitate, linee e corse da escludere, codici contabili abilitati, codici contabili da escludere",
+        "Gestione Movimento → Titoli di Viaggio: aggiunti i filtri della pagina, utili per trovare un titolo rimasto in uno stato intermedio",
+        "CS Invalidi e Gestione Movimento: il biglietto CS ordinario non è legato alle tessere 1 e 15, che sono invece la categoria calcolo sconto degli abbonamenti standard",
+        "Ordini: segnalate le voci Statistiche linee e Statistiche corse CS, che compaiono nel menu di alcuni profili",
+        "Sezione Contabile: indicato che Statistiche linee compare anche nel menu Ordini del pannello commerciale",
+        "Aggiunte le didascalie alle 14 immagini che ne erano prive, in Configurazione e Gestione Movimento: ora ogni schermata dice cosa mostra"
+      ],
+      "sezioni_modificate": [
+        "home",
+        "profilo-commerciale",
+        "configurazione",
+        "esportazioni",
+        "ordini",
+        "guida-veloce",
+        "eccezioni",
+        "sezione-contabile",
+        "faq",
+        "cs-invalidi",
+        "gestione-movimento"
+      ]
+    },
+    {
+      "versione": "2.13",
+      "data": "2026-09-09",
+      "tipo": "minor",
+      "titolo": "Spiegato perché il sistema ricalcola, i due campi dei km e il campo Sosta",
+      "descrizione": "Aggiunte le spiegazioni che mancavano sul funzionamento del sistema, ricavate dalle specifiche di progetto di Itineris: perché dopo una modifica compare un contatore e servono gli stati intermedi, che differenza c'è tra Km tariffario e Km effettivi, e a cosa serve davvero il campo Sosta.",
+      "dettagli": [
+        "Comprendere il Sistema: nuovo riquadro che spiega perché alcune operazioni non sono immediate. Itineris tiene precalcolate tutte le combinazioni di viaggio, quindi ogni modifica a monte le fa ricostruire: da qui il contatore In elaborazione e gli stati In attivazione / In disattivazione",
+        "Creazione del Template: nuovo riquadro sui due campi dei chilometri. Km tariffario è il chilometraggio da contratto ed è quello che determina il prezzo; Km effettivi è la distanza reale e serve come controllo",
+        "Creazione del Template: spiegato a cosa serve il campo Sosta, cioè a costruire le coincidenze fra corse. Modificarlo o azzerarlo può far sparire collegamenti dallo shop",
+        "Titoli di Viaggio: precisate le definizioni contrattuali degli abbonamenti — il 42 e il 10 sono gli abbonamenti ridotti, validi per non più di cinque giorni a settimana",
+        "Configurazione: la sottosezione Frequenza Corsa è stata rinominata Frequenze Corsa, come la voce reale del menu",
+        "Uniformata in tutta la guida la dicitura del pulsante Pubblica\\Nascondi, che prima era scritta con la barra al contrario",
+        "Aggiunto lo script verifica-guida.py: un controllo automatico da eseguire prima di pubblicare, che blocca regressioni, contenuti fuori ambito e diciture sbagliate dei comandi"
+      ],
+      "sezioni_modificate": [
+        "gestione-movimento",
+        "configurazione",
+        "faq"
+      ]
+    },
+    {
+      "versione": "2.12",
+      "data": "2026-09-09",
+      "tipo": "major",
+      "titolo": "Correzione: i titoli per invalidi sono gratuiti. Sezione Contabile completata",
+      "descrizione": "Corretta l'informazione sul costo dei titoli di viaggio per persone con disabilità: sono gratuiti ai sensi dell'art. 30 comma 3 della L.R. Puglia n. 18/2002, come previsto dalle Condizioni Generali di Trasporto COTRAP. Completata la Sezione Contabile con le funzioni Credito e Spese Abbonamenti Agenzie.",
+      "dettagli": [
+        "CORREZIONE PRINCIPALE — cs-invalidi.json: rimossa l'affermazione errata secondo cui il CSI sarebbe «sempre a prezzo pieno» e lo sconto si applicherebbe solo a CSIA e CSUIA. I titoli per invalidi (CSI, CSIA, CSUI, CSUIA) sono gratuiti per il cliente",
+        "cs-invalidi.json: precisato il limite reale — 2 biglietti al giorno (andata e ritorno) più altri 2 per l'accompagnatore quando l'utente ne ha diritto",
+        "cs-invalidi.json: aggiunto il riquadro sulla tessera MyCard richiesta (portale mycard.cotrap.eu, 10,00 €, personale e non cedibile, validità 12 mesi per le categorie art. 30 c. 3)",
+        "cs-invalidi.json: riformulata la nota su chi vuole acquistare un CS ordinario a pagamento",
+        "gestione-movimento.json → Titoli di Viaggio: indicata la gratuità accanto a CSI, CSIA, CSUI e CSUIA",
+        "gestione-movimento.json → Titoli di Viaggio: indicata la gratuità degli abbonamenti invalidi, aggiunto l'Abb. Settimanale Invalidi/12 e chiarito che l'elenco non è esaustivo perché dipende da cosa l'Amministratore ha abilitato per l'azienda",
+        "sezione-contabile.json: aggiunta la funzione Credito tra quelle dell'ambiente contabile, che prima non era citata",
+        "sezione-contabile.json: nuova sottosezione Spese Abbonamenti Agenzie con la procedura completa di esportazione per anno contabile",
+        "sezione-contabile.json e faq.json: rimossa l'indicazione non verificata sulla posizione del nome azienda nel profilo contabile; resta la verifica dell'utente in basso a sinistra",
+        "home.json: precisato che il selettore dell'azienda in alto a destra riguarda il pannello commerciale"
+      ],
+      "sezioni_modificate": [
+        "cs-invalidi",
+        "gestione-movimento",
+        "sezione-contabile",
+        "faq",
+        "home"
+      ]
+    },
+    {
+      "versione": "2.11",
+      "data": "2026-09-08",
+      "tipo": "major",
+      "titolo": "Correzione dei km del template, degli stati della corsa e degli screenshot",
+      "descrizione": "Revisione basata su verifiche dirette nel portale Itineris. Corretta la regola dei km del template (sono cumulativi dal capolinea, non tratta per tratta), chiarita la differenza tra Stato Corsa e Stato Attivazione, riassegnati tutti gli screenshot delle sezioni aggiunte con la v2.2 e aggiornati i riferimenti all'interfaccia.",
+      "dettagli": [
+        "CORREZIONE PRINCIPALE — km del template: erano descritti come «km tra fermata e fermata», in realtà sono cumulativi dal capolinea come i minuti. Aggiornati TL;DR, avvisi, box-esempio, lista errori comuni, Guida Veloce e 5 FAQ",
+        "Riscritta la regola sui «km 0»: due fermate con lo stesso codice contabile mostrano lo stesso valore di km, che non va azzerato; tra fermate con lo stesso codice non nasce comunque tariffa",
+        "Corretta la FAQ che consigliava di azzerare i km nel template per bloccare una sottotratta: con km cumulativi falserebbe tutte le distanze a valle",
+        "Stato Corsa (Attiva/Sospesa) e Stato Attivazione (Non attiva/In attivazione/Attiva/In disattivazione) ora sono documentati come campi distinti, con i valori reali. Riscritta la FAQ che li dava per sinonimi",
+        "Chiarito che «disattivare le corse» per l'aggiornamento massivo significa portare lo Stato Attivazione a «Non attiva» con l'icona Pubblica\\Nascondi",
+        "Corretta la FAQ che affermava che modificando il template tutte le corse si aggiornano insieme",
+        "Rimossa l'indicazione errata secondo cui Attivazione\\Disattivazione Automatica sarebbe disponibile solo per le frequenze Scolastiche",
+        "Aggiunto avviso: la denominazione di una frequenza può non corrispondere alla sua tipologia (es. una frequenza chiamata «FESTIVO» può essere di tipologia Giornaliera)",
+        "Screenshot: riassegnati tutti i 12 file aggiornamento-* (eccezioni chilometriche, modifica template massivo, multitratta, titoli gratuiti), che erano associati al passo sbagliato. Aggiunta l'immagine della ricerca multitratta su Portale Clienti, prima inutilizzata",
+        "Titoli gratuiti: rimossa l'immagine con didascalia inventata sulla stampa PDF e aggiunta la schermata del Portale Clienti aperto con privilegi admin",
+        "Aggiornata la descrizione dell'interfaccia: l'utente è in basso a sinistra, l'azienda nel selettore in alto a destra (Home, Sezione Contabile, FAQ)",
+        "Aggiunti i pulsanti ASSISTENZA e la campanella delle notifiche esportazioni",
+        "Linee: aggiunte le due operazioni del template finora non documentate, «Aggiorna Corse Inattive del Template» ed «Esporta», e usati i nomi reali dei comandi",
+        "Corse: documentati i campi Codice turno e Note; il campo Mezzo è ora descritto come facoltativo",
+        "Corretta la dicitura «tessera 1,15»: sono le due tessere 1 e 15 (Tessera Elettronica Normale), non un importo",
+        "CS Invalidi: precisato che se i titoli CSI/CSIA/CSUI/CSUIA non compaiono vanno richiesti all'Amministratore, perché non sono abilitati per tutte le aziende",
+        "Codici contabili: chiarito che uno stesso Comune può avere più codici, non solo per le frazioni",
+        "Ripristinato lo script genera-bundle.ps1 nella cartella principale e rigenerato js/data.js, che era fermo alla v2.6 e non conteneva la sezione CS Invalidi"
+      ],
+      "sezioni_modificate": [
+        "gestione-movimento",
+        "faq",
+        "eccezioni",
+        "emetti-titolo-viaggio",
+        "cs-invalidi",
+        "guida-veloce",
+        "home",
+        "sezione-contabile"
+      ]
+    },
+    {
       "versione": "2.10",
       "data": "2026-03-30",
       "tipo": "fix",

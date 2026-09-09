@@ -1,15 +1,17 @@
 {
   "id": "ordini",
   "titolo": "Ordini",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-09-09",
   "nuovo": false,
   "contenuto": [
     {
       "tipo": "tldr",
       "items": [
-        "Sezione di sola consultazione: nessuna modifica operativa possibile qui.",
-        "Funzioni: <b>Biglietti</b> (singoli titoli), <b>Abbonamenti</b>, <b>Stati Occupazionali Corse</b>, <b>Statistiche</b>.",
-        "Esporta i risultati con 'Esporta' → il file XLS viene generato e recuperabile nella sezione Esportazioni."
+        "Qui si <b>consulta</b> quello che è stato venduto: biglietti, abbonamenti, occupazione delle corse e controlli fatti a bordo.",
+        "Cinque voci sempre presenti: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche Biglietti Venduti / Controllati</b>. Alcuni profili vedono anche <b>Statistiche linee</b> e <b>Statistiche corse CS</b>.",
+        "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
+        "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
+        "Le ricerche accettano un intervallo di date di <b>massimo 40 giorni</b>."
       ]
     },
     {
@@ -23,13 +25,18 @@
       "src": "Immagine11.png",
       "alt": "Sottomenu Ordini",
       "didascalia": "Opzioni di ricerca disponibili"
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "<b>Se nel tuo menu compaiono anche Statistiche linee e Statistiche corse CS:</b> sono due riepiloghi del venduto che non tutti i profili hanno abilitati. <b>Statistiche linee</b> conta i titoli <b>per data di emissione</b>, cioè in base a quando sono stati acquistati; <b>Statistiche corse CS</b> conta i biglietti di corsa semplice <b>per data di partenza</b>, cioè in base a quando si viaggia. È normale che i due numeri non coincidano: rispondono a due domande diverse. Entrambe si filtrano per linea, corsa, comune e frazione di partenza e di arrivo, tipologia di pagamento e titolo di viaggio, e si scaricano con <b>Esporta</b>."
     }
   ],
   "sottosezioni": [
     {
       "id": "biglietti",
       "titolo": "Biglietti",
-      "aggiornato": "2026-03-30",
+      "aggiornato": "2026-09-09",
       "nuovo": false,
       "contenuto": [
         {
@@ -64,9 +71,9 @@
           "tipo": "lista",
           "items": [
             "<b>Data Inizio Ordine / Data Fine Ordine:</b> filtra per data di acquisto del biglietto",
-            "<b>Data di partenza:</b> filtra per la data del viaggio (indipendentemente da quando è stato acquistato)",
+            "<b>Data Inizio Partenza / Data Fine Partenza:</b> filtra per la data del viaggio, indipendentemente da quando è stato acquistato",
             "<b>Azienda:</b> campo non modificabile — il sistema identifica automaticamente il consorziato loggato",
-            "<b>Linea, Corsa, Comune di partenza, Frazione:</b> filtri per restringere la ricerca a un percorso specifico",
+            "<b>Linea, Corsa, Comune e Frazione di partenza, Comune e Frazione di arrivo:</b> filtri per restringere la ricerca a un percorso preciso",
             "<b>Tipo di pagamento:</b> <b>Online</b> = biglietti acquistati con carta di credito dal portale web o dall'app; <b>Credito</b> = biglietti acquistati usando il saldo ricariche dell'app (funzione disponibile solo su app); <b>Gratuito</b> = titoli emessi gratuitamente da profilo commerciale",
             "<b>Acquirente:</b> ricerca per nome e cognome o indirizzo email del cliente",
             "<b>N° Ordine:</b> un ordine può contenere più biglietti (es. andata + ritorno). Ogni biglietto è identificato dal numero ordine + una lettera finale (es. 1234A, 1234B)",
@@ -76,7 +83,29 @@
             "<b>Numero tessera:</b> filtra per numero tessera MyCard del passeggero — utile per trovare tutti i biglietti invalidi di un utente specifico",
             "<b>Codice fiscale:</b> filtra per codice fiscale del passeggero",
             "<b>FID:</b> identificativo univoco della tessera nel sistema",
+            "<b>Stato pagamento:</b> Pagato, Attesa Pagamento, Annullato, Rimborsato e gli altri stati dell'ordine",
+            "<b>Canale:</b> App o Portale Web",
+            "<b>Vidimato a bordo:</b> per distinguere i titoli effettivamente convalidati",
+            "<b>Stato Biglietto</b> e <b>Tipo Anomalia:</b> per isolare i titoli con problemi",
+            "<b>Con Cambio:</b> per trovare i viaggi acquistati con cambio di linea",
+            "<b>Azione Controllore:</b> l'esito registrato dal controllo a bordo",
             "<b>Progressivo biglietto:</b> non utilizzare — è un identificativo numerico interno non utile per le ricerche operative"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Intervallo massimo 40 giorni:</b> se le date coprono un periodo più lungo la ricerca non parte e compare il messaggio <i>«Specificare un intervallo di massimo 40gg»</i>. Per un periodo più ampio si fanno più ricerche, oppure si esporta a blocchi."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Nella colonna <b>Operazioni</b> di ogni riga ci sono due comandi:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Inserisci Controllo</b> — registra un controllo sul biglietto dall'account commerciale, con un commento",
+            "<b>Dettaglio</b> — apre la scheda completa del titolo"
           ]
         },
         {
@@ -88,20 +117,59 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "È possibile esportare i risultati della ricerca cliccando su <b>\"Esporta\"</b>: viene generato un file <b>.xls</b> con tutti i dettagli dei biglietti trovati, recuperabile poi nella sezione Esportazioni. Il campo <b>\"Emesso da Admin\"</b> identifica i titoli emessi gratuitamente da profilo commerciale."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Inviare una comunicazione agli utenti</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Nella pagina Biglietti, accanto al pulsante <b>Filtri</b>, c'è l'icona <b>Invia notifica ad Utenti</b>. Apre la maschera <b>Invia notifica a clienti</b>, con cui si comunica direttamente con l'utenza."
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-broadcast-1.png",
+          "alt": "Il pulsante di invio notifica nella pagina Biglietti",
+          "didascalia": "Il pulsante <b>Invia notifica ad Utenti</b>, accanto a <b>Filtri</b>"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Oggetto</b> — il titolo della comunicazione",
+            "<b>Testo del messaggio</b> — il corpo dell'avviso. Scegliendo la notifica broadcast l'etichetta del campo diventa <i>Testo del Messaggio max 200 caratteri</i>: è il limite dell'avviso che arriva sull'app",
+            "<b>Url</b> — indirizzo facoltativo da collegare alla notifica",
+            "<b>Tipo Notifica</b> — <b>Email</b>, <b>Notifica App</b>, <b>Notifica App Broadcast</b>, <b>Tutte Le Piattaforme</b>"
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-broadcast-2.png",
+          "alt": "La maschera Invia notifica a clienti con la tendina Tipo Notifica aperta",
+          "didascalia": "La maschera di invio, con le quattro tipologie del campo <b>Tipo Notifica</b>"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Novità — Notifica App Broadcast:</b> questa tipologia manda l'avviso a <b>tutti gli utenti che hanno installato l'app COTRAP</b>, non solo ai propri clienti. È pensata per le comunicazioni a livello consortile: <b>concordala sempre con l'Amministratore COTRAP</b> prima di usarla."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Prima dell’invio:</b> verifica tipo di notifica, destinatari, oggetto e testo. Non usare l’invio come prova. Il pulsante <b>Chiudi</b> permette di uscire dalla maschera senza inviare."
         }
       ]
     },
     {
       "id": "abbonamenti",
       "titolo": "Abbonamenti",
-      "aggiornato": "2026-02-23",
+      "aggiornato": "2026-09-09",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "tldr",
           "items": [
             "Cerca abbonamenti per data emissione, validita', n. tessera, tipologia e metodo di pagamento.",
-            "Da qui puoi: inserire un controllo manuale, obliterare una corsa, bloccare un abbonamento in caso di frode, aggiungere o scalare corse.",
+            "Da qui puoi: inserire un controllo manuale, rivedere i controlli registrati, bloccare un abbonamento in caso di frode, aggiungere o scalare corse.",
             "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale."
           ]
         },
@@ -130,12 +198,27 @@
         {
           "tipo": "lista",
           "items": [
-            "<b>Inserisci controllo:</b> permette di inserire un controllo dall'account commerciale con eventuale commento",
-            "<b>Oblitera:</b> permette lo scalo di una corsa dall'abbonamento",
-            "<b>Visualizza vidimazioni:</b> mostra quante vidimazioni sono state effettuate",
-            "<b>Dettaglio abbonamento:</b> permette di vedere il dettaglio completo dell'abbonamento",
-            "<b>Blocca:</b> blocca l'abbonamento — da utilizzare in caso di uso fraudolento",
-            "<b>Aggiungi/Scala corse:</b> permette di aggiungere o scalare delle corse (utile in caso di macchinetta vidimatrice rotta, oppure come alternativa a un rimborso per una corsa non utilizzata per responsabilità del vettore)"
+            "<b>Inserisci Controllo</b> — operazione per registrare un controllo amministrativo; non è una semplice consultazione",
+            "<b>Dettaglio Controllo</b> — quando presente, apre i controlli registrati",
+            "<b>Dettaglio</b> — apre la scheda completa dell’abbonamento",
+            "<b>Blocca</b> — modifica l’utilizzabilità del titolo. Usarlo per un caso accertato secondo la procedura aziendale; per l’eventuale rimozione del blocco rivolgersi all’Amministratore",
+            "<b>Modifica corse</b> — permette di rettificare il saldo. Prima verificare controlli, residuo, motivazione e autorizzazione aziendale; dopo confrontare il saldo risultante"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Cosa si legge nel dettaglio di un abbonamento</b>"
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "I campi che servono in assistenza",
+          "contenuto": [
+            "<b>Importo Pagato</b> e <b>Importo Da Tariffario</b>: confrontarli insieme a categoria sconto, eccezioni ed emissione da Admin. La differenza non dimostra da sola l’applicazione di uno sconto",
+            "<b>Km Tariffario</b>: i chilometri con cui è stato calcolato il prezzo. Se il prezzo non torna, si controlla prima questo",
+            "<b>Eccezione Tariffaria</b>: se valorizzato, identifica l’eccezione registrata per il titolo; confrontarla con la configurazione valida alla data di emissione",
+            "<b>Raggruppamento Tariffario</b>, <b>Categoria Calcolo Sconto</b>, <b>Numero Corse</b>, <b>Validità</b>, <b>Urbano</b>",
+            "<b>Data Blocco da Admin</b>: valorizzata solo se l'abbonamento è stato bloccato",
+            "<b>Emesso Da Admin Panel</b> e <b>Note emissione</b>: dicono se il titolo è stato emesso gratuitamente dal profilo commerciale e con quale motivazione"
           ]
         }
       ]

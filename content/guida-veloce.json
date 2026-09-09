@@ -19,7 +19,7 @@
         {
           "numero": 2,
           "titolo": "Configurazione",
-          "descrizione": "Nella sezione <b>Configurazione</b> (voce separata nel menu laterale) consulta i tariffari regionali, i calendari scolastici e inserisci le frequenze delle proprie corse (es. giornaliera, feriale, scolastica)."
+          "descrizione": "Nella sezione <b>Configurazione</b> consulta i tariffari regionali e i calendari scolastici, poi inserisci le <b>frequenze</b> delle tue corse (giornaliera, feriale, scolastica…). Qui si registrano anche gli <b>utenti dell'app di controllo</b>."
         },
         {
           "numero": 3,
@@ -29,7 +29,7 @@
         {
           "numero": 4,
           "titolo": "Creazione Linee e Template",
-          "descrizione": "Crea le linee con denominazione, codice e tipologia (Regionale/Provinciale/Comunale). Per ogni linea crea il template: il modello del percorso con tutte le fermate, i km tra fermata e fermata e i minuti dal capolinea (non dalla fermata precedente). Crea anche il template di ritorno usando 'Duplica e Inverti'."
+          "descrizione": "Crea le linee con denominazione, codice e tipologia (Regionale/Provinciale/Comunale). Per ogni linea crea il template: il modello del percorso con tutte le fermate, indicando per ciascuna i km e i minuti <b>contati dal capolinea</b> (mai dalla fermata precedente). Crea anche il template di ritorno usando 'Duplica e Inverti'."
         },
         {
           "numero": 5,
@@ -39,15 +39,20 @@
         {
           "numero": 6,
           "titolo": "Pubblicazione delle Corse",
-          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili sullo shop COTRAP (<a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>). In Gestione Movimento → Corse, cliccare sull'icona 'Pubblica/Nascondi' a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo stato diventa 'Attiva'. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
+          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili sullo shop COTRAP (<a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>). In Gestione Movimento → Corse, cliccare sull'icona <b>Pubblica\\Nascondi</b> a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo <i>Stato Attivazione</i> diventa &quot;Attiva&quot;. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
         },
         {
           "numero": 7,
+          "titolo": "Attivazione dei Titoli di Viaggio",
+          "descrizione": "Verifica i <b>titoli di viaggio</b> per biglietti e abbonamenti: devono essere abilitati dall’Amministratore, configurati sulle linee e tratte previste e attivati dall’azienda. <b>Pubblicare la corsa non sostituisce l’attivazione del titolo.</b> Controlla infine tratta, data, prezzo e disponibilità sulla biglietteria."
+        },
+        {
+          "numero": 8,
           "titolo": "Gestione Eccezioni",
           "descrizione": "Se una corsa deve essere sospesa (es. festività, guasto), utilizza la sezione Eccezioni per gestire sospensioni temporanee senza eliminare la corsa."
         },
         {
-          "numero": 8,
+          "numero": 9,
           "titolo": "Monitoraggio Ordini e Dati Contabili",
           "descrizione": "Controlla gli ordini ricevuti nella sezione Ordini. Per i dati contabili e il venduto, accedi alla Sezione Contabile con le credenziali dedicate."
         }

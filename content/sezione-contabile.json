@@ -7,9 +7,10 @@
     {
       "tipo": "tldr",
       "items": [
-        "Account separato dall'account commerciale: credenziali diverse, fornite da COTRAP.",
-        "Serve per consultare ordini, biglietti venduti ed estrarre dati contabili — nessuna modifica operativa possibile.",
-        "Controlla di essere nell'account giusto: nome e azienda sono visibili in <b>basso a sinistra</b>."
+        "Account separato da quello commerciale: credenziali diverse, fornite da COTRAP.",
+        "Serve a consultare ordini e titoli venduti, a seguire il <b>credito</b> degli utenti e a estrarre i dati contabili da portare nel gestionale.",
+        "È un ambiente di sola consultazione: qui non si modifica nulla dell'esercizio.",
+        "Prima di operare controlla di essere nell'account giusto: il nome dell'utente è indicato in basso a sinistra."
       ]
     },
     {
@@ -19,7 +20,7 @@
     {
       "tipo": "avviso",
       "stile": "warning",
-      "testo": "<b>Attenzione:</b> verificare sempre di essere nell'account corretto controllando la scritta in <b>basso a sinistra</b>: mostra Nome e Cognome dell'utente e tra parentesi il nome dell'azienda consorziata. Se si è accidentalmente nell'account commerciale, effettuare il logout e accedere con le credenziali contabili."
+      "testo": "<b>Attenzione:</b> verificare sempre di essere nell'account corretto controllando l'indicazione dell'utente in <b>basso a sinistra</b>. Se si è accidentalmente nell'account commerciale, effettuare il logout e accedere con le credenziali contabili."
     },
     {
       "tipo": "immagine",
@@ -33,13 +34,14 @@
     },
     {
       "tipo": "paragrafo",
-      "testo": "Le funzioni di questo ambiente sono: <b>ORDINI</b> ed <b>ESPORTAZIONI</b>."
+      "testo": "Le funzioni di questo ambiente sono: <b>ORDINI</b>, <b>CREDITO</b> ed <b>ESPORTAZIONI</b>."
     },
     {
       "tipo": "lista",
       "items": [
-        "In <b>ORDINI</b> è possibile effettuare le ricerche relative agli ordini, dati contabili, biglietti e statistiche venduto",
-        "In <b>Esportazioni</b>, potranno essere visionate e scaricate i dati ricercati nelle precedenti funzioni"
+        "In <b>ORDINI</b> è possibile effettuare le ricerche relative a ordini, dati contabili, biglietti, abbonamenti, spese abbonamenti agenzie e statistiche venduto",
+        "In <b>CREDITO</b> si consultano il credito residuo e i movimenti di ricarica degli utenti",
+        "In <b>ESPORTAZIONI</b> si visionano e si scaricano i file generati dalle ricerche precedenti"
       ]
     },
     {
@@ -237,6 +239,42 @@
       ]
     },
     {
+      "id": "spese-abbonamenti-agenzie",
+      "titolo": "Spese Abbonamenti Agenzie",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Estrae i dati contabili delle <b>spese per abbonamenti sostenute tramite le agenzie</b>, per un intero anno.",
+            "Si sceglie l'<b>anno contabile</b> e si preme <b>Esporta</b>: il file non parte subito, si recupera in <b>Esportazioni</b>.",
+            "L'ultima esportazione richiesta compare sempre in cima all'elenco."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa funzione estrae dal portale i dati contabili relativi alle <b>spese abbonamenti agenzie</b> per un determinato anno. Il file generato può poi essere importato nei software di gestione aziendale."
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "Accedere con le credenziali del <b>profilo contabile</b> (diverse da quelle commerciali)",
+            "Dal menu, aprire <b>Ordini → Spese Abbonamenti Agenzie</b>",
+            "Compilare il campo <b>Anno Contabile</b> con l'anno desiderato (es. 2025) e verificare gli altri filtri",
+            "Cliccare su <b>Esporta</b> e attendere l'elaborazione senza chiudere la pagina",
+            "Aprire <b>Esportazioni</b>: l'ultima richiesta è in cima all'elenco",
+            "Cliccare sull'icona di download a destra della riga per scaricare il file"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Come per tutte le altre esportazioni, il file <b>non viene scaricato subito</b>: viene preparato dal sistema e reso disponibile nella sezione Esportazioni, da cui resta scaricabile anche in seguito."
+        }
+      ]
+    },
+    {
       "id": "statistiche-mensili",
       "titolo": "Statistiche Mensili",
       "aggiornato": "2026-03-03",
@@ -292,6 +330,11 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "Anche le statistiche linee <b>ignorano i titoli emessi gratuitamente</b> da profilo commerciale."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Dove si trova:</b> la stessa voce compare anche nel menu <b>Ordini</b> del pannello commerciale, quando il profilo è abilitato a vederla. Il conteggio è <b>per data di emissione</b> del titolo, non per data di viaggio."
         }
       ]
     },
