@@ -11,7 +11,7 @@
         "Le voci del menu Ordini sono sette: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche linee</b>, <b>Statistiche corse CS</b>, <b>Statistiche Biglietti Venduti / Controllati</b>.",
         "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
         "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
-        "Le ricerche accettano un intervallo di date di <b>massimo 40 giorni</b>."
+        "In <b>Biglietti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi si fanno più ricerche."
       ]
     },
     {

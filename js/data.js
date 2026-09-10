@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-09-10 10:24:18
+ * Generato il: 2026-09-10 14:07:18
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -194,6 +194,14 @@ var BUNDLED_DATA = {
   "titolo": "Registro modifiche",
   "descrizione": "Appunti brevi su che cosa è cambiato nella guida, per chi la mantiene.",
   "modifiche": [
+    {
+      "versione": "2.19",
+      "data": "2026-09-10",
+      "titolo": "Correzione del limite di 40 giorni",
+      "dettagli": [
+        "Ordini: il limite di 40 giorni riguarda la ricerca Biglietti, non tutte le ricerche"
+      ]
+    },
     {
       "versione": "2.18",
       "data": "2026-09-10",
@@ -3727,7 +3735,7 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.18",
+  "versione": "2.19",
   "ultimo_aggiornamento": "2026-09-10",
   "voci": [
     {
@@ -3826,7 +3834,7 @@ var BUNDLED_DATA = {
         "Le voci del menu Ordini sono sette: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche linee</b>, <b>Statistiche corse CS</b>, <b>Statistiche Biglietti Venduti / Controllati</b>.",
         "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
         "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
-        "Le ricerche accettano un intervallo di date di <b>massimo 40 giorni</b>."
+        "In <b>Biglietti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi si fanno più ricerche."
       ]
     },
     {

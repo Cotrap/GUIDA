@@ -4,6 +4,14 @@
   "descrizione": "Appunti brevi su che cosa è cambiato nella guida, per chi la mantiene.",
   "modifiche": [
     {
+      "versione": "2.19",
+      "data": "2026-09-10",
+      "titolo": "Correzione del limite di 40 giorni",
+      "dettagli": [
+        "Ordini: il limite di 40 giorni riguarda la ricerca Biglietti, non tutte le ricerche"
+      ]
+    },
+    {
       "versione": "2.18",
       "data": "2026-09-10",
       "titolo": "Menu come quello di Itineris, niente doppioni",
