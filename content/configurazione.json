@@ -187,6 +187,7 @@
           "items": [
             "<b>Denominazione:</b> nome descrittivo della frequenza (es. Giornaliera, Giornaliera estiva, Feriale lun-ven, Feriale sabato, Scolastica, Non scolastica)",
             "<b>Tipologia:</b> selezionare dal menu a tendina tra Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva. Per le tipologie Feriale e Giornaliera è possibile personalizzare i giorni di validità settimanale",
+            "<b>Giorni:</b> caselle da <b>Lunedì</b> a <b>Domenica</b>. Sono i giorni in cui la frequenza vale: una frequenza feriale del solo sabato ha selezionata soltanto la casella <b>Sabato</b>",
             "<b>Data inizio validità / Data fine validità:</b> compilare solo se la frequenza ha un range temporale personalizzato (es. servizio estivo con date precise). Non compilare per frequenze Scolastiche o Non Scolastiche: in quel caso il sistema usa automaticamente il calendario scolastico configurato da COTRAP"
           ]
         },

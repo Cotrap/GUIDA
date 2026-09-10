@@ -325,7 +325,7 @@
             {
               "numero": 1,
               "titolo": "Trova il titolo",
-              "descrizione": "In <a href=\"#biglietti\">Ordini → Biglietti</a> o <a href=\"#abbonamenti\">Abbonamenti</a> usa un identificativo del titolo e i filtri pertinenti. Il limite di <b>40 giorni</b> è previsto nella ricerca <b>Biglietti</b>; nelle altre pagine segui la validazione indicata dal pannello."
+              "descrizione": "In <a href=\"#biglietti\">Ordini → Biglietti</a> o <a href=\"#abbonamenti\">Abbonamenti</a> usa un identificativo del titolo e i filtri pertinenti. In <b>Biglietti</b> e <b>Abbonamenti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi fai più ricerche."
             },
             {
               "numero": 2,
@@ -383,7 +383,7 @@
             {
               "numero": 4,
               "titolo": "Restringi le ricerche",
-              "descrizione": "Riduci il periodo e filtra linea o titolo. In <b>Ordini → Biglietti</b> rispetta il limite di 40 giorni; non estenderlo automaticamente alle altre pagine."
+              "descrizione": "Riduci il periodo e filtra linea o titolo. In <b>Biglietti</b>, <b>Abbonamenti</b> e <b>Statistiche Biglietti Venduti / Controllati</b> il massimo è 40 giorni; in <b>Statistiche linee</b> e <b>Statistiche corse CS</b> un periodo di mesi può non restituire dati (compare «Pagina non trovata.»)."
             },
             {
               "numero": 5,

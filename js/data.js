@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-09-10 14:07:18
+ * Generato il: 2026-09-10 14:37:41
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -194,6 +194,16 @@ var BUNDLED_DATA = {
   "titolo": "Registro modifiche",
   "descrizione": "Appunti brevi su che cosa è cambiato nella guida, per chi la mantiene.",
   "modifiche": [
+    {
+      "versione": "2.20",
+      "data": "2026-09-10",
+      "titolo": "Limite di 40 giorni e giorni delle frequenze verificati nel pannello",
+      "dettagli": [
+        "Limite di 40 giorni anche in Abbonamenti e Statistiche Biglietti Venduti / Controllati",
+        "Statistiche linee e corse CS: con periodi di mesi possono non comparire dati",
+        "Frequenze Corsa: i giorni si scelgono con le caselle da Lunedì a Domenica"
+      ]
+    },
     {
       "versione": "2.19",
       "data": "2026-09-10",
@@ -538,6 +548,7 @@ var BUNDLED_DATA = {
           "items": [
             "<b>Denominazione:</b> nome descrittivo della frequenza (es. Giornaliera, Giornaliera estiva, Feriale lun-ven, Feriale sabato, Scolastica, Non scolastica)",
             "<b>Tipologia:</b> selezionare dal menu a tendina tra Giornaliera, Feriale, Scolastica, Non Scolastica, Festiva. Per le tipologie Feriale e Giornaliera è possibile personalizzare i giorni di validità settimanale",
+            "<b>Giorni:</b> caselle da <b>Lunedì</b> a <b>Domenica</b>. Sono i giorni in cui la frequenza vale: una frequenza feriale del solo sabato ha selezionata soltanto la casella <b>Sabato</b>",
             "<b>Data inizio validità / Data fine validità:</b> compilare solo se la frequenza ha un range temporale personalizzato (es. servizio estivo con date precise). Non compilare per frequenze Scolastiche o Non Scolastiche: in quel caso il sistema usa automaticamente il calendario scolastico configurato da COTRAP"
           ]
         },
@@ -955,7 +966,7 @@ var BUNDLED_DATA = {
             {
               "numero": 1,
               "titolo": "Trova il titolo",
-              "descrizione": "In <a href=\"#biglietti\">Ordini → Biglietti</a> o <a href=\"#abbonamenti\">Abbonamenti</a> usa un identificativo del titolo e i filtri pertinenti. Il limite di <b>40 giorni</b> è previsto nella ricerca <b>Biglietti</b>; nelle altre pagine segui la validazione indicata dal pannello."
+              "descrizione": "In <a href=\"#biglietti\">Ordini → Biglietti</a> o <a href=\"#abbonamenti\">Abbonamenti</a> usa un identificativo del titolo e i filtri pertinenti. In <b>Biglietti</b> e <b>Abbonamenti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi fai più ricerche."
             },
             {
               "numero": 2,
@@ -1013,7 +1024,7 @@ var BUNDLED_DATA = {
             {
               "numero": 4,
               "titolo": "Restringi le ricerche",
-              "descrizione": "Riduci il periodo e filtra linea o titolo. In <b>Ordini → Biglietti</b> rispetta il limite di 40 giorni; non estenderlo automaticamente alle altre pagine."
+              "descrizione": "Riduci il periodo e filtra linea o titolo. In <b>Biglietti</b>, <b>Abbonamenti</b> e <b>Statistiche Biglietti Venduti / Controllati</b> il massimo è 40 giorni; in <b>Statistiche linee</b> e <b>Statistiche corse CS</b> un periodo di mesi può non restituire dati (compare «Pagina non trovata.»)."
             },
             {
               "numero": 5,
@@ -3350,7 +3361,7 @@ var BUNDLED_DATA = {
             {
               "compito": "Trovare il titolo di un cliente",
               "usa": "<b>Ordini → Biglietti</b> o <b>Abbonamenti</b> con il codice completo (compresa la lettera finale), il numero d'ordine o la tessera.",
-              "evita": "Cercare su periodi lunghi senza altri filtri: in Biglietti l'intervallo massimo è di 40 giorni.",
+              "evita": "Cercare su periodi lunghi senza altri filtri: in Biglietti e Abbonamenti l'intervallo massimo è di 40 giorni.",
               "verifica": "Apri <b>Dettaglio</b>: nella riga non è la prima icona, la prima è Inserisci Controllo.",
               "link": "biglietti"
             },
@@ -3735,7 +3746,7 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.19",
+  "versione": "2.20",
   "ultimo_aggiornamento": "2026-09-10",
   "voci": [
     {
@@ -3834,7 +3845,7 @@ var BUNDLED_DATA = {
         "Le voci del menu Ordini sono sette: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche linee</b>, <b>Statistiche corse CS</b>, <b>Statistiche Biglietti Venduti / Controllati</b>.",
         "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
         "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
-        "In <b>Biglietti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi si fanno più ricerche."
+        "In <b>Biglietti</b>, <b>Abbonamenti</b> e <b>Statistiche Biglietti Venduti / Controllati</b> l'intervallo di date è di <b>massimo 40 giorni</b>; in <b>Statistiche linee</b> e <b>Statistiche corse CS</b> un periodo di mesi può non restituire dati. Per periodi lunghi si fanno più ricerche."
       ]
     },
     {
@@ -3988,7 +3999,8 @@ var BUNDLED_DATA = {
           "items": [
             "Cerca abbonamenti per data emissione, validita', n. tessera, tipologia e metodo di pagamento.",
             "Da qui puoi: inserire un controllo manuale, rivedere i controlli registrati, bloccare un abbonamento in caso di frode, aggiungere o scalare corse.",
-            "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale."
+            "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale.",
+            "Le date di emissione coprono al <b>massimo 40 giorni</b>: oltre, compare «Specificare un intervallo di massimo 40gg.» e la ricerca non parte."
           ]
         },
         {
@@ -4156,6 +4168,11 @@ var BUNDLED_DATA = {
           "tipo": "avviso",
           "stile": "info",
           "testo": "La colonna <b>Denominazione titolo di viaggio</b> riporta il nome del biglietto venduto (CS, CSI, CSIA…) e l'importo scontato finale. I titoli emessi gratuitamente non sono conteggiati."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Periodi lunghi:</b> con un intervallo di mesi la pagina può non mostrare dati e scrivere «Pagina non trovata.». Riduci il periodo (con un mese i dati compaiono) e fai più ricerche."
         }
       ]
     },
@@ -4175,6 +4192,11 @@ var BUNDLED_DATA = {
         {
           "tipo": "paragrafo",
           "testo": "Filtri: Data Inizio e Data Fine, Titolo di viaggio, Linea, Corsa, comune e frazione di partenza e di arrivo, Tipologia pagamento. Pulsanti <b>Applica</b> ed <b>Esporta</b>."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Periodi lunghi:</b> con un intervallo di mesi la pagina può non mostrare dati e scrivere «Pagina non trovata.». Riduci il periodo (con un mese i dati compaiono) e fai più ricerche."
         }
       ]
     },
@@ -4189,7 +4211,8 @@ var BUNDLED_DATA = {
           "items": [
             "Riepilogo aggregato per corsa: biglietti venduti online, controllati a bordo e non validi al momento del controllo.",
             "Dati di sintesi per corsa — per i singoli titoli vai alla sezione <b>Biglietti</b>.",
-            "Esportabile in .xls per analisi esterne."
+            "Esportabile in .xls per analisi esterne.",
+            "Le date coprono al <b>massimo 40 giorni</b>: oltre, compare «Specificare un intervallo di massimo 40gg.»."
           ]
         },
         {

@@ -304,7 +304,8 @@ if stili_errati: B('BLOCCHI', 'avvisi con stile non valido: %s' % ', '.join(set(
 # errori gia' corretti: se ricompaiono e' una regressione
 REGRESSIONI = [
     ('il 90%', 'nessuna percentuale diagnostica senza dati di assistenza'),
-    ('Le ricerche accettano un intervallo', 'limite di 40 giorni visto solo in Ordini -> Biglietti, non in tutte le ricerche'),
+    ('Le ricerche accettano un intervallo', 'limite di 40 giorni non vale in tutte le ricerche (no in Stato Controlli e Stati occupazionali corse)'),
+    ('non estenderlo automaticamente alle altre pagine', 'limite di 40 giorni verificato anche in Abbonamenti e Statistiche Biglietti Venduti / Controllati (10/09/2026)'),
     ('ordine di probabilità', 'ordine di controllo non equivale a probabilita misurata'),
     ('solo l\'Amministratore può sbloccare', 'permesso di sblocco non verificato'),
     ('non si toglie dal profilo commerciale', 'permesso di sblocco non verificato'),

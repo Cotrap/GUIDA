@@ -296,7 +296,7 @@
             {
               "compito": "Trovare il titolo di un cliente",
               "usa": "<b>Ordini → Biglietti</b> o <b>Abbonamenti</b> con il codice completo (compresa la lettera finale), il numero d'ordine o la tessera.",
-              "evita": "Cercare su periodi lunghi senza altri filtri: in Biglietti l'intervallo massimo è di 40 giorni.",
+              "evita": "Cercare su periodi lunghi senza altri filtri: in Biglietti e Abbonamenti l'intervallo massimo è di 40 giorni.",
               "verifica": "Apri <b>Dettaglio</b>: nella riga non è la prima icona, la prima è Inserisci Controllo.",
               "link": "biglietti"
             },

@@ -11,7 +11,7 @@
         "Le voci del menu Ordini sono sette: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche linee</b>, <b>Statistiche corse CS</b>, <b>Statistiche Biglietti Venduti / Controllati</b>.",
         "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
         "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
-        "In <b>Biglietti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi si fanno più ricerche."
+        "In <b>Biglietti</b>, <b>Abbonamenti</b> e <b>Statistiche Biglietti Venduti / Controllati</b> l'intervallo di date è di <b>massimo 40 giorni</b>; in <b>Statistiche linee</b> e <b>Statistiche corse CS</b> un periodo di mesi può non restituire dati. Per periodi lunghi si fanno più ricerche."
       ]
     },
     {
@@ -165,7 +165,8 @@
           "items": [
             "Cerca abbonamenti per data emissione, validita', n. tessera, tipologia e metodo di pagamento.",
             "Da qui puoi: inserire un controllo manuale, rivedere i controlli registrati, bloccare un abbonamento in caso di frode, aggiungere o scalare corse.",
-            "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale."
+            "Usa il filtro <b>Gratuito</b> nel metodo di pagamento per trovare gli abbonamenti emessi dal profilo commerciale.",
+            "Le date di emissione coprono al <b>massimo 40 giorni</b>: oltre, compare «Specificare un intervallo di massimo 40gg.» e la ricerca non parte."
           ]
         },
         {
@@ -333,6 +334,11 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "La colonna <b>Denominazione titolo di viaggio</b> riporta il nome del biglietto venduto (CS, CSI, CSIA…) e l'importo scontato finale. I titoli emessi gratuitamente non sono conteggiati."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Periodi lunghi:</b> con un intervallo di mesi la pagina può non mostrare dati e scrivere «Pagina non trovata.». Riduci il periodo (con un mese i dati compaiono) e fai più ricerche."
         }
       ]
     },
@@ -352,6 +358,11 @@
         {
           "tipo": "paragrafo",
           "testo": "Filtri: Data Inizio e Data Fine, Titolo di viaggio, Linea, Corsa, comune e frazione di partenza e di arrivo, Tipologia pagamento. Pulsanti <b>Applica</b> ed <b>Esporta</b>."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Periodi lunghi:</b> con un intervallo di mesi la pagina può non mostrare dati e scrivere «Pagina non trovata.». Riduci il periodo (con un mese i dati compaiono) e fai più ricerche."
         }
       ]
     },
@@ -366,7 +377,8 @@
           "items": [
             "Riepilogo aggregato per corsa: biglietti venduti online, controllati a bordo e non validi al momento del controllo.",
             "Dati di sintesi per corsa — per i singoli titoli vai alla sezione <b>Biglietti</b>.",
-            "Esportabile in .xls per analisi esterne."
+            "Esportabile in .xls per analisi esterne.",
+            "Le date coprono al <b>massimo 40 giorni</b>: oltre, compare «Specificare un intervallo di massimo 40gg.»."
           ]
         },
         {

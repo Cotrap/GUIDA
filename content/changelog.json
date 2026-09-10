@@ -4,6 +4,16 @@
   "descrizione": "Appunti brevi su che cosa è cambiato nella guida, per chi la mantiene.",
   "modifiche": [
     {
+      "versione": "2.20",
+      "data": "2026-09-10",
+      "titolo": "Limite di 40 giorni e giorni delle frequenze verificati nel pannello",
+      "dettagli": [
+        "Limite di 40 giorni anche in Abbonamenti e Statistiche Biglietti Venduti / Controllati",
+        "Statistiche linee e corse CS: con periodi di mesi possono non comparire dati",
+        "Frequenze Corsa: i giorni si scelgono con le caselle da Lunedì a Domenica"
+      ]
+    },
+    {
       "versione": "2.19",
       "data": "2026-09-10",
       "titolo": "Correzione del limite di 40 giorni",
