@@ -2006,3 +2006,52 @@ header h1 {
         display: none;
     }
 }
+
+/* ============================================
+   v2.18 — copia link, voci della guida nel menu, versione cliccabile
+   ============================================ */
+.copia-link {
+    margin-left: 0.5rem;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    font-size: 0.85rem;
+    line-height: 1;
+    padding: 2px 5px;
+    vertical-align: middle;
+    opacity: 0.45;
+    transition: opacity var(--transition-fast), border-color var(--transition-fast);
+}
+
+.copia-link:hover,
+.copia-link:focus-visible {
+    opacity: 1;
+    border-color: var(--gray-200);
+}
+
+.section-title .copia-link {
+    font-size: 1rem;
+}
+
+/* pagine che esistono solo nella guida */
+.menu li.guida .menu-label {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+/* la versione apre il registro modifiche */
+.version-badge {
+    cursor: pointer;
+}
+
+.version-badge:hover,
+.version-badge:focus-visible {
+    background: rgba(255, 255, 255, 0.32);
+}
+
+@media print {
+    .copia-link {
+        display: none;
+    }
+}

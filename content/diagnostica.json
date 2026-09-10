@@ -249,7 +249,7 @@
             {
               "numero": 2,
               "titolo": "La famiglia è coerente con il tipo di linea?",
-              "descrizione": "CS, CSI e CSIA valgono <b>solo sulle linee extraurbane</b> (Regionale o Provinciale); CSU, CSUI e CSUIA <b>solo sulle urbane</b> (Comunale). Vedi <a href=\"#cs-invalidi-categorie\">CS Invalidi</a>."
+              "descrizione": "CS, CSI e CSIA valgono <b>solo sulle linee extraurbane</b> (Regionale o Provinciale); CSU, CSUI e CSUIA <b>solo sulle urbane</b> (Comunale). Vedi <a href=\"#cs-invalidi\">CS Invalidi</a>."
             },
             {
               "numero": 3,

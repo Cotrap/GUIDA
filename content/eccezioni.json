@@ -86,7 +86,7 @@
     },
     {
       "id": "eccezioni-tariffarie",
-      "titolo": "Eccezioni Tariffarie Biglietti",
+      "titolo": "Eccezioni tariffarie Biglietti",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -146,7 +146,7 @@
     },
     {
       "id": "eccezioni-tariffarie-abbonamenti",
-      "titolo": "Eccezioni Tariffarie Abbonamenti",
+      "titolo": "Eccezioni tariffarie Abbonamenti",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -389,6 +389,72 @@
         {
           "tipo": "paragrafo",
           "testo": "I filtri permettono di indirizzare la ricerca in base alle esigenze. È possibile esportare i dati."
+        }
+      ]
+    },
+    {
+      "id": "eccezioni-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Prezzi</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Il prezzo andata e ritorno per lo stesso abbonamento è diverso: è un errore?",
+          "risposta": "Confronta A→B e B→A con gli stessi filtri e periodo. Percorsi, chilometri o eccezioni diversi possono spiegare la differenza. <b>Non uniformare i km solo per ottenere lo stesso prezzo</b>: confrontali con la polimetrica Tecbus e con la tariffa autorizzata. Correggi il dato incoerente, poi verifica entrambe le direzioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Eccezione Chilometrica o Eccezione Tariffaria: come scelgo quella giusta?",
+          "risposta": "L’<b>eccezione chilometrica</b> modifica la distanza della coppia, per biglietti e abbonamenti nei due sensi, con inizio al primo del mese. L’<b>eccezione tariffaria</b> imposta invece un importo: per i biglietti scegli l’ambito linea/corsa; per gli abbonamenti imposti il lordo per raggruppamento. Verifica prima polimetrica, tariffario e altre eccezioni. Se servono entrambe, concorda validità e successiva rimozione della misura temporanea e verifica l’importo finale."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "COTRAP mi ha comunicato una variazione del tariffario regionale: cosa devo fare su Itineris?",
+          "risposta": "Il tariffario regionale viene aggiornato direttamente da COTRAP su Itineris. Di norma <b>non devi fare nulla</b> per le tratte normali.<br><br>Dopo ogni aggiornamento però verifica:<br><br><b>1. Eccezioni Tariffarie esistenti</b>: se hai tratte con importo fisso impostato manualmente, controlla se sono diventate errate o obsolete con il nuovo tariffario. Se sì, modificale o eliminale.<br><b>2. Prezzi delle tratte principali</b>: usa Controllo Tariffario per verificare che i prezzi siano quelli attesi sul tuo materiale informativo (orari, sito, comunicazioni ai passeggeri).<br><b>3. Vecchi prezzi ancora in circolazione</b>: usa Controllo Tariffario Itinerario inserendo il vecchio importo — se compaiono risultati, quelle corse non sono state aggiornate."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Eccezioni</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Una corsa che avevo sospeso con un'eccezione è ora finita la sospensione: devo riattivare qualcosa manualmente?",
+          "risposta": "<b>No.</b> L'eccezione di movimento si disattiva automaticamente alla data di fine impostata. La corsa torna visibile sullo shop COTRAP senza nessun intervento.<br><br>Se hai lasciato la data di fine vuota (sospensione indefinita), la corsa rimane nascosta finché non vai in Eccezioni → Eccezioni e imposti una data di fine oppure elimini l'eccezione."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quando si crea un'eccezione di movimento, la corsa sparisce da cotrap.it?",
+          "risposta": "<b>Sì.</b> Durante il periodo di validità dell'eccezione, la corsa (o il polo, o la linea) non è visibile su cotrap.it. Al termine del periodo si riattiva automaticamente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I biglietti già acquistati prima di un'eccezione di movimento rimangono validi?",
+          "risposta": "L’eccezione di movimento non annulla automaticamente i titoli già emessi. Prima di sospendere il servizio verifica gli acquisti interessati e attiva la gestione prevista dall’azienda. Non dedurre dalla sospensione che siano stati effettuati rimborsi o rettifiche delle corse residue."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "L'eccezione tariffaria su biglietti richiede una data di fine?",
+          "risposta": "Non è obbligatoria. Inserirla solo se si conosce con certezza la data di termine. Per gli abbonamenti è consigliato <b>lasciare vuota</b> la data di fine, poiché la data della prossima variazione del tariffario regionale è spesso incerta."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
+          "risposta": "<b>No.</b> Dopo aver cliccato Conferma, il sistema ricalcola automaticamente le tariffe di tutti gli abbonamenti interessati (visibile tramite il contatore a schermo). Il tasto <b>Pubblica</b> è disponibile solo come rimedio se il contatore si blocca. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso scegliere qualsiasi data di inizio per un'eccezione chilometrica?",
+          "risposta": "La data iniziale deve essere il <b>primo del mese</b>; l’eventuale data finale deve essere l’<b>ultimo giorno del mese</b>. È un vincolo della funzione. Il ricalcolo parte dopo la conferma: attendi che <b>In elaborazione</b> torni a zero."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
+          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca prima di modificare l’eccezione."
         }
       ]
     }

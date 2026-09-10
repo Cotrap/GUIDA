@@ -6,16 +6,21 @@
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "Benvenuti nella <b>Guida Operativa ITINERIS</b>! Questo manuale supporta i Consorziati COTRAP nella gestione delle linee e corse su Itineris e nel controllo contabile del venduto."
+      "testo": "Questa guida spiega come usare <b>Itineris</b>, il pannello con cui le aziende consorziate COTRAP gestiscono linee, corse, eccezioni e titoli di viaggio, e come controllare il venduto."
     },
     {
       "tipo": "avviso",
       "stile": "info",
-      "testo": "Utilizza il <b>menu laterale</b> per navigare tra le sezioni oppure la <b>barra di ricerca</b> in alto per trovare rapidamente un argomento."
+      "testo": "<b>Come è organizzato il menu.</b> Gli <b>Strumenti della guida</b> sono pagine che in Itineris non esistono: la <b>Guida Veloce</b>, per sapere quale comando usare, e <b>Risolvi un problema</b>, quando qualcosa non va. Sotto <b>Menu Itineris</b> trovi le sezioni con gli <b>stessi nomi e lo stesso ordine</b> del pannello: se sei in una schermata di Itineris, apri la sezione con lo stesso nome."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "success",
+      "testo": "Accanto a ogni titolo c'è il pulsante <b>🔗</b>: copia il link a quel punto preciso della guida, da incollare in un messaggio."
     },
     {
       "tipo": "paragrafo",
-      "testo": "<b>Sezioni principali della guida:</b>"
+      "testo": "<b>Strumenti della guida</b>"
     },
     {
       "tipo": "cards",
@@ -31,17 +36,26 @@
           "titolo": "Risolvi un problema",
           "descrizione": "Parti dal sintomo: i controlli da fare, nell'ordine giusto, quando una corsa non compare, un prezzo non torna o un cliente ha un problema.",
           "link": "diagnostica"
-        },
+        }
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Menu Itineris — profilo commerciale</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
         {
-          "icona": "💼",
-          "titolo": "Profilo Commerciale",
-          "descrizione": "Pre-requisiti, iter creazione linea, configurazione tariffari, calendari, frequenze, utenti app ed emissione titoli gratuiti.",
-          "link": "profilo-commerciale"
+          "icona": "⚙️",
+          "titolo": "Configurazione",
+          "descrizione": "Tariffari e calendari da consultare; Frequenze Corsa e utenti dell'app di controllo da gestire.",
+          "link": "configurazione"
         },
         {
           "icona": "🚌",
           "titolo": "Gestione Movimento",
-          "descrizione": "Codici contabili, poli, linee, template, corse, note e titoli di viaggio: il cuore operativo.",
+          "descrizione": "Codici contabili, poli, linee e template, corse, note e titoli di viaggio, compresi i CS Invalidi.",
           "link": "gestione-movimento"
         },
         {
@@ -63,35 +77,27 @@
           "link": "esportazioni"
         },
         {
-          "icona": "📊",
-          "titolo": "Sezione Contabile",
-          "descrizione": "Accesso contabile separato, ordini, dati contabili, biglietti, abbonamenti e statistiche venduto.",
-          "link": "sezione-contabile"
-        },
-        {
           "icona": "🎫",
-          "titolo": "Emetti Titolo di Viaggio",
+          "titolo": "Emetti titolo di viaggio",
           "descrizione": "Emissione gratuita di biglietti e abbonamenti dal profilo commerciale, tramite il Portale Clienti.",
           "link": "emetti-titolo-viaggio"
-        },
-        {
-          "icona": "♿",
-          "titolo": "CS Invalidi",
-          "descrizione": "I biglietti di corsa semplice per invalidi: le sei categorie, l'attivazione del titolo e i filtri dedicati.",
-          "link": "cs-invalidi"
-        },
-        {
-          "icona": "❓",
-          "titolo": "Domande e Risposte",
-          "descrizione": "Risposte rapide alle domande più frequenti, organizzate per argomento.",
-          "link": "faq"
         }
       ]
     },
     {
-      "tipo": "avviso",
-      "stile": "success",
-      "testo": "<b>Non sai quale comando usare?</b> Parti dalla <a href=\"#guida-veloce\">Guida Veloce</a>: per ogni operazione trovi lo strumento fatto apposta e come verificare il risultato. Se invece hai un problema, vai a <a href=\"#diagnostica\">Risolvi un problema</a>."
+      "tipo": "paragrafo",
+      "testo": "<b>Menu Itineris — profilo contabile</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
+        {
+          "icona": "📊",
+          "titolo": "Sezione Contabile",
+          "descrizione": "Accesso contabile separato, ordini, dati contabili, biglietti, abbonamenti e statistiche venduto.",
+          "link": "sezione-contabile"
+        }
+      ]
     }
   ],
   "sottosezioni": [
@@ -130,6 +136,30 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "<b>Se il tuo profilo gestisce più aziende:</b> in Itineris \"azienda\" indica un'<b>area di lavoro</b>, non necessariamente una società diversa. La stessa società può averne più di una (per esempio una sede regionale e un gruppo provinciale, oppure le linee urbane separate da quelle extraurbane). <b>Prima di operare verifica sempre quale azienda è selezionata in alto a destra</b>: linee, corse e titoli che vedi sono solo quelli di quell'area."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Domande frequenti</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quali credenziali usare per accedere?",
+          "risposta": "Sono necessari <b>ID utente e password</b> forniti dall'Amministratore COTRAP. Esistono due account separati: uno per il <b>profilo commerciale</b> (gestione linee, corse, eccezioni, biglietti gratuiti) e uno per il <b>profilo contabile</b> (dati contabili, statistiche venduto, esportazioni). Non usare le stesse credenziali per entrambi."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come faccio a sapere con quale profilo sono loggato?",
+          "risposta": "In <b>basso a sinistra</b> è visibile l'<b>utente</b> con cui hai fatto accesso. Nel <b>pannello commerciale</b> l'<b>azienda</b> su cui stai operando è indicata nel pulsante in <b>alto a destra</b>. Verifica sempre entrambi prima di operare, soprattutto se il tuo profilo può accedere a più aziende."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho sbagliato profilo (commerciale invece di contabile o viceversa): cosa succede?",
+          "risposta": "Niente di grave: le due sezioni hanno funzionalità diverse. Il <b>profilo commerciale</b> gestisce linee, corse, eccezioni e titoli di viaggio. Il <b>profilo contabile</b> accede a ordini, dati contabili e statistiche. Se sei nel profilo sbagliato, esci e accedi con le credenziali corrette."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho dimenticato la password: come la recupero?",
+          "risposta": "Nella pagina di login clicca su <b>'Recupero password'</b> e inserisci l'email comunicata preventivamente all'Amministratore COTRAP. Se non ricordi l'email di recupero, contatta direttamente l'Amministratore."
         }
       ]
     }

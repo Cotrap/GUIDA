@@ -334,7 +334,7 @@
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "<b>Dove si trova:</b> la stessa voce compare anche nel menu <b>Ordini</b> del pannello commerciale, quando il profilo è abilitato a vederla. Il conteggio è <b>per data di emissione</b> del titolo, non per data di viaggio."
+          "testo": "<b>Dove si trova:</b> la stessa voce compare anche nel menu <b>Ordini</b> del pannello commerciale. Il conteggio è <b>per data di emissione</b> del titolo, non per data di viaggio."
         }
       ]
     },
@@ -399,6 +399,49 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "Le esportazioni biglietti, abbonamenti e ordini presentano il campo <b>\"Emesso da Admin\"</b> per identificare i titoli emessi gratuitamente da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "sezione-contabile-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Perché non vedo i miei dati nella Sezione Contabile pur essendo loggato?",
+          "risposta": "Verifica di essere loggato con le <b>credenziali contabili</b> (non quelle commerciali): il nome dell'utente è indicato in basso a sinistra. Se sei nel profilo commerciale, fai logout e accedi con le credenziali della sezione contabile."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come esporto i Dati Contabili completi per un periodo? (procedura step-by-step)",
+          "risposta": "I dati contabili sono divisi per tipo di pagamento: devi fare <b>due esportazioni separate</b> per avere il quadro completo.<br><br><b>Esportazione 1 — Pagato con carta di credito (Online):</b><br>1. Sezione Contabile → Dati Contabili<br>2. Imposta <b>Data inizio</b> e <b>Data fine</b> del periodo<br>3. Tipo: <b>Online</b> → Stato: <b>Pagato</b> → Periodo: <b>Tutti</b><br>4. Clicca <b>Esporta SEP</b> (per Excel) o <b>Esporta</b> (per .txt gestionale)<br><br><b>Esportazione 2 — Pagato con credito ricaricato:</b><br>1. Stesse date<br>2. Tipo: <b>Credito</b> → Stato: <b>Pagato</b><br>3. Clicca Esporta SEP<br><br>I file vengono salvati in <b>Esportazioni</b> e sono recuperabili in qualsiasi momento.<br><br><b>Attenzione:</b> i titoli emessi gratuitamente (tipo 'Gratuito') <b>non entrano nei dati contabili</b> — il sistema li esclude automaticamente. Non è necessario filtrarli manualmente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Perché devo fare due esportazioni separate nei Dati Contabili?",
+          "risposta": "Perché i biglietti acquistati con <b>carta di credito</b> (tipo 'Online') e quelli acquistati con il <b>credito da ricariche</b> (tipo 'Credito') sono registrati separatamente nel sistema. Per avere il quadro completo del venduto devi esportare: 1) <b>Online → Pagato → Tutti</b>, poi 2) <b>Credito → Pagato</b>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra 'Esporta' e 'Esporta SEP' nei Dati Contabili?",
+          "risposta": "<b>Esporta</b> genera un file <b>.txt</b> nel formato per i software gestionali aziendali. <b>Esporta SEP</b> genera un file <b>.xls</b> (Excel) per visualizzazione e analisi manuale. Entrambi i file sono recuperabili nella sezione Esportazioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Dove trovo i file già scaricati in precedenza?",
+          "risposta": "I file già generati si cercano nella sezione <b>Esportazioni</b> del profilo con cui è stata richiesta l’estrazione. Scarica e conserva quelli necessari secondo le procedure aziendali: non usare l’elenco del portale come unica copia d’archivio."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Le statistiche mostrano un incasso diverso da quello che mi aspettavo: come lo verifico?",
+          "risposta": "Le statistiche su Itineris hanno alcune esclusioni da conoscere prima di confrontarle con altri dati:<br><br>• <b>Titoli gratuiti esclusi</b>: le statistiche mensili, linee e venduto non includono mai i titoli emessi gratuitamente dal profilo commerciale.<br>• <b>Solo venduto online</b>: le statistiche riguardano esclusivamente il venduto sul portale web e sull'app. Non include il venduto con macchinette di bordo Tecbus.<br>• <b>Canale</b>: le statistiche includono sia 'Online' (carta) che 'Credito' (ricariche). Se vedi differenze rispetto ai dati contabili, controlla che stai confrontando lo stesso tipo di canale.<br><br><b>Per verificare nel dettaglio:</b> usa Sezione Contabile → Statistiche Venduto, filtra per linea e periodo, poi confronta con i Dati Contabili dello stesso periodo."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra Statistiche Mensili, Statistiche Linee e Statistiche Venduto?",
+          "risposta": "<b>Statistiche Mensili</b>: il venduto aggregato mese per mese, per seguire l'andamento nel tempo.<br><br><b>Statistiche linee</b>: il venduto per singola linea, calcolato <b>per data di emissione</b> del titolo, cioè in base a quando è stato acquistato.<br><br><b>Statistiche corse CS</b>: i biglietti di corsa semplice, calcolati <b>per data di partenza</b>, cioè in base a quando si viaggia. È la differenza da tenere presente quando i due numeri non coincidono.<br><br><b>Statistiche Venduto</b>: il venduto totale del periodo, con i file da portare nel gestionale aziendale.<br><br>Statistiche linee e Statistiche corse CS compaiono nel menu <b>Ordini</b> del pannello commerciale; le altre sono nella <b>Sezione Contabile</b>."
         }
       ]
     }

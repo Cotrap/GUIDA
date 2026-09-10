@@ -1,6 +1,6 @@
 {
   "id": "emetti-titolo-viaggio",
-  "titolo": "Emetti Titolo di Viaggio",
+  "titolo": "Emetti titolo di viaggio",
   "aggiornato": "2026-09-09",
   "nuovo": false,
   "contenuto": [
@@ -118,5 +118,44 @@
       ]
     }
   ],
-  "sottosezioni": []
+  "sottosezioni": [
+    {
+      "id": "emetti-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Come accedo alla funzione 'Emetti titolo di viaggio'?",
+          "risposta": "Disponibile <b>solo per il profilo commerciale</b> tramite il tasto <b>'Emetti titolo di viaggio'</b> su Admin Panel. Cliccandolo si apre il Portale Clienti con privilegi di amministratore, attraverso cui procedere con l'emissione."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso scegliere l'azienda dalla pagina di ricerca del Portale Clienti?",
+          "risposta": "<b>No.</b> L'azienda è quella selezionata su Admin Panel al momento del click. Non è modificabile dalla pagina di ricerca. Se gestisci più aziende, seleziona quella corretta prima di cliccare 'Emetti titolo di viaggio'."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "La sessione di emissione gratuita è scaduta a metà operazione: cosa faccio?",
+          "risposta": "La sessione dura <b>15 minuti</b>. Alla scadenza appare una notifica. Torna su Admin Panel e clicca nuovamente <b>'Emetti titolo di viaggio'</b> per ottenere una nuova sessione e continuare."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I titoli gratuiti vengono notificati al cliente?",
+          "risposta": "<b>Sì.</b> All'emissione viene inviata automaticamente un'<b>email di conferma</b> al cliente. È anche possibile stampare i titoli in PDF dalla schermata di conferma."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come trovo tutti i titoli emessi gratuitamente?",
+          "risposta": "Usa il filtro <b>Gratuito</b> nel metodo di pagamento, disponibile in: Ordini → Biglietti, Ordini → Abbonamenti (profilo commerciale), e nella Sezione Contabile → Ordini, Biglietti, Abbonamenti. Nel dettaglio di ogni titolo c'è il campo <b>'Emesso da Admin'</b>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I titoli gratuiti impattano le statistiche di vendita?",
+          "risposta": "<b>No.</b> Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano completamente le transazioni relative ai titoli gratuiti, per non alterare i dati di fatturato reale."
+        }
+      ]
+    }
+  ]
 }

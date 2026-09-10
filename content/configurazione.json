@@ -251,6 +251,29 @@
           "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve installare l'app di controllo Itineris sul proprio smartphone Android e impostare la propria password. Il file .apk viene aggiornato frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare."
         }
       ]
+    },
+    {
+      "id": "configurazione-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Posso modificare i tariffari o i calendari scolastici?",
+          "risposta": "<b>No.</b> I tariffari chilometrici regionali e i calendari scolastici sono inseriti e aggiornati esclusivamente da COTRAP. Il consorziato può <b>solo consultarli</b> per impostare correttamente le proprie linee (frequenze, fasce km, ecc.)."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Devo inserire le date nella frequenza scolastica?",
+          "risposta": "<b>No.</b> Scegliendo la tipologia 'Scolastica', il sistema usa automaticamente il calendario regionale caricato da COTRAP. Le date di inizio/fine vanno inserite solo per servizi con un periodo personalizzato (es. servizio estivo con date precise)."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quante tipologie di frequenza esistono?",
+          "risposta": "Le tipologie sono <b>Giornaliera, Feriale, Scolastica, Non Scolastica e Festiva</b>. Non dedurre il servizio dal nome assegnato alla frequenza: controlla anche giorni selezionati, date di validità e calendario applicabile. Una frequenza chiamata «FESTIVO» può avere tipologia Giornaliera."
+        }
+      ]
     }
   ]
 }

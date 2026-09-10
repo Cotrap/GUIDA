@@ -8,7 +8,7 @@
       "tipo": "tldr",
       "items": [
         "Qui si <b>consulta</b> quello che è stato venduto: biglietti, abbonamenti, occupazione delle corse e controlli fatti a bordo.",
-        "Cinque voci sempre presenti: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche Biglietti Venduti / Controllati</b>. Alcuni profili vedono anche <b>Statistiche linee</b> e <b>Statistiche corse CS</b>.",
+        "Le voci del menu Ordini sono sette: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche linee</b>, <b>Statistiche corse CS</b>, <b>Statistiche Biglietti Venduti / Controllati</b>.",
         "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
         "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
         "Le ricerche accettano un intervallo di date di <b>massimo 40 giorni</b>."
@@ -25,11 +25,6 @@
       "src": "Immagine11.png",
       "alt": "Sottomenu Ordini",
       "didascalia": "Opzioni di ricerca disponibili"
-    },
-    {
-      "tipo": "avviso",
-      "stile": "info",
-      "testo": "<b>Se nel tuo menu compaiono anche Statistiche linee e Statistiche corse CS:</b> sono due riepiloghi del venduto che non tutti i profili hanno abilitati. <b>Statistiche linee</b> conta i titoli <b>per data di emissione</b>, cioè in base a quando sono stati acquistati; <b>Statistiche corse CS</b> conta i biglietti di corsa semplice <b>per data di partenza</b>, cioè in base a quando si viaggia. È normale che i due numeri non coincidano: rispondono a due domande diverse. Entrambe si filtrano per linea, corsa, comune e frazione di partenza e di arrivo, tipologia di pagamento e titolo di viaggio, e si scaricano con <b>Esporta</b>."
     }
   ],
   "sottosezioni": [
@@ -225,7 +220,7 @@
     },
     {
       "id": "stati-occupazionali-corse",
-      "titolo": "Stati Occupazionali Corse",
+      "titolo": "Stati occupazionali corse",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -318,6 +313,49 @@
       ]
     },
     {
+      "id": "ordini-statistiche-linee",
+      "titolo": "Statistiche linee",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo del venduto per linea, calcolato <b>per data di emissione</b>: conta i titoli in base a quando sono stati acquistati.",
+            "Per questo i numeri possono non coincidere con Statistiche corse CS, che conta per data di partenza."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Filtri: Data Inizio e Data Fine, Linea, Corsa, comune e frazione di partenza e di arrivo, Tipologia pagamento, Tipologia titolo di viaggio, Titolo di viaggio. Con <b>Esporta</b> il file si prepara e si recupera in Esportazioni."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "La colonna <b>Denominazione titolo di viaggio</b> riporta il nome del biglietto venduto (CS, CSI, CSIA…) e l'importo scontato finale. I titoli emessi gratuitamente non sono conteggiati."
+        }
+      ]
+    },
+    {
+      "id": "ordini-statistiche-corse-cs",
+      "titolo": "Statistiche corse CS",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo dei biglietti di corsa semplice per corsa, calcolato <b>per data di partenza</b>: conta i biglietti in base al giorno del viaggio.",
+            "Riguarda solo i titoli biglietto: con il filtro Titolo di viaggio si separano CS, CSI e CSIA."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Filtri: Data Inizio e Data Fine, Titolo di viaggio, Linea, Corsa, comune e frazione di partenza e di arrivo, Tipologia pagamento. Pulsanti <b>Applica</b> ed <b>Esporta</b>."
+        }
+      ]
+    },
+    {
       "id": "statistiche-biglietti",
       "titolo": "Statistiche Biglietti Venduti / Controllati",
       "aggiornato": "2026-03-03",
@@ -359,6 +397,64 @@
           "src": "Immagine19.png",
           "alt": "Form Statistiche",
           "didascalia": "Maschera statistiche biglietti"
+        }
+      ]
+    },
+    {
+      "id": "ordini-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Un passeggero ha acquistato un abbonamento ma non riesce a usarlo sulle corse: cosa può essere?",
+          "risposta": "In <a href=\"#abbonamenti\">Ordini → Abbonamenti</a> controlla validità, tratta, tessera, residuo e controlli registrati. Leggi anche <b>Data Blocco da Admin</b>. Confronta il titolo con la corsa effettivamente utilizzata e l’esito di bordo. Non riattivare corse né aggiungere viaggi come tentativo: individua prima la causa; per un blocco da rimuovere chiedi la procedura all’Amministratore."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come verifico quanti abbonamenti attivi ci sono e chi li ha acquistati?",
+          "risposta": "In <b>Ordini → Abbonamenti</b> imposta periodo di emissione o validità e i filtri disponibili per titolo, tessera e pagamento. Distingui la ricerca dei titoli emessi dalla verifica della loro validità. Per il singolo abbonamento apri <b>Dettaglio</b>; per il prospetto usa <b>Esporta</b> e recupera il file in Esportazioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra 'Ordine' e 'Biglietto'?",
+          "risposta": "Un <b>ordine</b> è la transazione complessiva (può contenere più biglietti, es. andata + ritorno). Ogni biglietto è identificato dal numero ordine + una lettera finale (es. 12345A, 12345B). In Biglietti si cercano i singoli titoli con filtri più dettagliati (linea, corsa, comune, ecc.)."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Un cliente dice di aver acquistato un biglietto ma non riesco a trovarlo: come cerco?",
+          "risposta": "Vai in Ordini → Biglietti e usa i filtri: <b>Codice Biglietto</b> (includi la lettera finale), oppure <b>Acquirente</b> (nome, cognome o email), oppure <b>N° Ordine</b>. Se non trovi nulla, verifica anche il <b>Canale</b> (App o Portale Web) e il <b>Tipo pagamento</b> (Online, Credito o Gratuito).<br><br>Se il biglietto è un <b>CSI invalidi</b>, usa i nuovi filtri: <b>Numero tessera</b> o <b>Codice fiscale</b> del passeggero per trovarlo rapidamente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come trovo tutti i biglietti CSI (invalidi) venduti in un periodo?",
+          "risposta": "Vai in Ordini → Biglietti e usa il filtro <b>'Titolo di viaggio'</b>: seleziona CSI (o CSIA, CSUI, CSUIA a seconda del tipo). Imposta le date e clicca Applica.<br><br>Puoi anche filtrare per <b>Categoria calcolo sconto</b> se vuoi vedere tutti i biglietti di una specifica categoria tessera, oppure per <b>Numero tessera</b> o <b>Codice fiscale</b> per trovare tutti i biglietti di un singolo utente invalido.<br><br>Esporta il risultato in .xls per avere anche numero tessera, CF, FID e fattore di sconto applicato."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cosa significa 'Credito' come tipo di pagamento?",
+          "risposta": "Il tipo pagamento <b>Credito</b> indica un biglietto acquistato tramite l'app COTRAP usando il saldo di una ricarica effettuata in precedenza dall'utente. Questa modalità è disponibile <b>solo sull'app</b>, non sul portale web."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come blocco un abbonamento usato in modo fraudolento?",
+          "risposta": "In <b>Ordini → Abbonamenti</b> individua il titolo, apri <b>Dettaglio</b> e verifica i controlli. Il comando <b>Blocca</b> modifica l’utilizzabilità del titolo: usalo solo per un caso accertato secondo la procedura aziendale. Prima di procedere chiarisci con l’Amministratore anche l’eventuale gestione dello sblocco."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come verifico o correggo il residuo corse di un abbonamento?",
+          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse rettifica il saldo: usalo solo quando la rettifica è stata decisa secondo la procedura aziendale. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "La percentuale di occupazione del mezzo è affidabile?",
+          "risposta": "<b>È parziale.</b> Rappresenta solo i biglietti acquistati <b>online</b>. Non include il venduto cartaceo (macchinetta di bordo). Il mezzo reale può essere più pieno di quanto mostrato."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come verifico che un rimborso sia andato a buon fine?",
+          "risposta": "Cerca il biglietto o l'ordine in Ordini → Biglietti (profilo commerciale) o in Ordini (sezione contabile). Lo stato indica: <b>'Attesa Rimborso'</b> = richiesta in corso; <b>'Rimborsato'</b> = rimborso su carta di credito completato; <b>'Rimborsato Credito'</b> = accreditato come saldo sull'account utente. Se è ancora 'Attesa Rimborso', attendere i tempi bancari o contattare l'Amministratore COTRAP."
         }
       ]
     }

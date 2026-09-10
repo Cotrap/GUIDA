@@ -74,6 +74,35 @@
           "tipo": "avviso",
           "stile": "info",
           "testo": "<b>Intorno alla catena:</b> tariffari e calendari li aggiorna COTRAP e tu li consulti; le <b>Eccezioni</b> servono per ciò che è temporaneo o diverso dalla regola; <b>Ordini</b> ed <b>Esportazioni</b> mostrano il risultato."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Domande frequenti</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Non conosco Itineris: com'è fatto il sistema in parole semplici?",
+          "risposta": "Pensalo come una catena. Prima i <b>codici contabili</b> (le località tariffarie), poi i <b>poli</b> (le fermate), poi la <b>linea</b> con il suo <b>template</b> (il percorso, con km e minuti contati dal capolinea), infine le <b>corse</b> (le partenze). Una corsa diventa acquistabile quando è <b>pubblicata</b> e ha un <b>titolo di viaggio</b> attivo. Frequenze e calendari decidono in quali giorni viaggia; le eccezioni gestiscono ciò che è temporaneo. Lo schema è in <a href=\"#gv-catena\">Come è fatto un servizio</a>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è un 'template' e perché esiste? Non capisco la differenza con la 'corsa'.",
+          "risposta": "Il <b>template</b> è il 'percorso tipo' della linea: definisce <i>dove</i> passa il bus, in che ordine, quanti km e quanti minuti separano ogni fermata dal capolinea. È come il 'modello' fisso della rotta.<br><br>La <b>corsa</b> è una singola partenza concreta: <i>quando</i> parte il bus (orario), con che frequenza (feriale, scolastica, ecc.) e quanti posti vendi online. Una stessa linea può avere molte corse diverse (es. 07:00, 09:00, 14:00) che usano tutte lo stesso template.<br><br>Perché questa separazione? Perché il percorso si descrive una volta sola e vale per tutte le corse. <b>Attenzione però:</b> le corse già create <b>non</b> si aggiornano da sole quando modifichi il template. Serve la procedura di aggiornamento massivo — vedi la sezione &quot;Modifica Template Massivo&quot;."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è un 'codice contabile' e cos'è un 'polo'? Quando uso uno, quando uso l'altro?",
+          "risposta": "Il <b>codice contabile</b> identifica una località ai fini tariffari e va allineato a Tecbus. Un Comune può avere più codici. Il <b>polo</b> è la fermata fisica inserita in Poli, con coordinate e codice contabile associato: più fermate possono condividere lo stesso codice. Nei template ordini le fermate; nei controlli tariffari confronti le coppie di codici."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cosa significa che una corsa è 'non attiva'? Che differenza c'è tra Stato Corsa e Stato Attivazione?",
+          "risposta": "Sono <b>due campi diversi</b>.<br><br><b>Stato Corsa</b> (campo del form, colonna <i>Stato</i>) è lo stato interno e ha due soli valori: <b>Attiva</b> e <b>Sospesa</b>. Normalmente resta su Attiva.<br><br><b>Stato Attivazione</b> (colonna <i>Stato Attivazione</i>) è la pubblicazione verso lo shop e ha quattro valori: <b>Non attiva</b>, <b>In attivazione</b>, <b>Attiva</b>, <b>In disattivazione</b>. Solo con &quot;Attiva&quot; la corsa è visibile e acquistabile su biglietteria.cotrap.it; &quot;In attivazione&quot; e &quot;In disattivazione&quot; sono stati temporanei, il sistema sta elaborando la richiesta.<br><br>Quando si dice che una corsa è &quot;non attiva&quot; o &quot;nascosta&quot; ci si riferisce <b>sempre allo Stato Attivazione</b>. Una corsa appena creata nasce così: per pubblicarla vai in Gestione Movimento → Corse, clicca l'icona <b>Pubblica\\Nascondi</b> a destra e conferma. La stessa icona serve a nasconderla di nuovo senza eliminarla."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Nello shop di COTRAP appaiono più risultati con lo stesso nome di città: come si risolve?",
+          "risposta": "Questo problema è causato dal campo <b>Descrizione</b> vuoto nei Codici Contabili. Quando un Comune ha più codici contabili (es. Bari città e Palese-Bari), il sistema li mostra entrambi nello shop. Se il campo Descrizione è vuoto su entrambi, appaiono entrambi come 'Bari', creando confusione all'utente.<br><br><b>Soluzione:</b> vai in Gestione Movimento → Codici Contabili Poli, modifica il codice della variante (nell'esempio: Palese-Bari) e inserisci nel campo <b>Descrizione</b> il nome della frazione (es. 'Palese'). Nello shop appariranno ora 'Bari' e 'Bari - Palese', chiaramente distinguibili.<br><br><b>Regola generale:</b> se per uno stesso Comune esistono più codici contabili, tutti tranne quello principale devono avere il campo Descrizione compilato con il nome della frazione."
         }
       ]
     },
@@ -312,7 +341,7 @@
             {
               "numero": 1,
               "titolo": "Prepara i dati da Tecbus",
-              "descrizione": "Codici contabili dei poli, polimetriche e tariffe, codice e denominazione della linea, competenza (Regionale, Provinciale, Comunale). <b>Controllo:</b> ci sono i codici di tutte le località del percorso."
+              "descrizione": "Codici contabili dei poli, polimetriche e tariffe (servono ad allineare la vendita online con le macchinette di bordo), codice e denominazione della linea, competenza (Regionale, Provinciale, Comunale). <b>Controllo:</b> ci sono i codici di tutte le località del percorso."
             },
             {
               "numero": 2,
@@ -369,6 +398,16 @@
             "Correggere km, fermate, orari di fermata, sosta o i flag di salita e discesa su una singola corsa la esclude dagli aggiornamenti massivi del template.",
             "Dopo un salvataggio, se compare <b>In elaborazione</b>, aspetta che finisca prima di rimettere mano allo stesso oggetto.",
             "Prima di operare controlla l'<b>azienda selezionata</b> in alto a destra: vedi solo linee, corse e titoli di quell'area."
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Perché alcune operazioni non sono immediate",
+          "contenuto": [
+            "Alcune operazioni avviano un’elaborazione dei collegamenti e delle tariffe: il salvataggio non coincide necessariamente con la disponibilità del risultato.",
+            "Le corse possono passare per <b>In attivazione</b> e <b>In disattivazione</b>. Dove compare <b>In elaborazione</b>, attendi il completamento prima di intervenire di nuovo sullo stesso oggetto.",
+            "Se il contatore resta fermo a lungo, registra oggetto e orario e chiedi assistenza.",
+            "Per le eccezioni chilometriche il comando <b>Pubblica</b> riavvia l’elaborazione. Non usarlo ripetutamente come prova."
           ]
         },
         {

@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-09-10 09:57:08
+ * Generato il: 2026-09-10 10:24:18
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -191,515 +191,155 @@ var BUNDLED_DATA = {
 },
   "changelog": {
   "id": "changelog",
-  "titolo": "Novità e Aggiornamenti",
-  "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
+  "titolo": "Registro modifiche",
+  "descrizione": "Appunti brevi su che cosa è cambiato nella guida, per chi la mantiene.",
   "modifiche": [
+    {
+      "versione": "2.18",
+      "data": "2026-09-10",
+      "titolo": "Menu come quello di Itineris, niente doppioni",
+      "dettagli": [
+        "Menu in due parti: Strumenti della guida e Menu Itineris (commerciale e contabile), con nomi e ordine del pannello",
+        "Domande e Risposte distribuite nelle sezioni; tolte 29 domande già coperte da altre pagine",
+        "CS Invalidi dentro Gestione Movimento; Profilo Commerciale unito alla Guida Veloce; Ordini con tutte e sette le voci",
+        "Pulsante 🔗 per copiare il link di ogni titolo; registro modifiche aperto dalla versione in alto"
+      ]
+    },
     {
       "versione": "2.17",
       "data": "2026-09-10",
-      "tipo": "major",
-      "titolo": "Guida Veloce ripensata e ricerca che trova davvero le risposte",
-      "descrizione": "La Guida Veloce descriveva solo la sequenza della prima configurazione, cioè un lavoro che si fa una volta per linea. Ora parte da ciò che l'operatore deve fare ogni giorno e per ogni operazione indica il comando fatto apposta, la scorciatoia da evitare e il controllo del risultato. Riparata anche la ricerca, che non leggeva risposte, passaggi e schede.",
+      "titolo": "Guida Veloce per compiti e ricerca riparata",
       "dettagli": [
-        "Guida Veloce: 22 schede operative in cinque gruppi — Costruire il servizio, Cambiare corse e percorsi, Sospendere e avvisare, Prezzi e vendita, Clienti e titoli — ognuna con <b>Usa</b>, <b>Evita</b>, <b>Verifica</b> e il collegamento alla procedura completa",
-        "Guida Veloce: la catena del servizio in forma visiva, dai codici contabili ai titoli di viaggio, con chi fa che cosa",
-        "Guida Veloce: la prima configurazione di una linea resta, ora con un controllo per ogni passo e la verifica finale",
-        "Guida Veloce: sei regole da ricordare sempre",
-        "Menu: nuovo gruppo <b>Inizia da qui</b> in cima, con Guida Veloce e Risolvi un problema; prima erano in fondo fra le sezioni extra",
-        "Home: le due schede di partenza sono ora le prime",
-        "Ricerca: ora trova anche il testo delle risposte nelle Domande e Risposte, dei passaggi di Risolvi un problema e della Guida Veloce, dei riquadri di nota ed esempio e delle griglie strumenti. Prima restavano fuori dall'indice",
-        "Sito: due nuovi elementi grafici, la sequenza numerata e le schede operative, leggibili da computer, telefono e in stampa",
-        "Domande e Risposte, Risolvi un problema, Eccezioni, Gestione Movimento, Ordini e Configurazione: riscritte come istruzioni le frasi che spiegavano che cosa un controllo «non dimostra» senza dire che cosa fare. Le cautele restano le stesse",
-        "Domande e Risposte: le due domande sulla modifica di una corsa già in vendita tornano a rispondere, distinguendo ciò che passa dall'aggiornamento massivo da ciò che va controllato prima",
-        "Domande e Risposte: la spiegazione del sistema «in parole semplici» torna semplice e rimanda allo schema della Guida Veloce",
-        "Guida Veloce: precisato quali correzioni su una singola corsa la escludono dagli aggiornamenti massivi, e che per le frequenze si controllano anche giorni e date"
-      ],
-      "sezioni_modificate": [
-        "guida-veloce",
-        "home",
-        "faq",
-        "diagnostica",
-        "eccezioni",
-        "gestione-movimento",
-        "ordini",
-        "configurazione"
+        "Guida Veloce: schede Usa / Evita / Verifica per le operazioni di tutti i giorni",
+        "Ricerca: trova anche risposte, passaggi e schede",
+        "Frasi da ragionamento riscritte come istruzioni"
       ]
     },
     {
       "versione": "2.16",
       "data": "2026-09-09",
-      "tipo": "major",
-      "titolo": "Procedure e diagnosi allineate",
-      "descrizione": "Revisione delle procedure commerciali, delle FAQ e dei controlli per individuare problemi di configurazione.",
+      "titolo": "Procedure e diagnosi allineate (Codex)",
       "dettagli": [
-        "Diagnostica per corsa assente, prezzi, abbonamenti e modifiche non propagate: controlli con azienda, date e filtri coerenti.",
-        "Frequenze: verificare tipologia, giorni, date e calendario; la denominazione da sola non definisce il servizio.",
-        "Template: aggiornare le sole corse interessate, distinguendo pubblicazione e stato interno; verificare quelle escluse per modifiche dirette.",
-        "Tariffe: distinguere distanza, eccezioni e sconto; un risultato vuoto non certifica l’aggiornamento dell’intera rete.",
-        "Ordini: separati consultazione, controlli e rettifiche; corrette le indicazioni non confermate sullo sblocco.",
-        "Confermate in guida Notifica App Broadcast e Note emissione, con le rispettive precauzioni operative.",
-        "Corretti riferimenti e collegamenti fra procedure e FAQ."
-      ],
-      "sezioni_modificate": [
-        "diagnostica",
-        "faq",
-        "gestione-movimento",
-        "eccezioni",
-        "configurazione",
-        "ordini",
-        "cs-invalidi",
-        "guida-veloce",
-        "profilo-commerciale",
-        "esportazioni"
+        "Tolte affermazioni non verificate: sblocco abbonamenti, percentuali, limite di 40 giorni esteso",
+        "Tolti dal sito tre screenshot con dati di tessere",
+        "Navigazione con ancore corretta"
       ]
     },
     {
       "versione": "2.15",
       "data": "2026-09-09",
-      "tipo": "major",
-      "titolo": "Le novità del rilascio: notifiche broadcast e note sui titoli gratuiti",
-      "descrizione": "Le due funzioni annunciate con la mail di rilascio sono ora attive in produzione e sono state documentate: la notifica broadcast a tutti gli utenti dell'app e la nota da associare ai titoli emessi gratuitamente. Nel verificarle sono emerse alcune differenze fra la guida e il pannello, corrette qui.",
+      "titolo": "Notifica App Broadcast e Note emissione",
       "dettagli": [
-        "Nuova sezione <b>Risolvi un problema</b>: un indice diagnostico organizzato per sintomo (la corsa non compare, il prezzo non torna, l'abbonamento non si compra, il cliente ha un problema...) con i controlli da fare nell'ordine giusto e il collegamento diretto al punto della guida che spiega come si fa",
-        "Ordini → Biglietti: documentata la nuova tipologia <b>Notifica App Broadcast</b>, che manda l'avviso a tutti gli utenti che hanno installato l'app COTRAP e non solo ai propri clienti. Va concordata con l'Amministratore COTRAP",
-        "Ordini → Biglietti: descritti i campi della maschera <b>Invia notifica a clienti</b>, compreso il limite di 200 caratteri del testo quando si sceglie la notifica broadcast",
-        "Emetti titolo di viaggio: nuova parte <b>Note per titolo</b>. Ad ogni titolo emesso gratuitamente si può associare una nota, che resta visibile solo al commerciale. Se il titolo prevede più quantità la nota non viene duplicata, ma applicata a ciascun titolo",
-        "Ordini: le note si rileggono nel <b>Dettaglio</b> del titolo, campo <b>Note emissione</b>, sia sui biglietti sia sugli abbonamenti",
-        "Ordini → Abbonamenti: corretto l'elenco delle operazioni di riga. Sono <b>Inserisci Controllo</b>, <b>Dettaglio Controllo</b>, <b>Dettaglio</b>, <b>Blocca</b> e <b>Modifica corse</b>. I nomi si riferiscono alle icone di riga, non ai pulsanti interni delle maschere",
-        "Ordini → Abbonamenti: completato l'elenco dei filtri con quelli realmente disponibili, dai codici contabili al numero di corse residue",
-        "Ordini → Abbonamenti: nuovo riquadro sui campi del dettaglio che servono in assistenza, fra cui <b>Importo Da Tariffario</b>, <b>Km Tariffario</b> ed <b>Eccezione Tariffaria</b>, che dicono subito perché un abbonamento costa quello che costa",
-        "Ordini → Biglietti: documentate le due operazioni di riga (Inserisci Controllo e Dettaglio) e i campi aggiuntivi del dettaglio, compreso Importo Non Scontato",
-        "Ordini → Biglietti: segnalato che la ricerca accetta un intervallo di date di <b>massimo 40 giorni</b>, altrimenti compare un messaggio di errore e la ricerca non parte",
-        "Home: aggiunta la scheda della nuova sezione Risolvi un problema"
-      ],
-      "sezioni_modificate": [
-        "ordini",
-        "emetti-titolo-viaggio",
-        "diagnostica",
-        "home"
+        "Le due funzioni del rilascio, verificate in produzione",
+        "Ordini: operazioni di riga reali e limite di 40 giorni in Biglietti",
+        "Nuova pagina Risolvi un problema"
       ]
     },
     {
       "versione": "2.14",
       "data": "2026-09-09",
-      "tipo": "major",
-      "titolo": "Revisione completa della guida, sezione per sezione",
-      "descrizione": "Riletta e corretta tutta la guida confrontandola con il pannello reale e con la documentazione di sistema. Sistemate incoerenze fra quello che la guida elencava e quello che il portale mostra davvero, completati gli elenchi dei filtri e delle esportazioni, e colmati due buchi importanti: i Titoli di Viaggio mancavano dalla Guida Veloce e la sezione Ordini era descritta come di sola consultazione.",
+      "titolo": "Revisione completa, sezione per sezione",
       "dettagli": [
-        "Ordini: corretta l'affermazione secondo cui la sezione sarebbe di sola consultazione. Dagli abbonamenti si inseriscono controlli, si blocca un titolo e si aggiungono o scalano corse",
-        "Ordini: elencata anche Stato Controlli, che mancava fra le voci della sezione",
-        "Ordini → Biglietti: completato l'elenco dei filtri con quelli realmente presenti (Data Inizio/Fine Partenza, comune e frazione di arrivo, stato pagamento, canale, vidimato a bordo, stato biglietto, tipo anomalia, con cambio, azione controllore)",
-        "Ordini → Biglietti: documentato il pulsante Invia notifica ad Utenti, con i suoi campi e l'avvertenza che la comunicazione parte davvero e non si può richiamare",
-        "Ordini → Abbonamenti: precisato che un abbonamento bloccato non si sblocca dal profilo commerciale",
-        "Guida Veloce: aggiunto il passo mancante sull'attivazione dei Titoli di Viaggio. Pubblicare le corse fa comparire i biglietti, ma gli abbonamenti vanno richiesti e attivati a parte",
-        "Guida Veloce: nel passo sulla Configurazione aggiunti gli utenti dell'app di controllo",
-        "Configurazione: l'elenco delle voci dimenticava Utenti App Controlli, che pure era già documentata sotto; corretto anche il riepilogo che diceva che il consorziato gestisce una sola voce",
-        "Configurazione → Tariffari: spiegato come il tariffario si lega alle proprie corse, cioè per fasce chilometriche a partire dai km del percorso",
-        "Configurazione → Frequenze Corsa: aggiunta l'avvertenza che conta la Tipologia e non il nome dato alla frequenza",
-        "Esportazioni: completato l'elenco dei file con Corse, PoliTemplate ed Eccezioni tariffarie Abbonamenti; spiegato che la campanella avvisa quando un'esportazione è pronta; aggiunta la nota su Excel per i file che hanno estensione .xls ma sono testo separato da tabulazioni",
-        "Home: corretta la descrizione della card Ordini, aggiunte le card Emetti Titolo di Viaggio e CS Invalidi che mancavano, e spiegato che in Itineris «azienda» è un'area di lavoro, per chi ne gestisce più di una",
-        "Profilo Commerciale: l'iter di creazione di una linea ora comprende la pubblicazione delle corse e i titoli di viaggio, e cita anche la voce Emetti titolo di viaggio",
-        "Eccezioni tariffarie Abbonamenti: non riguardano solo i mensili, l'importo si imposta per raggruppamento tariffario",
-        "Eccezioni Chilometriche: spiegato perché la data può essere solo il primo del mese e cosa indica davvero la colonna In elaborazione",
-        "Controllo Tariffario Abbonamenti: riscritte le indicazioni su cosa fare quando una tratta non ha abbonamento o quando andata e ritorno hanno importi diversi",
-        "Sezione Contabile: il riepilogo ora cita anche la funzione Credito",
-        "FAQ: corretta la risposta che diceva che gli abbonamenti si attivano da soli. Il titolo va prima richiesto all'Amministratore COTRAP e poi attivato in Gestione Movimento → Titoli di viaggio",
-        "FAQ: tolto il riferimento a un flag «Richiede Tessera» che nel pannello non esiste. Se un abbonamento richiede la MyCard si legge nella Categoria Calcolo Sconto e nel campo Visibilità del titolo (Account oppure Account_Tessera)",
-        "FAQ e Gestione Movimento: la linea multitratta non riguarda aziende diverse, ma due proprie linee che hanno un codice contabile in comune. Corretti anche gli esempi",
-        "FAQ: tolta l'indicazione, mai verificata, di evitare Safari",
-        "FAQ: precisato che il selettore dell'azienda in alto a destra è quello del pannello commerciale",
-        "FAQ: spiegata la differenza fra Statistiche linee, che conta per data di emissione, e Statistiche corse CS, che conta per data di partenza",
-        "Gestione Movimento → Titoli di Viaggio: corretto l'elenco delle colonne. Raggruppamento Tariffario Urbano ed Extra Urbano sono due colonne distinte, la Tipologia vale Biglietto o Abbonamento e non mensile o settimanale, e lo Stato attivazione ha quattro valori come quello delle corse",
-        "Gestione Movimento → Titoli di Viaggio: chiarito che nella configurazione i campi in alto sono in sola lettura e che i riquadri su cui interviene il consorziato sono quattro: linee e corse abilitate, linee e corse da escludere, codici contabili abilitati, codici contabili da escludere",
-        "Gestione Movimento → Titoli di Viaggio: aggiunti i filtri della pagina, utili per trovare un titolo rimasto in uno stato intermedio",
-        "CS Invalidi e Gestione Movimento: il biglietto CS ordinario non è legato alle tessere 1 e 15, che sono invece la categoria calcolo sconto degli abbonamenti standard",
-        "Ordini: segnalate le voci Statistiche linee e Statistiche corse CS, che compaiono nel menu di alcuni profili",
-        "Sezione Contabile: indicato che Statistiche linee compare anche nel menu Ordini del pannello commerciale",
-        "Aggiunte le didascalie alle 14 immagini che ne erano prive, in Configurazione e Gestione Movimento: ora ogni schermata dice cosa mostra"
-      ],
-      "sezioni_modificate": [
-        "home",
-        "profilo-commerciale",
-        "configurazione",
-        "esportazioni",
-        "ordini",
-        "guida-veloce",
-        "eccezioni",
-        "sezione-contabile",
-        "faq",
-        "cs-invalidi",
-        "gestione-movimento"
+        "Titoli di viaggio: colonne, testata in sola lettura e quattro riquadri come nel pannello",
+        "Ordini non è solo consultazione; documentato Invia notifica ad Utenti",
+        "Corretti il flag «Richiede Tessera» inesistente e la multitratta «fra aziende diverse»"
       ]
     },
     {
       "versione": "2.13",
       "data": "2026-09-09",
-      "tipo": "minor",
-      "titolo": "Spiegato perché il sistema ricalcola, i due campi dei km e il campo Sosta",
-      "descrizione": "Aggiunte le spiegazioni che mancavano sul funzionamento del sistema, ricavate dalle specifiche di progetto di Itineris: perché dopo una modifica compare un contatore e servono gli stati intermedi, che differenza c'è tra Km tariffario e Km effettivi, e a cosa serve davvero il campo Sosta.",
+      "titolo": "Ricalcolo, km tariffario ed effettivi, campo Sosta",
       "dettagli": [
-        "Comprendere il Sistema: nuovo riquadro che spiega perché alcune operazioni non sono immediate. Itineris tiene precalcolate tutte le combinazioni di viaggio, quindi ogni modifica a monte le fa ricostruire: da qui il contatore In elaborazione e gli stati In attivazione / In disattivazione",
-        "Creazione del Template: nuovo riquadro sui due campi dei chilometri. Km tariffario è il chilometraggio da contratto ed è quello che determina il prezzo; Km effettivi è la distanza reale e serve come controllo",
-        "Creazione del Template: spiegato a cosa serve il campo Sosta, cioè a costruire le coincidenze fra corse. Modificarlo o azzerarlo può far sparire collegamenti dallo shop",
-        "Titoli di Viaggio: precisate le definizioni contrattuali degli abbonamenti — il 42 e il 10 sono gli abbonamenti ridotti, validi per non più di cinque giorni a settimana",
-        "Configurazione: la sottosezione Frequenza Corsa è stata rinominata Frequenze Corsa, come la voce reale del menu",
-        "Uniformata in tutta la guida la dicitura del pulsante Pubblica\\Nascondi, che prima era scritta con la barra al contrario",
-        "Aggiunto lo script verifica-guida.py: un controllo automatico da eseguire prima di pubblicare, che blocca regressioni, contenuti fuori ambito e diciture sbagliate dei comandi"
-      ],
-      "sezioni_modificate": [
-        "gestione-movimento",
-        "configurazione",
-        "faq"
+        "Spiegati contatore In elaborazione e stati intermedi",
+        "Distinti Km tariffario e Km effettivi; a che cosa serve la Sosta"
       ]
     },
     {
       "versione": "2.12",
       "data": "2026-09-09",
-      "tipo": "major",
-      "titolo": "Correzione: i titoli per invalidi sono gratuiti. Sezione Contabile completata",
-      "descrizione": "Corretta l'informazione sul costo dei titoli di viaggio per persone con disabilità: sono gratuiti ai sensi dell'art. 30 comma 3 della L.R. Puglia n. 18/2002, come previsto dalle Condizioni Generali di Trasporto COTRAP. Completata la Sezione Contabile con le funzioni Credito e Spese Abbonamenti Agenzie.",
+      "titolo": "Titoli per invalidi gratuiti; Sezione Contabile completata",
       "dettagli": [
-        "CORREZIONE PRINCIPALE — cs-invalidi.json: rimossa l'affermazione errata secondo cui il CSI sarebbe «sempre a prezzo pieno» e lo sconto si applicherebbe solo a CSIA e CSUIA. I titoli per invalidi (CSI, CSIA, CSUI, CSUIA) sono gratuiti per il cliente",
-        "cs-invalidi.json: precisato il limite reale — 2 biglietti al giorno (andata e ritorno) più altri 2 per l'accompagnatore quando l'utente ne ha diritto",
-        "cs-invalidi.json: aggiunto il riquadro sulla tessera MyCard richiesta (portale mycard.cotrap.eu, 10,00 €, personale e non cedibile, validità 12 mesi per le categorie art. 30 c. 3)",
-        "cs-invalidi.json: riformulata la nota su chi vuole acquistare un CS ordinario a pagamento",
-        "gestione-movimento.json → Titoli di Viaggio: indicata la gratuità accanto a CSI, CSIA, CSUI e CSUIA",
-        "gestione-movimento.json → Titoli di Viaggio: indicata la gratuità degli abbonamenti invalidi, aggiunto l'Abb. Settimanale Invalidi/12 e chiarito che l'elenco non è esaustivo perché dipende da cosa l'Amministratore ha abilitato per l'azienda",
-        "sezione-contabile.json: aggiunta la funzione Credito tra quelle dell'ambiente contabile, che prima non era citata",
-        "sezione-contabile.json: nuova sottosezione Spese Abbonamenti Agenzie con la procedura completa di esportazione per anno contabile",
-        "sezione-contabile.json e faq.json: rimossa l'indicazione non verificata sulla posizione del nome azienda nel profilo contabile; resta la verifica dell'utente in basso a sinistra",
-        "home.json: precisato che il selettore dell'azienda in alto a destra riguarda il pannello commerciale"
-      ],
-      "sezioni_modificate": [
-        "cs-invalidi",
-        "gestione-movimento",
-        "sezione-contabile",
-        "faq",
-        "home"
+        "Corretto: i titoli per invalidi sono gratuiti per il cliente",
+        "Sezione Contabile: aggiunti Credito e Spese Abbonamenti Agenzie"
       ]
     },
     {
       "versione": "2.11",
       "data": "2026-09-08",
-      "tipo": "major",
-      "titolo": "Correzione dei km del template, degli stati della corsa e degli screenshot",
-      "descrizione": "Revisione basata su verifiche dirette nel portale Itineris. Corretta la regola dei km del template (sono cumulativi dal capolinea, non tratta per tratta), chiarita la differenza tra Stato Corsa e Stato Attivazione, riassegnati tutti gli screenshot delle sezioni aggiunte con la v2.2 e aggiornati i riferimenti all'interfaccia.",
+      "titolo": "Km del template, stati della corsa, screenshot",
       "dettagli": [
-        "CORREZIONE PRINCIPALE — km del template: erano descritti come «km tra fermata e fermata», in realtà sono cumulativi dal capolinea come i minuti. Aggiornati TL;DR, avvisi, box-esempio, lista errori comuni, Guida Veloce e 5 FAQ",
-        "Riscritta la regola sui «km 0»: due fermate con lo stesso codice contabile mostrano lo stesso valore di km, che non va azzerato; tra fermate con lo stesso codice non nasce comunque tariffa",
-        "Corretta la FAQ che consigliava di azzerare i km nel template per bloccare una sottotratta: con km cumulativi falserebbe tutte le distanze a valle",
-        "Stato Corsa (Attiva/Sospesa) e Stato Attivazione (Non attiva/In attivazione/Attiva/In disattivazione) ora sono documentati come campi distinti, con i valori reali. Riscritta la FAQ che li dava per sinonimi",
-        "Chiarito che «disattivare le corse» per l'aggiornamento massivo significa portare lo Stato Attivazione a «Non attiva» con l'icona Pubblica\\Nascondi",
-        "Corretta la FAQ che affermava che modificando il template tutte le corse si aggiornano insieme",
-        "Rimossa l'indicazione errata secondo cui Attivazione\\Disattivazione Automatica sarebbe disponibile solo per le frequenze Scolastiche",
-        "Aggiunto avviso: la denominazione di una frequenza può non corrispondere alla sua tipologia (es. una frequenza chiamata «FESTIVO» può essere di tipologia Giornaliera)",
-        "Screenshot: riassegnati tutti i 12 file aggiornamento-* (eccezioni chilometriche, modifica template massivo, multitratta, titoli gratuiti), che erano associati al passo sbagliato. Aggiunta l'immagine della ricerca multitratta su Portale Clienti, prima inutilizzata",
-        "Titoli gratuiti: rimossa l'immagine con didascalia inventata sulla stampa PDF e aggiunta la schermata del Portale Clienti aperto con privilegi admin",
-        "Aggiornata la descrizione dell'interfaccia: l'utente è in basso a sinistra, l'azienda nel selettore in alto a destra (Home, Sezione Contabile, FAQ)",
-        "Aggiunti i pulsanti ASSISTENZA e la campanella delle notifiche esportazioni",
-        "Linee: aggiunte le due operazioni del template finora non documentate, «Aggiorna Corse Inattive del Template» ed «Esporta», e usati i nomi reali dei comandi",
-        "Corse: documentati i campi Codice turno e Note; il campo Mezzo è ora descritto come facoltativo",
-        "Corretta la dicitura «tessera 1,15»: sono le due tessere 1 e 15 (Tessera Elettronica Normale), non un importo",
-        "CS Invalidi: precisato che se i titoli CSI/CSIA/CSUI/CSUIA non compaiono vanno richiesti all'Amministratore, perché non sono abilitati per tutte le aziende",
-        "Codici contabili: chiarito che uno stesso Comune può avere più codici, non solo per le frazioni",
-        "Ripristinato lo script genera-bundle.ps1 nella cartella principale e rigenerato js/data.js, che era fermo alla v2.6 e non conteneva la sezione CS Invalidi"
-      ],
-      "sezioni_modificate": [
-        "gestione-movimento",
-        "faq",
-        "eccezioni",
-        "emetti-titolo-viaggio",
-        "cs-invalidi",
-        "guida-veloce",
-        "home",
-        "sezione-contabile"
+        "Km e minuti del template contati dal capolinea",
+        "Stato Corsa distinto da Stato Attivazione",
+        "Screenshot degli aggiornamenti rimessi al loro posto; bundle rigenerato"
       ]
     },
     {
       "versione": "2.10",
       "data": "2026-03-30",
-      "tipo": "fix",
-      "titolo": "Allineamento tutte le sezioni alle modifiche CS Invalidi",
-      "descrizione": "Aggiornate tutte le sezioni impattate dall'introduzione dei CS Invalidi: Linee, Titoli di Viaggio, Ordini Biglietti, Statistiche Linee, Statistiche Venduto, FAQ.",
-      "dettagli": [
-        "gestione-movimento.json → Linee: aggiunto avviso che la Tipologia (Regionale/Provinciale vs Comunale) determina quali CS sono disponibili (CS/CSI/CSIA vs CSU/CSUI/CSUIA)",
-        "gestione-movimento.json → Titoli di Viaggio: riscritta sezione con le 6 categorie CS, separazione extraurbano/urbano, rimando a sezione CS Invalidi per procedura completa CSI",
-        "ordini.json → Biglietti: aggiunti 5 nuovi filtri (Titolo di viaggio, Categoria calcolo sconto, Numero tessera, Codice fiscale, FID), aggiornato dettaglio biglietto con nuovi campi",
-        "sezione-contabile.json → Statistiche Linee: aggiunto info su colonna Denominazione titolo di viaggio (CS/CSI ecc.) e importo scontato, aggiornata nota su esportazione con campi leggibili",
-        "sezione-contabile.json → Statistiche Venduto: aggiunto filtro Titolo di Viaggio con fattore di sconto, nota che è presente in .xls ma non in .txt",
-        "faq.json: aggiunta FAQ su come trovare biglietti CSI, aggiornata FAQ ricerca biglietto cliente con riferimento a numero tessera/CF"
-      ],
-      "sezioni_modificate": [
-        "gestione-movimento",
-        "ordini",
-        "sezione-contabile",
-        "faq"
-      ]
+      "titolo": "Sezioni allineate ai CS Invalidi",
+      "dettagli": []
     },
     {
       "versione": "2.9",
       "data": "2026-03-30",
-      "tipo": "major",
-      "titolo": "Nuova sezione CS Invalidi (CSI, CSIA, CSUI, CSUIA)",
-      "descrizione": "Aggiunta nuova sezione dedicata ai biglietti di Corsa Semplice per invalidi. Documenta le 6 categorie CS, la separazione CS/CSU per tipo linea, la procedura di configurazione e i nuovi filtri in Ordini e Statistiche.",
-      "dettagli": [
-        "Nuova sezione cs-invalidi.json con 4 sottosezioni: Le 6 categorie, Configurazione profilo Commerciale, Come funziona per l'utente, Nuovi filtri in Ordini e Statistiche",
-        "Chiarita la separazione CS (extraurbano) vs CSU (urbano) introdotta con i CSI",
-        "Documentata la procedura obbligatoria: Admin crea il titolo → Commerciale seleziona le linee → Commerciale attiva",
-        "Documentato il limite di 2 biglietti CSI al giorno per utente",
-        "Documentata l'opzione 'Visibilità titoli senza tessera' nella categoria calcolo sconto",
-        "Documentati i nuovi filtri in Ordini → Biglietti: Titolo di viaggio, Categoria calcolo sconto, Numero tessera, Codice fiscale, FID",
-        "Documentate le modifiche alle statistiche: Statistiche Linee, Corse, Venduto",
-        "Aggiunta voce menu CS Invalidi con icona ♿"
-      ],
-      "sezioni_modificate": [
-        "cs-invalidi",
-        "menu"
-      ]
+      "titolo": "Nuova sezione CS Invalidi",
+      "dettagli": []
     },
     {
       "versione": "2.8",
       "data": "2026-03-30",
-      "tipo": "major",
-      "titolo": "FAQ ampliate: eccezioni step-by-step, Template Massivo, Multitratta, Controllo Prezzi",
-      "descrizione": "Riscritta e ampliata la sezione FAQ con procedure operative complete, nuove sezioni dedicate a Modifica Template Massivo e Linea Multitratta, guida dettagliata alla scelta tra Eccezione Chilometrica e Tariffaria, FAQ su errori comuni del browser.",
-      "dettagli": [
-        "faq-prezzi: riscritta completamente con 6 FAQ — procedura diagnostica completa per prezzi sbagliati, guida alla scelta Chilometrica vs Tariffaria con casi pratici e caso ibrido, step-by-step per Controllo Tariffario, Controllo Tariffario Itinerario e Controllo Tariffario Abbonamenti",
-        "Nuova sezione FAQ 'Modifica Template Massivo': cos'è, procedura passo per passo, quali corse sono escluse, come risolvere corse con vecchi orari, Duplica e Inverti",
-        "Nuova sezione FAQ 'Linea Multitratta': quando usarla, struttura template a 3 poli, debug abbonamento non visibile, limitazione biglietti",
-        "faq-eccezioni: aggiunte procedure complete step-by-step per Eccezione Chilometrica, Eccezione Tariffaria Biglietti e Eccezione Tariffaria Abbonamenti",
-        "faq-corse-problemi: aggiunte FAQ su cache browser e Admin Panel lento",
-        "faq-abbonamenti: aggiunta FAQ su tessera MyCard (quando è obbligatoria, emissione gratuita)",
-        "faq-contabile: aggiunta procedura completa step-by-step esportazione Dati Contabili, FAQ differenza statistiche mensili/linee/venduto, FAQ lettura statistiche con esclusioni"
-      ],
-      "sezioni_modificate": [
-        "faq"
-      ]
+      "titolo": "Domande ampliate: eccezioni, template massivo, multitratta",
+      "dettagli": []
     },
     {
       "versione": "2.7",
       "data": "2026-03-30",
-      "tipo": "fix",
-      "titolo": "Fix navigazione, link Tecbus, terminologia CS, struttura manuale",
-      "descrizione": "Corretti errori di navigazione nella Guida Veloce, aggiunto link Tecbus in tutti i punti dove è citato, corretta terminologia acronimo CS, aggiornata Struttura del Manuale in Introduzione, rimossi tutti i badge NUOVO scaduti.",
-      "dettagli": [
-        "guida-veloce.json: fix CRITICO passo 2 — rimosso 'accessibile dal menu Profilo Commerciale' (Configurazione è voce indipendente nel menu)",
-        "guida-veloce.json: aggiunto link https://tecbus.eu/ nella descrizione di Tecbus al passo 3",
-        "introduzione.json: aggiornata 'Struttura del Manuale' — aggiunta Configurazione come sezione separata e aggiunta sezione Emetti Titolo di Viaggio",
-        "emetti-titolo-viaggio.json: corretto acronimo CS → 'Corsa Semplice (CS)' con spiegazione esplicita",
-        "profilo-commerciale.json: aggiunti link cliccabili a https://tecbus.eu/ nelle tre menzioni di Tecbus",
-        "gestione-movimento.json: aggiunti link cliccabili a https://tecbus.eu/ nelle menzioni TLDR di Tecbus",
-        "faq.json: aggiunto link https://tecbus.eu/ e descrizione 'azienda che fornisce i dati di linea' nella risposta sui codici contabili",
-        "Rimossi tutti i badge 'nuovo': true scaduti da emetti-titolo-viaggio, eccezioni, faq (sezione principale e 4 sottosezioni)"
-      ],
-      "sezioni_modificate": [
-        "guida-veloce",
-        "introduzione",
-        "emetti-titolo-viaggio",
-        "profilo-commerciale",
-        "gestione-movimento",
-        "faq",
-        "eccezioni"
-      ]
+      "titolo": "Correzioni di navigazione e di terminologia",
+      "dettagli": []
     },
     {
       "versione": "2.6",
       "data": "2026-03-05",
-      "tipo": "miglioramento",
-      "titolo": "Filosofia sistema, errori comuni, fix CRITICO Descrizione codici contabili",
-      "descrizione": "Completamente riscritta la sezione 'Comprendere il Sistema' con la logica a livelli di Itineris, mappa 'dove vado per fare cosa' e lista errori comuni. Corretto istruzione CRITICA errata su Codici Contabili (Descrizione non va lasciata vuota). Rimossi ultimi riferimenti App Controllo da profilo-commerciale. Aggiunta FAQ nomi duplicati nello shop.",
-      "dettagli": [
-        "gestione-movimento.json: aggiunto box-nota 'La logica del sistema' con spiegazione sistema a livelli (Codici → Poli → Linee/Template → Corse)",
-        "gestione-movimento.json: aggiunto box 'Dove vado per fare cosa' con mappa navigazione tra sezioni",
-        "gestione-movimento.json: aggiunta lista 'Errori comuni da evitare' con 5 scenari operativi",
-        "gestione-movimento.json: FIX CRITICO — campo Descrizione in Codici Contabili: da 'lasciare vuoto' a istruzione corretta (compilare con nome frazione quando ci sono più codici per stesso Comune)",
-        "gestione-movimento.json: aggiunto avviso warning sui nomi duplicati nello shop COTRAP nella sezione Codici Contabili",
-        "profilo-commerciale.json: rimossi tutti i riferimenti residui a 'Utenti App Controlli' (da lista Configurazione, da testo introduttivo, dalla lista-numerata)",
-        "faq.json: aggiunta FAQ 'Nello shop di COTRAP appaiono più risultati con lo stesso nome di città' nella sezione Capire il sistema"
-      ],
-      "sezioni_modificate": [
-        "gestione-movimento",
-        "profilo-commerciale",
-        "faq"
-      ]
+      "titolo": "Errori comuni e Descrizione dei codici contabili",
+      "dettagli": []
     },
     {
       "versione": "2.5",
       "data": "2026-03-04",
-      "tipo": "fix",
-      "titolo": "Fix CRITICO guida-veloce, miglioramenti eccezioni, CSS accessibilità, FAQ",
-      "descrizione": "Corretti riferimenti residui all'App Controllo nella Guida Veloce. Migliorati testi su denormalizzazione, terminologia eccezioni chilometriche e FAQ. Aggiornato CSS per accessibilità e fix risposta FAQ troncata.",
-      "dettagli": [
-        "Fix CRITICO guida-veloce.json: rimosso riferimento a 'Utenti App Controlli' dal passo 2",
-        "Fix CRITICO guida-veloce.json: rimosso avviso APP Controllo in fondo alla guida veloce, sostituito con avviso generico",
-        "eccezioni.json: 'codici dei polo' → 'Codici Contabili dei Poli' (terminologia corretta)",
-        "eccezioni.json: aggiunta spiegazione del perché la data inizio è solo il primo del mese (ricalcolo tariffe mensile)",
-        "eccezioni.json: riformulati avvisi sulla 'denormalizzazione' con linguaggio operativo più chiaro",
-        "faq.json: aggiornata risposta FAQ denormalizzazione con linguaggio più comprensibile",
-        "faq.json: aggiunta FAQ 'I biglietti già acquistati prima di un'eccezione rimangono validi?'",
-        "introduzione.json: rimossa sottosezione 'Contenuti' duplicata (identica ad Accesso al Portale in home), sostituita con 'Struttura del Manuale'",
-        "introduzione.json: aggiornate date e testi per coerenza con il resto della guida",
-        "css/style.css: font-size separatori menu 0.68rem → 0.75rem (accessibilità, soglia minima 12px)",
-        "css/style.css: max-height FAQ aperta 500px → 1200px (previene troncamento risposte lunghe)"
-      ],
-      "sezioni_modificate": [
-        "guida-veloce",
-        "eccezioni",
-        "faq",
-        "introduzione"
-      ]
+      "titolo": "Correzioni a Guida Veloce ed Eccezioni",
+      "dettagli": []
     },
     {
       "versione": "2.4",
       "data": "2026-03-04",
-      "tipo": "fix",
-      "titolo": "Rimozione App Controllo, fix scroll menu orizzontale, FAQ ampliate",
-      "descrizione": "Rimossa la sezione App Controllo dalla guida (diventerà un sito dedicato separato). Corretto bug critico sul menu orizzontale che bloccava la navigazione alle ultime sottosezioni. Aggiunte nuove FAQ e corrette inconsistenze.",
-      "dettagli": [
-        "Rimossa sezione APP Controllo dal menu e dalla Home (il sito dedicato sarà pubblicato separatamente)",
-        "Fix bug menu orizzontale: le ultime sottosezioni ora raggiungono correttamente la posizione nel viewport",
-        "Aggiunto padding dinamico al fondo del contenuto per garantire scroll corretto anche degli elementi finali",
-        "Click handler menu orizzontale usa ora offset esplicito invece di scrollIntoView (più affidabile)",
-        "Aggiunte FAQ: Eccezione Tariffaria vs Chilometrica, verifica stato rimborso, servizio stagionale, modifica corsa pubblicata",
-        "Totale FAQ: 45 domande in 8 categorie operative",
-        "Corretti riferimenti obsoleti ad 'app-controllo' in changelog e home",
-        "Corretta capitalizzazione 'COTRAP' in introduzione.json"
-      ],
-      "sezioni_modificate": [
-        "home",
-        "faq",
-        "menu"
-      ]
+      "titolo": "App Controllo tolta dal menu; domande ampliate",
+      "dettagli": []
     },
     {
       "versione": "2.3",
       "data": "2026-03-03",
-      "tipo": "fix",
-      "titolo": "Revisione accuratezza contenuti, FAQ operative, distinzione visiva menu",
-      "descrizione": "Controllo incrociato di tutti i contenuti con la guida originale e i documenti di aggiornamento. Riscrittura FAQ con domande operative reali. Struttura menu migliorata.",
-      "dettagli": [
-        "Rimossa FAQ sui requisiti minimi (non rilevante per operativi)",
-        "FAQ completamente riscritta con domande operative basate sulla guida originale",
-        "Aggiunte FAQ su: corse, template, multitratta, eccezioni, titoli gratuiti, sezione contabile",
-        "Aggiunto filtro Gratuito nella ricerca Abbonamenti (Ordini commerciale)",
-        "Aggiunto dettaglio Esempio 5 abbonamenti stagionali studenti",
-        "Aggiunto dettaglio Categoria calcolo sconto (Categoria 1 = 10% delibera Regione Puglia)",
-        "Menu laterale: aggiunto separatore visivo tra GUIDA OPERATIVA e SEZIONI EXTRA",
-        "Corretti step 2 e 3 Guida Veloce con terminologia corretta dalla guida",
-        "Card Home aggiornate con descrizioni più accurate e complete",
-        "Aggiunta card Domande e Risposte nella Home"
-      ],
-      "sezioni_modificate": [
-        "home",
-        "faq",
-        "guida-veloce",
-        "ordini",
-        "gestione-movimento",
-        "sezione-contabile"
-      ]
+      "titolo": "Revisione dei contenuti e domande operative",
+      "dettagli": []
     },
     {
       "versione": "2.2",
       "data": "2026-03-02",
-      "tipo": "major",
-      "titolo": "Nuove funzionalità: Titoli Gratuiti, Multitratta, Eccezioni KM, Template Massivo",
-      "descrizione": "Aggiornamento della guida con 4 nuove documentazioni funzionali relative a funzionalità introdotte nel sistema Itineris.",
-      "dettagli": [
-        "Nuova funzione Emissione Titoli di Viaggio Gratuiti dal profilo commerciale",
-        "Nuova tipologia Linea Multitratta per abbonamenti con cambio linea",
-        "Nuova sottosezione Eccezioni Chilometriche per modificare distanze km tra codici contabili",
-        "Nuova procedura Modifica Template Massivo per aggiornare corse in blocco",
-        "Aggiunto filtro Gratuito al metodo di pagamento nelle sezioni Ordini e Contabile",
-        "Aggiunto campo Emesso da Admin nel dettaglio titoli e nelle esportazioni",
-        "Le statistiche ignorano i titoli emessi gratuitamente",
-        "Aggiunti filtri per linee e corse multitratta",
-        "Aggiunte 18 nuove immagini/screenshot dalla documentazione funzionale"
-      ],
-      "sezioni_modificate": [
-        "profilo-commerciale",
-        "gestione-movimento",
-        "eccezioni",
-        "ordini",
-        "sezione-contabile"
-      ]
+      "titolo": "Titoli gratuiti, multitratta, eccezioni chilometriche, template massivo",
+      "dettagli": []
     },
     {
       "versione": "2.1",
       "data": "2026-02-23",
-      "tipo": "minor",
-      "titolo": "Miglioramenti contenuti e correzioni tecniche",
-      "descrizione": "Revisione completa dei contenuti della guida, correzione di bug JavaScript/CSS e miglioramenti all'esperienza utente.",
-      "dettagli": [
-        "Nuova Home page con card di navigazione rapida verso tutte le sezioni",
-        "Guida Veloce espansa da 5 a 8 passaggi dettagliati",
-        "Corretti path immagini errati in APP Controllo e Sezione Contabile",
-        "Rimosso conflitto immagini tra Gestione Movimento e Sezione Contabile",
-        "Aggiornate tutte le date di ultimo aggiornamento",
-        "Corretti 13 bug in JavaScript: fetch sicuro, race condition, XSS, ricerca ricorsiva, loop navigazione",
-        "Aggiunta pagina di errore con pulsante ricarica se il caricamento fallisce",
-        "Migliorata accessibilità: navigazione da tastiera sulle card, aria-label",
-        "Ottimizzato scroll listener con requestAnimationFrame",
-        "Caricamento iniziale parallelizzato per tempi di avvio più rapidi",
-        "Aggiunta meta description e favicon"
-      ],
-      "sezioni_modificate": [
-        "home",
-        "guida-veloce",
-        "sezione-contabile"
-      ]
+      "titolo": "Miglioramenti e correzioni",
+      "dettagli": []
     },
     {
       "versione": "2.0",
       "data": "2026-02-03",
-      "tipo": "major",
-      "titolo": "Nuova Guida Interattiva",
-      "descrizione": "Rilascio della nuova versione della guida con ricerca, navigazione migliorata e sistema di versioning.",
-      "dettagli": [
-        "Aggiunta ricerca full-text",
-        "Nuovo sistema di navigazione",
-        "Badge per sezioni nuove/aggiornate",
-        "Migliorata usabilità mobile"
-      ],
-      "sezioni_modificate": [
-        "home",
-        "introduzione"
-      ]
+      "titolo": "Nuova guida interattiva",
+      "dettagli": []
     }
-  ],
-  "istruzioni_aggiornamento": {
-    "titolo": "Come aggiornare questa guida",
-    "passi": [
-      {
-        "titolo": "Per aggiungere una nuova modifica",
-        "descrizione": "Aggiungi un nuovo oggetto all'array 'modifiche' all'inizio del file (le più recenti prima)"
-      },
-      {
-        "titolo": "Per segnare una sezione come nuova",
-        "descrizione": "Nel file JSON della sezione, imposta 'nuovo': true e aggiorna la data in 'aggiornato'"
-      },
-      {
-        "titolo": "Per aggiornare contenuti",
-        "descrizione": "Modifica il file JSON della sezione interessata e aggiorna la data"
-      }
-    ],
-    "tipi_modifica": [
-      {
-        "tipo": "major",
-        "descrizione": "Grandi cambiamenti, nuove funzionalità importanti",
-        "colore": "#e74c3c"
-      },
-      {
-        "tipo": "minor",
-        "descrizione": "Piccoli miglioramenti, nuove sezioni",
-        "colore": "#f39c12"
-      },
-      {
-        "tipo": "fix",
-        "descrizione": "Correzioni, aggiornamenti contenuti",
-        "colore": "#3498db"
-      }
-    ]
-  }
+  ]
 },
   "configurazione": {
   "id": "configurazione",
@@ -954,160 +594,27 @@ var BUNDLED_DATA = {
           "testo": "<b>Attenzione — secondo passaggio obbligatorio:</b> L'inserimento in Admin Panel non è sufficiente. L'utente (autista/controllore) deve installare l'app di controllo Itineris sul proprio smartphone Android e impostare la propria password. Il file .apk viene aggiornato frequentemente: richiedere sempre la versione più recente <b>direttamente agli amministratori del sistema</b>. Solo dopo questo passaggio lo stato diventa \"Confermato\" e l'utente può operare."
         }
       ]
-    }
-  ]
-},
-  "cs-invalidi": {
-  "id": "cs-invalidi",
-  "titolo": "CS Invalidi",
-  "aggiornato": "2026-03-30",
-  "nuovo": false,
-  "contenuto": [
-    {
-      "tipo": "tldr",
-      "items": [
-        "Permette ai possessori di <b>tessera MyCard per invalidi</b> di ottenere i biglietti di corsa semplice previsti dall'art. 30 c. 3 della L.R. Puglia n. 18/2002, extraurbani (CSI/CSIA) o urbani (CSUI/CSUIA).",
-        "<b>Sono titoli gratuiti per il cliente.</b> Il limite è di <b>2 biglietti al giorno</b> (andata e ritorno) più <b>altri 2 per l'accompagnatore</b>, quando l'utente ne ha diritto.",
-        "Il profilo Admin deve creare e attivare i titoli <b>prima</b> che il commerciale possa farlo. Il commerciale deve poi selezionare le linee e attivare il titolo."
-      ]
     },
     {
-      "tipo": "paragrafo",
-      "testo": "Con l'introduzione dei biglietti per invalidi (CSI) è stata introdotta una separazione netta tra i titoli di biglietto. Da questa versione in poi:"
-    },
-    {
-      "tipo": "lista",
-      "items": [
-        "<b>CS</b> e derivati (CSI, CSIA) → riservati alle sole linee <b>extraurbane</b> (Tipologia linea: Regionale o Provinciale)",
-        "<b>CSU</b> e derivati (CSUI, CSUIA) → riservati alle sole linee <b>urbane</b> (Tipologia linea: Comunale)"
-      ]
-    },
-    {
-      "tipo": "avviso",
-      "stile": "info",
-      "testo": "Le aziende che vendono solo CS urbani (es. linee comunali) avranno disponibili solo CSU, CSUI e CSUIA. Le aziende con entrambi i tipi di linea dovranno avere attivi entrambi i gruppi di titoli. <b>Se in Gestione Movimento → Titoli di Viaggio non compare alcun titolo CSI/CSIA/CSUI/CSUIA</b>, significa che l'Amministratore non lo ha ancora creato e abilitato per la tua azienda: va richiesto."
-    }
-  ],
-  "sottosezioni": [
-    {
-      "id": "cs-invalidi-categorie",
-      "titolo": "Le 6 categorie di Corsa Semplice",
-      "aggiornato": "2026-03-30",
+      "id": "configurazione-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "paragrafo",
-          "testo": "Sono ora disponibili 6 tipologie di biglietto di corsa semplice:"
+          "tipo": "faq",
+          "domanda": "Posso modificare i tariffari o i calendari scolastici?",
+          "risposta": "<b>No.</b> I tariffari chilometrici regionali e i calendari scolastici sono inseriti e aggiornati esclusivamente da COTRAP. Il consorziato può <b>solo consultarli</b> per impostare correttamente le proprie linee (frequenze, fasce km, ecc.)."
         },
         {
-          "tipo": "lista-numerata",
-          "items": [
-            "<b>CS</b> — Corsa Semplice standard, il biglietto ordinario che chiunque può acquistare — solo linee extraurbane",
-            "<b>CSI</b> — Corsa Semplice Invalidi — solo linee extraurbane",
-            "<b>CSIA</b> — Corsa Semplice Invalidi + Accompagnatore — solo linee extraurbane",
-            "<b>CSU</b> — Corsa Semplice Urbana standard, il biglietto ordinario che chiunque può acquistare — solo linee urbane",
-            "<b>CSUI</b> — Corsa Semplice Urbana Invalidi — solo linee urbane",
-            "<b>CSUIA</b> — Corsa Semplice Urbana Invalidi + Accompagnatore — solo linee urbane"
-          ]
+          "tipo": "faq",
+          "domanda": "Devo inserire le date nella frequenza scolastica?",
+          "risposta": "<b>No.</b> Scegliendo la tipologia 'Scolastica', il sistema usa automaticamente il calendario regionale caricato da COTRAP. Le date di inizio/fine vanno inserite solo per servizi con un periodo personalizzato (es. servizio estivo con date precise)."
         },
         {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Titoli gratuiti per il cliente:</b> CSI, CSIA, CSUI e CSUIA sono associati alle categorie tessera dedicate. Nella verifica di un titolo usa i campi del dettaglio e la categoria configurata; non ricavare l’importo pagato dalla sola denominazione della tessera."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Nessuna opzione 'con cambio':</b> per i CSI e CSUI non è disponibile la scelta della tratta con cambio linea."
-        }
-      ]
-    },
-    {
-      "id": "cs-invalidi-configurazione",
-      "titolo": "Configurazione (profilo Commerciale)",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Prerequisito obbligatorio:</b> il titolo di viaggio CSI/CSIA/CSUI/CSUIA deve essere prima creato e attivato dal <b>profilo Admin</b> (con categoria calcolo sconto, numero massimo emissioni e aziende abilitate). Solo dopo il commerciale lo vedrà disponibile."
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "Una volta che il profilo Admin ha attivato il titolo, il profilo Commerciale può procedere. La procedura corretta è:"
-        },
-        {
-          "tipo": "lista-numerata",
-          "items": [
-            "Vai in <b>Gestione Movimento → Titoli di Viaggio</b>",
-            "Seleziona il titolo CSI (o CSIA, CSUI, CSUIA) tra quelli disponibili",
-            "Prima di attivarlo, <b>seleziona le linee</b> su cui deve essere attivo il titolo — questa operazione va fatta prima dell'attivazione",
-            "Attiva il titolo"
-          ]
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Effetto dell'attivazione:</b> quando si attiva il titolo, il sistema prende automaticamente tutte le corse attive valide e genera i biglietti corrispondenti nella biglietteria. Da quel momento in poi, ogni corsa che viene attivata genererà automaticamente i biglietti; ogni corsa disattivata li rimuoverà."
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Effetto della disattivazione:</b> disattivare il titolo rimuove tutti i biglietti CSI/CSIA/CSUI/CSUIA dalla biglietteria per le corse correlate."
-        }
-      ]
-    },
-    {
-      "id": "cs-invalidi-vendita",
-      "titolo": "Come funziona la vendita per l'utente",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "lista",
-          "items": [
-            "L'utente deve avere i <b>dati della tessera MyCard</b> inseriti nel proprio profilo su cotrap.it per visualizzare i biglietti invalidi",
-            "Al login, la disponibilità dei titoli dipende dai dati tessera e dalle opzioni di visibilità configurate dall’Admin",
-            "Se l’account vede soltanto i titoli riservati, per acquistare un CS ordinario può essere necessario uscire dall’account. Verificare anche l’opzione <b>Visibilità titoli senza tessera</b> descritta sotto",
-            "<b>Limite:</b> massimo <b>2 biglietti al giorno</b> (uno per l'andata e uno per il ritorno), indipendentemente dalla tratta e dall'orario, più <b>ulteriori 2</b> per l'accompagnatore quando l'utente ha diritto all'accompagnamento"
-          ]
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Visibilità titoli senza tessera:</b> esiste un'opzione nella categoria calcolo sconto chiamata 'Visibilità titoli senza tessera'. Se impostata su 'Solo Corsa Semplice', gli utenti con quella tessera vedono anche i CS normali (senza agevolazione) oltre ai CSI. Questa opzione è configurata dal profilo Admin."
-        }
-      ]
-    },
-    {
-      "id": "cs-invalidi-ordini",
-      "titolo": "Nuovi filtri in Ordini e Statistiche",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "paragrafo",
-          "testo": "Con l'introduzione dei CS Invalidi sono stati aggiunti nuovi filtri e campi in diverse sezioni del pannello."
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Ordini → Biglietti (profilo Commerciale)",
-          "contenuto": [
-            "Nuovi filtri disponibili: <b>Titolo di viaggio</b> (filtrato per tipologia biglietto), <b>Categoria calcolo sconto</b>, <b>Numero tessera</b>, <b>Codice fiscale</b>, <b>FID</b>",
-            "Nel dettaglio del singolo biglietto sono ora visibili: numero tessera, codice fiscale, FID e fattore di sconto applicato",
-            "Questi dati aggiuntivi sono presenti anche nell'esportazione Excel"
-          ]
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Statistiche",
-          "contenuto": [
-            "<b>Statistiche linee</b> (menu Ordini, se il profilo è abilitato a vederle): la colonna 'Denominazione titolo di viaggio' riporta ora il nome del biglietto venduto (CS, CSI, CSIA ecc.) e l'importo scontato finale. L'esportazione riporta comune, frazione, linea e corsa in forma leggibile, non più gli ID numerici",
-            "<b>Statistiche corse CS</b> (menu Ordini, se il profilo è abilitato a vederle): aggiunto il filtro 'Titolo di viaggio' e la relativa colonna. Attenzione: qui il conteggio è <b>per data di partenza</b>, mentre le Statistiche linee sono per data di emissione",
-            "<b>Statistiche Venduto</b> (Sezione Contabile): aggiunto il filtro 'Titolo di Viaggio' con il fattore di sconto. Presente nel file .xls, non nel file .txt",
-            "<b>Statistiche Mensili e Dati Contabili:</b> nessuna modifica"
-          ]
+          "tipo": "faq",
+          "domanda": "Quante tipologie di frequenza esistono?",
+          "risposta": "Le tipologie sono <b>Giornaliera, Feriale, Scolastica, Non Scolastica e Festiva</b>. Non dedurre il servizio dal nome assegnato alla frequenza: controlla anche giorni selezionati, date di validità e calendario applicabile. Una frequenza chiamata «FESTIVO» può avere tipologia Giornaliera."
         }
       ]
     }
@@ -1364,7 +871,7 @@ var BUNDLED_DATA = {
             {
               "numero": 2,
               "titolo": "La famiglia è coerente con il tipo di linea?",
-              "descrizione": "CS, CSI e CSIA valgono <b>solo sulle linee extraurbane</b> (Regionale o Provinciale); CSU, CSUI e CSUIA <b>solo sulle urbane</b> (Comunale). Vedi <a href=\"#cs-invalidi-categorie\">CS Invalidi</a>."
+              "descrizione": "CS, CSI e CSIA valgono <b>solo sulle linee extraurbane</b> (Regionale o Provinciale); CSU, CSUI e CSUIA <b>solo sulle urbane</b> (Comunale). Vedi <a href=\"#cs-invalidi\">CS Invalidi</a>."
             },
             {
               "numero": 3,
@@ -1628,7 +1135,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "eccezioni-tariffarie",
-      "titolo": "Eccezioni Tariffarie Biglietti",
+      "titolo": "Eccezioni tariffarie Biglietti",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -1688,7 +1195,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "eccezioni-tariffarie-abbonamenti",
-      "titolo": "Eccezioni Tariffarie Abbonamenti",
+      "titolo": "Eccezioni tariffarie Abbonamenti",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -1933,12 +1440,78 @@ var BUNDLED_DATA = {
           "testo": "I filtri permettono di indirizzare la ricerca in base alle esigenze. È possibile esportare i dati."
         }
       ]
+    },
+    {
+      "id": "eccezioni-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Prezzi</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Il prezzo andata e ritorno per lo stesso abbonamento è diverso: è un errore?",
+          "risposta": "Confronta A→B e B→A con gli stessi filtri e periodo. Percorsi, chilometri o eccezioni diversi possono spiegare la differenza. <b>Non uniformare i km solo per ottenere lo stesso prezzo</b>: confrontali con la polimetrica Tecbus e con la tariffa autorizzata. Correggi il dato incoerente, poi verifica entrambe le direzioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Eccezione Chilometrica o Eccezione Tariffaria: come scelgo quella giusta?",
+          "risposta": "L’<b>eccezione chilometrica</b> modifica la distanza della coppia, per biglietti e abbonamenti nei due sensi, con inizio al primo del mese. L’<b>eccezione tariffaria</b> imposta invece un importo: per i biglietti scegli l’ambito linea/corsa; per gli abbonamenti imposti il lordo per raggruppamento. Verifica prima polimetrica, tariffario e altre eccezioni. Se servono entrambe, concorda validità e successiva rimozione della misura temporanea e verifica l’importo finale."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "COTRAP mi ha comunicato una variazione del tariffario regionale: cosa devo fare su Itineris?",
+          "risposta": "Il tariffario regionale viene aggiornato direttamente da COTRAP su Itineris. Di norma <b>non devi fare nulla</b> per le tratte normali.<br><br>Dopo ogni aggiornamento però verifica:<br><br><b>1. Eccezioni Tariffarie esistenti</b>: se hai tratte con importo fisso impostato manualmente, controlla se sono diventate errate o obsolete con il nuovo tariffario. Se sì, modificale o eliminale.<br><b>2. Prezzi delle tratte principali</b>: usa Controllo Tariffario per verificare che i prezzi siano quelli attesi sul tuo materiale informativo (orari, sito, comunicazioni ai passeggeri).<br><b>3. Vecchi prezzi ancora in circolazione</b>: usa Controllo Tariffario Itinerario inserendo il vecchio importo — se compaiono risultati, quelle corse non sono state aggiornate."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Eccezioni</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Una corsa che avevo sospeso con un'eccezione è ora finita la sospensione: devo riattivare qualcosa manualmente?",
+          "risposta": "<b>No.</b> L'eccezione di movimento si disattiva automaticamente alla data di fine impostata. La corsa torna visibile sullo shop COTRAP senza nessun intervento.<br><br>Se hai lasciato la data di fine vuota (sospensione indefinita), la corsa rimane nascosta finché non vai in Eccezioni → Eccezioni e imposti una data di fine oppure elimini l'eccezione."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quando si crea un'eccezione di movimento, la corsa sparisce da cotrap.it?",
+          "risposta": "<b>Sì.</b> Durante il periodo di validità dell'eccezione, la corsa (o il polo, o la linea) non è visibile su cotrap.it. Al termine del periodo si riattiva automaticamente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I biglietti già acquistati prima di un'eccezione di movimento rimangono validi?",
+          "risposta": "L’eccezione di movimento non annulla automaticamente i titoli già emessi. Prima di sospendere il servizio verifica gli acquisti interessati e attiva la gestione prevista dall’azienda. Non dedurre dalla sospensione che siano stati effettuati rimborsi o rettifiche delle corse residue."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "L'eccezione tariffaria su biglietti richiede una data di fine?",
+          "risposta": "Non è obbligatoria. Inserirla solo se si conosce con certezza la data di termine. Per gli abbonamenti è consigliato <b>lasciare vuota</b> la data di fine, poiché la data della prossima variazione del tariffario regionale è spesso incerta."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
+          "risposta": "<b>No.</b> Dopo aver cliccato Conferma, il sistema ricalcola automaticamente le tariffe di tutti gli abbonamenti interessati (visibile tramite il contatore a schermo). Il tasto <b>Pubblica</b> è disponibile solo come rimedio se il contatore si blocca. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso scegliere qualsiasi data di inizio per un'eccezione chilometrica?",
+          "risposta": "La data iniziale deve essere il <b>primo del mese</b>; l’eventuale data finale deve essere l’<b>ultimo giorno del mese</b>. È un vincolo della funzione. Il ricalcolo parte dopo la conferma: attendi che <b>In elaborazione</b> torni a zero."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
+          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca prima di modificare l’eccezione."
+        }
+      ]
     }
   ]
 },
   "emetti-titolo-viaggio": {
   "id": "emetti-titolo-viaggio",
-  "titolo": "Emetti Titolo di Viaggio",
+  "titolo": "Emetti titolo di viaggio",
   "aggiornato": "2026-09-09",
   "nuovo": false,
   "contenuto": [
@@ -2056,7 +1629,46 @@ var BUNDLED_DATA = {
       ]
     }
   ],
-  "sottosezioni": []
+  "sottosezioni": [
+    {
+      "id": "emetti-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Come accedo alla funzione 'Emetti titolo di viaggio'?",
+          "risposta": "Disponibile <b>solo per il profilo commerciale</b> tramite il tasto <b>'Emetti titolo di viaggio'</b> su Admin Panel. Cliccandolo si apre il Portale Clienti con privilegi di amministratore, attraverso cui procedere con l'emissione."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso scegliere l'azienda dalla pagina di ricerca del Portale Clienti?",
+          "risposta": "<b>No.</b> L'azienda è quella selezionata su Admin Panel al momento del click. Non è modificabile dalla pagina di ricerca. Se gestisci più aziende, seleziona quella corretta prima di cliccare 'Emetti titolo di viaggio'."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "La sessione di emissione gratuita è scaduta a metà operazione: cosa faccio?",
+          "risposta": "La sessione dura <b>15 minuti</b>. Alla scadenza appare una notifica. Torna su Admin Panel e clicca nuovamente <b>'Emetti titolo di viaggio'</b> per ottenere una nuova sessione e continuare."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I titoli gratuiti vengono notificati al cliente?",
+          "risposta": "<b>Sì.</b> All'emissione viene inviata automaticamente un'<b>email di conferma</b> al cliente. È anche possibile stampare i titoli in PDF dalla schermata di conferma."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come trovo tutti i titoli emessi gratuitamente?",
+          "risposta": "Usa il filtro <b>Gratuito</b> nel metodo di pagamento, disponibile in: Ordini → Biglietti, Ordini → Abbonamenti (profilo commerciale), e nella Sezione Contabile → Ordini, Biglietti, Abbonamenti. Nel dettaglio di ogni titolo c'è il campo <b>'Emesso da Admin'</b>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I titoli gratuiti impattano le statistiche di vendita?",
+          "risposta": "<b>No.</b> Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano completamente le transazioni relative ai titoli gratuiti, per non alterare i dati di fatturato reale."
+        }
+      ]
+    }
+  ]
 },
   "esportazioni": {
   "id": "esportazioni",
@@ -2127,699 +1739,30 @@ var BUNDLED_DATA = {
   ],
   "sottosezioni": []
 },
-  "faq": {
-  "id": "faq",
-  "titolo": "Domande e Risposte",
-  "aggiornato": "2026-09-09",
-  "nuovo": false,
-  "contenuto": [
-    {
-      "tipo": "paragrafo",
-      "testo": "Domande pratiche organizzate per problema, scritte come le farebbe un utente reale. Se non conosci ancora i termini tecnici del sistema, inizia dalla prima sezione."
-    }
-  ],
-  "sottosezioni": [
-    {
-      "id": "faq-orientamento",
-      "titolo": "Capire il sistema: concetti base",
-      "aggiornato": "2026-03-05",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Non conosco Itineris: com'è fatto il sistema in parole semplici?",
-          "risposta": "Pensalo come una catena. Prima i <b>codici contabili</b> (le località tariffarie), poi i <b>poli</b> (le fermate), poi la <b>linea</b> con il suo <b>template</b> (il percorso, con km e minuti contati dal capolinea), infine le <b>corse</b> (le partenze). Una corsa diventa acquistabile quando è <b>pubblicata</b> e ha un <b>titolo di viaggio</b> attivo. Frequenze e calendari decidono in quali giorni viaggia; le eccezioni gestiscono ciò che è temporaneo. Lo schema è in <a href=\"#gv-catena\">Come è fatto un servizio</a>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Qual è la sequenza completa per far comprare biglietti e abbonamenti su cotrap.it?",
-          "risposta": "Segui la <a href=\"#guida-veloce\">Guida Veloce</a>: verifica tariffari e frequenze, prepara codici, poli, linea e template, crea le corse e controlla i titoli abilitati. La pubblicazione della corsa <b>non sostituisce l’attivazione del titolo</b>. Verifica infine sulla biglietteria la tratta e la data interessate."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cos'è un 'template' e perché esiste? Non capisco la differenza con la 'corsa'.",
-          "risposta": "Il <b>template</b> è il 'percorso tipo' della linea: definisce <i>dove</i> passa il bus, in che ordine, quanti km e quanti minuti separano ogni fermata dal capolinea. È come il 'modello' fisso della rotta.<br><br>La <b>corsa</b> è una singola partenza concreta: <i>quando</i> parte il bus (orario), con che frequenza (feriale, scolastica, ecc.) e quanti posti vendi online. Una stessa linea può avere molte corse diverse (es. 07:00, 09:00, 14:00) che usano tutte lo stesso template.<br><br>Perché questa separazione? Perché il percorso si descrive una volta sola e vale per tutte le corse. <b>Attenzione però:</b> le corse già create <b>non</b> si aggiornano da sole quando modifichi il template. Serve la procedura di aggiornamento massivo — vedi la sezione &quot;Modifica Template Massivo&quot;."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cos'è un 'codice contabile' e cos'è un 'polo'? Quando uso uno, quando uso l'altro?",
-          "risposta": "Il <b>codice contabile</b> identifica una località ai fini tariffari e va allineato a Tecbus. Un Comune può avere più codici. Il <b>polo</b> è la fermata fisica inserita in Poli, con coordinate e codice contabile associato: più fermate possono condividere lo stesso codice. Nei template ordini le fermate; nei controlli tariffari confronti le coppie di codici."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cosa significa che una corsa è 'non attiva'? Che differenza c'è tra Stato Corsa e Stato Attivazione?",
-          "risposta": "Sono <b>due campi diversi</b>.<br><br><b>Stato Corsa</b> (campo del form, colonna <i>Stato</i>) è lo stato interno e ha due soli valori: <b>Attiva</b> e <b>Sospesa</b>. Normalmente resta su Attiva.<br><br><b>Stato Attivazione</b> (colonna <i>Stato Attivazione</i>) è la pubblicazione verso lo shop e ha quattro valori: <b>Non attiva</b>, <b>In attivazione</b>, <b>Attiva</b>, <b>In disattivazione</b>. Solo con &quot;Attiva&quot; la corsa è visibile e acquistabile su biglietteria.cotrap.it; &quot;In attivazione&quot; e &quot;In disattivazione&quot; sono stati temporanei, il sistema sta elaborando la richiesta.<br><br>Quando si dice che una corsa è &quot;non attiva&quot; o &quot;nascosta&quot; ci si riferisce <b>sempre allo Stato Attivazione</b>. Una corsa appena creata nasce così: per pubblicarla vai in Gestione Movimento → Corse, clicca l'icona <b>Pubblica\\Nascondi</b> a destra e conferma. La stessa icona serve a nasconderla di nuovo senza eliminarla."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Nello shop di COTRAP appaiono più risultati con lo stesso nome di città: come si risolve?",
-          "risposta": "Questo problema è causato dal campo <b>Descrizione</b> vuoto nei Codici Contabili. Quando un Comune ha più codici contabili (es. Bari città e Palese-Bari), il sistema li mostra entrambi nello shop. Se il campo Descrizione è vuoto su entrambi, appaiono entrambi come 'Bari', creando confusione all'utente.<br><br><b>Soluzione:</b> vai in Gestione Movimento → Codici Contabili Poli, modifica il codice della variante (nell'esempio: Palese-Bari) e inserisci nel campo <b>Descrizione</b> il nome della frazione (es. 'Palese'). Nello shop appariranno ora 'Bari' e 'Bari - Palese', chiaramente distinguibili.<br><br><b>Regola generale:</b> se per uno stesso Comune esistono più codici contabili, tutti tranne quello principale devono avere il campo Descrizione compilato con il nome della frazione."
-        }
-      ]
-    },
-    {
-      "id": "faq-abbonamenti",
-      "titolo": "Abbonamenti: attivazione, prezzi e problemi",
-      "aggiornato": "2026-03-05",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Come faccio a far sì che i passeggeri possano acquistare abbonamenti per le mie corse?",
-          "risposta": "Occorrono <b>titolo attivo</b>, collegamento configurato e corse pubblicate valide. Verifica anche inclusioni/esclusioni, distanza tariffaria, periodo e requisiti della tessera. Il titolo va richiesto all’Amministratore e configurato in <a href=\"#titoli-di-viaggio\">Titoli di viaggio</a>. Usa poi <a href=\"#controllo-tariffario-abbonamenti\">Controllo Tariffario Abbonamenti</a> e la biglietteria per verificare il risultato."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Il prezzo dell'abbonamento su cotrap.it è sbagliato (troppo alto o troppo basso): perché succede e come lo correggo?",
-          "risposta": "Confronta data, tratta e titolo in <a href=\"#controllo-tariffario-abbonamenti\">Controllo Tariffario Abbonamenti</a>. Controlla distanza fra i codici, percorsi attivi, tariffario, raggruppamento, eccezioni e categoria sconto. Per un titolo già acquistato parti dal <b>Dettaglio</b>: la configurazione attuale può differire da quella alla data di emissione. Segui <a href=\"#diag-prezzi\">la diagnosi dei prezzi</a> prima di correggere."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Il prezzo andata e ritorno per lo stesso abbonamento è diverso: è un errore?",
-          "risposta": "Confronta A→B e B→A con gli stessi filtri e periodo. Percorsi, chilometri o eccezioni diversi possono spiegare la differenza. <b>Non uniformare i km solo per ottenere lo stesso prezzo</b>: confrontali con la polimetrica Tecbus e con la tariffa autorizzata. Correggi il dato incoerente, poi verifica entrambe le direzioni."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Per una certa tratta non compare la possibilità di acquistare un abbonamento: perché?",
-          "risposta": "Controlla titolo attivo, corse pubblicate e valide, inclusioni/esclusioni, codici e distanza tariffaria, eccezioni e requisiti della tessera. Se non trovi la causa, verifica i punti uno per uno. Il percorso completo è in <a href=\"#diag-abbonamenti\">L’abbonamento non si può acquistare</a>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Un passeggero ha acquistato un abbonamento ma non riesce a usarlo sulle corse: cosa può essere?",
-          "risposta": "In <a href=\"#abbonamenti\">Ordini → Abbonamenti</a> controlla validità, tratta, tessera, residuo e controlli registrati. Leggi anche <b>Data Blocco da Admin</b>. Confronta il titolo con la corsa effettivamente utilizzata e l’esito di bordo. Non riattivare corse né aggiungere viaggi come tentativo: individua prima la causa; per un blocco da rimuovere chiedi la procedura all’Amministratore."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico quanti abbonamenti attivi ci sono e chi li ha acquistati?",
-          "risposta": "In <b>Ordini → Abbonamenti</b> imposta periodo di emissione o validità e i filtri disponibili per titolo, tessera e pagamento. Distingui la ricerca dei titoli emessi dalla verifica della loro validità. Per il singolo abbonamento apri <b>Dettaglio</b>; per il prospetto usa <b>Esporta</b> e recupera il file in Esportazioni."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cos'è la tessera MyCard e quando è obbligatoria per un abbonamento?",
-          "risposta": "La <b>MyCard</b> è una tessera personale nominativa che alcuni abbonamenti richiedono obbligatoriamente. È associata al codice fiscale del passeggero e serve a identificare il titolare.<br><br>Non tutti gli abbonamenti richiedono la MyCard: dipende da come l'Amministratore ha configurato il titolo. In <b>Gestione Movimento → Titoli di viaggio</b>, aprendo il titolo con <i>Visualizza Modifica</i>, lo si legge in due campi che il consorziato può solo consultare: la <b>Categoria Calcolo Sconto</b>, cioè la tessera che dà diritto al titolo — se è una delle voci <i>NT - Nessuna tessera</i> l'abbonamento è vendibile senza tessera — e la <b>Visibilità</b>, che vale <i>Account</i> se il titolo è visibile a chiunque abbia un account, oppure <i>Account_Tessera</i> se lo vede solo chi ha la tessera registrata nel proprio profilo.<br><br><b>Cosa succede senza tessera:</b> il passeggero non riesce a completare l'acquisto di quel tipo di abbonamento sul portale o sull'app.<br><br><b>Per emissione gratuita con MyCard:</b> quando usi 'Emetti titolo di viaggio' per emettere gratuitamente un abbonamento che richiede tessera, devi inserire il codice fiscale del cliente nel form di creazione ordine. Verifica che la tessera esista e sia attiva prima di procedere."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come faccio a disabilitare la vendita degli abbonamenti per una specifica tratta (es. lasciare solo i biglietti di corsa semplice)?",
-          "risposta": "Per disabilitare la vendita di tutti gli abbonamenti per una specifica tratta, devi operare per \"esclusione\" nella configurazione di ciascun abbonamento.<br><br><b>1.</b> Vai in Gestione Movimento → Titoli di Viaggio.<br><b>2.</b> Per ogni singolo abbonamento (es. Abb. Mensile/52, Abb. Sett/12, ecc.), clicca su <b>Visualizza/Modifica</b>.<br><b>3.</b> Nella schermata di configurazione, escludi la <b>coppia di codici contabili</b> corrispondenti ai poli della tratta (es. Taranto e Brindisi Aeroporto).<br><br><b>Attenzione:</b> l'esclusione di una coppia vale in entrambe le direzioni (A→B e B→A). Devi ripetere l'operazione per tutti i titoli di viaggio da cui vuoi escludere quella tratta. Se un campo viene lasciato vuoto, il sistema permetterà di acquistare l'abbonamento per tutti i collegamenti presenti."
-        }
-      ]
-    },
-    {
-      "id": "faq-prezzi",
-      "titolo": "Prezzi sbagliati: capire perché e come correggerli",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Il prezzo di un biglietto o abbonamento su cotrap.it è sbagliato: da dove inizio?",
-          "risposta": "Parti da <a href=\"#diag-prezzi\">Il prezzo è sbagliato</a>. Controlla azienda, data, coppia di codici, linea/corsa e titolo. Confronta la tariffa del pannello con la biglietteria nello stesso contesto. Km, competenza urbana/extraurbana, eccezioni e sconto possono influire: non creare subito una nuova eccezione per coprire una causa ancora sconosciuta."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Eccezione Chilometrica o Eccezione Tariffaria: come scelgo quella giusta?",
-          "risposta": "L’<b>eccezione chilometrica</b> modifica la distanza della coppia, per biglietti e abbonamenti nei due sensi, con inizio al primo del mese. L’<b>eccezione tariffaria</b> imposta invece un importo: per i biglietti scegli l’ambito linea/corsa; per gli abbonamenti imposti il lordo per raggruppamento. Verifica prima polimetrica, tariffario e altre eccezioni. Se servono entrambe, concorda validità e successiva rimozione della misura temporanea e verifica l’importo finale."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico i prezzi di tutte le mie corse con il Controllo Tariffario? (procedura step-by-step)",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario</b> scegli <b>Data, Linea e Corsa</b> e premi <b>Applica</b>. Leggi coppie di codici, km, <b>Importo</b>, <b>Importo Eccezione</b> e denominazione/tipologia dell’eccezione. Usa <b>Esporta</b> per il prospetto. Per i prezzi degli abbonamenti usa lo specifico <a href=\"#controllo-tariffario-abbonamenti\">Controllo Tariffario Abbonamenti</a>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico se rimangono tratte con un vecchio prezzo dopo una variazione tariffaria?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Per esserne sicuro controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico i prezzi degli abbonamenti per una tratta specifica?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Abbonamenti</b> imposta i filtri di tratta e periodo disponibili, poi premi <b>Applica</b>. Per ottenere risultati occorrono titoli e corse attivi sul percorso. Se non compare nulla, controlla filtri, validità, inclusioni/esclusioni e distanza tariffaria prima di dedurre che il collegamento non esista."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "COTRAP mi ha comunicato una variazione del tariffario regionale: cosa devo fare su Itineris?",
-          "risposta": "Il tariffario regionale viene aggiornato direttamente da COTRAP su Itineris. Di norma <b>non devi fare nulla</b> per le tratte normali.<br><br>Dopo ogni aggiornamento però verifica:<br><br><b>1. Eccezioni Tariffarie esistenti</b>: se hai tratte con importo fisso impostato manualmente, controlla se sono diventate errate o obsolete con il nuovo tariffario. Se sì, modificale o eliminale.<br><b>2. Prezzi delle tratte principali</b>: usa Controllo Tariffario per verificare che i prezzi siano quelli attesi sul tuo materiale informativo (orari, sito, comunicazioni ai passeggeri).<br><b>3. Vecchi prezzi ancora in circolazione</b>: usa Controllo Tariffario Itinerario inserendo il vecchio importo — se compaiono risultati, quelle corse non sono state aggiornate."
-        }
-      ]
-    },
-    {
-      "id": "faq-template-massivo",
-      "titolo": "Modifica Template Massivo",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Cos'è la Modifica Template Massivo e quando si usa?",
-          "risposta": "Serve a riportare le modifiche di un template sulle corse collegate <b>non attive e senza modifiche dirette</b>. Da <b>Gestione Movimento → Linee</b> apri la linea: il comando nella riga del template si chiama <b>Aggiorna Corse Inattive del Template</b>. Segui la <a href=\"#creazione-template\">procedura completa</a>, con disattivazione e successiva ripubblicazione delle sole corse interessate."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come funziona passo per passo la Modifica Template Massivo?",
-          "risposta": "Filtra le corse per il <b>template interessato</b> e annota quali erano pubblicate. Portale a <b>Stato Attivazione: Non attiva</b>; modifica e conferma il template. Usa <b>Aggiorna Corse Inattive del Template</b>, rispondi <b>OK</b> e conferma in fondo alla linea. Verifica le corse aggiornate e quelle escluse per modifiche dirette, poi ripubblica soltanto quelle che devono essere in vendita. Controlla orari e tariffe."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Quali corse vengono escluse dall'aggiornamento massivo del template?",
-          "risposta": "Sono escluse le corse modificate direttamente in km, aggiunta/rimozione di poli, orari, sosta o flag <b>Solo discesa / Solo salita / Solo transito</b>. La sola aggiunta/rimozione di un codice contabile alternativo non è una modifica diretta: il codice deve conservarsi anche dopo l’aggiornamento. Verifica separatamente le corse escluse."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho fatto l'aggiornamento massivo ma alcune corse mostrano ancora i vecchi orari: perché?",
-          "risposta": "Verifica che le corse usino il template corretto, fossero in <b>Stato Attivazione: Non attiva</b> e non avessero modifiche dirette. Controlla che l’aggiornamento e la conferma finale siano stati completati. Se la causa resta incerta, raccogli corsa, template e orari attesi per l’assistenza."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Posso usare 'Duplica e Inverti' per creare il template di ritorno?",
-          "risposta": "<b>Sì, è il metodo consigliato.</b> Apri il template di andata → clicca <b>'Duplica e Inverti'</b>. Il sistema crea automaticamente un nuovo template con le fermate nell'ordine inverso. Verifica dopo la creazione che i km e i minuti siano corretti per il percorso di ritorno (potrebbero differire se il percorso non è perfettamente simmetrico)."
-        }
-      ]
-    },
-    {
-      "id": "faq-corse-problemi",
-      "titolo": "Corse, linee e sospensioni: problemi frequenti",
-      "aggiornato": "2026-03-05",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Ho inserito una nuova corsa ma non compare su cotrap.it: cosa devo fare?",
-          "risposta": "Controlla <b>Stato Attivazione</b>: una corsa appena creata è Non attiva. Se deve essere vendibile, verifica prima dati, frequenza, date e titolo, poi pubblicala con <b>Pubblica\\Nascondi</b>. Attendi lo stato Attiva e cerca la stessa data sulla biglietteria. Se manca ancora, segui <a href=\"#diag-non-compare\">i controlli per corsa o tratta assente</a>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Devo sospendere una o più corse per sciopero, festività o guasto: come si fa?",
-          "risposta": "Vai in <b>Eccezioni → Eccezioni → Aggiungi</b>. Compila:<br><br>• <b>Denominazione</b>: es. 'Sciopero 15 marzo' o 'Chiusura natalizia'<br>• <b>Date inizio/fine</b>: il periodo di sospensione (puoi lasciare la fine vuota se non sai quando termina)<br>• <b>Tipologia</b>: scegli 'Corsa' per una singola corsa, 'Linea' per tutte le corse della linea, 'Servizio' per sospendere l'intero servizio aziendale<br>• <b>Descrizione</b>: testo visibile ai passeggeri (es. 'Sospensione per sciopero nazionale')<br><br>Dopo il salvataggio, la corsa sparisce da cotrap.it durante quel periodo e si riattiva automaticamente alla data di fine. <b>Attenzione</b>: i biglietti già acquistati NON vengono annullati automaticamente."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Devo modificare l'orario di partenza di una corsa già attiva: la devo prima disattivare?",
-          "risposta": "L’orario si cambia in <b>Gestione Movimento → Corse</b>, con <b>Visualizza Modifica</b>, nella griglia <b>Poli e Orari</b>. Nella documentazione non c’è una regola che imponga di portare prima la corsa a Non attiva. Se però la corsa è già in vendita, prima di cambiare l’orario controlla in <b>Ordini → Biglietti</b> i titoli già venduti su quella corsa e segui la procedura aziendale per avvisare i clienti. Se invece devi cambiare fermate, km o minuti del percorso, usa l’<a href=\"#creazione-template\">aggiornamento massivo</a>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Devo aggiungere o rimuovere una fermata da una linea esistente: come si fa?",
-          "risposta": "Individua il <b>template interessato</b> e tutte le corse che lo usano, senza sospendere indiscriminatamente l’intera linea. Segui <a href=\"#creazione-template\">l’aggiornamento massivo</a>: disattivazione, modifica e conferma del template, aggiornamento delle corse inattive, verifica e ripubblicazione. Le corse con modifiche dirette vanno controllate separatamente."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho sbagliato a inserire i km tra due fermate nel template: come li correggo?",
-          "risposta": "Ricorda che il valore è la distanza <b>dal capolinea</b>: se correggi una fermata, controlla che anche quelle successive restino coerenti (i valori devono crescere lungo il percorso).<br><br>Se le corse non sono ancora attive: apri il template, correggi il km, conferma, poi usa <b>Aggiorna Corse Inattive del Template</b>.<br><br>Se le corse sono già attive (il servizio è in funzione): devi decidere se il dato sbagliato è solo nel template locale (correzione con procedura disattivazione → modifica → riattivazione) oppure se è sbagliata anche la distanza ufficiale tra i codici contabili. In questo secondo caso, crea un'<b>Eccezione Chilometrica</b> per correggere la distanza a livello contabile (effetto dal 1° del mese successivo su prezzi di biglietti e abbonamenti)."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Posso avere due corse sulla stessa linea con orari diversi ma percorso identico?",
-          "risposta": "<b>Sì, è l'uso normale del sistema.</b> Una stessa linea può avere quante corse vuoi, tutte collegate allo stesso template. Per ogni corsa cambiano solo: orario di partenza, frequenza (feriale, scolastica, ecc.), occupazione massima online, e date di validità.<br><br>Esempio: linea Bari–Altamura con corse alle 07:00 (feriale), 09:00 (feriale), 13:00 (scolastica) — tutte usano lo stesso template con lo stesso percorso."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Una corsa che avevo sospeso con un'eccezione è ora finita la sospensione: devo riattivare qualcosa manualmente?",
-          "risposta": "<b>No.</b> L'eccezione di movimento si disattiva automaticamente alla data di fine impostata. La corsa torna visibile sullo shop COTRAP senza nessun intervento.<br><br>Se hai lasciato la data di fine vuota (sospensione indefinita), la corsa rimane nascosta finché non vai in Eccezioni → Eccezioni e imposti una data di fine oppure elimini l'eccezione."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho fatto una modifica (eccezione, corsa, template) ma il sito cotrap.it non si aggiorna: cosa faccio?",
-          "risposta": "Controlla prima salvataggio, date di validità, azienda e stato dell’elaborazione. Se hai modificato un template, verifica la propagazione alle corse. Solo dopo ricarica la pagina; una finestra anonima può mostrare titoli diversi da un account con tessera. Vedi <a href=\"#diag-modifiche\">Ho modificato qualcosa ma non cambia niente</a>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Admin Panel è lento o non carica alcune pagine: come si risolve?",
-          "risposta": "Problemi di caricamento su Admin Panel sono spesso legati a:<br><br><b>1. Cache del browser</b>: premi Ctrl+Shift+R per forzare il ricaricamento. Se migliora, svuota la cache del browser dalle impostazioni.<br><b>2. Sessione scaduta</b>: se la pagina si carica parzialmente o mostra elementi vuoti, esci e rientra con le credenziali.<br><b>3. Browser</b>: usare <b>Chrome o Edge aggiornati</b>. Se una pagina si comporta in modo anomalo, prima di segnalarla riprovare con uno di questi due browser aggiornati.<br><b>4. Connessione lenta</b>: alcune sezioni (es. liste ordini con molte righe) richiedono una connessione stabile. Prova a filtrare per date più ristrette per ridurre il volume di dati caricati."
-        }
-      ]
-    },
-    {
-      "id": "faq-accesso",
-      "titolo": "Accesso e Profili",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Quali credenziali usare per accedere?",
-          "risposta": "Sono necessari <b>ID utente e password</b> forniti dall'Amministratore COTRAP. Esistono due account separati: uno per il <b>profilo commerciale</b> (gestione linee, corse, eccezioni, biglietti gratuiti) e uno per il <b>profilo contabile</b> (dati contabili, statistiche venduto, esportazioni). Non usare le stesse credenziali per entrambi."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come faccio a sapere con quale profilo sono loggato?",
-          "risposta": "In <b>basso a sinistra</b> è visibile l'<b>utente</b> con cui hai fatto accesso. Nel <b>pannello commerciale</b> l'<b>azienda</b> su cui stai operando è indicata nel pulsante in <b>alto a destra</b>. Verifica sempre entrambi prima di operare, soprattutto se il tuo profilo può accedere a più aziende."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho sbagliato profilo (commerciale invece di contabile o viceversa): cosa succede?",
-          "risposta": "Niente di grave: le due sezioni hanno funzionalità diverse. Il <b>profilo commerciale</b> gestisce linee, corse, eccezioni e titoli di viaggio. Il <b>profilo contabile</b> accede a ordini, dati contabili e statistiche. Se sei nel profilo sbagliato, esci e accedi con le credenziali corrette."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho dimenticato la password: come la recupero?",
-          "risposta": "Nella pagina di login clicca su <b>'Recupero password'</b> e inserisci l'email comunicata preventivamente all'Amministratore COTRAP. Se non ricordi l'email di recupero, contatta direttamente l'Amministratore."
-        }
-      ]
-    },
-    {
-      "id": "faq-configurazione",
-      "titolo": "Configurazione iniziale",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Posso modificare i tariffari o i calendari scolastici?",
-          "risposta": "<b>No.</b> I tariffari chilometrici regionali e i calendari scolastici sono inseriti e aggiornati esclusivamente da COTRAP. Il consorziato può <b>solo consultarli</b> per impostare correttamente le proprie linee (frequenze, fasce km, ecc.)."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Devo inserire le date nella frequenza scolastica?",
-          "risposta": "<b>No.</b> Scegliendo la tipologia 'Scolastica', il sistema usa automaticamente il calendario regionale caricato da COTRAP. Le date di inizio/fine vanno inserite solo per servizi con un periodo personalizzato (es. servizio estivo con date precise)."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Quante tipologie di frequenza esistono?",
-          "risposta": "Le tipologie sono <b>Giornaliera, Feriale, Scolastica, Non Scolastica e Festiva</b>. Non dedurre il servizio dal nome assegnato alla frequenza: controlla anche giorni selezionati, date di validità e calendario applicabile. Una frequenza chiamata «FESTIVO» può avere tipologia Giornaliera."
-        }
-      ]
-    },
-    {
-      "id": "faq-codici-poli",
-      "titolo": "Codici Contabili e Poli",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Da dove recupero i codici contabili?",
-          "risposta": "I codici contabili si recuperano da <b>Tecbus</b>. Vanno poi inseriti su Itineris in Gestione Movimento → Codici Contabili Poli. Ogni codice deve corrispondere a un Comune; le frazioni hanno codici distinti."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Uno stesso Comune può avere due codici contabili diversi?",
-          "risposta": "Sì. Frazioni o località tariffarie diverse dello stesso Comune possono avere codici distinti. Un <b>codice alternativo</b> è invece una scelta specifica sulla corsa per un percorso/tariffa differente: non tutti i codici dello stesso Comune sono automaticamente alternativi. Verifica sempre la corrispondenza con Tecbus."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come recupero le coordinate GPS per inserire un polo?",
-          "risposta": "Le coordinate (latitudine e longitudine) si copiano da <b>Google Maps</b>. Dopo averle inserite, clicca su <b>Geolocalizza</b>: apparirà il punto sulla mappa. Se la posizione non è precisa, puoi trascinare l'indicatore nel punto esatto."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cosa sono 'Fermata principale' e 'Primaria' in un polo?",
-          "risposta": "<b>Fermata principale</b>: mette in evidenza quella fermata tra le altre dello stesso polo. <b>Primaria</b>: quando ci sono più fermate principali, indica la più importante tra queste."
-        }
-      ]
-    },
-    {
-      "id": "faq-linee-template",
-      "titolo": "Linee, Template e Corse",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Due fermate consecutive nel template hanno lo stesso codice contabile: cosa inserisco nei km?",
-          "risposta": "Inserisci per ogni fermata i km <b>cumulativi dal capolinea</b> previsti dalla polimetrica. Due fermate con lo stesso codice possono ripetere un valore, ma il codice da solo non determina il numero da inserire. Non azzerare una fermata intermedia per bloccare una sottotratta. Verifica la distanza applicata con il Controllo Tariffario e le eventuali eccezioni."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Per bloccare la vendita di biglietti per piccole sottotratte non gestite, devo impostare i km a zero nel template o basta un'eccezione chilometrica a zero?",
-          "risposta": "Per bloccare la vendita di una coppia è prevista l’<b>eccezione chilometrica a 0 km</b>, valida nei due sensi per biglietti e abbonamenti, con inizio al primo del mese. Verifica periodo e collegamenti coinvolti prima di applicarla. <b>Non azzerare i km di una fermata intermedia nel template</b>: sono cumulativi dall’origine e influenzano più tratte. Se vuoi escludere soltanto alcuni titoli, usa le esclusioni nella loro configurazione."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "I km e i minuti nel template si contano dalla fermata precedente o dal capolinea?",
-          "risposta": "Sempre <b>dal capolinea</b> (la prima fermata), mai dalla precedente: vale sia per i minuti sia per i km.<br><br>Dai <b>minuti</b> il sistema calcola l'orario di passaggio di ogni fermata partendo dall'orario di partenza inserito nella corsa. Dai <b>km</b> ricava la distanza tariffaria tra i codici contabili, e quindi il prezzo di biglietti e abbonamenti.<br><br>Si riconosce a colpo d'occhio: lungo il percorso i valori crescono e non tornano mai indietro (es. 0 km → 1 km → 16 km → 16 km → 21 km)."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho modificato un template con corse già attive: la modifica viene applicata automaticamente?",
-          "risposta": "<b>No.</b> La modifica al template viene propagata alle corse <b>solo se sono disattivate</b> e tramite il pulsante <b>Aggiorna Corse Inattive del Template</b>. Le corse attive non vengono aggiornate. Procedura completa: 1) Disattivare le corse, 2) Modificare il template, 3) Conferma, 4) <b>Aggiorna Corse Inattive del Template</b>, 5) Conferma, 6) Riattivare le corse."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Quali corse sono escluse dalla modifica massiva del template?",
-          "risposta": "Le corse con <b>modifiche dirette</b>: cambio km, aggiunta/rimozione polo, modifica orario, modifica sosta, flag solo discesa/salita/transito. L'aggiunta/rimozione di un codice contabile alternativo <b>non</b> è modifica diretta e non esclude la corsa dall'aggiornamento massivo."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "La corsa creata non è ancora visibile su cotrap.it: perché?",
-          "risposta": "La corsa non è stata <b>pubblicata</b>: dopo la creazione lo <i>Stato Attivazione</i> è &quot;Non attiva&quot;. Vai in Gestione Movimento → Corse, clicca sull'icona <b>Pubblica\\Nascondi</b> a destra della corsa e conferma. Si consiglia di inserire prima tutte le corse e poi pubblicarle insieme."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cosa indica il campo 'Occupazione Massima' nella corsa?",
-          "risposta": "Il numero massimo di biglietti vendibili <b>online</b> per quella corsa. Usarlo quando si vuole riservare posti alla vendita a bordo o in agenzia. La percentuale di occupazione in 'Stati Occupazionali' si riferisce <b>solo ai biglietti online</b>, non al venduto cartaceo."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cos'è una linea multitratta e quando si usa?",
-          "risposta": "Una linea multitratta permette di generare <b>abbonamenti fra due codici contabili che non si trovano sulla stessa linea</b>: il viaggio si compone di due tratte con un cambio a metà percorso. La spunta 'multitratta' <b>inibisce la creazione di biglietti</b>: serve solo per abbonamenti. Il template richiede 3 poli (partenza, cambio, arrivo) e il polo di cambio deve avere un codice contabile presente in entrambe le linee."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come gestisco un servizio stagionale (es. servizio estivo)?",
-          "risposta": "Compila i campi <b>Data inizio corsa</b> e <b>Data fine corsa</b> nella creazione della corsa. La corsa sarà visibile sullo shop COTRAP solo nel periodo indicato. Per servizi tutto l'anno, lascia questi campi vuoti. Per frequenze scolastiche e non, puoi usare anche <b>Attivazione/Disattivazione Automatica</b> per gestire il calendario in modo automatico."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Posso modificare una corsa già pubblicata senza disattivarla?",
-          "risposta": "Dipende da che cosa cambi. Per <b>fermate, km, minuti o sosta</b> del percorso segui l’<a href=\"#creazione-template\">aggiornamento massivo</a>: le stesse correzioni fatte direttamente sulla singola corsa la escludono dagli aggiornamenti successivi. Per gli altri dati, se la corsa è già in vendita, controlla prima i titoli venduti in <b>Ordini → Biglietti</b> e dopo la modifica verifica la corsa sulla biglietteria."
-        }
-      ]
-    },
-    {
-      "id": "faq-eccezioni",
-      "titolo": "Eccezioni: sospensioni e variazioni",
-      "aggiornato": "2026-03-18",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Come creo un'Eccezione Chilometrica? (procedura completa)",
-          "risposta": "<b>Eccezioni → Eccezioni Chilometriche → Aggiungi</b><br><br><b>1. Codice Contabile Partenza</b>: seleziona il comune/frazione di partenza dal menu<br><b>2. Codice Contabile Arrivo</b>: seleziona il comune/frazione di arrivo<br><b>3. Km</b>: inserisci la distanza corretta in km (inserisci 0 per bloccare la vendita su quella tratta)<br><b>4. Data inizio</b>: deve essere obbligatoriamente il <b>1° di un mese</b> (es. 01/04/2026). Nessuna altra data è accettata.<br><b>5. Data fine</b> (facoltativa): se inserita, deve essere l'<b>ultimo giorno del mese</b> (es. 30/04/2026). Se lasci vuota, l'eccezione è permanente.<br><b>6.</b> Clicca <b>Conferma</b><br><br>Dopo la conferma, il sistema avvia automaticamente il ricalcolo delle tariffe: vedrai un <b>contatore</b> che decresce. Attendi che raggiunga 0 prima di fare altre modifiche. Se il contatore si blocca, usa il tasto <b>Pubblica</b> per riavviare l’elaborazione.<br><br><b>Effetto:</b> vale in entrambe le direzioni (A→B e B→A). Si applica a tutti gli abbonamenti che usano quella coppia di codici contabili, su tutte le linee."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come creo un'Eccezione Tariffaria Biglietti? (procedura completa)",
-          "risposta": "<b>Eccezioni → Eccezioni Tariffarie Biglietti → Aggiungi</b><br><br><b>1. Linea</b>: seleziona la linea su cui applicare l'eccezione<br><b>2. Corsa</b> (facoltativo): se vuoi limitare l'eccezione a una singola corsa, selezionala. Se lasci vuoto, vale per tutte le corse della linea.<br><b>3. Codice Contabile Partenza e Arrivo</b>: la coppia di fermate su cui cambia il prezzo<br><b>4. Importo</b>: il nuovo prezzo in euro del biglietto<br><b>5. Data inizio</b>: da quando entra in vigore (può essere qualsiasi data, anche oggi)<br><b>6. Data fine</b> (facoltativa)<br><b>7.</b> Clicca <b>Conferma</b><br><br>L'effetto è immediato dalla data di inizio impostata. Il prezzo viene mostrato nel Controllo Tariffario selezionando la data di inizio dell'eccezione."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come creo un'Eccezione Tariffaria Abbonamenti? (procedura completa)",
-          "risposta": "In <b>Eccezioni → Eccezioni tariffarie Abbonamenti → Aggiungi</b> indica denominazione, validità e coppia di codici. Seleziona il <b>Raggruppamento tariffario</b>, inserisci l’<b>importo lordo</b> e premi <b>Aggiungi (+)</b>. Ripeti per ogni raggruppamento necessario, poi <b>Conferma</b>. Lo sconto della tessera viene applicato dopo. Verifica la tratta nel Controllo Tariffario Abbonamenti."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Quando si crea un'eccezione di movimento, la corsa sparisce da cotrap.it?",
-          "risposta": "<b>Sì.</b> Durante il periodo di validità dell'eccezione, la corsa (o il polo, o la linea) non è visibile su cotrap.it. Al termine del periodo si riattiva automaticamente."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "I biglietti già acquistati prima di un'eccezione di movimento rimangono validi?",
-          "risposta": "L’eccezione di movimento non annulla automaticamente i titoli già emessi. Prima di sospendere il servizio verifica gli acquisti interessati e attiva la gestione prevista dall’azienda. Non dedurre dalla sospensione che siano stati effettuati rimborsi o rettifiche delle corse residue."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "C'è differenza tra eccezione su 'corsa', 'linea' e 'servizio'?",
-          "risposta": "<b>Polo</b>: sospende una singola fermata (con possibile fermata sostitutiva). <b>Corsa</b>: sospende una singola corsa. <b>Linea</b>: sospende tutte le corse di una linea. <b>Servizio</b>: sospende l'intero servizio aziendale. <b>Calendario</b>: cambia eccezionalmente la tipologia di frequenza di una o più corse (es. da feriale a scolastica)."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "L'eccezione tariffaria su biglietti richiede una data di fine?",
-          "risposta": "Non è obbligatoria. Inserirla solo se si conosce con certezza la data di termine. Per gli abbonamenti è consigliato <b>lasciare vuota</b> la data di fine, poiché la data della prossima variazione del tariffario regionale è spesso incerta."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
-          "risposta": "<b>No.</b> Dopo aver cliccato Conferma, il sistema ricalcola automaticamente le tariffe di tutti gli abbonamenti interessati (visibile tramite il contatore a schermo). Il tasto <b>Pubblica</b> è disponibile solo come rimedio se il contatore si blocca. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Posso scegliere qualsiasi data di inizio per un'eccezione chilometrica?",
-          "risposta": "La data iniziale deve essere il <b>primo del mese</b>; l’eventuale data finale deve essere l’<b>ultimo giorno del mese</b>. È un vincolo della funzione. Il ricalcolo parte dopo la conferma: attendi che <b>In elaborazione</b> torni a zero."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico che una variazione tariffaria sia stata applicata correttamente a tutte le corse?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Per esserne sicuro controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
-          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca prima di modificare l’eccezione."
-        }
-      ]
-    },
-    {
-      "id": "faq-ordini-biglietti",
-      "titolo": "Ordini e Biglietti",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Qual è la differenza tra 'Ordine' e 'Biglietto'?",
-          "risposta": "Un <b>ordine</b> è la transazione complessiva (può contenere più biglietti, es. andata + ritorno). Ogni biglietto è identificato dal numero ordine + una lettera finale (es. 12345A, 12345B). In Biglietti si cercano i singoli titoli con filtri più dettagliati (linea, corsa, comune, ecc.)."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Un cliente dice di aver acquistato un biglietto ma non riesco a trovarlo: come cerco?",
-          "risposta": "Vai in Ordini → Biglietti e usa i filtri: <b>Codice Biglietto</b> (includi la lettera finale), oppure <b>Acquirente</b> (nome, cognome o email), oppure <b>N° Ordine</b>. Se non trovi nulla, verifica anche il <b>Canale</b> (App o Portale Web) e il <b>Tipo pagamento</b> (Online, Credito o Gratuito).<br><br>Se il biglietto è un <b>CSI invalidi</b>, usa i nuovi filtri: <b>Numero tessera</b> o <b>Codice fiscale</b> del passeggero per trovarlo rapidamente."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come trovo tutti i biglietti CSI (invalidi) venduti in un periodo?",
-          "risposta": "Vai in Ordini → Biglietti e usa il filtro <b>'Titolo di viaggio'</b>: seleziona CSI (o CSIA, CSUI, CSUIA a seconda del tipo). Imposta le date e clicca Applica.<br><br>Puoi anche filtrare per <b>Categoria calcolo sconto</b> se vuoi vedere tutti i biglietti di una specifica categoria tessera, oppure per <b>Numero tessera</b> o <b>Codice fiscale</b> per trovare tutti i biglietti di un singolo utente invalido.<br><br>Esporta il risultato in .xls per avere anche numero tessera, CF, FID e fattore di sconto applicato."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Cosa significa 'Credito' come tipo di pagamento?",
-          "risposta": "Il tipo pagamento <b>Credito</b> indica un biglietto acquistato tramite l'app COTRAP usando il saldo di una ricarica effettuata in precedenza dall'utente. Questa modalità è disponibile <b>solo sull'app</b>, non sul portale web."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come blocco un abbonamento usato in modo fraudolento?",
-          "risposta": "In <b>Ordini → Abbonamenti</b> individua il titolo, apri <b>Dettaglio</b> e verifica i controlli. Il comando <b>Blocca</b> modifica l’utilizzabilità del titolo: usalo solo per un caso accertato secondo la procedura aziendale. Prima di procedere chiarisci con l’Amministratore anche l’eventuale gestione dello sblocco."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico o correggo il residuo corse di un abbonamento?",
-          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse rettifica il saldo: usalo solo quando la rettifica è stata decisa secondo la procedura aziendale. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "La percentuale di occupazione del mezzo è affidabile?",
-          "risposta": "<b>È parziale.</b> Rappresenta solo i biglietti acquistati <b>online</b>. Non include il venduto cartaceo (macchinetta di bordo). Il mezzo reale può essere più pieno di quanto mostrato."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico che un rimborso sia andato a buon fine?",
-          "risposta": "Cerca il biglietto o l'ordine in Ordini → Biglietti (profilo commerciale) o in Ordini (sezione contabile). Lo stato indica: <b>'Attesa Rimborso'</b> = richiesta in corso; <b>'Rimborsato'</b> = rimborso su carta di credito completato; <b>'Rimborsato Credito'</b> = accreditato come saldo sull'account utente. Se è ancora 'Attesa Rimborso', attendere i tempi bancari o contattare l'Amministratore COTRAP."
-        }
-      ]
-    },
-    {
-      "id": "faq-titoli-gratuiti",
-      "titolo": "Emissione Titoli Gratuiti",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Come accedo alla funzione 'Emetti titolo di viaggio'?",
-          "risposta": "Disponibile <b>solo per il profilo commerciale</b> tramite il tasto <b>'Emetti titolo di viaggio'</b> su Admin Panel. Cliccandolo si apre il Portale Clienti con privilegi di amministratore, attraverso cui procedere con l'emissione."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Posso scegliere l'azienda dalla pagina di ricerca del Portale Clienti?",
-          "risposta": "<b>No.</b> L'azienda è quella selezionata su Admin Panel al momento del click. Non è modificabile dalla pagina di ricerca. Se gestisci più aziende, seleziona quella corretta prima di cliccare 'Emetti titolo di viaggio'."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "La sessione di emissione gratuita è scaduta a metà operazione: cosa faccio?",
-          "risposta": "La sessione dura <b>15 minuti</b>. Alla scadenza appare una notifica. Torna su Admin Panel e clicca nuovamente <b>'Emetti titolo di viaggio'</b> per ottenere una nuova sessione e continuare."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "I titoli gratuiti vengono notificati al cliente?",
-          "risposta": "<b>Sì.</b> All'emissione viene inviata automaticamente un'<b>email di conferma</b> al cliente. È anche possibile stampare i titoli in PDF dalla schermata di conferma."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come trovo tutti i titoli emessi gratuitamente?",
-          "risposta": "Usa il filtro <b>Gratuito</b> nel metodo di pagamento, disponibile in: Ordini → Biglietti, Ordini → Abbonamenti (profilo commerciale), e nella Sezione Contabile → Ordini, Biglietti, Abbonamenti. Nel dettaglio di ogni titolo c'è il campo <b>'Emesso da Admin'</b>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "I titoli gratuiti impattano le statistiche di vendita?",
-          "risposta": "<b>No.</b> Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano completamente le transazioni relative ai titoli gratuiti, per non alterare i dati di fatturato reale."
-        }
-      ]
-    },
-    {
-      "id": "faq-contabile",
-      "titolo": "Sezione Contabile ed Esportazioni",
-      "aggiornato": "2026-03-04",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Perché non vedo i miei dati nella Sezione Contabile pur essendo loggato?",
-          "risposta": "Verifica di essere loggato con le <b>credenziali contabili</b> (non quelle commerciali): il nome dell'utente è indicato in basso a sinistra. Se sei nel profilo commerciale, fai logout e accedi con le credenziali della sezione contabile."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come esporto i Dati Contabili completi per un periodo? (procedura step-by-step)",
-          "risposta": "I dati contabili sono divisi per tipo di pagamento: devi fare <b>due esportazioni separate</b> per avere il quadro completo.<br><br><b>Esportazione 1 — Pagato con carta di credito (Online):</b><br>1. Sezione Contabile → Dati Contabili<br>2. Imposta <b>Data inizio</b> e <b>Data fine</b> del periodo<br>3. Tipo: <b>Online</b> → Stato: <b>Pagato</b> → Periodo: <b>Tutti</b><br>4. Clicca <b>Esporta SEP</b> (per Excel) o <b>Esporta</b> (per .txt gestionale)<br><br><b>Esportazione 2 — Pagato con credito ricaricato:</b><br>1. Stesse date<br>2. Tipo: <b>Credito</b> → Stato: <b>Pagato</b><br>3. Clicca Esporta SEP<br><br>I file vengono salvati in <b>Esportazioni</b> e sono recuperabili in qualsiasi momento.<br><br><b>Attenzione:</b> i titoli emessi gratuitamente (tipo 'Gratuito') <b>non entrano nei dati contabili</b> — il sistema li esclude automaticamente. Non è necessario filtrarli manualmente."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Perché devo fare due esportazioni separate nei Dati Contabili?",
-          "risposta": "Perché i biglietti acquistati con <b>carta di credito</b> (tipo 'Online') e quelli acquistati con il <b>credito da ricariche</b> (tipo 'Credito') sono registrati separatamente nel sistema. Per avere il quadro completo del venduto devi esportare: 1) <b>Online → Pagato → Tutti</b>, poi 2) <b>Credito → Pagato</b>."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Qual è la differenza tra 'Esporta' e 'Esporta SEP' nei Dati Contabili?",
-          "risposta": "<b>Esporta</b> genera un file <b>.txt</b> nel formato per i software gestionali aziendali. <b>Esporta SEP</b> genera un file <b>.xls</b> (Excel) per visualizzazione e analisi manuale. Entrambi i file sono recuperabili nella sezione Esportazioni."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Le statistiche venduto includono gli abbonamenti gratuiti emessi dal commerciale?",
-          "risposta": "<b>No.</b> Statistiche mensili, statistiche linee, statistiche venduto e dati contabili ignorano tutte le transazioni relative ai titoli emessi gratuitamente dal profilo commerciale."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come verifico che un rimborso sia andato a buon fine?",
-          "risposta": "Cerca il biglietto in Ordini → Biglietti (profilo commerciale) o in Ordini (sezione contabile). Stato: <b>'Attesa Rimborso'</b> = in elaborazione; <b>'Rimborsato'</b> = rimborso su carta completato; <b>'Rimborsato Credito'</b> = accreditato come saldo sull'account utente. Se è ancora 'Attesa Rimborso' dopo alcuni giorni, contatta l'Amministratore COTRAP."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Dove trovo i file già scaricati in precedenza?",
-          "risposta": "I file già generati si cercano nella sezione <b>Esportazioni</b> del profilo con cui è stata richiesta l’estrazione. Scarica e conserva quelli necessari secondo le procedure aziendali: non usare l’elenco del portale come unica copia d’archivio."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Le statistiche mostrano un incasso diverso da quello che mi aspettavo: come lo verifico?",
-          "risposta": "Le statistiche su Itineris hanno alcune esclusioni da conoscere prima di confrontarle con altri dati:<br><br>• <b>Titoli gratuiti esclusi</b>: le statistiche mensili, linee e venduto non includono mai i titoli emessi gratuitamente dal profilo commerciale.<br>• <b>Solo venduto online</b>: le statistiche riguardano esclusivamente il venduto sul portale web e sull'app. Non include il venduto con macchinette di bordo Tecbus.<br>• <b>Canale</b>: le statistiche includono sia 'Online' (carta) che 'Credito' (ricariche). Se vedi differenze rispetto ai dati contabili, controlla che stai confrontando lo stesso tipo di canale.<br><br><b>Per verificare nel dettaglio:</b> usa Sezione Contabile → Statistiche Venduto, filtra per linea e periodo, poi confronta con i Dati Contabili dello stesso periodo."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Qual è la differenza tra Statistiche Mensili, Statistiche Linee e Statistiche Venduto?",
-          "risposta": "<b>Statistiche Mensili</b>: il venduto aggregato mese per mese, per seguire l'andamento nel tempo.<br><br><b>Statistiche linee</b>: il venduto per singola linea, calcolato <b>per data di emissione</b> del titolo, cioè in base a quando è stato acquistato.<br><br><b>Statistiche corse CS</b>: i biglietti di corsa semplice, calcolati <b>per data di partenza</b>, cioè in base a quando si viaggia. È la differenza da tenere presente quando i due numeri non coincidono.<br><br><b>Statistiche Venduto</b>: il venduto totale del periodo, con i file da portare nel gestionale aziendale.<br><br>Statistiche linee e Statistiche corse CS compaiono nel menu <b>Ordini</b> del pannello commerciale quando il profilo è abilitato a vederle; le altre sono nella <b>Sezione Contabile</b>."
-        }
-      ]
-    },
-    {
-      "id": "faq-multitratta",
-      "titolo": "Linea Multitratta",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "faq",
-          "domanda": "Cos'è una linea multitratta e quando si usa?",
-          "risposta": "Una linea multitratta serve per vendere <b>abbonamenti che coprono un percorso con cambio autobus</b> a metà percorso, quando i due codici contabili non si trovano sulla stessa linea. Si costruisce sulle proprie linee: nel template si indicano la <b>linea di partenza</b> e la <b>linea di cambio</b>, e il pannello propone solo le linee che hanno un codice contabile in comune.<br><br>Esempio: la linea A collega Bari ad Altamura, la linea B collega Altamura a Matera. Con la linea multitratta si vende un unico abbonamento Bari-Matera con cambio ad Altamura.<br><br><b>Limitazione importante:</b> la spunta 'multitratta' su una linea <b>inibisce completamente la creazione di biglietti</b> per quella linea. La linea multitratta serve <b>esclusivamente per gli abbonamenti con cambio</b>, non per i biglietti di corsa singola."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Come si crea una linea multitratta? (struttura del template)",
-          "risposta": "Il template di una linea multitratta richiede esattamente <b>3 poli</b>:<br><br><b>Polo 1</b> = Partenza (es. Bari)<br><b>Polo 2</b> = Punto di cambio (es. Matera) — deve avere un codice contabile presente in <b>entrambe le linee</b> coinvolte<br><b>Polo 3</b> = Arrivo (es. Taranto)<br><br>Il polo di cambio è il punto critico: se il codice contabile usato come cambio non è presente anche nell'altra linea, il sistema non riesce a calcolare il prezzo combinato dell'abbonamento.<br><br>Dopo aver creato la linea con la spunta 'multitratta' e il template a 3 poli, crea la corsa normalmente e pubblicala."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Un abbonamento multitratta non compare sullo shop COTRAP: cosa verifico?",
-          "risposta": "Verifica titolo abilitato, linea e template multitratta, tre poli con codice centrale comune alle due linee, entrambe le direzioni e corse pubblicate valide. Controlla inclusioni/esclusioni e distanze, poi cerca il collegamento nel <a href=\"#controllo-tariffario-abbonamenti\">Controllo Tariffario Abbonamenti</a>. Il polo centrale serve alla compatibilità tariffaria: non identifica necessariamente la fermata fisica del cambio."
-        },
-        {
-          "tipo": "faq",
-          "domanda": "Posso creare biglietti di corsa singola su una linea multitratta?",
-          "risposta": "<b>No.</b> La spunta 'multitratta' su una linea disabilita completamente la creazione di biglietti per quella linea. Se hai bisogno sia di biglietti che di abbonamenti multitratta per lo stesso percorso, devi gestirli su <b>due linee separate</b>: una normale (per i biglietti) e una multitratta (solo per gli abbonamenti con cambio)."
-        }
-      ]
-    }
-  ]
-},
   "gestione-movimento": {
   "id": "gestione-movimento",
   "titolo": "Gestione Movimento",
   "aggiornato": "2026-09-09",
   "nuovo": false,
-  "contenuto": [],
-  "sottosezioni": [
+  "contenuto": [
     {
-      "id": "comprendere-il-sistema",
-      "titolo": "Comprendere il Sistema",
-      "aggiornato": "2026-03-05",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Sistema a livelli: <b>Codici Contabili → Poli → Linee/Template → Corse</b>. L'ordine è obbligatorio.",
-            "Prima di iniziare: recupera codici, denominazione linea, polimetriche e tariffe da <b>Tecbus</b>.",
-            "Creare la corsa non basta: va <b>pubblicata</b> per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>."
-          ]
-        },
-        {
-          "tipo": "steps",
-          "items": [
-            {
-              "numero": "1",
-              "titolo": "Codici Contabili Poli",
-              "descrizione": "I codici dei Comuni del percorso (da Tecbus). Devono esistere prima di tutto il resto."
-            },
-            {
-              "numero": "2",
-              "titolo": "Poli",
-              "descrizione": "Le fermate fisiche con coordinate GPS. Ogni fermata è agganciata a un codice contabile: più fermate della stessa località condividono lo stesso codice."
-            },
-            {
-              "numero": "3",
-              "titolo": "Linee e Template",
-              "descrizione": "La linea è il contenitore; il template è l'elenco ordinato delle fermate con i km e i minuti, entrambi contati dal capolinea."
-            },
-            {
-              "numero": "4",
-              "titolo": "Corse",
-              "descrizione": "Ogni singola partenza: orario, frequenza, posti. Vanno pubblicate (Stato Attivazione &quot;Attiva&quot;) per apparire sullo <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">shop COTRAP</a>."
-            }
-          ]
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine5.0.png",
-          "alt": "Menu Gestione Movimento",
-          "didascalia": "Accesso alla sezione Gestione Movimento"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "info",
-          "testo": "<b>Dove vado per fare cosa?</b> Riferimento rapido per orientarsi tra le sezioni:"
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "<b>Cambiare il percorso di una linea</b> (fermate, ordine tappe) → <b>Linee</b>",
-            "<b>Cambiare gli orari di partenza</b> → <b>Corse</b> (modificare la corsa o crearne una nuova)",
-            "<b>Sospendere una corsa temporaneamente</b> → <b>Eccezioni → Sospensione Corsa/Fermata</b>",
-            "<b>Cambiare il prezzo di un biglietto o abbonamento</b> → <b>Eccezioni → Eccezione Tariffaria</b>",
-            "<b>Correggere i km tra fermate</b> (influenza il costo degli abbonamenti) → <b>Eccezioni → Eccezione Chilometrica</b>",
-            "<b>Vedere gli acquisti dei clienti</b> → <b>Ordini</b>",
-            "<b>Estrarre dati contabili e incassi</b> → <b>Sezione Contabile</b>"
-          ]
-        },
-        {
-          "tipo": "immagine",
-          "src": "Immagine5.0b.png",
-          "alt": "Sottomenu Gestione Movimento",
-          "didascalia": "Voci disponibili in Gestione Movimento"
-        },
-        {
-          "tipo": "avviso",
-          "stile": "warning",
-          "testo": "<b>Errori comuni da evitare:</b>"
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "<b>Corsa non visibile?</b> Controlla lo <b>Stato Attivazione</b>, distinto dallo Stato Corsa interno. Non premere più volte Pubblica\\Nascondi: verifica prima date, frequenza, titolo ed eccezioni; dopo una richiesta attendi il completamento. Vedi <a href=\"#diag-non-compare\">i controlli diagnostici</a>.",
-            "<b>Nomi di città duplicati nello shop COTRAP?</b> Il campo Descrizione di uno o più Codici Contabili è vuoto o non contiene il nome della frazione. Se per uno stesso Comune esistono più codici, compilare il campo Descrizione con il nome della frazione (es. 'Palese' per Bari-Palese).",
-            "<b>Orari o prezzi sbagliati nel template?</b> Sia i minuti sia i km si calcolano sempre <b>dal capolinea</b>, mai dalla fermata precedente. Es.: Fermata B = 1 km / 7 min dal capolinea, Fermata C = 16 km / 25 min dal capolinea (non 15 km e 18 min da B).",
-            "<b>Modifica al template ma le corse non cambiano?</b> Le corse non si aggiornano da sole. Vanno prima portate a <i>Stato Attivazione</i> &quot;Non attiva&quot; con l'icona Pubblica\\Nascondi, poi si modifica il template e si usa <b>Aggiorna Corse Inattive del Template</b>, infine si ripubblicano. Le corse che hanno subito modifiche dirette restano escluse.",
-            "<b>Eccezione chilometrica:</b> controlla la data iniziale (primo del mese), la coppia di codici e il contatore In elaborazione."
-          ]
-        },
-        {
-          "tipo": "box-nota",
-          "titolo": "Perché alcune operazioni non sono immediate",
-          "contenuto": [
-            "Alcune operazioni avviano un’elaborazione dei collegamenti e delle tariffe: il salvataggio non coincide necessariamente con la disponibilità del risultato.",
-            "Le corse possono passare per <b>In attivazione</b> e <b>In disattivazione</b>. Dove compare <b>In elaborazione</b>, attendi il completamento prima di intervenire di nuovo sullo stesso oggetto.",
-            "Se il contatore resta fermo a lungo, registra oggetto e orario e chiedi assistenza.",
-            "Per le eccezioni chilometriche il comando <b>Pubblica</b> riavvia l’elaborazione. Non usarlo ripetutamente come prova."
-          ]
-        }
-      ]
+      "tipo": "paragrafo",
+      "testo": "In Itineris è la voce <b>GESTIONE MOVIMENTO</b>: qui si costruisce il servizio, dai codici contabili ai titoli di viaggio."
     },
+    {
+      "tipo": "immagine",
+      "src": "Immagine5.0.png",
+      "alt": "Menu Gestione Movimento",
+      "didascalia": "Accesso alla sezione Gestione Movimento"
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine5.0b.png",
+      "alt": "Sottomenu Gestione Movimento",
+      "didascalia": "Voci disponibili in Gestione Movimento"
+    }
+  ],
+  "sottosezioni": [
     {
       "id": "mezzi",
       "titolo": "Mezzi",
@@ -2897,7 +1840,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "codici-contabili-alternativi",
-      "titolo": "Codici Contabili Alternativi",
+      "titolo": "Codici contabili alternativi",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -3206,7 +2149,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "creazione-template",
-      "titolo": "Creazione del Template",
+      "titolo": "Template della linea",
       "aggiornato": "2026-03-05",
       "nuovo": false,
       "contenuto": [
@@ -3659,13 +2602,25 @@ var BUNDLED_DATA = {
       ]
     },
     {
-      "id": "concetti-base-abbonamenti",
-      "titolo": "Concetti Base: Tariffario e Raggruppamento Abbonamenti",
-      "aggiornato": "2026-03-03",
+      "id": "titoli-di-viaggio",
+      "titolo": "Titoli di viaggio",
+      "aggiornato": "2026-03-30",
       "nuovo": false,
       "contenuto": [
         {
           "tipo": "tldr",
+          "items": [
+            "Da qui gestisci sia i <b>biglietti CS</b> (corsa semplice, inclusi CSI invalidi) che gli <b>abbonamenti</b>. Per entrambi serve prima l'attivazione dell'Admin.",
+            "Per biglietti e abbonamenti occorrono titolo abilitato dall’Admin, configurazione dei collegamenti e attivazione aziendale; la sola pubblicazione della corsa non sostituisce questi passaggi.",
+            "La tipologia della linea (Regionale/Provinciale vs Comunale) determina quali CS sono disponibili: CS/CSI/CSIA per extraurbane, CSU/CSUI/CSUIA per urbane."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Come si forma il prezzo di un abbonamento</b>"
+        },
+        {
+          "tipo": "lista",
           "items": [
             "Questi parametri (tariffari, raggruppamenti, categorie sconto) sono gestiti <b>solo dall'Amministratore COTRAP</b> — il consorziato puo' solo consultarli.",
             "L’importo dell’abbonamento dipende dal raggruppamento, dalla tariffa applicabile, dalle eventuali eccezioni e dalla categoria sconto.",
@@ -3716,22 +2671,6 @@ var BUNDLED_DATA = {
           "tipo": "avviso",
           "stile": "info",
           "testo": "Se occorre una tessera 'speciale' con un fattore di sconto diverso non presente nell'elenco standard, è necessario contattare <b>sia l'Amministratore di Sistema di Itineris che Tecbus</b>, in quanto la tessera deve essere creata su entrambi i sistemi."
-        }
-      ]
-    },
-    {
-      "id": "titoli-di-viaggio",
-      "titolo": "Titoli di Viaggio",
-      "aggiornato": "2026-03-30",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Da qui gestisci sia i <b>biglietti CS</b> (corsa semplice, inclusi CSI invalidi) che gli <b>abbonamenti</b>. Per entrambi serve prima l'attivazione dell'Admin.",
-            "Per biglietti e abbonamenti occorrono titolo abilitato dall’Admin, configurazione dei collegamenti e attivazione aziendale; la sola pubblicazione della corsa non sostituisce questi passaggi.",
-            "La tipologia della linea (Regionale/Provinciale vs Comunale) determina quali CS sono disponibili: CS/CSI/CSIA per extraurbane, CSU/CSUI/CSUIA per urbane."
-          ]
         },
         {
           "tipo": "paragrafo",
@@ -3841,6 +2780,267 @@ var BUNDLED_DATA = {
           "testo": "<b>Attenzione:</b> L'esclusione di coppie di codici contabili vale sempre in entrambe le direzioni."
         }
       ]
+    },
+    {
+      "id": "cs-invalidi",
+      "titolo": "CS Invalidi (titoli per invalidi)",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Permette ai possessori di <b>tessera MyCard per invalidi</b> di ottenere i biglietti di corsa semplice previsti dall'art. 30 c. 3 della L.R. Puglia n. 18/2002, extraurbani (CSI/CSIA) o urbani (CSUI/CSUIA).",
+            "<b>Sono titoli gratuiti per il cliente.</b> Il limite è di <b>2 biglietti al giorno</b> (andata e ritorno) più <b>altri 2 per l'accompagnatore</b>, quando l'utente ne ha diritto.",
+            "Il profilo Admin deve creare e attivare i titoli <b>prima</b> che il commerciale possa farlo. Il commerciale deve poi selezionare le linee e attivare il titolo."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con l'introduzione dei biglietti per invalidi (CSI) è stata introdotta una separazione netta tra i titoli di biglietto. Da questa versione in poi:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>CS</b> e derivati (CSI, CSIA) → riservati alle sole linee <b>extraurbane</b> (Tipologia linea: Regionale o Provinciale)",
+            "<b>CSU</b> e derivati (CSUI, CSUIA) → riservati alle sole linee <b>urbane</b> (Tipologia linea: Comunale)"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Le aziende che vendono solo CS urbani (es. linee comunali) avranno disponibili solo CSU, CSUI e CSUIA. Le aziende con entrambi i tipi di linea dovranno avere attivi entrambi i gruppi di titoli. <b>Se in Gestione Movimento → Titoli di Viaggio non compare alcun titolo CSI/CSIA/CSUI/CSUIA</b>, significa che l'Amministratore non lo ha ancora creato e abilitato per la tua azienda: va richiesto."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Le 6 categorie di Corsa Semplice</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Sono ora disponibili 6 tipologie di biglietto di corsa semplice:"
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "<b>CS</b> — Corsa Semplice standard, il biglietto ordinario che chiunque può acquistare — solo linee extraurbane",
+            "<b>CSI</b> — Corsa Semplice Invalidi — solo linee extraurbane",
+            "<b>CSIA</b> — Corsa Semplice Invalidi + Accompagnatore — solo linee extraurbane",
+            "<b>CSU</b> — Corsa Semplice Urbana standard, il biglietto ordinario che chiunque può acquistare — solo linee urbane",
+            "<b>CSUI</b> — Corsa Semplice Urbana Invalidi — solo linee urbane",
+            "<b>CSUIA</b> — Corsa Semplice Urbana Invalidi + Accompagnatore — solo linee urbane"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Titoli gratuiti per il cliente:</b> CSI, CSIA, CSUI e CSUIA sono associati alle categorie tessera dedicate. Nella verifica di un titolo usa i campi del dettaglio e la categoria configurata; non ricavare l’importo pagato dalla sola denominazione della tessera."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Nessuna opzione 'con cambio':</b> per i CSI e CSUI non è disponibile la scelta della tratta con cambio linea."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Come si attiva (profilo commerciale)</b>"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Prerequisito obbligatorio:</b> il titolo di viaggio CSI/CSIA/CSUI/CSUIA deve essere prima creato e attivato dal <b>profilo Admin</b> (con categoria calcolo sconto, numero massimo emissioni e aziende abilitate). Solo dopo il commerciale lo vedrà disponibile."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta che il profilo Admin ha attivato il titolo, il profilo Commerciale può procedere. La procedura corretta è:"
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "Vai in <b>Gestione Movimento → Titoli di Viaggio</b>",
+            "Seleziona il titolo CSI (o CSIA, CSUI, CSUIA) tra quelli disponibili",
+            "Prima di attivarlo, <b>seleziona le linee</b> su cui deve essere attivo il titolo — questa operazione va fatta prima dell'attivazione",
+            "Attiva il titolo"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Effetto dell'attivazione:</b> quando si attiva il titolo, il sistema prende automaticamente tutte le corse attive valide e genera i biglietti corrispondenti nella biglietteria. Da quel momento in poi, ogni corsa che viene attivata genererà automaticamente i biglietti; ogni corsa disattivata li rimuoverà."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Effetto della disattivazione:</b> disattivare il titolo rimuove tutti i biglietti CSI/CSIA/CSUI/CSUIA dalla biglietteria per le corse correlate."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Come funziona la vendita per l'utente</b>"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "L'utente deve avere i <b>dati della tessera MyCard</b> inseriti nel proprio profilo su cotrap.it per visualizzare i biglietti invalidi",
+            "Al login, la disponibilità dei titoli dipende dai dati tessera e dalle opzioni di visibilità configurate dall’Admin",
+            "Se l’account vede soltanto i titoli riservati, per acquistare un CS ordinario può essere necessario uscire dall’account. Verificare anche l’opzione <b>Visibilità titoli senza tessera</b> descritta sotto",
+            "<b>Limite:</b> massimo <b>2 biglietti al giorno</b> (uno per l'andata e uno per il ritorno), indipendentemente dalla tratta e dall'orario, più <b>ulteriori 2</b> per l'accompagnatore quando l'utente ha diritto all'accompagnamento"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Visibilità titoli senza tessera:</b> esiste un'opzione nella categoria calcolo sconto chiamata 'Visibilità titoli senza tessera'. Se impostata su 'Solo Corsa Semplice', gli utenti con quella tessera vedono anche i CS normali (senza agevolazione) oltre ai CSI. Questa opzione è configurata dal profilo Admin."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Nuovi filtri in Ordini e Statistiche</b>"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con l'introduzione dei CS Invalidi sono stati aggiunti nuovi filtri e campi in diverse sezioni del pannello."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Ordini → Biglietti (profilo Commerciale)",
+          "contenuto": [
+            "Nuovi filtri disponibili: <b>Titolo di viaggio</b> (filtrato per tipologia biglietto), <b>Categoria calcolo sconto</b>, <b>Numero tessera</b>, <b>Codice fiscale</b>, <b>FID</b>",
+            "Nel dettaglio del singolo biglietto sono ora visibili: numero tessera, codice fiscale, FID e fattore di sconto applicato",
+            "Questi dati aggiuntivi sono presenti anche nell'esportazione Excel"
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Statistiche",
+          "contenuto": [
+            "<b>Statistiche linee</b> (menu Ordini): la colonna 'Denominazione titolo di viaggio' riporta ora il nome del biglietto venduto (CS, CSI, CSIA ecc.) e l'importo scontato finale. L'esportazione riporta comune, frazione, linea e corsa in forma leggibile, non più gli ID numerici",
+            "<b>Statistiche corse CS</b> (menu Ordini): aggiunto il filtro 'Titolo di viaggio' e la relativa colonna. Attenzione: qui il conteggio è <b>per data di partenza</b>, mentre le Statistiche linee sono per data di emissione",
+            "<b>Statistiche Venduto</b> (Sezione Contabile): aggiunto il filtro 'Titolo di Viaggio' con il fattore di sconto. Presente nel file .xls, non nel file .txt",
+            "<b>Statistiche Mensili e Dati Contabili:</b> nessuna modifica"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gestione-movimento-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Codici contabili e poli</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Da dove recupero i codici contabili?",
+          "risposta": "I codici contabili si recuperano da <b>Tecbus</b>. Vanno poi inseriti su Itineris in Gestione Movimento → Codici Contabili Poli. Ogni codice deve corrispondere a un Comune; le frazioni hanno codici distinti."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Uno stesso Comune può avere due codici contabili diversi?",
+          "risposta": "Sì. Frazioni o località tariffarie diverse dello stesso Comune possono avere codici distinti. Un <b>codice alternativo</b> è invece una scelta specifica sulla corsa per un percorso/tariffa differente: non tutti i codici dello stesso Comune sono automaticamente alternativi. Verifica sempre la corrispondenza con Tecbus."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come recupero le coordinate GPS per inserire un polo?",
+          "risposta": "Le coordinate (latitudine e longitudine) si copiano da <b>Google Maps</b>. Dopo averle inserite, clicca su <b>Geolocalizza</b>: apparirà il punto sulla mappa. Se la posizione non è precisa, puoi trascinare l'indicatore nel punto esatto."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cosa sono 'Fermata principale' e 'Primaria' in un polo?",
+          "risposta": "<b>Fermata principale</b>: mette in evidenza quella fermata tra le altre dello stesso polo. <b>Primaria</b>: quando ci sono più fermate principali, indica la più importante tra queste."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Linee, template e corse</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Devo modificare l'orario di partenza di una corsa già attiva: la devo prima disattivare?",
+          "risposta": "L’orario si cambia in <b>Gestione Movimento → Corse</b>, con <b>Visualizza Modifica</b>, nella griglia <b>Poli e Orari</b>. Nella documentazione non c’è una regola che imponga di portare prima la corsa a Non attiva. Se però la corsa è già in vendita, prima di cambiare l’orario controlla in <b>Ordini → Biglietti</b> i titoli già venduti su quella corsa e segui la procedura aziendale per avvisare i clienti. Se invece devi cambiare fermate, km o minuti del percorso, usa l’<a href=\"#creazione-template\">aggiornamento massivo</a>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho sbagliato a inserire i km tra due fermate nel template: come li correggo?",
+          "risposta": "Ricorda che il valore è la distanza <b>dal capolinea</b>: se correggi una fermata, controlla che anche quelle successive restino coerenti (i valori devono crescere lungo il percorso).<br><br>Se le corse non sono ancora attive: apri il template, correggi il km, conferma, poi usa <b>Aggiorna Corse Inattive del Template</b>.<br><br>Se le corse sono già attive (il servizio è in funzione): devi decidere se il dato sbagliato è solo nel template locale (correzione con procedura disattivazione → modifica → riattivazione) oppure se è sbagliata anche la distanza ufficiale tra i codici contabili. In questo secondo caso, crea un'<b>Eccezione Chilometrica</b> per correggere la distanza a livello contabile (effetto dal 1° del mese successivo su prezzi di biglietti e abbonamenti)."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso avere due corse sulla stessa linea con orari diversi ma percorso identico?",
+          "risposta": "<b>Sì, è l'uso normale del sistema.</b> Una stessa linea può avere quante corse vuoi, tutte collegate allo stesso template. Per ogni corsa cambiano solo: orario di partenza, frequenza (feriale, scolastica, ecc.), occupazione massima online, e date di validità.<br><br>Esempio: linea Bari–Altamura con corse alle 07:00 (feriale), 09:00 (feriale), 13:00 (scolastica) — tutte usano lo stesso template con lo stesso percorso."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Due fermate consecutive nel template hanno lo stesso codice contabile: cosa inserisco nei km?",
+          "risposta": "Inserisci per ogni fermata i km <b>cumulativi dal capolinea</b> previsti dalla polimetrica. Due fermate con lo stesso codice possono ripetere un valore, ma il codice da solo non determina il numero da inserire. Non azzerare una fermata intermedia per bloccare una sottotratta. Verifica la distanza applicata con il Controllo Tariffario e le eventuali eccezioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I km e i minuti nel template si contano dalla fermata precedente o dal capolinea?",
+          "risposta": "Sempre <b>dal capolinea</b> (la prima fermata), mai dalla precedente: vale sia per i minuti sia per i km.<br><br>Dai <b>minuti</b> il sistema calcola l'orario di passaggio di ogni fermata partendo dall'orario di partenza inserito nella corsa. Dai <b>km</b> ricava la distanza tariffaria tra i codici contabili, e quindi il prezzo di biglietti e abbonamenti.<br><br>Si riconosce a colpo d'occhio: lungo il percorso i valori crescono e non tornano mai indietro (es. 0 km → 1 km → 16 km → 16 km → 21 km)."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cosa indica il campo 'Occupazione Massima' nella corsa?",
+          "risposta": "Il numero massimo di biglietti vendibili <b>online</b> per quella corsa. Usarlo quando si vuole riservare posti alla vendita a bordo o in agenzia. La percentuale di occupazione in 'Stati Occupazionali' si riferisce <b>solo ai biglietti online</b>, non al venduto cartaceo."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso modificare una corsa già pubblicata senza disattivarla?",
+          "risposta": "Dipende da che cosa cambi. Per <b>fermate, km, minuti o sosta</b> del percorso segui l’<a href=\"#creazione-template\">aggiornamento massivo</a>: le stesse correzioni fatte direttamente sulla singola corsa la escludono dagli aggiornamenti successivi. Per gli altri dati, se la corsa è già in vendita, controlla prima i titoli venduti in <b>Ordini → Biglietti</b> e dopo la modifica verifica la corsa sulla biglietteria."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Aggiornamento massivo</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è la Modifica Template Massivo e quando si usa?",
+          "risposta": "Serve a riportare le modifiche di un template sulle corse collegate <b>non attive e senza modifiche dirette</b>. Da <b>Gestione Movimento → Linee</b> apri la linea: il comando nella riga del template si chiama <b>Aggiorna Corse Inattive del Template</b>. Segui la <a href=\"#creazione-template\">procedura completa</a>, con disattivazione e successiva ripubblicazione delle sole corse interessate."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come funziona passo per passo la Modifica Template Massivo?",
+          "risposta": "Filtra le corse per il <b>template interessato</b> e annota quali erano pubblicate. Portale a <b>Stato Attivazione: Non attiva</b>; modifica e conferma il template. Usa <b>Aggiorna Corse Inattive del Template</b>, rispondi <b>OK</b> e conferma in fondo alla linea. Verifica le corse aggiornate e quelle escluse per modifiche dirette, poi ripubblica soltanto quelle che devono essere in vendita. Controlla orari e tariffe."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho fatto l'aggiornamento massivo ma alcune corse mostrano ancora i vecchi orari: perché?",
+          "risposta": "Verifica che le corse usino il template corretto, fossero in <b>Stato Attivazione: Non attiva</b> e non avessero modifiche dirette. Controlla che l’aggiornamento e la conferma finale siano stati completati. Se la causa resta incerta, raccogli corsa, template e orari attesi per l’assistenza."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Titoli di viaggio e tessere</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è la tessera MyCard e quando è obbligatoria per un abbonamento?",
+          "risposta": "La <b>MyCard</b> è una tessera personale nominativa che alcuni abbonamenti richiedono obbligatoriamente. È associata al codice fiscale del passeggero e serve a identificare il titolare.<br><br>Non tutti gli abbonamenti richiedono la MyCard: dipende da come l'Amministratore ha configurato il titolo. In <b>Gestione Movimento → Titoli di viaggio</b>, aprendo il titolo con <i>Visualizza Modifica</i>, lo si legge in due campi che il consorziato può solo consultare: la <b>Categoria Calcolo Sconto</b>, cioè la tessera che dà diritto al titolo — se è una delle voci <i>NT - Nessuna tessera</i> l'abbonamento è vendibile senza tessera — e la <b>Visibilità</b>, che vale <i>Account</i> se il titolo è visibile a chiunque abbia un account, oppure <i>Account_Tessera</i> se lo vede solo chi ha la tessera registrata nel proprio profilo.<br><br><b>Cosa succede senza tessera:</b> il passeggero non riesce a completare l'acquisto di quel tipo di abbonamento sul portale o sull'app.<br><br><b>Per emissione gratuita con MyCard:</b> quando usi 'Emetti titolo di viaggio' per emettere gratuitamente un abbonamento che richiede tessera, devi inserire il codice fiscale del cliente nel form di creazione ordine. Verifica che la tessera esista e sia attiva prima di procedere."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Multitratta</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è una linea multitratta e quando si usa?",
+          "risposta": "Una linea multitratta serve per vendere <b>abbonamenti che coprono un percorso con cambio autobus</b> a metà percorso, quando i due codici contabili non si trovano sulla stessa linea. Si costruisce sulle proprie linee: nel template si indicano la <b>linea di partenza</b> e la <b>linea di cambio</b>, e il pannello propone solo le linee che hanno un codice contabile in comune.<br><br>Esempio: la linea A collega Bari ad Altamura, la linea B collega Altamura a Matera. Con la linea multitratta si vende un unico abbonamento Bari-Matera con cambio ad Altamura.<br><br><b>Limitazione importante:</b> la spunta 'multitratta' su una linea <b>inibisce completamente la creazione di biglietti</b> per quella linea. La linea multitratta serve <b>esclusivamente per gli abbonamenti con cambio</b>, non per i biglietti di corsa singola."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come si crea una linea multitratta? (struttura del template)",
+          "risposta": "Il template di una linea multitratta richiede esattamente <b>3 poli</b>:<br><br><b>Polo 1</b> = Partenza (es. Bari)<br><b>Polo 2</b> = Punto di cambio (es. Matera) — deve avere un codice contabile presente in <b>entrambe le linee</b> coinvolte<br><b>Polo 3</b> = Arrivo (es. Taranto)<br><br>Il polo di cambio è il punto critico: se il codice contabile usato come cambio non è presente anche nell'altra linea, il sistema non riesce a calcolare il prezzo combinato dell'abbonamento.<br><br>Dopo aver creato la linea con la spunta 'multitratta' e il template a 3 poli, crea la corsa normalmente e pubblicala."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Un abbonamento multitratta non compare sullo shop COTRAP: cosa verifico?",
+          "risposta": "Verifica titolo abilitato, linea e template multitratta, tre poli con codice centrale comune alle due linee, entrambe le direzioni e corse pubblicate valide. Controlla inclusioni/esclusioni e distanze, poi cerca il collegamento nel <a href=\"#controllo-tariffario-abbonamenti\">Controllo Tariffario Abbonamenti</a>. Il polo centrale serve alla compatibilità tariffaria: non identifica necessariamente la fermata fisica del cambio."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso creare biglietti di corsa singola su una linea multitratta?",
+          "risposta": "<b>No.</b> La spunta 'multitratta' su una linea disabilita completamente la creazione di biglietti per quella linea. Se hai bisogno sia di biglietti che di abbonamenti multitratta per lo stesso percorso, devi gestirli su <b>due linee separate</b>: una normale (per i biglietti) e una multitratta (solo per gli abbonamenti con cambio)."
+        }
+      ]
     }
   ]
 },
@@ -3920,6 +3120,35 @@ var BUNDLED_DATA = {
           "tipo": "avviso",
           "stile": "info",
           "testo": "<b>Intorno alla catena:</b> tariffari e calendari li aggiorna COTRAP e tu li consulti; le <b>Eccezioni</b> servono per ciò che è temporaneo o diverso dalla regola; <b>Ordini</b> ed <b>Esportazioni</b> mostrano il risultato."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Domande frequenti</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Non conosco Itineris: com'è fatto il sistema in parole semplici?",
+          "risposta": "Pensalo come una catena. Prima i <b>codici contabili</b> (le località tariffarie), poi i <b>poli</b> (le fermate), poi la <b>linea</b> con il suo <b>template</b> (il percorso, con km e minuti contati dal capolinea), infine le <b>corse</b> (le partenze). Una corsa diventa acquistabile quando è <b>pubblicata</b> e ha un <b>titolo di viaggio</b> attivo. Frequenze e calendari decidono in quali giorni viaggia; le eccezioni gestiscono ciò che è temporaneo. Lo schema è in <a href=\"#gv-catena\">Come è fatto un servizio</a>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è un 'template' e perché esiste? Non capisco la differenza con la 'corsa'.",
+          "risposta": "Il <b>template</b> è il 'percorso tipo' della linea: definisce <i>dove</i> passa il bus, in che ordine, quanti km e quanti minuti separano ogni fermata dal capolinea. È come il 'modello' fisso della rotta.<br><br>La <b>corsa</b> è una singola partenza concreta: <i>quando</i> parte il bus (orario), con che frequenza (feriale, scolastica, ecc.) e quanti posti vendi online. Una stessa linea può avere molte corse diverse (es. 07:00, 09:00, 14:00) che usano tutte lo stesso template.<br><br>Perché questa separazione? Perché il percorso si descrive una volta sola e vale per tutte le corse. <b>Attenzione però:</b> le corse già create <b>non</b> si aggiornano da sole quando modifichi il template. Serve la procedura di aggiornamento massivo — vedi la sezione &quot;Modifica Template Massivo&quot;."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cos'è un 'codice contabile' e cos'è un 'polo'? Quando uso uno, quando uso l'altro?",
+          "risposta": "Il <b>codice contabile</b> identifica una località ai fini tariffari e va allineato a Tecbus. Un Comune può avere più codici. Il <b>polo</b> è la fermata fisica inserita in Poli, con coordinate e codice contabile associato: più fermate possono condividere lo stesso codice. Nei template ordini le fermate; nei controlli tariffari confronti le coppie di codici."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cosa significa che una corsa è 'non attiva'? Che differenza c'è tra Stato Corsa e Stato Attivazione?",
+          "risposta": "Sono <b>due campi diversi</b>.<br><br><b>Stato Corsa</b> (campo del form, colonna <i>Stato</i>) è lo stato interno e ha due soli valori: <b>Attiva</b> e <b>Sospesa</b>. Normalmente resta su Attiva.<br><br><b>Stato Attivazione</b> (colonna <i>Stato Attivazione</i>) è la pubblicazione verso lo shop e ha quattro valori: <b>Non attiva</b>, <b>In attivazione</b>, <b>Attiva</b>, <b>In disattivazione</b>. Solo con &quot;Attiva&quot; la corsa è visibile e acquistabile su biglietteria.cotrap.it; &quot;In attivazione&quot; e &quot;In disattivazione&quot; sono stati temporanei, il sistema sta elaborando la richiesta.<br><br>Quando si dice che una corsa è &quot;non attiva&quot; o &quot;nascosta&quot; ci si riferisce <b>sempre allo Stato Attivazione</b>. Una corsa appena creata nasce così: per pubblicarla vai in Gestione Movimento → Corse, clicca l'icona <b>Pubblica\\Nascondi</b> a destra e conferma. La stessa icona serve a nasconderla di nuovo senza eliminarla."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Nello shop di COTRAP appaiono più risultati con lo stesso nome di città: come si risolve?",
+          "risposta": "Questo problema è causato dal campo <b>Descrizione</b> vuoto nei Codici Contabili. Quando un Comune ha più codici contabili (es. Bari città e Palese-Bari), il sistema li mostra entrambi nello shop. Se il campo Descrizione è vuoto su entrambi, appaiono entrambi come 'Bari', creando confusione all'utente.<br><br><b>Soluzione:</b> vai in Gestione Movimento → Codici Contabili Poli, modifica il codice della variante (nell'esempio: Palese-Bari) e inserisci nel campo <b>Descrizione</b> il nome della frazione (es. 'Palese'). Nello shop appariranno ora 'Bari' e 'Bari - Palese', chiaramente distinguibili.<br><br><b>Regola generale:</b> se per uno stesso Comune esistono più codici contabili, tutti tranne quello principale devono avere il campo Descrizione compilato con il nome della frazione."
         }
       ]
     },
@@ -4158,7 +3387,7 @@ var BUNDLED_DATA = {
             {
               "numero": 1,
               "titolo": "Prepara i dati da Tecbus",
-              "descrizione": "Codici contabili dei poli, polimetriche e tariffe, codice e denominazione della linea, competenza (Regionale, Provinciale, Comunale). <b>Controllo:</b> ci sono i codici di tutte le località del percorso."
+              "descrizione": "Codici contabili dei poli, polimetriche e tariffe (servono ad allineare la vendita online con le macchinette di bordo), codice e denominazione della linea, competenza (Regionale, Provinciale, Comunale). <b>Controllo:</b> ci sono i codici di tutte le località del percorso."
             },
             {
               "numero": 2,
@@ -4218,6 +3447,16 @@ var BUNDLED_DATA = {
           ]
         },
         {
+          "tipo": "box-nota",
+          "titolo": "Perché alcune operazioni non sono immediate",
+          "contenuto": [
+            "Alcune operazioni avviano un’elaborazione dei collegamenti e delle tariffe: il salvataggio non coincide necessariamente con la disponibilità del risultato.",
+            "Le corse possono passare per <b>In attivazione</b> e <b>In disattivazione</b>. Dove compare <b>In elaborazione</b>, attendi il completamento prima di intervenire di nuovo sullo stesso oggetto.",
+            "Se il contatore resta fermo a lungo, registra oggetto e orario e chiedi assistenza.",
+            "Per le eccezioni chilometriche il comando <b>Pubblica</b> riavvia l’elaborazione. Non usarlo ripetutamente come prova."
+          ]
+        },
+        {
           "tipo": "avviso",
           "stile": "success",
           "testo": "Qualcosa non funziona come previsto? <a href=\"#diagnostica\">Risolvi un problema</a> parte dal sintomo e ti dice che cosa controllare, in ordine."
@@ -4234,16 +3473,21 @@ var BUNDLED_DATA = {
   "contenuto": [
     {
       "tipo": "paragrafo",
-      "testo": "Benvenuti nella <b>Guida Operativa ITINERIS</b>! Questo manuale supporta i Consorziati COTRAP nella gestione delle linee e corse su Itineris e nel controllo contabile del venduto."
+      "testo": "Questa guida spiega come usare <b>Itineris</b>, il pannello con cui le aziende consorziate COTRAP gestiscono linee, corse, eccezioni e titoli di viaggio, e come controllare il venduto."
     },
     {
       "tipo": "avviso",
       "stile": "info",
-      "testo": "Utilizza il <b>menu laterale</b> per navigare tra le sezioni oppure la <b>barra di ricerca</b> in alto per trovare rapidamente un argomento."
+      "testo": "<b>Come è organizzato il menu.</b> Gli <b>Strumenti della guida</b> sono pagine che in Itineris non esistono: la <b>Guida Veloce</b>, per sapere quale comando usare, e <b>Risolvi un problema</b>, quando qualcosa non va. Sotto <b>Menu Itineris</b> trovi le sezioni con gli <b>stessi nomi e lo stesso ordine</b> del pannello: se sei in una schermata di Itineris, apri la sezione con lo stesso nome."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "success",
+      "testo": "Accanto a ogni titolo c'è il pulsante <b>🔗</b>: copia il link a quel punto preciso della guida, da incollare in un messaggio."
     },
     {
       "tipo": "paragrafo",
-      "testo": "<b>Sezioni principali della guida:</b>"
+      "testo": "<b>Strumenti della guida</b>"
     },
     {
       "tipo": "cards",
@@ -4259,17 +3503,26 @@ var BUNDLED_DATA = {
           "titolo": "Risolvi un problema",
           "descrizione": "Parti dal sintomo: i controlli da fare, nell'ordine giusto, quando una corsa non compare, un prezzo non torna o un cliente ha un problema.",
           "link": "diagnostica"
-        },
+        }
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Menu Itineris — profilo commerciale</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
         {
-          "icona": "💼",
-          "titolo": "Profilo Commerciale",
-          "descrizione": "Pre-requisiti, iter creazione linea, configurazione tariffari, calendari, frequenze, utenti app ed emissione titoli gratuiti.",
-          "link": "profilo-commerciale"
+          "icona": "⚙️",
+          "titolo": "Configurazione",
+          "descrizione": "Tariffari e calendari da consultare; Frequenze Corsa e utenti dell'app di controllo da gestire.",
+          "link": "configurazione"
         },
         {
           "icona": "🚌",
           "titolo": "Gestione Movimento",
-          "descrizione": "Codici contabili, poli, linee, template, corse, note e titoli di viaggio: il cuore operativo.",
+          "descrizione": "Codici contabili, poli, linee e template, corse, note e titoli di viaggio, compresi i CS Invalidi.",
           "link": "gestione-movimento"
         },
         {
@@ -4291,35 +3544,27 @@ var BUNDLED_DATA = {
           "link": "esportazioni"
         },
         {
-          "icona": "📊",
-          "titolo": "Sezione Contabile",
-          "descrizione": "Accesso contabile separato, ordini, dati contabili, biglietti, abbonamenti e statistiche venduto.",
-          "link": "sezione-contabile"
-        },
-        {
           "icona": "🎫",
-          "titolo": "Emetti Titolo di Viaggio",
+          "titolo": "Emetti titolo di viaggio",
           "descrizione": "Emissione gratuita di biglietti e abbonamenti dal profilo commerciale, tramite il Portale Clienti.",
           "link": "emetti-titolo-viaggio"
-        },
-        {
-          "icona": "♿",
-          "titolo": "CS Invalidi",
-          "descrizione": "I biglietti di corsa semplice per invalidi: le sei categorie, l'attivazione del titolo e i filtri dedicati.",
-          "link": "cs-invalidi"
-        },
-        {
-          "icona": "❓",
-          "titolo": "Domande e Risposte",
-          "descrizione": "Risposte rapide alle domande più frequenti, organizzate per argomento.",
-          "link": "faq"
         }
       ]
     },
     {
-      "tipo": "avviso",
-      "stile": "success",
-      "testo": "<b>Non sai quale comando usare?</b> Parti dalla <a href=\"#guida-veloce\">Guida Veloce</a>: per ogni operazione trovi lo strumento fatto apposta e come verificare il risultato. Se invece hai un problema, vai a <a href=\"#diagnostica\">Risolvi un problema</a>."
+      "tipo": "paragrafo",
+      "testo": "<b>Menu Itineris — profilo contabile</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
+        {
+          "icona": "📊",
+          "titolo": "Sezione Contabile",
+          "descrizione": "Accesso contabile separato, ordini, dati contabili, biglietti, abbonamenti e statistiche venduto.",
+          "link": "sezione-contabile"
+        }
+      ]
     }
   ],
   "sottosezioni": [
@@ -4358,6 +3603,30 @@ var BUNDLED_DATA = {
           "tipo": "avviso",
           "stile": "info",
           "testo": "<b>Se il tuo profilo gestisce più aziende:</b> in Itineris \"azienda\" indica un'<b>area di lavoro</b>, non necessariamente una società diversa. La stessa società può averne più di una (per esempio una sede regionale e un gruppo provinciale, oppure le linee urbane separate da quelle extraurbane). <b>Prima di operare verifica sempre quale azienda è selezionata in alto a destra</b>: linee, corse e titoli che vedi sono solo quelli di quell'area."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Domande frequenti</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quali credenziali usare per accedere?",
+          "risposta": "Sono necessari <b>ID utente e password</b> forniti dall'Amministratore COTRAP. Esistono due account separati: uno per il <b>profilo commerciale</b> (gestione linee, corse, eccezioni, biglietti gratuiti) e uno per il <b>profilo contabile</b> (dati contabili, statistiche venduto, esportazioni). Non usare le stesse credenziali per entrambi."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come faccio a sapere con quale profilo sono loggato?",
+          "risposta": "In <b>basso a sinistra</b> è visibile l'<b>utente</b> con cui hai fatto accesso. Nel <b>pannello commerciale</b> l'<b>azienda</b> su cui stai operando è indicata nel pulsante in <b>alto a destra</b>. Verifica sempre entrambi prima di operare, soprattutto se il tuo profilo può accedere a più aziende."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho sbagliato profilo (commerciale invece di contabile o viceversa): cosa succede?",
+          "risposta": "Niente di grave: le due sezioni hanno funzionalità diverse. Il <b>profilo commerciale</b> gestisce linee, corse, eccezioni e titoli di viaggio. Il <b>profilo contabile</b> accede a ordini, dati contabili e statistiche. Se sei nel profilo sbagliato, esci e accedi con le credenziali corrette."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho dimenticato la password: come la recupero?",
+          "risposta": "Nella pagina di login clicca su <b>'Recupero password'</b> e inserisci l'email comunicata preventivamente all'Amministratore COTRAP. Se non ricordi l'email di recupero, contatta direttamente l'Amministratore."
         }
       ]
     }
@@ -4458,7 +3727,7 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.17",
+  "versione": "2.18",
   "ultimo_aggiornamento": "2026-09-10",
   "voci": [
     {
@@ -4468,32 +3737,26 @@ var BUNDLED_DATA = {
       "tipo": "normale"
     },
     {
-      "id": "_sep_inizio",
-      "label": "INIZIA DA QUI",
+      "id": "_sep_strumenti",
+      "label": "STRUMENTI DELLA GUIDA",
       "tipo": "separatore"
     },
     {
       "id": "guida-veloce",
       "label": "Guida Veloce",
       "icona": "🚀",
-      "tipo": "speciale"
+      "tipo": "guida"
     },
     {
       "id": "diagnostica",
       "label": "Risolvi un problema",
       "icona": "🔧",
-      "tipo": "speciale"
+      "tipo": "guida"
     },
     {
-      "id": "_sep_guida",
-      "label": "GUIDA OPERATIVA",
+      "id": "_sep_itineris",
+      "label": "MENU ITINERIS · COMMERCIALE",
       "tipo": "separatore"
-    },
-    {
-      "id": "profilo-commerciale",
-      "label": "Profilo Commerciale",
-      "icona": "💼",
-      "tipo": "normale"
     },
     {
       "id": "configurazione",
@@ -4526,39 +3789,27 @@ var BUNDLED_DATA = {
       "tipo": "normale"
     },
     {
+      "id": "emetti-titolo-viaggio",
+      "label": "Emetti titolo di viaggio",
+      "icona": "🎫",
+      "tipo": "normale"
+    },
+    {
+      "id": "_sep_contabile",
+      "label": "MENU ITINERIS · CONTABILE",
+      "tipo": "separatore"
+    },
+    {
       "id": "sezione-contabile",
       "label": "Sezione Contabile",
       "icona": "📊",
       "tipo": "normale"
     },
     {
-      "id": "emetti-titolo-viaggio",
-      "label": "Emetti Titolo di Viaggio",
-      "icona": "🎫",
-      "tipo": "normale"
-    },
-    {
-      "id": "cs-invalidi",
-      "label": "CS Invalidi",
-      "icona": "♿",
-      "tipo": "normale"
-    },
-    {
-      "id": "_sep_extra",
-      "label": "SEZIONI EXTRA",
-      "tipo": "separatore"
-    },
-    {
-      "id": "faq",
-      "label": "Domande e Risposte",
-      "icona": "❓",
-      "tipo": "speciale"
-    },
-    {
       "id": "changelog",
-      "label": "Novità",
+      "label": "Registro modifiche",
       "icona": "🆕",
-      "tipo": "speciale"
+      "tipo": "nascosta"
     }
   ]
 },
@@ -4572,7 +3823,7 @@ var BUNDLED_DATA = {
       "tipo": "tldr",
       "items": [
         "Qui si <b>consulta</b> quello che è stato venduto: biglietti, abbonamenti, occupazione delle corse e controlli fatti a bordo.",
-        "Cinque voci sempre presenti: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche Biglietti Venduti / Controllati</b>. Alcuni profili vedono anche <b>Statistiche linee</b> e <b>Statistiche corse CS</b>.",
+        "Le voci del menu Ordini sono sette: <b>Biglietti</b>, <b>Abbonamenti</b>, <b>Stati occupazionali corse</b>, <b>Stato Controlli</b>, <b>Statistiche linee</b>, <b>Statistiche corse CS</b>, <b>Statistiche Biglietti Venduti / Controllati</b>.",
         "<b>Non è tutto in sola lettura:</b> sugli abbonamenti si inserisce un controllo, si consultano i controlli già registrati, si blocca il titolo e si aggiungono o scalano corse; sui biglietti si può inserire un controllo.",
         "Ogni ricerca si può esportare: il file viene preparato e si recupera in <b>Esportazioni</b>.",
         "Le ricerche accettano un intervallo di date di <b>massimo 40 giorni</b>."
@@ -4589,11 +3840,6 @@ var BUNDLED_DATA = {
       "src": "Immagine11.png",
       "alt": "Sottomenu Ordini",
       "didascalia": "Opzioni di ricerca disponibili"
-    },
-    {
-      "tipo": "avviso",
-      "stile": "info",
-      "testo": "<b>Se nel tuo menu compaiono anche Statistiche linee e Statistiche corse CS:</b> sono due riepiloghi del venduto che non tutti i profili hanno abilitati. <b>Statistiche linee</b> conta i titoli <b>per data di emissione</b>, cioè in base a quando sono stati acquistati; <b>Statistiche corse CS</b> conta i biglietti di corsa semplice <b>per data di partenza</b>, cioè in base a quando si viaggia. È normale che i due numeri non coincidano: rispondono a due domande diverse. Entrambe si filtrano per linea, corsa, comune e frazione di partenza e di arrivo, tipologia di pagamento e titolo di viaggio, e si scaricano con <b>Esporta</b>."
     }
   ],
   "sottosezioni": [
@@ -4789,7 +4035,7 @@ var BUNDLED_DATA = {
     },
     {
       "id": "stati-occupazionali-corse",
-      "titolo": "Stati Occupazionali Corse",
+      "titolo": "Stati occupazionali corse",
       "aggiornato": "2026-02-23",
       "nuovo": false,
       "contenuto": [
@@ -4882,6 +4128,49 @@ var BUNDLED_DATA = {
       ]
     },
     {
+      "id": "ordini-statistiche-linee",
+      "titolo": "Statistiche linee",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo del venduto per linea, calcolato <b>per data di emissione</b>: conta i titoli in base a quando sono stati acquistati.",
+            "Per questo i numeri possono non coincidere con Statistiche corse CS, che conta per data di partenza."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Filtri: Data Inizio e Data Fine, Linea, Corsa, comune e frazione di partenza e di arrivo, Tipologia pagamento, Tipologia titolo di viaggio, Titolo di viaggio. Con <b>Esporta</b> il file si prepara e si recupera in Esportazioni."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "La colonna <b>Denominazione titolo di viaggio</b> riporta il nome del biglietto venduto (CS, CSI, CSIA…) e l'importo scontato finale. I titoli emessi gratuitamente non sono conteggiati."
+        }
+      ]
+    },
+    {
+      "id": "ordini-statistiche-corse-cs",
+      "titolo": "Statistiche corse CS",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo dei biglietti di corsa semplice per corsa, calcolato <b>per data di partenza</b>: conta i biglietti in base al giorno del viaggio.",
+            "Riguarda solo i titoli biglietto: con il filtro Titolo di viaggio si separano CS, CSI e CSIA."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Filtri: Data Inizio e Data Fine, Titolo di viaggio, Linea, Corsa, comune e frazione di partenza e di arrivo, Tipologia pagamento. Pulsanti <b>Applica</b> ed <b>Esporta</b>."
+        }
+      ]
+    },
+    {
       "id": "statistiche-biglietti",
       "titolo": "Statistiche Biglietti Venduti / Controllati",
       "aggiornato": "2026-03-03",
@@ -4925,74 +4214,62 @@ var BUNDLED_DATA = {
           "didascalia": "Maschera statistiche biglietti"
         }
       ]
-    }
-  ]
-},
-  "profilo-commerciale": {
-  "id": "profilo-commerciale",
-  "titolo": "Profilo Commerciale",
-  "aggiornato": "2026-03-03",
-  "nuovo": false,
-  "contenuto": [
-    {
-      "tipo": "paragrafo",
-      "testo": "Il profilo commerciale gestisce l’offerta in <b>Admin Panel Itineris</b>. Configurazione, movimento, eccezioni e titoli sono collegati: un dato a monte può cambiare orari, disponibilità o prezzi. Ordini ed esportazioni permettono di controllare il risultato."
-    }
-  ],
-  "sottosezioni": [
-    {
-      "id": "pre-requisiti",
-      "titolo": "Pre-requisiti",
-      "aggiornato": "2026-02-23",
-      "nuovo": false,
-      "contenuto": [
-        {
-          "tipo": "tldr",
-          "items": [
-            "Prima di tutto: controlla i dati su <b>Tecbus</b> (polimetriche, tariffe, codici contabili) per garantire uniformita' tra vendita online e macchinette di bordo.",
-            "Servono: codici contabili dei poli, codice linea, descrizione, competenza (Regionale / Provinciale / Comunale)."
-          ]
-        },
-        {
-          "tipo": "paragrafo",
-          "testo": "È necessario procedere con alcune azioni da fare preventivamente rispetto alla creazione di una linea su Itineris. Queste operazioni sono necessarie per garantire uniformità di dati tra Itineris e Tecbus."
-        },
-        {
-          "tipo": "lista",
-          "items": [
-            "Dal sito Tecbus si verificano polimetriche attive, e tariffe per uniformare vendita online con macchinetta di bordo.",
-            "Dal sito Tecbus recuperare codici contabili dei poli, codice linea, descrizione linea, competenza (regionale, provinciale ecc…)"
-          ]
-        }
-      ]
     },
     {
-      "id": "creazione-linea",
-      "titolo": "Creazione Linea",
-      "aggiornato": "2026-02-23",
+      "id": "ordini-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
       "nuovo": false,
       "contenuto": [
         {
-          "tipo": "tldr",
-          "items": [
-            "Il flusso completo per attivare una linea online: <b>Configurazione → Gestione Movimento → Eccezioni → Ordini → Esportazioni</b>.",
-            "Nella prima configurazione segui l’ordine delle dipendenze; per una modifica successiva verifica anche gli elementi collegati."
-          ]
+          "tipo": "faq",
+          "domanda": "Un passeggero ha acquistato un abbonamento ma non riesce a usarlo sulle corse: cosa può essere?",
+          "risposta": "In <a href=\"#abbonamenti\">Ordini → Abbonamenti</a> controlla validità, tratta, tessera, residuo e controlli registrati. Leggi anche <b>Data Blocco da Admin</b>. Confronta il titolo con la corsa effettivamente utilizzata e l’esito di bordo. Non riattivare corse né aggiungere viaggi come tentativo: individua prima la causa; per un blocco da rimuovere chiedi la procedura all’Amministratore."
         },
         {
-          "tipo": "paragrafo",
-          "testo": "Per inserire una linea vendibile su <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a>, seguire in ordine le sezioni del manuale:"
+          "tipo": "faq",
+          "domanda": "Come verifico quanti abbonamenti attivi ci sono e chi li ha acquistati?",
+          "risposta": "In <b>Ordini → Abbonamenti</b> imposta periodo di emissione o validità e i filtri disponibili per titolo, tessera e pagamento. Distingui la ricerca dei titoli emessi dalla verifica della loro validità. Per il singolo abbonamento apri <b>Dettaglio</b>; per il prospetto usa <b>Esporta</b> e recupera il file in Esportazioni."
         },
         {
-          "tipo": "lista-numerata",
-          "items": [
-            "<b>Configurazione</b> — consultare i parametri regionali gestiti da COTRAP (tariffari e calendari scolastici) e inserire le <b>frequenze</b> delle proprie corse. Qui si registrano anche gli <b>utenti dell'app di controllo</b>.",
-            "<b>Gestione Movimento</b> — è la sezione dove si costruisce l'esercizio: codici contabili, poli (fermate), linee con i template di percorso, corse con gli orari, note per i clienti e titoli di viaggio.",
-            "<b>Pubblicare le corse</b> — una corsa creata non è ancora vendibile: va pubblicata, altrimenti non compare sullo shop.",
-            "<b>Eccezioni</b> — gestire le variazioni straordinarie: sospensioni di corse o fermate, variazioni tariffarie e chilometriche, più gli strumenti di controllo delle tariffe.",
-            "<b>Ordini</b> — consultare biglietti e abbonamenti venduti, l'occupazione delle corse e i controlli effettuati a bordo.",
-            "<b>Esportazioni</b> — scaricare i file generati dalle ricerche fatte nelle sezioni precedenti."
-          ]
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra 'Ordine' e 'Biglietto'?",
+          "risposta": "Un <b>ordine</b> è la transazione complessiva (può contenere più biglietti, es. andata + ritorno). Ogni biglietto è identificato dal numero ordine + una lettera finale (es. 12345A, 12345B). In Biglietti si cercano i singoli titoli con filtri più dettagliati (linea, corsa, comune, ecc.)."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Un cliente dice di aver acquistato un biglietto ma non riesco a trovarlo: come cerco?",
+          "risposta": "Vai in Ordini → Biglietti e usa i filtri: <b>Codice Biglietto</b> (includi la lettera finale), oppure <b>Acquirente</b> (nome, cognome o email), oppure <b>N° Ordine</b>. Se non trovi nulla, verifica anche il <b>Canale</b> (App o Portale Web) e il <b>Tipo pagamento</b> (Online, Credito o Gratuito).<br><br>Se il biglietto è un <b>CSI invalidi</b>, usa i nuovi filtri: <b>Numero tessera</b> o <b>Codice fiscale</b> del passeggero per trovarlo rapidamente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come trovo tutti i biglietti CSI (invalidi) venduti in un periodo?",
+          "risposta": "Vai in Ordini → Biglietti e usa il filtro <b>'Titolo di viaggio'</b>: seleziona CSI (o CSIA, CSUI, CSUIA a seconda del tipo). Imposta le date e clicca Applica.<br><br>Puoi anche filtrare per <b>Categoria calcolo sconto</b> se vuoi vedere tutti i biglietti di una specifica categoria tessera, oppure per <b>Numero tessera</b> o <b>Codice fiscale</b> per trovare tutti i biglietti di un singolo utente invalido.<br><br>Esporta il risultato in .xls per avere anche numero tessera, CF, FID e fattore di sconto applicato."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Cosa significa 'Credito' come tipo di pagamento?",
+          "risposta": "Il tipo pagamento <b>Credito</b> indica un biglietto acquistato tramite l'app COTRAP usando il saldo di una ricarica effettuata in precedenza dall'utente. Questa modalità è disponibile <b>solo sull'app</b>, non sul portale web."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come blocco un abbonamento usato in modo fraudolento?",
+          "risposta": "In <b>Ordini → Abbonamenti</b> individua il titolo, apri <b>Dettaglio</b> e verifica i controlli. Il comando <b>Blocca</b> modifica l’utilizzabilità del titolo: usalo solo per un caso accertato secondo la procedura aziendale. Prima di procedere chiarisci con l’Amministratore anche l’eventuale gestione dello sblocco."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come verifico o correggo il residuo corse di un abbonamento?",
+          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse rettifica il saldo: usalo solo quando la rettifica è stata decisa secondo la procedura aziendale. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "La percentuale di occupazione del mezzo è affidabile?",
+          "risposta": "<b>È parziale.</b> Rappresenta solo i biglietti acquistati <b>online</b>. Non include il venduto cartaceo (macchinetta di bordo). Il mezzo reale può essere più pieno di quanto mostrato."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come verifico che un rimborso sia andato a buon fine?",
+          "risposta": "Cerca il biglietto o l'ordine in Ordini → Biglietti (profilo commerciale) o in Ordini (sezione contabile). Lo stato indica: <b>'Attesa Rimborso'</b> = richiesta in corso; <b>'Rimborsato'</b> = rimborso su carta di credito completato; <b>'Rimborsato Credito'</b> = accreditato come saldo sull'account utente. Se è ancora 'Attesa Rimborso', attendere i tempi bancari o contattare l'Amministratore COTRAP."
         }
       ]
     }
@@ -5334,7 +4611,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "avviso",
           "stile": "info",
-          "testo": "<b>Dove si trova:</b> la stessa voce compare anche nel menu <b>Ordini</b> del pannello commerciale, quando il profilo è abilitato a vederla. Il conteggio è <b>per data di emissione</b> del titolo, non per data di viaggio."
+          "testo": "<b>Dove si trova:</b> la stessa voce compare anche nel menu <b>Ordini</b> del pannello commerciale. Il conteggio è <b>per data di emissione</b> del titolo, non per data di viaggio."
         }
       ]
     },
@@ -5399,6 +4676,49 @@ var BUNDLED_DATA = {
           "tipo": "avviso",
           "stile": "info",
           "testo": "Le esportazioni biglietti, abbonamenti e ordini presentano il campo <b>\"Emesso da Admin\"</b> per identificare i titoli emessi gratuitamente da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "sezione-contabile-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Perché non vedo i miei dati nella Sezione Contabile pur essendo loggato?",
+          "risposta": "Verifica di essere loggato con le <b>credenziali contabili</b> (non quelle commerciali): il nome dell'utente è indicato in basso a sinistra. Se sei nel profilo commerciale, fai logout e accedi con le credenziali della sezione contabile."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come esporto i Dati Contabili completi per un periodo? (procedura step-by-step)",
+          "risposta": "I dati contabili sono divisi per tipo di pagamento: devi fare <b>due esportazioni separate</b> per avere il quadro completo.<br><br><b>Esportazione 1 — Pagato con carta di credito (Online):</b><br>1. Sezione Contabile → Dati Contabili<br>2. Imposta <b>Data inizio</b> e <b>Data fine</b> del periodo<br>3. Tipo: <b>Online</b> → Stato: <b>Pagato</b> → Periodo: <b>Tutti</b><br>4. Clicca <b>Esporta SEP</b> (per Excel) o <b>Esporta</b> (per .txt gestionale)<br><br><b>Esportazione 2 — Pagato con credito ricaricato:</b><br>1. Stesse date<br>2. Tipo: <b>Credito</b> → Stato: <b>Pagato</b><br>3. Clicca Esporta SEP<br><br>I file vengono salvati in <b>Esportazioni</b> e sono recuperabili in qualsiasi momento.<br><br><b>Attenzione:</b> i titoli emessi gratuitamente (tipo 'Gratuito') <b>non entrano nei dati contabili</b> — il sistema li esclude automaticamente. Non è necessario filtrarli manualmente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Perché devo fare due esportazioni separate nei Dati Contabili?",
+          "risposta": "Perché i biglietti acquistati con <b>carta di credito</b> (tipo 'Online') e quelli acquistati con il <b>credito da ricariche</b> (tipo 'Credito') sono registrati separatamente nel sistema. Per avere il quadro completo del venduto devi esportare: 1) <b>Online → Pagato → Tutti</b>, poi 2) <b>Credito → Pagato</b>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra 'Esporta' e 'Esporta SEP' nei Dati Contabili?",
+          "risposta": "<b>Esporta</b> genera un file <b>.txt</b> nel formato per i software gestionali aziendali. <b>Esporta SEP</b> genera un file <b>.xls</b> (Excel) per visualizzazione e analisi manuale. Entrambi i file sono recuperabili nella sezione Esportazioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Dove trovo i file già scaricati in precedenza?",
+          "risposta": "I file già generati si cercano nella sezione <b>Esportazioni</b> del profilo con cui è stata richiesta l’estrazione. Scarica e conserva quelli necessari secondo le procedure aziendali: non usare l’elenco del portale come unica copia d’archivio."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Le statistiche mostrano un incasso diverso da quello che mi aspettavo: come lo verifico?",
+          "risposta": "Le statistiche su Itineris hanno alcune esclusioni da conoscere prima di confrontarle con altri dati:<br><br>• <b>Titoli gratuiti esclusi</b>: le statistiche mensili, linee e venduto non includono mai i titoli emessi gratuitamente dal profilo commerciale.<br>• <b>Solo venduto online</b>: le statistiche riguardano esclusivamente il venduto sul portale web e sull'app. Non include il venduto con macchinette di bordo Tecbus.<br>• <b>Canale</b>: le statistiche includono sia 'Online' (carta) che 'Credito' (ricariche). Se vedi differenze rispetto ai dati contabili, controlla che stai confrontando lo stesso tipo di canale.<br><br><b>Per verificare nel dettaglio:</b> usa Sezione Contabile → Statistiche Venduto, filtra per linea e periodo, poi confronta con i Dati Contabili dello stesso periodo."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra Statistiche Mensili, Statistiche Linee e Statistiche Venduto?",
+          "risposta": "<b>Statistiche Mensili</b>: il venduto aggregato mese per mese, per seguire l'andamento nel tempo.<br><br><b>Statistiche linee</b>: il venduto per singola linea, calcolato <b>per data di emissione</b> del titolo, cioè in base a quando è stato acquistato.<br><br><b>Statistiche corse CS</b>: i biglietti di corsa semplice, calcolati <b>per data di partenza</b>, cioè in base a quando si viaggia. È la differenza da tenere presente quando i due numeri non coincidono.<br><br><b>Statistiche Venduto</b>: il venduto totale del periodo, con i file da portare nel gestionale aziendale.<br><br>Statistiche linee e Statistiche corse CS compaiono nel menu <b>Ordini</b> del pannello commerciale; le altre sono nella <b>Sezione Contabile</b>."
         }
       ]
     }

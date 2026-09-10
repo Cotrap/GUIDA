@@ -142,8 +142,37 @@ window.addEventListener('hashchange', async () => {
 });
 
 /** Risolve un hash URL in { sectionId, subId } usando la mappa esplicita costruita al caricamento */
+/** Ancore rinominate o spostate: i link già mandati agli operatori continuano a portare al punto giusto */
+const ALIAS_ANCORE = {
+    'faq': 'diagnostica',
+    'faq-orientamento': 'gv-catena',
+    'faq-abbonamenti': 'gestione-movimento-domande',
+    'faq-prezzi': 'eccezioni-domande',
+    'faq-template-massivo': 'gestione-movimento-domande',
+    'faq-corse-problemi': 'gestione-movimento-domande',
+    'faq-accesso': 'accesso-portale',
+    'faq-configurazione': 'configurazione-domande',
+    'faq-codici-poli': 'gestione-movimento-domande',
+    'faq-linee-template': 'gestione-movimento-domande',
+    'faq-eccezioni': 'eccezioni-domande',
+    'faq-ordini-biglietti': 'ordini-domande',
+    'faq-titoli-gratuiti': 'emetti-domande',
+    'faq-contabile': 'sezione-contabile-domande',
+    'faq-multitratta': 'gestione-movimento-domande',
+    'profilo-commerciale': 'gv-prima-configurazione',
+    'pre-requisiti': 'gv-prima-configurazione',
+    'creazione-linea': 'gv-prima-configurazione',
+    'cs-invalidi-categorie': 'cs-invalidi',
+    'cs-invalidi-configurazione': 'cs-invalidi',
+    'cs-invalidi-vendita': 'cs-invalidi',
+    'cs-invalidi-ordini': 'cs-invalidi',
+    'comprendere-il-sistema': 'gv-catena',
+    'concetti-base-abbonamenti': 'titoli-di-viaggio'
+};
+
 function resolveHash(hash) {
     if (!hash || !state.menu) return null;
+    hash = ALIAS_ANCORE[hash] || hash;
 
     // 1. Voce di menu principale
     const voce = state.menu.voci.find(v => v.id === hash && v.tipo !== 'separatore');
@@ -175,7 +204,19 @@ const _subSectionMap = {};
 async function loadMenu() {
     state.menu = await safeFetch(`${CONFIG.contentPath}menu.json`);
     renderMenu();
-    document.getElementById('versionBadge').textContent = `v${state.menu.versione}`;
+    const badge = document.getElementById('versionBadge');
+    badge.textContent = `v${state.menu.versione}`;
+    // Il registro modifiche non sta nel menu: serve a chi mantiene la guida
+    badge.title = 'Registro modifiche della guida';
+    badge.setAttribute('role', 'button');
+    badge.tabIndex = 0;
+    badge.onclick = () => loadSection('changelog');
+    badge.onkeydown = (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            loadSection('changelog');
+        }
+    };
     // Costruiamo la mappa subId→sectionId da tutti i JSON disponibili nel bundle
     await buildSubSectionMap();
 }
@@ -218,8 +259,11 @@ function renderMenu() {
             return;
         }
 
+        // Pagine raggiungibili solo da link, come il registro modifiche (si apre dalla versione in alto)
+        if (voce.tipo === 'nascosta') return;
+
         const li = document.createElement('li');
-        li.className = voce.tipo === 'speciale' ? 'special' : '';
+        li.className = voce.tipo === 'speciale' ? 'special' : (voce.tipo === 'guida' ? 'guida' : '');
         li.dataset.section = voce.id;
         li.setAttribute('role', 'menuitem');
         li.setAttribute('tabindex', '0');
@@ -302,12 +346,28 @@ async function loadSection(sectionId, updateHash = true) {
     }
 }
 
+/** Pulsante accanto ai titoli: copia il link a quel punto della guida, da mandare a un operatore */
+function pulsanteLink(ancora, titolo) {
+    const testo = String(titolo || '').replace(/<[^>]*>/g, '');
+    return `<button type="button" class="copia-link" data-ancora="${sanitize(ancora)}" title="Copia il link a questo punto della guida" aria-label="Copia il link a ${sanitize(testo)}">🔗</button>`;
+}
+
+function copiaLink(ancora) {
+    const url = `${location.origin}${location.pathname}#${ancora}`;
+    const fatto = () => showToast('Link copiato: incollalo dove ti serve', 'success');
+    if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(url).then(fatto).catch(() => window.prompt('Copia il link:', url));
+    } else {
+        window.prompt('Copia il link:', url);
+    }
+}
+
 function renderContent(content) {
     const article = document.getElementById('articleContent');
     let html = '';
 
     const badge = getStatusBadge(content.aggiornato, content.nuovo);
-    html += `<h1 class="section-title">${content.titolo}${badge ? ' ' + badge : ''}</h1>`;
+    html += `<h1 class="section-title">${content.titolo}${badge ? ' ' + badge : ''}${pulsanteLink(content.id, content.titolo)}</h1>`;
 
     if (content.contenuto && content.contenuto.length > 0) {
         html += renderContentBlocks(content.contenuto);
@@ -316,7 +376,7 @@ function renderContent(content) {
     if (content.sottosezioni && content.sottosezioni.length > 0) {
         content.sottosezioni.forEach(sub => {
             html += `<section id="${sub.id}" class="subsection">`;
-            html += `<h2>${sub.titolo}</h2>`;
+            html += `<h2>${sub.titolo}${pulsanteLink(sub.id, sub.titolo)}</h2>`;
             html += renderContentBlocks(sub.contenuto);
             html += `</section>`;
         });
@@ -337,6 +397,13 @@ function renderContent(content) {
             placeholder.className = 'img-missing';
             placeholder.innerHTML = `<span>🖼️</span><span>Immagine non disponibile</span>`;
             this.parentNode.insertBefore(placeholder, this);
+        };
+    });
+
+    article.querySelectorAll('.copia-link').forEach(btn => {
+        btn.onclick = (e) => {
+            e.stopPropagation();
+            copiaLink(btn.dataset.ancora);
         };
     });
 
@@ -542,19 +609,15 @@ function renderChangelog(content) {
     let html = '<div class="changelog-container">';
 
     content.modifiche.forEach(mod => {
-        const typeColors = { major: '#e74c3c', minor: '#f39c12', fix: '#3498db' };
-        const typeLabels = { major: 'Major', minor: 'Minor', fix: 'Fix' };
-
+        // Registro breve per chi mantiene la guida: versione, data, titolo e pochi punti
         html += `
             <div class="changelog-item">
                 <div class="changelog-header">
                     <span class="changelog-version">v${sanitize(mod.versione)}</span>
-                    <span class="changelog-type" style="background: ${typeColors[mod.tipo] || '#64748b'}">${typeLabels[mod.tipo] || mod.tipo}</span>
                     <span class="changelog-date">${formatDate(mod.data)}</span>
                 </div>
                 <h3 class="changelog-title">${mod.titolo}</h3>
-                <p class="changelog-desc">${mod.descrizione}</p>
-                ${mod.dettagli ? `
+                ${mod.dettagli && mod.dettagli.length ? `
                     <ul class="changelog-details">
                         ${mod.dettagli.map(d => `<li>${d}</li>`).join('')}
                     </ul>
@@ -597,7 +660,7 @@ function buildSearchIndexFromCache() {
     if (!state.menu) return;
 
     state.menu.voci
-        .filter(v => v.tipo !== 'separatore')
+        .filter(v => v.tipo !== 'separatore' && v.tipo !== 'nascosta')
         .forEach(voce => {
             const content = state.contentCache[voce.id];
             if (content) {

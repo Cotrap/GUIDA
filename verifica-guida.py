@@ -131,6 +131,36 @@ orfani = [k for k in orfani if not scusato('MENU', k)]
 if orfani: A('MENU', 'file di contenuto fuori dal menu (non raggiungibili): %s' % ', '.join(orfani))
 if not senza: O('tutte le voci di menu hanno il loro file')
 
+# Le sezioni del menu Itineris devono avere nomi e ordine del pannello (verificati l'8-9/09/2026, profilo commerciale)
+MENU_ITINERIS = [('configurazione', 'Configurazione'), ('gestione-movimento', 'Gestione Movimento'),
+                 ('eccezioni', 'Eccezioni'), ('ordini', 'Ordini'), ('esportazioni', 'Esportazioni'),
+                 ('emetti-titolo-viaggio', 'Emetti titolo di viaggio')]
+VOCI_ITINERIS = {
+    'configurazione': ['Tariffari', 'Calendari', 'Frequenze Corsa', 'Utenti App Controlli'],
+    'gestione-movimento': ['Mezzi', 'Codici Contabili Poli', 'Poli', 'Linee', 'Corse', 'Note', 'Titoli di viaggio'],
+    'eccezioni': ['Eccezioni', 'Eccezioni tariffarie Biglietti', 'Eccezioni tariffarie Abbonamenti',
+                  'Eccezioni Chilometriche', 'Controllo Tariffario', 'Controllo Tariffario Itinerario Biglietto',
+                  'Controllo Tariffario Abbonamenti'],
+    'ordini': ['Biglietti', 'Abbonamenti', 'Stati occupazionali corse', 'Stato Controlli', 'Statistiche linee',
+               'Statistiche corse CS', 'Statistiche Biglietti Venduti / Controllati'],
+}
+etichette = {x['id']: x.get('label') for x in menu.get('voci', [])}
+in_menu = [i for i in ids if i in dict(MENU_ITINERIS)]
+if in_menu != [s for s, _ in MENU_ITINERIS]:
+    B('MENU', "sezioni del menu Itineris non nell'ordine del pannello: %s" % ', '.join(in_menu))
+for sid, etichetta in MENU_ITINERIS:
+    if etichette.get(sid) != etichetta:
+        B('MENU', 'voce di menu "%s": nel pannello si chiama "%s"' % (etichette.get(sid), etichetta))
+for sid, attese in VOCI_ITINERIS.items():
+    titoli = [s['titolo'] for s in content.get(sid, {}).get('sottosezioni', [])]
+    mancanti = [t for t in attese if t not in titoli]
+    if mancanti:
+        B('MENU', '%s: mancano le voci del pannello %s' % (sid, ', '.join(mancanti)))
+    elif [titoli.index(t) for t in attese] != sorted(titoli.index(t) for t in attese):
+        B('MENU', "%s: le voci non seguono l'ordine del pannello" % sid)
+if not any(c == 'MENU' for c, _ in bloccanti):
+    O('menu Itineris della guida con nomi e ordine del pannello')
+
 # --- immagini
 refs = []
 def raccogli(o):
@@ -179,6 +209,18 @@ for sez in ids:
                 if target not in destinazioni: B('ANCHOR', '%s: #%s' % (sez, target))
     controlla_link(content[sez])
 if not any(c == 'ANCHOR' for c, _ in bloccanti): O('link interni e schede con destinazioni valide')
+
+# Ancore rinominate o spostate: i vecchi link devono arrivare a una destinazione che esiste
+_alias = re.search(r'const ALIAS_ANCORE = \{(.*?)\};', app_src, re.S)
+ALIAS = dict(re.findall(r"'([a-z0-9-]+)':\s*'([a-z0-9-]+)'", _alias.group(1))) if _alias else {}
+alias_rotti = sorted(set(v for v in ALIAS.values() if v not in destinazioni))
+alias_ombra = sorted(k for k in ALIAS if k in destinazioni)
+if alias_rotti:
+    B('ANCHOR', 'ALIAS_ANCORE porta ad ancore inesistenti: %s' % ', '.join(alias_rotti))
+if alias_ombra:
+    B('ANCHOR', 'ALIAS_ANCORE copre ancore che esistono ancora: %s' % ', '.join(alias_ombra))
+if ALIAS and not alias_rotti and not alias_ombra:
+    O('%d vecchi link reindirizzati a destinazioni valide' % len(ALIAS))
 
 agg = sorted(d for d in disco if d.startswith('aggiornamento'))
 doppie = sorted(set(r for r in refs if refs.count(r) > 1 and r.startswith('aggiornamento')))
