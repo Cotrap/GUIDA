@@ -94,7 +94,7 @@
           "contenuto": [
             "Alcune operazioni avviano un’elaborazione dei collegamenti e delle tariffe: il salvataggio non coincide necessariamente con la disponibilità del risultato.",
             "Le corse possono passare per <b>In attivazione</b> e <b>In disattivazione</b>. Dove compare <b>In elaborazione</b>, attendi il completamento prima di intervenire di nuovo sullo stesso oggetto.",
-            "Un contatore invariato non basta a distinguere un’attesa normale da un errore. Registra oggetto e orario e chiedi assistenza se non procede.",
+            "Se il contatore resta fermo a lungo, registra oggetto e orario e chiedi assistenza.",
             "Per le eccezioni chilometriche il comando <b>Pubblica</b> riavvia l’elaborazione. Non usarlo ripetutamente come prova."
           ]
         }
@@ -429,7 +429,7 @@
             "<b>Linea 1:</b> collega i codici A e B.",
             "<b>Linea 2:</b> collega i codici B e C.",
             "Il template multitratta contiene A → B → C: B è il codice contabile comune.",
-            "Il codice centrale dimostra la compatibilità delle linee, non la posizione fisica del cambio. Codici e linee dell’esempio sono convenzionali."
+            "Il codice centrale serve a rendere compatibili le due linee: non deve essere per forza la fermata in cui si cambia bus. Codici e linee dell’esempio sono convenzionali."
           ]
         },
         {
@@ -560,7 +560,7 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Km del template:</b> inserire per ogni fermata la distanza cumulativa dall’origine prevista dalla polimetrica. Il codice contabile uguale non impone da solo lo stesso valore. Non azzerare una fermata intermedia per bloccare una sottotratta: controllare invece le eccezioni e la configurazione dei titoli."
+          "testo": "<b>Km del template:</b> inserire per ogni fermata la distanza cumulativa dall’origine prevista dalla polimetrica. Vale anche per fermate con lo stesso codice contabile. Non azzerare una fermata intermedia per bloccare una sottotratta: controllare invece le eccezioni e la configurazione dei titoli."
         },
         {
           "tipo": "avviso",

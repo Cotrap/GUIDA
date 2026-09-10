@@ -59,7 +59,7 @@
             {
               "numero": 3,
               "titolo": "La frequenza è quella giusta?",
-              "descrizione": "In <a href=\"#frequenza-corsa\">Configurazione → Frequenze Corsa</a> controlla <b>Tipologia, giorni selezionati, date e calendario applicabile</b>. La denominazione è libera: il nome «FESTIVO» da solo non dimostra i giorni di servizio."
+              "descrizione": "In <a href=\"#frequenza-corsa\">Configurazione → Frequenze Corsa</a> controlla <b>Tipologia, giorni selezionati, date e calendario applicabile</b>. La denominazione è libera: i giorni di servizio dipendono da queste impostazioni, non dal nome: una frequenza «FESTIVO» può avere tipologia Giornaliera."
             },
             {
               "numero": 4,
@@ -330,7 +330,7 @@
             {
               "numero": 2,
               "titolo": "Guarda lo stato del pagamento",
-              "descrizione": "<b>Attesa Pagamento</b> non dimostra che il cliente non abbia pagato. Registra ordine, data e stato e chiedi la riconciliazione al contabile; non emettere un duplicato per compensare una sola mancata conferma."
+              "descrizione": "<b>Attesa Pagamento può comparire anche quando il pagamento è andato a buon fine. Registra ordine, data e stato e chiedi la riconciliazione al contabile; non emettere un duplicato per compensare una sola mancata conferma."
             },
             {
               "numero": 3,
@@ -373,7 +373,7 @@
             {
               "numero": 2,
               "titolo": "Controlla di non avere la sessione scaduta",
-              "descrizione": "Controlla eventuali avvisi di disconnessione. Un elenco vuoto da solo non prova che la sessione sia scaduta."
+              "descrizione": "Controlla eventuali avvisi di disconnessione. Un elenco vuoto può dipendere anche da filtri e date: controllali prima di uscire e rientrare."
             },
             {
               "numero": 3,

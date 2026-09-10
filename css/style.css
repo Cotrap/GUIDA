@@ -1774,3 +1774,235 @@ header h1 {
         page-break-inside: avoid;
     }
 }
+
+/* ============================================
+   FLUSSO — sequenza numerata di passi collegati
+   (Guida Veloce: la catena del servizio)
+   ============================================ */
+.flusso {
+    list-style: none;
+    margin: var(--spacing-lg) 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flusso-passo {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+}
+
+/* linea che unisce un passo al successivo */
+.flusso-passo:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    left: 19px;
+    top: 40px;
+    bottom: 0;
+    width: 2px;
+    background: var(--primary);
+    opacity: 0.35;
+}
+
+.flusso-numero {
+    position: relative;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    background: var(--primary);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: var(--font-size-lg);
+}
+
+.flusso-corpo {
+    flex: 1;
+    min-width: 0;
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.flusso-corpo strong {
+    color: var(--gray-800);
+    margin-right: var(--spacing-sm);
+}
+
+.flusso-chi {
+    display: inline-block;
+    font-size: var(--font-size-xs);
+    font-weight: 600;
+    color: var(--primary-dark);
+    background: rgba(117, 122, 67, 0.12);
+    border-radius: 999px;
+    padding: 1px 8px;
+    vertical-align: middle;
+}
+
+.flusso-corpo p {
+    margin: var(--spacing-xs) 0 0 0 !important;
+    font-size: var(--font-size-sm);
+    color: var(--gray-600);
+}
+
+.flusso-link,
+.compito-link {
+    display: inline-block;
+    margin-top: var(--spacing-xs);
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    color: var(--primary-dark);
+    text-decoration: none;
+}
+
+.flusso-link:hover,
+.compito-link:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 1100px) {
+    .flusso {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: var(--spacing-md);
+    }
+
+    .flusso-passo {
+        padding-bottom: 0;
+    }
+
+    .flusso-passo:not(:last-child)::before {
+        display: none;
+    }
+}
+
+/* ============================================
+   COMPITI — schede operative: usa / evita / verifica
+   ============================================ */
+.compiti {
+    margin: var(--spacing-lg) 0;
+}
+
+.compiti-titolo {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: var(--font-size-lg);
+    color: var(--gray-800);
+    margin: 0 0 var(--spacing-md) 0;
+    padding-bottom: var(--spacing-xs);
+    border-bottom: 2px solid var(--primary);
+}
+
+.compiti-griglia {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.compito {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    border-left: 4px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-md);
+}
+
+.compito-titolo {
+    margin: 0 0 var(--spacing-xs) 0;
+    font-size: var(--font-size-base);
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--gray-800);
+}
+
+.compito-riga {
+    display: grid;
+    grid-template-columns: 4.75rem 1fr;
+    gap: var(--spacing-sm);
+    margin: 0 !important;
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+    color: var(--gray-700);
+}
+
+.compito-etichetta {
+    align-self: start;
+    text-align: center;
+    font-size: var(--font-size-xs);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border-radius: var(--radius-sm);
+    padding: 2px 4px;
+}
+
+.compito-usa .compito-etichetta {
+    background: rgba(34, 197, 94, 0.15);
+    color: #166534;
+}
+
+.compito-evita .compito-etichetta {
+    background: rgba(239, 68, 68, 0.12);
+    color: #991b1b;
+}
+
+.compito-verifica .compito-etichetta {
+    background: rgba(14, 165, 233, 0.13);
+    color: #075985;
+}
+
+.compito-link {
+    margin-top: auto;
+    padding-top: var(--spacing-xs);
+}
+
+@media (max-width: 768px) {
+    .compiti-griglia {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .compito-riga {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .compito-etichetta {
+        justify-self: start;
+    }
+}
+
+@media print {
+    .flusso {
+        display: block;
+    }
+
+    .flusso-passo,
+    .compito {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .compiti-griglia {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flusso-link,
+    .compito-link {
+        display: none;
+    }
+}

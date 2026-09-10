@@ -482,6 +482,41 @@ function renderContentBlocks(blocks) {
                         </div>
                     </div>`;
 
+            // Sequenza numerata di passi collegati (es. la catena del servizio)
+            case 'flusso':
+                return `
+                    <ol class="flusso">
+                        ${block.items.map((passo, i) => `
+                            <li class="flusso-passo">
+                                <span class="flusso-numero" aria-hidden="true">${i + 1}</span>
+                                <div class="flusso-corpo">
+                                    <strong>${passo.titolo}</strong>
+                                    ${passo.chi ? `<span class="flusso-chi">${passo.chi}</span>` : ''}
+                                    <p>${passo.descrizione}</p>
+                                    ${passo.link ? `<a class="flusso-link" href="#${sanitize(passo.link)}">Come si fa →</a>` : ''}
+                                </div>
+                            </li>
+                        `).join('')}
+                    </ol>`;
+
+            // Schede operative: compito -> strumento da usare, cosa evitare, come verificare
+            case 'compiti':
+                return `
+                    <div class="compiti">
+                        ${block.titolo ? `<h3 class="compiti-titolo">${block.icona ? `<span class="compiti-icona" aria-hidden="true">${block.icona}</span>` : ''}${block.titolo}</h3>` : ''}
+                        <div class="compiti-griglia">
+                            ${block.items.map(c => `
+                                <article class="compito">
+                                    <h4 class="compito-titolo">${c.compito}</h4>
+                                    <p class="compito-riga compito-usa"><span class="compito-etichetta">Usa</span><span>${c.usa}</span></p>
+                                    ${c.evita ? `<p class="compito-riga compito-evita"><span class="compito-etichetta">Evita</span><span>${c.evita}</span></p>` : ''}
+                                    ${c.verifica ? `<p class="compito-riga compito-verifica"><span class="compito-etichetta">Verifica</span><span>${c.verifica}</span></p>` : ''}
+                                    ${c.link ? `<a class="compito-link" href="#${sanitize(c.link)}">Come si fa →</a>` : ''}
+                                </article>
+                            `).join('')}
+                        </div>
+                    </div>`;
+
             default:
                 return '';
         }
@@ -591,15 +626,33 @@ function indexContentRecursive(content, menuVoce, parentTitle) {
     }
 }
 
+/**
+ * Estrae il testo leggibile di una lista di blocchi, a qualunque profondita':
+ * risposte FAQ, passaggi, schede, riquadri e voci di griglia compresi.
+ * Prima leggeva solo i campi stringa testo/items: il resto restava fuori dalla ricerca
+ * oppure finiva nell'indice come "[object Object]".
+ */
+const CAMPI_NON_TESTUALI = new Set(['tipo', 'stile', 'src', 'icona', 'link', 'url', 'numero', 'id']);
+
 function extractText(blocks) {
     if (!blocks || !Array.isArray(blocks)) return '';
 
-    return blocks.map(block => {
-        if (block.testo) return block.testo;
-        if (block.items) return block.items.join(' ');
-        if (block.descrizione) return block.descrizione;
+    const raccogli = (valore) => {
+        if (typeof valore === 'string') return valore;
+        if (Array.isArray(valore)) return valore.map(raccogli).join(' ');
+        if (valore && typeof valore === 'object') {
+            return Object.entries(valore)
+                .filter(([chiave]) => !CAMPI_NON_TESTUALI.has(chiave))
+                .map(([, v]) => raccogli(v))
+                .join(' ');
+        }
         return '';
-    }).join(' ').replace(/<[^>]*>/g, '');
+    };
+
+    return blocks.map(raccogli).join(' ')
+        .replace(/<[^>]*>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim();
 }
 
 function initSearch() {

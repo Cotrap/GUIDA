@@ -2,7 +2,7 @@
  * GUIDA ITINERIS - Dati pre-caricati (generato automaticamente)
  * NON MODIFICARE QUESTO FILE MANUALMENTE.
  * Per aggiornare: modificare i JSON in content/ e rieseguire genera-bundle.ps1
- * Generato il: 2026-09-09 10:36:07
+ * Generato il: 2026-09-10 09:57:08
  */
 var BUNDLED_DATA = {
   "app-controllo": {
@@ -194,6 +194,37 @@ var BUNDLED_DATA = {
   "titolo": "Novità e Aggiornamenti",
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
+    {
+      "versione": "2.17",
+      "data": "2026-09-10",
+      "tipo": "major",
+      "titolo": "Guida Veloce ripensata e ricerca che trova davvero le risposte",
+      "descrizione": "La Guida Veloce descriveva solo la sequenza della prima configurazione, cioè un lavoro che si fa una volta per linea. Ora parte da ciò che l'operatore deve fare ogni giorno e per ogni operazione indica il comando fatto apposta, la scorciatoia da evitare e il controllo del risultato. Riparata anche la ricerca, che non leggeva risposte, passaggi e schede.",
+      "dettagli": [
+        "Guida Veloce: 22 schede operative in cinque gruppi — Costruire il servizio, Cambiare corse e percorsi, Sospendere e avvisare, Prezzi e vendita, Clienti e titoli — ognuna con <b>Usa</b>, <b>Evita</b>, <b>Verifica</b> e il collegamento alla procedura completa",
+        "Guida Veloce: la catena del servizio in forma visiva, dai codici contabili ai titoli di viaggio, con chi fa che cosa",
+        "Guida Veloce: la prima configurazione di una linea resta, ora con un controllo per ogni passo e la verifica finale",
+        "Guida Veloce: sei regole da ricordare sempre",
+        "Menu: nuovo gruppo <b>Inizia da qui</b> in cima, con Guida Veloce e Risolvi un problema; prima erano in fondo fra le sezioni extra",
+        "Home: le due schede di partenza sono ora le prime",
+        "Ricerca: ora trova anche il testo delle risposte nelle Domande e Risposte, dei passaggi di Risolvi un problema e della Guida Veloce, dei riquadri di nota ed esempio e delle griglie strumenti. Prima restavano fuori dall'indice",
+        "Sito: due nuovi elementi grafici, la sequenza numerata e le schede operative, leggibili da computer, telefono e in stampa",
+        "Domande e Risposte, Risolvi un problema, Eccezioni, Gestione Movimento, Ordini e Configurazione: riscritte come istruzioni le frasi che spiegavano che cosa un controllo «non dimostra» senza dire che cosa fare. Le cautele restano le stesse",
+        "Domande e Risposte: le due domande sulla modifica di una corsa già in vendita tornano a rispondere, distinguendo ciò che passa dall'aggiornamento massivo da ciò che va controllato prima",
+        "Domande e Risposte: la spiegazione del sistema «in parole semplici» torna semplice e rimanda allo schema della Guida Veloce",
+        "Guida Veloce: precisato quali correzioni su una singola corsa la escludono dagli aggiornamenti massivi, e che per le frequenze si controllano anche giorni e date"
+      ],
+      "sezioni_modificate": [
+        "guida-veloce",
+        "home",
+        "faq",
+        "diagnostica",
+        "eccezioni",
+        "gestione-movimento",
+        "ordini",
+        "configurazione"
+      ]
+    },
     {
       "versione": "2.16",
       "data": "2026-09-09",
@@ -870,7 +901,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Denominazione e Tipologia non sono sinonimi:</b> il nome è libero. Per verificare una frequenza controlla anche <b>giorni selezionati, date di validità e calendario</b>. Un nome come «FESTIVO» non dimostra che la frequenza includa tutte le festività."
+          "testo": "<b>Denominazione e Tipologia non sono sinonimi:</b> il nome è libero. Per verificare una frequenza controlla anche <b>giorni selezionati, date di validità e calendario</b>. Il nome non basta: una frequenza chiamata «FESTIVO» può avere tipologia Giornaliera, quindi controlla Tipologia e giorni selezionati."
         }
       ]
     },
@@ -1143,7 +1174,7 @@ var BUNDLED_DATA = {
             {
               "numero": 3,
               "titolo": "La frequenza è quella giusta?",
-              "descrizione": "In <a href=\"#frequenza-corsa\">Configurazione → Frequenze Corsa</a> controlla <b>Tipologia, giorni selezionati, date e calendario applicabile</b>. La denominazione è libera: il nome «FESTIVO» da solo non dimostra i giorni di servizio."
+              "descrizione": "In <a href=\"#frequenza-corsa\">Configurazione → Frequenze Corsa</a> controlla <b>Tipologia, giorni selezionati, date e calendario applicabile</b>. La denominazione è libera: i giorni di servizio dipendono da queste impostazioni, non dal nome: una frequenza «FESTIVO» può avere tipologia Giornaliera."
             },
             {
               "numero": 4,
@@ -1414,7 +1445,7 @@ var BUNDLED_DATA = {
             {
               "numero": 2,
               "titolo": "Guarda lo stato del pagamento",
-              "descrizione": "<b>Attesa Pagamento</b> non dimostra che il cliente non abbia pagato. Registra ordine, data e stato e chiedi la riconciliazione al contabile; non emettere un duplicato per compensare una sola mancata conferma."
+              "descrizione": "<b>Attesa Pagamento può comparire anche quando il pagamento è andato a buon fine. Registra ordine, data e stato e chiedi la riconciliazione al contabile; non emettere un duplicato per compensare una sola mancata conferma."
             },
             {
               "numero": 3,
@@ -1457,7 +1488,7 @@ var BUNDLED_DATA = {
             {
               "numero": 2,
               "titolo": "Controlla di non avere la sessione scaduta",
-              "descrizione": "Controlla eventuali avvisi di disconnessione. Un elenco vuoto da solo non prova che la sessione sia scaduta."
+              "descrizione": "Controlla eventuali avvisi di disconnessione. Un elenco vuoto può dipendere anche da filtri e date: controllali prima di uscire e rientrare."
             },
             {
               "numero": 3,
@@ -1858,7 +1889,7 @@ var BUNDLED_DATA = {
           "titolo": "Esempio verifica",
           "contenuto": [
             "Scegli un collegamento interessato dalla variazione e cerca il vecchio importo alla data di entrata in vigore.",
-            "Se non trovi risultati, controlla anche il nuovo importo nel Controllo Tariffario. Ripeti per le date, le direzioni e le tratte coinvolte: il risultato non certifica da solo l’intera rete."
+            "Se non trovi risultati, controlla anche il nuovo importo nel Controllo Tariffario. Ripeti per le date, le direzioni e le tratte coinvolte."
           ]
         }
       ]
@@ -2117,7 +2148,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Non conosco Itineris: com'è fatto il sistema in parole semplici?",
-          "risposta": "Itineris collega <b>codici contabili → poli (fermate) → linee e template → corse</b>. Frequenze e calendari stabiliscono i giorni di servizio; titoli ed eccezioni regolano ciò che è vendibile. La pubblicazione rende disponibile l'offerta sulla biglietteria, secondo le configurazioni attive. Ordini e controlli descrivono invece i titoli già emessi. Consulta <a href=\"#comprendere-il-sistema\">Comprendere il Sistema</a>."
+          "risposta": "Pensalo come una catena. Prima i <b>codici contabili</b> (le località tariffarie), poi i <b>poli</b> (le fermate), poi la <b>linea</b> con il suo <b>template</b> (il percorso, con km e minuti contati dal capolinea), infine le <b>corse</b> (le partenze). Una corsa diventa acquistabile quando è <b>pubblicata</b> e ha un <b>titolo di viaggio</b> attivo. Frequenze e calendari decidono in quali giorni viaggia; le eccezioni gestiscono ciò che è temporaneo. Lo schema è in <a href=\"#gv-catena\">Come è fatto un servizio</a>."
         },
         {
           "tipo": "faq",
@@ -2170,7 +2201,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Per una certa tratta non compare la possibilità di acquistare un abbonamento: perché?",
-          "risposta": "Controlla titolo attivo, corse pubblicate e valide, inclusioni/esclusioni, codici e distanza tariffaria, eccezioni e requisiti della tessera. Un risultato vuoto non indica da solo quale requisito manca. Il percorso completo è in <a href=\"#diag-abbonamenti\">L’abbonamento non si può acquistare</a>."
+          "risposta": "Controlla titolo attivo, corse pubblicate e valide, inclusioni/esclusioni, codici e distanza tariffaria, eccezioni e requisiti della tessera. Se non trovi la causa, verifica i punti uno per uno. Il percorso completo è in <a href=\"#diag-abbonamenti\">L’abbonamento non si può acquistare</a>."
         },
         {
           "tipo": "faq",
@@ -2218,7 +2249,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Come verifico se rimangono tratte con un vecchio prezzo dopo una variazione tariffaria?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Non dimostra l’aggiornamento di tutto il sistema: controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
+          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Per esserne sicuro controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
         },
         {
           "tipo": "faq",
@@ -2256,7 +2287,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Ho fatto l'aggiornamento massivo ma alcune corse mostrano ancora i vecchi orari: perché?",
-          "risposta": "Verifica che le corse usino il template corretto, fossero in <b>Stato Attivazione: Non attiva</b> e non avessero modifiche dirette. Controlla che l’aggiornamento e la conferma finale siano stati completati. Una differenza attuale dal template non prova da sola la storia delle modifiche: se la causa resta incerta, raccogli corsa, template e orari attesi per l’assistenza."
+          "risposta": "Verifica che le corse usino il template corretto, fossero in <b>Stato Attivazione: Non attiva</b> e non avessero modifiche dirette. Controlla che l’aggiornamento e la conferma finale siano stati completati. Se la causa resta incerta, raccogli corsa, template e orari attesi per l’assistenza."
         },
         {
           "tipo": "faq",
@@ -2284,7 +2315,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Devo modificare l'orario di partenza di una corsa già attiva: la devo prima disattivare?",
-          "risposta": "L’orario si gestisce in <b>Corse → Visualizza Modifica → Poli e Orari</b>. Per un servizio già pubblicato verifica prima i titoli emessi e la procedura aziendale: non assumere che una variazione aggiorni automaticamente quelli già acquistati. Per le modifiche del template segui invece la procedura di <a href=\"#creazione-template\">aggiornamento massivo</a>."
+          "risposta": "L’orario si cambia in <b>Gestione Movimento → Corse</b>, con <b>Visualizza Modifica</b>, nella griglia <b>Poli e Orari</b>. Nella documentazione non c’è una regola che imponga di portare prima la corsa a Non attiva. Se però la corsa è già in vendita, prima di cambiare l’orario controlla in <b>Ordini → Biglietti</b> i titoli già venduti su quella corsa e segui la procedura aziendale per avvisare i clienti. Se invece devi cambiare fermate, km o minuti del percorso, usa l’<a href=\"#creazione-template\">aggiornamento massivo</a>."
         },
         {
           "tipo": "faq",
@@ -2451,7 +2482,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Posso modificare una corsa già pubblicata senza disattivarla?",
-          "risposta": "Per una corsa pubblicata verifica la modifica necessaria e gli effetti sui titoli già emessi prima di intervenire. La possibilità di aprire un campo non prova che sia sicuro modificarlo in esercizio. Le modifiche al template seguono la procedura di <a href=\"#creazione-template\">aggiornamento delle corse inattive</a>; le modifiche dirette alla corsa possono escluderla dagli aggiornamenti massivi successivi."
+          "risposta": "Dipende da che cosa cambi. Per <b>fermate, km, minuti o sosta</b> del percorso segui l’<a href=\"#creazione-template\">aggiornamento massivo</a>: le stesse correzioni fatte direttamente sulla singola corsa la escludono dagli aggiornamenti successivi. Per gli altri dati, se la corsa è già in vendita, controlla prima i titoli venduti in <b>Ordini → Biglietti</b> e dopo la modifica verifica la corsa sulla biglietteria."
         }
       ]
     },
@@ -2509,12 +2540,12 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Come verifico che una variazione tariffaria sia stata applicata correttamente a tutte le corse?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Non dimostra l’aggiornamento di tutto il sistema: controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
+          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Per esserne sicuro controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
         },
         {
           "tipo": "faq",
           "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
-          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca: l’assenza di un prezzo non dimostra da sola un errore nell’eccezione."
+          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca prima di modificare l’eccezione."
         }
       ]
     },
@@ -2552,7 +2583,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "faq",
           "domanda": "Come verifico o correggo il residuo corse di un abbonamento?",
-          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse</b> permette una rettifica del saldo, ma la presenza del comando non giustifica automaticamente una compensazione. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
+          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse rettifica il saldo: usalo solo quando la rettifica è stata decisa secondo la procedura aziendale. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
         },
         {
           "tipo": "faq",
@@ -2783,7 +2814,7 @@ var BUNDLED_DATA = {
           "contenuto": [
             "Alcune operazioni avviano un’elaborazione dei collegamenti e delle tariffe: il salvataggio non coincide necessariamente con la disponibilità del risultato.",
             "Le corse possono passare per <b>In attivazione</b> e <b>In disattivazione</b>. Dove compare <b>In elaborazione</b>, attendi il completamento prima di intervenire di nuovo sullo stesso oggetto.",
-            "Un contatore invariato non basta a distinguere un’attesa normale da un errore. Registra oggetto e orario e chiedi assistenza se non procede.",
+            "Se il contatore resta fermo a lungo, registra oggetto e orario e chiedi assistenza.",
             "Per le eccezioni chilometriche il comando <b>Pubblica</b> riavvia l’elaborazione. Non usarlo ripetutamente come prova."
           ]
         }
@@ -3118,7 +3149,7 @@ var BUNDLED_DATA = {
             "<b>Linea 1:</b> collega i codici A e B.",
             "<b>Linea 2:</b> collega i codici B e C.",
             "Il template multitratta contiene A → B → C: B è il codice contabile comune.",
-            "Il codice centrale dimostra la compatibilità delle linee, non la posizione fisica del cambio. Codici e linee dell’esempio sono convenzionali."
+            "Il codice centrale serve a rendere compatibili le due linee: non deve essere per forza la fermata in cui si cambia bus. Codici e linee dell’esempio sono convenzionali."
           ]
         },
         {
@@ -3249,7 +3280,7 @@ var BUNDLED_DATA = {
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Km del template:</b> inserire per ogni fermata la distanza cumulativa dall’origine prevista dalla polimetrica. Il codice contabile uguale non impone da solo lo stesso valore. Non azzerare una fermata intermedia per bloccare una sottotratta: controllare invece le eccezioni e la configurazione dei titoli."
+          "testo": "<b>Km del template:</b> inserire per ogni fermata la distanza cumulativa dall’origine prevista dalla polimetrica. Vale anche per fermate con lo stesso codice contabile. Non azzerare una fermata intermedia per bloccare una sottotratta: controllare invece le eccezioni e la configurazione dei titoli."
         },
         {
           "tipo": "avviso",
@@ -3816,75 +3847,389 @@ var BUNDLED_DATA = {
   "guida-veloce": {
   "id": "guida-veloce",
   "titolo": "Guida Veloce",
-  "aggiornato": "2026-03-04",
+  "aggiornato": "2026-09-10",
   "nuovo": false,
   "contenuto": [
     {
-      "tipo": "paragrafo",
-      "testo": "Questa guida rapida riassume i passaggi fondamentali per configurare e utilizzare la piattaforma Itineris. Per istruzioni dettagliate, consulta la sezione specifica di ciascun argomento."
+      "tipo": "tldr",
+      "items": [
+        "Per ogni operazione c'è un comando fatto apposta: qui trovi <b>quale usare</b>, <b>cosa evitare</b> e <b>come verificare</b> il risultato.",
+        "Usare il comando previsto evita di rifare il lavoro a mano e di lasciare configurazioni difficili da correggere.",
+        "Ogni scheda porta alla spiegazione completa con <b>Come si fa →</b>.",
+        "Hai un problema invece di un'operazione da fare? Parti da <a href=\"#diagnostica\">Risolvi un problema</a>."
+      ]
     },
     {
-      "tipo": "steps",
-      "items": [
+      "tipo": "paragrafo",
+      "testo": "La guida completa segue il menu del pannello. Questa pagina parte invece da <b>ciò che devi fare</b>: scegli il gruppo dal menu qui sopra oppure scorri le schede."
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "gv-catena",
+      "titolo": "Come è fatto un servizio",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
         {
-          "numero": 1,
-          "titolo": "Accesso al portale",
-          "descrizione": "Accedi al Portale Itineris (itinerisadminpanel.azurewebsites.net) e inserisci le credenziali (ID utente e password) fornite dal consorzio. Dopo il login visualizzerai la dashboard principale."
+          "tipo": "paragrafo",
+          "testo": "Un servizio si costruisce in quest'ordine e ogni passo usa il precedente. Quando qualcosa non va — una corsa che non compare, un prezzo che non torna — la causa può stare in un anello a monte: si risale la catena."
         },
         {
-          "numero": 2,
-          "titolo": "Configurazione",
-          "descrizione": "Nella sezione <b>Configurazione</b> consulta i tariffari regionali e i calendari scolastici, poi inserisci le <b>frequenze</b> delle tue corse (giornaliera, feriale, scolastica…). Qui si registrano anche gli <b>utenti dell'app di controllo</b>."
+          "tipo": "flusso",
+          "items": [
+            {
+              "titolo": "Codici contabili",
+              "chi": "dati Tecbus",
+              "descrizione": "Le località tariffarie. Uno stesso Comune può averne più d'uno.",
+              "link": "codici-contabili"
+            },
+            {
+              "titolo": "Poli",
+              "chi": "consorziato",
+              "descrizione": "Le fermate, ognuna legata a un codice contabile.",
+              "link": "poli"
+            },
+            {
+              "titolo": "Linea e template",
+              "chi": "consorziato",
+              "descrizione": "Il percorso: fermate in ordine, con km e minuti contati dal capolinea.",
+              "link": "linee"
+            },
+            {
+              "titolo": "Corse",
+              "chi": "consorziato",
+              "descrizione": "Le partenze: template, orario, frequenza, date, posti online.",
+              "link": "corse"
+            },
+            {
+              "titolo": "Pubblicazione",
+              "chi": "consorziato",
+              "descrizione": "Con Pubblica\\Nascondi lo Stato Attivazione diventa Attiva: prima la corsa non si vende.",
+              "link": "corse"
+            },
+            {
+              "titolo": "Titoli di viaggio",
+              "chi": "Admin + consorziato",
+              "descrizione": "L'Amministratore crea il titolo; il consorziato sceglie linee e tratte e lo attiva.",
+              "link": "titoli-di-viaggio"
+            }
+          ]
         },
         {
-          "numero": 3,
-          "titolo": "Inserimento Codici Contabili e Poli",
-          "descrizione": "Nella sezione Gestione Movimento, inserisci i codici contabili dei Comuni/frazioni (recuperati da <b>Tecbus</b>) e i poli (le fermate precise con coordinate GPS)."
-        },
-        {
-          "numero": 4,
-          "titolo": "Creazione Linee e Template",
-          "descrizione": "Crea le linee con denominazione, codice e tipologia (Regionale/Provinciale/Comunale). Per ogni linea crea il template: il modello del percorso con tutte le fermate, indicando per ciascuna i km e i minuti <b>contati dal capolinea</b> (mai dalla fermata precedente). Crea anche il template di ritorno usando 'Duplica e Inverti'."
-        },
-        {
-          "numero": 5,
-          "titolo": "Creazione Corse",
-          "descrizione": "Per ogni linea, crea le corse una per una: collega linea e template, inserisci l'orario di partenza dal capolinea (il sistema calcola automaticamente tutti gli altri orari), scegli la frequenza e imposta l'occupazione massima."
-        },
-        {
-          "numero": 6,
-          "titolo": "Pubblicazione delle Corse",
-          "descrizione": "Dopo aver inserito tutte le corse, pubblicarle per renderle visibili sullo shop COTRAP (<a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\">biglietteria.cotrap.it</a>). In Gestione Movimento → Corse, cliccare sull'icona <b>Pubblica\\Nascondi</b> a destra di ogni corsa e confermare. Si consiglia di inserire prima tutte le corse e poi pubblicarle tutte insieme. Dopo la pubblicazione lo <i>Stato Attivazione</i> diventa &quot;Attiva&quot;. Le corse non pubblicate non sono visibili né acquistabili dagli utenti."
-        },
-        {
-          "numero": 7,
-          "titolo": "Attivazione dei Titoli di Viaggio",
-          "descrizione": "Verifica i <b>titoli di viaggio</b> per biglietti e abbonamenti: devono essere abilitati dall’Amministratore, configurati sulle linee e tratte previste e attivati dall’azienda. <b>Pubblicare la corsa non sostituisce l’attivazione del titolo.</b> Controlla infine tratta, data, prezzo e disponibilità sulla biglietteria."
-        },
-        {
-          "numero": 8,
-          "titolo": "Gestione Eccezioni",
-          "descrizione": "Se una corsa deve essere sospesa (es. festività, guasto), utilizza la sezione Eccezioni per gestire sospensioni temporanee senza eliminare la corsa."
-        },
-        {
-          "numero": 9,
-          "titolo": "Monitoraggio Ordini e Dati Contabili",
-          "descrizione": "Controlla gli ordini ricevuti nella sezione Ordini. Per i dati contabili e il venduto, accedi alla Sezione Contabile con le credenziali dedicate."
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Intorno alla catena:</b> tariffari e calendari li aggiorna COTRAP e tu li consulti; le <b>Eccezioni</b> servono per ciò che è temporaneo o diverso dalla regola; <b>Ordini</b> ed <b>Esportazioni</b> mostrano il risultato."
         }
       ]
     },
     {
-      "tipo": "avviso",
-      "stile": "success",
-      "testo": "<b>Configurazione completata?</b> Consulta le sezioni della guida per approfondire ogni passaggio: ogni sezione del menu laterale corrisponde a una fase del processo."
+      "id": "gv-costruire",
+      "titolo": "Costruire il servizio",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "compiti",
+          "items": [
+            {
+              "compito": "Creare il percorso di ritorno",
+              "usa": "Sul template di andata il comando <b>Duplica e Inverti</b>: crea un template con le stesse fermate in ordine inverso.",
+              "evita": "Ricostruire il ritorno fermata per fermata.",
+              "verifica": "Ricontrolla km e minuti del ritorno: se il percorso non è perfettamente simmetrico vanno corretti.",
+              "link": "linee"
+            },
+            {
+              "compito": "Creare una variante del percorso",
+              "usa": "<b>Duplica</b> sul template esistente, poi cambia solo ciò che è diverso. Una linea può avere più template, per esempio per un giorno con un percorso diverso.",
+              "evita": "Stravolgere il template usato dalle altre corse per adattarlo a un caso particolare.",
+              "verifica": "Dai al template un nome che dica la differenza e controlla che ogni corsa usi quello giusto.",
+              "link": "creazione-template"
+            },
+            {
+              "compito": "Usare una fermata già inserita",
+              "usa": "Nel template scegli il polo dall'elenco: il campo propone le fermate già presenti in <b>Poli</b>.",
+              "evita": "Inserire di nuovo in Poli una fermata che esiste già.",
+              "verifica": "Controlla codice contabile e posizione del polo scelto.",
+              "link": "poli"
+            },
+            {
+              "compito": "Inserire più codici contabili per lo stesso Comune",
+              "usa": "Compila la <b>Descrizione</b> di ogni codice con il nome della frazione o della zona.",
+              "evita": "Lasciare la Descrizione vuota: sullo shop compaiono più località con lo stesso nome.",
+              "verifica": "Cerca la località sulla biglietteria.",
+              "link": "codici-contabili"
+            },
+            {
+              "compito": "Vendere online solo una parte dei posti",
+              "usa": "Il campo <b>Occupazione Massima</b> della corsa: è il numero di biglietti vendibili online.",
+              "evita": "Censire i mezzi solo per limitare i posti: la sezione Mezzi non serve a questo e non è obbligatoria.",
+              "verifica": "In <b>Ordini → Stati occupazionali corse</b> la percentuale riguarda solo il venduto online.",
+              "link": "corse"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gv-cambiare",
+      "titolo": "Cambiare corse e percorsi",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "compiti",
+          "items": [
+            {
+              "compito": "Cambiare fermate, km o minuti di un percorso già in uso",
+              "usa": "L'aggiornamento massivo: porta le corse interessate a <b>Non attiva</b> con <b>Pubblica\\Nascondi</b>, modifica il template, premi <b>Aggiorna Corse Inattive del Template</b>, poi ripubblica.",
+              "evita": "Correggere le fermate corsa per corsa: diventano modifiche dirette e quelle corse restano escluse dai successivi aggiornamenti massivi.",
+              "verifica": "Controlla orari e prezzi delle corse ripubblicate e, a parte, quelle che avevano modifiche dirette.",
+              "link": "creazione-template"
+            },
+            {
+              "compito": "Attivare un servizio solo per un periodo",
+              "usa": "Compila <b>Data inizio corsa</b> e <b>Data fine corsa</b> (per esempio per un servizio estivo). Per un servizio tutto l'anno lasciale vuote.",
+              "evita": "Pubblicare e nascondere la corsa a mano all'inizio e alla fine del periodo.",
+              "verifica": "Cerca la corsa sulla biglietteria in una data dentro il periodo e in una fuori.",
+              "link": "corse"
+            },
+            {
+              "compito": "Far svolgere a una corsa, per alcuni giorni, il servizio di un'altra frequenza",
+              "usa": "<b>Eccezioni → Eccezioni</b> con tipologia <b>Calendario</b> e il periodo: per esempio corse scolastiche anticipate rispetto al calendario regionale.",
+              "evita": "Creare frequenze o corse nuove che servono solo per quei giorni.",
+              "verifica": "Prima di confermare, confronta i giorni effettivi di servizio con il calendario e con la frequenza della corsa.",
+              "link": "eccezioni-movimento"
+            },
+            {
+              "compito": "Capire in quali giorni viaggia davvero una corsa",
+              "usa": "<b>Configurazione → Frequenze Corsa</b>: guarda <b>Tipologia</b>, giorni, date e calendario della frequenza assegnata.",
+              "evita": "Fidarti del nome della frequenza: è testo libero e può non corrispondere alla tipologia.",
+              "verifica": "Confronta la tipologia con i giorni in cui la corsa compare sulla biglietteria.",
+              "link": "frequenza-corsa"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gv-sospendere",
+      "titolo": "Sospendere e avvisare",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "compiti",
+          "items": [
+            {
+              "compito": "Sospendere corse, una linea o tutto il servizio",
+              "usa": "<b>Eccezioni → Eccezioni</b> con tipologia <b>Corsa</b>, <b>Linea</b> o <b>Servizio</b>, le date e una descrizione per i clienti (sciopero, festività, guasto).",
+              "evita": "Nascondere con Pubblica\\Nascondi o eliminare le corse: andrebbero ripubblicate o ricreate a mano, mentre l'eccezione finisce da sola alla data di fine.",
+              "verifica": "I titoli già venduti non vengono annullati: controlla gli ordini sulle corse sospese.",
+              "link": "eccezioni-movimento"
+            },
+            {
+              "compito": "Chiudere una fermata per lavori",
+              "usa": "<b>Eccezioni → Eccezioni</b> con tipologia <b>Polo</b>, indicando la fermata sostitutiva se c'è.",
+              "evita": "Togliere la fermata dal template: coinvolge tutte le corse che lo usano e richiede l'aggiornamento massivo.",
+              "verifica": "Controlla periodo e fermata: la sospensione riguarda quel polo, non l'intera corsa.",
+              "link": "eccezioni-movimento"
+            },
+            {
+              "compito": "Avvisare i clienti di una variazione",
+              "usa": "<b>Gestione Movimento → Note</b> su corsa, linea o polo, con il periodo di validità: il testo compare nel dettaglio sullo shop e sparisce da solo alla scadenza.",
+              "evita": "Scrivere l'avviso nella <b>Denominazione</b>: è interna, il cliente legge solo il campo <b>Testo</b>.",
+              "verifica": "Apri la corsa sulla biglietteria in una data del periodo.",
+              "link": "note"
+            },
+            {
+              "compito": "Mandare una comunicazione a tutti gli utenti dell'app",
+              "usa": "<b>Ordini → Biglietti</b>, icona <b>Invia notifica ad Utenti</b>, tipo <b>Notifica App Broadcast</b>.",
+              "evita": "Usarla per un avviso che riguarda poche corse: arriva a tutti gli utenti dell'app COTRAP. Per quello ci sono le Note.",
+              "verifica": "Concorda l'invio con l'Amministratore COTRAP e rileggi oggetto e testo: una volta inviata non si richiama.",
+              "link": "biglietti"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gv-prezzi",
+      "titolo": "Prezzi e vendita",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "compiti",
+          "items": [
+            {
+              "compito": "Correggere km che producono un prezzo sbagliato",
+              "usa": "Se l'errore è nel template, correggilo con l'aggiornamento massivo. Se la distanza fra due codici contabili va corretta per tutte le linee, <b>Eccezioni Chilometriche</b>, con inizio il 1° del mese.",
+              "evita": "Coprire l'errore con un'eccezione tariffaria: l'importo resta fisso anche quando il tariffario cambia.",
+              "verifica": "<b>Eccezioni → Controllo Tariffario</b> sulla linea e sulla data: controlla km e importo.",
+              "link": "eccezioni-chilometriche"
+            },
+            {
+              "compito": "Applicare un prezzo fisso diverso dal tariffario",
+              "usa": "<b>Eccezioni tariffarie Biglietti</b> (per linea o corsa) oppure <b>Eccezioni tariffarie Abbonamenti</b> (importo lordo).",
+              "evita": "Alterare i km per arrivare a quel prezzo: un'eccezione chilometrica vale per quella coppia su tutte le linee e nei due sensi.",
+              "verifica": "In <b>Controllo Tariffario</b> le colonne dell'eccezione dicono quale sta agendo.",
+              "link": "eccezioni-tariffarie"
+            },
+            {
+              "compito": "Non vendere un collegamento fra due località",
+              "usa": "<b>Eccezioni Chilometriche</b> a <b>0 km</b> sulla coppia di codici contabili.",
+              "evita": "Azzerare i km di una fermata nel template: sono distanze dal capolinea e cambieresti i prezzi di quella fermata verso tutte le altre.",
+              "verifica": "Aspetta che <b>In elaborazione</b> torni a 0, poi cerca il collegamento sulla biglietteria.",
+              "link": "eccezioni-chilometriche"
+            },
+            {
+              "compito": "Vendere su una tratta solo biglietti, senza abbonamenti",
+              "usa": "<b>Titoli di viaggio → Visualizza Modifica</b> su ciascun abbonamento, riquadro <b>Codici contabili da escludere</b>.",
+              "evita": "Bloccare la tratta con un'eccezione chilometrica a 0 km: sparirebbero anche i biglietti.",
+              "verifica": "<b>Controllo Tariffario Abbonamenti</b> sulla tratta. L'esclusione vale nei due sensi.",
+              "link": "titoli-di-viaggio"
+            },
+            {
+              "compito": "Controllare i prezzi dopo una modifica o un nuovo tariffario",
+              "usa": "<b>Controllo Tariffario</b> per linea e corsa, <b>Controllo Tariffario Itinerario Biglietto</b> per cercare un vecchio importo, <b>Controllo Tariffario Abbonamenti</b> per tratta.",
+              "evita": "Acquistare o emettere titoli di prova per vedere il prezzo.",
+              "verifica": "Un risultato vuoto vale solo per i filtri impostati: ripeti per le altre date e tratte interessate.",
+              "link": "controllo-tariffario"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gv-clienti",
+      "titolo": "Clienti e titoli",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "compiti",
+          "items": [
+            {
+              "compito": "Trovare il titolo di un cliente",
+              "usa": "<b>Ordini → Biglietti</b> o <b>Abbonamenti</b> con il codice completo (compresa la lettera finale), il numero d'ordine o la tessera.",
+              "evita": "Cercare su periodi lunghi senza altri filtri: in Biglietti l'intervallo massimo è di 40 giorni.",
+              "verifica": "Apri <b>Dettaglio</b>: nella riga non è la prima icona, la prima è Inserisci Controllo.",
+              "link": "biglietti"
+            },
+            {
+              "compito": "Registrare un controllo che a bordo non è stato registrato",
+              "usa": "<b>Inserisci Controllo</b> nella riga del titolo, con un commento.",
+              "evita": "Usarlo per consultare: registra davvero un controllo. Per leggere quelli presenti c'è <b>Dettaglio Controllo</b>.",
+              "verifica": "Apri Dettaglio Controllo sull'abbonamento.",
+              "link": "abbonamenti"
+            },
+            {
+              "compito": "Rettificare le corse di un abbonamento",
+              "usa": "<b>Modifica corse</b> nella riga dell'abbonamento.",
+              "evita": "Rettificare prima di aver confrontato Residuo corse e controlli registrati, o senza la procedura aziendale.",
+              "verifica": "Annota motivo, saldo prima e saldo dopo.",
+              "link": "abbonamenti"
+            },
+            {
+              "compito": "Emettere un titolo gratuito",
+              "usa": "<b>Emetti titolo di viaggio</b>, dopo aver scelto l'azienda giusta in alto a destra. Nella parte <b>Note per titolo</b> scrivi il motivo.",
+              "evita": "Cambiare azienda a sessione aperta: vale quella selezionata al momento del clic, e la sessione dura 15 minuti.",
+              "verifica": "In Ordini, con tipo di pagamento <b>Gratuito</b>: nel dettaglio compaiono Emesso da Admin e Note emissione.",
+              "link": "emetti-titolo-viaggio"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gv-prima-configurazione",
+      "titolo": "Prima configurazione di una linea",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "È il percorso da seguire quando una linea si carica da zero. Ogni passo ha il suo controllo: se il controllo non torna, sistema prima di andare avanti."
+        },
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Prepara i dati da Tecbus",
+              "descrizione": "Codici contabili dei poli, polimetriche e tariffe, codice e denominazione della linea, competenza (Regionale, Provinciale, Comunale). <b>Controllo:</b> ci sono i codici di tutte le località del percorso."
+            },
+            {
+              "numero": 2,
+              "titolo": "Frequenze Corsa",
+              "descrizione": "In <b>Configurazione → Frequenze Corsa</b> crea le frequenze che ti servono. <b>Controllo:</b> Tipologia, giorni selezionati e date corrispondono al servizio reale, qualunque sia il nome."
+            },
+            {
+              "numero": 3,
+              "titolo": "Codici contabili e poli",
+              "descrizione": "In <b>Gestione Movimento</b> inserisci i codici contabili che mancano e le fermate con le coordinate. <b>Controllo:</b> per i Comuni con più codici la Descrizione è compilata."
+            },
+            {
+              "numero": 4,
+              "titolo": "Linea e template",
+              "descrizione": "Crea la linea con la tipologia giusta e il template di andata, con km e minuti <b>contati dal capolinea</b>; poi <b>Duplica e Inverti</b> per il ritorno. <b>Controllo:</b> km e minuti crescono lungo il percorso e il ritorno è stato ricontrollato."
+            },
+            {
+              "numero": 5,
+              "titolo": "Corse",
+              "descrizione": "Per ogni partenza scegli linea e template, inserisci l'orario sul primo polo, la frequenza e l'<b>Occupazione Massima</b>; le date solo se il servizio è limitato nel tempo. <b>Controllo:</b> gli orari calcolati delle fermate sono quelli reali."
+            },
+            {
+              "numero": 6,
+              "titolo": "Pubblicazione",
+              "descrizione": "Con <b>Pubblica\\Nascondi</b> porta le corse a Stato Attivazione <b>Attiva</b>. <b>Controllo:</b> nella colonna Stato Attivazione le corse risultano Attiva; In attivazione e In disattivazione sono stati di passaggio."
+            },
+            {
+              "numero": 7,
+              "titolo": "Titoli di viaggio",
+              "descrizione": "Chiedi all'Amministratore COTRAP i titoli da vendere; poi in <b>Titoli di viaggio → Visualizza Modifica</b> scegli linee e tratte e attivali. <b>Controllo:</b> lo Stato attivazione del titolo è Attivo."
+            },
+            {
+              "numero": 8,
+              "titolo": "Verifica finale",
+              "descrizione": "In <b>Eccezioni → Controllo Tariffario</b> controlla km e importi della linea; sulla biglietteria cerca alcune tratte in date diverse. <b>Controllo:</b> tratte, orari e prezzi sono quelli attesi."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gv-regole",
+      "titolo": "Da ricordare sempre",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "box-nota",
+          "titolo": "Sei regole da non dimenticare",
+          "contenuto": [
+            "Km e minuti del template si contano <b>dal capolinea</b>, mai dalla fermata precedente.",
+            "Creare una corsa non basta: finché lo <b>Stato Attivazione</b> non è Attiva non si vende. Lo <b>Stato Corsa</b> (Attiva / Sospesa) è un'altra cosa.",
+            "Della frequenza conta la <b>Tipologia</b>, con giorni, date e calendario: il nome è solo un'etichetta.",
+            "Correggere km, fermate, orari di fermata, sosta o i flag di salita e discesa su una singola corsa la esclude dagli aggiornamenti massivi del template.",
+            "Dopo un salvataggio, se compare <b>In elaborazione</b>, aspetta che finisca prima di rimettere mano allo stesso oggetto.",
+            "Prima di operare controlla l'<b>azienda selezionata</b> in alto a destra: vedi solo linee, corse e titoli di quell'area."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "success",
+          "testo": "Qualcosa non funziona come previsto? <a href=\"#diagnostica\">Risolvi un problema</a> parte dal sintomo e ti dice che cosa controllare, in ordine."
+        }
+      ]
     }
-  ],
-  "sottosezioni": []
+  ]
 },
   "home": {
   "id": "home",
   "titolo": "Home",
-  "aggiornato": "2026-03-03",
+  "aggiornato": "2026-09-10",
   "nuovo": false,
   "contenuto": [
     {
@@ -3903,6 +4248,12 @@ var BUNDLED_DATA = {
     {
       "tipo": "cards",
       "items": [
+        {
+          "icona": "🚀",
+          "titolo": "Guida Veloce",
+          "descrizione": "Lo strumento giusto per ogni operazione: cosa usare, cosa evitare, come verificare. Più la catena del servizio e la prima configurazione.",
+          "link": "guida-veloce"
+        },
         {
           "icona": "🔧",
           "titolo": "Risolvi un problema",
@@ -3958,12 +4309,6 @@ var BUNDLED_DATA = {
           "link": "cs-invalidi"
         },
         {
-          "icona": "🚀",
-          "titolo": "Guida Veloce",
-          "descrizione": "Panoramica rapida dei passaggi fondamentali in sequenza: dal primo accesso alla pubblicazione delle corse.",
-          "link": "guida-veloce"
-        },
-        {
           "icona": "❓",
           "titolo": "Domande e Risposte",
           "descrizione": "Risposte rapide alle domande più frequenti, organizzate per argomento.",
@@ -3974,7 +4319,7 @@ var BUNDLED_DATA = {
     {
       "tipo": "avviso",
       "stile": "success",
-      "testo": "<b>Primo accesso?</b> Consulta la <a href=\"#guida-veloce\">Guida Veloce</a> per una panoramica rapida dei passaggi fondamentali in ordine sequenziale."
+      "testo": "<b>Non sai quale comando usare?</b> Parti dalla <a href=\"#guida-veloce\">Guida Veloce</a>: per ogni operazione trovi lo strumento fatto apposta e come verificare il risultato. Se invece hai un problema, vai a <a href=\"#diagnostica\">Risolvi un problema</a>."
     }
   ],
   "sottosezioni": [
@@ -4113,14 +4458,31 @@ var BUNDLED_DATA = {
 },
   "menu": {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.16",
-  "ultimo_aggiornamento": "2026-09-09",
+  "versione": "2.17",
+  "ultimo_aggiornamento": "2026-09-10",
   "voci": [
     {
       "id": "home",
       "label": "Home",
       "icona": "🏠",
       "tipo": "normale"
+    },
+    {
+      "id": "_sep_inizio",
+      "label": "INIZIA DA QUI",
+      "tipo": "separatore"
+    },
+    {
+      "id": "guida-veloce",
+      "label": "Guida Veloce",
+      "icona": "🚀",
+      "tipo": "speciale"
+    },
+    {
+      "id": "diagnostica",
+      "label": "Risolvi un problema",
+      "icona": "🔧",
+      "tipo": "speciale"
     },
     {
       "id": "_sep_guida",
@@ -4187,21 +4549,9 @@ var BUNDLED_DATA = {
       "tipo": "separatore"
     },
     {
-      "id": "diagnostica",
-      "label": "Risolvi un problema",
-      "icona": "🔧",
-      "tipo": "speciale"
-    },
-    {
       "id": "faq",
       "label": "Domande e Risposte",
       "icona": "❓",
-      "tipo": "speciale"
-    },
-    {
-      "id": "guida-veloce",
-      "label": "Guida Veloce",
-      "icona": "🚀",
       "tipo": "speciale"
     },
     {
@@ -4427,7 +4777,7 @@ var BUNDLED_DATA = {
           "tipo": "box-nota",
           "titolo": "I campi che servono in assistenza",
           "contenuto": [
-            "<b>Importo Pagato</b> e <b>Importo Da Tariffario</b>: confrontarli insieme a categoria sconto, eccezioni ed emissione da Admin. La differenza non dimostra da sola l’applicazione di uno sconto",
+            "<b>Importo Pagato</b> e <b>Importo Da Tariffario</b>: confrontarli insieme a categoria sconto, eccezioni ed emissione da Admin per capire da dove nasce la differenza",
             "<b>Km Tariffario</b>: i chilometri con cui è stato calcolato il prezzo. Se il prezzo non torna, si controlla prima questo",
             "<b>Eccezione Tariffaria</b>: se valorizzato, identifica l’eccezione registrata per il titolo; confrontarla con la configurazione valida alla data di emissione",
             "<b>Raggruppamento Tariffario</b>, <b>Categoria Calcolo Sconto</b>, <b>Numero Corse</b>, <b>Validità</b>, <b>Urbano</b>",

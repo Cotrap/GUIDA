@@ -109,6 +109,19 @@ if not (v_menu and v_chg and len(v_html) == 1 and v_menu == v_chg == v_html[0]):
 else:
     O('versione allineata ovunque: v%s' % v_menu)
 
+# --- documento d'ingresso per le AI (solo dove esiste la cartella interna .ai/, esclusa da git)
+if os.path.isdir('.ai'):
+    primer = os.path.join('.ai', 'START-QUI.md')
+    if not os.path.exists(primer):
+        A('AI', 'manca .ai/START-QUI.md: e\' il documento da cui partono tutte le AI')
+    else:
+        m_primer = re.search(r'guida \*\*v([0-9.]+)\*\*', io.open(primer, encoding='utf-8').read())
+        if not m_primer or m_primer.group(1) != v_menu:
+            A('AI', '.ai/START-QUI.md dichiara %s ma la guida e\' alla v%s: aggiorna la riga Stato'
+              % (('v' + m_primer.group(1)) if m_primer else 'nessuna versione', v_menu))
+        else:
+            O('.ai/START-QUI.md allineato alla v%s' % v_menu)
+
 # --- voci di menu <-> file
 ids = [v['id'] for v in menu.get('voci', []) if v.get('tipo') != 'separatore']
 senza = [i for i in ids if i not in content]
@@ -188,8 +201,12 @@ if senza_did: A('IMG', '%d immagini senza didascalia (il lettore non sa cosa gua
                 % (len(senza_did), '; '.join(senza_did[:6]) + ('; ...' if len(senza_did) > 6 else '')))
 
 # --- tipi di blocco
-SUPPORTATI = {'paragrafo', 'lista', 'lista-numerata', 'immagine', 'avviso', 'icona-azione',
-              'tools-grid', 'box-nota', 'box-esempio', 'tldr', 'steps', 'links', 'cards', 'faq'}
+# I tipi validi si leggono da renderContentBlocks() in app.js: un blocco e' accettato solo se il
+# sito lo sa davvero disegnare, e un tipo tolto dal codice viene segnalato nei contenuti.
+_render = re.search(r'function renderContentBlocks\(.*?\n}\n', app_src, re.S)
+SUPPORTATI = set(re.findall(r"case '([a-z-]+)'", _render.group(0))) if _render else set()
+if not SUPPORTATI:
+    B('BLOCCHI', 'impossibile leggere i tipi di blocco da renderContentBlocks() in js/app.js')
 tipi = set()
 def cerca_tipi(o, dentro=False):
     if isinstance(o, dict):
@@ -201,6 +218,33 @@ cerca_tipi(content)
 non_sup = sorted(tipi - SUPPORTATI)
 if non_sup: B('BLOCCHI', 'tipi di blocco che app.js ignora in silenzio: %s' % ', '.join(non_sup))
 else: O('tutti i tipi di blocco sono supportati da app.js')
+
+# schede operative e flussi: senza questi campi la scheda si disegna vuota o senza collegamento
+difetti_schede = []
+def cerca_schede(o, sez):
+    if isinstance(o, dict):
+        if o.get('tipo') == 'compiti':
+            for c in o.get('items', []):
+                manca = [f for f in ('compito', 'usa', 'link') if not c.get(f)]
+                if manca:
+                    nome = re.sub('<[^>]+>', '', c.get('compito', '?'))[:50]
+                    difetti_schede.append('%s: scheda "%s" senza %s' % (sez, nome, ', '.join(manca)))
+        if o.get('tipo') == 'flusso':
+            for passo in o.get('items', []):
+                manca = [f for f in ('titolo', 'descrizione') if not passo.get(f)]
+                if manca:
+                    difetti_schede.append('%s: passo "%s" senza %s' % (sez, passo.get('titolo', '?'), ', '.join(manca)))
+        for v in o.values(): cerca_schede(v, sez)
+    elif isinstance(o, list):
+        for v in o: cerca_schede(v, sez)
+for k, v in content.items(): cerca_schede(v, k)
+for d in difetti_schede: B('BLOCCHI', d)
+
+# la ricerca deve leggere tutto il testo dei blocchi (FAQ, passaggi, schede, riquadri)
+if 'CAMPI_NON_TESTUALI' not in app_src:
+    B('RICERCA', 'extractText() in app.js non e\' piu\' ricorsiva: FAQ, passaggi e schede escono dalla ricerca')
+else:
+    O('la ricerca indicizza tutto il testo dei blocchi')
 
 STILI = {'warning', 'info', 'success', 'error'}
 stili_errati = []
@@ -309,6 +353,16 @@ for pattern, giusto in NOMI:
     for k, t in ISTRUTTIVO.items():
         if re.search(pattern, t) and not scusato('NOMI', pattern):
             A('NOMI', '%s: la dicitura reale del pannello e\' "%s"' % (k, giusto))
+
+# frasi da ragionamento sulle prove finite nel testo pubblico: all'operatore serve sapere che cosa fare.
+# Le cautele e le prove stanno in .ai/ (vedi START-QUI §10).
+RAGIONAMENTO = re.compile(r"\b(non prova|non dimostra|non certifica|non basta a distinguere|"
+                          r"non giustifica automaticamente|non indica da solo|non impone da solo)\b", re.I)
+for k, t in ISTRUTTIVO.items():
+    for m in RAGIONAMENTO.finditer(re.sub(r'<[^>]+>', '', t)):
+        if not scusato('TONO', m.group(0)):
+            A('TONO', '%s: "%s" e\' un ragionamento sulle prove, non un\'istruzione: riscrivilo dicendo '
+                      'che cosa deve fare l\'operatore' % (k, m.group(0)))
 
 # FAQ vuote o troppo brevi
 for k, v in content.items():

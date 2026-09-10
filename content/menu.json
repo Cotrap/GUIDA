@@ -1,13 +1,30 @@
 {
   "titolo": "GUIDA ITINERIS",
-  "versione": "2.16",
-  "ultimo_aggiornamento": "2026-09-09",
+  "versione": "2.17",
+  "ultimo_aggiornamento": "2026-09-10",
   "voci": [
     {
       "id": "home",
       "label": "Home",
       "icona": "🏠",
       "tipo": "normale"
+    },
+    {
+      "id": "_sep_inizio",
+      "label": "INIZIA DA QUI",
+      "tipo": "separatore"
+    },
+    {
+      "id": "guida-veloce",
+      "label": "Guida Veloce",
+      "icona": "🚀",
+      "tipo": "speciale"
+    },
+    {
+      "id": "diagnostica",
+      "label": "Risolvi un problema",
+      "icona": "🔧",
+      "tipo": "speciale"
     },
     {
       "id": "_sep_guida",
@@ -74,21 +91,9 @@
       "tipo": "separatore"
     },
     {
-      "id": "diagnostica",
-      "label": "Risolvi un problema",
-      "icona": "🔧",
-      "tipo": "speciale"
-    },
-    {
       "id": "faq",
       "label": "Domande e Risposte",
       "icona": "❓",
-      "tipo": "speciale"
-    },
-    {
-      "id": "guida-veloce",
-      "label": "Guida Veloce",
-      "icona": "🚀",
       "tipo": "speciale"
     },
     {

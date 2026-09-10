@@ -19,7 +19,7 @@
         {
           "tipo": "faq",
           "domanda": "Non conosco Itineris: com'è fatto il sistema in parole semplici?",
-          "risposta": "Itineris collega <b>codici contabili → poli (fermate) → linee e template → corse</b>. Frequenze e calendari stabiliscono i giorni di servizio; titoli ed eccezioni regolano ciò che è vendibile. La pubblicazione rende disponibile l'offerta sulla biglietteria, secondo le configurazioni attive. Ordini e controlli descrivono invece i titoli già emessi. Consulta <a href=\"#comprendere-il-sistema\">Comprendere il Sistema</a>."
+          "risposta": "Pensalo come una catena. Prima i <b>codici contabili</b> (le località tariffarie), poi i <b>poli</b> (le fermate), poi la <b>linea</b> con il suo <b>template</b> (il percorso, con km e minuti contati dal capolinea), infine le <b>corse</b> (le partenze). Una corsa diventa acquistabile quando è <b>pubblicata</b> e ha un <b>titolo di viaggio</b> attivo. Frequenze e calendari decidono in quali giorni viaggia; le eccezioni gestiscono ciò che è temporaneo. Lo schema è in <a href=\"#gv-catena\">Come è fatto un servizio</a>."
         },
         {
           "tipo": "faq",
@@ -72,7 +72,7 @@
         {
           "tipo": "faq",
           "domanda": "Per una certa tratta non compare la possibilità di acquistare un abbonamento: perché?",
-          "risposta": "Controlla titolo attivo, corse pubblicate e valide, inclusioni/esclusioni, codici e distanza tariffaria, eccezioni e requisiti della tessera. Un risultato vuoto non indica da solo quale requisito manca. Il percorso completo è in <a href=\"#diag-abbonamenti\">L’abbonamento non si può acquistare</a>."
+          "risposta": "Controlla titolo attivo, corse pubblicate e valide, inclusioni/esclusioni, codici e distanza tariffaria, eccezioni e requisiti della tessera. Se non trovi la causa, verifica i punti uno per uno. Il percorso completo è in <a href=\"#diag-abbonamenti\">L’abbonamento non si può acquistare</a>."
         },
         {
           "tipo": "faq",
@@ -120,7 +120,7 @@
         {
           "tipo": "faq",
           "domanda": "Come verifico se rimangono tratte con un vecchio prezzo dopo una variazione tariffaria?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Non dimostra l’aggiornamento di tutto il sistema: controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
+          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Per esserne sicuro controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
         },
         {
           "tipo": "faq",
@@ -158,7 +158,7 @@
         {
           "tipo": "faq",
           "domanda": "Ho fatto l'aggiornamento massivo ma alcune corse mostrano ancora i vecchi orari: perché?",
-          "risposta": "Verifica che le corse usino il template corretto, fossero in <b>Stato Attivazione: Non attiva</b> e non avessero modifiche dirette. Controlla che l’aggiornamento e la conferma finale siano stati completati. Una differenza attuale dal template non prova da sola la storia delle modifiche: se la causa resta incerta, raccogli corsa, template e orari attesi per l’assistenza."
+          "risposta": "Verifica che le corse usino il template corretto, fossero in <b>Stato Attivazione: Non attiva</b> e non avessero modifiche dirette. Controlla che l’aggiornamento e la conferma finale siano stati completati. Se la causa resta incerta, raccogli corsa, template e orari attesi per l’assistenza."
         },
         {
           "tipo": "faq",
@@ -186,7 +186,7 @@
         {
           "tipo": "faq",
           "domanda": "Devo modificare l'orario di partenza di una corsa già attiva: la devo prima disattivare?",
-          "risposta": "L’orario si gestisce in <b>Corse → Visualizza Modifica → Poli e Orari</b>. Per un servizio già pubblicato verifica prima i titoli emessi e la procedura aziendale: non assumere che una variazione aggiorni automaticamente quelli già acquistati. Per le modifiche del template segui invece la procedura di <a href=\"#creazione-template\">aggiornamento massivo</a>."
+          "risposta": "L’orario si cambia in <b>Gestione Movimento → Corse</b>, con <b>Visualizza Modifica</b>, nella griglia <b>Poli e Orari</b>. Nella documentazione non c’è una regola che imponga di portare prima la corsa a Non attiva. Se però la corsa è già in vendita, prima di cambiare l’orario controlla in <b>Ordini → Biglietti</b> i titoli già venduti su quella corsa e segui la procedura aziendale per avvisare i clienti. Se invece devi cambiare fermate, km o minuti del percorso, usa l’<a href=\"#creazione-template\">aggiornamento massivo</a>."
         },
         {
           "tipo": "faq",
@@ -353,7 +353,7 @@
         {
           "tipo": "faq",
           "domanda": "Posso modificare una corsa già pubblicata senza disattivarla?",
-          "risposta": "Per una corsa pubblicata verifica la modifica necessaria e gli effetti sui titoli già emessi prima di intervenire. La possibilità di aprire un campo non prova che sia sicuro modificarlo in esercizio. Le modifiche al template seguono la procedura di <a href=\"#creazione-template\">aggiornamento delle corse inattive</a>; le modifiche dirette alla corsa possono escluderla dagli aggiornamenti massivi successivi."
+          "risposta": "Dipende da che cosa cambi. Per <b>fermate, km, minuti o sosta</b> del percorso segui l’<a href=\"#creazione-template\">aggiornamento massivo</a>: le stesse correzioni fatte direttamente sulla singola corsa la escludono dagli aggiornamenti successivi. Per gli altri dati, se la corsa è già in vendita, controlla prima i titoli venduti in <b>Ordini → Biglietti</b> e dopo la modifica verifica la corsa sulla biglietteria."
         }
       ]
     },
@@ -411,12 +411,12 @@
         {
           "tipo": "faq",
           "domanda": "Come verifico che una variazione tariffaria sia stata applicata correttamente a tutte le corse?",
-          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Non dimostra l’aggiornamento di tutto il sistema: controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
+          "risposta": "In <b>Eccezioni → Controllo Tariffario Itinerario Biglietto</b> inserisci data, vecchio importo, comuni ed eventuali frazioni, poi premi <b>Applica</b>. Se il risultato è vuoto, non sono stati trovati importi uguali <b>nell’ambito dei filtri impostati</b>. Per esserne sicuro controlla anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
         },
         {
           "tipo": "faq",
           "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
-          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca: l’assenza di un prezzo non dimostra da sola un errore nell’eccezione."
+          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca prima di modificare l’eccezione."
         }
       ]
     },
@@ -454,7 +454,7 @@
         {
           "tipo": "faq",
           "domanda": "Come verifico o correggo il residuo corse di un abbonamento?",
-          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse</b> permette una rettifica del saldo, ma la presenza del comando non giustifica automaticamente una compensazione. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
+          "risposta": "Confronta <b>Residuo corse</b>, validità e controlli registrati. <b>Modifica corse rettifica il saldo: usalo solo quando la rettifica è stata decisa secondo la procedura aziendale. Accerta la rettifica necessaria e la relativa autorizzazione aziendale; annota motivazione, saldo prima e dopo."
         },
         {
           "tipo": "faq",

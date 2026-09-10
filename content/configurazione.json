@@ -198,7 +198,7 @@
         {
           "tipo": "avviso",
           "stile": "warning",
-          "testo": "<b>Denominazione e Tipologia non sono sinonimi:</b> il nome è libero. Per verificare una frequenza controlla anche <b>giorni selezionati, date di validità e calendario</b>. Un nome come «FESTIVO» non dimostra che la frequenza includa tutte le festività."
+          "testo": "<b>Denominazione e Tipologia non sono sinonimi:</b> il nome è libero. Per verificare una frequenza controlla anche <b>giorni selezionati, date di validità e calendario</b>. Il nome non basta: una frequenza chiamata «FESTIVO» può avere tipologia Giornaliera, quindi controlla Tipologia e giorni selezionati."
         }
       ]
     },

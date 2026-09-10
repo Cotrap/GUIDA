@@ -4,6 +4,37 @@
   "descrizione": "Storico delle modifiche apportate al sistema Itineris e alla guida",
   "modifiche": [
     {
+      "versione": "2.17",
+      "data": "2026-09-10",
+      "tipo": "major",
+      "titolo": "Guida Veloce ripensata e ricerca che trova davvero le risposte",
+      "descrizione": "La Guida Veloce descriveva solo la sequenza della prima configurazione, cioè un lavoro che si fa una volta per linea. Ora parte da ciò che l'operatore deve fare ogni giorno e per ogni operazione indica il comando fatto apposta, la scorciatoia da evitare e il controllo del risultato. Riparata anche la ricerca, che non leggeva risposte, passaggi e schede.",
+      "dettagli": [
+        "Guida Veloce: 22 schede operative in cinque gruppi — Costruire il servizio, Cambiare corse e percorsi, Sospendere e avvisare, Prezzi e vendita, Clienti e titoli — ognuna con <b>Usa</b>, <b>Evita</b>, <b>Verifica</b> e il collegamento alla procedura completa",
+        "Guida Veloce: la catena del servizio in forma visiva, dai codici contabili ai titoli di viaggio, con chi fa che cosa",
+        "Guida Veloce: la prima configurazione di una linea resta, ora con un controllo per ogni passo e la verifica finale",
+        "Guida Veloce: sei regole da ricordare sempre",
+        "Menu: nuovo gruppo <b>Inizia da qui</b> in cima, con Guida Veloce e Risolvi un problema; prima erano in fondo fra le sezioni extra",
+        "Home: le due schede di partenza sono ora le prime",
+        "Ricerca: ora trova anche il testo delle risposte nelle Domande e Risposte, dei passaggi di Risolvi un problema e della Guida Veloce, dei riquadri di nota ed esempio e delle griglie strumenti. Prima restavano fuori dall'indice",
+        "Sito: due nuovi elementi grafici, la sequenza numerata e le schede operative, leggibili da computer, telefono e in stampa",
+        "Domande e Risposte, Risolvi un problema, Eccezioni, Gestione Movimento, Ordini e Configurazione: riscritte come istruzioni le frasi che spiegavano che cosa un controllo «non dimostra» senza dire che cosa fare. Le cautele restano le stesse",
+        "Domande e Risposte: le due domande sulla modifica di una corsa già in vendita tornano a rispondere, distinguendo ciò che passa dall'aggiornamento massivo da ciò che va controllato prima",
+        "Domande e Risposte: la spiegazione del sistema «in parole semplici» torna semplice e rimanda allo schema della Guida Veloce",
+        "Guida Veloce: precisato quali correzioni su una singola corsa la escludono dagli aggiornamenti massivi, e che per le frequenze si controllano anche giorni e date"
+      ],
+      "sezioni_modificate": [
+        "guida-veloce",
+        "home",
+        "faq",
+        "diagnostica",
+        "eccezioni",
+        "gestione-movimento",
+        "ordini",
+        "configurazione"
+      ]
+    },
+    {
       "versione": "2.16",
       "data": "2026-09-09",
       "tipo": "major",

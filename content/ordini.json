@@ -213,7 +213,7 @@
           "tipo": "box-nota",
           "titolo": "I campi che servono in assistenza",
           "contenuto": [
-            "<b>Importo Pagato</b> e <b>Importo Da Tariffario</b>: confrontarli insieme a categoria sconto, eccezioni ed emissione da Admin. La differenza non dimostra da sola l’applicazione di uno sconto",
+            "<b>Importo Pagato</b> e <b>Importo Da Tariffario</b>: confrontarli insieme a categoria sconto, eccezioni ed emissione da Admin per capire da dove nasce la differenza",
             "<b>Km Tariffario</b>: i chilometri con cui è stato calcolato il prezzo. Se il prezzo non torna, si controlla prima questo",
             "<b>Eccezione Tariffaria</b>: se valorizzato, identifica l’eccezione registrata per il titolo; confrontarla con la configurazione valida alla data di emissione",
             "<b>Raggruppamento Tariffario</b>, <b>Categoria Calcolo Sconto</b>, <b>Numero Corse</b>, <b>Validità</b>, <b>Urbano</b>",
