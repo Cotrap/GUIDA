@@ -1,0 +1,449 @@
+{
+  "id": "sezione-contabile",
+  "titolo": "Sezione Contabile",
+  "aggiornato": "2026-03-03",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Account separato da quello commerciale: credenziali diverse, fornite da COTRAP.",
+        "Serve a consultare ordini e titoli venduti, a seguire il <b>credito</b> degli utenti e a estrarre i dati contabili da portare nel gestionale.",
+        "È un ambiente di sola consultazione: qui non si modifica nulla dell'esercizio.",
+        "Prima di operare controlla di essere nell'account giusto: il nome dell'utente è indicato in basso a sinistra."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "La Sezione Contabile è accessibile tramite credenziali <b>separate</b> rispetto al profilo commerciale. Inserire nella pagina di login l'ID utente e la password dedicati all'account contabile, forniti dall'Amministratore COTRAP."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Attenzione:</b> verificare sempre di essere nell'account corretto controllando l'indicazione dell'utente in <b>basso a sinistra</b>. Se si è accidentalmente nell'account commerciale, effettuare il logout e accedere con le credenziali contabili."
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine1.png",
+      "alt": "Dashboard Contabile",
+      "didascalia": "Dashboard sezione contabile"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Questo ambiente serve per ricercare biglietti, ordini (che possono includere anche più biglietti), estrapolare dati contabili."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Le funzioni di questo ambiente sono: <b>ORDINI</b>, <b>CREDITO</b> ed <b>ESPORTAZIONI</b>."
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "In <b>ORDINI</b> è possibile effettuare le ricerche relative a ordini, dati contabili, biglietti, abbonamenti, spese abbonamenti agenzie e statistiche venduto",
+        "In <b>CREDITO</b> si consultano il credito residuo e i movimenti di ricarica degli utenti",
+        "In <b>ESPORTAZIONI</b> si visionano e si scaricano i file generati dalle ricerche precedenti"
+      ]
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine2.png",
+      "alt": "Menu Ordini Contabile",
+      "didascalia": "Menu Ordini nella sezione contabile"
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine3.png",
+      "alt": "Menu Esportazioni Contabile",
+      "didascalia": "Menu Esportazioni nella sezione contabile"
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "ordini-contabile",
+      "titolo": "Ordini",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Cerca ordini per data, numero progressivo, tipo pagamento, stato e acquirente.",
+            "Un ordine puo' contenere piu' biglietti. Usa <b>Codice Biglietto</b> per trovare un titolo specifico.",
+            "Usa il filtro <b>Gratuito</b> per risalire ai titoli emessi da profilo commerciale."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Ordini ci mostra tutti gli ordini (alcuni dei quali contenenti più biglietti), acquistati dal portale web, dall'app con carta di credito e con il credito e le prenotazioni con abbonamenti."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Ricordiamo che sull'app l'utente può registrare la propria carta di credito, effettuare una ricarica sul proprio account ed utilizzare il credito per l'acquisto dei titoli di viaggio."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "È possibile attraverso i filtri effettuare delle ricerche dedicate."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine4.png",
+          "alt": "Lista Ordini",
+          "didascalia": "Elenco ordini"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Fare click sul pulsante \"Filtri\""
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine5.png",
+          "alt": "Filtri Ordini",
+          "didascalia": "Pannello filtri ricerca ordini"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Per effettuare la ricerca bisogna inserire i seguenti parametri, in base a ciò che si vuole ricercare:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Data Inizio</b>",
+            "<b>Data Fine</b>",
+            "<b>Prog:</b> numero dell'ordine o biglietto",
+            "<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito/<b>Gratuito</b> (per risalire ai titoli emessi da profilo commerciale)",
+            "<b>Stato Pagamento:</b> Tutte/Attesa Pagamento/Pagato/Non Emesso/Non Pagato/Annullato/Bloccato/Attesa Rimborso/Rimborsato/Rimborsato Credito",
+            "<b>Canale:</b> Tutti/Non Definito (utilizzato solo per il periodo di transizione dalla versione iniziale a quella aggiornata)/App/Portale Web",
+            "<b>Acquirente:</b> si può inserire il nominativo dell'utente o l'indirizzo email",
+            "<b>Codice Biglietto</b>",
+            "<b>N. Tessera</b> (nel caso degli abbonati)"
+          ]
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona13.png",
+          "testo": "Dopo aver inserito i parametri si deve cliccare sul tasto di ricerca"
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona12.png",
+          "testo": "Nel caso in cui si voglia esportare la ricerca è necessario cliccare sul tasto di download. Il file scaricato potrà poi essere recuperato nella funzione \"Esportazioni\"."
+        }
+      ]
+    },
+    {
+      "id": "dati-contabili",
+      "titolo": "Dati Contabili",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Esegui <b>due esportazioni separate</b>: una con Tipo pagamento <b>Online</b> e una con <b>Credito</b> — sono registrate in partite contabili distinte.",
+            "<b>Esporta</b> = file .txt per software gestionali aziendali. <b>Esporta SEP</b> = file .xls per analisi manuale in Excel.",
+            "Entrambi i file sono poi recuperabili nella sezione Esportazioni."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa sotto-funzione è possibile recuperare i dati relativi al venduto. Questi dati potranno poi essere acquisiti e trasferiti sui software di gestione aziendale. Anche in questo caso è possibile applicare i filtri per effettuare la ricerca di interesse."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Per effettuare la ricerca bisogna inserire i seguenti parametri:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Data Inizio</b>",
+            "<b>Data Fine</b>",
+            "<b>Azienda</b> (automaticamente viene riportata l'azienda consorziata)",
+            "<b>Tipo pagamento:</b> Tutti/Online/Abbonamento/Credito/<b>Gratuito</b> (per risalire ai titoli emessi da profilo commerciale)",
+            "<b>Stato Pagamento:</b> Tutte/Attesa Pagamento/Pagato/Non Emesso/Non Pagato/Annullato/Bloccato/Attesa Rimborso/Rimborsato/Rimborsato Credito",
+            "<b>Canale:</b> Tutti/Non Definito/App/Portale Web",
+            "<b>Acquirente</b>",
+            "<b>Codice Biglietto</b>",
+            "<b>N. Tessera</b>"
+          ]
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona13.png",
+          "testo": "Al termine si deve sempre cliccare sul tasto di ricerca"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — esportazioni obbligatoriamente separate:</b> Per ottenere il quadro completo del venduto da importare nel gestionale aziendale, è necessario effettuare <b>due esportazioni distinte</b>:<br>1. <b>Tipo pagamento: Online → Stato: Pagato → Tutti</b> — include tutti i biglietti acquistati con carta di credito<br>2. <b>Tipo pagamento: Credito → Stato: Pagato</b> — include tutti i biglietti acquistati con il saldo ricariche dell'app<br>I due tipi di pagamento sono registrati in partite contabili separate e non possono essere estratti con un'unica query."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Esporta vs Esporta SEP:</b> Il tasto <b>\"Esporta\"</b> genera un file <b>.txt</b> nel formato compatibile con i software gestionali aziendali. Il tasto <b>\"Esporta SEP\"</b> genera un file <b>.xls</b> (Excel) per visualizzazione e analisi manuale. Entrambi i file sono poi recuperabili nella sezione <b>Esportazioni</b>."
+        }
+      ]
+    },
+    {
+      "id": "biglietti-contabile",
+      "titolo": "Biglietti",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Ricerca dettagliata dei singoli biglietti con filtri aggiuntivi: Linea, Corsa, Comune di partenza, Frazione.",
+            "Filtro <b>Gratuito</b> disponibile per risalire ai titoli emessi da profilo commerciale.",
+            "Il tasto Esporta restituisce un file .xls con tutti i dettagli dei biglietti trovati."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli titoli di viaggio."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In aggiunta rispetto ai precedenti parametri di ricerca ci sono Linea, Corsa, Comune di partenza, frazione. È disponibile anche il filtro <b>\"Gratuito\"</b> nel metodo di pagamento per risalire ai titoli emessi da profilo commerciale. Il tasto esporta restituisce un file .xls con tutti i dettagli dei biglietti ricercati."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Nel dettaglio di ogni titolo di viaggio, è presente il campo <b>\"Emesso da Admin\"</b> che identifica un titolo emesso gratuitamente da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "abbonamenti-contabile",
+      "titolo": "Abbonamenti",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Ricerca dettagliata dei singoli abbonamenti con filtro <b>Gratuito</b> per i titoli emessi da profilo commerciale.",
+            "Il tasto Esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati.",
+            "Il campo <b>Emesso da Admin</b> nel dettaglio identifica i titoli emessi gratuitamente."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione permette di effettuare una ricerca dettagliata dei singoli abbonamenti. È disponibile il filtro <b>Gratuito</b> nel metodo di pagamento per risalire ai titoli emessi da profilo commerciale. Il tasto esporta restituisce un file .xls con i dettagli degli abbonamenti ricercati."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Nel dettaglio di ogni abbonamento, è presente il campo <b>\"Emesso da Admin\"</b> che identifica un titolo emesso gratuitamente da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "spese-abbonamenti-agenzie",
+      "titolo": "Spese Abbonamenti Agenzie",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Estrae i dati contabili delle <b>spese per abbonamenti sostenute tramite le agenzie</b>, per un intero anno.",
+            "Si sceglie l'<b>anno contabile</b> e si preme <b>Esporta</b>: il file non parte subito, si recupera in <b>Esportazioni</b>.",
+            "L'ultima esportazione richiesta compare sempre in cima all'elenco."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa funzione estrae dal portale i dati contabili relativi alle <b>spese abbonamenti agenzie</b> per un determinato anno. Il file generato può poi essere importato nei software di gestione aziendale."
+        },
+        {
+          "tipo": "lista-numerata",
+          "items": [
+            "Accedere con le credenziali del <b>profilo contabile</b> (diverse da quelle commerciali)",
+            "Dal menu, aprire <b>Ordini → Spese Abbonamenti Agenzie</b>",
+            "Compilare il campo <b>Anno Contabile</b> con l'anno desiderato (es. 2025) e verificare gli altri filtri",
+            "Cliccare su <b>Esporta</b> e attendere l'elaborazione senza chiudere la pagina",
+            "Aprire <b>Esportazioni</b>: l'ultima richiesta è in cima all'elenco",
+            "Cliccare sull'icona di download a destra della riga per scaricare il file"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Come per tutte le altre esportazioni, il file <b>non viene scaricato subito</b>: viene preparato dal sistema e reso disponibile nella sezione Esportazioni, da cui resta scaricabile anche in seguito."
+        }
+      ]
+    },
+    {
+      "id": "statistiche-mensili",
+      "titolo": "Statistiche Mensili",
+      "aggiornato": "2026-03-03",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo aggregato del venduto <b>per mese</b> — visione d'insieme delle entrate mensili.",
+            "I titoli emessi gratuitamente da profilo commerciale sono <b>esclusi</b> per non alterare i dati reali di fatturato."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione fornisce un riepilogo del venduto aggregato <b>per mese</b>, utile per avere una visione d'insieme delle entrate mensili dell'azienda consorziata."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Le statistiche mensili <b>ignorano le transazioni relative ai titoli emessi gratuitamente</b> da profilo commerciale, per non alterare i dati reali di fatturato."
+        }
+      ]
+    },
+    {
+      "id": "statistiche-linee",
+      "titolo": "Statistiche Linee",
+      "aggiornato": "2026-03-30",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Riepilogo del venduto <b>per singola linea</b> — utile per analizzare le performance di ciascuna tratta.",
+            "La colonna <b>'Denominazione titolo di viaggio'</b> mostra ora il tipo di biglietto venduto (CS, CSI, CSIA ecc.) e l'importo scontato finale.",
+            "I titoli emessi gratuitamente da profilo commerciale sono <b>esclusi</b> dai totali."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione fornisce un riepilogo del venduto <b>per singola linea</b>, utile per analizzare le performance di ciascuna tratta."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "La colonna <b>'Denominazione titolo di viaggio'</b> riporta ora il nome del biglietto venduto (CS, CSI, CSIA, CSU ecc.) e l'<b>importo scontato finale</b> effettivamente incassato."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Esportazione aggiornata:</b> le colonne comuneId, frazioneId, lineaId e corsaId sono state sostituite con i valori leggibili (nome comune, frazione, linea e corsa), in linea con quanto mostrato sul sito biglietteria."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Anche le statistiche linee <b>ignorano i titoli emessi gratuitamente</b> da profilo commerciale."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Dove si trova:</b> la stessa voce compare anche nel menu <b>Ordini</b> del pannello commerciale. Il conteggio è <b>per data di emissione</b> del titolo, non per data di viaggio."
+        }
+      ]
+    },
+    {
+      "id": "statistiche-venduto",
+      "titolo": "Statistiche Venduto",
+      "aggiornato": "2026-03-30",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Venduto totale per periodo selezionato — il file scaricato si importa nel gestionale aziendale.",
+            "<b>Esporta</b> = file .txt per software gestionali. <b>Esporta XLS</b> = file .xls per Excel.",
+            "Nuovo filtro <b>'Titolo di Viaggio'</b>: filtra per tipo di biglietto (CS, CSI ecc.) con fattore di sconto applicato."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questa sotto-funzione è utilizzata per verificare il <b>venduto totale</b> per l'azienda consorziata nel periodo selezionato. I file scaricati sono trasferiti al sistema di gestione amministrativo aziendale."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Il tasto <b>Esporta</b> restituisce un file <b>.txt</b>, il tasto <b>Esporta XLS</b> restituisce un file <b>.xls</b>."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "È stato aggiunto il filtro <b>'Titolo di Viaggio'</b> per filtrare il venduto per tipologia (CS, CSI, CSIA ecc.). La tabella mostra il fattore di sconto applicato. <b>Nota:</b> il Titolo di Viaggio e il fattore di sconto sono presenti nel file <b>.xls</b> ma <b>non</b> nel file .txt."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili <b>ignorano le transazioni relative ai titoli emessi gratuitamente</b> da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "esportazioni-contabile",
+      "titolo": "Esportazioni",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Tutti i file generati nelle funzioni precedenti (Ordini, Dati Contabili, Biglietti, ecc.) sono recuperabili qui.",
+            "Clicca sull'icona di download per scaricare il file nella cartella Download del PC.",
+            "Il campo <b>Emesso da Admin</b> nelle esportazioni identifica i titoli emessi gratuitamente da profilo commerciale."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Tutti i file scaricati nelle precedenti funzioni sono recuperabili nella funzione ESPORTAZIONI."
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona12.png",
+          "testo": "Tutti i file possono essere scaricati cliccando sul simbolo, i file scaricati saranno pertanto disponibili nella cartella Download del proprio PC."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Le esportazioni biglietti, abbonamenti e ordini presentano il campo <b>\"Emesso da Admin\"</b> per identificare i titoli emessi gratuitamente da profilo commerciale."
+        }
+      ]
+    },
+    {
+      "id": "sezione-contabile-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Perché non vedo i miei dati nella Sezione Contabile pur essendo loggato?",
+          "risposta": "Verifica di essere loggato con le <b>credenziali contabili</b> (non quelle commerciali): il nome dell'utente è indicato in basso a sinistra. Se sei nel profilo commerciale, fai logout e accedi con le credenziali della sezione contabile."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come esporto i Dati Contabili completi per un periodo? (procedura step-by-step)",
+          "risposta": "I dati contabili sono divisi per tipo di pagamento: devi fare <b>due esportazioni separate</b> per avere il quadro completo.<br><br><b>Esportazione 1 — Pagato con carta di credito (Online):</b><br>1. Sezione Contabile → Dati Contabili<br>2. Imposta <b>Data inizio</b> e <b>Data fine</b> del periodo<br>3. Tipo: <b>Online</b> → Stato: <b>Pagato</b> → Periodo: <b>Tutti</b><br>4. Clicca <b>Esporta SEP</b> (per Excel) o <b>Esporta</b> (per .txt gestionale)<br><br><b>Esportazione 2 — Pagato con credito ricaricato:</b><br>1. Stesse date<br>2. Tipo: <b>Credito</b> → Stato: <b>Pagato</b><br>3. Clicca Esporta SEP<br><br>I file vengono salvati in <b>Esportazioni</b> e sono recuperabili in qualsiasi momento.<br><br><b>Attenzione:</b> i titoli emessi gratuitamente (tipo 'Gratuito') <b>non entrano nei dati contabili</b> — il sistema li esclude automaticamente. Non è necessario filtrarli manualmente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Perché devo fare due esportazioni separate nei Dati Contabili?",
+          "risposta": "Perché i biglietti acquistati con <b>carta di credito</b> (tipo 'Online') e quelli acquistati con il <b>credito da ricariche</b> (tipo 'Credito') sono registrati separatamente nel sistema. Per avere il quadro completo del venduto devi esportare: 1) <b>Online → Pagato → Tutti</b>, poi 2) <b>Credito → Pagato</b>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra 'Esporta' e 'Esporta SEP' nei Dati Contabili?",
+          "risposta": "<b>Esporta</b> genera un file <b>.txt</b> nel formato per i software gestionali aziendali. <b>Esporta SEP</b> genera un file <b>.xls</b> (Excel) per visualizzazione e analisi manuale. Entrambi i file sono recuperabili nella sezione Esportazioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Dove trovo i file già scaricati in precedenza?",
+          "risposta": "I file già generati si cercano nella sezione <b>Esportazioni</b> del profilo con cui è stata richiesta l’estrazione. Scarica e conserva quelli necessari secondo le procedure aziendali: non usare l’elenco del portale come unica copia d’archivio."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Le statistiche mostrano un incasso diverso da quello che mi aspettavo: come lo verifico?",
+          "risposta": "Le statistiche su Itineris hanno alcune esclusioni da conoscere prima di confrontarle con altri dati:<br><br>• <b>Titoli gratuiti esclusi</b>: le statistiche mensili, linee e venduto non includono mai i titoli emessi gratuitamente dal profilo commerciale.<br>• <b>Solo venduto online</b>: le statistiche riguardano esclusivamente il venduto sul portale web e sull'app. Non include il venduto con macchinette di bordo Tecbus.<br>• <b>Canale</b>: le statistiche includono sia 'Online' (carta) che 'Credito' (ricariche). Se vedi differenze rispetto ai dati contabili, controlla che stai confrontando lo stesso tipo di canale.<br><br><b>Per verificare nel dettaglio:</b> usa Sezione Contabile → Statistiche Venduto, filtra per linea e periodo, poi confronta con i Dati Contabili dello stesso periodo."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Qual è la differenza tra Statistiche Mensili, Statistiche Linee e Statistiche Venduto?",
+          "risposta": "<b>Statistiche Mensili</b>: il venduto aggregato mese per mese, per seguire l'andamento nel tempo.<br><br><b>Statistiche linee</b>: il venduto per singola linea, calcolato <b>per data di emissione</b> del titolo, cioè in base a quando è stato acquistato.<br><br><b>Statistiche corse CS</b>: i biglietti di corsa semplice, calcolati <b>per data di partenza</b>, cioè in base a quando si viaggia. È la differenza da tenere presente quando i due numeri non coincidono.<br><br><b>Statistiche Venduto</b>: il venduto totale del periodo, con i file da portare nel gestionale aziendale.<br><br>Statistiche linee e Statistiche corse CS compaiono nel menu <b>Ordini</b> del pannello commerciale; le altre sono nella <b>Sezione Contabile</b>."
+        }
+      ]
+    }
+  ]
+}

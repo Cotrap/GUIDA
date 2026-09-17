@@ -1,0 +1,69 @@
+{
+  "id": "esportazioni",
+  "titolo": "Esportazioni",
+  "aggiornato": "2026-03-03",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "immagine",
+      "src": "Immagine20.png",
+      "alt": "Menu Esportazioni",
+      "didascalia": "Accesso alla sezione Esportazioni"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "La sezione <b>Esportazioni</b> raccoglie i file generati dalle funzioni di ricerca ed estrazione del profilo utilizzato. Attendi che l’elaborazione sia completata, poi individua il file relativo alla tua richiesta."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "Scarica e conserva le estrazioni necessarie secondo le procedure aziendali. L’elenco del portale non sostituisce l’archivio aziendale."
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine21.png",
+      "alt": "Lista File Esportazioni",
+      "didascalia": "Elenco file disponibili per il download"
+    },
+    {
+      "tipo": "icona-azione",
+      "icona": "icona12.png",
+      "testo": "Cliccare sull'icona di download a destra. Il file sarà scaricato nella cartella <b>Download</b> del proprio PC."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Tipi di file disponibili in questa sezione:</b>"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "<b>Biglietti (.xls):</b> da Ordini → Biglietti, con il dettaglio dei singoli titoli trovati",
+        "<b>Abbonamenti (.xls):</b> da Ordini → Abbonamenti",
+        "<b>Ordini (.xls):</b> da Ordini → Ordini, nel profilo contabile",
+        "<b>Stati Occupazionali (.xls):</b> da Ordini → Stati occupazionali corse",
+        "<b>Corse:</b> dall'icona <i>Esporta in Csv</i> nella riga di una corsa",
+        "<b>PoliTemplate:</b> dall'icona <i>Esporta</i> nella riga di un template, in Gestione Movimento → Linee",
+        "<b>Controllo Tariffario (.xls):</b> da Eccezioni → Controllo Tariffario",
+        "<b>Eccezioni tariffarie Abbonamenti:</b> dalla relativa sezione in Eccezioni",
+        "<b>Dati Contabili (.txt e .xls):</b> da Sezione Contabile → Dati Contabili, con i pulsanti Esporta ed Esporta SEP",
+        "<b>Statistiche Venduto (.txt e .xls):</b> da Sezione Contabile → Statistiche Venduto"
+      ]
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Nota:</b> Sia il profilo commerciale che il profilo contabile hanno la propria sezione Esportazioni separata, ciascuna contenente solo i file generati da quel profilo."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "<b>Quando l'esportazione è pronta:</b> i file non si scaricano subito, vengono preparati dal sistema. La <b>campanella</b> in alto avvisa quando un'esportazione è completata e porta direttamente qui."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Avviso di formato in Excel:</b> alcune esportazioni, come quella delle corse verificata, hanno estensione <b>.xls</b> ma contengono testo separato da tabulazioni. Se il file proviene dall’estrazione appena richiesta, puoi importarlo come testo delimitato da tabulazioni. Verifica intestazioni e righe: non ogni errore di Excel ha questa causa."
+    }
+  ],
+  "sottosezioni": []
+}

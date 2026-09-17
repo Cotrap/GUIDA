@@ -1,0 +1,427 @@
+{
+  "id": "diagnostica",
+  "titolo": "Risolvi un problema",
+  "aggiornato": "2026-09-09",
+  "nuovo": true,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Parti dal <b>sintomo</b> e controlla le configurazioni collegate.",
+        "Confronta sempre <b>azienda, data, tratta e titolo</b> prima di interpretare un risultato.",
+        "Ogni passo rimanda alla procedura dettagliata.",
+        "Prima di modificare un servizio in esercizio, verifica anche i titoli già emessi."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Scegli il problema dall'indice e segui i controlli. Un risultato inatteso può dipendere dai filtri, dalla configurazione o da un'elaborazione ancora in corso."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "Prima di cambiare un valore, annota la configurazione attuale e l'esito atteso. Dopo la modifica verifica il pannello e la biglietteria. Dove compare <b>In elaborazione</b>, attendi il completamento prima di intervenire di nuovo sullo stesso oggetto."
+    },
+    {
+      "tipo": "box-nota",
+      "titolo": "Le tre domande da farsi sempre, prima di tutto",
+      "contenuto": [
+        "<b>Azienda e profilo sono corretti?</b> Nel pannello commerciale controlla l'azienda in alto a destra e l'utente in basso a sinistra.",
+        "<b>Stai confrontando lo stesso viaggio?</b> Verifica su <a href=\"https://biglietteria.cotrap.it/\" target=\"_blank\" rel=\"noopener noreferrer\">biglietteria.cotrap.it</a> la stessa tratta e data, tenendo conto del titolo e della tessera.",
+        "<b>La data che sto guardando è quella giusta?</b> Data del viaggio, data dell'ordine e periodo di validità sono cose diverse e i filtri lo sono altrettanto."
+      ]
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "diag-non-compare",
+      "titolo": "Una corsa o una tratta non compare sullo shop",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "La pubblicazione è un requisito: controlla anche date, frequenza, fermate, titoli ed eccezioni."
+        },
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "La corsa è pubblicata?",
+              "descrizione": "In <a href=\"#corse\">Gestione Movimento → Corse</a> lo <b>Stato Attivazione</b> deve essere <b>Attiva</b>. Una corsa appena creata nasce <i>Non attiva</i>. Attenzione a non confonderlo con lo <b>Stato Corsa</b> (Attiva/Sospesa), che è un'altra cosa, e ricorda che il filtro in cima alla pagina è già impostato su Stato Corsa «Attiva»."
+            },
+            {
+              "numero": 2,
+              "titolo": "Le date della corsa comprendono il giorno cercato?",
+              "descrizione": "Se compilate, <b>Data inizio corsa</b> e <b>Data fine corsa</b> delimitano il servizio, stagionale o comunque limitato nel tempo. Verifica che comprendano il giorno del viaggio cercato."
+            },
+            {
+              "numero": 3,
+              "titolo": "La frequenza è quella giusta?",
+              "descrizione": "In <a href=\"#frequenza-corsa\">Configurazione → Frequenze Corsa</a> controlla <b>Tipologia, giorni selezionati, date e calendario applicabile</b>. La denominazione è libera: i giorni di servizio dipendono da queste impostazioni, non dal nome: una frequenza «FESTIVO» può avere tipologia Giornaliera."
+            },
+            {
+              "numero": 4,
+              "titolo": "C'è un'eccezione di movimento in corso?",
+              "descrizione": "In <a href=\"#eccezioni-movimento\">Eccezioni → Eccezioni</a> controlla tipologia, oggetto e periodo: una sospensione di polo riguarda la fermata interessata, non necessariamente l'intera corsa."
+            },
+            {
+              "numero": 5,
+              "titolo": "Le fermate del percorso sono corrette?",
+              "descrizione": "Confronta i <a href=\"#poli\">Poli</a> con quelli nel template e nella corsa: codici contabili, ordine, orari ed eventuali limitazioni di salita, discesa o transito. Non premere Pubblica come tentativo di diagnosi."
+            },
+            {
+              "numero": 6,
+              "titolo": "Il titolo di viaggio copre quella tratta?",
+              "descrizione": "In <a href=\"#titoli-di-viaggio\">Gestione Movimento → Titoli di viaggio</a>, con <i>Visualizza Modifica</i>, guarda i quattro riquadri: linee e corse abilitate, linee e corse da escludere, codici contabili abilitati, codici contabili da escludere."
+            },
+            {
+              "numero": 7,
+              "titolo": "Il sistema ha finito di ricalcolare?",
+              "descrizione": "Se hai appena salvato qualcosa, la colonna <b>In elaborazione</b> deve tornare a 0. Fino a quel momento lo shop può mostrare ancora la situazione precedente."
+            },
+            {
+              "numero": 8,
+              "titolo": "Non è la cache del browser?",
+              "descrizione": "Se la pagina sembra non aggiornata, ricaricala dopo aver chiuso i moduli senza salvataggi pendenti. In una sessione anonima possono cambiare i titoli visibili: non confrontarla con un account dotato di tessera come se fossero equivalenti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-orari",
+      "titolo": "Gli orari non sono quelli giusti",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Controlla i minuti nel template",
+              "descrizione": "Nel <a href=\"#creazione-template\">template</a> i minuti si contano <b>sempre dal capolinea</b>, mai dalla fermata precedente. Se sono stati inseriti come intervalli fra una fermata e l'altra, tutti gli orari da lì in poi sono sbagliati."
+            },
+            {
+              "numero": 2,
+              "titolo": "Controlla l'orario di partenza sulla corsa",
+              "descrizione": "L'orario si inserisce <b>solo sul primo polo</b> della corsa: il sistema calcola gli altri a cascata usando i minuti del template."
+            },
+            {
+              "numero": 3,
+              "titolo": "La corsa ha subito modifiche dirette?",
+              "descrizione": "Se su quella singola corsa qualcuno ha cambiato km, orari di una fermata, sosta o i flag di salita/discesa, la corsa è <b>esclusa dall'aggiornamento massivo</b> e va sistemata a mano."
+            },
+            {
+              "numero": 4,
+              "titolo": "L'aggiornamento massivo è stato fatto bene?",
+              "descrizione": "Le corse vanno prima portate a Stato Attivazione «Non attiva», poi si modifica il template, poi si usa <b>Aggiorna Corse Inattive del Template</b>, infine si ripubblicano. Vedi <a href=\"#creazione-template\">Creazione del Template</a>."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-prezzi",
+      "titolo": "Il prezzo del biglietto o dell'abbonamento è sbagliato",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Il prezzo dipende da competenza della linea, tariffario, distanza, eccezioni e titolo. Individua quale dato produce la differenza prima di correggerlo."
+        },
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Controlla la tariffa nel pannello",
+              "descrizione": "In <a href=\"#controllo-tariffario\">Eccezioni → Controllo Tariffario</a> scegli data, linea e corsa: ottieni il prezzo polo per polo, con le colonne che dicono se è intervenuta un'eccezione e quale."
+            },
+            {
+              "numero": 2,
+              "titolo": "Confronta i km del template con la polimetrica",
+              "descrizione": "Nel <a href=\"#creazione-template\">template</a> km e minuti sono cumulativi dall'origine. Confronta la distanza della tratta con la polimetrica Tecbus: una differenza può cambiare la fascia tariffaria."
+            },
+            {
+              "numero": 3,
+              "titolo": "Confronta la distanza della corsa con quella tariffata",
+              "descrizione": "Nella corsa sono presenti <b>Km tariffario</b> e <b>Km effettivi</b>. Confronta i valori con i km restituiti dal Controllo Tariffario; non modificare un campo per tentativi."
+            },
+            {
+              "numero": 4,
+              "titolo": "Ricorda quale template viene usato",
+              "descrizione": "Per gli abbonamenti confronta tutti i percorsi attivi tra i due codici e le due direzioni: il manuale operativo indica la distanza maggiore fra i template delle corse attive. Non uniformare distanze diverse senza confrontarle con la polimetrica autorizzata."
+            },
+            {
+              "numero": 5,
+              "titolo": "Cerca un'eccezione chilometrica",
+              "descrizione": "In <a href=\"#eccezioni-chilometriche\">Eccezioni → Eccezioni Chilometriche</a>: correggono la distanza fra due codici contabili, valgono nei due sensi e partono dal <b>1° del mese</b>."
+            },
+            {
+              "numero": 6,
+              "titolo": "Cerca un'eccezione tariffaria",
+              "descrizione": "Controlla <a href=\"#eccezioni-tariffarie\">Eccezioni tariffarie Biglietti</a> e <a href=\"#eccezioni-tariffarie-abbonamenti\">Abbonamenti</a>: coppia di codici, ambito, importo e date. Un importo fisso può restare diverso da un tariffario aggiornato; non è necessariamente un errore."
+            },
+            {
+              "numero": 7,
+              "titolo": "Verifica la tessera e lo sconto",
+              "descrizione": "Nel <a href=\"#biglietti\">dettaglio biglietto</a> confronta <b>Costo</b> e <b>Importo Non Scontato</b>. Nel <a href=\"#abbonamenti\">dettaglio abbonamento</a> leggi <b>Importo Pagato</b>, <b>Importo Da Tariffario</b>, <b>Km Tariffario</b>, <b>Eccezione Tariffaria</b>, categoria sconto ed eventuale emissione da Admin. Confronta i dati con la configurazione valida alla data di emissione."
+            },
+            {
+              "numero": 8,
+              "titolo": "Cerca eventuali vecchi importi nell'ambito interessato",
+              "descrizione": "Con <a href=\"#controllo-tariffario-itinerario\">Controllo Tariffario Itinerario Biglietto</a> cerca il vecchio importo per data e collegamento. Un risultato vuoto vale <b>solo per i filtri impostati</b>: verifica anche il nuovo prezzo e ripeti per le altre tratte e date interessate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-abbonamenti",
+      "titolo": "L'abbonamento non si può acquistare",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Il titolo di viaggio è attivo?",
+              "descrizione": "In <a href=\"#titoli-di-viaggio\">Gestione Movimento → Titoli di viaggio</a> lo Stato attivazione deve essere <b>Attivo</b>. Se il titolo non è proprio in elenco, va richiesto all'Amministratore COTRAP: il consorziato non può crearlo."
+            },
+            {
+              "numero": 2,
+              "titolo": "C'è almeno una corsa pubblicata su quella tratta?",
+              "descrizione": "Senza una corsa attiva che colleghi i due codici contabili non esiste alcun abbonamento da vendere."
+            },
+            {
+              "numero": 3,
+              "titolo": "La distanza tariffaria è coerente?",
+              "descrizione": "Controlla i km effettivamente restituiti dal controllo tariffario e le eccezioni sulla coppia. Un'eccezione chilometrica a 0 km blocca la vendita del collegamento; non azzerare i km cumulativi del template per tentare la stessa operazione."
+            },
+            {
+              "numero": 4,
+              "titolo": "La coppia di codici contabili è esclusa?",
+              "descrizione": "Nella configurazione del titolo controlla i riquadri <b>Codici contabili da escludere</b> e <b>Linee e corse da escludere</b>. L'esclusione di una coppia vale in <b>entrambi i sensi</b>."
+            },
+            {
+              "numero": 5,
+              "titolo": "Se è un abbonamento multitratta",
+              "descrizione": "Il template deve avere <b>esattamente 3 poli</b>, il polo di cambio deve avere un codice contabile presente in <b>entrambe</b> le linee, e servono <b>tutte e due le direzioni</b>."
+            },
+            {
+              "numero": 6,
+              "titolo": "Serve una tessera?",
+              "descrizione": "Nel titolo, la <b>Categoria Calcolo Sconto</b> dice quale tessera dà diritto all'acquisto e la <b>Visibilità</b> dice se il titolo è visibile a chiunque abbia un account (<i>Account</i>) o solo a chi ha la tessera nel profilo (<i>Account_Tessera</i>)."
+            },
+            {
+              "numero": 7,
+              "titolo": "Prova diretta",
+              "descrizione": "In <a href=\"#controllo-tariffario-abbonamenti\">Controllo Tariffario Abbonamenti</a> cerca la tratta. Se non ottieni risultati, ricontrolla filtri, validità e configurazioni; se non emerge una causa, raccogli i dati per l'assistenza."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-invalidi",
+      "titolo": "I biglietti per invalidi non compaiono",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "I titoli per invalidi sono <b>gratuiti per il cliente</b>. Se non compaiono, il percorso è questo:"
+        },
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Il titolo esiste per la tua azienda?",
+              "descrizione": "Verifica prima azienda e filtri in <b>Gestione Movimento → Titoli di viaggio</b>. Se il titolo necessario non compare, chiedi all'Amministratore di verificarne creazione e abilitazione."
+            },
+            {
+              "numero": 2,
+              "titolo": "La famiglia è coerente con il tipo di linea?",
+              "descrizione": "CS, CSI e CSIA valgono <b>solo sulle linee extraurbane</b> (Regionale o Provinciale); CSU, CSUI e CSUIA <b>solo sulle urbane</b> (Comunale). Vedi <a href=\"#cs-invalidi\">CS Invalidi</a>."
+            },
+            {
+              "numero": 3,
+              "titolo": "Le linee sono state selezionate prima dell'attivazione?",
+              "descrizione": "Configura le linee su cui deve valere il titolo prima di attivarlo; verifica che la tratta non sia esclusa."
+            },
+            {
+              "numero": 4,
+              "titolo": "L'utente ha la tessera nel profilo?",
+              "descrizione": "Controlla che i dati MyCard siano presenti nel profilo della biglietteria e compatibili con il titolo. La visibilità dei CS ordinari dipende anche dall'opzione Admin <b>Visibilità titoli senza tessera</b>."
+            },
+            {
+              "numero": 5,
+              "titolo": "Ha già raggiunto il limite giornaliero?",
+              "descrizione": "Il limite è di <b>2 titoli al giorno</b>, più altri 2 per l'accompagnatore quando ne ha diritto, a prescindere da tratta e orario."
+            },
+            {
+              "numero": 6,
+              "titolo": "Sta cercando un viaggio con cambio?",
+              "descrizione": "Per i CSI e i CSUI l'opzione <b>con cambio</b> non è disponibile: solo collegamenti diretti."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-modifiche",
+      "titolo": "Ho modificato qualcosa ma non cambia niente",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Le corse non si aggiornano da sole",
+              "descrizione": "Una modifica al template <b>non</b> arriva alle corse già attive. Vanno disattivate, poi si modifica il template, poi si usa <b>Aggiorna Corse Inattive del Template</b>, poi si ripubblicano."
+            },
+            {
+              "numero": 2,
+              "titolo": "Alcune corse restano indietro",
+              "descrizione": "Le corse che hanno subito una <b>modifica diretta</b> (km, poli, orari di fermata, sosta, flag di salita/discesa) sono escluse dall'aggiornamento massivo per scelta del sistema: vanno sistemate una a una."
+            },
+            {
+              "numero": 3,
+              "titolo": "Il sistema sta ancora elaborando",
+              "descrizione": "Dove presente, controlla <b>In elaborazione</b> e attendi il completamento. Se resta invariato o compare un errore, annota orario e oggetto. Per un'eccezione chilometrica il comando <b>Pubblica</b> riavvia l'elaborazione: non garantisce che la causa del blocco sia risolta."
+            },
+            {
+              "numero": 4,
+              "titolo": "L'eccezione chilometrica ha la data giusta?",
+              "descrizione": "La data di inizio può essere <b>solo il 1° del mese</b>: con una data diversa non viene accettata e non produce effetti."
+            },
+            {
+              "numero": 5,
+              "titolo": "La pagina è aggiornata?",
+              "descrizione": "Ricarica la pagina dopo aver controllato salvataggio, date e stato dell'elaborazione. Confronta lo stesso account, titolo e viaggio."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-cliente",
+      "titolo": "Un cliente ha un problema con il suo titolo",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Trova il titolo",
+              "descrizione": "In <a href=\"#biglietti\">Ordini → Biglietti</a> o <a href=\"#abbonamenti\">Abbonamenti</a> usa un identificativo del titolo e i filtri pertinenti. In <b>Biglietti</b> e <b>Abbonamenti</b> l'intervallo di date è di <b>massimo 40 giorni</b>: per periodi più lunghi fai più ricerche."
+            },
+            {
+              "numero": 2,
+              "titolo": "Guarda lo stato del pagamento",
+              "descrizione": "<b>Attesa Pagamento può comparire anche quando il pagamento è andato a buon fine. Registra ordine, data e stato e chiedi la riconciliazione al contabile; non emettere un duplicato per compensare una sola mancata conferma."
+            },
+            {
+              "numero": 3,
+              "titolo": "L'abbonamento risulta bloccato?",
+              "descrizione": "Leggi <b>Data Blocco da Admin</b> nel dettaglio. Se serve rimuovere un blocco, chiedi all'Amministratore la procedura e l'abilitazione necessarie; non tentare operazioni sul titolo per verificarle."
+            },
+            {
+              "numero": 4,
+              "titolo": "Le corse sono finite?",
+              "descrizione": "La colonna <b>Residuo corse</b> indica le corse rimaste. Confrontala con i controlli registrati. <b>Modifica corse</b> cambia il saldo: usarlo solo dopo aver accertato la rettifica necessaria secondo la procedura aziendale."
+            },
+            {
+              "numero": 5,
+              "titolo": "Il controllo a bordo non è stato registrato?",
+              "descrizione": "<b>Dettaglio Controllo</b> permette di leggere i controlli presenti. <b>Inserisci Controllo</b> è invece un'operazione sul titolo: non usarla come semplice consultazione."
+            },
+            {
+              "numero": 6,
+              "titolo": "Il titolo era stato emesso gratuitamente?",
+              "descrizione": "Nel dettaglio, <b>Emesso da Admin</b> e <b>Note emissione</b> dicono se il titolo è stato emesso dal profilo commerciale e con quale motivazione."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-pannello",
+      "titolo": "Il pannello è lento, non carica o si comporta in modo strano",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "steps",
+          "items": [
+            {
+              "numero": 1,
+              "titolo": "Ricarica senza cache",
+              "descrizione": "Chiudi i moduli senza perdere modifiche da salvare, poi ricarica con <b>Ctrl+Shift+R</b>."
+            },
+            {
+              "numero": 2,
+              "titolo": "Controlla di non avere la sessione scaduta",
+              "descrizione": "Controlla eventuali avvisi di disconnessione. Un elenco vuoto può dipendere anche da filtri e date: controllali prima di uscire e rientrare."
+            },
+            {
+              "numero": 3,
+              "titolo": "Usa un browser aggiornato",
+              "descrizione": "Chrome o Edge aggiornati."
+            },
+            {
+              "numero": 4,
+              "titolo": "Restringi le ricerche",
+              "descrizione": "Riduci il periodo e filtra linea o titolo. In <b>Biglietti</b>, <b>Abbonamenti</b> e <b>Statistiche Biglietti Venduti / Controllati</b> il massimo è 40 giorni; in <b>Statistiche linee</b> e <b>Statistiche corse CS</b> un periodo di mesi può non restituire dati (compare «Pagina non trovata.»)."
+            },
+            {
+              "numero": 5,
+              "titolo": "Verifica di essere sull'azienda giusta",
+              "descrizione": "Prima di concludere che «i dati sono spariti», controlla l'azienda selezionata in alto a destra e il nome utente in basso a sinistra."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diag-assistenza",
+      "titolo": "Cosa preparare prima di chiedere assistenza",
+      "aggiornato": "2026-09-09",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Per una verifica riproducibile prepara queste informazioni:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Azienda</b> selezionata e <b>profilo</b> usato (commerciale o contabile)",
+            "<b>Data e ora</b> in cui hai visto il problema, e le date coinvolte: viaggio, ordine, validità",
+            "<b>Linea, corsa, template</b> e la <b>coppia di codici contabili</b> o il <b>titolo di viaggio</b> interessato",
+            "Che cosa ti aspettavi e che cosa è successo davvero",
+            "<b>Dove</b> succede: Admin Panel, shop, app dei clienti o app di controllo",
+            "Se ci sono già <b>titoli venduti</b> su quella corsa o tratta",
+            "Uno <b>screenshot</b> della schermata, senza dati personali dei clienti che non servono"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Il pulsante <b>ASSISTENZA</b> del pannello apre il contatto dell’ufficio. Per tariffari, calendari, creazione dei titoli o dubbi sulle abilitazioni, indica anche la configurazione interessata e chiedi la verifica all’Amministratore COTRAP."
+        }
+      ]
+    }
+  ]
+}

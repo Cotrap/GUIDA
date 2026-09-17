@@ -1,0 +1,167 @@
+{
+  "id": "home",
+  "titolo": "Home",
+  "aggiornato": "2026-09-10",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "paragrafo",
+      "testo": "Questa guida spiega come usare <b>Itineris</b>, il pannello con cui le aziende consorziate COTRAP gestiscono linee, corse, eccezioni e titoli di viaggio, e come controllare il venduto."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "<b>Come è organizzato il menu.</b> Gli <b>Strumenti della guida</b> sono pagine che in Itineris non esistono: la <b>Guida Veloce</b>, per sapere quale comando usare, e <b>Risolvi un problema</b>, quando qualcosa non va. Sotto <b>Menu Itineris</b> trovi le sezioni con gli <b>stessi nomi e lo stesso ordine</b> del pannello: se sei in una schermata di Itineris, apri la sezione con lo stesso nome."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "success",
+      "testo": "Accanto a ogni titolo c'è il pulsante <b>🔗</b>: copia il link a quel punto preciso della guida, da incollare in un messaggio."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Strumenti della guida</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
+        {
+          "icona": "🚀",
+          "titolo": "Guida Veloce",
+          "descrizione": "Lo strumento giusto per ogni operazione: cosa usare, cosa evitare, come verificare. Più la catena del servizio e la prima configurazione.",
+          "link": "guida-veloce"
+        },
+        {
+          "icona": "🔧",
+          "titolo": "Risolvi un problema",
+          "descrizione": "Parti dal sintomo: i controlli da fare, nell'ordine giusto, quando una corsa non compare, un prezzo non torna o un cliente ha un problema.",
+          "link": "diagnostica"
+        }
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Menu Itineris — profilo commerciale</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
+        {
+          "icona": "⚙️",
+          "titolo": "Configurazione",
+          "descrizione": "Tariffari e calendari da consultare; Frequenze Corsa e utenti dell'app di controllo da gestire.",
+          "link": "configurazione"
+        },
+        {
+          "icona": "🚌",
+          "titolo": "Gestione Movimento",
+          "descrizione": "Codici contabili, poli, linee e template, corse, note e titoli di viaggio, compresi i CS Invalidi.",
+          "link": "gestione-movimento"
+        },
+        {
+          "icona": "⚠️",
+          "titolo": "Eccezioni",
+          "descrizione": "Eccezioni di movimento, eccezioni tariffarie biglietti e abbonamenti, eccezioni chilometriche e controlli tariffari.",
+          "link": "eccezioni"
+        },
+        {
+          "icona": "🧾",
+          "titolo": "Ordini",
+          "descrizione": "Consultazione di biglietti e abbonamenti venduti, stati occupazionali delle corse, stato dei controlli a bordo e statistiche dei biglietti.",
+          "link": "ordini"
+        },
+        {
+          "icona": "📤",
+          "titolo": "Esportazioni",
+          "descrizione": "Download dei file generati dalle ricerche in formato xls e txt.",
+          "link": "esportazioni"
+        },
+        {
+          "icona": "🎫",
+          "titolo": "Emetti titolo di viaggio",
+          "descrizione": "Emissione gratuita di biglietti e abbonamenti dal profilo commerciale, tramite il Portale Clienti.",
+          "link": "emetti-titolo-viaggio"
+        }
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Menu Itineris — profilo contabile</b>"
+    },
+    {
+      "tipo": "cards",
+      "items": [
+        {
+          "icona": "📊",
+          "titolo": "Sezione Contabile",
+          "descrizione": "Accesso contabile separato, ordini, dati contabili, biglietti, abbonamenti e statistiche venduto.",
+          "link": "sezione-contabile"
+        }
+      ]
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "accesso-portale",
+      "titolo": "Accesso al Portale",
+      "aggiornato": "2026-03-03",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "L'accesso al portale Itineris avviene tramite il link <a href=\"https://itinerisadminpanel.azurewebsites.net/\" target=\"_blank\" rel=\"noopener noreferrer\">Portale Itineris</a> (consigliamo di salvarlo tra i preferiti del browser). Per accedere sono necessarie le credenziali (ID utente e password) fornite dall'Amministratore COTRAP al momento della creazione dell'account. In caso di password dimenticata, è possibile recuperarla tramite il tasto <b>\"Recupero password\"</b> inserendo l'email di recupero comunicata preventivamente all'amministratore."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine03.png",
+          "alt": "Schermata accesso ITINERIS",
+          "didascalia": "Schermata di login al portale Itineris"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione:</b> saranno forniti al consorziato due account: uno relativo alla <b>sezione commerciale</b> ed uno relativo alla <b>sezione contabile</b>. Non utilizzare le stesse credenziali per entrambi."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta effettuato l'accesso sarà visualizzata la pagina principale. In <b>basso a sinistra</b> è sempre visibile l'<b>utente</b> con cui si è entrati, con l'icona di logout. Nel pannello commerciale l'<b>azienda</b> su cui si sta operando è indicata nel pulsante in <b>alto a destra</b>. In alto sono presenti anche il pulsante <b>ASSISTENZA</b> e la campanella delle notifiche, che segnala le esportazioni completate."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine03.01.png",
+          "alt": "Dashboard ITINERIS",
+          "didascalia": "Dashboard principale dopo il login"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Se il tuo profilo gestisce più aziende:</b> in Itineris \"azienda\" indica un'<b>area di lavoro</b>, non necessariamente una società diversa. La stessa società può averne più di una (per esempio una sede regionale e un gruppo provinciale, oppure le linee urbane separate da quelle extraurbane). <b>Prima di operare verifica sempre quale azienda è selezionata in alto a destra</b>: linee, corse e titoli che vedi sono solo quelli di quell'area."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Domande frequenti</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quali credenziali usare per accedere?",
+          "risposta": "Sono necessari <b>ID utente e password</b> forniti dall'Amministratore COTRAP. Esistono due account separati: uno per il <b>profilo commerciale</b> (gestione linee, corse, eccezioni, biglietti gratuiti) e uno per il <b>profilo contabile</b> (dati contabili, statistiche venduto, esportazioni). Non usare le stesse credenziali per entrambi."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come faccio a sapere con quale profilo sono loggato?",
+          "risposta": "In <b>basso a sinistra</b> è visibile l'<b>utente</b> con cui hai fatto accesso. Nel <b>pannello commerciale</b> l'<b>azienda</b> su cui stai operando è indicata nel pulsante in <b>alto a destra</b>. Verifica sempre entrambi prima di operare, soprattutto se il tuo profilo può accedere a più aziende."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho sbagliato profilo (commerciale invece di contabile o viceversa): cosa succede?",
+          "risposta": "Niente di grave: le due sezioni hanno funzionalità diverse. Il <b>profilo commerciale</b> gestisce linee, corse, eccezioni e titoli di viaggio. Il <b>profilo contabile</b> accede a ordini, dati contabili e statistiche. Se sei nel profilo sbagliato, esci e accedi con le credenziali corrette."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho dimenticato la password: come la recupero?",
+          "risposta": "Nella pagina di login clicca su <b>'Recupero password'</b> e inserisci l'email comunicata preventivamente all'Amministratore COTRAP. Se non ricordi l'email di recupero, contatta direttamente l'Amministratore."
+        }
+      ]
+    }
+  ]
+}

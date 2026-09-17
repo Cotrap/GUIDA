@@ -1,0 +1,88 @@
+{
+  "titolo": "GUIDA ITINERIS",
+  "versione": "2.20",
+  "ultimo_aggiornamento": "2026-09-10",
+  "voci": [
+    {
+      "id": "home",
+      "label": "Home",
+      "icona": "🏠",
+      "tipo": "normale"
+    },
+    {
+      "id": "_sep_strumenti",
+      "label": "STRUMENTI DELLA GUIDA",
+      "tipo": "separatore"
+    },
+    {
+      "id": "guida-veloce",
+      "label": "Guida Veloce",
+      "icona": "🚀",
+      "tipo": "guida"
+    },
+    {
+      "id": "diagnostica",
+      "label": "Risolvi un problema",
+      "icona": "🔧",
+      "tipo": "guida"
+    },
+    {
+      "id": "_sep_itineris",
+      "label": "MENU ITINERIS · COMMERCIALE",
+      "tipo": "separatore"
+    },
+    {
+      "id": "configurazione",
+      "label": "Configurazione",
+      "icona": "⚙️",
+      "tipo": "normale"
+    },
+    {
+      "id": "gestione-movimento",
+      "label": "Gestione Movimento",
+      "icona": "🚌",
+      "tipo": "normale"
+    },
+    {
+      "id": "eccezioni",
+      "label": "Eccezioni",
+      "icona": "⚠️",
+      "tipo": "normale"
+    },
+    {
+      "id": "ordini",
+      "label": "Ordini",
+      "icona": "🧾",
+      "tipo": "normale"
+    },
+    {
+      "id": "esportazioni",
+      "label": "Esportazioni",
+      "icona": "📤",
+      "tipo": "normale"
+    },
+    {
+      "id": "emetti-titolo-viaggio",
+      "label": "Emetti titolo di viaggio",
+      "icona": "🎫",
+      "tipo": "normale"
+    },
+    {
+      "id": "_sep_contabile",
+      "label": "MENU ITINERIS · CONTABILE",
+      "tipo": "separatore"
+    },
+    {
+      "id": "sezione-contabile",
+      "label": "Sezione Contabile",
+      "icona": "📊",
+      "tipo": "normale"
+    },
+    {
+      "id": "changelog",
+      "label": "Registro modifiche",
+      "icona": "🆕",
+      "tipo": "nascosta"
+    }
+  ]
+}

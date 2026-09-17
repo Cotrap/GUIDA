@@ -1,0 +1,462 @@
+{
+  "id": "eccezioni",
+  "titolo": "Eccezioni",
+  "aggiornato": "2026-09-09",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "immagine",
+      "src": "Immagine6.0.png",
+      "alt": "Menu Eccezioni",
+      "didascalia": "Accesso alla sezione Eccezioni"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Le eccezioni gestiscono variazioni di movimento, importi dei biglietti e degli abbonamenti, oppure distanze tariffarie fra codici contabili. Gli strumenti di <b>Controllo Tariffario</b> permettono di verificare gli effetti per la data e il collegamento interessati."
+    },
+    {
+      "tipo": "immagine",
+      "src": "Immagine6.0b.png",
+      "alt": "Sottomenu Eccezioni",
+      "didascalia": "Opzioni disponibili nella sezione Eccezioni"
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "eccezioni-movimento",
+      "titolo": "Eccezioni",
+      "aggiornato": "2026-03-05",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Usa questa sezione per sospendere temporaneamente corse, fermate o intere linee (es. sciopero, festività, lavori stradali).",
+            "La corsa sospesa sparisce automaticamente da biglietteria.cotrap.it nel periodo indicato e torna alla scadenza senza intervento.",
+            "Se non imposti la Data fine, la sospensione è indefinita — ricordati di rimuoverla quando non serve più."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.1.png",
+          "alt": "Lista Eccezioni",
+          "didascalia": "Elenco eccezioni inserite"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Per inserire una nuova eccezione cliccare su <b>\"Aggiungi\"</b> in alto a destra."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.1b.png",
+          "alt": "Form Eccezione",
+          "didascalia": "Maschera inserimento eccezione"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione:</b> titolo dell'eccezione (es. sospensione natalizia)",
+            "<b>Data inizio validità - data fine validità:</b> inserire il periodo di riferimento",
+            "<b>Tipologia:</b> selezionare l'elemento interessato dall'eccezione tra le opzioni disponibili (vedi dettaglio sotto)"
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Tipologie di eccezione disponibili",
+          "contenuto": [
+            "<b>Polo:</b> sospende una singola fermata. Permette di inserire una fermata sostitutiva se prevista da ordinanza comunale o scelta aziendale",
+            "<b>Corsa:</b> sospende una singola corsa. La corsa non sarà visibile né acquistabile sullo shop COTRAP durante il periodo di validità",
+            "<b>Linea:</b> sospende tutte le corse di una linea",
+            "<b>Servizio:</b> sospende l'intero servizio dell'azienda consorziata",
+            "<b>Calendario:</b> varia eccezionalmente la tipologia di frequenza nel periodo impostato. Verifica i giorni effettivi di servizio rispetto al calendario e alla frequenza della corsa prima di confermare."
+          ]
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Descrizione:</b> testo descrittivo dell'eccezione visibile all'utente (es. 'Sospensione per sciopero', 'Ordinanza n. 123/2026', 'Lavori stradali tratto A-B')"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Al termine della compilazione cliccare su <b>\"Conferma\"</b> in basso a destra. L'eccezione entrerà in vigore automaticamente alla data di inizio impostata e cesserà alla data di fine (o rimarrà attiva indefinitamente se la data di fine non è inserita)."
+        }
+      ]
+    },
+    {
+      "id": "eccezioni-tariffarie",
+      "titolo": "Eccezioni tariffarie Biglietti",
+      "aggiornato": "2026-03-05",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Usa questa eccezione quando il prezzo di un <b>biglietto</b> non deve seguire il tariffario chilometrico (es. tariffa fissa, linea urbana con tariffa speciale).",
+            "Si applica a una singola corsa o a tutte le linee per un periodo specifico.",
+            "Inserisci Codice Contabile partenza + arrivo e l'importo esatto che comparirà sullo shop."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.2.png",
+          "alt": "Menu Eccezioni Tariffarie",
+          "didascalia": "Accesso alle eccezioni tariffarie"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> in alto a destra per inserire una nuova eccezione tariffaria."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.2b.png",
+          "alt": "Form Eccezione Tariffaria",
+          "didascalia": "Maschera inserimento eccezione tariffaria"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione:</b> consigliamo di inserire i riferimenti della corsa se si tratta di singola variazione inserendo capolinea e orario di partenza",
+            "<b>Data inizio:</b> inserire la data in cui entrerà in vigore l'eccezione",
+            "<b>Linea:</b> selezionare la linea (c'è anche la possibilità di selezionare l'opzione tutte le linee, nel caso in cui tutto il servizio debba avere una tariffa fissa)",
+            "<b>Corsa:</b> nel caso si selezioni una linea in particolare, c'è la possibilità di selezionare la corsa che subirà la variazione tariffaria"
+          ]
+        },
+        {
+          "tipo": "icona-azione",
+          "icona": "icona11.png",
+          "testo": "Cliccare sul pulsante <b>\"+\"</b> per aggiungere la selezione effettuata alla lista."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Dopo aver selezionato linea e corsa, è necessario inserire i <b>Codici Contabili dei Poli</b> (partenza e arrivo) nella sezione sottostante."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.2c.png",
+          "alt": "Selezione Poli",
+          "didascalia": "Inserimento poli per eccezione tariffaria"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire il comune di partenza (e l'eventuale frazione) e selezionare il codice contabile del polo. Ripetere per il polo di arrivo. Indicare quindi l'importo che sarà mostrato agli utenti sullo shop COTRAP. Cliccare su <b>\"Conferma\"</b> in basso a destra per salvare."
+        }
+      ]
+    },
+    {
+      "id": "eccezioni-tariffarie-abbonamenti",
+      "titolo": "Eccezioni tariffarie Abbonamenti",
+      "aggiornato": "2026-03-05",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Usa questa eccezione quando il prezzo di un <b>abbonamento</b> deve essere diverso da quello che il sistema ricava dai chilometri.",
+            "L'importo si imposta <b>per raggruppamento tariffario</b> (mensile, settimanale…) sulla coppia di codici contabili scelta: si possono inserire più raggruppamenti nella stessa eccezione.",
+            "Inserisci sempre l'<b>importo lordo</b>: lo sconto della tessera viene applicato dal sistema al momento dell'acquisto."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Cliccare su <b>\"Aggiungi\"</b> per inserire una nuova eccezione tariffaria abbonamenti."
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Denominazione:</b> inserire il nome dei comuni interessati",
+            "<b>Data di inizio validità:</b> obbligatoria",
+            "<b>Data di fine validità:</b> consigliato lasciare vuoto, in quanto potrebbe non essere certa la data della nuova variazione del tariffario regionale",
+            "<b>Comune di partenza:</b> inserire il comune per cui si vuole attivare l'eccezione",
+            "<b>Frazione:</b> inserire l'eventuale frazione",
+            "<b>Codice Contabile partenza:</b> in caso di più codici contabili, scegliere quello relativo al percorso",
+            "<b>Codice Contabile arrivo:</b> analogo al codice di partenza",
+            "<b>Raggruppamento tariffario:</b> scegliere il raggruppamento per cui si vuole attivare l'eccezione"
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Dopo aver scelto il raggruppamento, inserire nella sezione importo a destra l'<b>importo lordo</b> della relativa fascia km. L'eventuale percentuale di sconto sarà applicata dalla tessera associata in fase di acquisto."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Dopo aver inserito l'importo per un raggruppamento tariffario, cliccare su <b>\"Aggiungi (+)\"</b>. Ripetere il passaggio per ogni raggruppamento necessario. Quando tutti i raggruppamenti sono stati inseriti, cliccare su <b>\"Conferma\"</b> in basso a destra."
+        }
+      ]
+    },
+    {
+      "id": "eccezioni-chilometriche",
+      "titolo": "Eccezioni Chilometriche",
+      "aggiornato": "2026-03-05",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Corregge i chilometri fra due codici contabili quando la distanza registrata non è quella giusta. Incide sul prezzo di <b>biglietti e abbonamenti</b> e vale in <b>entrambi i sensi</b>.",
+            "La data iniziale deve essere il <b>primo del mese</b>; l’eventuale data finale deve essere l’ultimo giorno del mese.",
+            "Dopo il salvataggio parte da sola una rielaborazione: la colonna <b>In elaborazione</b> mostra il conteggio. <b>Aspetta che arrivi a 0</b> prima di rimettere mano. Il tasto <b>Pubblica</b> serve solo a far ripartire un ricalcolo bloccato."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-ecckm-2.png",
+          "alt": "Maschera di creazione dell’eccezione chilometrica",
+          "didascalia": "Maschera di creazione: denominazione, descrizione, azienda, date di validità, comuni/frazioni con i rispettivi codici contabili e chilometri"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Queste eccezioni valgono sia per <b>biglietti</b> che <b>abbonamenti</b>."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Queste eccezioni valgono in ambi i sensi: una volta creata l'eccezione chilometrica per la coppia di cod. cont. A → B, tale eccezione varrà anche per la coppia B → A."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Il campo di inizio validità ammette il <b>primo del mese</b>. Il ricalcolo parte dopo la conferma: attendere il completamento indicato dal contatore."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Dopo aver cliccato il tasto <b>\"Conferma\"</b>, l'eccezione verrà pubblicata automaticamente. Non è necessario pubblicarla manualmente."
+        },
+        {
+          "tipo": "immagine",
+          "src": "aggiornamento-ecckm-1.png",
+          "alt": "Elenco eccezioni chilometriche con la colonna In elaborazione",
+          "didascalia": "Elenco delle eccezioni: la colonna <b>In elaborazione</b> mostra il contatore del ricalcolo; la freccia a destra è il tasto <b>Pubblica</b>"
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — tasto \"Pubblica\":</b> Il sistema ricalcola automaticamente le tariffe dopo il salvataggio (processo visibile tramite il contatore). Il tasto <b>\"Pubblica\"</b> serve solo se il contatore si blocca o si verifica un errore: cliccandolo si fa ripartire il ricalcolo. Si tratta di un'operazione che può richiedere alcuni minuti."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione — modifica sequenziale:</b> Prima di modificare o eliminare un'eccezione chilometrica, attendere che il contatore raggiunga <b>0</b>. Intervenire mentre il ricalcolo è in corso può causare errori nelle tariffe."
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Dati obbligatori per la creazione",
+          "contenuto": [
+            "Denominazione",
+            "Data inizio validità (solo il primo di ogni mese)",
+            "Chilometri: inserire il valore presente nelle tabelle tariffarie corrispondenti (il valore usato dal sistema per determinare la fascia tariffaria, non necessariamente la distanza stradale reale)",
+            "Codice contabile di partenza",
+            "Codice contabile di arrivo"
+          ]
+        },
+        {
+          "tipo": "box-nota",
+          "titolo": "Vincoli e regole",
+          "contenuto": [
+            "Se si decide di usare anche una data di fine validità, essa deve obbligatoriamente essere l'ultimo giorno del mese",
+            "Non è possibile creare due eccezioni chilometriche con gli stessi codici contabili di partenza e arrivo",
+            "Se si modifica un'eccezione impostando gli stessi codici contabili di un'altra già esistente, il sistema restituirà errore"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Effetto sulla distanza:</b> l’eccezione chilometrica si applica anche in presenza di altre eccezioni. Per verificare il prezzo finale controllare comunque le eventuali eccezioni tariffarie e il titolo: distanza e importo sono parametri distinti."
+        }
+      ]
+    },
+    {
+      "id": "controllo-tariffario",
+      "titolo": "Controllo Tariffario",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Strumento di <b>sola consultazione</b>: mostra le tariffe vigenti polo per polo per una corsa in una data specifica.",
+            "Utile per verificare i prezzi che vede il cliente o per controllare le tariffe dopo una variazione regionale.",
+            "Seleziona data, linea, corsa e clicca Applica. Esportabile in .xls (recuperabile in Esportazioni)."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.3.png",
+          "alt": "Menu Controllo Tariffario",
+          "didascalia": "Accesso al controllo tariffario"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Strumento di consultazione. Permette di visualizzare le tariffe vigenti per una determinata corsa in una data specifica, ottenendo il prospetto dei prezzi polo per polo."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.3b.png",
+          "alt": "Form Controllo Tariffario",
+          "didascalia": "Maschera controllo tariffario"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire la data di riferimento, selezionare la linea e la corsa, quindi cliccare su <b>\"Applica\"</b>. Verranno visualizzate le tariffe polo per polo valide in quella data per quella corsa."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "È possibile esportare il prospetto cliccando su <b>\"Esporta\"</b>. Il file generato sarà recuperabile nella sezione <b>Esportazioni</b>."
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine6.3c.png",
+          "alt": "Risultato Controllo",
+          "didascalia": "Risultato controllo tariffario"
+        }
+      ]
+    },
+    {
+      "id": "controllo-tariffario-itinerario",
+      "titolo": "Controllo Tariffario Itinerario Biglietto",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Verifica se una <b>variazione tariffaria e' stata applicata correttamente</b> su tutti i collegamenti tra due poli.",
+            "Inserisci l'importo <b>precedente</b> alla variazione: il sistema trova le corse che usano ancora il vecchio prezzo.",
+            "Un risultato vuoto riguarda soltanto data e filtri impostati. Verifica anche il nuovo prezzo e gli altri collegamenti interessati."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "Immagine29.png",
+          "alt": "Menu Controllo Itinerario",
+          "didascalia": "Accesso al controllo tariffario itinerario"
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa funzione di controllo è possibile verificare la correttezza delle tariffe in un determinato itinerario. Ad esempio se c'è stata una eccezione tariffaria tra due poli, con questa funzione è possibile verificare se per tutte le corse con i suddetti poli sia stato applicato la tariffa corretta."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Inserire la data, inserire l'importo precedente alla variazione tariffaria (per essere sicuri che non ci siano itinerari con il precedente importo), il comune di partenza e quello di arrivo (con eventuali frazioni). Cliccare quindi sul tasto applica a destra."
+        },
+        {
+          "tipo": "box-esempio",
+          "titolo": "Esempio verifica",
+          "contenuto": [
+            "Scegli un collegamento interessato dalla variazione e cerca il vecchio importo alla data di entrata in vigore.",
+            "Se non trovi risultati, controlla anche il nuovo importo nel Controllo Tariffario. Ripeti per le date, le direzioni e le tratte coinvolte."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "controllo-tariffario-abbonamenti",
+      "titolo": "Controllo Tariffario Abbonamenti",
+      "aggiornato": "2026-02-23",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "tldr",
+          "items": [
+            "Verifica gli importi degli abbonamenti su tutte le tratte: è il controllo da fare dopo un aggiornamento del tariffario regionale.",
+            "Per ottenere risultati servono titoli e corse attivi. Un risultato vuoto richiede anche il controllo di filtri, validità e collegamenti.",
+            "Serve a scoprire due cose: tratte per cui non risulta alcun abbonamento, e andata e ritorno con importi diversi."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Con questa funzionalità è possibile verificare gli importi associati agli abbonamenti."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>Attenzione:</b> Restituisce i risultati di ricerca solo se i <b>titoli di viaggio risultano attivi</b> e se le <b>corse dei percorsi risultano attive</b>."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Questo strumento è utile per verificare la correttezza degli importi. In particolare permette di:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Collegamenti senza abbonamento previsto:</b> verifica prima che il titolo sia attivo e che i chilometri fra quei due codici contabili non siano a zero. Se la tratta non deve proprio avere l'abbonamento, la si esclude dalla configurazione del titolo.",
+            "<b>Andata e ritorno con importi differenti:</b> confrontare percorsi, km, tariffario ed eccezioni nelle due direzioni. Correggere solo i dati incoerenti con la polimetrica e la tariffa autorizzate, poi ripetere la verifica."
+          ]
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "I filtri permettono di indirizzare la ricerca in base alle esigenze. È possibile esportare i dati."
+        }
+      ]
+    },
+    {
+      "id": "eccezioni-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Prezzi</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Il prezzo andata e ritorno per lo stesso abbonamento è diverso: è un errore?",
+          "risposta": "Confronta A→B e B→A con gli stessi filtri e periodo. Percorsi, chilometri o eccezioni diversi possono spiegare la differenza. <b>Non uniformare i km solo per ottenere lo stesso prezzo</b>: confrontali con la polimetrica Tecbus e con la tariffa autorizzata. Correggi il dato incoerente, poi verifica entrambe le direzioni."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Eccezione Chilometrica o Eccezione Tariffaria: come scelgo quella giusta?",
+          "risposta": "L’<b>eccezione chilometrica</b> modifica la distanza della coppia, per biglietti e abbonamenti nei due sensi, con inizio al primo del mese. L’<b>eccezione tariffaria</b> imposta invece un importo: per i biglietti scegli l’ambito linea/corsa; per gli abbonamenti imposti il lordo per raggruppamento. Verifica prima polimetrica, tariffario e altre eccezioni. Se servono entrambe, concorda validità e successiva rimozione della misura temporanea e verifica l’importo finale."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "COTRAP mi ha comunicato una variazione del tariffario regionale: cosa devo fare su Itineris?",
+          "risposta": "Il tariffario regionale viene aggiornato direttamente da COTRAP su Itineris. Di norma <b>non devi fare nulla</b> per le tratte normali.<br><br>Dopo ogni aggiornamento però verifica:<br><br><b>1. Eccezioni Tariffarie esistenti</b>: se hai tratte con importo fisso impostato manualmente, controlla se sono diventate errate o obsolete con il nuovo tariffario. Se sì, modificale o eliminale.<br><b>2. Prezzi delle tratte principali</b>: usa Controllo Tariffario per verificare che i prezzi siano quelli attesi sul tuo materiale informativo (orari, sito, comunicazioni ai passeggeri).<br><b>3. Vecchi prezzi ancora in circolazione</b>: usa Controllo Tariffario Itinerario inserendo il vecchio importo — se compaiono risultati, quelle corse non sono state aggiornate."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "<b>Eccezioni</b>"
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Una corsa che avevo sospeso con un'eccezione è ora finita la sospensione: devo riattivare qualcosa manualmente?",
+          "risposta": "<b>No.</b> L'eccezione di movimento si disattiva automaticamente alla data di fine impostata. La corsa torna visibile sullo shop COTRAP senza nessun intervento.<br><br>Se hai lasciato la data di fine vuota (sospensione indefinita), la corsa rimane nascosta finché non vai in Eccezioni → Eccezioni e imposti una data di fine oppure elimini l'eccezione."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Quando si crea un'eccezione di movimento, la corsa sparisce da cotrap.it?",
+          "risposta": "<b>Sì.</b> Durante il periodo di validità dell'eccezione, la corsa (o il polo, o la linea) non è visibile su cotrap.it. Al termine del periodo si riattiva automaticamente."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I biglietti già acquistati prima di un'eccezione di movimento rimangono validi?",
+          "risposta": "L’eccezione di movimento non annulla automaticamente i titoli già emessi. Prima di sospendere il servizio verifica gli acquisti interessati e attiva la gestione prevista dall’azienda. Non dedurre dalla sospensione che siano stati effettuati rimborsi o rettifiche delle corse residue."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "L'eccezione tariffaria su biglietti richiede una data di fine?",
+          "risposta": "Non è obbligatoria. Inserirla solo se si conosce con certezza la data di termine. Per gli abbonamenti è consigliato <b>lasciare vuota</b> la data di fine, poiché la data della prossima variazione del tariffario regionale è spesso incerta."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho creato un'eccezione chilometrica: devo pubblicarla manualmente?",
+          "risposta": "<b>No.</b> Dopo aver cliccato Conferma, il sistema ricalcola automaticamente le tariffe di tutti gli abbonamenti interessati (visibile tramite il contatore a schermo). Il tasto <b>Pubblica</b> è disponibile solo come rimedio se il contatore si blocca. Attendere che il contatore raggiunga 0 prima di apportare ulteriori modifiche."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso scegliere qualsiasi data di inizio per un'eccezione chilometrica?",
+          "risposta": "La data iniziale deve essere il <b>primo del mese</b>; l’eventuale data finale deve essere l’<b>ultimo giorno del mese</b>. È un vincolo della funzione. Il ricalcolo parte dopo la conferma: attendi che <b>In elaborazione</b> torni a zero."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Ho inserito un'eccezione chilometrica tra due codici contabili non presenti in alcuna linea/template: nell'esportazione non viene generato alcun prezzo. Perché?",
+          "risposta": "L’eccezione chilometrica modifica una distanza, ma <b>non crea da sola un collegamento vendibile</b>. Servono linea, template, corse pubblicate valide e titolo abilitato per quella coppia. Verifica queste dipendenze e i filtri di ricerca prima di modificare l’eccezione."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta name="description"
+        content="Guida operativa alla piattaforma Itineris per i Consorziati COTRAP: gestione linee, corse, template, eccezioni, ordini, bigliettazione e sezione contabile." />
+    <meta property="og:title" content="Guida ITINERIS — COTRAP" />
+    <meta property="og:description" content="Manuale operativo per la gestione delle linee e corse su Itineris: dalla configurazione iniziale alle esportazioni contabili." />
+    <meta property="og:type" content="website" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="theme-color" content="#757A43" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="Guida Itineris" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link href="css/style.css?v=2.20" rel="stylesheet" />
+    <title>Guida ITINERIS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Overlay per mobile menu -->
+    <div class="menu-overlay" onclick="toggleMenu()"></div>
+
+    <!-- Header -->
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()" aria-label="Apri/chiudi menu">
+            <span class="hamburger"></span>
+        </button>
+        <h1 id="titolo">GUIDA ITINERIS</h1>
+        <span class="version-badge" id="versionBadge"></span>
+        <button class="print-btn" onclick="window.print()" title="Stampa o salva come PDF">
+            <span class="pb-icon">🖨️</span><span class="pb-label">Stampa / PDF</span>
+        </button>
+    </header>
+
+    <!-- Barra di ricerca -->
+    <div class="search-container">
+        <div class="search-box">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="searchInput" placeholder="Cerca nella guida..." autocomplete="off">
+            <button class="search-clear" id="searchClear" onclick="clearSearch()">✕</button>
+        </div>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+
+    <!-- Menu laterale -->
+    <nav class="menu" id="sideMenu">
+        <ul id="menuList">
+            <!-- Menu generato dinamicamente -->
+        </ul>
+    </nav>
+
+    <!-- Menu orizzontale sottosezioni -->
+    <div class="horizontal-menu">
+        <ul id="horizontalMenuList"></ul>
+    </div>
+
+    <!-- Contenuto principale -->
+    <main class="content" id="content">
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+            <p>Caricamento...</p>
+        </div>
+        <article id="articleContent"></article>
+    </main>
+
+    <!-- Pulsante torna su -->
+    <button id="scrollToTop" title="Torna su">⬆</button>
+
+    <!-- Toast notifications -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <img src="favicon.png" alt="COTRAP" class="footer-logo" loading="lazy">
+                <div>
+                    <div class="footer-company">COTRAP — La rete che connette la Puglia</div>
+                    <div class="footer-copy">© 2025 COTRAP · Guide operative Itineris</div>
+                </div>
+            </div>
+            <nav class="footer-nav" aria-label="Altre guide">
+                <span class="footer-nav-label">Altre guide:</span>
+                <a href="https://cotrap.github.io/AppControlli/" class="footer-link" target="_blank" rel="noopener noreferrer">📱 APP Controllo</a>
+                <a href="https://cotrap.github.io/Dati_Contabili/" class="footer-link" target="_blank" rel="noopener noreferrer">📊 Dati Contabili</a>
+                <a href="https://cotrap.github.io/GUIDA/" class="footer-link" target="_blank" rel="noopener noreferrer">📘 Guida Itineris</a>
+            </nav>
+        </div>
+    </footer>
+
+    <!-- Fallback senza JavaScript -->
+    <noscript>
+        <div style="text-align:center; padding:4rem 2rem; font-family:sans-serif;">
+            <h1 style="color:#757A43;">Guida ITINERIS</h1>
+            <p style="color:#64748b; margin-top:1rem;">Per visualizzare la guida è necessario abilitare JavaScript nel
+                browser.</p>
+        </div>
+    </noscript>
+
+    <!-- Scripts -->
+    <script src="js/data.js?v=2.20"></script>
+    <script src="js/app.js?v=2.20"></script>
+</body>
+
+</html>

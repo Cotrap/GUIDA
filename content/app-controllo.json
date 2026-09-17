@@ -1,0 +1,184 @@
+{
+  "id": "app-controllo",
+  "titolo": "APP Controllo",
+  "aggiornato": "2026-03-17",
+  "nuovo": false,
+  "contenuto": [],
+  "sottosezioni": [
+    {
+      "id": "installazione",
+      "titolo": "Installazione (solo Android)",
+      "aggiornato": "2026-03-17",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "avviso",
+          "stile": "warning",
+          "testo": "<b>File APK sempre aggiornato:</b> Il file di installazione dell'app viene aggiornato frequentemente. Per ottenere sempre la versione corretta, <b>richiedere il file .apk direttamente agli amministratori del sistema</b>. Non utilizzare file ricevuti in precedenza: potrebbero non essere aggiornati."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "Una volta ricevuto il file .apk dagli amministratori, procedere con l'installazione sul dispositivo Android:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Trasferisci il file .apk ricevuto sul dispositivo Android (via email, WhatsApp o cavo USB).",
+            "Apri il file dal gestore file > cartella \"Download\" (o dalla cartella in cui è stato salvato).",
+            "Consenti l'installazione da fonti sconosciute se richiesto.",
+            "Una volta installata, troverai l'icona dell'app \"Itineris\" nella schermata principale."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "app_installazione.png",
+          "alt": "Installazione App",
+          "didascalia": "Processo di installazione app Itineris"
+        }
+      ]
+    },
+    {
+      "id": "primo-avvio",
+      "titolo": "Primo Avvio",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "lista",
+          "items": [
+            "Consenti l'accesso alla fotocamera, selezionando \"Ogni volta che si usa l'app\"."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Nota:</b> La fotocamera serve per scansionare i QR code dei biglietti."
+        },
+        {
+          "tipo": "immagine",
+          "src": "accesso_fotocamera.png",
+          "alt": "Permesso fotocamera",
+          "didascalia": "Richiesta permesso fotocamera"
+        }
+      ]
+    },
+    {
+      "id": "login",
+      "titolo": "Login e Inizio Controllo",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Apri l'app e inserisci:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Email nel campo \"Nome account\"",
+            "Password (rispettando maiuscole/minuscole)",
+            "Comune di salita (solo per verificatori)"
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "login_app.png",
+          "alt": "Schermata login app",
+          "didascalia": "Schermata di login dell'app Itineris"
+        }
+      ]
+    },
+    {
+      "id": "scansione",
+      "titolo": "Scansione del Biglietto",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Inquadra il QR code del biglietto con la fotocamera. L'app fornirà uno dei seguenti esiti:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Biglietto valido:</b> Verifica che tratta e orario siano corretti, poi seleziona \"SÌ\".",
+            "<b>Biglietto non valido:</b> Premi \"Azioni\" e scegli la motivazione."
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "<b>Eccezione:</b> Se il biglietto è non valido per causa riconducibile all'azienda (es. corsa saltata), puoi selezionare \"Accettato a bordo\" su autorizzazione."
+        },
+        {
+          "tipo": "immagine",
+          "src": "salitacontrollo.png",
+          "alt": "Schermata controllo biglietto",
+          "didascalia": "Schermata di controllo e scansione biglietto"
+        }
+      ]
+    },
+    {
+      "id": "fine-controllo",
+      "titolo": "Fine Controllo",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Quando tutti i biglietti sono stati controllati, tocca \"TERMINA\" e inserisci il Comune di discesa (solo per verificatori)."
+        }
+      ]
+    },
+    {
+      "id": "rapportino",
+      "titolo": "Invio Rapportino",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "lista",
+          "items": [
+            "Vai alla Home dell'app e seleziona l'icona del rapportino.",
+            "Clicca sul rapporto per aprirlo, poi seleziona l'icona con la busta per inviarlo.",
+            "Conferma selezionando \"SÌ\". Il rapporto sarà inviato via email all'ufficio competente."
+          ]
+        },
+        {
+          "tipo": "immagine",
+          "src": "invio_rapportino.png",
+          "alt": "Invio rapportino",
+          "didascalia": "Schermata di invio rapportino di fine verifica"
+        }
+      ]
+    },
+    {
+      "id": "link-utili",
+      "titolo": "Link Utili",
+      "aggiornato": "2026-02-24",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "links",
+          "items": [
+            {
+              "icona": "🎥",
+              "titolo": "Installazione App Itineris",
+              "url": "https://youtu.be/Kyo_XAA1I1Y"
+            },
+            {
+              "icona": "🔐",
+              "titolo": "Impostazione Password",
+              "url": "https://youtu.be/y17vm4Jlz00"
+            },
+            {
+              "icona": "👤",
+              "titolo": "Inserimento Controllori/Autisti",
+              "url": "https://youtu.be/Bq565A9pGok"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

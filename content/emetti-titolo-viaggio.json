@@ -1,0 +1,161 @@
+{
+  "id": "emetti-titolo-viaggio",
+  "titolo": "Emetti titolo di viaggio",
+  "aggiornato": "2026-09-09",
+  "nuovo": false,
+  "contenuto": [
+    {
+      "tipo": "tldr",
+      "items": [
+        "Permette al profilo commerciale di emettere biglietti e abbonamenti a <b>prezzo 0 euro</b> tramite il Portale Clienti con privilegi admin.",
+        "L'accesso admin dura <b>15 minuti</b>: alla scadenza torna in Admin Panel e clicca di nuovo 'Emetti titolo di viaggio'.",
+        "Tutti gli ordini gratuiti sono tracciati e identificabili dal campo <b>'Emesso da Admin'</b> nelle esportazioni.",
+        "Ad ogni titolo emesso gratuitamente si può associare una <b>nota</b>, che resta visibile solo al commerciale in <b>Ordini → dettaglio del titolo</b>."
+      ]
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Questa funzione dà la possibilità al profilo commerciale di emettere titoli di viaggio gratuitamente, inserendo tutte le informazioni necessarie ai fini dell'emissione."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Si dà la possibilità di effettuare l'accesso a <b>Portale Clienti con privilegi di amministratore</b> e di effettuare emissioni di titoli di viaggio (CS e abbonamenti, urbani ed extraurbani). Questa possibilità è concessa soltanto ai profili commerciali."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "I profili commerciali effettueranno l'accesso su Portale Clienti con l'azienda di appartenenza. Nel caso di profili commerciali con più aziende collegate, l'azienda con cui si farà accesso su Portale Clienti sarà quella selezionata in quel momento su Admin Panel."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-4.png",
+      "alt": "Voce Emetti titolo di viaggio nel menu dell’Admin Panel",
+      "didascalia": "La voce <b>Emetti titolo di viaggio</b> nel menu laterale dell’Admin Panel"
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-3.png",
+      "alt": "Portale Clienti aperto con privilegi di amministratore",
+      "didascalia": "Il Portale Clienti si apre con l’<b>azienda di appartenenza</b> in alto a sinistra e il <b>logout dal profilo amministratore</b> in alto a destra"
+    },
+    {
+      "tipo": "lista",
+      "items": [
+        "Nella pagina di ricerca per biglietto o abbonamento extra urbano, <b>non sarà possibile selezionare l'azienda</b>",
+        "Per i biglietti e abbonamenti urbani, le località sono filtrate per azienda",
+        "Tra i risultati, vengono mostrati tutti gli abbonamenti a prescindere dalla tessera e codice fiscale, e presentano tutti <b>prezzo 0 €</b>"
+      ]
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-2.png",
+      "alt": "Risultati ricerca con prezzo zero",
+      "didascalia": "I risultati mostrano prezzo 0 € per tutti i titoli"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Alla creazione dell'ordine, è necessario specificare tutte le informazioni del cliente a cui è indirizzato il titolo di viaggio (procedimento analogo per i CS). Nel caso degli abbonamenti che richiedono una tessera MyCard, è necessario anche inserire i dati corretti del cliente."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-gratuiti-1.png",
+      "alt": "Inserimento dei dati del cliente",
+      "didascalia": "Dati del cliente e pulsante <b>EMETTI</b>: nome, cognome, telefono ed email dell’acquirente e, se il titolo lo richiede, numero tessera e codice fiscale"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "<b>Note per titolo</b>"
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Nella stessa schermata, sotto i dati del cliente, c'è la sezione <b>NOTE PER TITOLO</b>: per ogni titolo nel carrello è disponibile un campo <b>Nota opzionale</b>, preceduto dalla denominazione del titolo, dalla tratta e dalla data o dal periodo di validità. Serve a registrare il motivo dell'emissione ed è visibile <b>solo al profilo commerciale</b>, mai al cliente."
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-note-1.png",
+      "alt": "Sezione Note per titolo nell'emissione di biglietti gratuiti",
+      "didascalia": "Emissione di biglietti: un campo nota per ciascun titolo nel carrello. In alto si vedono anche i controlli su tessera e codice fiscale"
+    },
+    {
+      "tipo": "immagine",
+      "src": "aggiornamento-note-2.png",
+      "alt": "Sezione Note per titolo nell'emissione di abbonamenti gratuiti",
+      "didascalia": "La stessa sezione nell'emissione di un abbonamento"
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Titoli con più quantità:</b> quando un titolo prevede più quantità (per esempio per il fattore moltiplicativo della tessera invalido + accompagnatore) il campo nota <b>non viene duplicato</b>: la stessa nota viene applicata a ciascuno dei titoli emessi."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "Le note si rileggono dal profilo commerciale in <b>Ordini → Biglietti</b> o <b>Ordini → Abbonamenti</b>, aprendo il <b>Dettaglio</b> del titolo: compaiono nel campo <b>Note emissione</b>."
+    },
+    {
+      "tipo": "paragrafo",
+      "testo": "All'emissione del titolo, verrà inviata la <b>mail di conferma al cliente</b>, e sarà possibile stampare i titoli emessi in formato PDF."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "warning",
+      "testo": "<b>Attenzione:</b> L'accesso a Portale Clienti con privilegi di Admin dura <b>15 minuti</b>. Una volta scaduti, quando si tenta di effettuare un'azione (ricerca, creazione ordine o pagamento) apparirà una modale che ne notifica la scadenza. A questo punto è possibile tornare su Admin Panel e cliccare nuovamente il tasto \"Emetti titolo di viaggio\" per effettuare altre emissioni."
+    },
+    {
+      "tipo": "avviso",
+      "stile": "info",
+      "testo": "<b>Corsa Semplice (CS) con cambio:</b> Se si vuole emettere un biglietto per una corsa con cambio linea, è possibile emettere il titolo solo per la tratta di propria competenza."
+    },
+    {
+      "tipo": "box-nota",
+      "titolo": "Tracciamento ordini gratuiti",
+      "contenuto": [
+        "Gli ordini effettuati con profilo commerciale sono tracciati ed è possibile risalire all'utente admin panel che ha effettuato l'emissione",
+        "Gli ordini presentano importo nullo",
+        "È stato inserito un nuovo filtro \"Gratuito\" nel metodo di pagamento nelle pagine Ordini, Biglietti e Abbonamenti",
+        "Nel dettaglio di ogni titolo di viaggio, è presente un campo \"Emesso da Admin\" che identifica un titolo emesso da profilo commerciale",
+        "Le esportazioni biglietti, abbonamenti e ordini presentano il campo \"Emesso da Admin\"",
+        "Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano le transazioni relative ai titoli emessi gratuitamente"
+      ]
+    }
+  ],
+  "sottosezioni": [
+    {
+      "id": "emetti-domande",
+      "titolo": "Domande frequenti",
+      "aggiornato": "2026-09-10",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "faq",
+          "domanda": "Come accedo alla funzione 'Emetti titolo di viaggio'?",
+          "risposta": "Disponibile <b>solo per il profilo commerciale</b> tramite il tasto <b>'Emetti titolo di viaggio'</b> su Admin Panel. Cliccandolo si apre il Portale Clienti con privilegi di amministratore, attraverso cui procedere con l'emissione."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Posso scegliere l'azienda dalla pagina di ricerca del Portale Clienti?",
+          "risposta": "<b>No.</b> L'azienda è quella selezionata su Admin Panel al momento del click. Non è modificabile dalla pagina di ricerca. Se gestisci più aziende, seleziona quella corretta prima di cliccare 'Emetti titolo di viaggio'."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "La sessione di emissione gratuita è scaduta a metà operazione: cosa faccio?",
+          "risposta": "La sessione dura <b>15 minuti</b>. Alla scadenza appare una notifica. Torna su Admin Panel e clicca nuovamente <b>'Emetti titolo di viaggio'</b> per ottenere una nuova sessione e continuare."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I titoli gratuiti vengono notificati al cliente?",
+          "risposta": "<b>Sì.</b> All'emissione viene inviata automaticamente un'<b>email di conferma</b> al cliente. È anche possibile stampare i titoli in PDF dalla schermata di conferma."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "Come trovo tutti i titoli emessi gratuitamente?",
+          "risposta": "Usa il filtro <b>Gratuito</b> nel metodo di pagamento, disponibile in: Ordini → Biglietti, Ordini → Abbonamenti (profilo commerciale), e nella Sezione Contabile → Ordini, Biglietti, Abbonamenti. Nel dettaglio di ogni titolo c'è il campo <b>'Emesso da Admin'</b>."
+        },
+        {
+          "tipo": "faq",
+          "domanda": "I titoli gratuiti impattano le statistiche di vendita?",
+          "risposta": "<b>No.</b> Le statistiche mensili, statistiche linee, statistiche venduto e i dati contabili ignorano completamente le transazioni relative ai titoli gratuiti, per non alterare i dati di fatturato reale."
+        }
+      ]
+    }
+  ]
+}

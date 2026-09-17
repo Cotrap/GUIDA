@@ -1,0 +1,6 @@
+temp/
+.claude/
+*.backup-*
+.ai/
+AGENTS.md
+CLAUDE.md

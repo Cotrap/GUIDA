@@ -1,0 +1,170 @@
+{
+  "id": "changelog",
+  "titolo": "Registro modifiche",
+  "descrizione": "Appunti brevi su che cosa è cambiato nella guida, per chi la mantiene.",
+  "modifiche": [
+    {
+      "versione": "2.20",
+      "data": "2026-09-10",
+      "titolo": "Limite di 40 giorni e giorni delle frequenze verificati nel pannello",
+      "dettagli": [
+        "Limite di 40 giorni anche in Abbonamenti e Statistiche Biglietti Venduti / Controllati",
+        "Statistiche linee e corse CS: con periodi di mesi possono non comparire dati",
+        "Frequenze Corsa: i giorni si scelgono con le caselle da Lunedì a Domenica"
+      ]
+    },
+    {
+      "versione": "2.19",
+      "data": "2026-09-10",
+      "titolo": "Correzione del limite di 40 giorni",
+      "dettagli": [
+        "Ordini: il limite di 40 giorni riguarda la ricerca Biglietti, non tutte le ricerche"
+      ]
+    },
+    {
+      "versione": "2.18",
+      "data": "2026-09-10",
+      "titolo": "Menu come quello di Itineris, niente doppioni",
+      "dettagli": [
+        "Menu in due parti: Strumenti della guida e Menu Itineris (commerciale e contabile), con nomi e ordine del pannello",
+        "Domande e Risposte distribuite nelle sezioni; tolte 29 domande già coperte da altre pagine",
+        "CS Invalidi dentro Gestione Movimento; Profilo Commerciale unito alla Guida Veloce; Ordini con tutte e sette le voci",
+        "Pulsante 🔗 per copiare il link di ogni titolo; registro modifiche aperto dalla versione in alto"
+      ]
+    },
+    {
+      "versione": "2.17",
+      "data": "2026-09-10",
+      "titolo": "Guida Veloce per compiti e ricerca riparata",
+      "dettagli": [
+        "Guida Veloce: schede Usa / Evita / Verifica per le operazioni di tutti i giorni",
+        "Ricerca: trova anche risposte, passaggi e schede",
+        "Frasi da ragionamento riscritte come istruzioni"
+      ]
+    },
+    {
+      "versione": "2.16",
+      "data": "2026-09-09",
+      "titolo": "Procedure e diagnosi allineate (Codex)",
+      "dettagli": [
+        "Tolte affermazioni non verificate: sblocco abbonamenti, percentuali, limite di 40 giorni esteso",
+        "Tolti dal sito tre screenshot con dati di tessere",
+        "Navigazione con ancore corretta"
+      ]
+    },
+    {
+      "versione": "2.15",
+      "data": "2026-09-09",
+      "titolo": "Notifica App Broadcast e Note emissione",
+      "dettagli": [
+        "Le due funzioni del rilascio, verificate in produzione",
+        "Ordini: operazioni di riga reali e limite di 40 giorni in Biglietti",
+        "Nuova pagina Risolvi un problema"
+      ]
+    },
+    {
+      "versione": "2.14",
+      "data": "2026-09-09",
+      "titolo": "Revisione completa, sezione per sezione",
+      "dettagli": [
+        "Titoli di viaggio: colonne, testata in sola lettura e quattro riquadri come nel pannello",
+        "Ordini non è solo consultazione; documentato Invia notifica ad Utenti",
+        "Corretti il flag «Richiede Tessera» inesistente e la multitratta «fra aziende diverse»"
+      ]
+    },
+    {
+      "versione": "2.13",
+      "data": "2026-09-09",
+      "titolo": "Ricalcolo, km tariffario ed effettivi, campo Sosta",
+      "dettagli": [
+        "Spiegati contatore In elaborazione e stati intermedi",
+        "Distinti Km tariffario e Km effettivi; a che cosa serve la Sosta"
+      ]
+    },
+    {
+      "versione": "2.12",
+      "data": "2026-09-09",
+      "titolo": "Titoli per invalidi gratuiti; Sezione Contabile completata",
+      "dettagli": [
+        "Corretto: i titoli per invalidi sono gratuiti per il cliente",
+        "Sezione Contabile: aggiunti Credito e Spese Abbonamenti Agenzie"
+      ]
+    },
+    {
+      "versione": "2.11",
+      "data": "2026-09-08",
+      "titolo": "Km del template, stati della corsa, screenshot",
+      "dettagli": [
+        "Km e minuti del template contati dal capolinea",
+        "Stato Corsa distinto da Stato Attivazione",
+        "Screenshot degli aggiornamenti rimessi al loro posto; bundle rigenerato"
+      ]
+    },
+    {
+      "versione": "2.10",
+      "data": "2026-03-30",
+      "titolo": "Sezioni allineate ai CS Invalidi",
+      "dettagli": []
+    },
+    {
+      "versione": "2.9",
+      "data": "2026-03-30",
+      "titolo": "Nuova sezione CS Invalidi",
+      "dettagli": []
+    },
+    {
+      "versione": "2.8",
+      "data": "2026-03-30",
+      "titolo": "Domande ampliate: eccezioni, template massivo, multitratta",
+      "dettagli": []
+    },
+    {
+      "versione": "2.7",
+      "data": "2026-03-30",
+      "titolo": "Correzioni di navigazione e di terminologia",
+      "dettagli": []
+    },
+    {
+      "versione": "2.6",
+      "data": "2026-03-05",
+      "titolo": "Errori comuni e Descrizione dei codici contabili",
+      "dettagli": []
+    },
+    {
+      "versione": "2.5",
+      "data": "2026-03-04",
+      "titolo": "Correzioni a Guida Veloce ed Eccezioni",
+      "dettagli": []
+    },
+    {
+      "versione": "2.4",
+      "data": "2026-03-04",
+      "titolo": "App Controllo tolta dal menu; domande ampliate",
+      "dettagli": []
+    },
+    {
+      "versione": "2.3",
+      "data": "2026-03-03",
+      "titolo": "Revisione dei contenuti e domande operative",
+      "dettagli": []
+    },
+    {
+      "versione": "2.2",
+      "data": "2026-03-02",
+      "titolo": "Titoli gratuiti, multitratta, eccezioni chilometriche, template massivo",
+      "dettagli": []
+    },
+    {
+      "versione": "2.1",
+      "data": "2026-02-23",
+      "titolo": "Miglioramenti e correzioni",
+      "dettagli": []
+    },
+    {
+      "versione": "2.0",
+      "data": "2026-02-03",
+      "titolo": "Nuova guida interattiva",
+      "dettagli": []
+    }
+  ]
+}

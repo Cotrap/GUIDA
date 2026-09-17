@@ -1,0 +1,93 @@
+{
+  "id": "introduzione",
+  "titolo": "Introduzione",
+  "aggiornato": "2026-03-04",
+  "nuovo": false,
+  "contenuto": [],
+  "sottosezioni": [
+    {
+      "id": "obiettivo-del-documento",
+      "titolo": "Obiettivo del Documento",
+      "aggiornato": "2026-03-04",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Questo manuale ha lo scopo di guidare i Consorziati nella creazione di una linea che sarà poi vendibile sul portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e nel conseguente controllo contabile e amministrativo del venduto."
+        }
+      ]
+    },
+    {
+      "id": "sintesi-del-documento",
+      "titolo": "Sintesi del Documento",
+      "aggiornato": "2026-03-04",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Il documento descrive le funzionalità del software Itineris, finalizzate alla gestione delle linee, corse e bigliettazione e delle interazioni con il portale di vendita <a href=\"https://www.cotrap.it\" target=\"_blank\">COTRAP</a> e l'app clienti. Sono state redatte due macro-sezioni distinte: una dedicata al <b>profilo commerciale</b> e una al <b>profilo contabile/amministrativo</b>."
+        },
+        {
+          "tipo": "paragrafo",
+          "testo": "In particolare:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Configurazione e inserimento Linee, Template e Corse</b>",
+            "Gestione eccezioni tariffarie, di movimento e chilometriche",
+            "Esportazione dati",
+            "Controllo contabile e statistiche venduto"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "destinatari-del-manuale",
+      "titolo": "Destinatari",
+      "aggiornato": "2026-03-04",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Il manuale è destinato ai <b>Consorziati COTRAP</b> che devono gestire il caricamento di linee e corse sul software Itineris e controllare il venduto tramite il profilo contabile."
+        },
+        {
+          "tipo": "avviso",
+          "stile": "info",
+          "testo": "Sono previsti <b>due account separati</b> per ciascun consorziato: uno per il <b>profilo commerciale</b> (gestione operativa) e uno per il <b>profilo contabile</b> (reportistica e dati contabili). Le credenziali vengono fornite dall'Amministratore COTRAP."
+        }
+      ]
+    },
+    {
+      "id": "struttura-del-manuale",
+      "titolo": "Struttura del Manuale",
+      "aggiornato": "2026-03-04",
+      "nuovo": false,
+      "contenuto": [
+        {
+          "tipo": "paragrafo",
+          "testo": "Il manuale è suddiviso nelle seguenti sezioni principali, accessibili dal menu laterale:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "<b>Profilo Commerciale:</b> prerequisiti e dati del consorziato",
+            "<b>Configurazione:</b> tariffari regionali, calendari scolastici, frequenze corse e utenti app controllo",
+            "<b>Gestione Movimento:</b> codici contabili, poli, linee, template, corse e titoli di viaggio",
+            "<b>Eccezioni:</b> sospensioni di corse/fermate, variazioni tariffarie e chilometriche",
+            "<b>Ordini:</b> monitoraggio ordini, biglietti, abbonamenti e stati occupazionali",
+            "<b>Esportazioni:</b> archivio centralizzato dei file generati dal portale",
+            "<b>Sezione Contabile:</b> ordini, dati contabili, biglietti, abbonamenti e statistiche",
+            "<b>Emetti Titolo di Viaggio:</b> emissione gratuita di biglietti e abbonamenti dal profilo commerciale"
+          ]
+        },
+        {
+          "tipo": "avviso",
+          "stile": "success",
+          "testo": "<b>Primo accesso?</b> Consulta la <b>Guida Veloce</b> nel menu per una panoramica rapida dei passaggi essenziali prima di procedere con le sezioni di dettaglio."
+        }
+      ]
+    }
+  ]
+}
